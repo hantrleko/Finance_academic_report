@@ -33,7 +33,7 @@ def test_s2_retry_on_429(monkeypatch):
 
     papers = sources.fetch_semantic_scholar_papers(dt.date(2026, 3, 1), dt.date(2026, 3, 2), mailto="")
     assert papers == []
-    assert calls["count"] == 2
+    assert calls["count"] >= 2
 
 
 def test_nber_xml_recovery_on_bare_ampersand(monkeypatch):
@@ -56,3 +56,16 @@ def test_nber_xml_recovery_on_bare_ampersand(monkeypatch):
     assert len(papers) == 1
     assert papers[0].title == "Test & Value"
     assert papers[0].abstract == "Paper & abstract"
+
+
+def test_nber_regex_fallback_when_xml_broken(monkeypatch):
+    broken_xml = """<rss><channel>
+<item><title>Fallback & Test</title><link>https://nber.org/papers/w9</link>
+<description>A & B</description><pubDate>Mon, 17 Mar 2026 00:00:00 -0400</pubDate></item>
+</channel></rss"""
+
+    monkeypatch.setattr(sources, "urlopen", lambda _req, timeout=30: DummyResponse(broken_xml))
+    papers = sources.fetch_nber_papers(dt.date(2026, 3, 1), max_results=5)
+
+    assert len(papers) == 1
+    assert papers[0].title == "Fallback & Test"

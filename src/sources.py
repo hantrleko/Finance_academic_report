@@ -6,6 +6,7 @@ import json
 import re
 import time
 import xml.etree.ElementTree as ET
+from html import unescape
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote_plus, urlencode
@@ -50,6 +51,78 @@ def _retry_after_seconds(err: HTTPError, attempt: int) -> int:
     if retry_after and retry_after.isdigit():
         return max(1, int(retry_after))
     return S2_BASE_BACKOFF_SECONDS * (2 ** attempt)
+
+
+def _request_s2(params: dict[str, Any], headers: dict[str, str]) -> list[dict[str, Any]] | None:
+    req = Request(f"{S2_API_URL}?{urlencode(params)}", headers=headers)
+    for attempt in range(S2_MAX_RETRIES):
+        try:
+            with urlopen(req, timeout=30) as resp:
+                return json.loads(resp.read().decode("utf-8")).get("data", [])
+        except HTTPError as e:
+            if e.code == 429 and attempt < S2_MAX_RETRIES - 1:
+                wait_seconds = _retry_after_seconds(e, attempt)
+                print(f"[S2] Rate limited (429), retrying in {wait_seconds}s...")
+                time.sleep(wait_seconds)
+                continue
+            print(f"[S2] Fetch error: HTTP {e.code}")
+            return None
+        except (URLError, Exception) as e:
+            print(f"[S2] Fetch error: {type(e).__name__}: {e}")
+            return None
+    return None
+
+
+def _extract_xml_tag_text(block: str, tag: str) -> str:
+    match = re.search(rf"<{tag}[^>]*>(.*?)</{tag}>", block, re.IGNORECASE | re.DOTALL)
+    if not match:
+        return ""
+    text = re.sub(r"<[^>]+>", "", match.group(1))
+    return unescape(text).strip()
+
+
+def _parse_pub_date(pub_date_str: str, date_from: dt.date) -> str:
+    if not pub_date_str:
+        return ""
+    try:
+        parsed = dt.datetime.strptime(pub_date_str[:16].strip().rstrip(","), "%a, %d %b %Y")
+        if parsed.date() < date_from:
+            return ""
+        return parsed.date().isoformat()
+    except ValueError:
+        return pub_date_str[:10]
+
+
+def _parse_nber_items_fallback(xml_text: str, date_from: dt.date, max_results: int) -> list[Paper]:
+    print("[NBER] Falling back to regex parser")
+    papers: list[Paper] = []
+    for block in re.findall(r"<item\b[^>]*>.*?</item>", xml_text, flags=re.IGNORECASE | re.DOTALL):
+        if len(papers) >= max_results:
+            break
+        title = _extract_xml_tag_text(block, "title")
+        if not title:
+            continue
+        link = _extract_xml_tag_text(block, "link")
+        description = _extract_xml_tag_text(block, "description")
+        pub_date = _parse_pub_date(_extract_xml_tag_text(block, "pubDate"), date_from)
+        if _extract_xml_tag_text(block, "pubDate") and not pub_date:
+            continue
+        papers.append(
+            Paper(
+                title=title,
+                authors=[],
+                venue="NBER Working Papers",
+                published_date=pub_date,
+                doi_url="",
+                openalex_url=link,
+                cited_by_count=0,
+                abstract=description,
+                summary_zh="",
+                topics=["Economics", "Finance"],
+                source="nber",
+            )
+        )
+    return papers
 
 
 def extract_abstract(indexed_abstract: dict[str, Any] | None) -> str:
@@ -180,33 +253,29 @@ def fetch_arxiv_finance_econ_papers(date_from: dt.date, date_to: dt.date | None 
 
 def fetch_semantic_scholar_papers(date_from: dt.date, date_to: dt.date, mailto: str, max_results: int = 15) -> list[Paper]:
     fields = "title,authors,abstract,venue,year,externalIds,citationCount,publicationDate,s2FieldsOfStudy"
-    params = urlencode({
+    params = {
         "query": "finance economics",
         "fields": fields,
         "limit": max_results,
         "publicationDateOrYear": f"{date_from.isoformat()}:{date_to.isoformat()}",
         "fieldsOfStudy": "Economics",
-    })
+    }
     headers = {"User-Agent": "FinanceDigest/1.0"}
     if mailto:
         headers["User-Agent"] = f"FinanceDigest/1.0 (mailto:{mailto})"
-    req = Request(f"{S2_API_URL}?{params}", headers=headers)
-    data: list[dict[str, Any]] = []
-    for attempt in range(S2_MAX_RETRIES):
-        try:
-            with urlopen(req, timeout=30) as resp:
-                data = json.loads(resp.read().decode("utf-8")).get("data", [])
-            break
-        except HTTPError as e:
-            if e.code == 429 and attempt < S2_MAX_RETRIES - 1:
-                wait_seconds = _retry_after_seconds(e, attempt)
-                print(f"[S2] Rate limited (429), retrying in {wait_seconds}s...")
-                time.sleep(wait_seconds)
-                continue
-            print(f"[S2] Fetch error: HTTP {e.code}")
-            return []
-        except (URLError, Exception) as e:
-            print(f"[S2] Fetch error: {type(e).__name__}: {e}")
+    data = _request_s2(params, headers)
+    if data is None:
+        return []
+    if not data:
+        fallback_params = {
+            "query": "finance economics",
+            "fields": fields,
+            "limit": max_results,
+            "fieldsOfStudy": "Economics",
+        }
+        print("[S2] No results with date filter, retrying without date filter")
+        data = _request_s2(fallback_params, headers)
+        if data is None:
             return []
 
     papers: list[Paper] = []
@@ -248,7 +317,7 @@ def fetch_nber_papers(date_from: dt.date, max_results: int = 5) -> list[Paper]:
 
     root = _parse_xml_with_recovery(xml_text)
     if root is None:
-        return []
+        return _parse_nber_items_fallback(xml_text, date_from, max_results)
 
     papers: list[Paper] = []
     channel = root.find("channel")
@@ -265,15 +334,9 @@ def fetch_nber_papers(date_from: dt.date, max_results: int = 5) -> list[Paper]:
         description = (item.findtext("description") or "").strip()
         pub_date_str = (item.findtext("pubDate") or "").strip()
 
-        pub_date = ""
-        if pub_date_str:
-            try:
-                parsed = dt.datetime.strptime(pub_date_str[:16].strip().rstrip(","), "%a, %d %b %Y")
-                if parsed.date() < date_from:
-                    continue
-                pub_date = parsed.date().isoformat()
-            except ValueError:
-                pub_date = pub_date_str[:10]
+        pub_date = _parse_pub_date(pub_date_str, date_from)
+        if pub_date_str and not pub_date:
+            continue
 
         abstract = re.sub(r"<[^>]+>", "", description).strip()
         if not title:

@@ -17,7 +17,9 @@ def test_extract_abstract_rebuilds_word_order():
 def test_simple_summary_contains_title():
     text = simple_zh_summary("Asset Pricing", "This paper studies risk premiums.", ["Economics", "Finance"])
     assert "Asset Pricing" in text
-    assert ("摘要概述" in text) or ("研究内容" in text)
+    assert "摘要概述" in text
+    assert "结论要点" in text
+    assert "This paper studies risk premiums." not in text
 
 
 def test_build_digest_writes_files(monkeypatch, tmp_path: Path):

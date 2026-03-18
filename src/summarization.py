@@ -96,6 +96,10 @@ def extract_findings(abstract: str) -> list[tuple[str, str]]:
     return findings[:3]
 
 
+def _contains_chinese(text: str) -> bool:
+    return bool(re.search(r"[\u4e00-\u9fff]", text))
+
+
 def simple_zh_summary(title: str, abstract: str, topics: list[str]) -> str:
     topic_text = "、".join(topics[:3]) if topics else "金融经济学"
     domain = infer_domain_zh(title, topics)
@@ -110,6 +114,17 @@ def simple_zh_summary(title: str, abstract: str, topics: list[str]) -> str:
     abstract_lower = clean_abs.lower()
     methods = [zh for key, zh in _METHOD_SIGNALS.items() if key in abstract_lower]
     method_text = "、".join(dict.fromkeys(methods)) if methods else ""
+
+    if not _contains_chinese(clean_abs):
+        parts = [
+            f"【{domain}】",
+            f"论文标题：{title}",
+            f"摘要概述：该研究围绕「{topic_text}」相关议题展开，属于{domain}方向的研究。",
+            "结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。",
+        ]
+        if method_text:
+            parts.append(f"研究方法：{method_text}")
+        return "。".join(parts) + "。"
 
     findings = extract_findings(clean_abs)
     parts: list[str] = [f"【{domain}】", f"论文标题：{title}"]
