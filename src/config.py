@@ -15,6 +15,7 @@ def _csv_set(value: str, fallback: set[str]) -> set[str]:
 def load_digest_config_from_env() -> DigestConfig:
     return DigestConfig(
         max_papers=int(os.getenv("DIGEST_MAX_PAPERS", "12")),
+        source_min_papers=int(os.getenv("DIGEST_SOURCE_MIN_PAPERS", "2")),
         min_citations=int(os.getenv("DIGEST_MIN_CITATIONS", "0")),
         output_dir=Path(os.getenv("DIGEST_OUTPUT_DIR", "output")),
         keep_latest_when_empty=os.getenv("DIGEST_KEEP_LATEST_WHEN_EMPTY", "1") == "1",

@@ -18,6 +18,8 @@ from .sources import (
 )
 from .summarization import apply_summaries, generate_digest_insights, generate_digest_overview, llm_screen_relevance
 
+SOURCE_PRIORITY = ["openalex", "arxiv", "semantic_scholar", "nber"]
+
 
 def _load_latest_count(latest_json_path: Path) -> int:
     if not latest_json_path.exists():
@@ -26,6 +28,48 @@ def _load_latest_count(latest_json_path: Path) -> int:
         return int(json.loads(latest_json_path.read_text(encoding="utf-8")).get("count", 0))
     except Exception:
         return 0
+
+
+def _source_balanced_select(papers: list, max_items: int, source_min_items: int) -> list:
+    if max_items <= 0 or not papers:
+        return []
+    if source_min_items <= 0:
+        return papers[:max_items]
+
+    selected: list = []
+    selected_keys: set[str] = set()
+    by_source: dict[str, list] = {}
+    for p in papers:
+        by_source.setdefault(p.source, []).append(p)
+
+    source_order = [s for s in SOURCE_PRIORITY if s in by_source]
+    source_order.extend([s for s in by_source.keys() if s not in source_order])
+
+    # Pass 1: reserve up to source_min_items for each available source.
+    for source in source_order:
+        taken = 0
+        for paper in by_source[source]:
+            key = paper.openalex_url or f"{paper.source}:{paper.title}:{paper.published_date}"
+            if key in selected_keys:
+                continue
+            selected.append(paper)
+            selected_keys.add(key)
+            taken += 1
+            if len(selected) >= max_items or taken >= source_min_items:
+                break
+        if len(selected) >= max_items:
+            return selected
+
+    # Pass 2: fill remaining slots by original ranking order.
+    for paper in papers:
+        key = paper.openalex_url or f"{paper.source}:{paper.title}:{paper.published_date}"
+        if key in selected_keys:
+            continue
+        selected.append(paper)
+        selected_keys.add(key)
+        if len(selected) >= max_items:
+            break
+    return selected
 
 
 def build_digest(
@@ -72,9 +116,17 @@ def build_digest(
         min_quality_score=config.min_quality_score,
     )
 
-    papers = papers[: config.max_papers * 3]
+    papers = _source_balanced_select(
+        papers,
+        max_items=config.max_papers * 3,
+        source_min_items=config.source_min_papers,
+    )
     papers = llm_screen_relevance(papers, analysis_cfg)
-    papers = papers[: config.max_papers]
+    papers = _source_balanced_select(
+        papers,
+        max_items=config.max_papers,
+        source_min_items=config.source_min_papers,
+    )
     papers = apply_summaries(papers, analysis_cfg, translate_cfg)
     overview = generate_digest_overview(papers, analysis_cfg)
     insights = generate_digest_insights(papers, analysis_cfg)
