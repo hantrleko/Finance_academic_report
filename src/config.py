@@ -23,6 +23,8 @@ def load_digest_config_from_env() -> DigestConfig:
         topic_blacklist=_csv_set(os.getenv("DIGEST_TOPIC_BLACKLIST", ""), SPAM_TERMS),
         min_quality_score=int(os.getenv("DIGEST_MIN_QUALITY_SCORE", "2")),
         openalex_mailto=os.getenv("OPENALEX_MAILTO", ""),
+        s2_api_key=os.getenv("S2_API_KEY", ""),
+        s2_min_interval_seconds=float(os.getenv("S2_MIN_INTERVAL_SECONDS", "1.1")),
     )
 
 

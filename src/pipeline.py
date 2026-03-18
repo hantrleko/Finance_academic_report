@@ -40,7 +40,14 @@ def build_digest(
     print(f"[FETCH] Fetching from all sources (lookback={config.lookback_days}d)...")
     openalex_papers = fetch_openalex_papers(date_from, run_date, mailto=config.openalex_mailto, per_page=15)
     arxiv_papers = fetch_arxiv_finance_econ_papers(date_from, run_date, max_results=15)
-    s2_papers = fetch_semantic_scholar_papers(date_from, run_date, mailto=config.openalex_mailto, max_results=15)
+    s2_papers = fetch_semantic_scholar_papers(
+        date_from,
+        run_date,
+        mailto=config.openalex_mailto,
+        max_results=15,
+        api_key=config.s2_api_key,
+        min_interval_seconds=config.s2_min_interval_seconds,
+    )
     nber_papers = fetch_nber_papers(date_from, max_results=5)
 
     combined = openalex_papers + arxiv_papers + s2_papers + nber_papers

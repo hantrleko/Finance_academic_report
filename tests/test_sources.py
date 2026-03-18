@@ -69,3 +69,26 @@ def test_nber_regex_fallback_when_xml_broken(monkeypatch):
 
     assert len(papers) == 1
     assert papers[0].title == "Fallback & Test"
+
+
+def test_s2_uses_api_key_header(monkeypatch):
+    seen = {"api_key": ""}
+
+    def fake_urlopen(req, timeout=30):
+        for k, v in req.header_items():
+            if k.lower() == "x-api-key":
+                seen["api_key"] = v
+        return DummyResponse('{"data": []}')
+
+    monkeypatch.setattr(sources, "urlopen", fake_urlopen)
+    monkeypatch.setattr(sources.time, "sleep", lambda _n: None)
+
+    sources.fetch_semantic_scholar_papers(
+        dt.date(2026, 3, 1),
+        dt.date(2026, 3, 2),
+        mailto="",
+        api_key="test_key",
+        min_interval_seconds=1.1,
+    )
+
+    assert seen["api_key"] == "test_key"

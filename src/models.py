@@ -64,6 +64,8 @@ class DigestConfig:
     topic_blacklist: set[str] = field(default_factory=lambda: set(SPAM_TERMS))
     min_quality_score: int = 2
     openalex_mailto: str = ""
+    s2_api_key: str = ""
+    s2_min_interval_seconds: float = 1.1
 
 
 @dataclass

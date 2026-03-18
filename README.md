@@ -98,6 +98,11 @@ GitHub Actions Secrets 示例：
   - `ANALYSIS_LLM_API_BASE=https://open.bigmodel.cn/api/paas/v4`
   - `ANALYSIS_LLM_MODEL=glm-4.7-flash`
 
+Semantic Scholar（可选，建议配置）：
+
+- `S2_API_KEY=<你的 Semantic Scholar API key>`
+- `S2_MIN_INTERVAL_SECONDS=1.1`（建议保持 >1.0，满足 1 req/s 限制）
+
 ### 邮件推送（SMTP）
 
 - `SMTP_HOST`

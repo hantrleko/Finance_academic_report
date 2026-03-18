@@ -24,6 +24,7 @@ from .models import (
 
 S2_MAX_RETRIES = 3
 S2_BASE_BACKOFF_SECONDS = 2
+_last_s2_request_ts = 0.0
 
 
 def _sanitize_xml_text(xml_text: str) -> str:
@@ -53,9 +54,23 @@ def _retry_after_seconds(err: HTTPError, attempt: int) -> int:
     return S2_BASE_BACKOFF_SECONDS * (2 ** attempt)
 
 
-def _request_s2(params: dict[str, Any], headers: dict[str, str]) -> list[dict[str, Any]] | None:
+def _respect_s2_rate_limit(min_interval_seconds: float) -> None:
+    global _last_s2_request_ts
+    now = time.time()
+    wait = min_interval_seconds - (now - _last_s2_request_ts)
+    if wait > 0:
+        time.sleep(wait)
+    _last_s2_request_ts = time.time()
+
+
+def _request_s2(
+    params: dict[str, Any],
+    headers: dict[str, str],
+    min_interval_seconds: float,
+) -> list[dict[str, Any]] | None:
     req = Request(f"{S2_API_URL}?{urlencode(params)}", headers=headers)
     for attempt in range(S2_MAX_RETRIES):
+        _respect_s2_rate_limit(min_interval_seconds)
         try:
             with urlopen(req, timeout=30) as resp:
                 return json.loads(resp.read().decode("utf-8")).get("data", [])
@@ -251,7 +266,14 @@ def fetch_arxiv_finance_econ_papers(date_from: dt.date, date_to: dt.date | None 
     return papers
 
 
-def fetch_semantic_scholar_papers(date_from: dt.date, date_to: dt.date, mailto: str, max_results: int = 15) -> list[Paper]:
+def fetch_semantic_scholar_papers(
+    date_from: dt.date,
+    date_to: dt.date,
+    mailto: str = "",
+    max_results: int = 15,
+    api_key: str = "",
+    min_interval_seconds: float = 1.1,
+) -> list[Paper]:
     fields = "title,authors,abstract,venue,year,externalIds,citationCount,publicationDate,s2FieldsOfStudy"
     params = {
         "query": "finance economics",
@@ -263,7 +285,9 @@ def fetch_semantic_scholar_papers(date_from: dt.date, date_to: dt.date, mailto: 
     headers = {"User-Agent": "FinanceDigest/1.0"}
     if mailto:
         headers["User-Agent"] = f"FinanceDigest/1.0 (mailto:{mailto})"
-    data = _request_s2(params, headers)
+    if api_key:
+        headers["x-api-key"] = api_key
+    data = _request_s2(params, headers, min_interval_seconds=min_interval_seconds)
     if data is None:
         return []
     if not data:
@@ -274,7 +298,7 @@ def fetch_semantic_scholar_papers(date_from: dt.date, date_to: dt.date, mailto: 
             "fieldsOfStudy": "Economics",
         }
         print("[S2] No results with date filter, retrying without date filter")
-        data = _request_s2(fallback_params, headers)
+        data = _request_s2(fallback_params, headers, min_interval_seconds=min_interval_seconds)
         if data is None:
             return []
 

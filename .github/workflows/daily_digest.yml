@@ -34,6 +34,8 @@ jobs:
           ANALYSIS_LLM_API_BASE: ${{ secrets.ANALYSIS_LLM_API_BASE }}
           ANALYSIS_LLM_API_KEY: ${{ secrets.ANALYSIS_LLM_API_KEY }}
           ANALYSIS_LLM_MODEL: ${{ secrets.ANALYSIS_LLM_MODEL }}
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+          S2_MIN_INTERVAL_SECONDS: "1.1"
         run: python -m src.digest
 
       - name: Send digest emails to subscribers
