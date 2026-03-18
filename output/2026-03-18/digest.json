@@ -1,29 +1,259 @@
 {
   "date": "2026-03-18",
-  "count": 1,
-  "source_used": "openalex",
+  "count": 12,
+  "source_used": "openalex(15)+arxiv(15)",
   "latest_updated": true,
   "papers": [
     {
-      "title": "Differentiation of digital economy development in European Union countries and its impact on labour productivity and unemployment",
+      "title": "The proximity-poverty dynamic: high-value agriculture, infrastructure and rural development in Indonesia",
       "authors": [
-        "Mateusz Biernacki"
+        "Akmal Shalahuddin",
+        "Mohammad Arief Rajendra",
+        "Natanael Waraney Gerald Massie"
       ],
-      "venue": "Homo Politicus (Academy of Humanities and Economics in Lodz)",
-      "published_date": "2026-03-18",
-      "doi_url": "",
-      "openalex_url": "https://openalex.org/W7128112890",
+      "venue": "China Agricultural Economic Review",
+      "published_date": "2026-03-17",
+      "doi_url": "https://doi.org/10.1108/caer-06-2025-0329",
+      "openalex_url": "https://openalex.org/W7136657474",
       "cited_by_count": 0,
-      "abstract": "",
-      "summary_zh": "研究主题：Differentiation of digital economy development in European Union countries and its impact on labour productivity and unemployment（Unemployment、European union、Productivity）。当前来源未提供摘要，建议优先查看原文以确认研究设计与关键结论。",
+      "abstract": "Purpose\n                    This paper challenges the prevailing assumption that proximity to high-value agriculture (HVA) export clusters inherently reduces rural poverty. It aims to empirically investigate the relationship between HVA proximity and poverty outcomes across Indonesia, providing robust nationwide evidence on the spatial dynamics of HVA-led development.\n                  \n                  \n                    Design/methodology/approach\n                    This study combines a novel dataset of geolocated HVA exporting firms with national village-level surveys (Potensi Desa). Using network distance analysis, our multi-stage empirical strategy includes Ordinary Least Square with regional stratification, percentile-based regressions, and inverse probability weighted regression adjustment to account for non-linearities and selection bias.\n                  \n                  \n                    Findings\n                    The results reveal a heterogeneous relationship between HVA proximity and poverty outcomes. On average, closer village-level proximity to HVA export clusters is associated with higher measured poverty, a pattern consistent with enclave-style development and endogenous firm location in areas with pre-existing economic disadvantage. However, this relationship varies across regions and distance thresholds. Infrastructure exhibits a complex role: its direct association with poverty reduction is observed in more developed regions and non-agricultural sectors, but is less evident in HVA-dominated areas. More notably, infrastructure functions as a moderator, attenuating the localized disadvantages associated with HVA proximity by enhancing market connectivity.\n                  \n                  \n                    Research limitations/implications\n                    The use of cross-sectional data limits the ability to make definitive causal claims about long-term dynamics. Future research should employ panel data and micro-level case studies to explore specific household and firm-level mechanisms.\n                  \n                  \n                    Practical implications\n                    Policymakers should avoid simplistic “growth pole” strategies. Policies must be context-dependent, and infrastructure investment must be strategic–creating synergies that connect producers to logistics networks rather than assuming investment proximity alone reduces poverty.\n                  \n                  \n                    Social implications\n                    The findings suggest that large-scale agricultural investment can reinforce inequalities and create enclave economies. Improving rural welfare requires inclusive policies that ensure local communities actively participate in value chains.\n                  \n                  \n                    Originality/value\n                    This paper provides a nationwide evidence of the proximity-poverty dynamic in Indonesia using spatial approaches. This adds a new persepctive to the debate by highlighting the risks of enclave-style development and endogenous location choices by firms seeking lower-cost land and labor.",
+      "summary_zh": "【收入分配与福利】。论文标题：The proximity-poverty dynamic: high-value agriculture, infrastructure and rural development in Indonesia。研究结论：large-scale agricultural investment can reinforce inequalities and create enclave economies。研究内容：challenges the prevailing assumption that proximity to high-value agriculture (HVA) export clusters inherently reduces rural poverty。研究内容：combines a novel dataset of geolocated HVA exporting firms with national village-level surveys (Potensi Desa)。研究方法：回归分析、面板数据、调查数据、横截面分析。",
       "topics": [
-        "Unemployment",
-        "European union",
-        "Productivity",
-        "Economics",
-        "Digital economy"
+        "Poverty",
+        "Ordinary least squares",
+        "Investment (military)",
+        "Panel data",
+        "Geographical distance"
       ],
       "source": "openalex"
+    },
+    {
+      "title": "A systematic review of research on sustainability in environmental management accounting",
+      "authors": [
+        "Mochammad Ilyas Junjunan",
+        "Dian Agustia",
+        "Wiwik Supratiwi"
+      ],
+      "venue": "Journal of Applied Accounting Research",
+      "published_date": "2026-03-17",
+      "doi_url": "https://doi.org/10.1108/jaar-02-2025-0066",
+      "openalex_url": "https://openalex.org/W7136135385",
+      "cited_by_count": 0,
+      "abstract": "Purpose\n                    This article aims to fill the gap by identifying the state of academic research on sustainability in environmental management accounting (EMA), presenting a synthesis of our findings, a discussion and proposals for future research.\n                  \n                  \n                    Design/methodology/approach\n                    Based on the database Scopus, the publication of 218 documents on EMA and sustainability was identified in English which was published before 2025, and bibliometric analysis was conducted. Data on the publications, journals, authors and citations were collected, double-checked and examined by applying bibliometric measures.\n                  \n                  \n                    Findings\n                    Bibliometric analysis identifies trends in EMA and sustainability research publications since 2018, one of the key concepts being the circular economy. Additionally, authors predominantly focus on the impact of EMA on environmental and financial performance. Conversely, the Journal of Cleaner Production and Business Strategy and The Environment are the most significant journals.\n                  \n                  \n                    Research limitations/implications\n                    The sample documents are restricted to the Scopus database, so some relevant articles may be overlooked. Furthermore, Bibliometric map interpretation depends on subjective estimations, which could impact the outcomes.\n                  \n                  \n                    Practical implications\n                    EMA plays an important role in fostering a balance between social welfare, environmental sustainability and economic progress. In addition, supports the transition toward a low-carbon economy and society that is more mindful of sustainability.\n                  \n                  \n                    Originality/value\n                    This research unites the relationship between EMA and sustainability, including the intellectual structure, author clusters and main themes such as green innovation and resource management, which have not been examined holistically previously.",
+      "summary_zh": "【绿色金融与可持续发展】。论文标题：A systematic review of research on sustainability in environmental management accounting。摘要概述：Purpose This article aims to fill the gap by identifying the state of academic research on sustainability in environmental management accounting (EMA), presenting a synthesis of our findings, a discussion and proposals for future research。Design/methodology/approach Based on the database Scopus, ...。",
+      "topics": [
+        "Sustainability",
+        "Scopus",
+        "Environmental accounting",
+        "Accounting",
+        "Sustainability reporting"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "In-Line Intervention Downhole Camera Providing Visual Confirmation of Primary Intervention",
+      "authors": [
+        "D. D. Clover",
+        "Ø.R. Hagen",
+        "J. K. Jensen"
+      ],
+      "venue": "SPE/ICoTA Well Intervention Conference and Exhibition",
+      "published_date": "2026-03-17",
+      "doi_url": "https://doi.org/10.2118/231388-ms",
+      "openalex_url": "https://openalex.org/W7136763956",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  Traditionally, optical downhole cameras are run as a separate, dedicated intervention service, mounted as the bottom tool in the Bottom Hole Assembly (BHA) for visual logging and analysis. A downhole innovative visual logging in-line camera (DHILC) was developed as an in-line downhole camera specifically designed as an intervention support camera with integrated switch and power and data feedthrough. Mounted above a primary intervention tool to provide visual confirmation for a primary well intervention procedure.\n                  The DHILC has 4 radially mounted cameras that provide an uninterrupted 360 degree panoramic view of the side of the wellbore. Each individual radially mounted camera has a field of view of 110 degrees, so no part of the wellbore side profile is missed. The images can be presented as a four-image matrix or stitched together to give a seamless panorama.\n                  The camera includes a 600V, 6A feed through and an integrated switch which allows intervention tools to be run beneath the camera in the BHA. Primary tools and intervention activities can include but are not limited to milling, cutting, punching, perforating, kick-over tools, brushing, plug setting and as a visual Production Logging Tool (PLT).\n                  The camera's integrated switch and feed through allows full control of the primary intervention tool at surface. By integrating a camera into the tool string above the primary intervention tool, the operator can visually and accurately check and evaluate the point of interest in the wellbore before commencing the operation, such as the correct positioning of a plug or correct depth to cut. During the operation, and once the primary operation has completed, the camera provides visual confirmation that the primary intervention objective has been completed effectively – all in the same intervention run in hole.\n                  Visual confirmation during the intervention has the potential of significantly reducing the time in hole and potentially removing the need for subsequent interventions. This contributes to reduced non-production time, more costly and time efficient interventions and reduced carbon footprint.\n                  Quantitative output can be provided with linear and circular measurement on a user specified plane to provide dimensional analysis. Post-processing the captured data can also provide a data file to create a virtual representation, and the data can also be input into a generic 3D printer to create a 1:1 or scaled output. The visual, dimensional and physical model provides information for informed decisions for remedial action required for the intervention.",
+      "summary_zh": "【公司金融】。论文标题：In-Line Intervention Downhole Camera Providing Visual Confirmation of Primary Intervention。摘要概述：Abstract Traditionally, optical downhole cameras are run as a separate, dedicated intervention service, mounted as the bottom tool in the Bottom Hole Assembly (BHA) for visual logging and analysis。A downhole innovative visual logging in-line camera (DHILC) was developed as an in-line downhole cam...。",
+      "topics": [
+        "Intervention (counseling)",
+        "Computer vision",
+        "Remote control",
+        "Artificial intelligence",
+        "Computer science"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Policy implementation is operational",
+      "authors": [
+        "Steven Were Omamo"
+      ],
+      "venue": "China Agricultural Economic Review",
+      "published_date": "2026-03-17",
+      "doi_url": "https://doi.org/10.1108/caer-11-2025-0629",
+      "openalex_url": "https://openalex.org/W7137076522",
+      "cited_by_count": 0,
+      "abstract": "Purpose\n                    This article argues that policy implementation should be understood not as simple execution of policy intent, but as a fundamentally operational process. It seeks to frame implementation as the central arena of policy action and to identify the core operational forces that determine whether policies move from adoption to sustained delivery.\n                  \n                  \n                    Design/methodology/approach\n                    The article develops a conceptual framework grounded in field-based experience and informed by the concept of development readiness. It identifies four interdependent operational dimensions of implementation – activation cost, optionality, kinetics and negotiation – and applies this framework through comparative analysis of two cases: the successful institutional scaling of the UN World Food Programme’s (WFP) Cash and Voucher Policy adopted in 2008, and a counterfactual case of major implementation gaps in Kenya’s fertilizer subsidy program.\n                  \n                  \n                    Findings\n                    The analysis shows that successful implementation depends on deliberate investment in operational systems, including delivery infrastructure, organizational capability, coordination mechanisms and adaptive capacity. The WFP case illustrates how early activation investments, preserved optionality across delivery modalities, gradual kinetic scaling and continuous negotiation enabled a policy decision to evolve into a durable, systemwide operational capability. In contrast, Kenya’s fertilizer subsidy program demonstrates how high activation costs, weak kinetics, limited negotiation with key private-sector actors and low optionality can stall implementation despite strong political support and clear policy intent.\n                  \n                  \n                    Research limitations/implications\n                    Policy success is determined not at the moment of adoption, but at the point of operational readiness. Viewing implementation through an operational lens helps explain both success and failure and highlights why many well-designed and politically supported policies falter in practice.\n                  \n                  \n                    Practical implications\n                    The article concludes that to close the gap between policy on paper and policy in action, implementation itself must be treated as the core frontier of policy action, requiring sustained investment, learning, negotiation and time.\n                  \n                  \n                    Originality/value\n                    Its originality lies in offering a new four-dimensional operational framework and shifting the analytical focus from policy intent to the systems, capabilities and negotiations required to translate policy into sustained, systemwide action.",
+      "summary_zh": "【金融经济学】。论文标题：Policy implementation is operational。摘要概述：Purpose This article argues that policy implementation should be understood not as simple execution of policy intent, but as a fundamentally operational process。It seeks to frame implementation as the central arena of policy action and to identify the core operational forces that determine whethe...。",
+      "topics": [
+        "Negotiation",
+        "Interdependence",
+        "Subsidy",
+        "Policy analysis",
+        "Process management"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Digital Transformation and Carbon Emission Reduction in Manufacturing Firms: The Dual Roles of Resource Allocation Efficiency and Green Technology Innovation",
+      "authors": [
+        "Sen Zhang"
+      ],
+      "venue": "Economics & Business Management",
+      "published_date": "2026-03-17",
+      "doi_url": "https://doi.org/10.63313/ebm.9164",
+      "openalex_url": "https://openalex.org/W7136156707",
+      "cited_by_count": 0,
+      "abstract": "Against the backdrop of China’s “Digital China” initiative and “dual carbon” goals, this study examines the impact of digital transformation on carbon emission reduction in Chinese A-share listed manufacturing firms from 2011 to 2022. Using a three-way fixed effects model, we find that digital transformation significantly reduces corporate carbon emission intensity, and this result remains robust after endogeneity treatment and a series of robustness checks. The carbon reduction effect is realized through two core mediating paths: improving resource allocation efficiency and promoting green technology innovation. Further analysis shows that carbon disclosure quality positively moderates the above relationship, and the carbon reduction effect of digital transformation is heterogeneous across firm ownership, regional distribution, and pollution attributes. This study provides empirical evidence for the coordinated digital and green transformation of China’s manufacturing sector.",
+      "summary_zh": "【公司金融】。论文标题：Digital Transformation and Carbon Emission Reduction in Manufacturing Firms: The Dual Roles of Resource Allocation Efficiency and Green Technology Innovation。核心发现：digital transformation significantly reduces corporate carbon emission intensity, and this result remains robust after endogeneity treatment and a series of robustness checks。研究内容：examines the impact of digital transformation on carbon emission reduction in Chinese A-share listed manufacturing firms from 2011 to 2022。研究内容：provides empirical evidence for the coordinated digital and green transformation of China’s manufacturing sector。研究方法：固定效应。",
+      "topics": [
+        "Endogeneity",
+        "Dual (grammatical number)",
+        "Robustness (evolution)",
+        "Environmental economics",
+        "Reduction (mathematics)"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "GeMA: Learning Latent Manifold Frontiers for Benchmarking Complex Systems",
+      "authors": [
+        "Jia Ming Li",
+        " Anupriya",
+        "Daniel J. Graham"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-03-17",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2603.16729v1",
+      "cited_by_count": 0,
+      "abstract": "Benchmarking the performance of complex systems such as rail networks, renewable generation assets and national economies is central to transport planning, regulation and macroeconomic analysis. Classical frontier methods, notably Data Envelopment Analysis (DEA) and Stochastic Frontier Analysis (SFA), estimate an efficient frontier in the observed input-output space and define efficiency as distance to this frontier, but rely on restrictive assumptions on the production set and only indirectly address heterogeneity and scale effects.   We propose Geometric Manifold Analysis (GeMA), a latent manifold frontier framework implemented via a productivity-manifold variational autoencoder (ProMan-VAE). Instead of specifying a frontier function in the observed space, GeMA represents the production set as the boundary of a low-dimensional manifold embedded in the joint input-output space. A split-head encoder learns latent variables that capture technological structure and operational inefficiency. Efficiency is evaluated with respect to the learned manifold, endogenous peer groups arise as clusters in latent technology space, a quotient construction supports scale-invariant benchmarking, and a local certification radius, derived from the decoder Jacobian and a Lipschitz bound, quantifies the geometric robustness of efficiency scores.   We validate GeMA on synthetic data with non-convex frontiers, heterogeneous technologies and scale bias, and on four real-world case studies: global urban rail systems (COMET), British rail operators (ORR), national economies (Penn World Table) and a high-frequency wind-farm dataset. Across these domains GeMA behaves comparably to established methods when classical assumptions hold, and provides additional insight in settings with pronounced heterogeneity, non-convexity or size-related bias.",
+      "summary_zh": "【金融经济学】。论文标题：GeMA: Learning Latent Manifold Frontiers for Benchmarking Complex Systems。主要贡献：Geometric Manifold Analysis (GeMA), a latent manifold frontier framework implemented via a productivity-manifold variational autoencoder (ProMan-VAE)。研究方法：随机过程。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Discrimination-insensitive pricing",
+      "authors": [
+        "Kathleen Miao",
+        "Silvana Pesenti"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-03-17",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2603.16720v1",
+      "cited_by_count": 0,
+      "abstract": "Rendering fair prices for financial, credit, and insurance products is of ethical and regulatory interest. In many jurisdictions, discriminatory covariates, such as gender and ethnicity, are prohibited from use in pricing such instruments. In this work, we propose a discrimination-insensitive pricing framework, where we require the pricing principle to be insensitive to the (exogenously determined) protected covariates, that is the sensitivity of the pricing principle to the protected covariate is zero. We formulate and solve the optimisation problem that finds the nearest (in Kullback-Leibler (KL) divergence) \"pricing\" measure to the real world probability, such that under this pricing measure the principle is discrimination-insensitive. We call the solution the discrimination-insensitive measure and provide conditions for its existence and uniqueness. In situations when there are more than one protected covariates, the discrimination-insensitive pricing measure might not exist, and we propose a two-step procedure. First, for each protected covariate separately, we find the measure under which the pricing principle becomes insensitivity to that covariate. Second we reconcile these measures through a constrained barycentre model. We provide a close-form solution to this problem and give conditions for existence and uniqueness of the constrained barycentre pricing measure. As an intermediary result, we prove the representation, existence, and uniqueness of the KL barycentre of general probability measures, which may be of independent interest. Finally, in a numerical illustration, we compare our discrimination-insensitive premia and the constrained barycentre pricing measure with recently proposed fair premia from the actuarial literature.",
+      "summary_zh": "【金融经济学】。论文标题：Discrimination-insensitive pricing。摘要概述：Rendering fair prices for financial, credit, and insurance products is of ethical and regulatory interest。In many jurisdictions, discriminatory covariates, such as gender and ethnicity, are prohibited from use in pricing such instruments。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Machines acquire scientific taste from institutional traces",
+      "authors": [
+        "Ziqin Gong",
+        "Ning Li",
+        "Huaikang Zhou"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-03-17",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2603.16659v1",
+      "cited_by_count": 0,
+      "abstract": "Artificial intelligence matches or exceeds human performance on tasks with verifiable answers, from protein folding to Olympiad mathematics. Yet the capacity that most governs scientific advance is not reasoning but taste: the ability to judge which untested ideas deserve pursuit, exercised daily by editors and funders but never successfully articulated, taught, or automated. Here we show that fine-tuning language models on journal publication decisions recovers evaluative judgment inaccessible to both frontier models and human expertise. Using a held-out benchmark of research pitches in management spanning four quality tiers, we find that eleven frontier models, spanning major proprietary and open architectures, barely exceed chance, averaging 31% accuracy. Panels of journal editors and editorial board members reach 42% by majority vote. Fine-tuned models trained on years of publication records each surpass every frontier model and expert panel, with the best single model achieving 59%. These models exhibit calibrated confidence, reaching 100% accuracy on their highest-confidence predictions, and transfer this evaluative signal to untrained pairwise comparisons and one-sentence summaries. The mechanism generalizes: models trained on economics publication records achieve 70% accuracy. Scientific taste was not missing from AI's reach; it was deposited in the institutional record, waiting to be extracted. These results provide a scalable mechanism to triage the expanding volume of scientific production across disciplines where quality resists formal verification.",
+      "summary_zh": "【金融经济学】。论文标题：Machines acquire scientific taste from institutional traces。核心发现：fine-tuning language models on journal publication decisions recovers evaluative judgment inaccessible to both frontier models and human expertise。核心发现：eleven frontier models, spanning major proprietary and open architectures, barely exceed chance, averaging 31% accuracy。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "From Natural Language to Executable Option Strategies via Large Language Models",
+      "authors": [
+        "Haochen Luo",
+        "Zhengzhao Lai",
+        "Junjie Xu",
+        "Yifan Li",
+        "Tang Pok Hin"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-03-17",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2603.16434v1",
+      "cited_by_count": 0,
+      "abstract": "Large Language Models (LLMs) excel at general code generation, yet translating natural-language trading intents into correct option strategies remains challenging. Real-world option design requires reasoning over massive, multi-dimensional option chain data with strict constraints, which often overwhelms direct generation methods. We introduce the Option Query Language (OQL), a domain-specific intermediate representation that abstracts option markets into high-level primitives under grammatical rules, enabling LLMs to function as reliable semantic parsers rather than free-form programmers. OQL queries are then validated and executed deterministically by an engine to instantiate executable strategies. We also present a new dataset for this task and demonstrate that our neuro-symbolic pipeline significantly improves execution accuracy and logical consistency over direct baselines.",
+      "summary_zh": "【金融经济学】。论文标题：From Natural Language to Executable Option Strategies via Large Language Models。摘要概述：Large Language Models (LLMs) excel at general code generation, yet translating natural-language trading intents into correct option strategies remains challenging。Real-world option design requires reasoning over massive, multi-dimensional option chain data with strict constraints, which often ove...。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Open vs. Sealed: Auction Format Choice for Maximal Extractable Value",
+      "authors": [
+        "Aleksei Adadurov",
+        "Sergey Barseghyan",
+        "Anton Chtepine",
+        "Antero Eloranta",
+        "Andrei Sebyakin"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-03-17",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2603.16333v1",
+      "cited_by_count": 0,
+      "abstract": "We study optimal auction design for Maximum Extractable Value (MEV) auction markets on Ethereum. Using a dataset of 2.2 million transactions across three major orderflow providers, we establish three empirical regularities: extracted values follow a log-normal distribution with extreme right-tail concentration, competition intensity varies substantially across MEV types, and the standard Revenue Equivalence Theorem breaks down due to affiliation among searchers' valuations. We model this affiliation through a Gaussian common factor, deriving equilibrium bidding strategies and expected revenues for five auction formats, first-price sealed-bid, second-price sealed-bid, English, Dutch, and all-pay, across a fine grid of bidder counts $n$ and affiliation parameters $ρ$. Our simulations confirm the Milgrom-Weber linkage principle: English and second-price sealed-bid auctions strictly dominate Dutch and first-price sealed-bid formats for any $ρ> 0$, with a linkage gap of 14-28\\% at moderate affiliation ($ρ=0.5$) and up to 30\\% for small bidder counts. Applied to observed bribe totals, this gap corresponds to \\$10-18 million in foregone revenue over the sample period. We also document a novel non-monotonicity: at large $n$ and high $ρ$, revenue peaks in the interior of the affiliation parameter space and declines thereafter, as near-perfect correlation collapses the order-statistic spread that drives competitive payments.",
+      "summary_zh": "【金融经济学】。论文标题：Open vs. Sealed: Auction Format Choice for Maximal Extractable Value。摘要概述：We study optimal auction design for Maximum Extractable Value (MEV) auction markets on Ethereum。Using a dataset of 2.2 million transactions across three major orderflow providers, we establish three empirical regularities: extracted values follow a log-normal distribution with extreme right-tail ...。研究方法：均衡模型、数值模拟。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Efficient Electric Vehicle Charging Allocation: A Two-Stage Optimization and Participation Analysis",
+      "authors": [
+        "Ruiwu Liu",
+        "Yangjian Zhu"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-03-17",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2603.16202v1",
+      "cited_by_count": 0,
+      "abstract": "Electric vehicles (EVs) require substantially longer refueling times than gasoline vehicles, which can generate severe congestion at charging stations when demand concentrates. We propose a two-stage allocation framework for EV charging networks. In Stage 1, a central coordinator determines station-level admission quotas to control worst-station delay using a queue-informed congestion metric. In Stage 2, given these quotas and feasibility constraints (e.g., reachability), the coordinator solves a utility-maximizing capacitated assignment to allocate EVs across stations. To keep Stage~2 tractable while capturing heterogeneous charging needs, we precompute each EV-station pair's optimal charging amount in closed form under a battery-capacity constraint and then solve a transportation/assignment problem. Finally, we introduce a reduced-form participation model to characterize adoption thresholds under network benefits, spillovers, and coordination costs. Numerical experiments illustrate substantial reductions in worst-case congestion with limited impact on average utility, and highlight scaling patterns as the number of stations increases.",
+      "summary_zh": "【金融经济学】。论文标题：Efficient Electric Vehicle Charging Allocation: A Two-Stage Optimization and Participation Analysis。主要贡献：a two-stage allocation framework for EV charging networks。主要贡献：a reduced-form participation model to characterize adoption thresholds under network benefits, spillovers, and coordination costs。研究方法：实验方法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Short-horizon Duesenberry Equilibrium",
+      "authors": [
+        "Jaime Alberto Londoño"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-03-17",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2603.16108v1",
+      "cited_by_count": 0,
+      "abstract": "We develop a continuous-time general equilibrium framework for economies with a heterogeneous population -- modeled as a continuum -- that repeatedly optimizes over short horizons under relative-income (Duesenberry-type) criteria. The cross-section evolves through a Brownian flow on a type space, transporting an effective impatience field that captures time variation in preferences induced by demographic changes, aging, and broader social shifts.   We establish three main results. First, we prove an optimal consumption--investment theorem for infinite heterogeneous populations in this Brownian-flow setting. Second, we define a \\emph{short-horizon Duesenberry equilibrium} -- a sequential-trading (Radner-type) equilibrium in which agents repeatedly solve vanishing-horizon problems under a relative-income criterion -- and provide a complete characterization and existence proof under mild regularity conditions; notably, market completeness and absence of (state-tame) arbitrage emerge endogenously from the market clearing, rather than being imposed as hypotheses. Third, we derive sharp asset-pricing implications: in equilibrium, the market price of risk is pinned down by the volatility of aggregate \\emph{total wealth} (financial plus human capital), implying that the equity premium is governed by the magnitudes and correlations of wealth and equity volatilities rather than by consumption volatility alone. This shifts the equity premium puzzle from an implausibly low consumption volatility to a question about the volatility of aggregate total wealth. The framework delivers explicit decompositions of the risk-free rate that are consistent with macro-finance stylized facts. All equilibrium quantities are expressed in terms of market primitives.",
+      "summary_zh": "【金融经济学】。论文标题：Short-horizon Duesenberry Equilibrium。摘要概述：We develop a continuous-time general equilibrium framework for economies with a heterogeneous population -- modeled as a continuum -- that repeatedly optimizes over short horizons under relative-income (Duesenberry-type) criteria。The cross-section evolves through a Brownian flow on a type space, ...。研究方法：横截面分析、均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
     }
   ]
 }
