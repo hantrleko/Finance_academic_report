@@ -11,7 +11,14 @@
 - 主题：Poverty, Ordinary least squares, Investment (military), Panel data, Geographical distance
 - 链接：[DOI](https://doi.org/10.1108/caer-06-2025-0329) [链接](https://openalex.org/W7136657474)
 
-**中文摘要（自动生成）**：【收入分配与福利】。论文标题：The proximity-poverty dynamic: high-value agriculture, infrastructure and rural development in Indonesia。摘要概述：该研究围绕「Poverty、Ordinary least squares、Investment (military)」相关议题展开，属于收入分配与福利方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：回归分析、面板数据、调查数据、横截面分析。
+**中文摘要（自动生成）**：【收入分配与福利】**目的**  
+本文质疑了这样一个普遍观点：即靠近高价值农业（HVA）出口集群必然能够减少农村贫困。本研究旨在通过实证分析，探讨印度尼西亚各地高价值农业出口集群与贫困状况之间的关系，为高价值农业驱动的发展模式提供全国范围内的可靠证据。  
+
+**设计/方法/途径**  
+本研究结合了包含地理位置信息的高价值农业出口企业数据集与全国范围内的村级调查数据（Potensi Desa）。采用网络距离分析方法，我们的多阶段实证研究方法包括基于区域分层的普通最小二乘法（OLS）、百分位数回归以及逆概率加权回归，以解释数据中的非线性关系和选择偏差。  
+
+**研究结果**  
+研究结果表明，高价值农业出口集群与贫困状况之间的关系具有异质性。总体而言，村庄距离这些出口集群越近，贫困程度越高，这一现象与“飞地式发展”模式以及企业在经济劣势地区的内生选址特征相符。然而，这种关系因地区和距离阈值的不同而有所差异。基础设施在其中起着复杂的作用：在较为发达的地区和非农业部门中，基础设施对减贫具有直接促进作用；而在以高价值农业为主导的地区，这种作用则不那么明显。值得注意的是，基础设施通过提升市场连通性，缓...。研究方法：回归分析、面板数据、调查数据、横截面分析。
 
 ## 2. A systematic review of research on sustainability in environmental management accounting
 - 来源：openalex
@@ -22,42 +29,22 @@
 - 主题：Sustainability, Scopus, Environmental accounting, Accounting, Sustainability reporting
 - 链接：[DOI](https://doi.org/10.1108/jaar-02-2025-0066) [链接](https://openalex.org/W7136135385)
 
-**中文摘要（自动生成）**：【绿色金融与可持续发展】。论文标题：A systematic review of research on sustainability in environmental management accounting。摘要概述：该研究围绕「Sustainability、Scopus、Environmental accounting」相关议题展开，属于绿色金融与可持续发展方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。
+**中文摘要（自动生成）**：【绿色金融与可持续发展】**目的**  
+本文旨在填补学术研究领域的空白，通过梳理环境管理会计（EMA）中关于可持续性的研究现状，综合分析研究结果，并提出未来研究的方向和建议。  
 
-## 3. In-Line Intervention Downhole Camera Providing Visual Confirmation of Primary Intervention
-- 来源：openalex
-- 作者：D. D. Clover, Ø.R. Hagen, J. K. Jensen
-- 期刊/来源：SPE/ICoTA Well Intervention Conference and Exhibition
-- 发表日期：2026-03-17
-- 引用数：0
-- 主题：Intervention (counseling), Computer vision, Remote control, Artificial intelligence, Computer science
-- 链接：[DOI](https://doi.org/10.2118/231388-ms) [链接](https://openalex.org/W7136763956)
+**设计/方法/途径**  
+基于Scopus数据库，筛选出2025年之前发表的218篇关于EMA与可持续性的英文文献，并进行了文献计量分析。收集了这些文献的相关数据（包括期刊、作者及引用情况），通过文献计量方法对这些数据进行了双重核对与评估。  
 
-**中文摘要（自动生成）**：【公司金融】。论文标题：In-Line Intervention Downhole Camera Providing Visual Confirmation of Primary Intervention。摘要概述：该研究围绕「Intervention (counseling)、Computer vision、Remote control」相关议题展开，属于公司金融方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。
+**研究结果**  
+文献计量分析揭示了自2018年以来EMA与可持续性研究领域的趋势，其中“循环经济”是一个关键概念。研究作者主要关注EMA对环境绩效和财务绩效的影响。《清洁生产与商业战略杂志》（Journal of Cleaner Production and Business Strategy）和《环境》（The Environment）是该领域最具影响力的期刊。  
 
-## 4. Policy implementation is operational
-- 来源：openalex
-- 作者：Steven Were Omamo
-- 期刊/来源：China Agricultural Economic Review
-- 发表日期：2026-03-17
-- 引用数：0
-- 主题：Negotiation, Interdependence, Subsidy, Policy analysis, Process management
-- 链接：[DOI](https://doi.org/10.1108/caer-11-2025-0629) [链接](https://openalex.org/W7137076522)
+**研究局限性与启示**  
+由于样本文献仅来源于Scopus数据库，部分相关研究可能被遗漏；此外，文献计量结果的解读依赖于主观判断，这可能影响分析的准确性。  
 
-**中文摘要（自动生成）**：【金融经济学】。论文标题：Policy implementation is operational。摘要概述：该研究围绕「Negotiation、Interdependence、Subsidy」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。
+**实际意义**  
+环境管理会计在...。
 
-## 5. Digital Transformation and Carbon Emission Reduction in Manufacturing Firms: The Dual Roles of Resource Allocation Efficiency and Green Technology Innovation
-- 来源：openalex
-- 作者：Sen Zhang
-- 期刊/来源：Economics & Business Management
-- 发表日期：2026-03-17
-- 引用数：0
-- 主题：Endogeneity, Dual (grammatical number), Robustness (evolution), Environmental economics, Reduction (mathematics)
-- 链接：[DOI](https://doi.org/10.63313/ebm.9164) [链接](https://openalex.org/W7136156707)
-
-**中文摘要（自动生成）**：【公司金融】。论文标题：Digital Transformation and Carbon Emission Reduction in Manufacturing Firms: The Dual Roles of Resource Allocation Efficiency and Green Technology Innovation。摘要概述：该研究围绕「Endogeneity、Dual (grammatical number)、Robustness (evolution)」相关议题展开，属于公司金融方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：固定效应。
-
-## 6. GeMA: Learning Latent Manifold Frontiers for Benchmarking Complex Systems
+## 3. GeMA: Learning Latent Manifold Frontiers for Benchmarking Complex Systems
 - 来源：arxiv
 - 作者：Jia Ming Li,  Anupriya, Daniel J. Graham
 - 期刊/来源：arXiv
@@ -66,9 +53,9 @@
 - 主题：Economics, Finance
 - 链接：[链接](http://arxiv.org/abs/2603.16729v1)
 
-**中文摘要（自动生成）**：【金融经济学】。论文标题：GeMA: Learning Latent Manifold Frontiers for Benchmarking Complex Systems。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：随机过程。
+**中文摘要（自动生成）**：【金融经济学】对复杂系统（如铁路网络、可再生能源发电设施及国民经济）的性能进行基准评估，是交通规划、监管及宏观经济分析的核心内容。传统的前沿分析方法（尤其是数据包络分析（DEA）和随机前沿分析（SFA）能够在观测到的输入-输出空间中确定一个有效前沿，并将效率定义为与该前沿的距离，但这些方法对生产集存在严格的假设限制，且仅能间接考虑异质性和规模效应。我们提出了几何流形分析（GeMA）这一框架，该框架通过生产率-流形变分自编码器（ProMan-VAE）来实现。与传统的在观测空间中定义前沿函数的方法不同，GeMA将生产集视为嵌入在联合输入-输出空间中的低维流形的边界。该模型中的分裂头编码器能够捕捉技术结构和运营效率低下现象的潜在变量。效率评估是基于学习到的流形进行的；内生的同类群体在潜在技术空间中形成聚类结构，通过特定的数学构造实现尺度不变的基准比较；而基于解码器雅可比矩阵及Lipschitz界限确定的局部认证半径，则用于量化效率得分的几何稳健性。我们在具有非凸前沿、异质技术及规模偏差的合成数据上，以及对四个实际案例（全球城市铁路系统（COMET）、英国铁路运营商（ORR）、国民经济数据（Penn ...。研究方法：随机过程。
 
-## 7. Discrimination-insensitive pricing
+## 4. Discrimination-insensitive pricing
 - 来源：arxiv
 - 作者：Kathleen Miao, Silvana Pesenti
 - 期刊/来源：arXiv
@@ -77,9 +64,100 @@
 - 主题：Economics, Finance
 - 链接：[链接](http://arxiv.org/abs/2603.16720v1)
 
-**中文摘要（自动生成）**：【金融经济学】。论文标题：Discrimination-insensitive pricing。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。
+**中文摘要（自动生成）**：【金融经济学】为金融、信贷和保险产品制定公平的价格既符合道德规范，也符合监管要求。在许多司法管辖区，禁止在定价过程中使用性别和种族等具有歧视性的因素。在这项研究中，我们提出了一种不受歧视影响的定价框架，要求定价原则对那些（由外部因素决定的）受保护变量不敏感，即定价原则对这些受保护变量的敏感度为零。我们构建并解决了优化问题，以找到与现实世界概率最接近的“定价”度量方法（基于Kullback-Leibler（KL）散度），从而确保在这种定价原则下不存在歧视行为。我们将这种度量方法称为“不受歧视的定价度量”，并提出了其存在性和唯一性的条件。当存在多个受保护变量时，这种不受歧视的定价度量可能无法实现，因此我们提出了一种两步程序：首先分别针对每个受保护变量找到使其不受歧视影响的定价度量；其次通过一个受限重心模型来协调这些度量结果。我们为该问题提供了封闭形式的解，并给出了受限重心定价度量存在性和唯一性的条件。作为一个中间结果，我们证明了通用概率测度的KL重心表示法、存在性和唯一性，这本身也可能具有独立的研究价值。最后，通过数值示例，我们将我们提出的不受歧视的定价溢价与精算文献中最近提出的公平溢价进行了比较。。
 
-## 8. Machines acquire scientific taste from institutional traces
+## 5. Intra-Household Bargaining Power and Expenditure on Children’ Education in Brazil
+- 来源：semantic_scholar
+- 作者：Fernando Pozzobon, Marcos Vinício Wink Junior, Henrique da Cruz
+- 期刊/来源：International Journal of Economics and Finance
+- 发表日期：2026-03-12
+- 引用数：0
+- 主题：Economics, Education
+- 链接：[DOI](https://doi.org/10.5539/ijef.v18n4p49) [链接](https://api.semanticscholar.org/CorpusID:286537790)
+
+**中文摘要（自动生成）**：【劳动经济学】本研究探讨了巴西女性议价能力（以其在家庭收入中所占份额衡量）与儿童教育支出之间的关系。通过分析2017-2018年家庭预算调查（POF）的数据，并运用分数Probit模型，研究发现：母亲收入份额的增加与家庭预算中用于教育支出的比例上升之间存在显著关联，这种关联效应最高可达1.15个百分点。这一影响在女儿身上尤为明显，进一步凸显了资源分配中的性别差异。地区和地方层面的差异表明，社会经济及文化因素对这些模式具有显著影响：在较不发达的地区，这种影响更为普遍；而在城市和经济较为发达的地区，女儿能够获得更为定向的福利。这些研究结果有助于理解女性议价能力如何影响家庭财务决策，强调了其在缩小性别差距和制定公平教育政策中的重要作用。。研究方法：调查数据。
+
+## 6. A design-science framework for institutional governance in cryptocurrency-collateralized BNPL in emerging markets
+- 来源：semantic_scholar
+- 作者：Ajaree Thanapongporn, Kavin Asavanant
+- 期刊/来源：Cogent Economics &amp; Finance
+- 发表日期：2026-03-11
+- 引用数：0
+- 主题：Economics, Business, Computer Science
+- 链接：[DOI](https://doi.org/10.1080/23322039.2026.2639201) [链接](https://api.semanticscholar.org/CorpusID:286556992)
+
+**中文摘要（自动生成）**：本文属于「金融科技」领域，主题为：A design-science framework for institutional governance in cryptocurrency-collateralized BNPL in emerging markets。涉及关键词：Economics、Business、Computer Science。原文未提供摘要，建议通过 DOI 链接查看全文以了解具体研究方法与结论。
+
+## 7. Deep Learning Projects Jurisdiction of New and Proposed Clean Water Act Regulation -- by Simon Greenhill, Brant J. Walker, Joseph S. Shapiro
+- 来源：nber
+- 作者：N/A
+- 期刊/来源：NBER Working Papers
+- 发表日期：
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](https://www.nber.org/papers/w34947#fromrss)
+
+**中文摘要（自动生成）**：【绿色金融与可持续发展】预测拟议政策改革的效果具有挑战性，因为对于政府尚未实施的法规，目前尚缺乏相应的结果数据。我们提出了一种事前的深度学习框架，该框架通过将过去法规下的实际结果映射到未来拟议政策的法律标准上（即通过“重新标注”），从而预测这些改革的效果。我们应用这一框架来研究《美国清洁水法》（CWA）管辖范围的变化。我们将基于事前深度学习模型对最高法院Sackett裁决下管辖范围变化的预测结果，与领域专家们广泛使用的预测结果进行了比较。与目前美国环境保护署使用的领先领域专家模型相比，事前深度学习模型在预测准确性上取得了显著提升，其识别管辖区域的准确率提高了65倍。此外，我们还开发了一个基于政策实施后数据的事后深度学习模型，该模型在预测效果上表现最佳。根据Sackett裁决，美国有三分之一的受监管水域被解除管制，主要包括洪泛区和原始鱼类栖息地，涉及70万英里的河流和1700万英亩的湿地。深度学习能够在具有高度不确定性的同时，有效预测具有深远影响的监管改革所带来的后果——而这正是这类预测最为关键和有用的阶段。。研究方法：机器学习、深度学习。
+
+## 8. We've Got You Covered: Firms' Political Stances on Abortion and Labor Market Sorting -- by Pawel Adrjan, Svenja Gudell, Emily E. Nix, Allison Shrivastava, Jason Sockin, Evan P. Starr
+- 来源：nber
+- 作者：N/A
+- 期刊/来源：NBER Working Papers
+- 发表日期：
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](https://www.nber.org/papers/w34948#fromrss)
+
+**中文摘要（自动生成）**：【公司金融】在政治两极分化日益严重的背景下，企业通过公开声明和政策更频繁地参与政治议题的讨论。本文研究了企业在具有争议性议题上的立场如何影响劳动力的分配情况，研究数据来源于最高法院在“多布斯诉杰克逊案”（Dobbs v. Jackson）中推翻联邦堕胎权利裁决后数百家企业的公告。我们采用了一种方法论，根据求职者的偏好来识别每家发布声明企业的劳动力市场竞争对手。虽然发布声明的企业收到了更多求职者的申请，尤其是在民主党占优势的地区以及堕胎被禁止的女性主导行业中，但现有员工的满意度却下降了，尤其是在男性主导的行业中。声誉较低的小型企业受到的影响最为显著。企业在决定是否采取某种社会政治立场时面临着一个复杂的权衡：一方面可以吸引与自身文化理念相符的求职者，另一方面可能会疏远现有的员工。。
+
+## 9. In-Line Intervention Downhole Camera Providing Visual Confirmation of Primary Intervention
+- 来源：openalex
+- 作者：D. D. Clover, Ø.R. Hagen, J. K. Jensen
+- 期刊/来源：SPE/ICoTA Well Intervention Conference and Exhibition
+- 发表日期：2026-03-17
+- 引用数：0
+- 主题：Intervention (counseling), Computer vision, Remote control, Artificial intelligence, Computer science
+- 链接：[DOI](https://doi.org/10.2118/231388-ms) [链接](https://openalex.org/W7136763956)
+
+**中文摘要（自动生成）**：【公司金融】摘要  
+传统上，光学井下相机作为独立的专用工具使用，安装在井下工具组合（Bottom Hole Assembly, BHA）的底部，用于视觉记录和分析。为了支持井下作业，研究人员开发了一种创新的井下内联相机（DHILC），该相机集成了开关、电源和数据传输功能，专为辅助作业设计。这种相机安装在主要作业工具上方，可为作业过程提供视觉确认。  
+
+DHILC配备了4个径向安装的摄像头，能够实现井筒侧面的360度全景视野。每个摄像头的视场角为110度，确保不会遗漏井筒侧面的任何部分。拍摄到的图像可以以四幅图像矩阵的形式显示，或通过拼接形成无缝的全景图。  
+
+该相机配备了600V、6A的电源传输系统及集成开关，允许其他作业工具在相机下方进行操作。主要作业工具包括但不限于铣削、切割、打孔、冲击工具、刷洗工具以及用于生产测井的视觉工具（Production Logging Tool, PLT）。  
+
+通过将相机集成到主要作业工具上方的工具串中，操作人员可以在地面直观准确地检查井筒内的目标位置（如封隔器的正确放置或切割深度）。作业过程中，一旦主要作业完成，相机能提供视觉确认，证明作业目标已...。
+
+## 10. Policy implementation is operational
+- 来源：openalex
+- 作者：Steven Were Omamo
+- 期刊/来源：China Agricultural Economic Review
+- 发表日期：2026-03-17
+- 引用数：0
+- 主题：Negotiation, Interdependence, Subsidy, Policy analysis, Process management
+- 链接：[DOI](https://doi.org/10.1108/caer-11-2025-0629) [链接](https://openalex.org/W7137076522)
+
+**中文摘要（自动生成）**：【金融经济学】**目的**  
+本文认为，政策实施不应仅仅被视为对政策意图的简单执行，而应被视为一个本质上的操作性过程。本文旨在将政策实施视为政策行动的核心领域，并识别出决定政策能否从通过阶段顺利过渡到持续执行阶段的关键操作性因素。  
+
+**设计/方法/途径**  
+本文基于实地经验，并借鉴了“发展准备度”（development readiness）的概念，构建了一个概念框架。该框架涵盖了政策实施的四个相互依存的维度：激活成本（activation cost）、选择性（optionality）、动态变化过程（kinetics）以及协商机制（negotiation）。通过对比分析两个案例来验证这一框架的有效性：一是联合国世界粮食计划署（WFP）于2008年成功推广的“现金与代金券政策”（Cash and Voucher Policy）的制度化实施过程；二是肯尼亚化肥补贴计划中存在的严重实施障碍。  
+
+**研究结果**  
+分析表明，成功的政策实施依赖于对操作系统（包括交付基础设施、组织能力、协调机制及适应能力）的持续投入。WFP的案例表明，早期的激活投资、在多种交付方式中保留的选择性、渐进...。
+
+## 11. Digital Transformation and Carbon Emission Reduction in Manufacturing Firms: The Dual Roles of Resource Allocation Efficiency and Green Technology Innovation
+- 来源：openalex
+- 作者：Sen Zhang
+- 期刊/来源：Economics & Business Management
+- 发表日期：2026-03-17
+- 引用数：0
+- 主题：Endogeneity, Dual (grammatical number), Robustness (evolution), Environmental economics, Reduction (mathematics)
+- 链接：[DOI](https://doi.org/10.63313/ebm.9164) [链接](https://openalex.org/W7136156707)
+
+**中文摘要（自动生成）**：【公司金融】在中国“数字中国”战略和“双碳”目标的背景下，本研究探讨了2011年至2022年间数字化转型对中国A股上市制造企业碳排放减少的影响。通过采用三重固定效应模型，我们发现数字化转型显著降低了企业的碳排放强度，且这一结果在经过内生性处理和一系列稳健性检验后依然成立。碳排放减少效应主要通过两条核心中介路径实现：提高资源配置效率与促进绿色技术创新。进一步分析表明，碳信息披露质量对这一关系具有正向调节作用，并且数字化转型的减排效应在不同企业所有权类型、区域分布及污染特征之间存在差异。本研究为中国制造业的数字化与绿色转型提供了实证支持。。研究方法：固定效应。
+
+## 12. Machines acquire scientific taste from institutional traces
 - 来源：arxiv
 - 作者：Ziqin Gong, Ning Li, Huaikang Zhou
 - 期刊/来源：arXiv
@@ -88,48 +166,4 @@
 - 主题：Economics, Finance
 - 链接：[链接](http://arxiv.org/abs/2603.16659v1)
 
-**中文摘要（自动生成）**：【金融经济学】。论文标题：Machines acquire scientific taste from institutional traces。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。
-
-## 9. From Natural Language to Executable Option Strategies via Large Language Models
-- 来源：arxiv
-- 作者：Haochen Luo, Zhengzhao Lai, Junjie Xu, Yifan Li, Tang Pok Hin
-- 期刊/来源：arXiv
-- 发表日期：2026-03-17
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2603.16434v1)
-
-**中文摘要（自动生成）**：【金融经济学】。论文标题：From Natural Language to Executable Option Strategies via Large Language Models。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。
-
-## 10. Open vs. Sealed: Auction Format Choice for Maximal Extractable Value
-- 来源：arxiv
-- 作者：Aleksei Adadurov, Sergey Barseghyan, Anton Chtepine, Antero Eloranta, Andrei Sebyakin
-- 期刊/来源：arXiv
-- 发表日期：2026-03-17
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2603.16333v1)
-
-**中文摘要（自动生成）**：【金融经济学】。论文标题：Open vs. Sealed: Auction Format Choice for Maximal Extractable Value。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：均衡模型、数值模拟。
-
-## 11. Efficient Electric Vehicle Charging Allocation: A Two-Stage Optimization and Participation Analysis
-- 来源：arxiv
-- 作者：Ruiwu Liu, Yangjian Zhu
-- 期刊/来源：arXiv
-- 发表日期：2026-03-17
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2603.16202v1)
-
-**中文摘要（自动生成）**：【金融经济学】。论文标题：Efficient Electric Vehicle Charging Allocation: A Two-Stage Optimization and Participation Analysis。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：实验方法。
-
-## 12. Short-horizon Duesenberry Equilibrium
-- 来源：arxiv
-- 作者：Jaime Alberto Londoño
-- 期刊/来源：arXiv
-- 发表日期：2026-03-17
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2603.16108v1)
-
-**中文摘要（自动生成）**：【金融经济学】。论文标题：Short-horizon Duesenberry Equilibrium。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：横截面分析、均衡模型。
+**中文摘要（自动生成）**：【金融经济学】人工智能在需要可验证答案的任务上，无论是蛋白质折叠还是奥林匹克数学竞赛，其表现都能与人类相媲美甚至超越人类。然而，真正推动科学进步的关键能力并非推理能力，而是“判断力”——即识别哪些未经验证的想法值得深入研究的能力。这种能力每天都在编辑和资助者的工作中得到运用，但却从未被系统地阐述、教授或实现自动化。我们发现，通过对语言模型进行针对期刊发表决策的微调，可以恢复那些前沿模型和人类专家都无法具备的评估能力。通过使用一个涵盖四个质量层次的管理研究提案评估标准，我们发现：11种前沿模型（包括主流的专有技术和开源架构）的准确率仅略高于随机猜测水平，平均为31%；而由期刊编辑和编委会成员组成的评估小组通过多数投票得出的准确率为42%。经过多年发表记录训练的微调模型则显著优于所有前沿模型和专家小组，其中表现最佳的模型准确率达到了59%。这些模型能够表现出准确的信心判断，在最自信的预测上准确率达到100%，并且能够将这种评估能力应用到未经训练的对比分析和简短总结中。这种机制具有普遍性：经过经济学领域发表记录训练的模型也能达到70%的准确率。科学判断力并非人工智能所缺乏的，而是存在于机构的数据记录...。
