@@ -284,10 +284,11 @@ def generate_digest_overview(papers: list[Paper], cfg: LLMConfig) -> str:
         return ""
 
     paper_lines = [f"- {p.title}：{p.summary_zh[:100]}" for p in papers]
+    papers_text = "\n".join(paper_lines)
     prompt = (
         "你是金融经济学研究综述专家。以下是今日筛选出的学术论文列表及其摘要。\n"
         "请用3-5句话生成一段中文综述，概括今日文献的主要主题和研究趋势，语言精炼、专业。\n\n"
-        f"{'\n'.join(paper_lines)}"
+        f"{papers_text}"
     )
     print("[OVERVIEW] Generating daily overview...")
     result = _call_llm([{"role": "user", "content": prompt}], cfg, temperature=0.5, max_tokens=512)
