@@ -1,526 +1,130 @@
+"""Finance digest command-line entrypoint."""
 from __future__ import annotations
 
-import dataclasses
-import datetime as dt
-import html
+import argparse
 import json
-import os
-import re
-import xml.etree.ElementTree as ET
 from pathlib import Path
-from typing import Any
-from urllib.error import URLError
-from urllib.parse import quote_plus, urlencode
-from urllib.request import Request, urlopen
 
-OPENALEX_URL = "https://api.openalex.org/works"
-ARXIV_API_URL = "https://export.arxiv.org/api/query"
-
-
-@dataclasses.dataclass
-class Paper:
-    title: str
-    authors: list[str]
-    venue: str
-    published_date: str
-    doi_url: str
-    openalex_url: str
-    cited_by_count: int
-    abstract: str
-    summary_zh: str
-    topics: list[str]
-    source: str = "openalex"
-
-
-@dataclasses.dataclass
-class DigestConfig:
-    max_papers: int = 12
-    min_citations: int = 0
-    output_dir: Path = Path("output")
-    keep_latest_when_empty: bool = True
-    topic_whitelist: set[str] = dataclasses.field(default_factory=lambda: set(FINANCE_KEYWORDS))
-    topic_blacklist: set[str] = dataclasses.field(default_factory=lambda: set(SPAM_TERMS))
-    min_quality_score: int = 2
-
-
-@dataclasses.dataclass
-class LLMConfig:
-    api_base: str = ""
-    api_key: str = ""
-    model: str = ""
-    timeout_seconds: int = 30
-
-    @property
-    def enabled(self) -> bool:
-        return bool(self.api_base and self.api_key and self.model)
-
-
-FINANCE_KEYWORDS = {
-    "finance",
-    "financial",
-    "asset",
-    "bank",
-    "banking",
-    "stock",
-    "bond",
-    "portfolio",
-    "investment",
-    "pricing",
-    "risk",
-    "credit",
-    "macro",
-    "economics",
-    "economic",
-    "econometric",
-    "market",
-    "monetary",
-    "inflation",
-    "fiscal",
-    "trade",
-    "household",
-    "firm",
-    "labor",
-    "employment",
-    "inequality",
-}
-
-SPAM_TERMS = {
-    "free dice",
-    "monopoly go",
-    "video",
-    "enlace",
-    "miss pacman",
-    "telegram",
-    "casino",
-    "betting",
-    "gift code",
-    "daily rewards",
-}
-
-
-def _normalize_title(text: str) -> str:
-    return re.sub(r"\W+", "", text).lower()
-
-
-def _quality_score(paper: Paper, topic_whitelist: set[str]) -> int:
-    text = " ".join([paper.title, paper.abstract, paper.venue, " ".join(paper.topics)]).lower()
-    title_text = paper.title.lower()
-    topic_text = " ".join(paper.topics).lower()
-    score = 0
-    for keyword in topic_whitelist:
-        if keyword in title_text:
-            score += 3
-        elif keyword in topic_text:
-            score += 2
-        elif keyword in text:
-            score += 1
-    return score
-
-
-def _is_relevant_openalex_paper(paper: Paper, topic_whitelist: set[str], topic_blacklist: set[str], min_quality_score: int) -> bool:
-    text = " ".join([paper.title, paper.abstract, paper.venue, " ".join(paper.topics)]).lower()
-    if any(term in text for term in topic_blacklist):
-        return False
-    return _quality_score(paper, topic_whitelist) >= min_quality_score
-
-
-def _dedupe_and_filter(
-    papers: list[Paper], topic_whitelist: set[str], topic_blacklist: set[str], min_quality_score: int
-) -> list[Paper]:
-    unique: list[Paper] = []
-    seen_titles: set[str] = set()
-
-    for paper in papers:
-        normalized = _normalize_title(paper.title)
-        if normalized and normalized in seen_titles:
-            continue
-        if paper.source == "openalex" and not _is_relevant_openalex_paper(
-            paper,
-            topic_whitelist=topic_whitelist,
-            topic_blacklist=topic_blacklist,
-            min_quality_score=min_quality_score,
-        ):
-            continue
-        if normalized:
-            seen_titles.add(normalized)
-        unique.append(paper)
-    return unique
-
-
-def _extract_abstract(indexed_abstract: dict[str, Any] | None) -> str:
-    if not indexed_abstract:
-        return ""
-    inverted = indexed_abstract.get("InvertedIndex", {})
-    if not inverted:
-        return ""
-
-    max_pos = -1
-    words: list[str | None] = []
-    for word, positions in inverted.items():
-        for pos in positions:
-            if pos > max_pos:
-                max_pos = pos
-                words.extend([None] * (max_pos - len(words) + 1))
-            words[pos] = word
-    return " ".join([w for w in words if w])
-
-
-def _topic_names(concepts: list[dict[str, Any]]) -> list[str]:
-    return [c.get("display_name") for c in concepts[:5] if c.get("display_name")]
-
-
-def _simple_zh_summary(title: str, abstract: str, topics: list[str]) -> str:
-    topic_text = "、".join(topics[:3]) if topics else "金融经济学"
-    clean_abs = re.sub(r"\s+", " ", abstract.strip())
-    if not clean_abs:
-        return f"研究主题：{title}（{topic_text}）。当前来源未提供摘要，建议优先查看原文以确认研究设计与关键结论。"
-
-    sentences = [s.strip(" .;") for s in re.split(r"(?<=[.!?])\s+", clean_abs) if s.strip()]
-    core_sentence = sentences[0] if sentences else clean_abs
-    method_signals = {
-        "regression": "回归分析",
-        "difference-in-differences": "双重差分",
-        "did": "双重差分",
-        "panel": "面板数据",
-        "event study": "事件研究",
-        "structural": "结构模型",
-        "survey": "调查数据",
-        "experiment": "实验方法",
-        "machine learning": "机器学习",
-    }
-    abstract_lower = clean_abs.lower()
-    methods = [zh for key, zh in method_signals.items() if key in abstract_lower]
-    method_text = "、".join(dict.fromkeys(methods)) if methods else "文中摘要未明确披露具体识别策略"
-
-    if len(core_sentence) > 180:
-        core_sentence = core_sentence[:177] + "..."
-
-    return (
-        f"研究主题：{title}（{topic_text}）。"
-        f"内容概述：{core_sentence}。"
-        f"方法线索：{method_text}；应用上可用于相关政策评估、市场监测或资产定价分析。"
-    )
-
-
-def _llm_zh_summary(title: str, abstract: str, topics: list[str], cfg: LLMConfig) -> str:
-    if not cfg.enabled:
-        return _simple_zh_summary(title, abstract, topics)
-
-    payload = {
-        "model": cfg.model,
-        "messages": [
-            {
-                "role": "system",
-                "content": "你是金融经济学研究助手。请用中文输出2-3句摘要，包含研究主题、方法视角和潜在应用价值，不要编造。",
-            },
-            {
-                "role": "user",
-                "content": json.dumps({"title": title, "topics": topics, "abstract": abstract[:3000]}, ensure_ascii=False),
-            },
-        ],
-        "temperature": 0.2,
-    }
-    req = Request(
-        url=f"{cfg.api_base.rstrip('/')}/chat/completions",
-        data=json.dumps(payload).encode("utf-8"),
-        method="POST",
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {cfg.api_key}",
-        },
-    )
-    try:
-        with urlopen(req, timeout=cfg.timeout_seconds) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-        content = data.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
-        return content or _simple_zh_summary(title, abstract, topics)
-    except Exception:
-        return _simple_zh_summary(title, abstract, topics)
-
-
-def _render_markdown(date: str, papers: list[Paper], note: str = "") -> str:
-    lines = [f"# 金融经济学每日文献速递（{date}）", "", f"共筛选到 **{len(papers)}** 篇文献。", ""]
-    if note:
-        lines.extend([f"> {note}", ""])
-
-    for idx, p in enumerate(papers, start=1):
-        links: list[str] = []
-        if p.doi_url:
-            links.append(f"[DOI]({p.doi_url})")
-        if p.openalex_url:
-            links.append(f"[链接]({p.openalex_url})")
-        lines.extend(
-            [
-                f"## {idx}. {p.title}",
-                f"- 来源：{p.source}",
-                f"- 作者：{', '.join(p.authors) if p.authors else 'N/A'}",
-                f"- 期刊/来源：{p.venue}",
-                f"- 发表日期：{p.published_date}",
-                f"- 引用数：{p.cited_by_count}",
-                f"- 主题：{', '.join(p.topics) if p.topics else 'N/A'}",
-                f"- 链接：{' '.join(links) if links else 'N/A'}",
-                "",
-                f"**中文摘要（自动生成）**：{p.summary_zh}",
-                "",
-            ]
-        )
-    return "\n".join(lines)
-
-
-def _render_html(date: str, papers: list[Paper], note: str = "") -> str:
-    cards: list[str] = []
-    for idx, p in enumerate(papers, start=1):
-        doi_link = f'<a href="{html.escape(p.doi_url)}" target="_blank" rel="noopener noreferrer">DOI</a>' if p.doi_url else ""
-        ext_link = f'<a href="{html.escape(p.openalex_url)}" target="_blank" rel="noopener noreferrer">链接</a>' if p.openalex_url else ""
-        sep = " | " if doi_link and ext_link else ""
-        cards.append(
-            f"""
-  <article class=\"card\">
-    <h2>{idx}. {html.escape(p.title)}</h2>
-    <p class=\"meta\">来源：{html.escape(p.source)}｜作者：{html.escape(', '.join(p.authors) if p.authors else 'N/A')}</p>
-    <p class=\"meta\">期刊/来源：{html.escape(p.venue)}｜发表：{html.escape(p.published_date)}｜引用数：{p.cited_by_count}</p>
-    <p class=\"meta\">主题：{html.escape(', '.join(p.topics) if p.topics else 'N/A')}</p>
-    <p>{doi_link}{sep}{ext_link}</p>
-    <p class=\"summary\"><strong>中文摘要（自动生成）:</strong> {html.escape(p.summary_zh)}</p>
-  </article>
-            """.strip()
-        )
-
-    note_html = f'<p class="note">{html.escape(note)}</p>' if note else ""
-    cards_html = "\n".join(cards)
-    return f"""<!doctype html>
-<html lang=\"zh-CN\">
-<head>
-  <meta charset=\"utf-8\" />
-  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
-  <title>金融经济学每日文献速递 - {html.escape(date)}</title>
-  <style>
-    body {{ font-family: Arial, sans-serif; margin: 2rem auto; max-width: 900px; line-height: 1.6; color: #111; padding: 0 1rem; }}
-    .card {{ border: 1px solid #e6e6e6; border-radius: 10px; padding: 1rem; margin-bottom: 1rem; }}
-    .meta {{ color: #666; font-size: 0.95rem; }}
-    .summary {{ background: #f8f8f8; padding: 0.8rem; border-radius: 8px; }}
-    .note {{ color: #a15d00; background: #fff7e6; border: 1px solid #ffdf99; padding: 0.75rem; border-radius: 8px; }}
-  </style>
-</head>
-<body>
-  <h1>金融经济学每日文献速递</h1>
-  <p class=\"meta\">日期：{html.escape(date)}｜篇数：{len(papers)}</p>
-  {note_html}
-  {cards_html}
-</body>
-</html>
-"""
-
-
-def fetch_openalex_papers(date_from: dt.date, date_to: dt.date, per_page: int = 50) -> list[Paper]:
-    filters = [
-        f"from_publication_date:{date_from.isoformat()}",
-        f"to_publication_date:{date_to.isoformat()}",
-        "concepts.id:C162324750",
-    ]
-    params = urlencode({"filter": ",".join(filters), "sort": "cited_by_count:desc", "per-page": per_page})
-
-    try:
-        with urlopen(f"{OPENALEX_URL}?{params}", timeout=30) as response:
-            data = json.loads(response.read().decode("utf-8")).get("results", [])
-    except URLError:
-        return []
-
-    papers: list[Paper] = []
-    for item in data:
-        doi = item.get("doi") or ""
-        primary_location = item.get("primary_location") or {}
-        if not isinstance(primary_location, dict):
-            primary_location = {}
-        source = primary_location.get("source") or {}
-        if not isinstance(source, dict):
-            source = {}
-
-        authorships = item.get("authorships") or []
-        if not isinstance(authorships, list):
-            authorships = []
-
-        papers.append(
-            Paper(
-                title=item.get("title") or "Untitled",
-                authors=[
-                    a.get("author", {}).get("display_name", "")
-                    for a in authorships[:5]
-                    if isinstance(a, dict) and a.get("author", {}).get("display_name")
-                ],
-                venue=source.get("display_name") or "Unknown",
-                published_date=item.get("publication_date") or "",
-                doi_url=doi if doi.startswith("http") else (f"https://doi.org/{doi}" if doi else ""),
-                openalex_url=item.get("id", ""),
-                cited_by_count=item.get("cited_by_count", 0),
-                abstract=_extract_abstract(item.get("abstract_inverted_index")),
-                summary_zh="",
-                topics=_topic_names(item.get("concepts", [])),
-                source="openalex",
-            )
-        )
-    return papers
-
-
-def fetch_arxiv_finance_econ_papers(date_from: dt.date, max_results: int = 30) -> list[Paper]:
-    query = quote_plus("cat:q-fin.* OR cat:econ.*")
-    params = f"search_query={query}&start=0&max_results={max_results}&sortBy=submittedDate&sortOrder=descending"
-    try:
-        with urlopen(f"{ARXIV_API_URL}?{params}", timeout=30) as response:
-            xml_text = response.read().decode("utf-8")
-    except URLError:
-        return []
-
-    root = ET.fromstring(xml_text)
-    ns = {"atom": "http://www.w3.org/2005/Atom"}
-
-    papers: list[Paper] = []
-    for entry in root.findall("atom:entry", ns):
-        published = (entry.findtext("atom:published", default="", namespaces=ns) or "")[:10]
-        if published != date_from.isoformat():
-            continue
-        title = (entry.findtext("atom:title", default="", namespaces=ns) or "").strip().replace("\n", " ")
-        abstract = (entry.findtext("atom:summary", default="", namespaces=ns) or "").strip().replace("\n", " ")
-        authors = [
-            author.findtext("atom:name", default="", namespaces=ns) or ""
-            for author in entry.findall("atom:author", ns)
-        ]
-        papers.append(
-            Paper(
-                title=title or "Untitled",
-                authors=[a for a in authors if a][:5],
-                venue="arXiv",
-                published_date=published,
-                doi_url="",
-                openalex_url=entry.findtext("atom:id", default="", namespaces=ns) or "",
-                cited_by_count=0,
-                abstract=abstract,
-                summary_zh="",
-                topics=["Economics", "Finance"],
-                source="arxiv",
-            )
-        )
-    return papers
-
-
-def _apply_summaries(papers: list[Paper], llm_cfg: LLMConfig) -> list[Paper]:
-    for p in papers:
-        p.summary_zh = _llm_zh_summary(p.title, p.abstract, p.topics, llm_cfg)
-    return papers
-
-
-def _load_latest_count(latest_json_path: Path) -> int:
-    if not latest_json_path.exists():
-        return 0
-    try:
-        return int(json.loads(latest_json_path.read_text(encoding="utf-8")).get("count", 0))
-    except Exception:
-        return 0
-
-
-def build_digest(config: DigestConfig, llm_cfg: LLMConfig, run_date: dt.date | None = None) -> dict[str, Any]:
-    run_date = run_date or dt.date.today()
-
-    primary = fetch_openalex_papers(run_date, run_date)
-    fallback = fetch_arxiv_finance_econ_papers(run_date) if not primary else []
-    source_used = "openalex" if primary else ("arxiv-fallback" if fallback else "none")
-
-    papers = (primary or fallback)
-    papers = [p for p in papers if p.source == "arxiv" or p.cited_by_count >= config.min_citations]
-    papers = _dedupe_and_filter(
-        papers,
-        topic_whitelist=config.topic_whitelist,
-        topic_blacklist=config.topic_blacklist,
-        min_quality_score=config.min_quality_score,
-    )[: config.max_papers]
-    papers = _apply_summaries(papers, llm_cfg)
-
-    config.output_dir.mkdir(parents=True, exist_ok=True)
-    daily_dir = config.output_dir / run_date.isoformat()
-    daily_dir.mkdir(parents=True, exist_ok=True)
-
-    latest_json_path = config.output_dir / "latest" / "digest.json"
-    latest_count = _load_latest_count(latest_json_path)
-    skip_latest_update = config.keep_latest_when_empty and len(papers) == 0 and latest_count > 0
-    note = "今日抓取结果为空，已保留上一期 latest 内容，避免覆盖有效日报。" if skip_latest_update else ""
-
-    metadata = {
-        "date": run_date.isoformat(),
-        "count": len(papers),
-        "source_used": source_used,
-        "latest_updated": not skip_latest_update,
-        "papers": [dataclasses.asdict(p) for p in papers],
-    }
-
-    json_path = daily_dir / "digest.json"
-    md_path = daily_dir / "digest.md"
-    html_path = daily_dir / "index.html"
-
-    json_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
-    md_path.write_text(_render_markdown(run_date.isoformat(), papers, note=note), encoding="utf-8")
-    html_path.write_text(_render_html(run_date.isoformat(), papers, note=note), encoding="utf-8")
-
-    latest_updated = False
-    latest_dir = config.output_dir / "latest"
-    latest_dir.mkdir(parents=True, exist_ok=True)
-    if not skip_latest_update:
-        (latest_dir / "digest.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
-        (latest_dir / "digest.md").write_text(_render_markdown(run_date.isoformat(), papers), encoding="utf-8")
-        (latest_dir / "index.html").write_text(_render_html(run_date.isoformat(), papers), encoding="utf-8")
-        latest_updated = True
-
-    if len(papers) == 0:
-        alerts_dir = config.output_dir / "alerts"
-        alerts_dir.mkdir(parents=True, exist_ok=True)
-        alert = {
-            "date": run_date.isoformat(),
-            "level": "warning",
-            "message": "No papers fetched for this run. latest preserved if previous digest exists.",
-            "source_used": source_used,
-        }
-        (alerts_dir / f"{run_date.isoformat()}.json").write_text(json.dumps(alert, ensure_ascii=False, indent=2), encoding="utf-8")
-
-    return {
-        "json": json_path,
-        "markdown": md_path,
-        "html": html_path,
-        "count": len(papers),
-        "latest_updated": latest_updated,
-        "source_used": source_used,
-    }
-
-
-def main() -> None:
-    whitelist = {
-        x.strip().lower() for x in os.getenv("DIGEST_TOPIC_WHITELIST", "").split(",") if x.strip()
-    } or set(FINANCE_KEYWORDS)
-    blacklist = {
-        x.strip().lower() for x in os.getenv("DIGEST_TOPIC_BLACKLIST", "").split(",") if x.strip()
-    } or set(SPAM_TERMS)
-
-    config = DigestConfig(
-        max_papers=int(os.getenv("DIGEST_MAX_PAPERS", "12")),
-        min_citations=int(os.getenv("DIGEST_MIN_CITATIONS", "0")),
-        output_dir=Path(os.getenv("DIGEST_OUTPUT_DIR", "output")),
-        keep_latest_when_empty=os.getenv("DIGEST_KEEP_LATEST_WHEN_EMPTY", "1") == "1",
-        topic_whitelist=whitelist,
-        topic_blacklist=blacklist,
-        min_quality_score=int(os.getenv("DIGEST_MIN_QUALITY_SCORE", "2")),
-    )
-    llm_cfg = LLMConfig(
-        api_base=os.getenv("LLM_API_BASE", ""),
-        api_key=os.getenv("LLM_API_KEY", ""),
-        model=os.getenv("LLM_MODEL", ""),
-        timeout_seconds=int(os.getenv("LLM_TIMEOUT_SECONDS", "30")),
-    )
-
-    result = build_digest(config, llm_cfg=llm_cfg)
+from .config import (
+    load_analysis_llm_config_from_env,
+    load_digest_config_from_env,
+    load_translate_llm_config_from_env,
+)
+from .pipeline import build_digest
+from .sources import extract_abstract as _extract_abstract
+from .subscribers import (
+    add_subscriber,
+    load_smtp_config_from_env,
+    load_subscribers,
+    remove_subscriber,
+    send_digest_email,
+)
+from .summarization import simple_zh_summary as _simple_zh_summary
+
+DEFAULT_SUBSCRIBERS_FILE = Path("data/subscribers.json")
+
+
+def run_digest() -> int:
+    config = load_digest_config_from_env()
+    translate_cfg = load_translate_llm_config_from_env()
+    analysis_cfg = load_analysis_llm_config_from_env()
+
+    result = build_digest(config, translate_cfg=translate_cfg, analysis_cfg=analysis_cfg)
     if result["count"] == 0:
         print("::warning::No papers generated for today.")
     print(
         f"Generated digest: {result['markdown']} | count={result['count']} | "
         f"source={result['source_used']} | latest_updated={result['latest_updated']}"
     )
+    return 0
+
+
+def cmd_subscribe(email: str | None, subscribers_file: Path) -> int:
+    input_email = email or input("请输入要订阅的邮箱: ").strip()
+    ok, message = add_subscriber(subscribers_file, input_email)
+    print(message)
+    return 0 if ok else 1
+
+
+def cmd_unsubscribe(email: str, subscribers_file: Path) -> int:
+    ok, message = remove_subscriber(subscribers_file, email)
+    print(message)
+    return 0 if ok else 1
+
+
+def cmd_list_subscribers(subscribers_file: Path) -> int:
+    subscribers = load_subscribers(subscribers_file)
+    print(json.dumps(subscribers, ensure_ascii=False, indent=2))
+    return 0
+
+
+def cmd_send_emails(subscribers_file: Path, fallback_to: str) -> int:
+    subscribers = load_subscribers(subscribers_file)
+    if fallback_to.strip():
+        for addr in [x.strip().lower() for x in fallback_to.split(",") if x.strip()]:
+            if addr not in subscribers:
+                subscribers.append(addr)
+
+    if not subscribers:
+        print("No subscribers found, skip sending email.")
+        return 0
+
+    latest_md = Path("output/latest/digest.md")
+    latest_html = Path("output/latest/index.html")
+    markdown_body = latest_md.read_text(encoding="utf-8") if latest_md.exists() else "Digest markdown not found."
+    html_body = latest_html.read_text(encoding="utf-8") if latest_html.exists() else ""
+
+    smtp_cfg = load_smtp_config_from_env()
+    if not smtp_cfg.enabled:
+        print("SMTP not fully configured, skip sending email.")
+        return 0
+    sent = send_digest_email(
+        recipients=sorted(set(subscribers)),
+        smtp_cfg=smtp_cfg,
+        subject="Finance & Economics Daily Digest",
+        markdown_body=markdown_body,
+        html_body=html_body,
+    )
+    print(f"Sent digest email to {sent} subscribers")
+    return 0
+
+
+def make_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="Finance & Economics daily digest tool")
+    subparsers = parser.add_subparsers(dest="command")
+
+    subscribe = subparsers.add_parser("subscribe", help="Add an email subscriber")
+    subscribe.add_argument("--email", type=str, default="", help="Subscriber email")
+    subscribe.add_argument("--subscribers-file", type=Path, default=DEFAULT_SUBSCRIBERS_FILE)
+
+    unsubscribe = subparsers.add_parser("unsubscribe", help="Remove an email subscriber")
+    unsubscribe.add_argument("--email", required=True)
+    unsubscribe.add_argument("--subscribers-file", type=Path, default=DEFAULT_SUBSCRIBERS_FILE)
+
+    list_subs = subparsers.add_parser("list-subscribers", help="List all subscribers")
+    list_subs.add_argument("--subscribers-file", type=Path, default=DEFAULT_SUBSCRIBERS_FILE)
+
+    send_emails = subparsers.add_parser("send-emails", help="Send latest digest email to all subscribers")
+    send_emails.add_argument("--subscribers-file", type=Path, default=DEFAULT_SUBSCRIBERS_FILE)
+    send_emails.add_argument("--fallback-to", type=str, default="")
+
+    return parser
+
+
+def main() -> None:
+    parser = make_parser()
+    args = parser.parse_args()
+
+    if args.command == "subscribe":
+        raise SystemExit(cmd_subscribe(email=args.email, subscribers_file=args.subscribers_file))
+    if args.command == "unsubscribe":
+        raise SystemExit(cmd_unsubscribe(email=args.email, subscribers_file=args.subscribers_file))
+    if args.command == "list-subscribers":
+        raise SystemExit(cmd_list_subscribers(subscribers_file=args.subscribers_file))
+    if args.command == "send-emails":
+        raise SystemExit(cmd_send_emails(subscribers_file=args.subscribers_file, fallback_to=args.fallback_to))
+
+    raise SystemExit(run_digest())
 
 
 if __name__ == "__main__":

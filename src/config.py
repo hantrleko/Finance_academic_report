@@ -1,0 +1,44 @@
+"""Configuration loader for digest pipeline."""
+from __future__ import annotations
+
+import os
+from pathlib import Path
+
+from .models import DigestConfig, FINANCE_KEYWORDS, LLMConfig, SPAM_TERMS
+
+
+def _csv_set(value: str, fallback: set[str]) -> set[str]:
+    parsed = {x.strip().lower() for x in value.split(",") if x.strip()}
+    return parsed or set(fallback)
+
+
+def load_digest_config_from_env() -> DigestConfig:
+    return DigestConfig(
+        max_papers=int(os.getenv("DIGEST_MAX_PAPERS", "12")),
+        min_citations=int(os.getenv("DIGEST_MIN_CITATIONS", "0")),
+        output_dir=Path(os.getenv("DIGEST_OUTPUT_DIR", "output")),
+        keep_latest_when_empty=os.getenv("DIGEST_KEEP_LATEST_WHEN_EMPTY", "1") == "1",
+        lookback_days=int(os.getenv("DIGEST_LOOKBACK_DAYS", "7")),
+        topic_whitelist=_csv_set(os.getenv("DIGEST_TOPIC_WHITELIST", ""), FINANCE_KEYWORDS),
+        topic_blacklist=_csv_set(os.getenv("DIGEST_TOPIC_BLACKLIST", ""), SPAM_TERMS),
+        min_quality_score=int(os.getenv("DIGEST_MIN_QUALITY_SCORE", "2")),
+        openalex_mailto=os.getenv("OPENALEX_MAILTO", ""),
+    )
+
+
+def load_translate_llm_config_from_env() -> LLMConfig:
+    return LLMConfig(
+        api_base=os.getenv("LLM_API_BASE", ""),
+        api_key=os.getenv("LLM_API_KEY", ""),
+        model=os.getenv("LLM_MODEL", ""),
+        timeout_seconds=int(os.getenv("LLM_TIMEOUT_SECONDS", "30")),
+    )
+
+
+def load_analysis_llm_config_from_env() -> LLMConfig:
+    return LLMConfig(
+        api_base=os.getenv("ANALYSIS_LLM_API_BASE", ""),
+        api_key=os.getenv("ANALYSIS_LLM_API_KEY", ""),
+        model=os.getenv("ANALYSIS_LLM_MODEL", ""),
+        timeout_seconds=int(os.getenv("ANALYSIS_LLM_TIMEOUT_SECONDS", "60")),
+    )

@@ -1,23 +1,21 @@
-# Finance & Economics Daily Digest (P0)
+# Finance & Economics Daily Digest
 
 这个项目会每天自动抓取公开金融/经济学文献，并生成类似 AI Digest 风格的日更内容（JSON + Markdown + HTML）。
 
-## 当前能力（P0）
+## 当前能力
 
-- 主源：OpenAlex 当日经济学文献。
-- 备用源：当 OpenAlex 为空时，自动回退到 arXiv（q-fin/econ）。
-- 摘要：
-  - 默认规则化中文摘要。
-  - 可选接入 OpenAI 兼容接口（`/chat/completions`）生成中文摘要。
-- 质量闸门：当日抓取为 0 且历史 `latest` 有有效内容时，**不覆盖 latest**。
-- 质量筛选：支持可配置主题白名单/黑名单 + 最低质量分，自动去重并剔除噪声条目。
-- 告警落盘：空结果时写入 `output/alerts/YYYY-MM-DD.json`。
-- 自动化：GitHub Actions 每天定时运行并提交 `output/` 结果。
+- 多源抓取：OpenAlex + arXiv + Semantic Scholar + NBER
+- 中文摘要：规则摘要 + 可选 LLM 增强摘要
+- 质量闸门：当日空结果时保留 `output/latest`
+- 质量筛选：关键词白名单/黑名单 + 质量分 + 去重
+- 告警落盘：空结果写入 `output/alerts/YYYY-MM-DD.json`
+- 订阅推送：支持邮箱订阅列表，日报生成后自动群发
+- 自动化：GitHub Actions 每天定时运行并提交 `output/` 结果
 
 ## 快速开始
 
 ```bash
-python src/digest.py
+python -m src.digest
 ```
 
 查看输出：
@@ -26,34 +24,70 @@ python src/digest.py
 - `output/latest/index.html`
 - `output/YYYY-MM-DD/digest.json`
 
+## 订阅功能
+
+订阅文件默认在 `data/subscribers.json`。
+
+新增订阅：
+
+```bash
+python -m src.digest subscribe --email your_email@example.com
+```
+
+也可以不带参数交互填写邮箱：
+
+```bash
+python -m src.digest subscribe
+```
+
+取消订阅：
+
+```bash
+python -m src.digest unsubscribe --email your_email@example.com
+```
+
+查看订阅列表：
+
+```bash
+python -m src.digest list-subscribers
+```
+
+手动发送最新日报给订阅者：
+
+```bash
+python -m src.digest send-emails --subscribers-file data/subscribers.json
+```
+
 ## 环境变量
+
+### 抓取与筛选
 
 - `DIGEST_MAX_PAPERS`：每期最多论文数（默认 12）
 - `DIGEST_MIN_CITATIONS`：最小引用门槛（默认 0）
 - `DIGEST_OUTPUT_DIR`：输出目录（默认 `output`）
 - `DIGEST_KEEP_LATEST_WHEN_EMPTY`：空结果是否保留 latest（`1`/`0`，默认 `1`）
-- `DIGEST_TOPIC_WHITELIST`：相关主题关键词白名单（逗号分隔，默认内置 finance/econ 词表）
-- `DIGEST_TOPIC_BLACKLIST`：噪声关键词黑名单（逗号分隔，默认内置 spam 词表）
-- `DIGEST_MIN_QUALITY_SCORE`：最低质量分（默认 2，分数越高越严格）
+- `DIGEST_LOOKBACK_DAYS`：回溯天数（默认 7）
+- `DIGEST_TOPIC_WHITELIST`：关键词白名单（逗号分隔）
+- `DIGEST_TOPIC_BLACKLIST`：关键词黑名单（逗号分隔）
+- `DIGEST_MIN_QUALITY_SCORE`：最低质量分（默认 2）
+- `OPENALEX_MAILTO`：OpenAlex/Crossref 请求的联系邮箱
 
-### 可选 LLM 摘要配置
+### LLM（可选）
 
-- `LLM_API_BASE`：例如 `https://api.openai.com/v1`
+- `LLM_API_BASE`
 - `LLM_API_KEY`
-- `LLM_MODEL`：例如 `gpt-4o-mini`
-- `LLM_TIMEOUT_SECONDS`：默认 30
+- `LLM_MODEL`
+- `LLM_TIMEOUT_SECONDS`（默认 30）
+- `ANALYSIS_LLM_API_BASE`
+- `ANALYSIS_LLM_API_KEY`
+- `ANALYSIS_LLM_MODEL`
+- `ANALYSIS_LLM_TIMEOUT_SECONDS`（默认 60）
 
-> 若未配置 LLM 变量，系统会自动退回规则化摘要。
-
-
-### 邮件推送（方案A：SMTP）
-
-工作流会在日报生成后尝试发送邮件到 `yuchenhan2023@gmail.com`。
-请在 GitHub 仓库 **Settings -> Secrets and variables -> Actions** 配置：
+### 邮件推送（SMTP）
 
 - `SMTP_HOST`
 - `SMTP_PORT`（可选，默认 587）
 - `SMTP_USER`
 - `SMTP_PASS`
 
-> 若未配置上述 SMTP Secrets，邮件步骤会自动跳过，不影响日报文件生成。
+> 未配置 SMTP 时，发送步骤会自动跳过；建议在 CI 中通过 Secrets 配置。

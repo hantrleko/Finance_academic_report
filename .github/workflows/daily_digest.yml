@@ -22,56 +22,28 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate digest
-        run: python src/digest.py
+      - name: Run tests
+        run: pytest -q
 
-      - name: Send digest email (SMTP)
+      - name: Generate digest
+        env:
+          OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO }}
+          LLM_API_BASE: ${{ secrets.LLM_API_BASE }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          ANALYSIS_LLM_API_BASE: ${{ secrets.ANALYSIS_LLM_API_BASE }}
+          ANALYSIS_LLM_API_KEY: ${{ secrets.ANALYSIS_LLM_API_KEY }}
+          ANALYSIS_LLM_MODEL: ${{ secrets.ANALYSIS_LLM_MODEL }}
+        run: python -m src.digest
+
+      - name: Send digest emails to subscribers
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
-          MAIL_TO: yuchenhan2023@gmail.com
-        run: |
-          python - <<'PY'
-          import os
-          import ssl
-          import smtplib
-          from email.message import EmailMessage
-          from pathlib import Path
-
-          smtp_host = os.getenv("SMTP_HOST", "").strip()
-          smtp_user = os.getenv("SMTP_USER", "").strip()
-          smtp_pass = os.getenv("SMTP_PASS", "").strip()
-          smtp_port_raw = os.getenv("SMTP_PORT", "").strip()
-          smtp_port = int(smtp_port_raw or "587")
-          mail_to = os.getenv("MAIL_TO", "")
-
-          if not (smtp_host and smtp_user and smtp_pass and mail_to):
-              print("SMTP secrets not fully configured, skip sending email.")
-              raise SystemExit(0)
-
-          md_path = Path("output/latest/digest.md")
-          html_path = Path("output/latest/index.html")
-          md_body = md_path.read_text(encoding="utf-8") if md_path.exists() else "Digest markdown not found."
-          html_body = html_path.read_text(encoding="utf-8") if html_path.exists() else ""
-
-          msg = EmailMessage()
-          msg["Subject"] = "Finance & Economics Daily Digest"
-          msg["From"] = smtp_user
-          msg["To"] = mail_to
-          msg.set_content(md_body)
-          if html_body:
-              msg.add_alternative(html_body, subtype="html")
-
-          context = ssl.create_default_context()
-          with smtplib.SMTP(smtp_host, smtp_port, timeout=30) as server:
-              server.starttls(context=context)
-              server.login(smtp_user, smtp_pass)
-              server.send_message(msg)
-
-          print(f"Sent digest email to {mail_to}")
-          PY
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: python -m src.digest send-emails --subscribers-file data/subscribers.json --fallback-to "${MAIL_TO}"
 
       - name: Commit generated digest
         run: |
