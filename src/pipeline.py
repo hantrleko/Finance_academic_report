@@ -16,7 +16,7 @@ from .sources import (
     fetch_openalex_papers,
     fetch_semantic_scholar_papers,
 )
-from .summarization import apply_summaries, generate_digest_overview, llm_screen_relevance
+from .summarization import apply_summaries, generate_digest_insights, generate_digest_overview, llm_screen_relevance
 
 
 def _load_latest_count(latest_json_path: Path) -> int:
@@ -70,6 +70,7 @@ def build_digest(
     papers = papers[: config.max_papers]
     papers = apply_summaries(papers, analysis_cfg, translate_cfg)
     overview = generate_digest_overview(papers, analysis_cfg)
+    insights = generate_digest_insights(papers, analysis_cfg)
 
     config.output_dir.mkdir(parents=True, exist_ok=True)
     daily_dir = config.output_dir / run_date.isoformat()
@@ -85,6 +86,7 @@ def build_digest(
         "count": len(papers),
         "source_used": source_used,
         "latest_updated": not skip_latest_update,
+        "insights": insights,
         "papers": [dataclasses.asdict(p) for p in papers],
     }
 
@@ -93,16 +95,28 @@ def build_digest(
     html_path = daily_dir / "index.html"
 
     json_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
-    md_path.write_text(render_markdown(run_date.isoformat(), papers, note=note, overview=overview), encoding="utf-8")
-    html_path.write_text(render_html(run_date.isoformat(), papers, note=note, overview=overview), encoding="utf-8")
+    md_path.write_text(
+        render_markdown(run_date.isoformat(), papers, note=note, overview=overview, insights=insights),
+        encoding="utf-8",
+    )
+    html_path.write_text(
+        render_html(run_date.isoformat(), papers, note=note, overview=overview, insights=insights),
+        encoding="utf-8",
+    )
 
     latest_updated = False
     latest_dir = config.output_dir / "latest"
     latest_dir.mkdir(parents=True, exist_ok=True)
     if not skip_latest_update:
         (latest_dir / "digest.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
-        (latest_dir / "digest.md").write_text(render_markdown(run_date.isoformat(), papers, overview=overview), encoding="utf-8")
-        (latest_dir / "index.html").write_text(render_html(run_date.isoformat(), papers, overview=overview), encoding="utf-8")
+        (latest_dir / "digest.md").write_text(
+            render_markdown(run_date.isoformat(), papers, overview=overview, insights=insights),
+            encoding="utf-8",
+        )
+        (latest_dir / "index.html").write_text(
+            render_html(run_date.isoformat(), papers, overview=overview, insights=insights),
+            encoding="utf-8",
+        )
         latest_updated = True
 
     if len(papers) == 0:

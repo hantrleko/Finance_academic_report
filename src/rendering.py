@@ -6,10 +6,28 @@ import html
 from .models import Paper
 
 
-def render_markdown(date: str, papers: list[Paper], note: str = "", overview: str = "") -> str:
+def render_markdown(
+    date: str,
+    papers: list[Paper],
+    note: str = "",
+    overview: str = "",
+    insights: dict[str, str] | None = None,
+) -> str:
+    insights = insights or {}
     lines = [f"# 金融经济学每日文献速递（{date}）", "", f"共筛选到 **{len(papers)}** 篇文献。", ""]
     if overview:
         lines.extend(["> 📢 **今日综述**", ">", *[f"> {line}" for line in overview.splitlines()], ""])
+    if insights:
+        lines.extend(
+            [
+                "## 今日洞察（LLM）",
+                f"- 主题趋势：{insights.get('themes', 'N/A')}",
+                f"- 方法趋势：{insights.get('methods', 'N/A')}",
+                f"- 启示与应用：{insights.get('implications', 'N/A')}",
+                f"- 后续观察：{insights.get('watchlist', 'N/A')}",
+                "",
+            ]
+        )
     if note:
         lines.extend([f"> {note}", ""])
 
@@ -37,7 +55,14 @@ def render_markdown(date: str, papers: list[Paper], note: str = "", overview: st
     return "\n".join(lines)
 
 
-def render_html(date: str, papers: list[Paper], note: str = "", overview: str = "") -> str:
+def render_html(
+    date: str,
+    papers: list[Paper],
+    note: str = "",
+    overview: str = "",
+    insights: dict[str, str] | None = None,
+) -> str:
+    insights = insights or {}
     cards: list[str] = []
     for idx, p in enumerate(papers, start=1):
         doi_link = f'<a href="{html.escape(p.doi_url)}" target="_blank" rel="noopener noreferrer">DOI</a>' if p.doi_url else ""
@@ -58,6 +83,16 @@ def render_html(date: str, papers: list[Paper], note: str = "", overview: str = 
 
     note_html = f'<p class="note">{html.escape(note)}</p>' if note else ""
     overview_html = f'<div class="overview"><h2>📢 今日综述</h2><p>{html.escape(overview)}</p></div>' if overview else ""
+    insights_html = ""
+    if insights:
+        insights_html = (
+            '<div class="insights"><h2>🧭 今日洞察（LLM）</h2>'
+            f'<p><strong>主题趋势：</strong>{html.escape(insights.get("themes", "N/A"))}</p>'
+            f'<p><strong>方法趋势：</strong>{html.escape(insights.get("methods", "N/A"))}</p>'
+            f'<p><strong>启示与应用：</strong>{html.escape(insights.get("implications", "N/A"))}</p>'
+            f'<p><strong>后续观察：</strong>{html.escape(insights.get("watchlist", "N/A"))}</p>'
+            "</div>"
+        )
     cards_html = "\n".join(cards)
 
     return f"""<!doctype html>
@@ -73,12 +108,14 @@ def render_html(date: str, papers: list[Paper], note: str = "", overview: str = 
     .summary {{ background: #f8f8f8; padding: 0.8rem; border-radius: 8px; }}
     .note {{ color: #a15d00; background: #fff7e6; border: 1px solid #ffdf99; padding: 0.75rem; border-radius: 8px; }}
     .overview {{ background: #e8f4fd; border: 1px solid #b3d9f2; padding: 1rem; border-radius: 10px; margin-bottom: 1.5rem; }}
+    .insights {{ background: #f0f9f2; border: 1px solid #ccead2; padding: 1rem; border-radius: 10px; margin-bottom: 1.5rem; }}
   </style>
 </head>
 <body>
   <h1>金融经济学每日文献速递</h1>
   <p class=\"meta\">日期：{html.escape(date)}｜篇数：{len(papers)}</p>
   {overview_html}
+  {insights_html}
   {note_html}
   {cards_html}
 </body>

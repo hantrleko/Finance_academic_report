@@ -74,14 +74,29 @@ python -m src.digest send-emails --subscribers-file data/subscribers.json
 
 ### LLM（可选）
 
-- `LLM_API_BASE`
+- `LLM_API_BASE`（默认 `https://api.siliconflow.cn/v1`）
 - `LLM_API_KEY`
-- `LLM_MODEL`
+- `LLM_MODEL`（默认 `tencent/Hunyuan-MT-7B`）
 - `LLM_TIMEOUT_SECONDS`（默认 30）
-- `ANALYSIS_LLM_API_BASE`
+- `ANALYSIS_LLM_API_BASE`（默认 `https://open.bigmodel.cn/api/paas/v4`）
 - `ANALYSIS_LLM_API_KEY`
-- `ANALYSIS_LLM_MODEL`
+- `ANALYSIS_LLM_MODEL`（默认 `glm-4.7-flash`）
 - `ANALYSIS_LLM_TIMEOUT_SECONDS`（默认 60）
+
+推荐双模型配置：
+
+- 翻译模型（SiliconFlow）负责英文摘要到中文的高质量翻译
+- 分析模型（GLM）负责文献筛选、结构化摘要与“今日洞察”
+
+GitHub Actions Secrets 示例：
+
+- `LLM_API_KEY=<你的硅基流动 key>`
+- `ANALYSIS_LLM_API_KEY=<你的智谱 key>`
+- 可选覆盖默认值：
+  - `LLM_API_BASE=https://api.siliconflow.cn/v1`
+  - `LLM_MODEL=tencent/Hunyuan-MT-7B`
+  - `ANALYSIS_LLM_API_BASE=https://open.bigmodel.cn/api/paas/v4`
+  - `ANALYSIS_LLM_MODEL=glm-4.7-flash`
 
 ### 邮件推送（SMTP）
 

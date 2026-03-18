@@ -28,17 +28,17 @@ def load_digest_config_from_env() -> DigestConfig:
 
 def load_translate_llm_config_from_env() -> LLMConfig:
     return LLMConfig(
-        api_base=os.getenv("LLM_API_BASE", ""),
+        api_base=os.getenv("LLM_API_BASE", "https://api.siliconflow.cn/v1"),
         api_key=os.getenv("LLM_API_KEY", ""),
-        model=os.getenv("LLM_MODEL", ""),
+        model=os.getenv("LLM_MODEL", "tencent/Hunyuan-MT-7B"),
         timeout_seconds=int(os.getenv("LLM_TIMEOUT_SECONDS", "30")),
     )
 
 
 def load_analysis_llm_config_from_env() -> LLMConfig:
     return LLMConfig(
-        api_base=os.getenv("ANALYSIS_LLM_API_BASE", ""),
+        api_base=os.getenv("ANALYSIS_LLM_API_BASE", "https://open.bigmodel.cn/api/paas/v4"),
         api_key=os.getenv("ANALYSIS_LLM_API_KEY", ""),
-        model=os.getenv("ANALYSIS_LLM_MODEL", ""),
+        model=os.getenv("ANALYSIS_LLM_MODEL", "glm-4.7-flash"),
         timeout_seconds=int(os.getenv("ANALYSIS_LLM_TIMEOUT_SECONDS", "60")),
     )

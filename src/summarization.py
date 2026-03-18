@@ -310,3 +310,37 @@ def generate_digest_overview(papers: list[Paper], cfg: LLMConfig) -> str:
     if result:
         print(f"[OVERVIEW] Generated ({len(result)} chars)")
     return result
+
+
+def generate_digest_insights(papers: list[Paper], cfg: LLMConfig) -> dict[str, str]:
+    if not cfg.enabled or not papers:
+        return {}
+
+    paper_lines = [
+        f"{idx}. {p.title} | source={p.source} | topics={', '.join(p.topics[:3])} | summary={p.summary_zh[:140]}"
+        for idx, p in enumerate(papers, 1)
+    ]
+    prompt = (
+        "你是金融经济学研究编辑。请根据以下文献列表生成中文结构化洞察，并只输出JSON：\n"
+        '{\"themes\":\"...\",\"methods\":\"...\",\"implications\":\"...\",\"watchlist\":\"...\"}\n'
+        "要求：每个字段1-2句，简洁具体，不要使用Markdown。\n\n"
+        + "\n".join(paper_lines)
+    )
+    raw = _call_llm([{"role": "user", "content": prompt}], cfg, temperature=0.2, max_tokens=700)
+    if not raw:
+        return {}
+
+    cleaned = re.sub(r"^```(?:json)?\s*", "", raw.strip())
+    cleaned = re.sub(r"\s*```$", "", cleaned)
+    try:
+        obj = json.loads(cleaned)
+    except json.JSONDecodeError:
+        return {}
+
+    fields = ["themes", "methods", "implications", "watchlist"]
+    result: dict[str, str] = {}
+    for field in fields:
+        val = obj.get(field, "")
+        if isinstance(val, str) and val.strip():
+            result[field] = val.strip()
+    return result
