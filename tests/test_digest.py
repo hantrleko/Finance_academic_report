@@ -135,3 +135,42 @@ def test_build_digest_keeps_multi_source_floor(monkeypatch, tmp_path: Path):
     assert "arxiv" in sources
     assert "semantic_scholar" in sources
     assert "nber" in sources
+
+
+def test_build_digest_respects_source_max_share(monkeypatch, tmp_path: Path):
+    from src import pipeline as p
+
+    def make_paper(source: str, idx: int) -> Paper:
+        return Paper(
+            title=f"{source} cap paper {idx}",
+            authors=["A"],
+            venue="Journal of Finance",
+            published_date="2026-03-18",
+            doi_url="",
+            openalex_url=f"https://example.com/{source}/cap/{idx}",
+            cited_by_count=1,
+            abstract="finance market risk study with panel regression",
+            summary_zh="",
+            topics=["Economics", "Finance"],
+            source=source,
+        )
+
+    monkeypatch.setattr(p, "fetch_openalex_papers", lambda *_args, **_kwargs: [make_paper("openalex", i) for i in range(1, 25)])
+    monkeypatch.setattr(p, "fetch_arxiv_finance_econ_papers", lambda *_args, **_kwargs: [make_paper("arxiv", i) for i in range(1, 5)])
+    monkeypatch.setattr(p, "fetch_semantic_scholar_papers", lambda *_args, **_kwargs: [make_paper("semantic_scholar", i) for i in range(1, 5)])
+    monkeypatch.setattr(p, "fetch_nber_papers", lambda *_args, **_kwargs: [make_paper("nber", i) for i in range(1, 5)])
+
+    cfg = DigestConfig(
+        output_dir=tmp_path / "out_cap",
+        max_papers=10,
+        source_min_papers=1,
+        source_max_share=0.4,
+        min_quality_score=0,
+    )
+    result = build_digest(cfg, translate_cfg=LLMConfig(), analysis_cfg=LLMConfig(), run_date=dt.date(2026, 3, 18))
+    metadata = json.loads(result["json"].read_text(encoding="utf-8"))
+    source_counts: dict[str, int] = {}
+    for item in metadata["papers"]:
+        source_counts[item["source"]] = source_counts.get(item["source"], 0) + 1
+
+    assert source_counts.get("openalex", 0) <= 4

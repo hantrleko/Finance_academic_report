@@ -30,20 +30,30 @@ def _load_latest_count(latest_json_path: Path) -> int:
         return 0
 
 
-def _source_balanced_select(papers: list, max_items: int, source_min_items: int) -> list:
+def _source_balanced_select(
+    papers: list,
+    max_items: int,
+    source_min_items: int,
+    source_max_share: float,
+) -> list:
     if max_items <= 0 or not papers:
         return []
-    if source_min_items <= 0:
+    if source_min_items <= 0 and source_max_share >= 1:
         return papers[:max_items]
 
     selected: list = []
     selected_keys: set[str] = set()
+    selected_count_by_source: dict[str, int] = {}
     by_source: dict[str, list] = {}
     for p in papers:
         by_source.setdefault(p.source, []).append(p)
 
     source_order = [s for s in SOURCE_PRIORITY if s in by_source]
     source_order.extend([s for s in by_source.keys() if s not in source_order])
+    max_per_source = max_items
+    if 0 < source_max_share < 1:
+        max_per_source = max(1, int(max_items * source_max_share))
+        max_per_source = max(max_per_source, source_min_items)
 
     # Pass 1: reserve up to source_min_items for each available source.
     for source in source_order:
@@ -52,8 +62,11 @@ def _source_balanced_select(papers: list, max_items: int, source_min_items: int)
             key = paper.openalex_url or f"{paper.source}:{paper.title}:{paper.published_date}"
             if key in selected_keys:
                 continue
+            if selected_count_by_source.get(source, 0) >= max_per_source:
+                continue
             selected.append(paper)
             selected_keys.add(key)
+            selected_count_by_source[source] = selected_count_by_source.get(source, 0) + 1
             taken += 1
             if len(selected) >= max_items or taken >= source_min_items:
                 break
@@ -61,6 +74,21 @@ def _source_balanced_select(papers: list, max_items: int, source_min_items: int)
             return selected
 
     # Pass 2: fill remaining slots by original ranking order.
+    for paper in papers:
+        key = paper.openalex_url or f"{paper.source}:{paper.title}:{paper.published_date}"
+        if key in selected_keys:
+            continue
+        if selected_count_by_source.get(paper.source, 0) >= max_per_source:
+            continue
+        selected.append(paper)
+        selected_keys.add(key)
+        selected_count_by_source[paper.source] = selected_count_by_source.get(paper.source, 0) + 1
+        if len(selected) >= max_items:
+            break
+    if len(selected) >= max_items:
+        return selected
+
+    # Pass 3: if strict cap blocks filling, relax cap to avoid under-filled digest.
     for paper in papers:
         key = paper.openalex_url or f"{paper.source}:{paper.title}:{paper.published_date}"
         if key in selected_keys:
@@ -120,12 +148,14 @@ def build_digest(
         papers,
         max_items=config.max_papers * 3,
         source_min_items=config.source_min_papers,
+        source_max_share=config.source_max_share,
     )
     papers = llm_screen_relevance(papers, analysis_cfg)
     papers = _source_balanced_select(
         papers,
         max_items=config.max_papers,
         source_min_items=config.source_min_papers,
+        source_max_share=config.source_max_share,
     )
     papers = apply_summaries(papers, analysis_cfg, translate_cfg)
     overview = generate_digest_overview(papers, analysis_cfg)

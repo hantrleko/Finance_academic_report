@@ -57,6 +57,7 @@ class Paper:
 class DigestConfig:
     max_papers: int = 12
     source_min_papers: int = 2
+    source_max_share: float = 0.6
     min_citations: int = 0
     output_dir: Path = Path("output")
     keep_latest_when_empty: bool = True

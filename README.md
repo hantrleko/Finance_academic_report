@@ -64,6 +64,7 @@ python -m src.digest send-emails --subscribers-file data/subscribers.json
 
 - `DIGEST_MAX_PAPERS`：每期最多论文数（默认 12）
 - `DIGEST_SOURCE_MIN_PAPERS`：多源保底篇数（默认 2）
+- `DIGEST_SOURCE_MAX_SHARE`：单一来源最大占比（默认 0.6）
 - `DIGEST_MIN_CITATIONS`：最小引用门槛（默认 0）
 - `DIGEST_OUTPUT_DIR`：输出目录（默认 `output`）
 - `DIGEST_KEEP_LATEST_WHEN_EMPTY`：空结果是否保留 latest（`1`/`0`，默认 `1`）
