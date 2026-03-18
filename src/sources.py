@@ -4,9 +4,10 @@ from __future__ import annotations
 import datetime as dt
 import json
 import re
+import time
 import xml.etree.ElementTree as ET
 from typing import Any
-from urllib.error import URLError
+from urllib.error import HTTPError, URLError
 from urllib.parse import quote_plus, urlencode
 from urllib.request import Request, urlopen
 
@@ -19,6 +20,36 @@ from .models import (
     S2_API_URL,
     Paper,
 )
+
+S2_MAX_RETRIES = 3
+S2_BASE_BACKOFF_SECONDS = 2
+
+
+def _sanitize_xml_text(xml_text: str) -> str:
+    # Remove invalid control characters for XML 1.0 and escape bare ampersands.
+    sanitized = re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F]", "", xml_text)
+    sanitized = re.sub(r"&(?!#?\w+;)", "&amp;", sanitized)
+    return sanitized
+
+
+def _parse_xml_with_recovery(xml_text: str) -> ET.Element | None:
+    try:
+        return ET.fromstring(xml_text)
+    except ET.ParseError as first_error:
+        recovered = _sanitize_xml_text(xml_text)
+        try:
+            return ET.fromstring(recovered)
+        except ET.ParseError as second_error:
+            print(f"[NBER] XML parse error: {first_error}")
+            print(f"[NBER] XML recovery failed: {second_error}")
+            return None
+
+
+def _retry_after_seconds(err: HTTPError, attempt: int) -> int:
+    retry_after = err.headers.get("Retry-After") if err.headers else None
+    if retry_after and retry_after.isdigit():
+        return max(1, int(retry_after))
+    return S2_BASE_BACKOFF_SECONDS * (2 ** attempt)
 
 
 def extract_abstract(indexed_abstract: dict[str, Any] | None) -> str:
@@ -160,12 +191,23 @@ def fetch_semantic_scholar_papers(date_from: dt.date, date_to: dt.date, mailto: 
     if mailto:
         headers["User-Agent"] = f"FinanceDigest/1.0 (mailto:{mailto})"
     req = Request(f"{S2_API_URL}?{params}", headers=headers)
-    try:
-        with urlopen(req, timeout=30) as resp:
-            data = json.loads(resp.read().decode("utf-8")).get("data", [])
-    except (URLError, Exception) as e:
-        print(f"[S2] Fetch error: {type(e).__name__}: {e}")
-        return []
+    data: list[dict[str, Any]] = []
+    for attempt in range(S2_MAX_RETRIES):
+        try:
+            with urlopen(req, timeout=30) as resp:
+                data = json.loads(resp.read().decode("utf-8")).get("data", [])
+            break
+        except HTTPError as e:
+            if e.code == 429 and attempt < S2_MAX_RETRIES - 1:
+                wait_seconds = _retry_after_seconds(e, attempt)
+                print(f"[S2] Rate limited (429), retrying in {wait_seconds}s...")
+                time.sleep(wait_seconds)
+                continue
+            print(f"[S2] Fetch error: HTTP {e.code}")
+            return []
+        except (URLError, Exception) as e:
+            print(f"[S2] Fetch error: {type(e).__name__}: {e}")
+            return []
 
     papers: list[Paper] = []
     for item in data:
@@ -204,10 +246,8 @@ def fetch_nber_papers(date_from: dt.date, max_results: int = 5) -> list[Paper]:
         print(f"[NBER] Fetch error: {type(e).__name__}: {e}")
         return []
 
-    try:
-        root = ET.fromstring(xml_text)
-    except ET.ParseError as e:
-        print(f"[NBER] XML parse error: {e}")
+    root = _parse_xml_with_recovery(xml_text)
+    if root is None:
         return []
 
     papers: list[Paper] = []
