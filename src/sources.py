@@ -108,24 +108,40 @@ def _parse_pub_date(pub_date_str: str, date_from: dt.date) -> str:
         return pub_date_str[:10]
 
 
+def _extract_nber_authors_from_title(title: str) -> tuple[str, list[str]]:
+    """从 NBER 标题中提取作者（格式：'Paper Title -- by Author A, Author B'），
+    返回清洗后的标题和作者列表。"""
+    match = re.search(r"\s+--\s+by\s+(.+)$", title, re.IGNORECASE)
+    if match:
+        authors_str = match.group(1).strip()
+        clean_title = title[: match.start()].strip()
+        # 按逗号或分号分割，过滤空字符串
+        authors = [a.strip() for a in re.split(r"[,;]", authors_str) if a.strip()]
+        return clean_title, authors
+    return title, []
+
+
 def _parse_nber_items_fallback(xml_text: str, date_from: dt.date, max_results: int) -> list[Paper]:
     print("[NBER] Falling back to regex parser")
     papers: list[Paper] = []
     for block in re.findall(r"<item\b[^>]*>.*?</item>", xml_text, flags=re.IGNORECASE | re.DOTALL):
         if len(papers) >= max_results:
             break
-        title = _extract_xml_tag_text(block, "title")
-        if not title:
+        raw_title = _extract_xml_tag_text(block, "title")
+        if not raw_title:
             continue
+        clean_title, authors = _extract_nber_authors_from_title(raw_title)
         link = _extract_xml_tag_text(block, "link")
         description = _extract_xml_tag_text(block, "description")
-        pub_date = _parse_pub_date(_extract_xml_tag_text(block, "pubDate"), date_from)
-        if _extract_xml_tag_text(block, "pubDate") and not pub_date:
-            continue
+        pub_date_str = _extract_xml_tag_text(block, "pubDate")
+        pub_date = _parse_pub_date(pub_date_str, date_from)
+        # 日期解析失败时回退到今日日期，而非丢弃该条目
+        if pub_date_str and not pub_date:
+            pub_date = date_from.isoformat()
         papers.append(
             Paper(
-                title=title,
-                authors=[],
+                title=clean_title,
+                authors=authors,
                 venue="NBER Working Papers",
                 published_date=pub_date,
                 doi_url="",
@@ -359,17 +375,18 @@ def fetch_nber_papers(date_from: dt.date, max_results: int = 5) -> list[Paper]:
         pub_date_str = (item.findtext("pubDate") or "").strip()
 
         pub_date = _parse_pub_date(pub_date_str, date_from)
+        # 日期解析失败时回退到 date_from，而非丢弃该条目
         if pub_date_str and not pub_date:
-            continue
+            pub_date = date_from.isoformat()
 
         abstract = re.sub(r"<[^>]+>", "", description).strip()
         if not title:
             continue
-
+        clean_title, authors = _extract_nber_authors_from_title(title)
         papers.append(
             Paper(
-                title=title,
-                authors=[],
+                title=clean_title,
+                authors=authors,
                 venue="NBER Working Papers",
                 published_date=pub_date,
                 doi_url="",

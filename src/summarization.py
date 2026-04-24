@@ -211,6 +211,29 @@ def _is_summary_complete(text: str) -> bool:
     return False
 
 
+def _extract_json_from_llm_response(raw: str) -> dict | None:
+    """从 LLM 返回文本中健壮地提取第一个 JSON 对象。
+    支持带 markdown 代码块、前后有其他文字的情况。"""
+    if not raw:
+        return None
+    # 先尝试去除 markdown 代码块
+    cleaned = re.sub(r"^```(?:json)?\s*", "", raw.strip())
+    cleaned = re.sub(r"\s*```$", "", cleaned)
+    # 尝试直接解析
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError:
+        pass
+    # 尝试提取第一个 { ... } 块
+    match = re.search(r"\{.*\}", cleaned, re.DOTALL)
+    if match:
+        try:
+            return json.loads(match.group(0))
+        except json.JSONDecodeError:
+            pass
+    return None
+
+
 def llm_screen_relevance(papers: list[Paper], cfg: LLMConfig) -> list[Paper]:
     if not cfg.enabled or not papers:
         return papers
@@ -231,17 +254,19 @@ def llm_screen_relevance(papers: list[Paper], cfg: LLMConfig) -> list[Paper]:
             filtered.append(p)
             continue
 
-        cleaned = re.sub(r"^```(?:json)?\s*", "", raw.strip())
-        cleaned = re.sub(r"\s*```$", "", cleaned)
+        result = _extract_json_from_llm_response(raw)
+        if result is None:
+            print(f"    [SCREEN WARN] Could not parse response, keeping paper")
+            filtered.append(p)
+            continue
         try:
-            result = json.loads(cleaned)
             score = int(result.get("score", 0))
             if score >= 6:
                 filtered.append(p)
             else:
                 print(f"    [FILTERED OUT] score {score} < 6")
-        except (json.JSONDecodeError, ValueError, TypeError):
-            print(f"    [SCREEN WARN] Could not parse response, keeping paper")
+        except (ValueError, TypeError):
+            print(f"    [SCREEN WARN] Invalid score value, keeping paper")
             filtered.append(p)
 
     print(f"  [SCREEN] {len(filtered)}/{len(papers)} papers passed relevance screening")
@@ -330,11 +355,8 @@ def generate_digest_insights(papers: list[Paper], cfg: LLMConfig) -> dict[str, s
     if not raw:
         return {}
 
-    cleaned = re.sub(r"^```(?:json)?\s*", "", raw.strip())
-    cleaned = re.sub(r"\s*```$", "", cleaned)
-    try:
-        obj = json.loads(cleaned)
-    except json.JSONDecodeError:
+    obj = _extract_json_from_llm_response(raw)
+    if obj is None:
         return {}
 
     fields = ["themes", "methods", "implications", "watchlist"]

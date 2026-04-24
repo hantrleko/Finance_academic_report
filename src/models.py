@@ -37,6 +37,30 @@ VENUE_BLACKLIST = {
     "eartharxiv", "medrxiv", "biorxiv",
 }
 
+# 顶级金融/经济学期刊白名单（命中则质量评分加成）
+VENUE_WHITELIST = {
+    "journal of finance",
+    "journal of financial economics",
+    "review of financial studies",
+    "american economic review",
+    "quarterly journal of economics",
+    "journal of political economy",
+    "review of economic studies",
+    "econometrica",
+    "journal of monetary economics",
+    "nber working papers",
+    "journal of economic perspectives",
+    "journal of economic literature",
+    "journal of accounting and economics",
+    "management science",
+    "review of economics and statistics",
+    "journal of financial and quantitative analysis",
+    "journal of banking & finance",
+    "journal of international economics",
+    "rand journal of economics",
+    "economic journal",
+}
+
 
 @dataclass
 class Paper:
@@ -67,7 +91,7 @@ class DigestConfig:
     min_quality_score: int = 2
     openalex_mailto: str = ""
     s2_api_key: str = ""
-    s2_min_interval_seconds: float = 1.1
+    s2_min_interval_seconds: float = 1.5
 
 
 @dataclass

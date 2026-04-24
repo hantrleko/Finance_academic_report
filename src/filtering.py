@@ -7,7 +7,7 @@ from typing import Any
 from urllib.parse import quote_plus
 from urllib.request import Request, urlopen
 
-from .models import CROSSREF_API_URL, VENUE_BLACKLIST, Paper
+from .models import CROSSREF_API_URL, VENUE_BLACKLIST, VENUE_WHITELIST, Paper
 
 
 def normalize_title(text: str) -> str:
@@ -18,8 +18,11 @@ def quality_score(paper: Paper, topic_whitelist: set[str]) -> int:
     text = " ".join([paper.title, paper.abstract, paper.venue, " ".join(paper.topics)]).lower()
     title_text = paper.title.lower()
     topic_text = " ".join(paper.topics).lower()
+    venue_lower = paper.venue.lower()
 
     score = 0
+
+    # 关键词匹配评分
     for keyword in topic_whitelist:
         if keyword in title_text:
             score += 3
@@ -28,15 +31,25 @@ def quality_score(paper: Paper, topic_whitelist: set[str]) -> int:
         elif keyword in text:
             score += 1
 
+    # 无摘要扣分
     if not paper.abstract.strip():
         score -= 5
 
-    venue_lower = paper.venue.lower()
+    # 期刊黑名单扣分
     if any(bl in venue_lower for bl in VENUE_BLACKLIST):
         score -= 10
 
+    # 顶级期刊白名单加分
+    if any(wl in venue_lower for wl in VENUE_WHITELIST):
+        score += 5
+
+    # DOI 存在加分
     if paper.doi_url:
         score += 1
+
+    # 引用数加分（每 10 次引用加 1 分，上限 5 分）
+    citation_bonus = min(paper.cited_by_count // 10, 5)
+    score += citation_bonus
 
     return score
 
