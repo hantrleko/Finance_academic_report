@@ -5,11 +5,14 @@ import json
 from pathlib import Path
 from typing import Any
 
+import streamlit as st
+
 OUTPUT_DIR = Path(__file__).parent.parent / "output"
 
 
+@st.cache_data(ttl=300)
 def get_available_dates() -> list[str]:
-    """返回所有已生成日报的日期列表（降序）。"""
+    """返回所有已生成日报的日期列表（降序）。结果缓存 5 分钟。"""
     dates = []
     for d in OUTPUT_DIR.iterdir():
         if d.is_dir() and d.name not in ("latest", "alerts"):
@@ -19,8 +22,9 @@ def get_available_dates() -> list[str]:
     return sorted(dates, reverse=True)
 
 
+@st.cache_data(ttl=300)
 def load_digest(date: str) -> dict[str, Any] | None:
-    """加载指定日期的 digest 数据。date 格式为 'YYYY-MM-DD' 或 'latest'。"""
+    """加载指定日期的 digest 数据。date 格式为 'YYYY-MM-DD' 或 'latest'。结果缓存 5 分钟。"""
     path = OUTPUT_DIR / date / "digest.json"
     if not path.exists():
         return None
@@ -35,8 +39,9 @@ def load_latest_digest() -> dict[str, Any] | None:
     return load_digest("latest")
 
 
+@st.cache_data(ttl=600)
 def load_all_digests() -> list[dict[str, Any]]:
-    """加载所有日期的 digest 数据（用于统计分析）。"""
+    """加载所有日期的 digest 数据（用于统计分析）。结果缓存 10 分钟。"""
     results = []
     for date in get_available_dates():
         data = load_digest(date)
@@ -45,8 +50,9 @@ def load_all_digests() -> list[dict[str, Any]]:
     return results
 
 
+@st.cache_data(ttl=300)
 def get_alert_dates() -> list[str]:
-    """返回所有告警日期列表。"""
+    """返回所有告警日期列表。结果缓存 5 分钟。"""
     alerts_dir = OUTPUT_DIR / "alerts"
     if not alerts_dir.exists():
         return []

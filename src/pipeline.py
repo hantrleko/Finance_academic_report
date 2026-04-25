@@ -175,6 +175,7 @@ def build_digest(
         "count": len(papers),
         "source_used": source_used,
         "latest_updated": not skip_latest_update,
+        "overview": overview,
         "insights": insights,
         "papers": [dataclasses.asdict(p) for p in papers],
     }

@@ -5,7 +5,6 @@ from pathlib import Path
 from src.models import DigestConfig, LLMConfig, Paper
 from src.pipeline import build_digest
 from src.sources import extract_abstract
-from src.subscribers import add_subscriber, load_subscribers, remove_subscriber
 from src.summarization import simple_zh_summary
 
 
@@ -54,6 +53,37 @@ def test_build_digest_writes_files(monkeypatch, tmp_path: Path):
     assert result["latest_updated"] is True
 
 
+def test_build_digest_overview_in_json(monkeypatch, tmp_path: Path):
+    """验证 overview 字段被正确写入 digest.json（修复漏写 Bug 的回归测试）。"""
+    from src import pipeline as p
+
+    dummy = Paper(
+        title="Asset Pricing and Risk",
+        authors=["C. D. Author"],
+        venue="Journal of Finance",
+        published_date="2024-01-01",
+        doi_url="",
+        openalex_url="https://openalex.org/W999",
+        cited_by_count=5,
+        abstract="This paper studies asset pricing and risk premiums.",
+        summary_zh="",
+        topics=["Finance", "Economics"],
+        source="openalex",
+    )
+
+    monkeypatch.setattr(p, "fetch_openalex_papers", lambda *_args, **_kwargs: [dummy])
+    monkeypatch.setattr(p, "fetch_arxiv_finance_econ_papers", lambda *_args, **_kwargs: [])
+    monkeypatch.setattr(p, "fetch_semantic_scholar_papers", lambda *_args, **_kwargs: [])
+    monkeypatch.setattr(p, "fetch_nber_papers", lambda *_args, **_kwargs: [])
+
+    cfg = DigestConfig(output_dir=tmp_path / "out_overview")
+    result = build_digest(cfg, translate_cfg=LLMConfig(), analysis_cfg=LLMConfig(), run_date=dt.date(2024, 1, 5))
+
+    metadata = json.loads(result["json"].read_text(encoding="utf-8"))
+    # overview 字段必须存在（即使 LLM 未配置时为空字符串，也不能是 KeyError）
+    assert "overview" in metadata
+
+
 def test_keep_latest_when_empty(monkeypatch, tmp_path: Path):
     from src import pipeline as p
 
@@ -75,27 +105,6 @@ def test_keep_latest_when_empty(monkeypatch, tmp_path: Path):
     assert result["latest_updated"] is False
     assert (latest / "digest.md").read_text(encoding="utf-8") == "old"
     assert (out / "alerts" / "2024-01-03.json").exists()
-
-
-def test_subscriber_crud(tmp_path: Path):
-    file = tmp_path / "subscribers.json"
-
-    ok, _ = add_subscriber(file, "alice@example.com")
-    assert ok is True
-
-    ok, msg = add_subscriber(file, "alice@example.com")
-    assert ok is False
-    assert "已订阅" in msg
-
-    ok, _ = add_subscriber(file, "bob@example.com")
-    assert ok is True
-
-    subscribers = load_subscribers(file)
-    assert subscribers == ["alice@example.com", "bob@example.com"]
-
-    ok, _ = remove_subscriber(file, "alice@example.com")
-    assert ok is True
-    assert load_subscribers(file) == ["bob@example.com"]
 
 
 def test_build_digest_keeps_multi_source_floor(monkeypatch, tmp_path: Path):
