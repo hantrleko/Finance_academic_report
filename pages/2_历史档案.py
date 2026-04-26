@@ -84,6 +84,13 @@ if data is None:
     st.error(f"无法加载 {selected_date} 的数据。")
     st.stop()
 
+if data.get("_error"):
+    st.warning(
+        f"⚠️ **{selected_date}** 的数据文件已损坏（可能含有 Git 冲突标记），无法解析。"
+        " 请前往 GitHub 仓库手动修复该文件。"
+    )
+    st.stop()
+
 papers = data.get("papers", [])
 count = data.get("count", 0)
 source_used = data.get("source_used", "N/A")

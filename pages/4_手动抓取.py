@@ -1,6 +1,7 @@
 """页面：手动抓取 - 手动触发文献抓取并实时查看进度"""
 from __future__ import annotations
 
+import contextlib
 import datetime as dt
 import sys
 import threading
@@ -86,41 +87,25 @@ if "run_result" not in st.session_state:
 
 
 def run_digest_task(params: dict) -> None:
-    """在后台线程中运行抓取任务，将 stdout 重定向到 session_state。"""
-    import os
-    import contextlib
-
-    # 设置环境变量（供 config.py 读取）
-    env_vars = {
-        "DIGEST_MAX_PAPERS": str(params["max_papers"]),
-        "DIGEST_LOOKBACK_DAYS": str(params["lookback_days"]),
-        "DIGEST_MIN_QUALITY_SCORE": str(params["min_quality_score"]),
-        "OPENALEX_MAILTO": params.get("openalex_mailto", ""),
-        "S2_API_KEY": params.get("s2_api_key", ""),
-        "LLM_API_BASE": params.get("llm_api_base", ""),
-        "LLM_API_KEY": params.get("llm_api_key", ""),
-        "LLM_MODEL": params.get("llm_model", ""),
-        "ANALYSIS_LLM_API_BASE": params.get("analysis_api_base", ""),
-        "ANALYSIS_LLM_API_KEY": params.get("analysis_api_key", ""),
-        "ANALYSIS_LLM_MODEL": params.get("analysis_model", ""),
-    }
-    for k, v in env_vars.items():
-        if v:
-            os.environ[k] = v
-
+    """在后台线程中运行抓取任务。
+    
+    直接从 params 字典构建配置对象，完全不修改全局 os.environ，
+    避免多用户并发时的环境变量污染问题。
+    """
     log_buffer = StringIO()
     try:
         with contextlib.redirect_stdout(log_buffer):
             from src.config import (
-                load_digest_config_from_env,
-                load_translate_llm_config_from_env,
-                load_analysis_llm_config_from_env,
+                build_digest_config_from_dict,
+                build_translate_llm_config_from_dict,
+                build_analysis_llm_config_from_dict,
             )
             from src.pipeline import build_digest
 
-            cfg = load_digest_config_from_env()
-            translate_cfg = load_translate_llm_config_from_env()
-            analysis_cfg = load_analysis_llm_config_from_env()
+            # 直接从参数字典构建配置对象，不依赖 os.environ
+            cfg = build_digest_config_from_dict(params)
+            translate_cfg = build_translate_llm_config_from_dict(params)
+            analysis_cfg = build_analysis_llm_config_from_dict(params)
 
             result = build_digest(
                 config=cfg,

@@ -9,6 +9,11 @@ from urllib.request import Request, urlopen
 
 from .models import CROSSREF_API_URL, VENUE_BLACKLIST, VENUE_WHITELIST, Paper
 
+# 无摘要论文的硬性惩罚分值。
+# 理论最高加分：关键词命中上限（约 9-12）+ 顶级期刊（+5）+ 引用数上限（+5）+ DOI（+1）≈ 22
+# 设置为 -25，确保无摘要论文在任何情况下都无法通过默认最低质量分（2 分）。
+_NO_ABSTRACT_PENALTY = -25
+
 
 def normalize_title(text: str) -> str:
     return re.sub(r"\W+", "", text).lower()
@@ -31,9 +36,9 @@ def quality_score(paper: Paper, topic_whitelist: set[str]) -> int:
         elif keyword in text:
             score += 1
 
-    # 无摘要扣分
+    # 无摘要硬性惩罚（比原来的 -5 更严格，确保无摘要论文无法通过质量门槛）
     if not paper.abstract.strip():
-        score -= 5
+        score += _NO_ABSTRACT_PENALTY
 
     # 期刊黑名单扣分
     if any(bl in venue_lower for bl in VENUE_BLACKLIST):
@@ -125,3 +130,27 @@ def backfill_abstracts(papers: list[Paper], mailto: str = "") -> list[Paper]:
         if not p.abstract and p.doi_url:
             p.abstract = fetch_crossref_abstract(p.doi_url, mailto=mailto)
     return papers
+
+
+def safe_load_digest_json(path: "Any") -> dict | None:
+    """安全读取 digest.json，捕获 JSON 损坏（包括 Git 冲突标记）并返回 None。
+
+    当文件存在 Git 冲突标记（<<<<<<< / ======= / >>>>>>>）时，
+    会在日志中打印警告，方便维护者及时发现并修复。
+    """
+    from pathlib import Path as _Path
+
+    p = _Path(path)
+    if not p.exists():
+        return None
+    raw = ""
+    try:
+        raw = p.read_text(encoding="utf-8")
+        # 检测 Git 冲突标记
+        if re.search(r"^<{7}|^={7}|^>{7}", raw, re.MULTILINE):
+            print(f"[WARN] Git conflict markers detected in {p}, skipping file.")
+            return None
+        return json.loads(raw)
+    except json.JSONDecodeError as exc:
+        print(f"[WARN] JSON parse error in {p}: {exc}")
+        return None

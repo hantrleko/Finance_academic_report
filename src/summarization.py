@@ -145,7 +145,22 @@ def simple_zh_summary(title: str, abstract: str, topics: list[str]) -> str:
     return "。".join(parts) + "。"
 
 
+# LLM 重试配置：最多重试 3 次，初始等待 2 秒，指数退避，上限 30 秒
+_LLM_MAX_RETRIES = 3
+_LLM_RETRY_BASE_WAIT = 2.0
+_LLM_RETRY_MAX_WAIT = 30.0
+# 触发重试的 HTTP 状态码：429 限流、502/503 服务不可用
+_LLM_RETRYABLE_CODES = {429, 502, 503}
+
+
 def _call_llm(messages: list[dict], cfg: LLMConfig, temperature: float = 0.3, max_tokens: int = 2048) -> str:
+    """调用 LLM API，内置指数退避重试机制。
+
+    对 429（限流）、502/503（服务不可用）和超时错误自动重试，
+    最多重试 _LLM_MAX_RETRIES 次，等待时间按指数增长。
+    """
+    import urllib.error
+
     if not cfg.enabled:
         return ""
 
@@ -163,22 +178,43 @@ def _call_llm(messages: list[dict], cfg: LLMConfig, temperature: float = 0.3, ma
         "max_tokens": max_tokens,
     }
     url = f"{cfg.api_base.rstrip('/')}/chat/completions"
-    req = Request(
-        url=url,
-        data=json.dumps(payload).encode("utf-8"),
-        method="POST",
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {cfg.api_key}",
-        },
-    )
-    try:
-        with urlopen(req, timeout=cfg.timeout_seconds) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-        return data.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
-    except Exception as e:
-        print(f"  [LLM ERROR] {type(e).__name__}: {e}")
-        return ""
+    data_bytes = json.dumps(payload).encode("utf-8")
+
+    last_exc: Exception | None = None
+    for attempt in range(1, _LLM_MAX_RETRIES + 1):
+        req = Request(
+            url=url,
+            data=data_bytes,
+            method="POST",
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {cfg.api_key}",
+            },
+        )
+        try:
+            with urlopen(req, timeout=cfg.timeout_seconds) as resp:
+                result = json.loads(resp.read().decode("utf-8"))
+            return result.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
+        except urllib.error.HTTPError as e:
+            last_exc = e
+            if e.code in _LLM_RETRYABLE_CODES:
+                retry_wait = min(_LLM_RETRY_BASE_WAIT * (2 ** (attempt - 1)), _LLM_RETRY_MAX_WAIT)
+                print(f"  [LLM RETRY] HTTP {e.code}, attempt {attempt}/{_LLM_MAX_RETRIES}, waiting {retry_wait:.1f}s...")
+                time.sleep(retry_wait)
+            else:
+                print(f"  [LLM ERROR] HTTP {e.code}: {e.reason}")
+                return ""
+        except TimeoutError as e:
+            last_exc = e
+            retry_wait = min(_LLM_RETRY_BASE_WAIT * (2 ** (attempt - 1)), _LLM_RETRY_MAX_WAIT)
+            print(f"  [LLM RETRY] Timeout, attempt {attempt}/{_LLM_MAX_RETRIES}, waiting {retry_wait:.1f}s...")
+            time.sleep(retry_wait)
+        except Exception as e:
+            print(f"  [LLM ERROR] {type(e).__name__}: {e}")
+            return ""
+
+    print(f"  [LLM ERROR] All {_LLM_MAX_RETRIES} retries exhausted. Last error: {last_exc}")
+    return ""
 
 
 def _llm_translate(text: str, cfg: LLMConfig) -> str:

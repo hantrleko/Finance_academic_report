@@ -97,6 +97,13 @@ if data is None:
     st.error("暂无数据，请先运行文献抓取或等待 GitHub Actions 自动更新。")
     st.stop()
 
+if data.get("_error"):
+    st.warning(
+        f"⚠️ **{selected_date}** 的数据文件已损坏（可能含有 Git 冲突标记），无法解析。"
+        " 请前往 GitHub 仓库手动修复 `output/{selected_date}/digest.json` 文件。"
+    )
+    st.stop()
+
 date_str = data.get("date", "未知日期")
 count = data.get("count", 0)
 source_used = data.get("source_used", "N/A")
