@@ -18,6 +18,8 @@ OUTPUT_DIR = _ROOT / "output"
 @st.cache_data(ttl=300)
 def get_available_dates() -> list[str]:
     """返回所有已生成日报的日期列表（降序）。结果缓存 5 分钟。"""
+    if not OUTPUT_DIR.exists():
+        return []
     dates = []
     for d in OUTPUT_DIR.iterdir():
         if d.is_dir() and d.name not in ("latest", "alerts"):

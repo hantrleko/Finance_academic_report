@@ -384,7 +384,10 @@ def generate_digest_insights(papers: list[Paper], cfg: LLMConfig) -> dict[str, s
     prompt = (
         "你是金融经济学研究编辑。请根据以下文献列表生成中文结构化洞察，并只输出JSON：\n"
         '{\"themes\":\"...\",\"methods\":\"...\",\"implications\":\"...\",\"watchlist\":\"...\"}\n'
-        "要求：每个字段1-2句，简洁具体，不要使用Markdown。\n\n"
+        "要求：\n"
+        "1. 每个字段1-2句，简洁具体，不要使用Markdown。\n"
+        "2. 【重要】JSON的键名必须严格使用英文（themes/methods/implications/watchlist），绝对不能翻译为中文键名。\n"
+        "3. 只输出JSON对象本身，不要有任何前缀或后缀文字。\n\n"
         + "\n".join(paper_lines)
     )
     raw = _call_llm([{"role": "user", "content": prompt}], cfg, temperature=0.2, max_tokens=700)

@@ -85,18 +85,32 @@ def dedupe_and_filter(
     unique: list[Paper] = []
     seen_titles: set[str] = set()
 
+    # arXiv / NBER 使用宽松阈值（min_quality_score // 2，最低为 0），
+    # 保留其多样性的同时过滤掉明显不相关或无摘要的论文。
+    arxiv_nber_threshold = max(0, min_quality_score // 2)
+
     for paper in papers:
         normalized = normalize_title(paper.title)
         if normalized and normalized in seen_titles:
             continue
 
-        if paper.source in ("openalex", "semantic_scholar") and not is_relevant_openalex_paper(
-            paper,
-            topic_whitelist=topic_whitelist,
-            topic_blacklist=topic_blacklist,
-            min_quality_score=min_quality_score,
-        ):
-            continue
+        if paper.source in ("openalex", "semantic_scholar"):
+            if not is_relevant_openalex_paper(
+                paper,
+                topic_whitelist=topic_whitelist,
+                topic_blacklist=topic_blacklist,
+                min_quality_score=min_quality_score,
+            ):
+                continue
+        elif paper.source in ("arxiv", "nber"):
+            # 对 arXiv/NBER 也做基础质量过滤（黑名单 + 无摘要惩罚），但阈值更宽松
+            if not is_relevant_openalex_paper(
+                paper,
+                topic_whitelist=topic_whitelist,
+                topic_blacklist=topic_blacklist,
+                min_quality_score=arxiv_nber_threshold,
+            ):
+                continue
 
         if normalized:
             seen_titles.add(normalized)

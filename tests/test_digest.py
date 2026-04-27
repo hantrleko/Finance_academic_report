@@ -183,3 +183,171 @@ def test_build_digest_respects_source_max_share(monkeypatch, tmp_path: Path):
         source_counts[item["source"]] = source_counts.get(item["source"], 0) + 1
 
     assert source_counts.get("openalex", 0) <= 4
+
+
+# ---- 新增：中优先级覆盖率补充测试 ----
+
+def test_safe_load_digest_json_valid(tmp_path: Path):
+    """正常 JSON 文件应被正确解析。"""
+    from src.filtering import safe_load_digest_json
+
+    valid = tmp_path / "digest.json"
+    valid.write_text(json.dumps({"count": 5, "papers": []}), encoding="utf-8")
+    result = safe_load_digest_json(valid)
+    assert result is not None
+    assert result["count"] == 5
+
+
+def test_safe_load_digest_json_git_conflict(tmp_path: Path):
+    """含 Git 冲突标记的文件应返回 None。"""
+    from src.filtering import safe_load_digest_json
+
+    broken = tmp_path / "broken.json"
+    broken.write_text(
+        "<<<<<<< HEAD\n{\"count\": 1}\n=======\n{\"count\": 2}\n>>>>>>> branch\n",
+        encoding="utf-8",
+    )
+    assert safe_load_digest_json(broken) is None
+
+
+def test_safe_load_digest_json_invalid_json(tmp_path: Path):
+    """格式错误的 JSON 文件应返回 None。"""
+    from src.filtering import safe_load_digest_json
+
+    bad = tmp_path / "bad.json"
+    bad.write_text("{not valid json}", encoding="utf-8")
+    assert safe_load_digest_json(bad) is None
+
+
+def test_safe_load_digest_json_missing_file(tmp_path: Path):
+    """不存在的文件应返回 None。"""
+    from src.filtering import safe_load_digest_json
+
+    assert safe_load_digest_json(tmp_path / "nonexistent.json") is None
+
+
+def test_extract_json_from_llm_response_plain():
+    """纯 JSON 字符串应被直接解析。"""
+    from src.summarization import _extract_json_from_llm_response
+
+    raw = '{"themes": "asset pricing", "methods": "regression"}'
+    result = _extract_json_from_llm_response(raw)
+    assert result is not None
+    assert result["themes"] == "asset pricing"
+
+
+def test_extract_json_from_llm_response_with_markdown():
+    """带 markdown 代码块的 JSON 应被正确提取。"""
+    from src.summarization import _extract_json_from_llm_response
+
+    raw = '```json\n{"relevant": true, "score": 8, "reason": "高质量金融研究"}\n```'
+    result = _extract_json_from_llm_response(raw)
+    assert result is not None
+    assert result["score"] == 8
+
+
+def test_extract_json_from_llm_response_embedded():
+    """JSON 嵌入在其他文字中时应被正确提取。"""
+    from src.summarization import _extract_json_from_llm_response
+
+    raw = '以下是我的分析结果：\n{"themes": "货币政策", "methods": "VAR模型"}\n希望对你有帮助。'
+    result = _extract_json_from_llm_response(raw)
+    assert result is not None
+    assert result["themes"] == "货币政策"
+
+
+def test_extract_json_from_llm_response_invalid():
+    """无法提取 JSON 时应返回 None。"""
+    from src.summarization import _extract_json_from_llm_response
+
+    assert _extract_json_from_llm_response("这不是 JSON 内容") is None
+    assert _extract_json_from_llm_response("") is None
+
+
+def test_dedupe_and_filter_removes_duplicates():
+    """重复标题的论文应只保留第一篇。"""
+    from src.filtering import dedupe_and_filter
+
+    p1 = Paper(
+        title="Asset Pricing and Risk",
+        authors=["A"],
+        venue="Journal of Finance",
+        published_date="2024-01-01",
+        doi_url="https://doi.org/10.1234/test",
+        openalex_url="",
+        cited_by_count=10,
+        abstract="This paper studies asset pricing and risk premiums using regression.",
+        summary_zh="",
+        topics=["Finance", "Economics"],
+        source="openalex",
+    )
+    p2 = Paper(
+        title="Asset  Pricing and Risk",  # 多余空格，归一化后与 p1 相同
+        authors=["B"],
+        venue="Journal of Finance",
+        published_date="2024-01-02",
+        doi_url="",
+        openalex_url="",
+        cited_by_count=5,
+        abstract="Duplicate paper.",
+        summary_zh="",
+        topics=["Finance"],
+        source="openalex",
+    )
+    result = dedupe_and_filter(
+        [p1, p2],
+        topic_whitelist={"finance", "risk"},
+        topic_blacklist=set(),
+        min_quality_score=0,
+    )
+    assert len(result) == 1
+    assert result[0].authors == ["A"]
+
+
+def test_dedupe_and_filter_blacklist():
+    """黑名单关键词命中的论文应被过滤。"""
+    from src.filtering import dedupe_and_filter
+    from src.models import VENUE_BLACKLIST
+
+    bl_venue = next(iter(VENUE_BLACKLIST)) if VENUE_BLACKLIST else "predatory journal xyz"
+    p = Paper(
+        title="Some Paper",
+        authors=["A"],
+        venue=bl_venue,
+        published_date="2024-01-01",
+        doi_url="",
+        openalex_url="",
+        cited_by_count=0,
+        abstract="content",
+        summary_zh="",
+        topics=["Finance"],
+        source="openalex",
+    )
+    result = dedupe_and_filter(
+        [p],
+        topic_whitelist={"finance"},
+        topic_blacklist=set(),
+        min_quality_score=1,
+    )
+    assert len(result) == 0
+
+
+def test_render_markdown_includes_overview():
+    """render_markdown 应在输出中包含 overview 内容。"""
+    from src.rendering import render_markdown
+
+    md = render_markdown(
+        date="2024-01-01",
+        papers=[],
+        overview="今日文献聚焦于资产定价研究。",
+    )
+    assert "今日文献聚焦于资产定价研究" in md
+    assert "今日综述" in md
+
+
+def test_render_markdown_no_overview():
+    """overview 为空时不应出现综述区块。"""
+    from src.rendering import render_markdown
+
+    md = render_markdown(date="2024-01-01", papers=[], overview="")
+    assert "今日综述" not in md

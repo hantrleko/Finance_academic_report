@@ -222,7 +222,7 @@ def fetch_openalex_papers(date_from: dt.date, date_to: dt.date, mailto: str, per
                     for a in authorships[:5]
                     if isinstance(a, dict) and a.get("author", {}).get("display_name")
                 ],
-                venue=source.get("display_name") or "Unknown",
+                venue=unescape(source.get("display_name") or "Unknown"),
                 published_date=item.get("publication_date") or "",
                 doi_url=doi if doi.startswith("http") else (f"https://doi.org/{doi}" if doi else ""),
                 openalex_url=item.get("id", ""),
@@ -331,7 +331,7 @@ def fetch_semantic_scholar_papers(
             Paper(
                 title=item.get("title") or "Untitled",
                 authors=[a.get("name", "") for a in authors_raw[:5] if a.get("name")],
-                venue=item.get("venue") or "Unknown",
+                venue=unescape(item.get("venue") or "Unknown"),
                 published_date=item.get("publicationDate") or "",
                 doi_url=f"https://doi.org/{doi}" if doi else "",
                 openalex_url=f"https://api.semanticscholar.org/CorpusID:{external_ids.get('CorpusId', '')}" if external_ids.get("CorpusId") else "",
