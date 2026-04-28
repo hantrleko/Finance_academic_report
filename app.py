@@ -1,6 +1,10 @@
 """Finance Academic Digest - Streamlit 主入口"""
 import streamlit as st
 
+# ---- 版本信息 ----
+APP_VERSION = "v1.1"
+APP_VERSION_DATE = "2026-04-28"
+
 st.set_page_config(
     page_title="金融经济学每日文献速递",
     page_icon="📊",
@@ -32,9 +36,9 @@ st.sidebar.markdown(
     "- [NBER](https://www.nber.org)\n"
 )
 st.sidebar.markdown("---")
-st.sidebar.caption("由 GitHub Actions 每日自动更新")
+st.sidebar.caption(f"由 GitHub Actions 每日自动更新\n\n版本：{APP_VERSION}（{APP_VERSION_DATE}）")
 
-# ---- 主页内容（重定向提示）----
+# ---- 主页内容 ----
 st.title("📊 金融经济学每日文献速递")
 st.markdown(
     """
@@ -51,3 +55,34 @@ st.markdown(
     | ⚙️ 手动抓取 | 手动触发文献抓取（需配置 API Key） |
     """
 )
+
+st.markdown("---")
+
+# ---- 版本更新日志 ----
+with st.expander(f"📋 版本更新日志（当前：{APP_VERSION}）", expanded=False):
+    st.markdown(
+        f"""
+        ### {APP_VERSION} — {APP_VERSION_DATE}
+        **新增 / 优化**
+        - 新增版本号标识，侧边栏和主页均可查看当前版本
+        - 统计页面增加空数据保护，全新部署时不再崩溃
+        - 期刊名称（Venue）HTML 实体自动解码（如 `&amp;` → `&`）
+        - arXiv / NBER 来源引入基础质量过滤，过滤明显不相关预印本
+        - LLM 洞察 Prompt 增加英文键名强制约束，防止解析失败
+        - 新增 `.streamlit/secrets.toml.example` 部署配置模板
+        - 测试用例从 11 个扩充至 23 个，覆盖关键鲁棒性函数
+
+        ### v1.0 — 2026-04-24
+        **重构**
+        - 完整重构为 Streamlit 多页面网站（今日速递 / 历史档案 / 数据统计 / 手动抓取）
+        - 移除邮件推送功能，删除 subscribers.py 及相关 workflow 步骤
+        - 修复 `overview` 字段漏写到 `digest.json` 的 Bug
+        - 修复手动抓取页面 `os.environ` 全局污染问题
+        - LLM 调用增加指数退避重试（最多 3 次，支持 429/502/503）
+        - 无摘要论文惩罚分从 -5 调整为 -25，确保被完全过滤
+        - 损坏的 `digest.json` 文件在页面上显示友好警告而非白屏
+        - 引入顶级期刊白名单加分（+5）和引用数加分（最高 +5）
+        - 修复 NBER 作者提取和日期回退逻辑
+        - 为 `data_loader.py` 添加 `@st.cache_data` 缓存
+        """
+    )
