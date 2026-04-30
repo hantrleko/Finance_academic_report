@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from .filtering import backfill_abstracts, dedupe_and_filter
+from .filtering import backfill_abstracts, dedupe_and_filter, normalize_title
 from .models import DigestConfig, LLMConfig
 from .rendering import render_html, render_markdown
 from .sources import (
@@ -19,6 +19,39 @@ from .sources import (
 from .summarization import apply_summaries, generate_digest_insights, generate_digest_overview, llm_screen_relevance
 
 SOURCE_PRIORITY = ["openalex", "arxiv", "semantic_scholar", "nber"]
+
+
+def _load_seen_titles(output_dir: Path, run_date: dt.date, lookback_days: int) -> set[str]:
+    """从过去 lookback_days 天的 digest.json 中加载已出现的论文标题（归一化后），
+    用于全局跨期去重，避免同一篇论文在不同日期的日报中重复出现。
+    """
+    seen: set[str] = set()
+    for offset in range(1, lookback_days + 1):
+        past_date = run_date - dt.timedelta(days=offset)
+        path = output_dir / past_date.isoformat() / "digest.json"
+        if not path.exists():
+            continue
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            for p in data.get("papers", []):
+                title = p.get("title", "")
+                norm = normalize_title(title)
+                if norm:
+                    seen.add(norm)
+        except Exception:
+            pass
+    return seen
+
+
+def _cross_period_dedup(papers: list, seen_titles: set[str]) -> list:
+    """过滤掉在过去几期中已经出现过的论文（全局跨期去重）。"""
+    result = []
+    for paper in papers:
+        norm = normalize_title(paper.title)
+        if norm and norm in seen_titles:
+            continue
+        result.append(paper)
+    return result
 
 
 def _load_latest_count(latest_json_path: Path) -> int:
@@ -137,6 +170,15 @@ def build_digest(
 
     papers = [p for p in combined if p.source in ("arxiv", "semantic_scholar", "nber") or p.cited_by_count >= config.min_citations]
     papers = backfill_abstracts(papers, mailto=config.openalex_mailto)
+
+    # 全局跨期去重：过滤过去 lookback_days 天已出现过的论文
+    seen_titles = _load_seen_titles(config.output_dir, run_date, config.lookback_days)
+    before_dedup = len(papers)
+    papers = _cross_period_dedup(papers, seen_titles)
+    deduped_count = before_dedup - len(papers)
+    if deduped_count > 0:
+        print(f"[DEDUP] Removed {deduped_count} cross-period duplicate(s) (seen in past {config.lookback_days}d).")
+
     papers = dedupe_and_filter(
         papers,
         topic_whitelist=config.topic_whitelist,

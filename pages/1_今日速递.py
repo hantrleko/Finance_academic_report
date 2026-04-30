@@ -10,7 +10,8 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 import streamlit as st
-from utils.data_loader import get_available_dates, load_latest_digest, load_digest
+from utils.data_loader import get_available_dates, load_digest
+from src.models import VENUE_WHITELIST
 
 st.set_page_config(
     page_title="今日速递 | 金融文献速递",
@@ -52,6 +53,17 @@ st.markdown(
     .badge-openalex { background: #d1e7dd; color: #0f5132; }
     .badge-semantic_scholar { background: #cff4fc; color: #055160; }
     .badge-nber { background: #f8d7da; color: #842029; }
+    .badge-top-tier {
+        display: inline-block;
+        padding: 2px 10px;
+        border-radius: 20px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        background: #fff8e1;
+        color: #b45309;
+        border: 1px solid #f59e0b;
+        margin-left: 6px;
+    }
     .insight-box {
         background: #f0f9f2;
         border: 1px solid #c3e6cb;
@@ -152,7 +164,7 @@ if insights:
 
 # ---- 筛选控件 ----
 st.markdown("### 📋 文献列表")
-col_f1, col_f2 = st.columns([2, 1])
+col_f1, col_f2, col_f3 = st.columns([2, 1, 1])
 with col_f1:
     search_kw = st.text_input("🔍 搜索标题/摘要关键词", placeholder="例如：inflation、machine learning")
 with col_f2:
@@ -162,6 +174,91 @@ with col_f2:
         default=[],
         placeholder="全部来源",
     )
+with col_f3:
+    top_tier_only = st.checkbox("🏆 仅显示顶级期刊", value=False)
+
+# ---- 辅助函数 ----
+def is_top_tier(venue: str) -> bool:
+    """判断期刊是否在顶级期刊白名单中。"""
+    venue_lower = venue.lower()
+    return any(wl in venue_lower for wl in VENUE_WHITELIST)
+
+
+def paper_to_markdown(idx: int, p: dict) -> str:
+    """将单篇论文转换为 Markdown 格式，用于复制和导出。"""
+    title = p.get("title", "无标题")
+    authors = p.get("authors") or []
+    authors_str = ", ".join(authors[:5]) + (" et al." if len(authors) > 5 else "") if authors else "N/A"
+    venue = p.get("venue", "N/A")
+    pub_date = p.get("published_date", "N/A") or "N/A"
+    cited = p.get("cited_by_count", 0)
+    doi_url = p.get("doi_url", "")
+    openalex_url = p.get("openalex_url", "")
+    summary = p.get("summary_zh", "")
+    source = p.get("source", "unknown")
+    source_label = {"arxiv": "arXiv", "openalex": "OpenAlex", "semantic_scholar": "Semantic Scholar", "nber": "NBER"}.get(source, source)
+    tier_tag = " 🏆 Top Tier" if is_top_tier(venue) else ""
+
+    link = doi_url or openalex_url or ""
+    title_md = f"[{title}]({link})" if link else title
+
+    lines = [
+        f"### {idx}. {title_md}",
+        f"**来源：** {source_label}{tier_tag}  |  **期刊：** {venue}  |  **发表：** {pub_date}  |  **引用：** {cited}",
+        f"**作者：** {authors_str}",
+        "",
+        summary,
+        "",
+    ]
+    return "\n".join(lines)
+
+
+def digest_to_markdown(date_str: str, papers: list, overview: str, insights: dict) -> str:
+    """将整期日报转换为 Markdown 格式。"""
+    lines = [f"# 金融经济学文献速递 — {date_str}", ""]
+    if overview:
+        lines += ["## 今日综述", "", overview, ""]
+    if insights:
+        lines += ["## 今日洞察", ""]
+        labels = {"themes": "主题趋势", "methods": "方法趋势", "implications": "启示与应用", "watchlist": "后续观察"}
+        for key, label in labels.items():
+            val = insights.get(key, "")
+            if val:
+                lines.append(f"**{label}：** {val}")
+        lines.append("")
+    lines += ["## 文献列表", ""]
+    for idx, p in enumerate(papers, 1):
+        lines.append(paper_to_markdown(idx, p))
+    return "\n".join(lines)
+
+
+# ---- 过滤论文 ----
+filtered_papers = papers
+if source_filter:
+    filtered_papers = [p for p in filtered_papers if p.get("source") in source_filter]
+if search_kw:
+    kw_lower = search_kw.lower()
+    filtered_papers = [
+        p for p in filtered_papers
+        if kw_lower in p.get("title", "").lower()
+        or kw_lower in p.get("abstract", "").lower()
+        or kw_lower in p.get("summary_zh", "").lower()
+    ]
+if top_tier_only:
+    filtered_papers = [p for p in filtered_papers if is_top_tier(p.get("venue", ""))]
+
+# ---- 导出全期日报按钮 ----
+if papers:
+    full_md = digest_to_markdown(date_str, papers, overview, insights)
+    col_export1, col_export2, _ = st.columns([1, 1, 4])
+    with col_export1:
+        st.download_button(
+            label="⬇️ 导出全期日报 (Markdown)",
+            data=full_md,
+            file_name=f"finance_digest_{date_str}.md",
+            mime="text/markdown",
+            help="将本期所有文献导出为 Markdown 文件，可直接粘贴到 Notion、Obsidian 等笔记软件",
+        )
 
 # ---- 论文卡片展示 ----
 BADGE_CLASS = {
@@ -176,18 +273,6 @@ SOURCE_LABEL = {
     "semantic_scholar": "Semantic Scholar",
     "nber": "NBER",
 }
-
-filtered_papers = papers
-if source_filter:
-    filtered_papers = [p for p in filtered_papers if p.get("source") in source_filter]
-if search_kw:
-    kw_lower = search_kw.lower()
-    filtered_papers = [
-        p for p in filtered_papers
-        if kw_lower in p.get("title", "").lower()
-        or kw_lower in p.get("abstract", "").lower()
-        or kw_lower in p.get("summary_zh", "").lower()
-    ]
 
 if not filtered_papers:
     st.info("没有符合条件的文献。")
@@ -228,12 +313,19 @@ else:
         pub_date = p.get("published_date", "N/A") or "N/A"
         cited = p.get("cited_by_count", 0)
 
+        # 顶级期刊徽章
+        top_tier_badge = ""
+        if is_top_tier(venue):
+            top_tier_badge = '<span class="badge-top-tier">🏆 Top Tier</span>'
+
+        # 渲染论文卡片（HTML 部分）
         st.markdown(
             f"""
             <div class="paper-card">
               <div class="paper-title">{idx}. {p.get("title", "无标题")}</div>
               <div class="paper-meta">
                 <span class="source-badge {badge_cls}">{src_label}</span>
+                {top_tier_badge}
                 <strong>期刊/来源：</strong>{venue}
                 &nbsp;|&nbsp; <strong>发表：</strong>{pub_date}
                 &nbsp;|&nbsp; <strong>引用数：</strong>{cited}
@@ -245,4 +337,15 @@ else:
             </div>
             """,
             unsafe_allow_html=True,
+        )
+
+        # 单篇论文复制按钮（Streamlit 原生按钮，在卡片下方）
+        paper_md = paper_to_markdown(idx, p)
+        st.download_button(
+            label="📋 复制此篇 (Markdown)",
+            data=paper_md,
+            file_name=f"paper_{idx}_{date_str}.md",
+            mime="text/markdown",
+            key=f"copy_{idx}_{date_str}",
+            help="下载此篇论文的 Markdown 格式摘要",
         )

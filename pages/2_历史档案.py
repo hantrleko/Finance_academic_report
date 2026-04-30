@@ -10,6 +10,7 @@ if str(ROOT) not in sys.path:
 
 import streamlit as st
 from utils.data_loader import get_available_dates, load_digest, get_alert_dates
+from src.models import VENUE_WHITELIST
 
 st.set_page_config(
     page_title="历史档案 | 金融文献速递",
@@ -50,6 +51,17 @@ st.markdown(
     .badge-openalex { background: #d1e7dd; color: #0f5132; }
     .badge-semantic_scholar { background: #cff4fc; color: #055160; }
     .badge-nber { background: #f8d7da; color: #842029; }
+    .badge-top-tier {
+        display: inline-block;
+        padding: 2px 9px;
+        border-radius: 20px;
+        font-size: 0.76rem;
+        font-weight: 700;
+        background: #fff8e1;
+        color: #b45309;
+        border: 1px solid #f59e0b;
+        margin-left: 5px;
+    }
     </style>
     """,
     unsafe_allow_html=True,
@@ -118,14 +130,69 @@ if insights:
 
 st.markdown("---")
 
+# ---- 辅助函数 ----
+def is_top_tier(venue: str) -> bool:
+    venue_lower = venue.lower()
+    return any(wl in venue_lower for wl in VENUE_WHITELIST)
+
+
+def paper_to_markdown(idx: int, p: dict) -> str:
+    title = p.get("title", "无标题")
+    authors = p.get("authors") or []
+    authors_str = ", ".join(authors[:5]) + (" et al." if len(authors) > 5 else "") if authors else "N/A"
+    venue = p.get("venue", "N/A")
+    pub_date = p.get("published_date", "N/A") or "N/A"
+    cited = p.get("cited_by_count", 0)
+    doi_url = p.get("doi_url", "")
+    openalex_url = p.get("openalex_url", "")
+    summary = p.get("summary_zh", "")
+    source = p.get("source", "unknown")
+    source_label = {"arxiv": "arXiv", "openalex": "OpenAlex", "semantic_scholar": "Semantic Scholar", "nber": "NBER"}.get(source, source)
+    tier_tag = " 🏆 Top Tier" if is_top_tier(venue) else ""
+    link = doi_url or openalex_url or ""
+    title_md = f"[{title}]({link})" if link else title
+    lines = [
+        f"### {idx}. {title_md}",
+        f"**来源：** {source_label}{tier_tag}  |  **期刊：** {venue}  |  **发表：** {pub_date}  |  **引用：** {cited}",
+        f"**作者：** {authors_str}",
+        "",
+        summary,
+        "",
+    ]
+    return "\n".join(lines)
+
+
+def digest_to_markdown(date_str: str, papers: list, overview: str, insights: dict) -> str:
+    lines = [f"# 金融经济学文献速递 — {date_str}", ""]
+    if overview:
+        lines += ["## 今日综述", "", overview, ""]
+    if insights:
+        lines += ["## 今日洞察", ""]
+        for key, label in [("themes", "主题趋势"), ("methods", "方法趋势"),
+                            ("implications", "启示与应用"), ("watchlist", "后续观察")]:
+            val = insights.get(key, "")
+            if val:
+                lines.append(f"**{label}：** {val}")
+        lines.append("")
+    lines += ["## 文献列表", ""]
+    for idx, p in enumerate(papers, 1):
+        lines.append(paper_to_markdown(idx, p))
+    return "\n".join(lines)
+
+
 # ---- 筛选 ----
-search_kw = st.text_input("🔍 搜索关键词", placeholder="标题、摘要或主题")
-source_filter = st.multiselect(
-    "来源筛选",
-    options=["arxiv", "openalex", "semantic_scholar", "nber"],
-    default=[],
-    placeholder="全部来源",
-)
+col_f1, col_f2, col_f3 = st.columns([2, 1, 1])
+with col_f1:
+    search_kw = st.text_input("🔍 搜索关键词", placeholder="标题、摘要或主题")
+with col_f2:
+    source_filter = st.multiselect(
+        "来源筛选",
+        options=["arxiv", "openalex", "semantic_scholar", "nber"],
+        default=[],
+        placeholder="全部来源",
+    )
+with col_f3:
+    top_tier_only = st.checkbox("🏆 仅显示顶级期刊", value=False)
 
 filtered = papers
 if source_filter:
@@ -138,6 +205,19 @@ if search_kw:
         or kw in p.get("abstract", "").lower()
         or kw in p.get("summary_zh", "").lower()
     ]
+if top_tier_only:
+    filtered = [p for p in filtered if is_top_tier(p.get("venue", ""))]
+
+# ---- 导出按钮 ----
+if papers:
+    full_md = digest_to_markdown(selected_date, papers, overview, insights)
+    st.download_button(
+        label="⬇️ 导出本期日报 (Markdown)",
+        data=full_md,
+        file_name=f"finance_digest_{selected_date}.md",
+        mime="text/markdown",
+        help="将本期所有文献导出为 Markdown 文件",
+    )
 
 BADGE_CLASS = {
     "arxiv": "badge-arxiv",
@@ -188,12 +268,18 @@ for idx, p in enumerate(filtered, 1):
     pub_date = p.get("published_date", "N/A") or "N/A"
     cited = p.get("cited_by_count", 0)
 
+    # 顶级期刊徽章
+    top_tier_badge = ""
+    if is_top_tier(venue):
+        top_tier_badge = '<span class="badge-top-tier">🏆 Top Tier</span>'
+
     st.markdown(
         f"""
         <div class="paper-card">
           <div class="paper-title">{idx}. {p.get("title", "无标题")}</div>
           <div class="paper-meta">
             <span class="source-badge {badge_cls}">{src_label}</span>
+            {top_tier_badge}
             <strong>期刊：</strong>{venue}
             &nbsp;|&nbsp; <strong>发表：</strong>{pub_date}
             &nbsp;|&nbsp; <strong>引用：</strong>{cited}
@@ -205,4 +291,15 @@ for idx, p in enumerate(filtered, 1):
         </div>
         """,
         unsafe_allow_html=True,
+    )
+
+    # 单篇复制按钮
+    paper_md = paper_to_markdown(idx, p)
+    st.download_button(
+        label="📋 复制此篇 (Markdown)",
+        data=paper_md,
+        file_name=f"paper_{idx}_{selected_date}.md",
+        mime="text/markdown",
+        key=f"copy_hist_{idx}_{selected_date}",
+        help="下载此篇论文的 Markdown 格式摘要",
     )
