@@ -2,7 +2,7 @@
 import streamlit as st
 
 # ---- 版本信息 ----
-APP_VERSION = "v1.2"
+APP_VERSION = "v1.3"
 APP_VERSION_DATE = "2026-04-30"
 
 st.set_page_config(
@@ -28,6 +28,60 @@ for name in pages:
     st.sidebar.markdown(f"- {name}")
 
 st.sidebar.markdown("---")
+
+# ---- 研究偏好设置（跨页面共享） ----
+st.sidebar.markdown("### 🎯 我的研究偏好")
+st.sidebar.markdown(
+    "<small>填写后，系统将使用 AI 为每篇论文评估与你研究方向的相关性，并按相关性排序。</small>",
+    unsafe_allow_html=True,
+)
+
+# 初始化 session_state
+if "user_preference" not in st.session_state:
+    st.session_state["user_preference"] = ""
+if "preference_llm_api_base" not in st.session_state:
+    st.session_state["preference_llm_api_base"] = ""
+if "preference_llm_api_key" not in st.session_state:
+    st.session_state["preference_llm_api_key"] = ""
+if "preference_llm_model" not in st.session_state:
+    st.session_state["preference_llm_model"] = "gpt-4o-mini"
+
+user_preference = st.sidebar.text_area(
+    "研究偏好描述",
+    value=st.session_state["user_preference"],
+    placeholder="例如：我关注量化投资、多因子模型和机器学习在资产定价中的应用",
+    height=100,
+    key="preference_input",
+    help="用自然语言描述你的研究兴趣，AI 将据此为每篇论文打分（需配置 LLM API）",
+)
+st.session_state["user_preference"] = user_preference
+
+with st.sidebar.expander("⚙️ 相关性评分 LLM 配置", expanded=False):
+    pref_api_base = st.text_input(
+        "API Base URL",
+        value=st.session_state["preference_llm_api_base"],
+        placeholder="https://api.openai.com/v1",
+        key="pref_api_base_input",
+        type="default",
+    )
+    pref_api_key = st.text_input(
+        "API Key",
+        value=st.session_state["preference_llm_api_key"],
+        placeholder="sk-...",
+        key="pref_api_key_input",
+        type="password",
+    )
+    pref_model = st.text_input(
+        "模型名称",
+        value=st.session_state["preference_llm_model"],
+        placeholder="gpt-4o-mini",
+        key="pref_model_input",
+    )
+    st.session_state["preference_llm_api_base"] = pref_api_base
+    st.session_state["preference_llm_api_key"] = pref_api_key
+    st.session_state["preference_llm_model"] = pref_model
+
+st.sidebar.markdown("---")
 st.sidebar.markdown(
     "**数据来源**\n\n"
     "- [OpenAlex](https://openalex.org)\n"
@@ -49,12 +103,15 @@ st.markdown(
 
     | 页面 | 功能 |
     |------|------|
-    | 🏠 今日速递 | 查看最新一期文献速递，含 AI 综述与洞察、顶级期刊打标、一键导出 |
+    | 🏠 今日速递 | 查看最新一期文献速递，含 AI 综述与洞察、顶级期刊打标、个性化排序、一键导出 |
     | 📅 历史档案 | 按日期浏览历史期刊，支持导出和复制 |
     | 📈 数据统计 | 文献来源、主题分布等可视化统计 |
     | ⚙️ 手动抓取 | 手动触发文献抓取（需配置 API Key） |
     """
 )
+
+if user_preference.strip():
+    st.info(f"🎯 **个性化模式已启用**：当前研究偏好为「{user_preference[:60]}{'...' if len(user_preference) > 60 else ''}」\n\n前往「今日速递」或「历史档案」页面，点击「按相关性排序」即可查看个性化排序结果。")
 
 st.markdown("---")
 
@@ -64,9 +121,18 @@ with st.expander(f"📋 版本更新日志（当前：{APP_VERSION}）", expande
         f"""
         ### {APP_VERSION} — {APP_VERSION_DATE}
         **新增 / 优化**
+        - 侧边栏新增「我的研究偏好」文本框，支持自然语言描述研究兴趣
+        - AI 个性化相关性评分：LLM 为每篇论文打出 0-100 的相关性分数
+        - 今日速递 / 历史档案页面新增「按相关性排序」开关，一键切换个性化排序
+        - 相关性分数以进度条形式直观展示在每篇论文卡片上
+        - 采用批量评分策略（每批 5 篇），减少 API 调用次数，降低成本
+        - 偏好设置通过 session_state 跨页面共享，无需重复填写
+
+        ### v1.2 — 2026-04-30
+        **新增 / 优化**
         - 全局跨期去重：抓取时自动过滤过去 7 天已出现的论文，保证每日日报 100% 新鲜
         - 顶级期刊打标：命中 VENUE_WHITELIST 的论文在卡片上显示 🏆 Top Tier 金色徽章
-        - 新增「仅显示顶级期刊」筛选开关，快速聚焦高质量文献
+        - 新增「仅显示顶级期刊」筛选开关
         - 一键导出全期日报为 Markdown 文件（兼容 Notion、Obsidian 等笔记软件）
         - 单篇论文一键下载 Markdown 格式摘要
         - 历史档案页面同步支持以上所有新功能

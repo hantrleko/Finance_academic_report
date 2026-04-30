@@ -181,7 +181,7 @@ def digest_to_markdown(date_str: str, papers: list, overview: str, insights: dic
 
 
 # ---- 筛选 ----
-col_f1, col_f2, col_f3 = st.columns([2, 1, 1])
+col_f1, col_f2, col_f3, col_f4 = st.columns([2, 1, 1, 1])
 with col_f1:
     search_kw = st.text_input("🔍 搜索关键词", placeholder="标题、摘要或主题")
 with col_f2:
@@ -193,6 +193,54 @@ with col_f2:
     )
 with col_f3:
     top_tier_only = st.checkbox("🏆 仅显示顶级期刊", value=False)
+with col_f4:
+    sort_by_relevance = st.checkbox(
+        "🎯 按相关性排序",
+        value=False,
+        help="需要在侧边栏填写「我的研究偏好」并配置 LLM API",
+    )
+
+# ---- 个性化相关性评分 ----
+user_preference = st.session_state.get("user_preference", "").strip()
+pref_api_base = st.session_state.get("preference_llm_api_base", "").strip()
+pref_api_key = st.session_state.get("preference_llm_api_key", "").strip()
+pref_model = st.session_state.get("preference_llm_model", "gpt-4o-mini").strip()
+
+_cache_key = f"relevance_hist_{selected_date}_{user_preference[:50]}_{len(papers)}"
+
+if sort_by_relevance and user_preference and papers:
+    if not pref_api_key or not pref_api_base:
+        st.warning("⚠️ 请在侧边栏「相关性评分 LLM 配置」中填写 API Base URL 和 API Key。")
+    elif _cache_key not in st.session_state:
+        with st.spinner(f"🎯 正在为 {len(papers)} 篇论文评估相关性，请稍候..."):
+            try:
+                from src.models import LLMConfig
+                from src.summarization import score_papers_by_preference
+                import copy
+
+                pref_cfg = LLMConfig(
+                    enabled=True,
+                    api_base=pref_api_base,
+                    api_key=pref_api_key,
+                    model=pref_model,
+                    timeout_seconds=30,
+                )
+                papers_copy = copy.deepcopy(papers)
+                papers_copy = score_papers_by_preference(papers_copy, user_preference, pref_cfg)
+                st.session_state[_cache_key] = papers_copy
+                st.success(f"✅ 相关性评分完成！")
+            except Exception as e:
+                st.error(f"❌ 相关性评分失败：{e}")
+                st.session_state[_cache_key] = None
+    else:
+        if st.session_state[_cache_key] is not None:
+            st.info(f"🎯 已使用缓存的相关性评分结果")
+
+    if _cache_key in st.session_state and st.session_state[_cache_key] is not None:
+        papers = st.session_state[_cache_key]
+        papers = sorted(papers, key=lambda p: p.get("relevance_score", -1), reverse=True)
+elif sort_by_relevance and not user_preference:
+    st.warning("⚠️ 请先在左侧侧边栏填写「我的研究偏好」，然后再开启相关性排序。")
 
 filtered = papers
 if source_filter:
@@ -273,6 +321,27 @@ for idx, p in enumerate(filtered, 1):
     if is_top_tier(venue):
         top_tier_badge = '<span class="badge-top-tier">🏆 Top Tier</span>'
 
+    # 相关性分数条
+    relevance_score = p.get("relevance_score", -1)
+    relevance_html = ""
+    if relevance_score >= 0:
+        bar_width = relevance_score
+        if relevance_score >= 70:
+            bar_color = "linear-gradient(90deg, #3b82f6, #10b981)"
+        elif relevance_score >= 40:
+            bar_color = "linear-gradient(90deg, #f59e0b, #3b82f6)"
+        else:
+            bar_color = "linear-gradient(90deg, #ef4444, #f59e0b)"
+        relevance_html = f"""
+        <div style="display:flex;align-items:center;gap:8px;margin:4px 0;">
+            <span style="font-size:0.82rem;color:#555;min-width:80px;">🎯 相关性</span>
+            <div style="flex:1;background:#e5e7eb;border-radius:6px;height:8px;overflow:hidden;">
+                <div style="width:{bar_width}%;height:8px;border-radius:6px;background:{bar_color};"></div>
+            </div>
+            <span style="font-size:0.82rem;font-weight:700;color:#1d4ed8;min-width:36px;">{relevance_score}/100</span>
+        </div>
+        """
+
     st.markdown(
         f"""
         <div class="paper-card">
@@ -286,6 +355,7 @@ for idx, p in enumerate(filtered, 1):
           </div>
           <div class="paper-meta"><strong>作者：</strong>{authors_str}</div>
           <div class="paper-meta"><strong>主题：</strong>{topics_str}</div>
+          {relevance_html}
           <div class="paper-meta">{links_html}</div>
           <div class="summary-box">{summary_html}</div>
         </div>

@@ -373,6 +373,79 @@ def generate_digest_overview(papers: list[Paper], cfg: LLMConfig) -> str:
     return result
 
 
+def score_papers_by_preference(
+    papers: list[dict],
+    preference: str,
+    cfg: LLMConfig,
+    batch_size: int = 5,
+) -> list[dict]:
+    """根据用户研究偏好，让 LLM 为每篇论文打出 relevance_score（0-100）。
+
+    采用批量处理模式，每次将 batch_size 篇论文一起发给 LLM，减少 API 调用次数。
+    如果 LLM 未启用或调用失败，所有论文的 relevance_score 设为 -1（表示未评分）。
+    """
+    if not cfg.enabled or not preference.strip() or not papers:
+        for p in papers:
+            p["relevance_score"] = -1
+        return papers
+
+    # 初始化所有论文的 relevance_score 为 -1
+    for p in papers:
+        p["relevance_score"] = -1
+
+    # 构建论文索引映射，方便批量处理后回写结果
+    paper_index = {i: p for i, p in enumerate(papers)}
+
+    for batch_start in range(0, len(papers), batch_size):
+        batch = [(i, papers[i]) for i in range(batch_start, min(batch_start + batch_size, len(papers)))]
+
+        paper_list_text = ""
+        for local_idx, (global_idx, p) in enumerate(batch, 1):
+            paper_list_text += (
+                f"[{local_idx}] 标题：{p.get('title', '')[:100]}\n"
+                f"    期刊：{p.get('venue', 'N/A')}\n"
+                f"    主题：{', '.join((p.get('topics') or [])[:4])}\n"
+                f"    摘要：{(p.get('abstract') or '')[:200]}\n\n"
+            )
+
+        prompt = (
+            f"用户的研究偏好：{preference}\n\n"
+            f"请为以下 {len(batch)} 篇论文评估与用户研究偏好的相关性，"
+            f"评分范围 0-100（100 = 完全匹配，0 = 完全不相关）。\n"
+            f"只返回 JSON 数组，格式为：[{{\"id\": 1, \"score\": 85}}, {{\"id\": 2, \"score\": 30}}, ...]\n"
+            f"不要添加任何其他文字。\n\n"
+            f"{paper_list_text}"
+        )
+
+        raw = _call_llm([{"role": "user", "content": prompt}], cfg, temperature=0.1, max_tokens=512)
+        if not raw:
+            print(f"  [RELEVANCE] Batch {batch_start//batch_size + 1}: LLM call failed, skipping batch")
+            continue
+
+        # 解析 LLM 返回的 JSON 数组
+        try:
+            cleaned = re.sub(r"^```(?:json)?\s*", "", raw.strip())
+            cleaned = re.sub(r"\s*```$", "", cleaned)
+            scores_list = json.loads(cleaned)
+            if not isinstance(scores_list, list):
+                raise ValueError("Expected a JSON array")
+            for item in scores_list:
+                local_id = int(item.get("id", 0)) - 1  # 转为 0-indexed
+                score = int(item.get("score", -1))
+                if 0 <= local_id < len(batch):
+                    global_idx = batch[local_id][0]
+                    paper_index[global_idx]["relevance_score"] = max(0, min(100, score))
+        except Exception as e:
+            print(f"  [RELEVANCE] Batch parse error: {e}, raw={raw[:200]}")
+            continue
+
+        print(f"  [RELEVANCE] Batch {batch_start//batch_size + 1}/{(len(papers) + batch_size - 1)//batch_size} scored")
+
+    scored = sum(1 for p in papers if p.get("relevance_score", -1) >= 0)
+    print(f"[RELEVANCE] {scored}/{len(papers)} papers scored by preference")
+    return papers
+
+
 def generate_digest_insights(papers: list[Paper], cfg: LLMConfig) -> dict[str, str]:
     if not cfg.enabled or not papers:
         return {}

@@ -64,6 +64,26 @@ st.markdown(
         border: 1px solid #f59e0b;
         margin-left: 6px;
     }
+    .relevance-bar-wrap {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 4px 0;
+    }
+    .relevance-label { font-size: 0.82rem; color: #555; min-width: 80px; }
+    .relevance-bar-bg {
+        flex: 1;
+        background: #e5e7eb;
+        border-radius: 6px;
+        height: 8px;
+        overflow: hidden;
+    }
+    .relevance-bar-fill {
+        height: 8px;
+        border-radius: 6px;
+        background: linear-gradient(90deg, #3b82f6, #10b981);
+    }
+    .relevance-score-num { font-size: 0.82rem; font-weight: 700; color: #1d4ed8; min-width: 36px; }
     .insight-box {
         background: #f0f9f2;
         border: 1px solid #c3e6cb;
@@ -164,7 +184,7 @@ if insights:
 
 # ---- 筛选控件 ----
 st.markdown("### 📋 文献列表")
-col_f1, col_f2, col_f3 = st.columns([2, 1, 1])
+col_f1, col_f2, col_f3, col_f4 = st.columns([2, 1, 1, 1])
 with col_f1:
     search_kw = st.text_input("🔍 搜索标题/摘要关键词", placeholder="例如：inflation、machine learning")
 with col_f2:
@@ -176,16 +196,20 @@ with col_f2:
     )
 with col_f3:
     top_tier_only = st.checkbox("🏆 仅显示顶级期刊", value=False)
+with col_f4:
+    sort_by_relevance = st.checkbox(
+        "🎯 按相关性排序",
+        value=False,
+        help="需要在侧边栏填写「我的研究偏好」并配置 LLM API",
+    )
 
 # ---- 辅助函数 ----
 def is_top_tier(venue: str) -> bool:
-    """判断期刊是否在顶级期刊白名单中。"""
     venue_lower = venue.lower()
     return any(wl in venue_lower for wl in VENUE_WHITELIST)
 
 
 def paper_to_markdown(idx: int, p: dict) -> str:
-    """将单篇论文转换为 Markdown 格式，用于复制和导出。"""
     title = p.get("title", "无标题")
     authors = p.get("authors") or []
     authors_str = ", ".join(authors[:5]) + (" et al." if len(authors) > 5 else "") if authors else "N/A"
@@ -198,13 +222,15 @@ def paper_to_markdown(idx: int, p: dict) -> str:
     source = p.get("source", "unknown")
     source_label = {"arxiv": "arXiv", "openalex": "OpenAlex", "semantic_scholar": "Semantic Scholar", "nber": "NBER"}.get(source, source)
     tier_tag = " 🏆 Top Tier" if is_top_tier(venue) else ""
+    relevance = p.get("relevance_score", -1)
+    relevance_str = f"  |  **相关性：** {relevance}/100" if relevance >= 0 else ""
 
     link = doi_url or openalex_url or ""
     title_md = f"[{title}]({link})" if link else title
 
     lines = [
         f"### {idx}. {title_md}",
-        f"**来源：** {source_label}{tier_tag}  |  **期刊：** {venue}  |  **发表：** {pub_date}  |  **引用：** {cited}",
+        f"**来源：** {source_label}{tier_tag}  |  **期刊：** {venue}  |  **发表：** {pub_date}  |  **引用：** {cited}{relevance_str}",
         f"**作者：** {authors_str}",
         "",
         summary,
@@ -214,7 +240,6 @@ def paper_to_markdown(idx: int, p: dict) -> str:
 
 
 def digest_to_markdown(date_str: str, papers: list, overview: str, insights: dict) -> str:
-    """将整期日报转换为 Markdown 格式。"""
     lines = [f"# 金融经济学文献速递 — {date_str}", ""]
     if overview:
         lines += ["## 今日综述", "", overview, ""]
@@ -231,6 +256,54 @@ def digest_to_markdown(date_str: str, papers: list, overview: str, insights: dic
         lines.append(paper_to_markdown(idx, p))
     return "\n".join(lines)
 
+
+# ---- 个性化相关性评分 ----
+user_preference = st.session_state.get("user_preference", "").strip()
+pref_api_base = st.session_state.get("preference_llm_api_base", "").strip()
+pref_api_key = st.session_state.get("preference_llm_api_key", "").strip()
+pref_model = st.session_state.get("preference_llm_model", "gpt-4o-mini").strip()
+
+# 缓存键：偏好 + 日期 + 论文数量，避免重复调用 LLM
+_cache_key = f"relevance_{selected_date}_{user_preference[:50]}_{len(papers)}"
+
+if sort_by_relevance and user_preference and papers:
+    if not pref_api_key or not pref_api_base:
+        st.warning("⚠️ 请在侧边栏「相关性评分 LLM 配置」中填写 API Base URL 和 API Key。")
+    elif _cache_key not in st.session_state:
+        # 首次评分：调用 LLM
+        with st.spinner(f"🎯 正在为 {len(papers)} 篇论文评估与「{user_preference[:30]}...」的相关性，请稍候..."):
+            try:
+                from src.models import LLMConfig
+                from src.summarization import score_papers_by_preference
+                import copy
+
+                pref_cfg = LLMConfig(
+                    enabled=True,
+                    api_base=pref_api_base,
+                    api_key=pref_api_key,
+                    model=pref_model,
+                    timeout_seconds=30,
+                )
+                # 深拷贝避免污染原始数据
+                papers_copy = copy.deepcopy(papers)
+                papers_copy = score_papers_by_preference(papers_copy, user_preference, pref_cfg)
+                st.session_state[_cache_key] = papers_copy
+                st.success(f"✅ 相关性评分完成！已按与「{user_preference[:30]}」的相关性从高到低排序。")
+            except Exception as e:
+                st.error(f"❌ 相关性评分失败：{e}")
+                st.session_state[_cache_key] = None
+    else:
+        if st.session_state[_cache_key] is not None:
+            st.info(f"🎯 已使用缓存的相关性评分结果（偏好：「{user_preference[:40]}」）")
+
+    # 使用评分后的论文列表
+    if _cache_key in st.session_state and st.session_state[_cache_key] is not None:
+        papers = st.session_state[_cache_key]
+        # 按相关性分数降序排序（未评分的 -1 排在最后）
+        papers = sorted(papers, key=lambda p: p.get("relevance_score", -1), reverse=True)
+
+elif sort_by_relevance and not user_preference:
+    st.warning("⚠️ 请先在左侧侧边栏填写「我的研究偏好」，然后再开启相关性排序。")
 
 # ---- 过滤论文 ----
 filtered_papers = papers
@@ -277,7 +350,9 @@ SOURCE_LABEL = {
 if not filtered_papers:
     st.info("没有符合条件的文献。")
 else:
-    st.caption(f"共显示 {len(filtered_papers)} / {count} 篇文献")
+    sort_label = "（按相关性排序）" if sort_by_relevance and user_preference else ""
+    st.caption(f"共显示 {len(filtered_papers)} / {count} 篇文献{sort_label}")
+
     for idx, p in enumerate(filtered_papers, 1):
         src = p.get("source", "unknown")
         badge_cls = BADGE_CLASS.get(src, "badge-openalex")
@@ -303,7 +378,6 @@ else:
         topics_str = " · ".join(topics[:5]) if topics else "N/A"
 
         summary_raw = p.get("summary_zh", "")
-        # 将结构化摘要中的 emoji 标签转为换行格式
         summary_html = summary_raw.replace("📌 研究问题：", "<br><strong>📌 研究问题：</strong>")
         summary_html = summary_html.replace("🔬 研究方法：", "<br><strong>🔬 研究方法：</strong>")
         summary_html = summary_html.replace("📊 核心发现：", "<br><strong>📊 核心发现：</strong>")
@@ -318,7 +392,28 @@ else:
         if is_top_tier(venue):
             top_tier_badge = '<span class="badge-top-tier">🏆 Top Tier</span>'
 
-        # 渲染论文卡片（HTML 部分）
+        # 相关性分数条
+        relevance_score = p.get("relevance_score", -1)
+        relevance_html = ""
+        if relevance_score >= 0:
+            bar_width = relevance_score
+            # 根据分数决定颜色
+            if relevance_score >= 70:
+                bar_color = "linear-gradient(90deg, #3b82f6, #10b981)"
+            elif relevance_score >= 40:
+                bar_color = "linear-gradient(90deg, #f59e0b, #3b82f6)"
+            else:
+                bar_color = "linear-gradient(90deg, #ef4444, #f59e0b)"
+            relevance_html = f"""
+            <div class="relevance-bar-wrap">
+                <span class="relevance-label">🎯 相关性</span>
+                <div class="relevance-bar-bg">
+                    <div class="relevance-bar-fill" style="width:{bar_width}%; background:{bar_color};"></div>
+                </div>
+                <span class="relevance-score-num">{relevance_score}/100</span>
+            </div>
+            """
+
         st.markdown(
             f"""
             <div class="paper-card">
@@ -332,6 +427,7 @@ else:
               </div>
               <div class="paper-meta"><strong>作者：</strong>{authors_str}</div>
               <div class="paper-meta"><strong>主题：</strong>{topics_str}</div>
+              {relevance_html}
               <div class="paper-meta">{links_html}</div>
               <div class="summary-box">{summary_html}</div>
             </div>
@@ -339,7 +435,6 @@ else:
             unsafe_allow_html=True,
         )
 
-        # 单篇论文复制按钮（Streamlit 原生按钮，在卡片下方）
         paper_md = paper_to_markdown(idx, p)
         st.download_button(
             label="📋 复制此篇 (Markdown)",
