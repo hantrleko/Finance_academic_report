@@ -49,8 +49,32 @@ def load_analysis_llm_config_from_env() -> LLMConfig:
     )
 
 
+def _parse_keyword_input(raw: str, fallback: set[str]) -> set[str]:
+    """将用户输入的逗号/换行分隔关键词字符串解析为集合，为空时使用 fallback。"""
+    if not raw or not raw.strip():
+        return set(fallback)
+    items = {x.strip().lower() for line in raw.splitlines() for x in line.split(",") if x.strip()}
+    return items or set(fallback)
+
+
 def build_digest_config_from_dict(params: dict[str, Any]) -> DigestConfig:
-    """从字典直接构建 DigestConfig，用于 Streamlit 前端直接传参，避免污染全局 os.environ。"""
+    """从字典直接构建 DigestConfig，用于 Streamlit 前端直接传参，避免污染全局 os.environ。
+
+    支持可选的 extra_keywords（追加到白名单）和 extra_blacklist（追加到黑名单）字段，
+    以及 custom_whitelist / custom_blacklist（完全覆盖默认关键词集合）。
+    """
+    # 白名单：先用默认值，再追加用户自定义词
+    whitelist = set(FINANCE_KEYWORDS)
+    extra_kw = params.get("extra_keywords", "")
+    if extra_kw and extra_kw.strip():
+        whitelist |= _parse_keyword_input(extra_kw, set())
+
+    # 黑名单：先用默认值，再追加用户自定义词
+    blacklist = set(SPAM_TERMS)
+    extra_bl = params.get("extra_blacklist", "")
+    if extra_bl and extra_bl.strip():
+        blacklist |= _parse_keyword_input(extra_bl, set())
+
     return DigestConfig(
         max_papers=int(params.get("max_papers", 12)),
         source_min_papers=int(params.get("source_min_papers", 2)),
@@ -59,8 +83,8 @@ def build_digest_config_from_dict(params: dict[str, Any]) -> DigestConfig:
         output_dir=Path(params.get("output_dir", "output")),
         keep_latest_when_empty=bool(params.get("keep_latest_when_empty", True)),
         lookback_days=int(params.get("lookback_days", 7)),
-        topic_whitelist=set(FINANCE_KEYWORDS),
-        topic_blacklist=set(SPAM_TERMS),
+        topic_whitelist=whitelist,
+        topic_blacklist=blacklist,
         min_quality_score=int(params.get("min_quality_score", 2)),
         openalex_mailto=str(params.get("openalex_mailto", "")),
         s2_api_key=str(params.get("s2_api_key", "")),

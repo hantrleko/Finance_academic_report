@@ -32,9 +32,22 @@ SPAM_TERMS = {
 }
 
 VENUE_BLACKLIST = {
-    "zenodo", "figshare", "dépôt institutionnel", "institutional repository", "preprints.org",
-    "mdpi preprints", "research square", "authorea", "techrxiv", "engrxiv", "africarxiv",
-    "eartharxiv", "medrxiv", "biorxiv",
+    # 预印本服务器 / 非同行评审平台
+    "zenodo", "figshare", "preprints.org", "mdpi preprints", "research square",
+    "authorea", "techrxiv", "engrxiv", "africarxiv", "eartharxiv", "medrxiv", "biorxiv",
+    # 机构仓库（非期刊）
+    "dépôt institutionnel", "institutional repository", "spire - sciences po",
+    "open research europe", "hal open science",
+    # 低质量/掠夺性期刊
+    "cogent economics", "cogent business",
+    "journal of economics, finance and management studies",
+    "international journal of economics and finance",
+    "studies in economics and finance",
+    "journal of real estate finance and economics",  # 注：此条仅针对低引用版本，可按需移除
+    "asian economic and financial review",
+    "journal of applied economics and business research",
+    "global journal of economics and finance",
+    "international journal of business and management",
 }
 
 # 顶级金融/经济学期刊白名单（命中则质量评分加成）

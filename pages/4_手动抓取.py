@@ -58,6 +58,39 @@ with col2:
         help="填写后可提高 S2 请求速率",
     )
 
+# ---- 关键词配置区 ----
+st.markdown("---")
+st.subheader("🔑 关键词配置（可选）")
+st.info(
+    "默认使用内置的金融/经济学关键词库。如需追加自定义词汇，请在下方填写。"
+    "多个词汇可用**逗号**或**换行**分隔，不区分大小写。"
+)
+
+kw_col1, kw_col2 = st.columns(2)
+with kw_col1:
+    extra_keywords = st.text_area(
+        "➕ 追加关键词白名单",
+        placeholder="例如：carbon pricing\nESG, green bond\ncrypto derivatives",
+        height=120,
+        help="这些词汇将追加到默认关键词库中，用于提高相关论文的质量分。",
+    )
+with kw_col2:
+    extra_blacklist = st.text_area(
+        "🚫 追加屏蔽词黑名单",
+        placeholder="例如：survey, textbook\nteaching, pedagogy",
+        height=120,
+        help="包含这些词汇的论文将被降分过滤。",
+    )
+
+if extra_keywords.strip():
+    kw_list = [w.strip() for line in extra_keywords.splitlines() for w in line.split(",") if w.strip()]
+    st.caption(f"✅ 将追加 {len(kw_list)} 个自定义关键词：{', '.join(kw_list[:8])}{'...' if len(kw_list) > 8 else ''}")
+
+if extra_blacklist.strip():
+    bl_list = [w.strip() for line in extra_blacklist.splitlines() for w in line.split(",") if w.strip()]
+    st.caption(f"🚫 将屏蔽 {len(bl_list)} 个自定义词汇：{', '.join(bl_list[:8])}{'...' if len(bl_list) > 8 else ''}")
+
+# ---- LLM 配置区 ----
 st.markdown("---")
 st.subheader("🤖 LLM 配置（可选）")
 st.info("不填写 LLM 配置时，将使用规则摘要（无 AI 增强）。")
@@ -88,7 +121,7 @@ if "run_result" not in st.session_state:
 
 def run_digest_task(params: dict) -> None:
     """在后台线程中运行抓取任务。
-    
+
     直接从 params 字典构建配置对象，完全不修改全局 os.environ，
     避免多用户并发时的环境变量污染问题。
     """
@@ -147,6 +180,8 @@ if start_btn and not st.session_state.is_running:
         "min_quality_score": min_quality_score,
         "openalex_mailto": openalex_mailto,
         "s2_api_key": s2_api_key,
+        "extra_keywords": extra_keywords,
+        "extra_blacklist": extra_blacklist,
         "llm_api_base": llm_api_base,
         "llm_api_key": llm_api_key,
         "llm_model": llm_model,
@@ -167,7 +202,9 @@ if st.session_state.run_log:
     if not st.session_state.is_running and st.session_state.run_result:
         result = st.session_state.run_result
         st.success(f"✅ 抓取完成！共获取 **{result['count']}** 篇文献，来源：{result.get('source_used', 'N/A')}")
-        st.markdown("请前往「今日速递」或「历史档案」页面查看结果。")
+        st.markdown(
+            "📖 **[点击前往「今日速递」查看结果 →](./今日速递)**"
+        )
 
     if st.session_state.is_running:
         st.button("🔄 刷新日志", on_click=st.rerun)

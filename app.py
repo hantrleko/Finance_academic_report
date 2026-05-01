@@ -2,8 +2,8 @@
 import streamlit as st
 
 # ---- 版本信息 ----
-APP_VERSION = "v1.3"
-APP_VERSION_DATE = "2026-04-30"
+APP_VERSION = "v1.4"
+APP_VERSION_DATE = "2026-05-01"
 
 st.set_page_config(
     page_title="金融经济学每日文献速递",
@@ -120,6 +120,13 @@ with st.expander(f"📋 版本更新日志（当前：{APP_VERSION}）", expande
     st.markdown(
         f"""
         ### {APP_VERSION} — {APP_VERSION_DATE}
+        **新增 / 优化**
+        - 扩充 VENUE_BLACKLIST：新增 11 个低质量/掌夺性期刊（Cogent、SPIRE、Zenodo 等），有效过滤约 12.9% 的水文
+        - 手动抓取页面新增关键词配置 UI：支持追加自定义白名单/黑名单，逗号或换行分隔，实时预览词数
+        - 数据统计页面全面升级：新增 7 日均线、Top Tier 占比趋势图、各来源平均引用数对比、期刊顶级彩色区分
+        - 抓取完成后新增「前往今日速递」直进链接
+
+        ### v1.3 — 2026-04-30
         **新增 / 优化**
         - 侧边栏新增「我的研究偏好」文本框，支持自然语言描述研究兴趣
         - AI 个性化相关性评分：LLM 为每篇论文打出 0-100 的相关性分数
