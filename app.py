@@ -2,8 +2,8 @@
 import streamlit as st
 
 # ---- 版本信息 ----
-APP_VERSION = "v1.4"
-APP_VERSION_DATE = "2026-05-01"
+APP_VERSION = "v1.5"
+APP_VERSION_DATE = "2026-05-02"
 
 st.set_page_config(
     page_title="金融经济学每日文献速递",
@@ -88,6 +88,7 @@ st.sidebar.markdown(
     "- [arXiv](https://arxiv.org)\n"
     "- [Semantic Scholar](https://www.semanticscholar.org)\n"
     "- [NBER](https://www.nber.org)\n"
+    "- [SSRN](https://www.ssrn.com)\n"
 )
 st.sidebar.markdown("---")
 st.sidebar.caption(f"由 GitHub Actions 每日自动更新\n\n版本：{APP_VERSION}（{APP_VERSION_DATE}）")
@@ -103,10 +104,12 @@ st.markdown(
 
     | 页面 | 功能 |
     |------|------|
-    | 🏠 今日速递 | 查看最新一期文献速递，含 AI 综述与洞察、顶级期刊打标、个性化排序、一键导出 |
+    | 🏠 今日速递 | 查看最新一期文献速递，含 AI 综述与洞察、顶级期刊打标、个性化排序、一键导出、收藏 |
     | 📅 历史档案 | 按日期浏览历史期刊，支持导出和复制 |
     | 📈 数据统计 | 文献来源、主题分布等可视化统计 |
     | ⚙️ 手动抓取 | 手动触发文献抓取（需配置 API Key） |
+    | 📚 知识库搜索 | 跨期全局搜索所有历史文献（DuckDB 驱动） |
+    | ⭐ 我的收藏 | 管理收藏论文，支持 BibTeX / Markdown 导出 |
     """
 )
 
@@ -119,7 +122,15 @@ st.markdown("---")
 with st.expander(f"📋 版本更新日志（当前：{APP_VERSION}）", expanded=False):
     st.markdown(
         f"""
-        ### {APP_VERSION} — {APP_VERSION_DATE}
+        ### v1.5 — 2026-05-02
+        **新增 / 优化**
+        - 新增「📚 知识库搜索」页面：DuckDB 驱动，跨所有历史期刊全局搜索，支持关键词、来源、日期范围、引用数、顶级期刊多维筛选
+        - 新增 SSRN 数据源（via OpenAlex SSRN 过滤），补齐金融学术圈最重要的预印本来源
+        - 新增「⭐ 我的收藏」页面：收藏论文持久化到 output/bookmarks.json，支持 BibTeX / Markdown 批量导出
+        - 今日速递页面每篇论文卡片新增「⭐ 收藏」按钮，收藏状态实时显示
+        - 修复测试套件中缺少 fetch_ssrn_papers mock 导致的测试失败
+
+        ### v1.4 — 2026-05-01
         **新增 / 优化**
         - 扩充 VENUE_BLACKLIST：新增 11 个低质量/掌夺性期刊（Cogent、SPIRE、Zenodo 等），有效过滤约 12.9% 的水文
         - 手动抓取页面新增关键词配置 UI：支持追加自定义白名单/黑名单，逗号或换行分隔，实时预览词数

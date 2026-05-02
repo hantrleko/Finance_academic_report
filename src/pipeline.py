@@ -15,10 +15,11 @@ from .sources import (
     fetch_nber_papers,
     fetch_openalex_papers,
     fetch_semantic_scholar_papers,
+    fetch_ssrn_papers,
 )
 from .summarization import apply_summaries, generate_digest_insights, generate_digest_overview, llm_screen_relevance
 
-SOURCE_PRIORITY = ["openalex", "arxiv", "semantic_scholar", "nber"]
+SOURCE_PRIORITY = ["openalex", "ssrn", "arxiv", "semantic_scholar", "nber"]
 
 
 def _load_seen_titles(output_dir: Path, run_date: dt.date, lookback_days: int) -> set[str]:
@@ -154,11 +155,13 @@ def build_digest(
         min_interval_seconds=config.s2_min_interval_seconds,
     )
     nber_papers = fetch_nber_papers(date_from, max_results=5)
+    ssrn_papers = fetch_ssrn_papers(date_from, run_date, mailto=config.openalex_mailto, per_page=15)
 
-    combined = openalex_papers + arxiv_papers + s2_papers + nber_papers
+    combined = openalex_papers + ssrn_papers + arxiv_papers + s2_papers + nber_papers
     sources = []
     for name, lst in [
         ("openalex", openalex_papers),
+        ("ssrn", ssrn_papers),
         ("arxiv", arxiv_papers),
         ("semantic_scholar", s2_papers),
         ("nber", nber_papers),

@@ -22,6 +22,9 @@ from .models import (
     Paper,
 )
 
+# SSRN Electronic Journal 在 OpenAlex 中的 Source ID
+SSRN_SOURCE_ID = "S4210172589"
+
 S2_MAX_RETRIES = 3
 S2_BASE_BACKOFF_SECONDS = 2
 _last_s2_request_ts = 0.0
@@ -176,6 +179,72 @@ def extract_abstract(indexed_abstract: dict[str, Any] | None) -> str:
 
 def topic_names(concepts: list[dict[str, Any]]) -> list[str]:
     return [c.get("display_name") for c in concepts[:5] if c.get("display_name")]
+
+
+def fetch_ssrn_papers(date_from: dt.date, date_to: dt.date, mailto: str, per_page: int = 30) -> list[Paper]:
+    """通过 OpenAlex API 获取 SSRN 最新金融/经济学 Working Papers。
+
+    SSRN 官方 RSS 对爬虫封锁（403），因此通过 OpenAlex 的 SSRN source 过滤
+    来获取数据（source ID: S4210172589）。无需额外 API Key，数据质量有保障。
+    """
+    filters = [
+        f"from_publication_date:{date_from.isoformat()}",
+        f"to_publication_date:{date_to.isoformat()}",
+        f"primary_location.source.id:{SSRN_SOURCE_ID}",
+        f"concepts.id:{CONCEPT_ECONOMICS}|{CONCEPT_FINANCE}",
+    ]
+    params = {
+        "filter": ",".join(filters),
+        "sort": "publication_date:desc",
+        "per-page": per_page,
+    }
+    if mailto:
+        params["mailto"] = mailto
+
+    try:
+        with urlopen(f"{OPENALEX_URL}?{urlencode(params)}", timeout=30) as response:
+            data = json.loads(response.read().decode("utf-8")).get("results", [])
+    except URLError:
+        return []
+
+    papers: list[Paper] = []
+    for item in data:
+        doi = item.get("doi") or ""
+        primary_location = item.get("primary_location") or {}
+        if not isinstance(primary_location, dict):
+            primary_location = {}
+        source = primary_location.get("source") or {}
+        if not isinstance(source, dict):
+            source = {}
+
+        authorships = item.get("authorships") or []
+        if not isinstance(authorships, list):
+            authorships = []
+
+        # 清理 SSRN 标题中的 HTML 标签（如 <span>）
+        raw_title = item.get("title") or "Untitled"
+        clean_title = re.sub(r"<[^>]+>", "", raw_title).strip()
+
+        papers.append(
+            Paper(
+                title=clean_title,
+                authors=[
+                    a.get("author", {}).get("display_name", "")
+                    for a in authorships[:5]
+                    if isinstance(a, dict) and a.get("author", {}).get("display_name")
+                ],
+                venue=unescape(source.get("display_name") or "SSRN"),
+                published_date=item.get("publication_date") or "",
+                doi_url=doi if doi.startswith("http") else (f"https://doi.org/{doi}" if doi else ""),
+                openalex_url=item.get("id", ""),
+                cited_by_count=item.get("cited_by_count", 0),
+                abstract=extract_abstract(item.get("abstract_inverted_index")),
+                summary_zh="",
+                topics=topic_names(item.get("concepts", [])),
+                source="ssrn",
+            )
+        )
+    return papers
 
 
 def fetch_openalex_papers(date_from: dt.date, date_to: dt.date, mailto: str, per_page: int = 50) -> list[Paper]:

@@ -154,7 +154,7 @@ for p in papers:
     source_counts[src] = source_counts.get(src, 0) + 1
 
 col2.metric("🔬 arXiv", source_counts.get("arxiv", 0))
-col3.metric("🌐 OpenAlex", source_counts.get("openalex", 0))
+col3.metric("🌐 OpenAlex + SSRN", source_counts.get("openalex", 0) + source_counts.get("ssrn", 0))
 col4.metric("📚 S2 + NBER", source_counts.get("semantic_scholar", 0) + source_counts.get("nber", 0))
 
 st.markdown("---")
@@ -339,12 +339,14 @@ BADGE_CLASS = {
     "openalex": "badge-openalex",
     "semantic_scholar": "badge-semantic_scholar",
     "nber": "badge-nber",
+    "ssrn": "badge-ssrn",
 }
 SOURCE_LABEL = {
     "arxiv": "arXiv",
     "openalex": "OpenAlex",
     "semantic_scholar": "Semantic Scholar",
     "nber": "NBER",
+    "ssrn": "SSRN",
 }
 
 if not filtered_papers:
@@ -436,11 +438,41 @@ else:
         )
 
         paper_md = paper_to_markdown(idx, p)
-        st.download_button(
-            label="📋 复制此篇 (Markdown)",
-            data=paper_md,
-            file_name=f"paper_{idx}_{date_str}.md",
-            mime="text/markdown",
-            key=f"copy_{idx}_{date_str}",
-            help="下载此篇论文的 Markdown 格式摘要",
-        )
+        btn_col1, btn_col2, _ = st.columns([1, 1, 4])
+        with btn_col1:
+            st.download_button(
+                label="📋 复制此篇 (Markdown)",
+                data=paper_md,
+                file_name=f"paper_{idx}_{date_str}.md",
+                mime="text/markdown",
+                key=f"copy_{idx}_{date_str}",
+                help="下载此篇论文的 Markdown 格式摘要",
+            )
+        with btn_col2:
+            try:
+                from utils.bookmarks import add_bookmark, is_bookmarked
+                authors_list = p.get("authors") or []
+                paper_for_bm = {
+                    "title": p.get("title", ""),
+                    "authors": ", ".join(authors_list),
+                    "venue": p.get("venue", ""),
+                    "published_date": p.get("published_date", ""),
+                    "doi_url": p.get("doi_url", ""),
+                    "openalex_url": p.get("openalex_url", ""),
+                    "cited_by_count": p.get("cited_by_count", 0),
+                    "abstract": p.get("abstract", ""),
+                    "summary_zh": p.get("summary_zh", ""),
+                    "source": p.get("source", ""),
+                    "digest_date": date_str,
+                }
+                already = is_bookmarked(paper_for_bm)
+                bm_label = "✅ 已收藏" if already else "⭐ 收藏"
+                if st.button(bm_label, key=f"bm_{idx}_{date_str}", help="收藏此论文到「我的收藏」"):
+                    if not already:
+                        add_bookmark(paper_for_bm)
+                        st.success("已添加到收藏夹！")
+                        st.rerun()
+                    else:
+                        st.info("该论文已在收藏夹中。")
+            except Exception:
+                pass

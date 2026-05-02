@@ -42,6 +42,7 @@ def test_build_digest_writes_files(monkeypatch, tmp_path: Path):
     monkeypatch.setattr(p, "fetch_arxiv_finance_econ_papers", lambda *_args, **_kwargs: [])
     monkeypatch.setattr(p, "fetch_semantic_scholar_papers", lambda *_args, **_kwargs: [])
     monkeypatch.setattr(p, "fetch_nber_papers", lambda *_args, **_kwargs: [])
+    monkeypatch.setattr(p, "fetch_ssrn_papers", lambda *_args, **_kwargs: [])
 
     cfg = DigestConfig(output_dir=tmp_path / "out")
     result = build_digest(cfg, translate_cfg=LLMConfig(), analysis_cfg=LLMConfig(), run_date=dt.date(2024, 1, 2))
@@ -75,6 +76,7 @@ def test_build_digest_overview_in_json(monkeypatch, tmp_path: Path):
     monkeypatch.setattr(p, "fetch_arxiv_finance_econ_papers", lambda *_args, **_kwargs: [])
     monkeypatch.setattr(p, "fetch_semantic_scholar_papers", lambda *_args, **_kwargs: [])
     monkeypatch.setattr(p, "fetch_nber_papers", lambda *_args, **_kwargs: [])
+    monkeypatch.setattr(p, "fetch_ssrn_papers", lambda *_args, **_kwargs: [])
 
     cfg = DigestConfig(output_dir=tmp_path / "out_overview")
     result = build_digest(cfg, translate_cfg=LLMConfig(), analysis_cfg=LLMConfig(), run_date=dt.date(2024, 1, 5))
@@ -91,6 +93,7 @@ def test_keep_latest_when_empty(monkeypatch, tmp_path: Path):
     monkeypatch.setattr(p, "fetch_arxiv_finance_econ_papers", lambda *_args, **_kwargs: [])
     monkeypatch.setattr(p, "fetch_semantic_scholar_papers", lambda *_args, **_kwargs: [])
     monkeypatch.setattr(p, "fetch_nber_papers", lambda *_args, **_kwargs: [])
+    monkeypatch.setattr(p, "fetch_ssrn_papers", lambda *_args, **_kwargs: [])
 
     out = tmp_path / "out"
     latest = out / "latest"
@@ -129,6 +132,7 @@ def test_build_digest_keeps_multi_source_floor(monkeypatch, tmp_path: Path):
     monkeypatch.setattr(p, "fetch_arxiv_finance_econ_papers", lambda *_args, **_kwargs: [make_paper("arxiv", i) for i in range(1, 6)])
     monkeypatch.setattr(p, "fetch_semantic_scholar_papers", lambda *_args, **_kwargs: [make_paper("semantic_scholar", i) for i in range(1, 4)])
     monkeypatch.setattr(p, "fetch_nber_papers", lambda *_args, **_kwargs: [make_paper("nber", i) for i in range(1, 3)])
+    monkeypatch.setattr(p, "fetch_ssrn_papers", lambda *_args, **_kwargs: [])
 
     cfg = DigestConfig(
         output_dir=tmp_path / "out_multi",
@@ -168,6 +172,7 @@ def test_build_digest_respects_source_max_share(monkeypatch, tmp_path: Path):
     monkeypatch.setattr(p, "fetch_arxiv_finance_econ_papers", lambda *_args, **_kwargs: [make_paper("arxiv", i) for i in range(1, 5)])
     monkeypatch.setattr(p, "fetch_semantic_scholar_papers", lambda *_args, **_kwargs: [make_paper("semantic_scholar", i) for i in range(1, 5)])
     monkeypatch.setattr(p, "fetch_nber_papers", lambda *_args, **_kwargs: [make_paper("nber", i) for i in range(1, 5)])
+    monkeypatch.setattr(p, "fetch_ssrn_papers", lambda *_args, **_kwargs: [])
 
     cfg = DigestConfig(
         output_dir=tmp_path / "out_cap",
