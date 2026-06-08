@@ -1,7 +1,7 @@
 # Finance & Economics Daily Digest
 
-[![Version](https://img.shields.io/badge/version-v1.8-blue)](https://github.com/hantrleko/Finance_academic_report/releases)
-[![Tests](https://img.shields.io/badge/tests-51%20passed-brightgreen)](https://github.com/hantrleko/Finance_academic_report/actions)
+[![Version](https://img.shields.io/badge/version-v1.9-blue)](https://github.com/hantrleko/Finance_academic_report/releases)
+[![Tests](https://img.shields.io/badge/tests-55%20passed-brightgreen)](https://github.com/hantrleko/Finance_academic_report/actions)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 每日自动抓取公开金融/经济学文献，生成结构化日报，并通过 **Streamlit** 在线网站进行交互式展示。
@@ -15,6 +15,7 @@
 - **研究雷达：** 无需外部 LLM，基于历史 digest 自动发现上升主题、方法/领域信号、来源结构和推荐关注论文
 - **专题工作台：** 输入主题关键词后自动生成专题时间线、相关延展词、综述提纲、方法/领域地图和推荐纳入综述的论文
 - **缺口地图：** 构建「研究领域 × 方法路线」矩阵，生成潜在选题、研究问题和数据线索
+- **假设实验室：** 将研究缺口转化为可检验假设卡，自动生成变量、机制、识别方案、稳健性和证伪测试
 - **智能导读：** 今日速递内置本地规则生成的关键词信号、阅读路径、引用/来源/顶刊概览
 - **质量保障：** 空结果保留 `output/latest`，异常写入 `output/alerts/`，digest JSON 结构校验，损坏文件友好提示
 - **高可靠性：** LLM 调用指数退避重试、S2 限流自动重试、JSON 解析三级容错
@@ -72,7 +73,7 @@ pytest -v
 | ⚙️ 手动抓取 | 手动触发抓取，支持自定义参数和 LLM 配置 |
 | 📚 知识库搜索 | 基于 DuckDB 跨期检索历史文献，支持多条件筛选和 Markdown 导出 |
 | ⭐ 我的收藏 | 管理收藏论文，支持 BibTeX / Markdown 导出 |
-| 🧭 研究雷达 | 从历史 digest 提炼上升主题、研究缺口、方法/领域信号、来源结构、推荐关注论文，并提供专题工作台生成综述草稿 |
+| 🧭 研究雷达 | 从历史 digest 提炼上升主题、研究缺口、假设卡、方法/领域信号、来源结构、推荐关注论文，并提供专题工作台生成综述草稿 |
 
 ## 数据质量与安全
 
@@ -134,7 +135,7 @@ Finance_academic_report/
 │   ├── 4_手动抓取.py               # 手动抓取页面
 │   ├── 5_知识库搜索.py             # DuckDB 跨期知识库搜索
 │   ├── 6_我的收藏.py               # 收藏夹管理与导出
-│   └── 7_研究雷达.py               # 上升主题、缺口地图、推荐阅读路径与专题工作台
+│   └── 7_研究雷达.py               # 上升主题、缺口地图、假设实验室与专题工作台
 ├── utils/
 │   ├── data_loader.py              # 数据加载工具（含缓存、标准化与容错）
 │   ├── bookmarks.py                # 收藏夹读写与 BibTeX 导出
@@ -154,7 +155,7 @@ Finance_academic_report/
 │   ├── latest/                     # 最新一期
 │   ├── YYYY-MM-DD/                 # 历史日期
 │   └── alerts/                     # 空结果告警
-├── tests/                          # 单元测试与数据健康检查（51 个用例）
+├── tests/                          # 单元测试与数据健康检查（55 个用例）
 ├── .github/workflows/              # GitHub Actions 定时任务
 ├── .streamlit/
 │   ├── config.toml                 # Streamlit 主题配置
@@ -166,6 +167,7 @@ Finance_academic_report/
 
 | 版本 | 日期 | 主要变更 |
 |------|------|----------|
+| v1.9 | 2026-06-08 | 研究雷达新增假设实验室：将缺口地图转化为可检验假设卡，生成变量、机制、识别方案、稳健性、证伪测试和 Markdown 提案；测试扩充至 55 个 |
 | v1.8 | 2026-06-08 | 研究雷达新增缺口地图：构建领域×方法矩阵，生成潜在选题、研究问题、数据线索和 Markdown 研究计划；测试扩充至 51 个 |
 | v1.7 | 2026-06-08 | 研究雷达升级专题工作台：支持主题检索、时间线、延展词、综述提纲、方法/领域地图和专题 Markdown 导出；测试扩充至 47 个 |
 | v1.6 | 2026-06-08 | 新增研究雷达与智能导读：本地提炼上升主题、方法/领域信号、来源结构和推荐关注论文；测试扩充至 42 个 |

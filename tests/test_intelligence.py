@@ -3,11 +3,13 @@ from __future__ import annotations
 from src.intelligence import (
     build_digest_brief,
     build_gap_map,
+    build_hypothesis_lab,
     build_research_radar,
     build_topic_workspace,
     citation_bucket,
     classify_taxonomy,
     gap_map_to_markdown,
+    hypothesis_lab_to_markdown,
     extract_topic_terms,
     paper_attention_score,
     radar_to_markdown,
@@ -201,3 +203,51 @@ def test_build_gap_map_empty_input_is_safe():
     assert gap_map["paper_count"] == 0
     assert gap_map["opportunities"] == []
     assert gap_map["matrix"]
+
+
+def test_build_hypothesis_lab_generates_testable_cards():
+    lab = build_hypothesis_lab([
+        {"date": "2026-06-03", "papers": [
+            _paper("Inflation and Causal Identification", abstract="Monetary policy with causal identification.", topics=["Inflation"]),
+            _paper("Bank Lending with Machine Learning", abstract="Bank lending and credit risk using machine learning.", topics=["Credit"]),
+        ]},
+    ], recent_issues=1)
+    assert lab["cards"]
+    card = lab["cards"][0]
+    assert card["id"].startswith("H")
+    assert card["hypothesis"]
+    assert card["treatment_variable"]
+    assert card["outcome_variable"]
+    assert card["identification_plan"]
+    assert card["robustness_checks"]
+    assert card["falsification_tests"]
+
+
+def test_hypothesis_lab_respects_card_limit():
+    lab = build_hypothesis_lab([
+        {"date": "2026-06-03", "papers": [
+            _paper("Inflation and Causal Identification", abstract="Monetary policy with causal identification.", topics=["Inflation"]),
+            _paper("Bank Lending with Machine Learning", abstract="Bank lending and credit risk using machine learning.", topics=["Credit"]),
+            _paper("Climate Text Analysis", abstract="Climate risk disclosure with text sentiment analysis.", topics=["Climate Risk"]),
+        ]},
+    ], recent_issues=1, max_cards=1)
+    assert len(lab["cards"]) == 1
+
+
+def test_hypothesis_lab_to_markdown_contains_proposal_sections():
+    lab = build_hypothesis_lab([
+        {"date": "2026-06-03", "papers": [
+            _paper("Inflation and Causal Identification", abstract="Monetary policy with causal identification.", topics=["Inflation"]),
+            _paper("Bank Lending with Machine Learning", abstract="Bank lending and credit risk using machine learning.", topics=["Credit"]),
+        ]},
+    ], recent_issues=1)
+    markdown = hypothesis_lab_to_markdown(lab)
+    assert "# 研究假设实验室" in markdown
+    assert "处理变量" in markdown
+    assert "证伪测试" in markdown
+
+
+def test_hypothesis_lab_empty_input_is_safe():
+    lab = build_hypothesis_lab([], recent_issues=5)
+    assert lab["cards"] == []
+    assert "# 研究假设实验室" in hypothesis_lab_to_markdown(lab)
