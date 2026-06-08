@@ -208,6 +208,7 @@ with tab3:
         "openalex": "OpenAlex",
         "semantic_scholar": "Semantic Scholar",
         "nber": "NBER",
+        "ssrn": "SSRN",
     }
     sources = list(source_counter.keys())
     source_display = [source_labels.get(s, s) for s in sources]

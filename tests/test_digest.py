@@ -337,6 +337,52 @@ def test_dedupe_and_filter_blacklist():
     assert len(result) == 0
 
 
+def test_dedupe_and_filter_applies_quality_rules_to_ssrn():
+    """SSRN 论文应与 OpenAlex/S2 一样经过黑名单和质量过滤。"""
+    from src.filtering import dedupe_and_filter
+
+    ssrn_paper = Paper(
+        title="Unrelated Teaching Note",
+        authors=["A"],
+        venue="SSRN",
+        published_date="2026-05-01",
+        doi_url="",
+        openalex_url="https://openalex.org/W-ssrn",
+        cited_by_count=0,
+        abstract="This note is about teaching material and classroom pedagogy.",
+        summary_zh="",
+        topics=["Education"],
+        source="ssrn",
+    )
+
+    result = dedupe_and_filter(
+        [ssrn_paper],
+        topic_whitelist={"finance"},
+        topic_blacklist={"pedagogy"},
+        min_quality_score=1,
+    )
+
+    assert result == []
+
+
+def test_legacy_send_emails_command_is_noop(capsys):
+    """旧 workflow 中的 send-emails 命令应兼容为成功 no-op。"""
+    from src.digest import make_parser, run_legacy_email_command
+
+    args = make_parser().parse_args([
+        "send-emails",
+        "--subscribers-file",
+        "data/subscribers.json",
+        "--fallback-to",
+        "test@example.com",
+    ])
+    assert args.command == "send-emails"
+
+    assert run_legacy_email_command() == 0
+    captured = capsys.readouterr()
+    assert "skipping legacy send-emails" in captured.out
+
+
 def test_render_markdown_includes_overview():
     """render_markdown 应在输出中包含 overview 内容。"""
     from src.rendering import render_markdown

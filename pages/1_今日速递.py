@@ -53,6 +53,7 @@ st.markdown(
     .badge-openalex { background: #d1e7dd; color: #0f5132; }
     .badge-semantic_scholar { background: #cff4fc; color: #055160; }
     .badge-nber { background: #f8d7da; color: #842029; }
+    .badge-ssrn { background: #eadcff; color: #5a189a; }
     .badge-top-tier {
         display: inline-block;
         padding: 2px 10px;
@@ -190,7 +191,7 @@ with col_f1:
 with col_f2:
     source_filter = st.multiselect(
         "来源筛选",
-        options=["arxiv", "openalex", "semantic_scholar", "nber"],
+        options=["arxiv", "openalex", "semantic_scholar", "nber", "ssrn"],
         default=[],
         placeholder="全部来源",
     )
@@ -220,7 +221,7 @@ def paper_to_markdown(idx: int, p: dict) -> str:
     openalex_url = p.get("openalex_url", "")
     summary = p.get("summary_zh", "")
     source = p.get("source", "unknown")
-    source_label = {"arxiv": "arXiv", "openalex": "OpenAlex", "semantic_scholar": "Semantic Scholar", "nber": "NBER"}.get(source, source)
+    source_label = {"arxiv": "arXiv", "openalex": "OpenAlex", "semantic_scholar": "Semantic Scholar", "nber": "NBER", "ssrn": "SSRN"}.get(source, source)
     tier_tag = " 🏆 Top Tier" if is_top_tier(venue) else ""
     relevance = p.get("relevance_score", -1)
     relevance_str = f"  |  **相关性：** {relevance}/100" if relevance >= 0 else ""

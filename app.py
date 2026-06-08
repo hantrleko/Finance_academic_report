@@ -21,6 +21,8 @@ pages = {
     "📅 历史档案": "pages/2_历史档案.py",
     "📈 数据统计": "pages/3_数据统计.py",
     "⚙️ 手动抓取": "pages/4_手动抓取.py",
+    "📚 知识库搜索": "pages/5_知识库搜索.py",
+    "⭐ 我的收藏": "pages/6_我的收藏.py",
 }
 
 st.sidebar.markdown("### 导航")

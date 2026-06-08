@@ -94,7 +94,7 @@ def dedupe_and_filter(
         if normalized and normalized in seen_titles:
             continue
 
-        if paper.source in ("openalex", "semantic_scholar"):
+        if paper.source in ("openalex", "semantic_scholar", "ssrn"):
             if not is_relevant_openalex_paper(
                 paper,
                 topic_whitelist=topic_whitelist,
