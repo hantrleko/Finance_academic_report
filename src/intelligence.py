@@ -496,6 +496,131 @@ def topic_workspace_to_markdown(workspace: dict[str, Any]) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _labels_for_paper(paper: dict[str, Any], taxonomy: dict[str, tuple[str, ...]]) -> list[str]:
+    text = _paper_text(paper)
+    return [label for label, keywords in taxonomy.items() if any(keyword in text for keyword in keywords)]
+
+
+def build_gap_map(digests: list[dict[str, Any]], recent_issues: int = 45, max_opportunities: int = 12) -> dict[str, Any]:
+    """Build a domain-method gap map and question bank from recent papers.
+
+    A "gap" here means a domain and a method both appear in the recent corpus,
+    but not together in the same paper. This does not prove an academic gap;
+    it is a lightweight ideation aid for forming new research questions.
+    """
+    valid = sorted([d for d in digests if isinstance(d, dict)], key=_parse_digest_date, reverse=True)
+    recent = valid[:recent_issues]
+    papers = [p for d in recent for p in d.get("papers", []) if isinstance(p, dict)]
+
+    domain_counts: Counter[str] = Counter()
+    method_counts: Counter[str] = Counter()
+    matrix_counts: Counter[tuple[str, str]] = Counter()
+    examples: dict[tuple[str, str], str] = {}
+
+    for paper in papers:
+        domains = _labels_for_paper(paper, DOMAIN_TAXONOMY)
+        methods = _labels_for_paper(paper, METHOD_TAXONOMY)
+        for domain in domains:
+            domain_counts[domain] += 1
+        for method in methods:
+            method_counts[method] += 1
+        for domain in domains:
+            for method in methods:
+                matrix_counts[(domain, method)] += 1
+                examples.setdefault((domain, method), _text(paper.get("title", "")))
+
+    matrix = [
+        {
+            "domain": domain,
+            "method": method,
+            "count": matrix_counts.get((domain, method), 0),
+            "example": examples.get((domain, method), ""),
+        }
+        for domain in DOMAIN_TAXONOMY
+        for method in METHOD_TAXONOMY
+    ]
+
+    opportunities: list[dict[str, Any]] = []
+    for domain, domain_count in domain_counts.items():
+        for method, method_count in method_counts.items():
+            if matrix_counts.get((domain, method), 0) != 0:
+                continue
+            evidence_score = domain_count + method_count
+            opportunities.append({
+                "domain": domain,
+                "method": method,
+                "domain_count": domain_count,
+                "method_count": method_count,
+                "evidence_score": evidence_score,
+                "question": f"能否用{method}重新检验{domain}中的核心机制，并比较其与传统实证结论的差异？",
+                "data_hint": _data_hint_for_gap(domain, method),
+            })
+    opportunities = sorted(
+        opportunities,
+        key=lambda item: (-item["evidence_score"], item["domain"], item["method"]),
+    )[:max_opportunities]
+
+    strong_pairs = sorted(
+        [item for item in matrix if item["count"] > 0],
+        key=lambda item: (-item["count"], item["domain"], item["method"]),
+    )[:10]
+
+    return {
+        "recent_issue_count": len(recent),
+        "paper_count": len(papers),
+        "latest_date": recent[0].get("date", "") if recent else "",
+        "earliest_recent_date": recent[-1].get("date", "") if recent else "",
+        "domain_counts": [{"domain": key, "count": value} for key, value in domain_counts.most_common()],
+        "method_counts": [{"method": key, "count": value} for key, value in method_counts.most_common()],
+        "matrix": matrix,
+        "strong_pairs": strong_pairs,
+        "opportunities": opportunities,
+    }
+
+
+def _data_hint_for_gap(domain: str, method: str) -> str:
+    domain_hint = {
+        "货币政策与通胀": "央行公告、通胀预期调查、利率期货与高频资产价格",
+        "银行与金融中介": "银行资产负债表、贷款级数据、监管事件与地区经济指标",
+        "资产定价与投资": "股票/债券收益、组合特征、因子收益与机构持仓",
+        "企业金融与治理": "公司财报、治理结构、董事会与资本开支数据",
+        "宏观金融风险": "宏观预测、金融压力指数、信用利差与危机事件",
+        "可持续金融": "碳排放、ESG 披露、气候风险暴露与绿色债券",
+        "金融科技与数据": "交易日志、支付数据、链上数据、平台行为与文本数据",
+    }.get(domain, "公开论文元数据、市场数据、政策事件与机构微观数据")
+    method_hint = {
+        "因果识别": "优先寻找准自然实验、断点、工具变量或政策冲击",
+        "机器学习/AI": "构建预测任务、特征重要性与样本外验证框架",
+        "结构模型": "明确状态变量、约束条件与可校准矩条件",
+        "文本/情绪分析": "收集公告、新闻、电话会议或社媒文本并构造语义指标",
+        "实验/调查": "设计信息处理、预期形成或行为偏误相关实验/问卷",
+        "资产定价/实证金融": "构建组合排序、因子回归与稳健性检验",
+    }.get(method, "结合可复现数据与透明识别策略")
+    return f"数据线索：{domain_hint}；方法落点：{method_hint}。"
+
+
+def gap_map_to_markdown(gap_map: dict[str, Any]) -> str:
+    """Render gap-map opportunities as a Markdown ideation note."""
+    lines = [
+        f"# 研究缺口地图 — {gap_map.get('latest_date', 'N/A')}",
+        "",
+        f"- 近期窗口：{gap_map.get('recent_issue_count', 0)} 期 / {gap_map.get('paper_count', 0)} 篇",
+        "",
+        "## 潜在选题机会",
+    ]
+    for idx, item in enumerate(gap_map.get("opportunities", []), 1):
+        lines.extend([
+            f"{idx}. **{item['domain']} × {item['method']}**",
+            f"   - 问题：{item['question']}",
+            f"   - 证据强度：领域 {item['domain_count']} 篇，方法 {item['method_count']} 篇",
+            f"   - {item['data_hint']}",
+        ])
+    lines.extend(["", "## 已有强组合"])
+    for item in gap_map.get("strong_pairs", []):
+        lines.append(f"- {item['domain']} × {item['method']}：{item['count']} 篇；示例：{item.get('example', 'N/A')}")
+    return "\n".join(lines) + "\n"
+
+
 def radar_to_markdown(radar: dict[str, Any]) -> str:
     """Render research radar as portable Markdown."""
     lines = [

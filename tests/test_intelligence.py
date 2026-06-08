@@ -2,10 +2,12 @@ from __future__ import annotations
 
 from src.intelligence import (
     build_digest_brief,
+    build_gap_map,
     build_research_radar,
     build_topic_workspace,
     citation_bucket,
     classify_taxonomy,
+    gap_map_to_markdown,
     extract_topic_terms,
     paper_attention_score,
     radar_to_markdown,
@@ -152,3 +154,50 @@ def test_topic_workspace_top_papers_include_citation_bucket():
         {"date": "2026-06-01", "papers": [_paper("High Impact Inflation", topics=["Inflation"], cited_by_count=120)]}
     ], "inflation")
     assert workspace["top_papers"][0]["citation_bucket"] == "高影响"
+
+
+def test_build_gap_map_creates_domain_method_matrix():
+    digests = [
+        {"date": "2026-06-03", "papers": [
+            _paper("Inflation and Causal Identification", abstract="Monetary policy with causal identification.", topics=["Inflation"]),
+            _paper("Bank Lending with Machine Learning", abstract="Bank lending and credit risk using machine learning.", topics=["Credit"]),
+        ]},
+    ]
+    gap_map = build_gap_map(digests, recent_issues=1)
+    assert gap_map["paper_count"] == 2
+    matrix_pairs = {(item["domain"], item["method"]): item["count"] for item in gap_map["matrix"]}
+    assert matrix_pairs[("货币政策与通胀", "因果识别")] == 1
+    assert matrix_pairs[("银行与金融中介", "机器学习/AI")] == 1
+
+
+def test_build_gap_map_identifies_missing_active_combinations():
+    digests = [
+        {"date": "2026-06-03", "papers": [
+            _paper("Inflation and Causal Identification", abstract="Monetary policy with causal identification.", topics=["Inflation"]),
+            _paper("Bank Lending with Machine Learning", abstract="Bank lending and credit risk using machine learning.", topics=["Credit"]),
+        ]},
+    ]
+    gap_map = build_gap_map(digests, recent_issues=1)
+    opportunity_pairs = {(item["domain"], item["method"]) for item in gap_map["opportunities"]}
+    assert ("货币政策与通胀", "机器学习/AI") in opportunity_pairs
+    assert ("银行与金融中介", "因果识别") in opportunity_pairs
+
+
+def test_gap_map_to_markdown_contains_opportunities_and_strong_pairs():
+    gap_map = build_gap_map([
+        {"date": "2026-06-03", "papers": [
+            _paper("Inflation and Causal Identification", abstract="Monetary policy with causal identification.", topics=["Inflation"]),
+            _paper("Bank Lending with Machine Learning", abstract="Bank lending and credit risk using machine learning.", topics=["Credit"]),
+        ]},
+    ], recent_issues=1)
+    markdown = gap_map_to_markdown(gap_map)
+    assert "# 研究缺口地图" in markdown
+    assert "## 潜在选题机会" in markdown
+    assert "## 已有强组合" in markdown
+
+
+def test_build_gap_map_empty_input_is_safe():
+    gap_map = build_gap_map([], recent_issues=5)
+    assert gap_map["paper_count"] == 0
+    assert gap_map["opportunities"] == []
+    assert gap_map["matrix"]

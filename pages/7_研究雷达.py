@@ -11,7 +11,14 @@ if str(ROOT) not in sys.path:
 import plotly.express as px
 import streamlit as st
 
-from src.intelligence import build_research_radar, build_topic_workspace, radar_to_markdown, topic_workspace_to_markdown
+from src.intelligence import (
+    build_gap_map,
+    build_research_radar,
+    build_topic_workspace,
+    gap_map_to_markdown,
+    radar_to_markdown,
+    topic_workspace_to_markdown,
+)
 from utils.data_loader import load_all_digests
 from utils.safety import html_escape_text, safe_url
 
@@ -64,11 +71,12 @@ st.download_button(
 
 st.markdown("---")
 
-tab_topics, tab_methods, tab_sources, tab_papers, tab_workspace = st.tabs([
+tab_topics, tab_methods, tab_sources, tab_papers, tab_gaps, tab_workspace = st.tabs([
     "🚀 上升主题",
     "🔬 方法/领域信号",
     "🌐 来源结构",
     "⭐ 推荐关注论文",
+    "🕳️ 缺口地图",
     "🧩 专题工作台",
 ])
 
@@ -176,6 +184,72 @@ with tab_papers:
             )
     else:
         st.info("暂无可推荐论文。")
+
+with tab_gaps:
+    st.subheader("🕳️ 研究缺口地图")
+    st.caption("把近期论文映射到「研究领域 × 方法路线」矩阵，发现领域和方法都活跃、但组合尚少的潜在选题。该结果是选题启发，不代表严格学术空白。")
+    gap_map = build_gap_map(all_digests, recent_issues=recent_issues)
+
+    g1, g2, g3 = st.columns(3)
+    g1.metric("分析期数", gap_map["recent_issue_count"])
+    g2.metric("分析论文", gap_map["paper_count"])
+    g3.metric("潜在机会", len(gap_map["opportunities"]))
+
+    st.download_button(
+        "⬇️ 导出研究缺口地图 (Markdown)",
+        data=gap_map_to_markdown(gap_map),
+        file_name=f"gap_map_{gap_map.get('latest_date') or 'latest'}.md",
+        mime="text/markdown",
+        disabled=not gap_map["opportunities"],
+    )
+
+    col_domain, col_method = st.columns(2)
+    with col_domain:
+        st.markdown("**近期活跃领域**")
+        if gap_map["domain_counts"]:
+            st.dataframe(gap_map["domain_counts"], use_container_width=True, hide_index=True)
+        else:
+            st.info("未检测到领域信号。")
+    with col_method:
+        st.markdown("**近期活跃方法**")
+        if gap_map["method_counts"]:
+            st.dataframe(gap_map["method_counts"], use_container_width=True, hide_index=True)
+        else:
+            st.info("未检测到方法信号。")
+
+    st.markdown("**领域 × 方法矩阵**")
+    matrix_rows = [
+        {"领域": item["domain"], "方法": item["method"], "篇数": item["count"], "示例": item.get("example", "")}
+        for item in gap_map["matrix"]
+    ]
+    st.dataframe(matrix_rows, use_container_width=True, hide_index=True)
+
+    st.markdown("**潜在选题机会**")
+    if gap_map["opportunities"]:
+        for idx, item in enumerate(gap_map["opportunities"], 1):
+            st.markdown(
+                f"""
+                <div style="border:1px solid #f4d7a1;border-radius:10px;padding:1rem;margin-bottom:0.8rem;background:#fffaf0;">
+                  <div style="font-weight:700;color:#92400e;">{idx}. {html_escape_text(item['domain'])} × {html_escape_text(item['method'])}</div>
+                  <div style="margin-top:0.35rem;"><strong>研究问题：</strong>{html_escape_text(item['question'])}</div>
+                  <div style="color:#555;font-size:0.9rem;margin-top:0.35rem;">
+                    <strong>证据强度：</strong>领域 {html_escape_text(item['domain_count'])} 篇，方法 {html_escape_text(item['method_count'])} 篇
+                  </div>
+                  <div style="color:#555;font-size:0.9rem;margin-top:0.35rem;">{html_escape_text(item['data_hint'])}</div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+    else:
+        st.info("当前窗口内没有发现可提示的领域×方法空白组合。可以扩大近期窗口或等待更多 digest 数据。")
+
+    if gap_map["strong_pairs"]:
+        st.markdown("**已有强组合（可作为基准文献路径）**")
+        st.dataframe(
+            [{"领域": item["domain"], "方法": item["method"], "篇数": item["count"], "示例": item.get("example", "")} for item in gap_map["strong_pairs"]],
+            use_container_width=True,
+            hide_index=True,
+        )
 
 with tab_workspace:
     st.subheader("🧩 专题工作台")
