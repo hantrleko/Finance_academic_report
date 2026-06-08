@@ -12,10 +12,12 @@ import plotly.express as px
 import streamlit as st
 
 from src.intelligence import (
+    build_execution_playbook,
     build_gap_map,
     build_hypothesis_lab,
     build_research_radar,
     build_topic_workspace,
+    execution_playbook_to_markdown,
     gap_map_to_markdown,
     hypothesis_lab_to_markdown,
     radar_to_markdown,
@@ -73,13 +75,14 @@ st.download_button(
 
 st.markdown("---")
 
-tab_topics, tab_methods, tab_sources, tab_papers, tab_gaps, tab_hypotheses, tab_workspace = st.tabs([
+tab_topics, tab_methods, tab_sources, tab_papers, tab_gaps, tab_hypotheses, tab_execution, tab_workspace = st.tabs([
     "🚀 上升主题",
     "🔬 方法/领域信号",
     "🌐 来源结构",
     "⭐ 推荐关注论文",
     "🕳️ 缺口地图",
     "🧪 假设实验室",
+    "复现执行",
     "🧩 专题工作台",
 ])
 
@@ -304,6 +307,59 @@ with tab_hypotheses:
                 for item in card["falsification_tests"]:
                     st.markdown(f"- {item}")
                 st.markdown(f"**潜在贡献：** {card['contribution']}")
+
+with tab_execution:
+    st.subheader("复现执行计划")
+    st.caption("把假设卡进一步拆解为可执行研究计划：数据包、里程碑、复现清单、预期产物和风险控制，帮助从选题进入可落地项目管理。")
+    playbook = build_execution_playbook(all_digests, recent_issues=recent_issues)
+
+    e1, e2, e3, e4 = st.columns(4)
+    e1.metric("分析期数", playbook["recent_issue_count"])
+    e2.metric("分析论文", playbook["paper_count"])
+    e3.metric("项目计划", playbook["project_count"])
+    e4.metric("平均就绪度", playbook["avg_readiness_score"])
+
+    st.download_button(
+        "下载复现执行计划 (Markdown)",
+        data=execution_playbook_to_markdown(playbook),
+        file_name=f"execution_playbook_{playbook.get('latest_date') or 'latest'}.md",
+        mime="text/markdown",
+        disabled=not playbook["projects"],
+    )
+
+    if not playbook["projects"]:
+        st.info("当前窗口尚未形成可执行项目计划。可先扩大近期窗口或查看假设实验室是否已有假设卡。")
+    else:
+        for project in playbook["projects"]:
+            st.markdown(
+                f"""
+                <div style="border:1px solid #bbf7d0;border-radius:12px;padding:1rem;margin-bottom:1rem;background:#f7fff9;">
+                  <div style="font-weight:800;color:#166534;font-size:1.02rem;">{html_escape_text(project['id'])} · {html_escape_text(project['title'])}</div>
+                  <div style="color:#555;font-size:0.9rem;margin-top:0.35rem;">
+                    <strong>对应假设：</strong>{html_escape_text(project['hypothesis_id'])}
+                    &nbsp;|&nbsp;<strong>方法：</strong>{html_escape_text(project['method'])}
+                    &nbsp;|&nbsp;<strong>就绪度：</strong>{html_escape_text(project['readiness_score'])}
+                    &nbsp;|&nbsp;<strong>执行难度：</strong>{html_escape_text(project['difficulty'])}/5
+                  </div>
+                  <div style="margin-top:0.45rem;"><strong>数据包：</strong>{html_escape_text(project['data_package'])}</div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+            with st.expander(f"{project['id']} 里程碑 / 复现清单 / 风险控制", expanded=False):
+                st.markdown("**四周里程碑**")
+                for milestone in project["milestones"]:
+                    st.markdown(f"- **{milestone['week']}：** {milestone['task']}")
+                st.markdown("**复现清单**")
+                for item in project["reproducibility_checklist"]:
+                    st.checkbox(item, value=False, key=f"{project['id']}_{item}")
+                st.markdown("**预期产物**")
+                for item in project["expected_artifacts"]:
+                    st.markdown(f"- {item}")
+                st.markdown("**风险控制**")
+                for item in project["risk_controls"]:
+                    st.markdown(f"- {item}")
+
 
 with tab_workspace:
     st.subheader("🧩 专题工作台")

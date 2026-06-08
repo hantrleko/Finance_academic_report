@@ -727,6 +727,156 @@ def hypothesis_lab_to_markdown(lab: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+_DATA_PACKAGE_HINTS = {
+    "货币政策与通胀": "整理央行公告、FOMC/ECB 日历、通胀预期调查、利率期货和高频资产价格，形成事件级面板。",
+    "银行与金融中介": "汇总银行资产负债表、监管披露、存贷款利率、地区宏观指标和监管事件标识。",
+    "资产定价与投资": "准备 CRSP/Compustat 或本地市场行情、因子收益、组合特征、机构持仓与交易成本变量。",
+    "企业金融与治理": "整合公司财报、治理结构、董事会、资本开支、融资约束指标和并购/创新事件。",
+    "宏观金融风险": "收集宏观预测、金融压力指数、信用利差、违约事件、衰退期标识和跨市场风险指标。",
+    "可持续金融": "建立碳排放、气候政策、ESG 披露、绿色债券、企业地理暴露与资本成本指标。",
+    "金融科技与数据": "整理支付/交易日志、链上数据、平台规则变更、用户行为、文本公告和隐私合规说明。",
+}
+
+_METHOD_ARTIFACTS = {
+    "因果识别": ["事件窗口表", "处理组/对照组定义", "平行趋势图", "主回归脚本", "安慰剂检验脚本"],
+    "机器学习/AI": ["特征字典", "训练/验证/测试切分", "基准模型", "样本外预测表", "解释性分析脚本"],
+    "结构模型": ["模型方程说明", "参数表", "估计矩条件", "校准脚本", "反事实模拟脚本"],
+    "文本/情绪分析": ["原始文本清单", "预处理脚本", "标签/词典说明", "语义指标表", "人工校验样本"],
+    "实验/调查": ["实验/问卷材料", "随机化记录", "预分析计划", "排除规则", "处理效应估计脚本"],
+    "资产定价/实证金融": ["收益与特征面板", "组合构造脚本", "因子模型设定", "Fama-MacBeth 脚本", "交易成本敏感性分析"],
+}
+
+_METHOD_DIFFICULTY = {
+    "因果识别": 3,
+    "机器学习/AI": 4,
+    "结构模型": 5,
+    "文本/情绪分析": 4,
+    "实验/调查": 4,
+    "资产定价/实证金融": 3,
+}
+
+
+def _data_package_hint(domain: str) -> str:
+    return _DATA_PACKAGE_HINTS.get(domain, "建立可追溯数据字典、原始数据快照、处理脚本和变量构造说明。")
+
+
+def _method_artifacts(method: str) -> list[str]:
+    return _METHOD_ARTIFACTS.get(method, ["数据字典", "变量构造脚本", "主模型脚本", "稳健性脚本", "结果复现说明"])
+
+
+def _replication_difficulty(method: str) -> int:
+    return _METHOD_DIFFICULTY.get(method, 3)
+
+
+def _readiness_score(card: dict[str, Any]) -> int:
+    priority = int(card.get("priority_score", 0) or 0)
+    difficulty = _replication_difficulty(_text(card.get("method")))
+    score = 45 + min(priority * 8, 35) - difficulty * 4
+    if card.get("data_plan"):
+        score += 8
+    if len(card.get("robustness_checks", [])) >= 4:
+        score += 6
+    return max(20, min(95, score))
+
+
+def build_execution_playbook(digests: list[dict[str, Any]], recent_issues: int = 45, max_projects: int = 6) -> dict[str, Any]:
+    """Build reproducible execution plans from hypothesis cards.
+
+    The playbook converts ideation into implementation guidance: each project
+    receives a data package plan, expected research artifacts, milestone tasks,
+    reproducibility checklist, risk controls, and a readiness score. It is
+    deterministic and only uses local digest metadata.
+    """
+    lab = build_hypothesis_lab(digests, recent_issues=recent_issues, max_cards=max_projects)
+    projects: list[dict[str, Any]] = []
+    for idx, card in enumerate(lab.get("cards", []), 1):
+        domain = _text(card.get("domain"))
+        method = _text(card.get("method"))
+        artifacts = _method_artifacts(method)
+        project = {
+            "id": f"P{idx:02d}",
+            "hypothesis_id": card.get("id", ""),
+            "title": card.get("title", ""),
+            "domain": domain,
+            "method": method,
+            "readiness_score": _readiness_score(card),
+            "difficulty": _replication_difficulty(method),
+            "data_package": _data_package_hint(domain),
+            "expected_artifacts": artifacts,
+            "milestones": [
+                {"week": "第 1 周", "task": "锁定研究问题、样本范围、数据权限和预分析假设。"},
+                {"week": "第 2 周", "task": f"搭建数据包：{_data_package_hint(domain)}"},
+                {"week": "第 3 周", "task": f"实现核心方法：{card.get('identification_plan', '')}"},
+                {"week": "第 4 周", "task": "复现主表/主图，完成稳健性、证伪测试和研究日志整理。"},
+            ],
+            "reproducibility_checklist": [
+                "固定原始数据快照并记录下载日期、来源 URL、授权和样本筛选规则。",
+                "为每个中间表建立数据字典，所有变量构造脚本可从原始数据一键运行。",
+                "主结果、稳健性和证伪测试分离为可重复执行脚本，并设置随机种子。",
+                "保存运行环境说明（Python/R/Stata 版本、依赖、硬件限制）和结果生成命令。",
+                "所有图表和表格由脚本自动生成，论文草稿只引用可追溯产物路径。",
+            ],
+            "risk_controls": [
+                "数据权限不足时准备公开替代样本或降级为可披露的聚合指标。",
+                "若主识别假设较强，优先补充安慰剂、预趋势和机制变量检验。",
+                "若样本外表现不稳定，报告失败边界并降低结论外推强度。",
+            ],
+            "deliverables": [
+                "1 页研究设计备忘录",
+                "可执行数据构建脚本",
+                "主结果与稳健性 notebook/script",
+                "复现 README 与结果索引",
+            ],
+        }
+        projects.append(project)
+
+    readiness_values = [project["readiness_score"] for project in projects]
+    return {
+        "recent_issue_count": lab.get("recent_issue_count", 0),
+        "paper_count": lab.get("paper_count", 0),
+        "latest_date": lab.get("latest_date", ""),
+        "earliest_recent_date": lab.get("earliest_recent_date", ""),
+        "project_count": len(projects),
+        "avg_readiness_score": round(sum(readiness_values) / len(readiness_values), 1) if readiness_values else 0,
+        "projects": projects,
+    }
+
+
+def execution_playbook_to_markdown(playbook: dict[str, Any]) -> str:
+    """Render execution playbook projects as a Markdown reproducibility plan."""
+    lines = [
+        f"# 复现执行计划 — {playbook.get('latest_date', 'N/A')}",
+        "",
+        f"- 近期窗口：{playbook.get('recent_issue_count', 0)} 期 / {playbook.get('paper_count', 0)} 篇",
+        f"- 项目数：{playbook.get('project_count', 0)}",
+        f"- 平均就绪度：{playbook.get('avg_readiness_score', 0)}",
+        "",
+    ]
+    for project in playbook.get("projects", []):
+        lines.extend([
+            f"## {project['id']} {project['title']}",
+            f"- 对应假设：{project['hypothesis_id']}",
+            f"- 领域 / 方法：{project['domain']} / {project['method']}",
+            f"- 就绪度：{project['readiness_score']}；执行难度：{project['difficulty']}/5",
+            f"- 数据包：{project['data_package']}",
+            "",
+            "### 里程碑",
+        ])
+        for item in project.get("milestones", []):
+            lines.append(f"- {item['week']}：{item['task']}")
+        lines.extend(["", "### 复现清单"])
+        for item in project.get("reproducibility_checklist", []):
+            lines.append(f"- [ ] {item}")
+        lines.extend(["", "### 预期产物"])
+        for item in project.get("expected_artifacts", []):
+            lines.append(f"- {item}")
+        lines.extend(["", "### 风险控制"])
+        for item in project.get("risk_controls", []):
+            lines.append(f"- {item}")
+        lines.append("")
+    return "\n".join(lines)
+
+
 def radar_to_markdown(radar: dict[str, Any]) -> str:
     """Render research radar as portable Markdown."""
     lines = [
