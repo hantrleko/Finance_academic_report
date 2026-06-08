@@ -26,8 +26,9 @@ pages = {
 }
 
 st.sidebar.markdown("### 导航")
-for name in pages:
-    st.sidebar.markdown(f"- {name}")
+st.sidebar.page_link("app.py", label="📊 首页")
+for name, page_path in pages.items():
+    st.sidebar.page_link(page_path, label=name)
 
 st.sidebar.markdown("---")
 
