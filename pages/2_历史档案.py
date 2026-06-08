@@ -10,6 +10,7 @@ if str(ROOT) not in sys.path:
 
 import streamlit as st
 from utils.data_loader import get_available_dates, load_digest, get_alert_dates
+from utils.safety import format_summary_html, html_escape_text, safe_url
 from src.models import VENUE_WHITELIST
 
 st.set_page_config(
@@ -109,6 +110,12 @@ count = data.get("count", 0)
 source_used = data.get("source_used", "N/A")
 insights = data.get("insights", {})
 overview = data.get("overview", "")
+warnings = data.get("_warnings", [])
+
+if warnings:
+    with st.expander("⚠️ 数据格式提示", expanded=False):
+        for warning in warnings:
+            st.warning(warning)
 
 # 统计栏
 st.markdown(f"### 📅 {selected_date} 速递")
@@ -301,23 +308,29 @@ for idx, p in enumerate(filtered, 1):
     doi_url = p.get("doi_url", "")
     openalex_url = p.get("openalex_url", "")
     links_html = ""
-    if doi_url:
-        links_html += f'<a href="{doi_url}" target="_blank">DOI</a> '
-    if openalex_url:
-        links_html += f'<a href="{openalex_url}" target="_blank">原文链接</a>'
+    doi_safe = safe_url(doi_url)
+    openalex_safe = safe_url(openalex_url)
+    if doi_safe:
+        links_html += f'<a href="{doi_safe}" target="_blank" rel="noopener">DOI</a> '
+    if openalex_safe:
+        links_html += f'<a href="{openalex_safe}" target="_blank" rel="noopener">原文链接</a>'
 
     topics = p.get("topics") or []
     topics_str = " · ".join(topics[:5]) if topics else "N/A"
 
     summary_raw = p.get("summary_zh", "")
-    summary_html = summary_raw.replace("📌 研究问题：", "<br><strong>📌 研究问题：</strong>")
-    summary_html = summary_html.replace("🔬 研究方法：", "<br><strong>🔬 研究方法：</strong>")
-    summary_html = summary_html.replace("📊 核心发现：", "<br><strong>📊 核心发现：</strong>")
-    summary_html = summary_html.replace("💡 应用价值：", "<br><strong>💡 应用价值：</strong>")
+    summary_html = format_summary_html(summary_raw)
 
     venue = p.get("venue", "N/A")
     pub_date = p.get("published_date", "N/A") or "N/A"
     cited = p.get("cited_by_count", 0)
+    title_html = html_escape_text(p.get("title", "无标题"))
+    venue_html = html_escape_text(venue)
+    pub_date_html = html_escape_text(pub_date)
+    cited_html = html_escape_text(cited)
+    authors_html = html_escape_text(authors_str)
+    topics_html = html_escape_text(topics_str)
+    src_label_html = html_escape_text(src_label)
 
     # 顶级期刊徽章
     top_tier_badge = ""
@@ -348,16 +361,16 @@ for idx, p in enumerate(filtered, 1):
     st.markdown(
         f"""
         <div class="paper-card">
-          <div class="paper-title">{idx}. {p.get("title", "无标题")}</div>
+          <div class="paper-title">{idx}. {title_html}</div>
           <div class="paper-meta">
-            <span class="source-badge {badge_cls}">{src_label}</span>
+            <span class="source-badge {badge_cls}">{src_label_html}</span>
             {top_tier_badge}
-            <strong>期刊：</strong>{venue}
-            &nbsp;|&nbsp; <strong>发表：</strong>{pub_date}
-            &nbsp;|&nbsp; <strong>引用：</strong>{cited}
+            <strong>期刊：</strong>{venue_html}
+            &nbsp;|&nbsp; <strong>发表：</strong>{pub_date_html}
+            &nbsp;|&nbsp; <strong>引用：</strong>{cited_html}
           </div>
-          <div class="paper-meta"><strong>作者：</strong>{authors_str}</div>
-          <div class="paper-meta"><strong>主题：</strong>{topics_str}</div>
+          <div class="paper-meta"><strong>作者：</strong>{authors_html}</div>
+          <div class="paper-meta"><strong>主题：</strong>{topics_html}</div>
           {relevance_html}
           <div class="paper-meta">{links_html}</div>
           <div class="summary-box">{summary_html}</div>

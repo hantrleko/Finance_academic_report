@@ -1,7 +1,7 @@
 # Finance & Economics Daily Digest
 
 [![Version](https://img.shields.io/badge/version-v1.5-blue)](https://github.com/hantrleko/Finance_academic_report/releases)
-[![Tests](https://img.shields.io/badge/tests-25%20passed-brightgreen)](https://github.com/hantrleko/Finance_academic_report/actions)
+[![Tests](https://img.shields.io/badge/tests-35%20passed-brightgreen)](https://github.com/hantrleko/Finance_academic_report/actions)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 每日自动抓取公开金融/经济学文献，生成结构化日报，并通过 **Streamlit** 在线网站进行交互式展示。
@@ -12,10 +12,10 @@
 - **智能过滤：** 关键词白名单/黑名单 + 引用数加分 + 顶级期刊加分 + 质量分门槛 + arXiv/NBER 基础过滤
 - **AI 摘要：** 双模型架构（翻译模型 + 分析模型），支持结构化中文摘要
 - **LLM 洞察：** 每日主题趋势、方法趋势、应用启示、后续观察
-- **质量保障：** 空结果保留 `output/latest`，异常写入 `output/alerts/`，损坏文件友好提示
+- **质量保障：** 空结果保留 `output/latest`，异常写入 `output/alerts/`，digest JSON 结构校验，损坏文件友好提示
 - **高可靠性：** LLM 调用指数退避重试、S2 限流自动重试、JSON 解析三级容错
 - **自动化：** GitHub Actions 每天定时运行并提交 `output/` 结果（含 pip 缓存加速）
-- **在线展示：** Streamlit 多页面网站，支持搜索、筛选、统计可视化、DuckDB 跨期知识库搜索和收藏夹导出
+- **在线展示：** Streamlit 多页面网站，支持可点击导航、搜索、筛选、统计可视化、DuckDB 跨期知识库搜索和收藏夹导出
 
 ## 快速开始
 
@@ -68,6 +68,12 @@ pytest -v
 | ⚙️ 手动抓取 | 手动触发抓取，支持自定义参数和 LLM 配置 |
 | 📚 知识库搜索 | 基于 DuckDB 跨期检索历史文献，支持多条件筛选和 Markdown 导出 |
 | ⭐ 我的收藏 | 管理收藏论文，支持 BibTeX / Markdown 导出 |
+
+## 数据质量与安全
+
+- 前端对来自外部数据源的标题、作者、期刊、摘要和链接进行 HTML 转义与 URL 白名单校验，避免外部元数据破坏页面结构。
+- `src/schema.py` 会标准化并校验 digest JSON，页面加载时会对异常字段给出提示。
+- 测试套件会扫描 `output/*/digest.json`，确保提交的历史数据不含 Git 冲突标记、JSON 可解析且 source 字段合法。
 
 ## 环境变量
 
@@ -123,8 +129,9 @@ Finance_academic_report/
 │   ├── 5_知识库搜索.py             # DuckDB 跨期知识库搜索
 │   └── 6_我的收藏.py               # 收藏夹管理与导出
 ├── utils/
-│   ├── data_loader.py              # 数据加载工具（含缓存与容错）
-│   └── bookmarks.py                # 收藏夹读写与 BibTeX 导出
+│   ├── data_loader.py              # 数据加载工具（含缓存、标准化与容错）
+│   ├── bookmarks.py                # 收藏夹读写与 BibTeX 导出
+│   └── safety.py                   # 前端 HTML/URL 安全渲染工具
 ├── src/
 │   ├── config.py                   # 配置加载（支持 dict 直接构建）
 │   ├── models.py                   # 数据模型与常量（含期刊白/黑名单）
@@ -133,12 +140,13 @@ Finance_academic_report/
 │   ├── summarization.py            # LLM 摘要生成（含指数退避重试）
 │   ├── pipeline.py                 # 主流程编排
 │   ├── rendering.py                # HTML/Markdown 渲染
+│   ├── schema.py                   # digest JSON 标准化与结构校验
 │   └── digest.py                   # CLI 入口
 ├── output/                         # 自动生成的日报数据
 │   ├── latest/                     # 最新一期
 │   ├── YYYY-MM-DD/                 # 历史日期
 │   └── alerts/                     # 空结果告警
-├── tests/                          # 单元测试（23 个用例）
+├── tests/                          # 单元测试与数据健康检查（35 个用例）
 ├── .github/workflows/              # GitHub Actions 定时任务
 ├── .streamlit/
 │   ├── config.toml                 # Streamlit 主题配置

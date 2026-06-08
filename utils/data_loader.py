@@ -38,6 +38,7 @@ def load_digest(date: str) -> dict[str, Any] | None:
     - 若 JSON 损坏或含 Git 冲突标记，返回带 _error 标记的字典，供前端展示提示
     """
     from src.filtering import safe_load_digest_json
+    from src.schema import normalize_digest, validate_digest
 
     path = OUTPUT_DIR / date / "digest.json"
     if not path.exists():
@@ -47,7 +48,12 @@ def load_digest(date: str) -> dict[str, Any] | None:
     if result is None:
         # 文件存在但无法解析，返回带错误标记的字典，让前端可以显示友好提示
         return {"_error": True, "date": date, "papers": [], "count": 0}
-    return result
+
+    normalized = normalize_digest(result)
+    ok, errors = validate_digest(normalized)
+    if not ok:
+        normalized["_warnings"] = errors
+    return normalized
 
 
 def load_latest_digest() -> dict[str, Any] | None:

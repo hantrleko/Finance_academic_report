@@ -10,6 +10,7 @@ if str(ROOT) not in sys.path:
 
 import streamlit as st
 from utils.bookmarks import export_bibtex, is_bookmarked, load_bookmarks, remove_bookmark, _paper_id
+from utils.safety import format_summary_html, html_escape_text, safe_url
 from src.models import VENUE_WHITELIST
 
 st.set_page_config(
@@ -160,11 +161,8 @@ else:
         digest_date = b.get("digest_date", "")
         summary_raw = b.get("summary_zh", "")
 
-        # 格式化摘要
-        summary_html = summary_raw.replace("📌 研究问题：", "<br><strong>📌 研究问题：</strong>")
-        summary_html = summary_html.replace("🔬 研究方法：", "<br><strong>🔬 研究方法：</strong>")
-        summary_html = summary_html.replace("📊 核心发现：", "<br><strong>📊 核心发现：</strong>")
-        summary_html = summary_html.replace("💡 应用价值：", "<br><strong>💡 应用价值：</strong>")
+        # 格式化摘要（先转义外部数据，再添加允许的结构化标签）
+        summary_html = format_summary_html(summary_raw)
 
         # 顶级期刊徽章
         top_tier_badge = ""
@@ -173,31 +171,39 @@ else:
 
         # 链接
         links_html = ""
-        if doi_url:
-            links_html += f'<a href="{doi_url}" target="_blank" rel="noopener">DOI</a> '
-        if openalex_url:
-            links_html += f'<a href="{openalex_url}" target="_blank" rel="noopener">原文链接</a>'
+        doi_safe = safe_url(doi_url)
+        openalex_safe = safe_url(openalex_url)
+        if doi_safe:
+            links_html += f'<a href="{doi_safe}" target="_blank" rel="noopener">DOI</a> '
+        if openalex_safe:
+            links_html += f'<a href="{openalex_safe}" target="_blank" rel="noopener">原文链接</a>'
 
         source_label = {
             "arxiv": "arXiv", "openalex": "OpenAlex",
             "semantic_scholar": "Semantic Scholar", "nber": "NBER", "ssrn": "SSRN",
         }.get(source, source)
 
-        from_date_str = f"  |  <strong>收录于：</strong>{digest_date}" if digest_date else ""
+        title_html = html_escape_text(title)
+        authors_html = html_escape_text(authors)
+        venue_html = html_escape_text(venue)
+        pub_date_html = html_escape_text(pub_date)
+        cited_html = html_escape_text(cited)
+        source_label_html = html_escape_text(source_label)
+        from_date_str = f"  |  <strong>收录于：</strong>{html_escape_text(digest_date)}" if digest_date else ""
 
         st.markdown(
             f"""
             <div class="bm-card">
-              <div class="bm-title">{idx}. {title}</div>
+              <div class="bm-title">{idx}. {title_html}</div>
               <div class="bm-meta">
                 {top_tier_badge}
-                <strong>来源：</strong>{source_label}
-                &nbsp;|&nbsp; <strong>期刊：</strong>{venue}
-                &nbsp;|&nbsp; <strong>发表：</strong>{pub_date}
-                &nbsp;|&nbsp; <strong>引用数：</strong>{cited}
+                <strong>来源：</strong>{source_label_html}
+                &nbsp;|&nbsp; <strong>期刊：</strong>{venue_html}
+                &nbsp;|&nbsp; <strong>发表：</strong>{pub_date_html}
+                &nbsp;|&nbsp; <strong>引用数：</strong>{cited_html}
                 {from_date_str}
               </div>
-              <div class="bm-meta"><strong>作者：</strong>{authors}</div>
+              <div class="bm-meta"><strong>作者：</strong>{authors_html}</div>
               <div class="bm-meta">{links_html}</div>
               {"<div class='summary-box'>" + summary_html + "</div>" if summary_html else ""}
             </div>
