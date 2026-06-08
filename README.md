@@ -1,21 +1,21 @@
 # Finance & Economics Daily Digest
 
-[![Version](https://img.shields.io/badge/version-v1.1-blue)](https://github.com/hantrleko/Finance_academic_report/releases)
-[![Tests](https://img.shields.io/badge/tests-23%20passed-brightgreen)](https://github.com/hantrleko/Finance_academic_report/actions)
+[![Version](https://img.shields.io/badge/version-v1.5-blue)](https://github.com/hantrleko/Finance_academic_report/releases)
+[![Tests](https://img.shields.io/badge/tests-25%20passed-brightgreen)](https://github.com/hantrleko/Finance_academic_report/actions)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 每日自动抓取公开金融/经济学文献，生成结构化日报，并通过 **Streamlit** 在线网站进行交互式展示。
 
 ## 功能特性
 
-- **多源抓取：** OpenAlex + arXiv + Semantic Scholar + NBER
+- **多源抓取：** OpenAlex + arXiv + Semantic Scholar + NBER + SSRN
 - **智能过滤：** 关键词白名单/黑名单 + 引用数加分 + 顶级期刊加分 + 质量分门槛 + arXiv/NBER 基础过滤
 - **AI 摘要：** 双模型架构（翻译模型 + 分析模型），支持结构化中文摘要
 - **LLM 洞察：** 每日主题趋势、方法趋势、应用启示、后续观察
 - **质量保障：** 空结果保留 `output/latest`，异常写入 `output/alerts/`，损坏文件友好提示
 - **高可靠性：** LLM 调用指数退避重试、S2 限流自动重试、JSON 解析三级容错
 - **自动化：** GitHub Actions 每天定时运行并提交 `output/` 结果（含 pip 缓存加速）
-- **在线展示：** Streamlit 多页面网站，支持搜索、筛选、统计可视化
+- **在线展示：** Streamlit 多页面网站，支持搜索、筛选、统计可视化、DuckDB 跨期知识库搜索和收藏夹导出
 
 ## 快速开始
 
@@ -66,6 +66,8 @@ pytest -v
 | 📅 历史档案 | 按日期浏览所有历史期刊 |
 | 📈 数据统计 | 来源分布、主题分布、引用数等可视化统计 |
 | ⚙️ 手动抓取 | 手动触发抓取，支持自定义参数和 LLM 配置 |
+| 📚 知识库搜索 | 基于 DuckDB 跨期检索历史文献，支持多条件筛选和 Markdown 导出 |
+| ⭐ 我的收藏 | 管理收藏论文，支持 BibTeX / Markdown 导出 |
 
 ## 环境变量
 
@@ -102,6 +104,10 @@ pytest -v
 | `S2_API_KEY` | Semantic Scholar API Key | — |
 | `S2_MIN_INTERVAL_SECONDS` | S2 请求间隔（秒） | 1.5 |
 
+### 本地依赖说明
+
+「📚 知识库搜索」页面使用 DuckDB 构建内存索引；请确保已通过 `pip install -r requirements.txt` 安装 `duckdb`。
+
 > **提示：** 本地开发时可将上述变量写入 `.streamlit/secrets.toml`（参考 `.streamlit/secrets.toml.example`）；Streamlit Cloud 部署时在 App Settings → Secrets 中配置。
 
 ## 项目结构
@@ -113,9 +119,12 @@ Finance_academic_report/
 │   ├── 1_今日速递.py               # 今日速递页面
 │   ├── 2_历史档案.py               # 历史档案页面
 │   ├── 3_数据统计.py               # 数据统计页面
-│   └── 4_手动抓取.py               # 手动抓取页面
+│   ├── 4_手动抓取.py               # 手动抓取页面
+│   ├── 5_知识库搜索.py             # DuckDB 跨期知识库搜索
+│   └── 6_我的收藏.py               # 收藏夹管理与导出
 ├── utils/
-│   └── data_loader.py              # 数据加载工具（含缓存与容错）
+│   ├── data_loader.py              # 数据加载工具（含缓存与容错）
+│   └── bookmarks.py                # 收藏夹读写与 BibTeX 导出
 ├── src/
 │   ├── config.py                   # 配置加载（支持 dict 直接构建）
 │   ├── models.py                   # 数据模型与常量（含期刊白/黑名单）
@@ -141,5 +150,9 @@ Finance_academic_report/
 
 | 版本 | 日期 | 主要变更 |
 |------|------|----------|
+| v1.5 | 2026-05-02 | 新增 DuckDB 知识库搜索、SSRN 数据源、收藏夹与导出功能；修复自动化兼容、依赖和历史数据一致性 |
+| v1.4 | 2026-05-01 | 扩充期刊黑名单、优化手动抓取关键词配置和统计页面 |
+| v1.3 | 2026-04-30 | 新增研究偏好、AI 个性化相关性评分和跨页面偏好共享 |
+| v1.2 | 2026-04-30 | 新增跨期去重、顶级期刊打标和 Markdown 导出 |
 | v1.1 | 2026-04-28 | 版本标识、空数据保护、HTML 实体解码、arXiv 过滤、Prompt 约束、测试扩充 |
 | v1.0 | 2026-04-24 | Streamlit 重构、移除邮件推送、overview Bug 修复、LLM 重试、线程安全修复 |

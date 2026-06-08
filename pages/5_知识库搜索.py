@@ -241,7 +241,7 @@ if submitted or keyword:
              doi_url, cited, abstract, summary_zh, topics, source, is_top) in row
 
             top_badge = " 🏆" if is_top else ""
-            source_badge = {"openalex": "🔵", "arxiv": "🟢", "s2": "🟠", "nber": "🔴", "ssrn": "🟣"}.get(source, "⚪")
+            source_badge = {"openalex": "🔵", "arxiv": "🟢", "semantic_scholar": "🟠", "nber": "🔴", "ssrn": "🟣"}.get(source, "⚪")
 
             with st.expander(f"{source_badge} {title}{top_badge}", expanded=False):
                 meta_col1, meta_col2, meta_col3 = st.columns([3, 2, 1])
