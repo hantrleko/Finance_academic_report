@@ -621,6 +621,112 @@ def gap_map_to_markdown(gap_map: dict[str, Any]) -> str:
     return "\n".join(lines) + "\n"
 
 
+_DOMAIN_VARIABLES = {
+    "货币政策与通胀": ("货币政策冲击 / 通胀预期变化", "通胀预期、利率曲线、风险资产价格"),
+    "银行与金融中介": ("监管冲击 / 资本约束 / 存款流失", "贷款供给、风险承担、实体投资"),
+    "资产定价与投资": ("风险因子暴露 / 投资者需求冲击", "超额收益、组合换手、因子溢价"),
+    "企业金融与治理": ("治理结构变化 / 融资约束冲击", "资本开支、杠杆、并购与创新"),
+    "宏观金融风险": ("金融压力 / 信用利差 / 不确定性冲击", "违约风险、衰退概率、系统性风险"),
+    "可持续金融": ("气候政策 / 碳价格 / ESG 披露冲击", "资本成本、绿色投资、风险重估"),
+    "金融科技与数据": ("数字化采用 / 平台规则 / 数据可得性变化", "交易成本、金融包容性、信息效率"),
+}
+
+_METHOD_DESIGNS = {
+    "因果识别": "使用事件研究、双重差分、工具变量或断点设计识别处理效应，并报告平行趋势 / 排除限制证据。",
+    "机器学习/AI": "构建可解释预测模型，进行样本外验证、特征重要性分析和传统模型基准比较。",
+    "结构模型": "建立微观行为或均衡模型，利用矩匹配 / 最大似然进行估计，并进行反事实模拟。",
+    "文本/情绪分析": "从公告、新闻、电话会议或社媒文本中提取语义指标，并验证其增量解释力。",
+    "实验/调查": "通过随机信息处理、情景实验或追踪调查识别预期、偏误与行为反应。",
+    "资产定价/实证金融": "构建组合排序、Fama-MacBeth 回归、因子模型和样本外稳健性检验。",
+}
+
+_METHOD_ROBUSTNESS = {
+    "因果识别": ["替代处理窗口", "安慰剂事件", "异质性分组", "趋势预检验"],
+    "机器学习/AI": ["时间切分样本外验证", "模型族对比", "特征消融", "解释性稳定性"],
+    "结构模型": ["参数敏感性", "替代校准矩", "外部有效性检验", "反事实边界情景"],
+    "文本/情绪分析": ["替代词典/嵌入模型", "人工标注子样本", "主题漂移检验", "信息发布时间对齐"],
+    "实验/调查": ["随机化平衡检验", "注意力检查", "重复实验", "样本代表性加权"],
+    "资产定价/实证金融": ["替代因子模型", "交易成本调整", "子样本检验", "行业/规模中性化"],
+}
+
+
+def _domain_variables(domain: str) -> tuple[str, str]:
+    return _DOMAIN_VARIABLES.get(domain, ("外生冲击或制度变化", "行为、价格或风险结果变量"))
+
+
+def _method_design(method: str) -> str:
+    return _METHOD_DESIGNS.get(method, "构建透明、可复现的实证设计并与已有文献基准比较。")
+
+
+def _method_robustness(method: str) -> list[str]:
+    return _METHOD_ROBUSTNESS.get(method, ["替代样本", "替代变量", "模型设定检验", "异常值处理"])
+
+
+def build_hypothesis_lab(digests: list[dict[str, Any]], recent_issues: int = 45, max_cards: int = 8) -> dict[str, Any]:
+    """Generate testable hypothesis cards from research-gap opportunities."""
+    gap_map = build_gap_map(digests, recent_issues=recent_issues, max_opportunities=max_cards * 2)
+    cards: list[dict[str, Any]] = []
+    for idx, opportunity in enumerate(gap_map.get("opportunities", [])[:max_cards], 1):
+        domain = opportunity["domain"]
+        method = opportunity["method"]
+        treatment, outcome = _domain_variables(domain)
+        robustness = _method_robustness(method)
+        card = {
+            "id": f"H{idx:02d}",
+            "title": f"{domain} × {method}",
+            "domain": domain,
+            "method": method,
+            "hypothesis": f"当{treatment}增强时，{outcome}会出现可测度变化；该效应可通过{method}获得更清晰的机制解释。",
+            "mechanism": f"{domain}中的约束、预期或信息摩擦可能通过风险定价、资源配置或行为反应传导到结果变量。",
+            "treatment_variable": treatment,
+            "outcome_variable": outcome,
+            "identification_plan": _method_design(method),
+            "data_plan": opportunity["data_hint"],
+            "robustness_checks": robustness,
+            "falsification_tests": [
+                "检验处理前趋势或预期效应是否已经存在",
+                "在理论上不应受影响的样本或变量上运行安慰剂测试",
+                "比较替代机制变量是否能解释主要结果",
+            ],
+            "contribution": f"把近期活跃的「{domain}」问题与「{method}」方法连接，形成可检验的新研究切入点。",
+            "priority_score": opportunity["evidence_score"],
+        }
+        cards.append(card)
+
+    return {
+        "recent_issue_count": gap_map["recent_issue_count"],
+        "paper_count": gap_map["paper_count"],
+        "latest_date": gap_map["latest_date"],
+        "earliest_recent_date": gap_map["earliest_recent_date"],
+        "cards": cards,
+    }
+
+
+def hypothesis_lab_to_markdown(lab: dict[str, Any]) -> str:
+    """Render hypothesis cards as a Markdown research-proposal notebook."""
+    lines = [
+        f"# 研究假设实验室 — {lab.get('latest_date', 'N/A')}",
+        "",
+        f"- 近期窗口：{lab.get('recent_issue_count', 0)} 期 / {lab.get('paper_count', 0)} 篇",
+        "",
+    ]
+    for card in lab.get("cards", []):
+        lines.extend([
+            f"## {card['id']} {card['title']}",
+            f"- 假设：{card['hypothesis']}",
+            f"- 机制：{card['mechanism']}",
+            f"- 处理变量：{card['treatment_variable']}",
+            f"- 结果变量：{card['outcome_variable']}",
+            f"- 识别方案：{card['identification_plan']}",
+            f"- 数据计划：{card['data_plan']}",
+            "- 稳健性：" + "；".join(card.get("robustness_checks", [])),
+            "- 证伪测试：" + "；".join(card.get("falsification_tests", [])),
+            f"- 贡献：{card['contribution']}",
+            "",
+        ])
+    return "\n".join(lines)
+
+
 def radar_to_markdown(radar: dict[str, Any]) -> str:
     """Render research radar as portable Markdown."""
     lines = [

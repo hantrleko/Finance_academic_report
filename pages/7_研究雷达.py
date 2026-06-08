@@ -13,9 +13,11 @@ import streamlit as st
 
 from src.intelligence import (
     build_gap_map,
+    build_hypothesis_lab,
     build_research_radar,
     build_topic_workspace,
     gap_map_to_markdown,
+    hypothesis_lab_to_markdown,
     radar_to_markdown,
     topic_workspace_to_markdown,
 )
@@ -71,12 +73,13 @@ st.download_button(
 
 st.markdown("---")
 
-tab_topics, tab_methods, tab_sources, tab_papers, tab_gaps, tab_workspace = st.tabs([
+tab_topics, tab_methods, tab_sources, tab_papers, tab_gaps, tab_hypotheses, tab_workspace = st.tabs([
     "🚀 上升主题",
     "🔬 方法/领域信号",
     "🌐 来源结构",
     "⭐ 推荐关注论文",
     "🕳️ 缺口地图",
+    "🧪 假设实验室",
     "🧩 专题工作台",
 ])
 
@@ -250,6 +253,57 @@ with tab_gaps:
             use_container_width=True,
             hide_index=True,
         )
+
+with tab_hypotheses:
+    st.subheader("🧪 研究假设实验室")
+    st.caption("把缺口地图中的潜在选题进一步转化为可检验假设卡：处理变量、结果变量、机制、识别方案、稳健性和证伪测试。")
+    lab = build_hypothesis_lab(all_digests, recent_issues=recent_issues)
+
+    h1, h2, h3 = st.columns(3)
+    h1.metric("分析期数", lab["recent_issue_count"])
+    h2.metric("分析论文", lab["paper_count"])
+    h3.metric("假设卡", len(lab["cards"]))
+
+    st.download_button(
+        "⬇️ 导出假设实验室 (Markdown)",
+        data=hypothesis_lab_to_markdown(lab),
+        file_name=f"hypothesis_lab_{lab.get('latest_date') or 'latest'}.md",
+        mime="text/markdown",
+        disabled=not lab["cards"],
+    )
+
+    if not lab["cards"]:
+        st.info("当前窗口尚未形成足够的领域×方法缺口，暂无法生成假设卡。")
+    else:
+        method_options = sorted({card["method"] for card in lab["cards"]})
+        selected_methods = st.multiselect("按方法筛选假设卡", options=method_options, default=[])
+        cards = [card for card in lab["cards"] if not selected_methods or card["method"] in selected_methods]
+        for card in cards:
+            st.markdown(
+                f"""
+                <div style="border:1px solid #c7d2fe;border-radius:12px;padding:1rem;margin-bottom:1rem;background:#f8faff;">
+                  <div style="font-weight:800;color:#3730a3;font-size:1.02rem;">{html_escape_text(card['id'])} · {html_escape_text(card['title'])}</div>
+                  <div style="margin-top:0.45rem;"><strong>可检验假设：</strong>{html_escape_text(card['hypothesis'])}</div>
+                  <div style="margin-top:0.35rem;"><strong>机制：</strong>{html_escape_text(card['mechanism'])}</div>
+                  <div style="color:#555;font-size:0.9rem;margin-top:0.35rem;">
+                    <strong>处理变量：</strong>{html_escape_text(card['treatment_variable'])}<br>
+                    <strong>结果变量：</strong>{html_escape_text(card['outcome_variable'])}<br>
+                    <strong>识别方案：</strong>{html_escape_text(card['identification_plan'])}<br>
+                    <strong>优先级：</strong>{html_escape_text(card['priority_score'])}
+                  </div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+            with st.expander(f"{card['id']} 稳健性 / 证伪 / 数据计划", expanded=False):
+                st.markdown(f"**数据计划：** {card['data_plan']}")
+                st.markdown("**稳健性检查**")
+                for item in card["robustness_checks"]:
+                    st.markdown(f"- {item}")
+                st.markdown("**证伪测试**")
+                for item in card["falsification_tests"]:
+                    st.markdown(f"- {item}")
+                st.markdown(f"**潜在贡献：** {card['contribution']}")
 
 with tab_workspace:
     st.subheader("🧩 专题工作台")
