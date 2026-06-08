@@ -12,6 +12,7 @@ if str(ROOT) not in sys.path:
 import streamlit as st
 from utils.data_loader import get_available_dates, load_digest
 from utils.safety import format_summary_html, html_escape_text, safe_url
+from src.intelligence import build_digest_brief
 from src.models import VENUE_WHITELIST
 
 st.set_page_config(
@@ -190,6 +191,33 @@ if insights:
             if val:
                 st.markdown(f"**{label}：** {val}")
         st.markdown("</div>", unsafe_allow_html=True)
+
+# ---- 智能导读 ----
+brief = build_digest_brief(data)
+with st.expander("🧠 智能导读（本地规则生成）", expanded=not bool(insights)):
+    st.markdown(brief["narrative"])
+    b1, b2, b3 = st.columns(3)
+    b1.metric("平均引用", brief["avg_citations"])
+    b2.metric("顶级期刊/来源", brief["top_tier_count"])
+    b3.metric("来源数", len(brief["source_mix"]))
+
+    if brief["topic_terms"]:
+        st.markdown("**本期关键词信号**")
+        st.dataframe(
+            [{"主题": item["term"], "强度": item["score"], "示例论文": item.get("example", "")} for item in brief["topic_terms"][:6]],
+            use_container_width=True,
+            hide_index=True,
+        )
+
+    if brief["reading_path"]:
+        st.markdown("**推荐阅读路径**")
+        for item in brief["reading_path"]:
+            link = safe_url(item.get("doi_url")) or safe_url(item.get("openalex_url"))
+            title = item["title"]
+            if link:
+                st.markdown(f"- **{item['role']}**：[{title}]({link}) — {item['reason']}")
+            else:
+                st.markdown(f"- **{item['role']}**：{title} — {item['reason']}")
 
 # ---- 筛选控件 ----
 st.markdown("### 📋 文献列表")

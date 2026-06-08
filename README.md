@@ -1,7 +1,7 @@
 # Finance & Economics Daily Digest
 
-[![Version](https://img.shields.io/badge/version-v1.5-blue)](https://github.com/hantrleko/Finance_academic_report/releases)
-[![Tests](https://img.shields.io/badge/tests-35%20passed-brightgreen)](https://github.com/hantrleko/Finance_academic_report/actions)
+[![Version](https://img.shields.io/badge/version-v1.6-blue)](https://github.com/hantrleko/Finance_academic_report/releases)
+[![Tests](https://img.shields.io/badge/tests-42%20passed-brightgreen)](https://github.com/hantrleko/Finance_academic_report/actions)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 每日自动抓取公开金融/经济学文献，生成结构化日报，并通过 **Streamlit** 在线网站进行交互式展示。
@@ -12,10 +12,12 @@
 - **智能过滤：** 关键词白名单/黑名单 + 引用数加分 + 顶级期刊加分 + 质量分门槛 + arXiv/NBER 基础过滤
 - **AI 摘要：** 双模型架构（翻译模型 + 分析模型），支持结构化中文摘要
 - **LLM 洞察：** 每日主题趋势、方法趋势、应用启示、后续观察
+- **研究雷达：** 无需外部 LLM，基于历史 digest 自动发现上升主题、方法/领域信号、来源结构和推荐关注论文
+- **智能导读：** 今日速递内置本地规则生成的关键词信号、阅读路径、引用/来源/顶刊概览
 - **质量保障：** 空结果保留 `output/latest`，异常写入 `output/alerts/`，digest JSON 结构校验，损坏文件友好提示
 - **高可靠性：** LLM 调用指数退避重试、S2 限流自动重试、JSON 解析三级容错
 - **自动化：** GitHub Actions 每天定时运行并提交 `output/` 结果（含 pip 缓存加速）
-- **在线展示：** Streamlit 多页面网站，支持可点击导航、搜索、筛选、统计可视化、DuckDB 跨期知识库搜索和收藏夹导出
+- **在线展示：** Streamlit 多页面网站，支持可点击导航、搜索、筛选、统计可视化、研究雷达、DuckDB 跨期知识库搜索和收藏夹导出
 
 ## 快速开始
 
@@ -68,11 +70,13 @@ pytest -v
 | ⚙️ 手动抓取 | 手动触发抓取，支持自定义参数和 LLM 配置 |
 | 📚 知识库搜索 | 基于 DuckDB 跨期检索历史文献，支持多条件筛选和 Markdown 导出 |
 | ⭐ 我的收藏 | 管理收藏论文，支持 BibTeX / Markdown 导出 |
+| 🧭 研究雷达 | 从历史 digest 提炼上升主题、方法/领域信号、来源结构和推荐关注论文 |
 
 ## 数据质量与安全
 
 - 前端对来自外部数据源的标题、作者、期刊、摘要和链接进行 HTML 转义与 URL 白名单校验，避免外部元数据破坏页面结构。
 - `src/schema.py` 会标准化并校验 digest JSON，页面加载时会对异常字段给出提示。
+- `src/intelligence.py` 只使用本地元数据生成研究雷达和智能导读，不额外发送论文标题/摘要到第三方服务。
 - 测试套件会扫描 `output/*/digest.json`，确保提交的历史数据不含 Git 冲突标记、JSON 可解析且 source 字段合法。
 
 ## 环境变量
@@ -127,7 +131,8 @@ Finance_academic_report/
 │   ├── 3_数据统计.py               # 数据统计页面
 │   ├── 4_手动抓取.py               # 手动抓取页面
 │   ├── 5_知识库搜索.py             # DuckDB 跨期知识库搜索
-│   └── 6_我的收藏.py               # 收藏夹管理与导出
+│   ├── 6_我的收藏.py               # 收藏夹管理与导出
+│   └── 7_研究雷达.py               # 上升主题、方法信号与推荐阅读路径
 ├── utils/
 │   ├── data_loader.py              # 数据加载工具（含缓存、标准化与容错）
 │   ├── bookmarks.py                # 收藏夹读写与 BibTeX 导出
@@ -141,12 +146,13 @@ Finance_academic_report/
 │   ├── pipeline.py                 # 主流程编排
 │   ├── rendering.py                # HTML/Markdown 渲染
 │   ├── schema.py                   # digest JSON 标准化与结构校验
+│   ├── intelligence.py             # 本地研究雷达与智能导读
 │   └── digest.py                   # CLI 入口
 ├── output/                         # 自动生成的日报数据
 │   ├── latest/                     # 最新一期
 │   ├── YYYY-MM-DD/                 # 历史日期
 │   └── alerts/                     # 空结果告警
-├── tests/                          # 单元测试与数据健康检查（35 个用例）
+├── tests/                          # 单元测试与数据健康检查（42 个用例）
 ├── .github/workflows/              # GitHub Actions 定时任务
 ├── .streamlit/
 │   ├── config.toml                 # Streamlit 主题配置
@@ -158,6 +164,7 @@ Finance_academic_report/
 
 | 版本 | 日期 | 主要变更 |
 |------|------|----------|
+| v1.6 | 2026-06-08 | 新增研究雷达与智能导读：本地提炼上升主题、方法/领域信号、来源结构和推荐关注论文；测试扩充至 42 个 |
 | v1.5 | 2026-05-02 | 新增 DuckDB 知识库搜索、SSRN 数据源、收藏夹与导出功能；修复自动化兼容、依赖和历史数据一致性 |
 | v1.4 | 2026-05-01 | 扩充期刊黑名单、优化手动抓取关键词配置和统计页面 |
 | v1.3 | 2026-04-30 | 新增研究偏好、AI 个性化相关性评分和跨页面偏好共享 |

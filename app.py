@@ -2,8 +2,8 @@
 import streamlit as st
 
 # ---- 版本信息 ----
-APP_VERSION = "v1.5"
-APP_VERSION_DATE = "2026-05-02"
+APP_VERSION = "v1.6"
+APP_VERSION_DATE = "2026-06-08"
 
 st.set_page_config(
     page_title="金融经济学每日文献速递",
@@ -23,6 +23,7 @@ pages = {
     "⚙️ 手动抓取": "pages/4_手动抓取.py",
     "📚 知识库搜索": "pages/5_知识库搜索.py",
     "⭐ 我的收藏": "pages/6_我的收藏.py",
+    "🧭 研究雷达": "pages/7_研究雷达.py",
 }
 
 st.sidebar.markdown("### 导航")
@@ -113,6 +114,7 @@ st.markdown(
     | ⚙️ 手动抓取 | 手动触发文献抓取（需配置 API Key） |
     | 📚 知识库搜索 | 跨期全局搜索所有历史文献（DuckDB 驱动） |
     | ⭐ 我的收藏 | 管理收藏论文，支持 BibTeX / Markdown 导出 |
+    | 🧭 研究雷达 | 从历史数据提炼上升主题、方法信号和推荐关注论文 |
     """
 )
 
@@ -125,6 +127,11 @@ st.markdown("---")
 with st.expander(f"📋 版本更新日志（当前：{APP_VERSION}）", expanded=False):
     st.markdown(
         f"""
+        ### v1.6 — 2026-06-08
+        **新增 / 优化**
+        - 新增「🧭 研究雷达」页面：基于历史 digest 本地生成上升主题、方法/领域信号、来源结构和推荐关注论文
+        - 今日速递新增「🧠 智能导读」：无需外部 LLM 即可生成关键词信号、阅读路径和本期概览
+
         ### v1.5 — 2026-05-02
         **新增 / 优化**
         - 新增「📚 知识库搜索」页面：DuckDB 驱动，跨所有历史期刊全局搜索，支持关键词、来源、日期范围、引用数、顶级期刊多维筛选
