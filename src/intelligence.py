@@ -352,6 +352,150 @@ def build_research_radar(digests: list[dict[str, Any]], recent_issues: int = 14,
     }
 
 
+def _query_terms(query: str) -> list[str]:
+    return [term.lower() for term in _WORD_RE.findall(query) if term.lower() not in _STOPWORDS]
+
+
+def _matches_topic_query(paper: dict[str, Any], query: str) -> bool:
+    terms = _query_terms(query)
+    if not terms:
+        return False
+    text = _paper_text(paper)
+    return all(term in text for term in terms)
+
+
+def _paper_record(paper: dict[str, Any], reference_year: int) -> dict[str, Any]:
+    source = _text(paper.get("source", "unknown")) or "unknown"
+    try:
+        citations = int(paper.get("cited_by_count", 0) or 0)
+    except (TypeError, ValueError):
+        citations = 0
+    return {
+        "title": _text(paper.get("title", "")),
+        "source": source,
+        "source_label": SOURCE_LABELS.get(source, source),
+        "venue": _text(paper.get("venue", "")),
+        "published_date": _text(paper.get("published_date", "")),
+        "cited_by_count": citations,
+        "attention_score": paper_attention_score(paper, reference_year),
+        "citation_bucket": citation_bucket(citations),
+        "doi_url": _text(paper.get("doi_url", "")),
+        "openalex_url": _text(paper.get("openalex_url", "")),
+        "summary_zh": _text(paper.get("summary_zh", "")),
+    }
+
+
+def build_topic_workspace(digests: list[dict[str, Any]], query: str, limit: int = 12) -> dict[str, Any]:
+    """Build a topic-focused workspace for literature review planning.
+
+    The workspace filters historical papers by a user query, then summarizes the
+    topic's timeline, related terms, method/domain mix, source mix, and a
+    deterministic literature-review scaffold.
+    """
+    terms = _query_terms(query)
+    valid_digests = sorted([d for d in digests if isinstance(d, dict)], key=_parse_digest_date)
+    matches: list[tuple[str, dict[str, Any]]] = []
+    for digest in valid_digests:
+        digest_date = _text(digest.get("date", ""))
+        for paper in digest.get("papers", []) or []:
+            if isinstance(paper, dict) and _matches_topic_query(paper, query):
+                matches.append((digest_date, paper))
+
+    papers = [paper for _, paper in matches]
+    years = [_parse_year(paper.get("published_date")) for paper in papers]
+    reference_year = max((year for year in years if year), default=date.today().year)
+
+    timeline_counter: Counter[str] = Counter(digest_date for digest_date, _ in matches if digest_date)
+    timeline = [
+        {"date": digest_date, "count": count}
+        for digest_date, count in sorted(timeline_counter.items())
+    ]
+
+    related_terms = extract_topic_terms(papers, limit=40)
+    query_term_set = set(terms)
+    related_terms = [
+        item for item in related_terms
+        if item["term"] not in query_term_set and not all(part in query_term_set for part in item["term"].split())
+    ][:10]
+
+    top_papers = sorted(
+        (_paper_record(paper, reference_year) for paper in papers),
+        key=lambda item: (item["attention_score"], item["cited_by_count"]),
+        reverse=True,
+    )[:limit]
+
+    method_signals = classify_taxonomy(papers, METHOD_TAXONOMY)
+    domain_signals = classify_taxonomy(papers, DOMAIN_TAXONOMY)
+    source_data = source_mix(papers)
+
+    first_date = timeline[0]["date"] if timeline else ""
+    latest_date = timeline[-1]["date"] if timeline else ""
+    lead_related = [item["term"] for item in related_terms[:3]]
+    lead_methods = [item["label"] for item in method_signals[:2]]
+    lead_domains = [item["label"] for item in domain_signals[:2]]
+
+    if papers:
+        narrative = f"专题「{query}」在历史库中命中 {len(papers)} 篇论文。"
+        if first_date and latest_date:
+            narrative += f" 覆盖窗口为 {first_date} 至 {latest_date}。"
+        if lead_related:
+            narrative += " 相关延展词包括 " + "、".join(lead_related) + "。"
+        if lead_methods:
+            narrative += " 可优先关注方法线索：" + "、".join(lead_methods) + "。"
+    else:
+        narrative = f"专题「{query}」暂未命中历史论文。建议尝试更宽泛的英文关键词或缩短查询短语。"
+
+    review_outline = []
+    if papers:
+        review_outline = [
+            f"1. 研究问题界定：围绕「{query}」说明核心金融/经济机制与现实场景。",
+            "2. 文献脉络梳理：按时间线区分早期基础、高引用锚点与近期前沿。",
+            "3. 方法比较：比较 " + ("、".join(lead_methods) if lead_methods else "识别策略、数据来源与模型设定") + "。",
+            "4. 应用含义：连接 " + ("、".join(lead_domains) if lead_domains else "政策、市场与机构决策") + "。",
+            "5. 后续缺口：寻找样本外验证、异质性机制、跨市场可迁移性和可复现数据。",
+        ]
+
+    return {
+        "query": query,
+        "terms": terms,
+        "paper_count": len(papers),
+        "first_date": first_date,
+        "latest_date": latest_date,
+        "timeline": timeline,
+        "related_terms": related_terms,
+        "method_signals": method_signals,
+        "domain_signals": domain_signals,
+        "source_mix": source_data,
+        "top_papers": top_papers,
+        "narrative": narrative,
+        "review_outline": review_outline,
+    }
+
+
+def topic_workspace_to_markdown(workspace: dict[str, Any]) -> str:
+    """Render a topic workspace as a literature-review planning note."""
+    query = workspace.get("query", "N/A")
+    lines = [
+        f"# 专题工作台 — {query}",
+        "",
+        workspace.get("narrative", ""),
+        "",
+        "## 文献综述提纲",
+    ]
+    for item in workspace.get("review_outline", []):
+        lines.append(f"- {item}")
+    lines.extend(["", "## 相关延展词"])
+    for item in workspace.get("related_terms", []):
+        lines.append(f"- {item['term']}（强度 {item['score']}）")
+    lines.extend(["", "## 方法信号"])
+    for item in workspace.get("method_signals", []):
+        lines.append(f"- {item['label']}：{item['count']} 篇")
+    lines.extend(["", "## 推荐论文"])
+    for idx, paper in enumerate(workspace.get("top_papers", []), 1):
+        lines.append(f"{idx}. {paper['title']} — {paper['source_label']}，关注度 {paper['attention_score']}")
+    return "\n".join(lines) + "\n"
+
+
 def radar_to_markdown(radar: dict[str, Any]) -> str:
     """Render research radar as portable Markdown."""
     lines = [

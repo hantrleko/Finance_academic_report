@@ -11,7 +11,7 @@ if str(ROOT) not in sys.path:
 import plotly.express as px
 import streamlit as st
 
-from src.intelligence import build_research_radar, radar_to_markdown
+from src.intelligence import build_research_radar, build_topic_workspace, radar_to_markdown, topic_workspace_to_markdown
 from utils.data_loader import load_all_digests
 from utils.safety import html_escape_text, safe_url
 
@@ -64,11 +64,12 @@ st.download_button(
 
 st.markdown("---")
 
-tab_topics, tab_methods, tab_sources, tab_papers = st.tabs([
+tab_topics, tab_methods, tab_sources, tab_papers, tab_workspace = st.tabs([
     "🚀 上升主题",
     "🔬 方法/领域信号",
     "🌐 来源结构",
     "⭐ 推荐关注论文",
+    "🧩 专题工作台",
 ])
 
 with tab_topics:
@@ -175,3 +176,116 @@ with tab_papers:
             )
     else:
         st.info("暂无可推荐论文。")
+
+with tab_workspace:
+    st.subheader("🧩 专题工作台")
+    st.caption("输入英文关键词或短语，系统会在历史 digest 中构建一个专题文献综述草稿：时间线、延展词、方法/领域信号和推荐论文。")
+    topic_query = st.text_input(
+        "专题关键词",
+        value="inflation",
+        placeholder="例如：inflation、asset pricing、climate risk、machine learning",
+        help="建议使用英文关键词；多个词会按 AND 逻辑匹配标题、摘要、主题和摘要字段。",
+    ).strip()
+
+    if not topic_query:
+        st.info("请输入专题关键词以生成工作台。")
+    else:
+        workspace = build_topic_workspace(all_digests, topic_query)
+        st.markdown(workspace["narrative"])
+
+        w1, w2, w3, w4 = st.columns(4)
+        w1.metric("命中文献", workspace["paper_count"])
+        w2.metric("首次出现", workspace["first_date"] or "N/A")
+        w3.metric("最近出现", workspace["latest_date"] or "N/A")
+        w4.metric("相关延展词", len(workspace["related_terms"]))
+
+        st.download_button(
+            "⬇️ 导出专题综述草稿 (Markdown)",
+            data=topic_workspace_to_markdown(workspace),
+            file_name=f"topic_workspace_{topic_query.replace(' ', '_')}.md",
+            mime="text/markdown",
+            disabled=workspace["paper_count"] == 0,
+        )
+
+        if workspace["paper_count"] == 0:
+            st.warning("未找到匹配论文。可尝试更短的英文关键词，如 `inflation` 而不是完整句子。")
+        else:
+            col_timeline, col_terms = st.columns([1, 1])
+            with col_timeline:
+                st.markdown("**出现时间线**")
+                if workspace["timeline"]:
+                    fig_timeline = px.line(
+                        workspace["timeline"],
+                        x="date",
+                        y="count",
+                        markers=True,
+                        labels={"date": "日期", "count": "命中文献数"},
+                    )
+                    fig_timeline.update_layout(height=320, margin=dict(l=30, r=20, t=20, b=40), plot_bgcolor="white")
+                    fig_timeline.update_yaxes(dtick=1, showgrid=True, gridcolor="#f0f0f0")
+                    st.plotly_chart(fig_timeline, use_container_width=True)
+            with col_terms:
+                st.markdown("**相关延展词**")
+                if workspace["related_terms"]:
+                    st.dataframe(
+                        [{"延展词": item["term"], "强度": item["score"], "示例": item.get("example", "")} for item in workspace["related_terms"]],
+                        use_container_width=True,
+                        hide_index=True,
+                    )
+                else:
+                    st.info("暂无足够延展词。")
+
+            st.markdown("**文献综述提纲**")
+            for line in workspace["review_outline"]:
+                st.markdown(f"- {line}")
+
+            col_method, col_domain = st.columns(2)
+            with col_method:
+                st.markdown("**方法信号**")
+                if workspace["method_signals"]:
+                    st.dataframe(
+                        [{"方法": item["label"], "论文数": item["count"], "示例": item.get("example", "")} for item in workspace["method_signals"]],
+                        use_container_width=True,
+                        hide_index=True,
+                    )
+                else:
+                    st.info("未检测到明确方法信号。")
+            with col_domain:
+                st.markdown("**领域信号**")
+                if workspace["domain_signals"]:
+                    st.dataframe(
+                        [{"领域": item["label"], "论文数": item["count"], "示例": item.get("example", "")} for item in workspace["domain_signals"]],
+                        use_container_width=True,
+                        hide_index=True,
+                    )
+                else:
+                    st.info("未检测到明确领域信号。")
+
+            st.markdown("**推荐纳入综述的论文**")
+            for idx, paper in enumerate(workspace["top_papers"], 1):
+                doi_safe = safe_url(paper.get("doi_url", ""))
+                openalex_safe = safe_url(paper.get("openalex_url", ""))
+                link_html = ""
+                if doi_safe:
+                    link_html += f'<a href="{doi_safe}" target="_blank" rel="noopener">DOI</a> '
+                if openalex_safe:
+                    link_html += f'<a href="{openalex_safe}" target="_blank" rel="noopener">原文链接</a>'
+                if not link_html:
+                    link_html = "N/A"
+                summary_preview = paper.get("summary_zh", "")[:180]
+                st.markdown(
+                    f"""
+                    <div style="border:1px solid #e6e6e6;border-radius:10px;padding:1rem;margin-bottom:0.8rem;background:#ffffff;">
+                      <div style="font-weight:700;color:#1a3a6e;">{idx}. {html_escape_text(paper.get('title'))}</div>
+                      <div style="color:#555;font-size:0.9rem;margin-top:0.35rem;">
+                        <strong>来源：</strong>{html_escape_text(paper.get('source_label'))}
+                        &nbsp;|&nbsp;<strong>期刊/来源：</strong>{html_escape_text(paper.get('venue') or 'N/A')}
+                        &nbsp;|&nbsp;<strong>引用层级：</strong>{html_escape_text(paper.get('citation_bucket'))}
+                        &nbsp;|&nbsp;<strong>关注度：</strong>{html_escape_text(paper.get('attention_score'))}
+                      </div>
+                      <div style="color:#555;font-size:0.9rem;margin-top:0.35rem;">{html_escape_text(summary_preview)}{'...' if summary_preview else ''}</div>
+                      <div style="color:#555;font-size:0.9rem;margin-top:0.35rem;">{link_html}</div>
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
