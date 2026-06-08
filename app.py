@@ -2,7 +2,7 @@
 import streamlit as st
 
 # ---- 版本信息 ----
-APP_VERSION = "v1.6"
+APP_VERSION = "v1.7"
 APP_VERSION_DATE = "2026-06-08"
 
 st.set_page_config(
@@ -114,7 +114,7 @@ st.markdown(
     | ⚙️ 手动抓取 | 手动触发文献抓取（需配置 API Key） |
     | 📚 知识库搜索 | 跨期全局搜索所有历史文献（DuckDB 驱动） |
     | ⭐ 我的收藏 | 管理收藏论文，支持 BibTeX / Markdown 导出 |
-    | 🧭 研究雷达 | 从历史数据提炼上升主题、方法信号和推荐关注论文 |
+    | 🧭 研究雷达 | 提炼上升主题、方法信号、推荐论文，并支持专题工作台生成综述草稿 |
     """
 )
 
@@ -127,6 +127,11 @@ st.markdown("---")
 with st.expander(f"📋 版本更新日志（当前：{APP_VERSION}）", expanded=False):
     st.markdown(
         f"""
+        ### v1.7 — 2026-06-08
+        **新增 / 优化**
+        - 研究雷达新增「🧩 专题工作台」：输入关键词即可生成专题时间线、延展词、方法/领域地图、推荐论文和综述提纲
+        - 新增专题 Markdown 导出，方便直接沉淀到 Notion / Obsidian / 研究日志
+
         ### v1.6 — 2026-06-08
         **新增 / 优化**
         - 新增「🧭 研究雷达」页面：基于历史 digest 本地生成上升主题、方法/领域信号、来源结构和推荐关注论文

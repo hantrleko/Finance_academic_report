@@ -3,11 +3,13 @@ from __future__ import annotations
 from src.intelligence import (
     build_digest_brief,
     build_research_radar,
+    build_topic_workspace,
     citation_bucket,
     classify_taxonomy,
     extract_topic_terms,
     paper_attention_score,
     radar_to_markdown,
+    topic_workspace_to_markdown,
 )
 
 
@@ -98,3 +100,55 @@ def test_radar_to_markdown_contains_core_sections():
     assert "# 研究雷达" in markdown
     assert "## 上升主题" in markdown
     assert "## 推荐关注论文" in markdown
+
+
+def test_build_topic_workspace_filters_by_all_query_terms():
+    digests = [
+        {"date": "2026-06-03", "papers": [
+            _paper("Climate Risk and Bank Lending", topics=["Climate Risk"], source="ssrn"),
+            _paper("Climate Preferences", topics=["Climate"], abstract="Investor preferences."),
+        ]},
+    ]
+    workspace = build_topic_workspace(digests, "climate risk")
+    assert workspace["paper_count"] == 1
+    assert workspace["top_papers"][0]["title"] == "Climate Risk and Bank Lending"
+
+
+def test_build_topic_workspace_returns_timeline_related_terms_and_outline():
+    digests = [
+        {"date": "2026-06-01", "papers": [_paper("Inflation Expectations", topics=["Inflation", "Expectations"])]},
+        {"date": "2026-06-02", "papers": [_paper("Inflation and Central Bank Communication", topics=["Inflation", "Communication"])]},
+    ]
+    workspace = build_topic_workspace(digests, "inflation")
+    assert workspace["paper_count"] == 2
+    assert workspace["first_date"] == "2026-06-01"
+    assert workspace["latest_date"] == "2026-06-02"
+    assert workspace["timeline"] == [{"date": "2026-06-01", "count": 1}, {"date": "2026-06-02", "count": 1}]
+    assert workspace["related_terms"]
+    assert workspace["review_outline"]
+
+
+def test_build_topic_workspace_empty_query_or_no_match_is_safe():
+    workspace = build_topic_workspace([{"date": "2026-06-01", "papers": [_paper("Inflation Expectations")]}], "")
+    assert workspace["paper_count"] == 0
+    assert workspace["top_papers"] == []
+    no_match = build_topic_workspace([{"date": "2026-06-01", "papers": [_paper("Inflation Expectations")]}], "crypto")
+    assert no_match["paper_count"] == 0
+    assert "暂未命中" in no_match["narrative"]
+
+
+def test_topic_workspace_to_markdown_contains_literature_review_sections():
+    workspace = build_topic_workspace([
+        {"date": "2026-06-01", "papers": [_paper("Inflation Expectations", topics=["Inflation", "Expectations"])]}
+    ], "inflation")
+    markdown = topic_workspace_to_markdown(workspace)
+    assert "# 专题工作台" in markdown
+    assert "## 文献综述提纲" in markdown
+    assert "## 推荐论文" in markdown
+
+
+def test_topic_workspace_top_papers_include_citation_bucket():
+    workspace = build_topic_workspace([
+        {"date": "2026-06-01", "papers": [_paper("High Impact Inflation", topics=["Inflation"], cited_by_count=120)]}
+    ], "inflation")
+    assert workspace["top_papers"][0]["citation_bucket"] == "高影响"
