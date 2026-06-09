@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from src.intelligence import (
     build_digest_brief,
+    build_execution_playbook,
     build_gap_map,
     build_hypothesis_lab,
     build_research_radar,
@@ -10,6 +11,7 @@ from src.intelligence import (
     classify_taxonomy,
     gap_map_to_markdown,
     hypothesis_lab_to_markdown,
+    execution_playbook_to_markdown,
     extract_topic_terms,
     paper_attention_score,
     radar_to_markdown,
@@ -251,3 +253,56 @@ def test_hypothesis_lab_empty_input_is_safe():
     lab = build_hypothesis_lab([], recent_issues=5)
     assert lab["cards"] == []
     assert "# 研究假设实验室" in hypothesis_lab_to_markdown(lab)
+
+def test_build_execution_playbook_generates_reproducible_projects():
+    playbook = build_execution_playbook([
+        {"date": "2026-06-03", "papers": [
+            _paper("Inflation and Causal Identification", abstract="Monetary policy with causal identification.", topics=["Inflation"]),
+            _paper("Bank Lending with Machine Learning", abstract="Bank lending and credit risk using machine learning.", topics=["Credit"]),
+        ]},
+    ], recent_issues=1)
+    assert playbook["projects"]
+    project = playbook["projects"][0]
+    assert project["id"].startswith("P")
+    assert project["hypothesis_id"].startswith("H")
+    assert 20 <= project["readiness_score"] <= 95
+    assert project["data_package"]
+    assert project["milestones"]
+    assert project["reproducibility_checklist"]
+    assert project["expected_artifacts"]
+    assert project["risk_controls"]
+
+
+def test_execution_playbook_respects_project_limit_and_average_readiness():
+    playbook = build_execution_playbook([
+        {"date": "2026-06-03", "papers": [
+            _paper("Inflation and Causal Identification", abstract="Monetary policy with causal identification.", topics=["Inflation"]),
+            _paper("Bank Lending with Machine Learning", abstract="Bank lending and credit risk using machine learning.", topics=["Credit"]),
+            _paper("Climate Text Analysis", abstract="Climate risk disclosure with text sentiment analysis.", topics=["Climate Risk"]),
+        ]},
+    ], recent_issues=1, max_projects=1)
+    assert playbook["project_count"] == 1
+    assert len(playbook["projects"]) == 1
+    assert playbook["avg_readiness_score"] == playbook["projects"][0]["readiness_score"]
+
+
+def test_execution_playbook_to_markdown_contains_reproducibility_sections():
+    playbook = build_execution_playbook([
+        {"date": "2026-06-03", "papers": [
+            _paper("Inflation and Causal Identification", abstract="Monetary policy with causal identification.", topics=["Inflation"]),
+            _paper("Bank Lending with Machine Learning", abstract="Bank lending and credit risk using machine learning.", topics=["Credit"]),
+        ]},
+    ], recent_issues=1)
+    markdown = execution_playbook_to_markdown(playbook)
+    assert "# 复现执行计划" in markdown
+    assert "### 里程碑" in markdown
+    assert "### 复现清单" in markdown
+    assert "### 风险控制" in markdown
+
+
+def test_execution_playbook_empty_input_is_safe():
+    playbook = build_execution_playbook([], recent_issues=5)
+    assert playbook["projects"] == []
+    assert playbook["project_count"] == 0
+    assert "# 复现执行计划" in execution_playbook_to_markdown(playbook)
+
