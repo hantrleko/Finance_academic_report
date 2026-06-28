@@ -17,7 +17,7 @@ from .sources import (
     fetch_semantic_scholar_papers,
     fetch_ssrn_papers,
 )
-from .summarization import apply_summaries, generate_digest_insights, generate_digest_overview, llm_screen_relevance
+from .summarization import apply_summaries, generate_digest_insights, generate_digest_overview, generate_template_overview, llm_screen_relevance
 
 SOURCE_PRIORITY = ["openalex", "ssrn", "arxiv", "semantic_scholar", "nber"]
 
@@ -204,6 +204,8 @@ def build_digest(
     )
     papers = apply_summaries(papers, analysis_cfg, translate_cfg)
     overview = generate_digest_overview(papers, analysis_cfg)
+    if not overview:
+        overview = generate_template_overview(papers)
     insights = generate_digest_insights(papers, analysis_cfg)
 
     config.output_dir.mkdir(parents=True, exist_ok=True)

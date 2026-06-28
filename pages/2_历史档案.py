@@ -205,7 +205,7 @@ with col_f4:
     sort_by_relevance = st.checkbox(
         "🎯 按相关性排序",
         value=False,
-        help="需要在侧边栏填写「我的研究偏好」并配置 LLM API",
+        help="填写侧边栏「我的研究偏好」后生效；有 LLM API 时使用语义评分，否则使用关键词相似度",
     )
 
 # ---- 个性化相关性评分 ----
@@ -217,32 +217,41 @@ pref_model = st.session_state.get("preference_llm_model", "gpt-4o-mini").strip()
 _cache_key = f"relevance_hist_{selected_date}_{user_preference[:50]}_{len(papers)}"
 
 if sort_by_relevance and user_preference and papers:
-    if not pref_api_key or not pref_api_base:
-        st.warning("⚠️ 请在侧边栏「相关性评分 LLM 配置」中填写 API Base URL 和 API Key。")
-    elif _cache_key not in st.session_state:
-        with st.spinner(f"🎯 正在为 {len(papers)} 篇论文评估相关性，请稍候..."):
-            try:
-                from src.models import LLMConfig
-                from src.summarization import score_papers_by_preference
-                import copy
+    has_llm = bool(pref_api_key and pref_api_base)
 
-                pref_cfg = LLMConfig(
-                    enabled=True,
-                    api_base=pref_api_base,
-                    api_key=pref_api_key,
-                    model=pref_model,
-                    timeout_seconds=30,
-                )
-                papers_copy = copy.deepcopy(papers)
-                papers_copy = score_papers_by_preference(papers_copy, user_preference, pref_cfg)
-                st.session_state[_cache_key] = papers_copy
-                st.success(f"✅ 相关性评分完成！")
-            except Exception as e:
-                st.error(f"❌ 相关性评分失败：{e}")
-                st.session_state[_cache_key] = None
+    if _cache_key not in st.session_state:
+        if has_llm:
+            with st.spinner(f"🎯 正在为 {len(papers)} 篇论文评估相关性，请稍候..."):
+                try:
+                    from src.models import LLMConfig
+                    from src.summarization import score_papers_by_preference
+                    import copy
+
+                    pref_cfg = LLMConfig(
+                        enabled=True,
+                        api_base=pref_api_base,
+                        api_key=pref_api_key,
+                        model=pref_model,
+                        timeout_seconds=30,
+                    )
+                    papers_copy = copy.deepcopy(papers)
+                    papers_copy = score_papers_by_preference(papers_copy, user_preference, pref_cfg)
+                    st.session_state[_cache_key] = papers_copy
+                    st.success("✅ LLM 相关性评分完成！")
+                except Exception as e:
+                    st.error(f"❌ 相关性评分失败：{e}")
+                    st.session_state[_cache_key] = None
+        else:
+            import copy
+            from src.summarization import score_papers_by_preference_local
+            papers_copy = copy.deepcopy(papers)
+            papers_copy = score_papers_by_preference_local(papers_copy, user_preference)
+            st.session_state[_cache_key] = papers_copy
+            st.info(f"🎯 已使用本地关键词相似度评分。如需语义评分，请在侧边栏配置 LLM API。")
     else:
         if st.session_state[_cache_key] is not None:
-            st.info(f"🎯 已使用缓存的相关性评分结果")
+            mode = "LLM 语义" if has_llm else "本地关键词"
+            st.info(f"🎯 已使用缓存的{mode}评分结果")
 
     if _cache_key in st.session_state and st.session_state[_cache_key] is not None:
         papers = st.session_state[_cache_key]
@@ -319,7 +328,14 @@ for idx, p in enumerate(filtered, 1):
     topics_str = " · ".join(topics[:5]) if topics else "N/A"
 
     summary_raw = p.get("summary_zh", "")
+    abstract_raw = p.get("abstract", "")
+    is_structured = summary_raw and any(
+        label in summary_raw for label in ["📌 研究问题", "🔬 研究方法", "📊 核心发现", "💡 应用价值"]
+    )
     summary_html = format_summary_html(summary_raw)
+    fallback_note = ""
+    if summary_raw and not is_structured and not bool(__import__("re").search(r"[\u4e00-\u9fff]", abstract_raw)):
+        fallback_note = '<div style="font-size:0.78rem;color:#888;margin-bottom:4px;">📝 本地信号提取（无 LLM）</div>'
 
     venue = p.get("venue", "N/A")
     pub_date = p.get("published_date", "N/A") or "N/A"
@@ -373,11 +389,16 @@ for idx, p in enumerate(filtered, 1):
           <div class="paper-meta"><strong>主题：</strong>{topics_html}</div>
           {relevance_html}
           <div class="paper-meta">{links_html}</div>
+          {fallback_note}
           <div class="summary-box">{summary_html}</div>
         </div>
         """,
         unsafe_allow_html=True,
     )
+
+    if abstract_raw and not is_structured:
+        with st.expander("📄 原文摘要（英文）", expanded=False):
+            st.caption(abstract_raw)
 
     # 单篇复制按钮
     paper_md = paper_to_markdown(idx, p)

@@ -191,6 +191,13 @@ if insights:
             if val:
                 st.markdown(f"**{label}：** {val}")
         st.markdown("</div>", unsafe_allow_html=True)
+else:
+    st.info(
+        "💡 未配置 LLM，今日洞察不可用。"
+        " **研究雷达、缺口图、假设实验室**等本地智能分析功能无需 LLM，"
+        " 可前往 **「研究雷达」** 页面查看跨期选题分析。",
+        icon=None,
+    )
 
 # ---- 智能导读 ----
 brief = build_digest_brief(data)
@@ -237,10 +244,15 @@ with col_f4:
     sort_by_relevance = st.checkbox(
         "🎯 按相关性排序",
         value=False,
-        help="需要在侧边栏填写「我的研究偏好」并配置 LLM API",
+        help="填写侧边栏「我的研究偏好」后生效；有 LLM API 时使用语义评分，否则使用关键词相似度",
     )
 
 # ---- 辅助函数 ----
+def _contains_chinese_in_abstract(text: str) -> bool:
+    import re
+    return bool(re.search(r"[\u4e00-\u9fff]", text))
+
+
 def is_top_tier(venue: str) -> bool:
     venue_lower = venue.lower()
     return any(wl in venue_lower for wl in VENUE_WHITELIST)
@@ -300,43 +312,51 @@ pref_api_base = st.session_state.get("preference_llm_api_base", "").strip()
 pref_api_key = st.session_state.get("preference_llm_api_key", "").strip()
 pref_model = st.session_state.get("preference_llm_model", "gpt-4o-mini").strip()
 
-# 缓存键：偏好 + 日期 + 论文数量，避免重复调用 LLM
+# 缓存键：偏好 + 日期 + 论文数量，避免重复调用
 _cache_key = f"relevance_{selected_date}_{user_preference[:50]}_{len(papers)}"
 
 if sort_by_relevance and user_preference and papers:
-    if not pref_api_key or not pref_api_base:
-        st.warning("⚠️ 请在侧边栏「相关性评分 LLM 配置」中填写 API Base URL 和 API Key。")
-    elif _cache_key not in st.session_state:
-        # 首次评分：调用 LLM
-        with st.spinner(f"🎯 正在为 {len(papers)} 篇论文评估与「{user_preference[:30]}...」的相关性，请稍候..."):
-            try:
-                from src.models import LLMConfig
-                from src.summarization import score_papers_by_preference
-                import copy
+    has_llm = bool(pref_api_key and pref_api_base)
 
-                pref_cfg = LLMConfig(
-                    enabled=True,
-                    api_base=pref_api_base,
-                    api_key=pref_api_key,
-                    model=pref_model,
-                    timeout_seconds=30,
-                )
-                # 深拷贝避免污染原始数据
-                papers_copy = copy.deepcopy(papers)
-                papers_copy = score_papers_by_preference(papers_copy, user_preference, pref_cfg)
-                st.session_state[_cache_key] = papers_copy
-                st.success(f"✅ 相关性评分完成！已按与「{user_preference[:30]}」的相关性从高到低排序。")
-            except Exception as e:
-                st.error(f"❌ 相关性评分失败：{e}")
-                st.session_state[_cache_key] = None
+    if _cache_key not in st.session_state:
+        if has_llm:
+            # LLM 语义评分
+            with st.spinner(f"🎯 正在为 {len(papers)} 篇论文评估与「{user_preference[:30]}...」的相关性，请稍候..."):
+                try:
+                    from src.models import LLMConfig
+                    from src.summarization import score_papers_by_preference
+                    import copy
+
+                    pref_cfg = LLMConfig(
+                        enabled=True,
+                        api_base=pref_api_base,
+                        api_key=pref_api_key,
+                        model=pref_model,
+                        timeout_seconds=30,
+                    )
+                    papers_copy = copy.deepcopy(papers)
+                    papers_copy = score_papers_by_preference(papers_copy, user_preference, pref_cfg)
+                    st.session_state[_cache_key] = papers_copy
+                    st.success(f"✅ LLM 相关性评分完成，已按与「{user_preference[:30]}」的相关性排序。")
+                except Exception as e:
+                    st.error(f"❌ LLM 相关性评分失败：{e}")
+                    st.session_state[_cache_key] = None
+        else:
+            # 本地 TF-IDF / 关键词相似度评分（无需 API）
+            import copy
+            from src.summarization import score_papers_by_preference_local
+            papers_copy = copy.deepcopy(papers)
+            papers_copy = score_papers_by_preference_local(papers_copy, user_preference)
+            st.session_state[_cache_key] = papers_copy
+            st.info(f"🎯 已使用本地关键词相似度评分（偏好：「{user_preference[:40]}」）。如需语义评分，请在侧边栏配置 LLM API。")
     else:
         if st.session_state[_cache_key] is not None:
-            st.info(f"🎯 已使用缓存的相关性评分结果（偏好：「{user_preference[:40]}」）")
+            mode = "LLM 语义" if has_llm else "本地关键词"
+            st.info(f"🎯 已使用缓存的{mode}评分结果（偏好：「{user_preference[:40]}」）")
 
     # 使用评分后的论文列表
     if _cache_key in st.session_state and st.session_state[_cache_key] is not None:
         papers = st.session_state[_cache_key]
-        # 按相关性分数降序排序（未评分的 -1 排在最后）
         papers = sorted(papers, key=lambda p: p.get("relevance_score", -1), reverse=True)
 
 elif sort_by_relevance and not user_preference:
@@ -419,7 +439,15 @@ else:
         topics_str = " · ".join(topics[:5]) if topics else "N/A"
 
         summary_raw = p.get("summary_zh", "")
-        summary_html = format_summary_html(summary_raw)
+        abstract_raw = p.get("abstract", "")
+
+        # Detect whether the summary is a structured LLM output or local fallback
+        is_structured = summary_raw and any(
+            label in summary_raw for label in ["📌 研究问题", "🔬 研究方法", "📊 核心发现", "💡 应用价值"]
+        )
+        is_local_fallback = summary_raw and not is_structured and not _contains_chinese_in_abstract(abstract_raw)
+
+        summary_html = format_summary_html(summary_raw) if summary_raw else ""
 
         venue = p.get("venue", "N/A")
         pub_date = p.get("published_date", "N/A") or "N/A"
@@ -442,7 +470,6 @@ else:
         relevance_html = ""
         if relevance_score >= 0:
             bar_width = relevance_score
-            # 根据分数决定颜色
             if relevance_score >= 70:
                 bar_color = "linear-gradient(90deg, #3b82f6, #10b981)"
             elif relevance_score >= 40:
@@ -459,6 +486,11 @@ else:
             </div>
             """
 
+        # 摘要展示：本地降级时补充说明
+        fallback_note = ""
+        if is_local_fallback:
+            fallback_note = '<div style="font-size:0.78rem;color:#888;margin-bottom:4px;">📝 本地信号提取（无 LLM，建议查阅原文摘要）</div>'
+
         st.markdown(
             f"""
             <div class="paper-card">
@@ -474,11 +506,17 @@ else:
               <div class="paper-meta"><strong>主题：</strong>{topics_html}</div>
               {relevance_html}
               <div class="paper-meta">{links_html}</div>
+              {fallback_note}
               <div class="summary-box">{summary_html}</div>
             </div>
             """,
             unsafe_allow_html=True,
         )
+
+        # 原文摘要展开（仅当有摘要且非结构化中文摘要时显示）
+        if abstract_raw and not is_structured:
+            with st.expander("📄 原文摘要（英文）", expanded=False):
+                st.caption(abstract_raw)
 
         paper_md = paper_to_markdown(idx, p)
         btn_col1, btn_col2, _ = st.columns([1, 1, 4])

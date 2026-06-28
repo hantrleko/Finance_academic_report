@@ -9,45 +9,82 @@ from urllib.request import Request, urlopen
 from .models import LLMConfig, Paper
 
 _METHOD_SIGNALS = {
-    "regression": "回归分析",
+    # 因果识别
     "difference-in-differences": "双重差分",
     "diff-in-diff": "双重差分",
+    "did estimat": "双重差分",
+    "regression discontinuity": "断点回归",
+    "rd design": "断点回归",
+    "fuzzy rdd": "模糊断点回归",
+    "instrumental variable": "工具变量",
+    "two-stage least": "两阶段最小二乘",
+    "2sls": "两阶段最小二乘",
+    "natural experiment": "自然实验",
+    "synthetic control": "合成控制法",
+    "event study": "事件研究",
+    "propensity score": "倾向得分匹配",
+    "matching estimat": "匹配估计量",
+    "causal inference": "因果推断",
+    "local average treatment": "局部平均处理效应",
+    # 面板与时序
     "panel data": "面板数据",
     "panel regression": "面板回归",
-    "event study": "事件研究",
-    "structural model": "结构模型",
-    "structural estimation": "结构估计",
-    "survey": "调查数据",
-    "experiment": "实验方法",
-    "machine learning": "机器学习",
-    "deep learning": "深度学习",
-    "natural experiment": "自然实验",
-    "randomized": "随机实验",
-    "randomised": "随机实验",
-    "instrumental variable": "工具变量",
-    "gmm": "广义矩估计",
-    "bayesian": "贝叶斯方法",
-    "monte carlo": "蒙特卡洛模拟",
+    "fixed effect": "固定效应",
+    "random effect": "随机效应",
     "time series": "时间序列",
-    "cross-section": "横截面分析",
-    "cointegration": "协整分析",
     "vector autoregression": "向量自回归",
     "var model": "向量自回归",
     "garch": "GARCH 波动率模型",
-    "propensity score": "倾向得分匹配",
-    "fixed effect": "固定效应",
-    "random effect": "随机效应",
-    "causal inference": "因果推断",
-    "synthetic control": "合成控制法",
-    "regression discontinuity": "断点回归",
+    "cointegration": "协整分析",
+    "error correction": "误差修正模型",
+    "local projection": "局部投影法",
+    # 横截面与结构
+    "cross-section": "横截面分析",
+    "regression": "回归分析",
+    "structural model": "结构模型",
+    "structural estimation": "结构估计",
+    "dsge": "DSGE 模型",
+    "equilibrium model": "均衡模型",
+    "gmm": "广义矩估计",
+    "maximum likelihood": "最大似然估计",
+    "bayesian": "贝叶斯方法",
+    "monte carlo": "蒙特卡洛模拟",
+    "simulation": "数值模拟",
+    "calibrat": "模型校准",
+    # 机器学习/AI
+    "machine learning": "机器学习",
+    "deep learning": "深度学习",
+    "neural network": "神经网络",
+    "random forest": "随机森林",
+    "xgboost": "XGBoost",
+    "gradient boost": "梯度提升",
+    "lasso": "LASSO 正则化",
+    "ridge regression": "岭回归",
+    "principal component": "主成分分析",
+    "large language model": "大语言模型",
+    "transformer": "Transformer 模型",
+    # 文本与情绪
+    "nlp": "自然语言处理",
+    "text analysis": "文本分析",
+    "sentiment analysis": "情绪分析",
+    "topic model": "主题模型",
+    "word embedding": "词向量",
+    # 实验与调查
+    "randomized": "随机实验",
+    "randomised": "随机实验",
+    "experiment": "实验方法",
+    "survey": "调查数据",
+    "field experiment": "田野实验",
+    # 资产定价
+    "fama-macbeth": "Fama-MacBeth 回归",
+    "portfolio sort": "组合排序",
+    "factor model": "因子模型",
+    "asset pricing test": "资产定价检验",
+    # 其他
     "meta-analysis": "元分析",
     "stochastic": "随机过程",
     "optimization": "优化方法",
     "equilibrium": "均衡模型",
-    "simulation": "数值模拟",
-    "neural network": "神经网络",
-    "nlp": "自然语言处理",
-    "text analysis": "文本分析",
 }
 
 _FINDING_SIGNALS = [
@@ -56,6 +93,9 @@ _FINDING_SIGNALS = [
     (r"we (?:propose|develop|introduce|present)\s+(.{20,150}?)[.]", "主要贡献"),
     (r"(?:this|the) paper (?:examines?|investigates?|studies|analyzes?|explores?)\s+(.{20,200}?)[.]", "研究问题"),
     (r"(?:this|our) (?:study|analysis|paper|research)\s+(.{20,200}?)[.]", "研究内容"),
+    (r"we (?:estimate|measure|quantify|identify)\s+(.{20,200}?)[.]", "量化结果"),
+    (r"(?:our|the) (?:model|framework|approach|method)\s+(.{20,150}?)[.]", "方法要点"),
+    (r"(?:consistent with|in line with|evidence (?:for|against))\s+(.{20,150}?)[.]", "理论检验"),
 ]
 
 _last_llm_call: dict[str, float] = {}
@@ -444,6 +484,137 @@ def score_papers_by_preference(
     scored = sum(1 for p in papers if p.get("relevance_score", -1) >= 0)
     print(f"[RELEVANCE] {scored}/{len(papers)} papers scored by preference")
     return papers
+
+
+def score_papers_by_preference_local(papers: list[dict], preference: str) -> list[dict]:
+    """TF-IDF cosine similarity scoring when LLM is unavailable.
+
+    Converts the user preference string and each paper's text into TF-IDF
+    vectors and computes cosine similarity as a 0-100 relevance score.
+    Falls back to keyword overlap count if scikit-learn is not installed.
+    """
+    import math
+
+    def _tokenize(text: str) -> list[str]:
+        tokens = re.findall(r"[a-zA-Z\u4e00-\u9fff]{2,}", text.lower())
+        stopwords = {
+            "the", "and", "for", "with", "from", "that", "this", "into", "using",
+            "paper", "study", "analysis", "evidence", "model", "data", "based",
+        }
+        return [t for t in tokens if t not in stopwords]
+
+    pref_tokens = _tokenize(preference)
+    if not pref_tokens:
+        for p in papers:
+            p["relevance_score"] = -1
+        return papers
+
+    pref_set = set(pref_tokens)
+
+    # Try scikit-learn TF-IDF first
+    try:
+        from sklearn.feature_extraction.text import TfidfVectorizer
+        from sklearn.metrics.pairwise import cosine_similarity
+
+        corpus = [preference]
+        for p in papers:
+            text = " ".join([
+                p.get("title", ""),
+                p.get("abstract", ""),
+                " ".join(p.get("topics") or []),
+                p.get("venue", ""),
+            ])
+            corpus.append(text)
+
+        vectorizer = TfidfVectorizer(min_df=1, ngram_range=(1, 2))
+        tfidf = vectorizer.fit_transform(corpus)
+        sims = cosine_similarity(tfidf[0:1], tfidf[1:]).flatten()
+        for i, p in enumerate(papers):
+            p["relevance_score"] = int(round(float(sims[i]) * 100))
+        return papers
+    except ImportError:
+        pass
+
+    # Fallback: Jaccard-style keyword overlap scored 0-100
+    for p in papers:
+        text_tokens = set(_tokenize(" ".join([
+            p.get("title", ""),
+            p.get("abstract", ""),
+            " ".join(p.get("topics") or []),
+        ])))
+        overlap = len(pref_set & text_tokens)
+        # Normalize: treat 5+ overlapping terms as full match
+        score = min(int(overlap / max(len(pref_set), 1) * 100), 100)
+        p["relevance_score"] = score
+
+    return papers
+
+
+def generate_template_overview(papers: list[Paper]) -> str:
+    """Generate a statistics-driven overview without any LLM calls.
+
+    Summarizes domain distribution, method signals, source mix, and top-tier
+    coverage based solely on local paper metadata.
+    """
+    if not papers:
+        return ""
+
+    from collections import Counter
+
+    total = len(papers)
+
+    # Domain counts using infer_domain_zh
+    domain_counter: Counter[str] = Counter()
+    for p in papers:
+        domain = infer_domain_zh(p.title, p.topics)
+        domain_counter[domain] += 1
+
+    top_domains = domain_counter.most_common(3)
+
+    # Method signals
+    method_counter: Counter[str] = Counter()
+    for p in papers:
+        abstract_lower = p.abstract.lower()
+        methods = [zh for key, zh in _METHOD_SIGNALS.items() if key in abstract_lower]
+        for m in dict.fromkeys(methods):
+            method_counter[m] += 1
+    top_methods = method_counter.most_common(2)
+
+    # Source mix
+    source_labels = {
+        "arxiv": "arXiv",
+        "openalex": "OpenAlex",
+        "semantic_scholar": "Semantic Scholar",
+        "nber": "NBER",
+        "ssrn": "SSRN",
+    }
+    source_counter: Counter[str] = Counter(p.source for p in papers)
+    top_sources = source_counter.most_common(3)
+
+    # Top-tier count
+    from .models import VENUE_WHITELIST
+    top_tier_count = sum(
+        1 for p in papers if any(wl in p.venue.lower() for wl in VENUE_WHITELIST)
+    )
+
+    parts = [f"本期共收录 {total} 篇论文。"]
+
+    if top_domains:
+        domain_text = "、".join(f"{d}（{n} 篇）" for d, n in top_domains)
+        parts.append(f"研究方向主要集中在{domain_text}。")
+
+    if top_methods:
+        method_text = "、".join(m for m, _ in top_methods)
+        parts.append(f"方法上以{method_text}为主。")
+
+    if top_sources:
+        src_text = "、".join(f"{source_labels.get(s, s)}（{n} 篇）" for s, n in top_sources)
+        parts.append(f"来源分布：{src_text}。")
+
+    if top_tier_count:
+        parts.append(f"其中 {top_tier_count} 篇命中顶级期刊白名单。")
+
+    return "".join(parts)
 
 
 def generate_digest_insights(papers: list[Paper], cfg: LLMConfig) -> dict[str, str]:
