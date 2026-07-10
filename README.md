@@ -1,7 +1,7 @@
 # Finance & Economics Daily Digest
 
-[![Version](https://img.shields.io/badge/version-v2.0-blue)](https://github.com/hantrleko/Finance_academic_report/releases)
-[![Tests](https://img.shields.io/badge/tests-59%20passed-brightgreen)](https://github.com/hantrleko/Finance_academic_report/actions)
+[![Version](https://img.shields.io/badge/version-v2.1-blue)](https://github.com/hantrleko/Finance_academic_report/releases)
+[![Tests](https://img.shields.io/badge/tests-60%20passed-brightgreen)](https://github.com/hantrleko/Finance_academic_report/actions)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 每日自动抓取公开金融/经济学文献，生成结构化日报，并通过 **Streamlit** 在线网站进行交互式展示。
@@ -19,7 +19,7 @@
 - **复现执行计划：** 将假设卡拆解为数据包、四周里程碑、复现清单、预期产物和风险控制，支持 Markdown 项目计划导出
 - **智能导读：** 今日速递内置本地规则生成的关键词信号、阅读路径、引用/来源/顶刊概览
 - **质量保障：** 空结果保留 `output/latest`，异常写入 `output/alerts/`，digest JSON 结构校验，损坏文件友好提示
-- **高可靠性：** LLM 调用指数退避重试、S2 限流自动重试、JSON 解析三级容错
+- **高可靠性：** 多源并发抓取（单源故障自动降级不中断）、LLM 调用指数退避重试、S2 限流自动重试、JSON 解析三级容错
 - **自动化：** GitHub Actions 每天定时运行并提交 `output/` 结果（含 pip 缓存加速）
 - **在线展示：** Streamlit 多页面网站，支持可点击导航、搜索、筛选、统计可视化、研究雷达、DuckDB 跨期知识库搜索和收藏夹导出
 
@@ -168,6 +168,7 @@ Finance_academic_report/
 
 | 版本 | 日期 | 主要变更 |
 |------|------|----------|
+| v2.1 | 2026-07-10 | 性能与可靠性优化：五大数据源改为并发抓取（抓取阶段耗时从「各源相加」降至「最慢单源」），单源故障自动降级不中断整体流程；测试扩充至 60 个。（另建议手动清理 CI 中已废弃的邮件推送步骤，详见 PR 说明） |
 | v2.0 | 2026-06-08 | 研究雷达新增复现执行计划：将假设卡转化为数据包、四周里程碑、复现清单、预期产物、风险控制和 Markdown 项目计划；测试扩充至 59 个 |
 | v1.9 | 2026-06-08 | 研究雷达新增假设实验室：将缺口地图转化为可检验假设卡，生成变量、机制、识别方案、稳健性、证伪测试和 Markdown 提案；测试扩充至 55 个 |
 | v1.8 | 2026-06-08 | 研究雷达新增缺口地图：构建领域×方法矩阵，生成潜在选题、研究问题、数据线索和 Markdown 研究计划；测试扩充至 51 个 |

@@ -2,8 +2,8 @@
 import streamlit as st
 
 # ---- 版本信息 ----
-APP_VERSION = "v2.0"
-APP_VERSION_DATE = "2026-06-08"
+APP_VERSION = "v2.1"
+APP_VERSION_DATE = "2026-07-10"
 
 st.set_page_config(
     page_title="金融经济学每日文献速递",
@@ -127,6 +127,12 @@ st.markdown("---")
 with st.expander(f"📋 版本更新日志（当前：{APP_VERSION}）", expanded=False):
     st.markdown(
         f"""
+        ### v2.1 — 2026-07-10
+        **性能 / 可靠性**
+        - 五大数据源（OpenAlex / arXiv / Semantic Scholar / NBER / SSRN）改为**并发抓取**，抓取阶段耗时从「各源顺序相加」降至「最慢单源」
+        - 单个数据源抓取失败时自动降级为空并继续，不再中断整个日报生成流程
+        - 测试扩充至 60 个（新增单源故障降级回归测试）
+
         ### v2.0 — 2026-06-08
         **新增 / 优化**
         - 研究雷达新增「复现执行计划」：把假设卡转化为数据包、里程碑、复现清单、预期产物和风险控制

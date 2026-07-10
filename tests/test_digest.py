@@ -54,6 +54,44 @@ def test_build_digest_writes_files(monkeypatch, tmp_path: Path):
     assert result["latest_updated"] is True
 
 
+def test_build_digest_survives_single_source_failure(monkeypatch, tmp_path: Path):
+    """并行抓取回归测试：任一数据源抛异常时应被降级为空列表，
+    不影响其它源，digest 仍能正常生成。"""
+    from src import pipeline as p
+
+    def mk(source: str, title: str) -> Paper:
+        return Paper(
+            title=title,
+            authors=["A"],
+            venue="NBER Working Papers",
+            published_date="2024-01-01",
+            doi_url="",
+            openalex_url="https://openalex.org/" + title,
+            cited_by_count=0,
+            abstract="finance economics abstract",
+            summary_zh="",
+            topics=["Finance"],
+            source=source,
+        )
+
+    def boom(*_args, **_kwargs):
+        raise RuntimeError("source down")
+
+    monkeypatch.setattr(p, "fetch_openalex_papers", lambda *_a, **_k: [mk("openalex", "P1")])
+    monkeypatch.setattr(p, "fetch_arxiv_finance_econ_papers", boom)  # 故意失败
+    monkeypatch.setattr(p, "fetch_semantic_scholar_papers", lambda *_a, **_k: [mk("semantic_scholar", "P2")])
+    monkeypatch.setattr(p, "fetch_nber_papers", lambda *_a, **_k: [mk("nber", "P3")])
+    monkeypatch.setattr(p, "fetch_ssrn_papers", lambda *_a, **_k: [mk("ssrn", "P4")])
+
+    cfg = DigestConfig(output_dir=tmp_path / "out_fail", min_quality_score=0)
+    result = build_digest(cfg, translate_cfg=LLMConfig(), analysis_cfg=LLMConfig(), run_date=dt.date(2024, 1, 3))
+
+    # arxiv 源失败但不应抛出异常，其余 4 源正常
+    assert result["count"] == 4
+    assert "arxiv" not in result["source_used"]
+    assert "openalex" in result["source_used"]
+
+
 def test_build_digest_overview_in_json(monkeypatch, tmp_path: Path):
     """验证 overview 字段被正确写入 digest.json（修复漏写 Bug 的回归测试）。"""
     from src import pipeline as p
