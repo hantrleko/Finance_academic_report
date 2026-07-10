@@ -4,6 +4,7 @@ from __future__ import annotations
 import dataclasses
 import datetime as dt
 import json
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any
 
@@ -143,19 +144,49 @@ def build_digest(
     run_date = run_date or dt.date.today()
     date_from = run_date - dt.timedelta(days=config.lookback_days)
 
-    print(f"[FETCH] Fetching from all sources (lookback={config.lookback_days}d)...")
-    openalex_papers = fetch_openalex_papers(date_from, run_date, mailto=config.openalex_mailto, per_page=15)
-    arxiv_papers = fetch_arxiv_finance_econ_papers(date_from, run_date, max_results=15)
-    s2_papers = fetch_semantic_scholar_papers(
-        date_from,
-        run_date,
-        mailto=config.openalex_mailto,
-        max_results=15,
-        api_key=config.s2_api_key,
-        min_interval_seconds=config.s2_min_interval_seconds,
-    )
-    nber_papers = fetch_nber_papers(date_from, max_results=5)
-    ssrn_papers = fetch_ssrn_papers(date_from, run_date, mailto=config.openalex_mailto, per_page=15)
+    print(f"[FETCH] Fetching from all sources concurrently (lookback={config.lookback_days}d)...")
+
+    # 各数据源之间没有依赖关系，全部为网络 I/O，使用线程池并发抓取，
+    # 将总耗时从「各源顺序相加」压缩到「最慢单源」。任一源抛异常时降级为空列表，
+    # 不影响其它源，保证抓取流程健壮。
+    def _safe_fetch(name: str, fn) -> list:
+        try:
+            return fn()
+        except Exception as exc:  # noqa: BLE001 - 单源失败不应中断整个流程
+            print(f"[FETCH] Source '{name}' failed: {type(exc).__name__}: {exc}")
+            return []
+
+    fetch_tasks = {
+        "openalex": lambda: fetch_openalex_papers(
+            date_from, run_date, mailto=config.openalex_mailto, per_page=15
+        ),
+        "arxiv": lambda: fetch_arxiv_finance_econ_papers(date_from, run_date, max_results=15),
+        "semantic_scholar": lambda: fetch_semantic_scholar_papers(
+            date_from,
+            run_date,
+            mailto=config.openalex_mailto,
+            max_results=15,
+            api_key=config.s2_api_key,
+            min_interval_seconds=config.s2_min_interval_seconds,
+        ),
+        "nber": lambda: fetch_nber_papers(date_from, max_results=5),
+        "ssrn": lambda: fetch_ssrn_papers(
+            date_from, run_date, mailto=config.openalex_mailto, per_page=15
+        ),
+    }
+
+    with ThreadPoolExecutor(max_workers=len(fetch_tasks)) as executor:
+        futures = {
+            name: executor.submit(_safe_fetch, name, fn)
+            for name, fn in fetch_tasks.items()
+        }
+        results = {name: future.result() for name, future in futures.items()}
+
+    openalex_papers = results["openalex"]
+    arxiv_papers = results["arxiv"]
+    s2_papers = results["semantic_scholar"]
+    nber_papers = results["nber"]
+    ssrn_papers = results["ssrn"]
 
     combined = openalex_papers + ssrn_papers + arxiv_papers + s2_papers + nber_papers
     sources = []
