@@ -1,244 +1,56 @@
 {
-  "date": "2026-10-11",
-  "count": 12,
-  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "date": "2026-10-12",
+  "count": 2,
+  "source_used": "openalex(15)+semantic_scholar(15)",
   "latest_updated": true,
-  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（10 篇）、金融科技（1 篇）、国际贸易（1 篇）。方法上以均衡模型、模型校准为主。来源分布：arXiv（7 篇）、OpenAlex（3 篇）、Semantic Scholar（2 篇）。",
+  "overview": "本期共收录 2 篇论文。研究方向主要集中在金融经济学（1 篇）、绿色金融与可持续发展（1 篇）。方法上以优化方法为主。来源分布：OpenAlex（2 篇）。",
   "insights": {},
   "papers": [
     {
-      "title": "Localising human resource management paradoxes: Developmental maturity and the maturation tree of inclusive shared value",
+      "title": "An adaptive federated deep learning approach for efficient DDoS detection in IoT edge networks",
       "authors": [
-        "Viateur Nkurunziza"
+        "Prachi Kumar",
+        "Pallavi Pallavi",
+        "Praneet Saurabh"
       ],
-      "venue": "Human Resources Management and Services",
-      "published_date": "2026-10-10",
-      "doi_url": "https://doi.org/10.18282/hrms6323",
-      "openalex_url": "https://openalex.org/W7221094172",
+      "venue": "Scientific Reports",
+      "published_date": "2026-10-11",
+      "doi_url": "https://doi.org/10.1038/s41598-026-70741-w",
+      "openalex_url": "https://openalex.org/W7221306004",
       "cited_by_count": 0,
-      "abstract": "Human resource management (HRM) systems are expected to deliver flexibility and consistency, efficiency and fairness, and short-term productivity and long-term capability simultaneously. Paradox theory explains why such contradictory yet interdependent demands persist, but emphasises the pervasiveness of tension rather than its distribution, offering little guidance on where tension becomes acute enough to warrant scarce attention. Contingency theory and strategic fit address location, but have modelled fit as a condition assessed at a single moment; recent dynamic-alignment and HR-ecosystem work relaxes that assumption without specifying where tension concentrates. This conceptual paper generalises to HRM the Maturation Tree of Inclusive Shared Value (MTISV), which joins contingency and paradox reasoning to locate developmental discontinuities in producer-centred systems. Transferred to the employment relationship, it yields a paradox localisation: HRM paradoxes become salient at interfaces where interdependent practices have developed to divergent levels of maturity. Developmental maturity (the state of a practice, not of the people it governs) is proposed as a dynamic contingency governing whether a contradiction remains latent or becomes salient. Six propositions and an integrated model specify when and where paradoxes localise; the argument is operationalised as the HR Maturity Diagnostic Framework (HRMDF), a six-stage procedure mapping interdependence, comparing maturity and sequencing intervention; and five recurring paradoxes are localised to named interfaces. The Rwandan coffee illustration draws on MTISV's published foundations and does not test the framework. The propositions remain untested and the maturity levels and synchronisation thresholds provisional, requiring construct development and calibration; boundary conditions and a validation agenda are set out.\r\nKeywords: paradox theory; paradox localisation; developmental maturity; contingency theory; strategic fit; strategic human resource management.",
-      "summary_zh": "【金融经济学】人力资源管理系统（HRM）被期望同时实现灵活性与一致性、效率与公平性，以及短期生产力和长期竞争力。悖论理论解释了为何这些看似矛盾却又相互依存的需求会持续存在，但它更强调矛盾的普遍性而非其具体分布情况，因此在哪些情况下矛盾会变得足够严重、需要特别关注方面提供的指导有限。权变理论与战略匹配理论虽然探讨了这些矛盾的具体表现形式，但将“匹配”视为在某一特定时刻进行评估的条件；而最近的动态对齐理论与人力资源生态系统理论则放宽了这一假设，但没有明确指出矛盾集中的具体领域。本文将“包容性共享价值成熟度模型”（MTISV）的概念应用于人力资源管理领域，该模型结合了权变理论与悖论理论的分析方法，以识别以生产者为中心的系统中发展过程中的不连续性。将这一模型应用于雇佣关系中，可以发现：当相互依存的实践发展到不同的成熟阶段时，人力资源管理中的悖论现象会变得尤为突出。本文提出“发展成熟度”（即某一实践本身的成熟状态，而非其所管理的人员的成熟度）是一个动态的权变因素，它决定了矛盾是保持潜伏状态还是显现出来。文章提出了六个命题和一个综合模型，用以明确矛盾何时何地会显现；这些观点通过“人力资源成熟度诊断框架”（...。研究方法：模型校准。",
+      "abstract": "Abstract\n                  \n                    The rapid growth of the Internet of Things (IoT) has expanded the attack surface of modern networks, motivating the need for accurate detection of DDoS and botnet activity in resource-constrained settings. Centralised intrusion detection systems (IDS) face privacy, scalability, and heterogeneity challenges that limit their suitability for IoT. This study suggests a Federated Learning-based Intrusion Detection System (FL-IDS) for IoT edge networks in order to get around these restrictions. Each client trains a hybrid CNN-LSTM model locally, and a central server aggregates client updates with Federated Averaging (FedAvg). An adaptive global decision-threshold optimisation is used post-training to the pooled predictions of the global model on the held-out test partition in order to address class imbalance. The system is evaluated on the N-BaIoT benchmark together with preliminary validation on a recent public healthcare IoT dataset, with the nine N-BaIoT devices treated as independent federated clients during the primary federated evaluation. The global model achieves an accuracy of 0.9238, precision of 0.9265, recall of 0.9963, F1-score of 0.9601, ROC-AUC of 0.8133, and PR-AUC of 0.969 at the optimal operating point\n                    \n                      $$\\tau = 0.15$$\n                    \n                    . SHAP-based post-hoc analysis identifies the traffic features that most influence model decisions.",
+      "summary_zh": "【金融经济学】摘要\n\n物联网（IoT）的快速发展扩大了现代网络的安全攻击面，这迫切需要在资源受限的环境中准确检测分布式拒绝服务（DDoS）和僵尸网络活动。集中式入侵检测系统（IDS）在隐私保护、可扩展性和异构性方面存在挑战，这些因素限制了其在物联网中的应用。本研究提出了一种基于联邦学习（Federated Learning）的入侵检测系统（FL-IDS），以克服这些限制。每个客户端在本地训练一个混合CNN-LSTM模型，中央服务器通过联邦平均（FedAvg）算法汇总各客户端的模型更新结果。训练完成后，对全局模型在保留的测试数据集上的预测结果进行自适应全局决策阈值优化，以解决类别不平衡问题。该系统在N-BaIoT基准测试中进行了评估，并在最近的一个公共医疗物联网数据集上进行了初步验证，在主要的联邦评估过程中，将九个N-BaIoT设备视为独立的联邦客户端。在最佳运行参数下，该全局模型实现了0.9238的准确率、0.9265的精确率、0.9963的召回率、0.9601的F1分数、0.8133的ROC-AUC和0.969的PR-AUC。\n\n基于SHAP的后验分析确定了对模型决策影响最大的流量特征。。",
       "topics": [
-        "Contingency",
-        "Argument (complex analysis)",
-        "Interdependence",
-        "Maturity (psychological)",
-        "Flexibility (engineering)"
+        "Computer science",
+        "Denial-of-service attack",
+        "Benchmark (surveying)",
+        "Botnet",
+        "Enhanced Data Rates for GSM Evolution"
       ],
       "source": "openalex"
     },
     {
-      "title": "Green absorptive capacity and environmental sustainability: unveiling the interplay and moderating roles of blockchain and supply chain finance",
+      "title": "Multiobjective optimization of foamed concrete for sustainable construction using statistical and artificial intelligence approaches",
       "authors": [
-        "Mahmoud Ramadan Barakat"
+        "Subahar Mohan",
+        "N. Jegandurai",
+        "R. Amuthalakshmi"
       ],
-      "venue": "Supply Chain Management An International Journal",
-      "published_date": "2026-10-10",
-      "doi_url": "https://doi.org/10.1108/scm-01-2026-0035",
-      "openalex_url": "https://openalex.org/W7221111305",
+      "venue": "Discover Civil Engineering",
+      "published_date": "2026-10-11",
+      "doi_url": "https://doi.org/10.1007/s44290-026-00632-6",
+      "openalex_url": "https://openalex.org/W7221316045",
       "cited_by_count": 0,
-      "abstract": "Purpose\n                    Drawing on dynamic capability theory and the natural resource-based view, this study aims to examine how green absorptive capacity (GAC) enhances environmental sustainability performance (ESP) through financial performance (FP) and operational performance (OP) and how blockchain technology (BCT) and supply chain finance (SCF) strengthen these indirect relationships.\n                  \n                  \n                    Design/methodology/approach\n                    Data were collected from 522 organisations in Egypt and 508 in Jordan. Covariance-based structural equation modelling was used to test the moderated mediation model.\n                  \n                  \n                    Findings\n                    The results show that in both Egypt and Jordan, GAC improves ESP indirectly through FP and OP. In Jordan, blockchain technology strengthens the indirect relationship through both financial and operational performance, whereas in Egypt these blockchain effects are not supported. Supply chain finance strengthens the indirect relationship through operational performance in both countries, but not through financial performance. The nested model comparison indicates that whilst the overall model applies to both contexts, BCT and SCF exert varying degrees of influence in Egypt and Jordan.\n                  \n                  \n                    Research limitations/implications\n                    The results can support policymakers and organisational stakeholders by showing how digital technologies and green financing mechanisms can be used to strengthen the impact of green knowledge on performance and accelerate progress towards environmental sustainability.\n                  \n                  \n                    Originality/value\n                    This study develops and tests an integrated moderated mediation framework explaining how green absorptive capacity enhances environmental sustainability performance through financial and operational performance and how blockchain technology and supply chain finance strengthen these indirect relationships. By comparing Egypt and Jordan, the study extends dynamic capability theory and the natural resource-based view through context-specific evidence from two Arab emerging economies and reveals country-specific differences in the effectiveness of digital and financial enablers.",
-      "summary_zh": "【金融科技】**研究目的**  \n基于动态能力理论及自然资源视角，本研究旨在探讨绿色吸收能力（Green Absorptive Capacity, GAC）如何通过财务绩效（Financial Performance, FP）和运营绩效（Operational Performance, OP）提升环境可持续性绩效（Environmental Sustainability Performance, ESP），以及区块链技术（Blockchain Technology, BCT）和供应链金融（Supply Chain Finance, SCF）如何强化这些间接作用机制。  \n\n**研究设计/方法**  \n数据来源于埃及的522个组织和约旦的508个组织。研究采用基于协方差的结构性方程模型（Covariance-based Structural Equation Modeling）来检验所提出的中介模型。  \n\n**研究结果**  \n研究结果表明，在埃及和约旦，绿色吸收能力均能通过财务绩效和运营绩效间接促进环境可持续性绩效的提升。在约旦，区块链技术通过财务绩效和运营绩效双重途径强化了这种间接效应；...。",
+      "abstract": "Abstract\n                  Foamed concrete is lightweight and insulating, but its mix design is a headache. Strength, durability, and carbon footprint all fight each other. This review looks at how researchers have tried to optimize these trade-offs using methods like RSM, Taguchi, ANN, and genetic algorithms. RSM is easy to interpret but struggles with nonlinear foam behavior. AI models handle nonlinearity better but need lots of data and tell you nothing about why they work. The best path forward seems to be hybrid approaches. On the environmental side, cement drives most of the carbon. Replacing it with SCMs can cut GWP by 20–50%. We put together a conceptual Pareto front showing the sweet spot: 900–1200 kg/m³ density, 8–15 MPa strength, and 350–500 kg CO₂-eq/m³. Big gaps remain. No standard testing protocols. Pore-scale physics is missing from models. Almost nobody has coupled LCA with real optimization. Field validation is rare. We end with a research roadmap: hybrid frameworks, open databases, and proper microstructural inputs.",
+      "summary_zh": "【绿色金融与可持续发展】摘要  \n泡沫混凝土具有重量轻和隔热性能好的优点，但其配合比设计却颇具挑战性。强度、耐久性和碳足迹这三个因素之间存在相互制约的关系。本文综述了研究人员如何运用随机搜索法（RSM）、田口方法（Taguchi）、人工神经网络（ANN）和遗传算法等方法来优化这些矛盾因素。随机搜索法易于解释，但在处理泡沫材料的非线性行为时存在局限性；人工智能模型在处理非线性问题方面表现较好，但需要大量数据，并且无法解释其优化原理。综合考虑多种方法的混合使用似乎是未来的最佳途径。从环境角度来看，水泥是碳排放的主要来源，用其他胶凝材料替代水泥可将全球变暖潜能值（GWP）降低20%–50%。我们构建了一个概念性的帕累托前沿图，展示了理想的性能参数范围：密度为900–1200千克/立方米，抗压强度为8–15兆帕，二氧化碳当量为350–500千克/立方米。然而，目前在这些参数上仍存在较大差距，且缺乏统一的测试标准。现有模型尚未充分考虑孔隙尺度物理特性，同时很少有人将生命周期评估（LCA）与实际优化过程相结合进行研究，现场验证也较为罕见。最后，我们提出了未来的研究方向，包括开发混合优化框架、建立开放型数据库以及提供...。研究方法：优化方法。",
       "topics": [
-        "Absorptive capacity",
-        "Supply chain",
-        "Blockchain",
-        "Sustainability",
-        "Business"
+        "Carbon footprint",
+        "Multi-objective optimization",
+        "Engineering",
+        "Field (mathematics)",
+        "Genetic algorithm"
       ],
       "source": "openalex"
-    },
-    {
-      "title": "Weighted selection from elliptical distributions: a stochastic representation and an application to portfolio separation",
-      "authors": [
-        "Nils Chr Framstad"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-08",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.11822v1",
-      "cited_by_count": 0,
-      "abstract": "We represent (weighted-)selection-elliptical distributions as an affine combination of the $q$ selection variables plus an elliptical term whose direction alone is independent. This form suffices for $q+2$ fund separation via first-order stochastic dominance, inter alia relaxing Simaan's (1993) three-fund assumptions.",
-      "summary_zh": "【金融经济学】我们将（加权）选择-椭圆分布表示为$q$个选择变量与一个椭圆项的仿射组合，其中椭圆项的方向是独立的。这种形式足以通过一阶随机优势实现$q+2$个基金的分离，从而放宽了Simaan（1993年）提出的关于三个基金的假设。。研究方法：随机过程。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Diffusive Market Impact: A Consistent Microfoundation",
-      "authors": [
-        "Julius F. Bonart"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-08",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.11691v1",
-      "cited_by_count": 0,
-      "abstract": "Structural price diffusivity explains many empirical regularities of market impact including the ``square-root law'' and its crossover to a linear regime for low trading rates \\citep{bonart2026diffusive}. One of its central predictions is that an information-neutral trading strategy generates a diffusive impact state. We microfound this result in an economy with a trader and many arbitrageurs who progressively eliminate predictable returns. Each arbitrageur observes realized returns and a private signal of one component of the fundamental return. As aggregate private information becomes complete and under suitable convergence to a stationary limit, the trader's impact law is of the form $j=U\\cdot w$, where $w$ is the innovation in the trading schedule and $U$ is causal all-pass. Impact returns are therefore white, even though no individual arbitrageur can reconstruct the underlying trading strategy. We then investigate the economic meaning of the impact phase. We argue that the $U$ which has minimum distance from the filter $L$ generating the trade flow is an especially interesting candidate: Trade flow is then minimally distorted under impact and arbitrage, and it always guarantees positive impact costs. Under a trader flow generated by a biexponential $L$ (the simplest form allowed in our model) an interesting result emerges: Impact decline is confined to a narrow band of $50\\%$--$60\\%$, lower than some empirical estimates and quite consistent with others. More complicated flow models can lead to different decays. Finally, we argue that in real markets, the impact phase is probably somewhat ``distorted'' in its long-term tails which allows for a full relaxation of the impact propagator. The effect is weak, long-term mean-reversion of the impact state.",
-      "summary_zh": "【金融经济学】结构价格扩散性能够解释市场影响的许多实证规律，包括“平方根法则”以及该法则在交易量较低时向线性阶段的过渡现象（参见参考文献bonart2026diffusive）。其核心预测之一是：一种信息中性的交易策略会形成一种扩散性的市场影响效应。我们在一个由交易者和众多套利者组成的经济体系中验证了这一结果；这些套利者会逐步消除可预测的收益。每位套利者都能观察到实际实现的收益以及关于基础收益某个组成部分的私人信息。随着私人信息的逐渐完备化，并在适当的收敛条件下达到稳态，交易者的影响效应可以表示为$j=U\\cdot w$，其中$w$代表交易计划中的创新因素，$U$则是一个具有因果传递性的函数。因此，尽管没有任何单个套利者能够还原出交易策略的完整内容，但市场影响效应仍然是“白噪声”（即随机且无规律的）。接下来，我们探讨了这种影响效应的经济学含义。我们认为，与生成交易流的过滤器$L$距离最小的参数$U$是一个特别值得关注的候选变量：在这种情况下，交易流在受到影响和套利行为后只会发生最小的扭曲，并且始终伴随着正的影响成本。当交易流由双指数形式的过滤器$L$生成时（这是我们模型中允许的最简单情况），会...。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Egyptian Exporters Under the Lens: Uncovering Competitiveness Challenges",
-      "authors": [
-        "Nora Aboushady",
-        "F. Karam",
-        "Chahir Zaki"
-      ],
-      "venue": "Review of Middle East Economics and Finance",
-      "published_date": "2026-10-09",
-      "doi_url": "https://doi.org/10.1515/rmeef-2025-0032",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:292736056",
-      "cited_by_count": 1,
-      "abstract": "Abstract This paper examines the determinants of export participation among Egyptian manufacturing firms using the 2020/21 Egyptian Industrial Firm Behavior Survey (EIFBS). Against the backdrop of Egypt’s persistent export underperformance and limited upgrading in manufacturing exports, the analysis investigates how firm-level characteristics, managerial and technological practices, international linkages, trade-policy barriers, and broader business-environment constraints shape firms’ likelihood of exporting. Focusing on the extensive export margin, the paper shows that export participation is associated with higher productivity, larger firm size, location in industrial zones, female management, innovation, technological adoption, and stronger management practices. International linkages through foreign direct investment are further associated with higher export propensity. By contrast, business-environment constraints are negatively associated with firms’ participation in international markets. The findings highlight that improving Egypt’s export performance requires not only trade-policy reform but also firm-level capability building and a more enabling domestic business environment.",
-      "summary_zh": "【国际贸易】摘要：本文利用2020/21年度埃及工业企业行为调查（EIFBS）的数据，研究了影响埃及制造业企业出口参与度的决定因素。在埃及制造业出口表现长期不佳且升级能力有限的背景下，该研究探讨了企业特征、管理实践、技术应用、国际贸易政策壁垒以及更广泛的商业环境约束如何影响企业的出口意愿。研究发现，较高的生产率、较大的企业规模、位于工业区、女性管理者、创新活动、技术采纳以及较强的管理实践与企业的出口参与度正相关；通过外国直接投资建立的国际联系进一步增强了企业的出口意愿。相反，商业环境约束则对企业参与国际市场具有负面影响。研究结果表明，要提升埃及的出口表现，不仅需要贸易政策改革，还需要加强企业自身的能力建设，并营造更加有利于企业发展的国内商业环境。。研究方法：调查数据。",
-      "topics": [
-        "Economics",
-        "Business"
-      ],
-      "source": "semantic_scholar"
-    },
-    {
-      "title": "Communicating Price Increases: A Systematic Review of Price Fairness and Consumer Responses",
-      "authors": [
-        "A. Joyal"
-      ],
-      "venue": "Journal of Economics, Finance and Accounting Studies",
-      "published_date": "2026-10-07",
-      "doi_url": "https://doi.org/10.32996/jefas.2026.8.10.1",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:292790735",
-      "cited_by_count": 0,
-      "abstract": "When firms raise prices, customers assess both the financial loss and how the firm treats them. This systematic review synthesizes 48 journal articles assessed from full text, identified across four databases without a publication-year restriction. Single-reviewer screening and extraction yielded 26 core direct, 18 supporting, and four conceptual records across seven themes. Tests of cost and other causal explanations form the largest direct-evidence cluster. Their effects depend on perceived control, credibility, fit to the affected offering, and the magnitude of the increase. Disclosure, reference-price framing, and package downsizing change what customers see. Some improve immediate judgments in the tested settings; others raise concerns about comprehension or deception. Reputation and vulnerability chiefly inform fairness appraisals in this corpus; budgets and alternatives may constrain action, but their interactions with specific messages on observed behavior are largely untested. The proposed framework organizes relationships examined across separate studies. Experimental evidence chiefly supports effects on immediate fairness judgments. Evidence connecting those judgments to later behavior is less direct, and the proposed feedback path is conceptual. Fewer, more varied studies observe choice, demand, or attrition; none tests the full sequence from communication through judgment to behavior. Conceptual sources provide ideas rather than independent effect estimates.",
-      "summary_zh": "【金融经济学】当企业提高价格时，顾客会同时考虑自身的经济损失以及企业对待他们的态度。本系统综述整合了来自四个数据库的48篇期刊文章，这些文章未经出版年份限制即可获取。通过单一审稿人的筛选和数据提取，共获得了26条核心直接证据、18条支持性证据以及4条概念性证据，涵盖了七个研究主题。关于成本及其他因果关系的分析构成了最大的直接证据群。这些证据的影响因素包括顾客对自身控制能力的感知、企业的可信度、价格变动与产品本身的契合度以及价格涨幅的大小。信息披露方式、参照价格的处理方式以及产品包装的调整会改变顾客的认知。某些调整能够改善顾客在测试情境下的即时判断；而另一些调整则可能引发他们对信息理解或企业欺骗行为的担忧。在本研究样本中，企业的声誉和脆弱性是影响顾客公平性评价的主要因素；预算限制和替代选择可能会制约顾客的行为，但它们与具体信息之间的交互作用尚未得到充分验证。所提出的框架有助于梳理各研究中考察的各种关系。实验证据主要支持价格变动对顾客即时公平性判断的影响；而将这些判断与后续行为联系起来的证据则较为间接，所提出的反馈机制仍属于理论层面的探讨。观察顾客选择、需求变化或流失情况的研究较少且类型多样；没有...。研究方法：实验方法。",
-      "topics": [
-        "Business",
-        "Economics"
-      ],
-      "source": "semantic_scholar"
-    },
-    {
-      "title": "La presunción de inocencia y la autoincriminación ante la negativa del conductor a someterse a la prueba de alcohotest en Quito",
-      "authors": [
-        "Susana Natali Villa-Muñoz",
-        "José Sebastián Cornejo-Aguiar",
-        "Raúl Comas Rodríguez"
-      ],
-      "venue": "Verdad y Derecho. Revista Arbitrada de Ciencias Jurídicas y Sociales.",
-      "published_date": "2026-10-10",
-      "doi_url": "https://doi.org/10.62574/bmwhfc93",
-      "openalex_url": "https://openalex.org/W7221114982",
-      "cited_by_count": 0,
-      "abstract": "Se analizó si la presunción del máximo grado de embriaguez ante la negativa al alcohotest (artículo 464, numeral 5, del Código Orgánico Integral Penal) vulnera la presunción de inocencia y la prohibición de autoincriminación. Se analizaron la normativa y la jurisprudencia comparada y se encuestó a 33 operadores de la justicia de tránsito de Quito. El 75,8 % apoyó la presunción, pero el 48,5 % consideró que vulnera la presunción de inocencia, con diferencias marcadas entre abogados, jueces y agentes. La jurisprudencia comparada sostiene que la prueba de aliento no es una declaración y no vulnera por sí misma la prohibición de autoincriminación. En cambio, presumir el nivel más alto de alcohol sin prueba y sin un cauce para desvirtuarlo tensiona la presunción de inocencia. Se recomienda sustituir la presunción por una contravención autónoma de negativa injustificada, con sanción proporcionada y medios alternativos de comprobación.",
-      "summary_zh": "【金融经济学】本文探讨了在拒绝接受酒精检测时（依据《刑法典》第464条第5款）直接推定驾驶员处于最高醉酒程度是否违背无罪推定原则及禁止自证其罪的法律规定。研究分析了相关法律法规及比较法判例，并对基多地区的33名交通司法工作人员进行了调查。结果显示，75.8%的受访者支持这一推定制度，但48.5%的人认为该做法侵犯了无罪推定原则，其中律师、法官和执法人员之间的意见存在显著分歧。比较法判例指出，呼气酒精检测结果并非个人陈述，本身并不违反禁止自证其罪的原则；然而，在缺乏证据且缺乏纠正该推定的机制的情况下直接认定驾驶员处于最高醉酒程度，确实会对无罪推定造成冲击。因此，建议将现行推定制度改为“无正当理由拒绝接受检测”的独立违法行为，并设定相应的处罚措施及替代性的证据收集方式。。",
-      "topics": [
-        "Humanities",
-        "Philosophy",
-        "Physics",
-        "Mathematics",
-        "Economics"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Delegate Pricing to Algorithms: When Slow and Steady Wins the Race",
-      "authors": [
-        "Galit Ashkenazi-Golan",
-        "Edward Plumb",
-        "Clemens Possnig",
-        "Yufei Zhang"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-08",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.11675v1",
-      "cited_by_count": 0,
-      "abstract": "We study the strategic design of learning algorithms in a canonical continuous-time pricing game. We introduce a meta-game in which firms select learning rates for a gradient dynamic, evaluating payoffs as the discounted sum of profits accrued along the entire learning path. We uncover a fundamental dichotomy driven by stage-game incentives: if the stage game exhibits strategic substitutability, firms unambiguously prefer the fastest possible algorithms to rapidly exploit a gradually adjusting opponent. Under strategic complementarity, however, an excessively fast algorithm accelerates the rival's competitive response, destroying transitional profit margins. Even though the competitive price is a strictly dominant action in the underlying stage game, we prove that firms optimally design sluggish algorithms, extracting surplus during a prolonged convergence to the competitive equilibrium.",
-      "summary_zh": "【金融经济学】我们研究了一种典型连续时间定价博弈中学习算法的战略设计。我们构建了一个元博弈框架，在该框架下，企业为梯度动态模型选择学习率，并将收益定义为整个学习过程中累积利润的折现总和。研究发现，这种选择行为受到阶段博弈激励机制的显著影响：当阶段博弈存在战略替代性时，企业显然更倾向于选择最快的学习算法，以便迅速利用对手不断调整的策略；而在战略互补性条件下，过快的学习算法反而会加速竞争对手的应对反应，从而侵蚀企业的过渡性利润空间。尽管在基础阶段博弈中采取竞争性定价策略具有绝对优势，但我们证明企业仍会最优地选择学习速度较慢的算法，通过长期收敛过程逐步获取超额利润。。研究方法：均衡模型。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Singular Equilibrium and Selection of Narratives",
-      "authors": [
-        "David J. Jin"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-08",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.11615v1",
-      "cited_by_count": 0,
-      "abstract": "An agent learns from data that many parameters of her model explain equally well. Berk's theorem states that her belief concentrates on the parameters that best fit the data, but does not select between them. We show that, with a continuum of parameters, the posterior concentrates on the best-fitting parameters with the smallest local learning coefficient. We propose a definition of narratives, subsets of the best-fitting parameters on which the learning coefficient is constant. Narratives are characterized by the number of coincidences they require (complexity) and how exactly each must hold (robustness). When the agent's actions affect her data, every long-run action is a singular equilibrium, a best reply to a belief supported on the least complex and most robust narratives. Singular equilibrium refines Berk-Nash and self-confirming equilibrium by restricting overly complex or knife-edge off-path beliefs, and its strict uniform version characterizes uniformly stable actions.",
-      "summary_zh": "📌 研究问题：当代理人面对大量能同等解释数据的模型参数时，如何在众多最佳拟合参数中进行选择？\n\n🔬 研究方法：引入“局部学习系数”和“叙事”概念，定义了最佳拟合参数的子集，并提出了“奇异均衡”这一新的均衡概念。\n\n📊 核心发现：后验信念会收敛于具有最小局部学习系数的最佳拟合参数；当代理人行动影响数据时，长期行动即为奇异均衡。\n\n💡 应用价值：该概念细化了Berk-N",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Who Leads and Who Collects:Algorithmic Collusion in Markets of Heterogeneous Language Models",
-      "authors": [
-        "Jun Yeong Lee"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-08",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.11256v1",
-      "cited_by_count": 0,
-      "abstract": "Evidence that pricing algorithms collude comes from markets in which every seller runs the same algorithm. We ask what happens when they do not. Four language models from four providers, each at its cheapest tier, price in a four-firm logit Bertrand market without communication, in every homogeneous, two-by-two and fully mixed composi- tion (11 cells, 20 runs, 200 periods). Collusion is a property of the model: Claude and Gemini markets reach 72 to 79 percent of the monopoly rent, DeepSeek markets 24 percent, and GPT markets none, though GPT prices drift above the monopoly level rather than toward competition. Mixing does not reduce collusion by itself. Markets containing Gemini, which opens at the highest price and settles highest, are more col- lusive than the homogeneous markets they are built from; markets containing Claude, which opens lower and follows its rivals down, are less so; and only the fully mixed market is significantly less collusive than the average homogeneous one. Stability de- pends on the least stable participant: two GPT firms suffice to keep any market from converging. Inside mixed markets the rent is shared in a transitive order, DeepSeek over Claude over Gemini over GPT, that inverts the anchor ranking. The model that raises the price collects the least of the rent, as the price-leadership model predicts.",
-      "summary_zh": "【金融经济学】有证据表明，定价算法之间存在勾结行为，这种现象主要出现在所有卖家都使用相同算法的市场中。我们进一步探讨了当卖家使用不同算法时会发生什么。我们选取了来自四家供应商的四种语言模型（均为最便宜的版本），在无沟通的情况下，让这些模型在一个由四家公司组成的对数贝特朗（logit Bertrand）市场中进行定价模拟。模拟场景包括三种不同的市场结构：完全同质的市场、两两组合的市场以及完全混合的市场（共11个交易单元，进行20次重复实验，持续200个周期）。研究发现，勾结行为是该模型的固有特征：Claude模型和Gemini模型能够获取72%至79%的垄断租金；DeepSeek模型仅能获取24%的垄断租金；而GPT模型则无法实现任何形式的垄断租金获取（尽管其定价往往高于垄断水平）。值得注意的是，市场结构的混合本身并不能有效减少勾结现象。具体而言，包含Gemini模型的市场（该模型以最高价格开盘并最终达成最高交易价格）比其组成的同质市场更具勾结倾向；而包含Claude模型的市场（该模型以较低价格开盘并跟随其他卖家定价）的勾结程度较低；只有完全混合的市场才能显著降低整体的勾结水平。市场的稳定性取决...。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Information Divergence and Endogenous Evolution of Asymmetric Information",
-      "authors": [
-        "Ratna K. Shrestha",
-        "Gaurav Subedi",
-        "Ayush Shrestha"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-08",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.11200v1",
-      "cited_by_count": 0,
-      "abstract": "Standard theories trace information asymmetry to privately held information, heterogeneous signals, or costly information acquisition. We identify a distinct mechanism: otherwise identical rational agents observing a common Markov state at asynchronous times can hold different predictive distributions because their information differs in age. When the transition kernel separates information ages, independent Bernoulli observation arrivals make such divergence recur infinitely often almost surely, even with identical arrival probabilities. When agents instead choose costly updating intensities, independent update realizations can regenerate heterogeneous information ages among ex ante identical agents. In a stationary Gaussian AR(1) environment, the consequences depend on common staleness as well as the age gap: holding the gap fixed, older information raises individual uncertainty while reducing expected squared forecast disagreement and the value of certifying relative freshness. This generates stale consensus: low disagreement despite high uncertainty. With multiple ordered ages, costly certification supports partial-unraveling equilibria in which fresher types certify and sufficiently stale types pool. Under geometric information ages, more frequent updating weakly lowers the smallest and largest equilibrium disclosure cutoffs wherever positive-certification equilibria exist. The framework has implications for credit, insurance, financial markets, and multi-agent AI.",
-      "summary_zh": "【金融经济学】标准理论将信息不对称归因于私有信息、异质信号或高昂的信息获取成本。我们发现了一种不同的机制：在其他方面完全相同的理性主体，尽管观察到的马尔可夫状态相同，但由于所掌握信息的“时效性”不同，仍可能形成不同的预测分布。当转移核函数能够区分信息的时效性时，即使到达概率相同，独立的伯努利观测事件也会导致这种差异无限次地重复出现。如果主体选择进行成本较高的信息更新，独立的更新行为也会在事先相同的主体之间重新产生异质的信息时效性。在平稳的高斯AR(1)模型环境中，这种差异的影响既取决于信息的共同“陈旧程度”，也取决于时效性差距：在时效性差距固定的情况下，旧信息会增加个体不确定性，但同时降低预测分歧的平方期望值以及验证信息相对新鲜度的价值。这会导致一种“陈旧共识”现象——即尽管不确定性较高，但预测分歧仍然较小。在存在多个有序时效性的情况下，高昂的验证成本有助于形成部分信息解密的均衡状态：较新的信息类型负责验证信息，而较为陈旧的信息类型则共享这些信息。在信息时效性呈几何分布的情况下，更频繁的更新会降低存在正向验证行为的均衡状态中的最低和最高信息披露阈值。该框架对信贷、保险、金融市场以及多智能体系统...。研究方法：均衡模型。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Dynamic Mechanism and Information Design in AI-Agent Environments: A General Analytical Framework",
-      "authors": [
-        "Guoqiang Tian"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-08",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.11177v1",
-      "cited_by_count": 0,
-      "abstract": "This paper develops a general framework for dynamic mechanism and information design with AI agents, encompassing optimal contracting and integrating evolving hidden information and hidden action with partial verification, technological authorization, and multi-agent interaction. It nests conventional dynamic screening, hidden-action contracting, and conditional dynamic information design, while allowing reporting, action, and information-use decisions to interact through a common continuation mechanism. We establish a dynamic revelation principle and a recursive characterization of implementability in which truthful reporting and post-report obedience are jointly determined through continuation incentives. In quasilinear optimal-contracting environments, dynamic envelope and integral-monotonicity methods yield a verification-adjusted dynamic virtual-surplus representation and identify three distinct margins: dynamic information rents, verification rents, and the implementation cost of hidden action. These margins generate a branched hierarchy separating conventional dynamic screening, hidden-action contracting, and their joint problem. We also study the joint design of monitoring, information use, and incentives: more informative monitoring capacity expands the designer's opportunity set, but full disclosure need not be optimal, and information use can itself alter hidden-action incentives. With multiple agents, correlated information, peer discipline, coupled incentives, joint feasibility, and continuation opportunities create additional strategic interactions. Although motivated by AI-agent environments, the framework applies more broadly to dynamic agency settings with similar economic features.",
-      "summary_zh": "【金融经济学】本文构建了一个通用框架，用于研究包含人工智能代理的动态机制与信息设计问题，涵盖了最优契约设计，并将不断变化的隐藏信息与隐藏行为纳入考量范围，同时考虑了部分验证、技术授权以及多代理之间的互动。该框架整合了传统的动态筛选机制、隐藏行为契约设计以及条件性动态信息设计方法，同时允许报告行为与信息使用决策通过一个共同的持续机制进行交互。我们提出了一个动态揭示原则，并对实施可行性进行了递归性分析，指出真实报告与报告后的行为遵从性是通过持续激励机制共同决定的。在准线性最优契约环境中，动态包络分析与积分单调性方法能够生成经过验证调整的动态虚拟剩余表示，并识别出三个关键要素：动态信息租金、验证租金以及隐藏行为的实施成本。这些要素构成了一个层次结构，明确了传统动态筛选机制、隐藏行为契约设计及其联合问题之间的区别。此外，我们还研究了监控机制、信息使用与激励措施的联合设计：更强的监控能力能够扩大设计者的选择空间，但完全披露并不一定是最优策略；同时，信息的使用本身也可能影响隐藏行为的激励效果。在多代理环境下，相关信息、同伴间的相互监督、耦合的激励机制、联合可行性以及持续的互动机会会引发更多的战略互动。尽管...。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
     }
   ]
 }
