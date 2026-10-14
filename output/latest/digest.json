@@ -1,259 +1,252 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "count": 12,
   "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
   "latest_updated": true,
-  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（8 篇）、风险管理与衍生品（2 篇）、绿色金融与可持续发展（1 篇）。方法上以模型校准、双重差分为主。来源分布：OpenAlex（7 篇）、arXiv（3 篇）、NBER（2 篇）。其中 2 篇命中顶级期刊白名单。",
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、银行与信贷（2 篇）、资产定价（1 篇）。方法上以GARCH 波动率模型、随机森林为主。来源分布：OpenAlex（4 篇）、arXiv（4 篇）、Semantic Scholar（2 篇）。其中 4 篇命中顶级期刊白名单。",
   "insights": {},
   "papers": [
     {
-      "title": "Agricultural Technology, Functional Scale and Localized Value Creation: Pathways to Structural Transformation in Bihar, India",
+      "title": "ActiNet: an open-source tool for activity intensity classification of wrist-worn accelerometry using self-supervised deep learning",
       "authors": [
-        "Jitendra Kumar Sinha"
+        "Aidan Acquah",
+        "Shing Chan",
+        "Aiden Doherty"
       ],
-      "venue": "Journal of Economic Development Innovation and Policy",
-      "published_date": "2026-10-12",
-      "doi_url": "https://doi.org/10.55578/jedip.2610.015",
-      "openalex_url": "https://openalex.org/W7212980126",
+      "venue": "Scientific Reports",
+      "published_date": "2026-10-13",
+      "doi_url": "https://doi.org/10.1038/s41598-026-65900-y",
+      "openalex_url": "https://openalex.org/W4414818609",
       "cited_by_count": 0,
-      "abstract": "Agricultural transformation in developing agrarian economies depends not only on technological progress and increased productive capacity, but also on the capacity to deploy technological gains at economically viable scale and connect them with downstream value-adding activities. This study examines the role of functional scale in linking agricultural technological development with localized value-creation potential and broader structural transformation in Bihar, India. It develops a state-level analytical framework in which agricultural technology contributes to productive capacity and marketable output, while organizational and institutional arrangements influence the capacity to translate dispersed production into aggregation, processing, agrifood services, and wider economic transformation. Drawing on official state-level economic and agricultural statistics, the study finds that Bihar has a substantial and increasingly intensified agricultural production base. Cropping intensity increased from 147% in 2023–24 to 152% in 2024–25, while cereal production rose from 227.17 to 243.91 lakh tonnes. Indicators of functional-scale capacity also expanded: registered Farmer Producer Organizations increased from 221 in 2021 to 580 in 2024, and cumulative Custom Hiring Centres increased from 397 by 2019–20 to 832 by 2025. Downstream capacity is evidenced by 353 operational food-processing units and 12 operational ethanol units by September 2024. These observations demonstrate productive, institutional, and downstream capacity, but do not establish the proportion of agricultural value retained within Bihar. Localized value creation is therefore interpreted as an empirically supported potential and transformation pathway rather than a directly measured outcome. The study concludes that small ownership need not imply small-scale economic organization and that functional-scale institutions can provide an inclusive pathway for technology-enabled structural transformation.",
-      "summary_zh": "【金融经济学】在发展中的农业经济体中，农业转型不仅依赖于技术进步和生产能力的提升，还取决于能否在经济可行的规模上应用这些技术成果，并将其与下游的增值活动相结合。本研究探讨了功能规模在印度比哈尔邦将农业技术发展与本地化价值创造潜力及更广泛的结构转型联系起来中的作用。研究构建了一个省级分析框架，指出农业技术有助于提升生产能力和市场产出，而组织和制度安排则影响着将分散的生产活动整合为加工、农业食品服务以及推动更广泛经济转型的能力。通过分析官方的省级经济和农业统计数据，研究发现比哈尔邦的农业生产基础规模庞大且持续增长：2023-24年度的作物种植强度从147%上升至2024-25年度的152%，谷物产量从2271.7万吨增加到2439.1万吨。功能规模的相关指标也有所提升——注册的农民生产组织数量从2021年的221个增加到2024年的580个，定制雇佣中心的数量从2019-20年度的397个增加到2025年的832个。截至2024年9月，该地区已有353家食品加工企业和12家乙醇生产企业投入运营。这些数据体现了该地区的生产能力、制度体系以及下游产业的发展状况，但并未明确说明有多少农业价值留在了比哈尔...。",
+      "abstract": "Abstract\n                  The use of accurate and reliable open-source human activity recognition (HAR) models on passively collected wrist-accelerometer data is essential in large-scale epidemiological studies that investigate the association between physical activity and health outcomes. While self-supervised learning has generated considerable excitement in improving HAR, the extent to which these models, coupled with hidden Markov models (HMMs), would make a tangible improvement to classification performance and the effect this may have on the predicted daily activity intensity compositions is unknown. Using up to 24 h of wrist-worn accelerometer data from 151 CAPTURE-24 participants (aged 18–91, mean age 42, 66% female), we trained the ActiNet model, consisting of HARNet, a self-supervised, 18-layer, modified ResNet-V2 model, followed by hidden Markov model (HMM) smoothing, to classify labels of activity intensity. The performance of this model, evaluated using fivefold stratified group cross-validation, was then compared to a baseline random forest (RF) + HMM, established in existing literature. Differences in performance and classification outputs were compared with different subgroups of age and sex within the CAPTURE-24 population. The ActiNet model was able to distinguish labels of activity intensity with a mean macro F1 score of 0.82 and a mean Cohen’s kappa score of 0.86. This exceeded the performance of the RF + HMM, trained and validated on the same dataset, with mean scores of 0.76 and 0.80, respectively. The improvements in performance were consistent across subgroups of age and sex. These findings encourage the use of ActiNet for the extraction of activity intensity labels from wrist-accelerometer data in future epidemiological studies.",
+      "summary_zh": "【金融经济学】摘要  \n在大型流行病学研究中，利用准确可靠的开源人体活动识别（HAR）模型对被动收集的手腕加速度计数据进行解析至关重要，这些研究旨在探讨体力活动与健康结果之间的关联。尽管自监督学习在提升HAR性能方面取得了显著进展，但将这些模型与隐马尔可夫模型（HMM）结合使用后，其对分类性能的实际提升程度以及其对预测的日活动强度构成的影响仍不明确。本研究使用了151名参与CAPTURE-24研究的受试者（年龄范围18–91岁，平均年龄42岁，其中66%为女性）长达24小时的手腕加速度计数据，训练了ActiNet模型。该模型由HARNet（一个基于自监督学习的18层改进版ResNet-V2模型）和隐马尔可夫模型（HMM）组成，用于对活动强度进行分类。通过五折分层组交叉验证方法评估该模型的性能，并将其与现有文献中建立的基线随机森林（RF+HMM）模型进行了比较。同时，还分析了不同年龄和性别子群体之间的性能差异。ActiNet模型的平均宏观F1分数为0.82，平均Cohen’s kappa分数为0.86，显著优于在同一数据集上训练和验证的RF+HMM模型（其平均分数分别为0.76和0.80）。这种...。研究方法：随机森林。",
       "topics": [
-        "Scale (ratio)",
-        "Value (mathematics)",
-        "Agriculture",
-        "Transformation (genetics)",
-        "Measure (data warehouse)"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "SpeciNet-IDS: A False-Alarm-Aware Intrusion Detection System for Reliable Network Security",
-      "authors": [
-        "Sailaja Rani Setty",
-        "Valli Kumari Vatsavayi"
-      ],
-      "venue": "International Journal of Engineering Trends and Technology",
-      "published_date": "2026-10-12",
-      "doi_url": "https://doi.org/10.14445/22315381/ijett-v74i9p117",
-      "openalex_url": "https://openalex.org/W7221434395",
-      "cited_by_count": 0,
-      "abstract": "In practice, false alarms still plague the ability of deployed intrusion detection systems to be effective. If models are primarily tuned for accuracy, with unbalanced traffic, they're overly tolerant of benign misclassifications; analysts become overwhelmed by a rising number of false alarms, and real threats go unnoticed. We suggest a new hybrid network (CNN-Dense) called SpeciNet, which is trained with specificity, rather than accuracy. There are 4 mechanisms that function together. A parallel Conv1D branch learns local statistical patterns, and a Dense Residual branch learns multi-feature global interactions that are important for rare attack classes. The training is based on a focal loss (γ=2, αₜ=0.75) which pulls towards flows that are borderline benign behind the majority of false alarms. The operating threshold is selected based on the far target calibration process, which is a threshold that is as high as possible and does not exceed the 2% validation far threshold. The gains are confirmed by a SHAP-based attribution gate (not used after configuration is selected), but during configuration selection. We evaluate on CICIDS2017 as the primary benchmark and NSL-KDD for corroboration. SpeciNet-IDS reaches binary false alarm rates of 0.01% and 2.71%, with specificity of 99.99% and 97.29%. On CICIDS2017, only 16 false alarms occur across 318,547 benign test instances - a 13-fold reduction over the strongest baseline, significant against all baselines (McNemar p &lt; 0.001). On NSL-KDD, McNemar's test shows significant FAR reductions over three of four baselines and equivalence with the best classical model. Component analysis identifies three dominant sources of false alarm suppression - class weighting, the Dense Residual branch, and threshold calibration - each contributing measurably and independently.",
-      "summary_zh": "【金融经济学】在实践中，误报仍然严重影响了已部署的入侵检测系统的有效性。如果模型主要针对准确性进行优化，且在网络流量不平衡的情况下，它们会对良性误分类过于宽容；这会导致分析师不堪重负，因为误报数量不断增加，而真正的威胁却未能被及时发现。我们提出了一种新的混合网络模型（CNN-Dense），称为SpeciNet，该模型注重检测的特异性而非准确性。该模型包含四个协同工作的机制：一个并行的Conv1D分支用于学习局部统计模式，而Dense Residual分支则用于学习对罕见攻击类型至关重要的多特征全局交互关系。训练过程采用了一种名为“焦点损失”（focal loss）的优化算法（参数γ=2，αₜ=0.75），该算法能够将模型注意力引导到那些被大多数误报误判为良性的数据流上。系统的工作阈值是通过“远目标校准”（far target calibration）过程确定的，该阈值尽可能高，同时确保不超过2%的验证误报率。模型的性能提升通过基于SHAP（Shapley Value）的属性分析方法得到验证（在配置选定后不再使用该方法，但在配置选择阶段会使用）。我们以CICIDS2017数据集作为主要评估基准，...。研究方法：模型校准。",
-      "topics": [
-        "False alarm",
-        "Computer science",
-        "Intrusion detection system",
-        "Benchmark (surveying)",
-        "Constant false alarm rate"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Linear Demand Systems are Consistent with Discrete Choice",
-      "authors": [
-        "Afonso Rodrigues"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-09",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.13785v1",
-      "cited_by_count": 0,
-      "abstract": "Aggregate linear demand systems can be micro-founded by a population of heterogeneous consumers making discrete choices. They can also be extended to incorporate income effects. I prove these results and show how to structurally estimate this class of models using only market-level data. The distribution of consumer preferences is recovered by disciplining the corner solutions with aggregate terms only. This approach allows for the same richness of Berry, Levinsohn, and Pakes (1995) [BLP] while retaining the analytical and computational advantages of linear demand: it does not require exogenously fixing market size, allows for heterogeneity in choice sets, and results in a flexible substitution matrix which varies endogenously as different consumers enter/exit the market. The discrete-choice microfoundation facilitates welfare analysis and the flexible measurement of markups an cost pass-throughs, among a wide range of other applications.",
-      "summary_zh": "【金融经济学】总体线性需求系统可以通过一群进行离散选择的异质消费者来微观基础化（即通过消费者的个体行为来解释这些系统的形成）。这些模型还可以扩展以纳入收入效应。我证明了这些结果，并展示了如何仅使用市场层面数据来结构化估计这类模型。通过仅使用总体性条款来约束模型的极端解（即边界情况），可以恢复消费者偏好的分布。这种方法既保留了Berry、Levinsohn和Pakes（1995年）提出的BLP模型的丰富性，又具备线性需求模型的分析和计算优势：它不需要外生设定市场规模，允许选择集存在异质性，并且能够生成一个随不同消费者进入/退出市场而内生变化的灵活替代矩阵。离散选择的微观基础化方法有助于福利分析，以及灵活地衡量加价率和成本传导效应，此外还适用于许多其他应用场景。。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Two-Sided Plausibility Constraints in Persuasion",
-      "authors": [
-        "Constantine Sorokin"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-09",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.13702v1",
-      "cited_by_count": 0,
-      "abstract": "A sender with commitment provides additional information to an already informed receiver. Final posterior means must be more dispersed than initial means and less dispersed than the state, in convex order. We characterize when these two plausibility constraints are also sufficient, so that every distribution satisfying them can be induced. If the state has a positive density, they are sufficient exactly under interval-partition information: the receiver learns which interval of a partition contains the state and nothing more, where an interval may be a single point. Otherwise, a nonempty open set of distributions satisfying both constraints cannot be induced, even when the sender observes the receiver's information. We use the sufficient case to derive an optimal symmetric disclosure rule in a second-price auction where bidders initially know valuation intervals.",
-      "summary_zh": "【金融经济学】一个具有承诺感的发送者会向已经掌握相关信息的接收者提供额外的信息。最终的后验概率分布必须比初始的概率分布更加分散，同时比状态本身的概率分布分散程度更低（按照凸序排列）。我们研究了在何种情况下这两个合理性约束也是充分的，从而能够生成满足这些约束的任何概率分布。如果状态具有正的密度，那么在区间划分信息的情况下这两个约束是充分的：接收者仅能知道某个划分区间内包含了该状态，而无法获取更多信息（该区间可以是一个单点）。否则，即使发送者观察到了接收者的信息，也无法生成同时满足这两个约束的非空开集概率分布。我们利用充分性条件，在一个竞买者最初知晓估值区间的第二价格拍卖中推导出了一个最优的对称信息披露规则。。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Survival versus Scale: The Effects of Critical Access Hospital Designation",
-      "authors": [
-        "Ian McCarthy",
-        "Katie Leinenbach"
-      ],
-      "venue": "NBER Working Papers",
-      "published_date": "",
-      "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w35876#fromrss",
-      "cited_by_count": 0,
-      "abstract": "The Critical Access Hospital (CAH) program, established under the Balanced Budget Act of 1997, provides cost-based Medicare reimbursement to small rural hospitals in exchange for limits on inpatient capacity and service scope. We estimate the effects of CAH designation on hospital finances, capacity, and organizational outcomes using a synthetic difference-in-differences design that exploits the staggered 1999– 2002 rollout of state-level CAH availability. We find that CAH designation raises operating margins by three to four percentage points, with no change in liquidity or capital investment, as cost-based reimbursement sustains revenue while expenses fall with scale. Designation also reduces inpatient scale, with significant declines in total beds, obstetric capacity, and nursing staff. Emergency department visits also decline meaningfully, while outpatient volume is largely unchanged. At the same time, CAH designation reduces hospital closures, with no meaningful effect on mergers. These results point to a “survival versus scale” tradeoff across hospitals within a state, wherein designation-based subsidies avert closure for a small number of hospitals while inducing widespread inpatient downsizing among the many more hospitals that convert. Because converting hospitals shed more inpatient capacity than averted closures preserve, the program may reduce aggregate rural inpatient capacity even as it keeps hospitals open.",
-      "summary_zh": "【金融经济学】根据1997年《平衡预算法案》设立的“关键接入医院”（Critical Access Hospital, CAH）计划，为小型农村医院提供基于成本的医疗保险报销，但要求这些医院限制其住院床位规模和服务范围。我们采用了一种合成差异-差异（synthetic difference-in-differences）研究方法，利用1999年至2002年间各州逐步推行CAH政策的时机差异，来评估该计划对医院财务状况、床位规模及组织绩效的影响。研究发现，获得CAH资格后，医院的运营利润率提高了3%至4%；同时，医院的流动性及资本投资并未发生变化，因为基于成本的报销机制稳定了收入，而随着业务规模的扩大，支出反而有所下降。此外，CAH资格导致医院的住院床位总数、产科服务能力以及护理人员数量显著减少，急诊就诊人次也大幅减少，而门诊量基本保持稳定。不过，该计划有效减少了医院的关闭数量，但对医院合并行为没有显著影响。这些结果表明，在同一州内，不同医院之间存在“生存与规模”之间的权衡：CAH资格为部分医院提供了避免关闭的补贴，但促使更多医院缩减住院服务规模。由于转型后的医院削减的住院床位数量超过了因该计划...。研究方法：双重差分。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "nber"
-    },
-    {
-      "title": "Indirect Variational Inference: Applications to Earnings Dynamics",
-      "authors": [
-        "Neele L. Balke",
-        "Stéphane Bonhomme",
-        "Thibaut Lamadon"
-      ],
-      "venue": "NBER Working Papers",
-      "published_date": "",
-      "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w35877#fromrss",
-      "cited_by_count": 0,
-      "abstract": "Latent-variable models are central to economics but often entail intractable integration. Variational inference (VI), widely used in machine learning, turns this integration into tractable, differentiable optimization by replacing the likelihood with a variational objective. However, guarantees of recovering the true parameters remain limited when the variational family is insufficiently flexible—a key obstacle to the adoption of VI in economics. We first evaluate VI in models of earnings dynamics and show that the choice of variational posterior is crucial. We then introduce indirect variational inference (IVI), which treats VI as an auxiliary model and corrects the bias induced by the variational approximation. IVI retains much of VI’s tractability because it does not require computing the likelihood. We apply these methods to models allowing for nonlinear persistence, non-Gaussian and serially correlated transitory shocks, and latent heterogeneity. Across simulated and empirical applications, flexible variational families combined with IVI deliver reliable estimates.",
-      "summary_zh": "【风险管理与衍生品】潜变量模型在经济学中占据核心地位，但其积分过程往往具有较高的复杂性。变分推断（Variational Inference, VI）作为一种广泛应用于机器学习的算法，通过用变分目标函数替代传统的似然函数，将这一积分问题转化为易于处理、可微分的优化问题。然而，当变分族的灵活性不足时，该方法恢复真实参数的能力仍然受到限制——这成为变分推断在经济学中广泛应用的主要障碍。我们首先在收入动态模型中评估了变分推断的效果，并指出变分后验分布的选择至关重要。随后，我们提出了间接变分推断（Indirect Variational Inference, IVI）方法，该方法将变分推断视为一个辅助模型，并纠正了由变分近似带来的偏差。IVI方法保留了变分推断的大部分优点（如易于处理性），因为它无需计算似然函数。我们将这些方法应用于能够捕捉非线性持续性、非高斯分布、序列相关性冲击以及潜在异质性的模型中。在模拟和实证研究中，灵活的变分族与IVI方法的结合能够提供可靠的参数估计结果。。研究方法：机器学习、优化方法。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "nber"
-    },
-    {
-      "title": "Integrating temperature and CO2-concentration impact on crops into an input–output framework",
-      "authors": [
-        "Ane N. Johansen",
-        "Glen P. Peters",
-        "Benjamin Mark Sanderson",
-        "Jannick Hoejrup Schmidt"
-      ],
-      "venue": "Journal of Industrial Ecology",
-      "published_date": "2026-10-12",
-      "doi_url": "https://doi.org/10.1007/s44498-026-00190-1",
-      "openalex_url": "https://openalex.org/W7221434727",
-      "cited_by_count": 0,
-      "abstract": "Abstract\n                  \n                    Environmental Input–Output Analysis (IOA) incorporates feedbacks in coupled economic-environmental systems, driven by an exogenous demand and fixed input–output coefficients with a linearity assumption. For some environmental problems, or over longer time periods, the IO coefficients and exogenous drivers may change. Here, we introduce a climate-feedback into an IO system via the crop sector to illustrate the potential couplings between climate change and material and economic flows. We use existing climate impact ensembles to calibrate climate feedback parameters for crop productivity and implement them in an expanded IO system. We generally find that the same exogenous demand can be met with lower output due to yield improvements, driven by the beneficial effect of CO\n                    2\n                    fertilization which generally dominates the modelled temperature effect on yield, essentially indicating a reduction in land-use intensity driven by CO2 fertilization. However, the temperature effect, which is positive or negative dependent on region, may be underestimated because of the inability of existing process-based models to simulate climate-related agricultural impacts. The overall changes in yield, when exogenous demand is held fixed and annual CO\n                    2\n                    emissions are used as feedback, are of the order of 0.2% when normalized with the regional crop outputs and much smaller when normalized with total output. While the impact of a single year’s emissions is small, climate change is a cumulative problem and becomes significant over decades. Over these time periods, economic structure and demand would be expected to change in response to the climate impacts, requiring a dynamic modelling framework.",
-      "summary_zh": "【绿色金融与可持续发展】摘要\n\n环境投入产出分析（Environmental Input-Output Analysis, IOA）将反馈机制纳入经济与环境相互耦合的系统中，这些系统的运行受到外生需求和固定投入产出系数的驱动，并假设这些系数具有线性关系。对于某些环境问题或较长的时间跨度而言，投入产出系数及外生驱动因素可能会发生变化。本文通过作物生产部门将气候反馈机制引入投入产出分析框架，以阐释气候变化与物质流及经济流之间的潜在耦合关系。我们利用现有的气候影响数据集来校准作物生产力的气候反馈参数，并将其应用于扩展后的投入产出模型中。研究结果表明，在外生需求保持不变的情况下，由于二氧化碳（CO₂）施肥带来的产量提升作用，相同的外生需求可以通过更低的产出来实现；这种产量提升效应通常超过了模型中模拟的温度对产量的影响，从而表明土地利用强度因二氧化碳施肥而降低。然而，温度对产量的影响（其正负取决于具体地区）可能被低估，这是因为现有的基于过程的模型难以准确模拟与气候相关的农业影响。当外生需求固定且以年度二氧化碳排放量作为反馈变量时，产量的总体变化幅度约为区域作物产量的0.2%（以区域作物产量为基准进行归一化），若以...。研究方法：模型校准。",
-      "topics": [
-        "Climate change",
-        "Environmental science",
-        "Productivity",
-        "Agriculture",
-        "Economics"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Digital Marketing, Competitive Advantage, and Madrasah Choice: Mediating Role of Stoic Rationality",
-      "authors": [
-        "Elyn Lukluul Maknuni",
-        "Eva Desembrianita",
-        "Mahjudin Mahjudin"
-      ],
-      "venue": "Advances in Human Resource Management Research",
-      "published_date": "2026-10-12",
-      "doi_url": "https://doi.org/10.60079/ahrmr.v4i3.1109",
-      "openalex_url": "https://openalex.org/W7221434850",
-      "cited_by_count": 0,
-      "abstract": "Purpose: This study examines the role of Stoic rationality in prospective students’ school selection decisions and its mediating effects on the relationships between digital marketing, competitive advantage, and school selection decisions.\nResearch Method: An explanatory quantitative approach was employed using PLS-SEM with SmartPLS 4. Data were collected through purposive sampling from 96 prospective students of MA Ma’arif 7 Sunan Drajat, Lamongan Regency.\nResults and Discussion: Digital marketing significantly enhances Stoic rationality but has no significant direct effect on school selection decisions. Competitive advantage positively influences both Stoic rationality and school selection decisions. Stoic rationality significantly influences school selection decisions, fully mediating the effect of digital marketing and partially mediating the effect of competitive advantage.\nImplications: The findings highlight rational evaluation as a mechanism linking institutional strategies to educational choices. Islamic schools should strengthen competitive differentiation and develop digital marketing that supports informed decisions. The single-institution setting and limited sample constrain generalizability.\nOriginality: This study integrates Stoic rationality into educational choice research, demonstrating that digital marketing influences school selection indirectly through rational evaluation rather than directly.",
-      "summary_zh": "【金融科技】**目的**：本研究探讨了斯多葛理性在准学生择校决策中的作用，以及它对数字营销、竞争优势与择校决策之间关系的中介效应。\n\n**研究方法**：采用PLS-SEM（结构方程模型）与SmartPLS 4软件，采用解释性定量研究方法。数据通过目的性抽样从拉蒙根县Sunan Drajat地区的Ma’arif 7学院96名准硕士研究生中收集。\n\n**结果与讨论**：数字营销显著提升了斯多葛理性水平，但对择校决策没有显著直接影响。竞争优势对斯多葛理性及择校决策均具有积极影响。斯多葛理性对择校决策具有显著影响，它完全中介了数字营销的效应，并部分中介了竞争优势的效应。\n\n**意义**：研究结果强调了理性评估作为将机构战略与教育选择联系起来的机制。伊斯兰学校应加强竞争优势，并开发有助于做出明智决策的数字营销策略。由于研究采用单一机构样本且样本量有限，其结论的普遍性受到一定限制。\n\n**创新性**：本研究将斯多葛理性纳入教育选择研究领域，表明数字营销是通过理性评估间接影响择校决策的，而非直接作用。。",
-      "topics": [
-        "Rationality",
-        "Selection (genetic algorithm)",
-        "Nonprobability sampling",
-        "Sample (material)",
-        "Psychology"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Enabling monocular collision avoidance in a smart hangar",
-      "authors": [
-        "Haroun El Mir",
-        "George Skaltsis",
-        "Angelos Plastropoulos",
-        "Nicolas Peter Avdelidis"
-      ],
-      "venue": "The Aeronautical Journal",
-      "published_date": "2026-10-12",
-      "doi_url": "https://doi.org/10.1017/aer.2026.10207",
-      "openalex_url": "https://openalex.org/W7221436369",
-      "cited_by_count": 0,
-      "abstract": "Abstract\n                  Hangar-based maintenance, repair and overhaul (MRO) operations expose aircraft to close-proximity interactions with ground support equipment (GSE), where operator errors can cause structural damage and disruption. This study presents a monocular vision framework for collision-risk monitoring in a smart hangar, coupling instance segmentation, domain-adapted monocular depth inference and deterministic clearance reasoning. A paired dataset comprises synthetic top-down hangar renderings with pixel-aligned red-green-blue (RGB)-depth supervision and a matched miniature testbed containing scaled aircraft/GSE models and 3D-printed calibration objects, imaged by custom-mounted RGB cameras. The dual-head pipeline comprises YOLOv8-seg for six-class instance masks and DepthAnything-V2 for metric depth under the trained model convention. On the scene-disjoint synthetic test split, the custom-trained depth model achieves 0.135 m MAE, compared with 8.385m for pretrained weights, without materially increasing depth-inference time. WIthout dense RBG-camera depth ground truth, testbed-image transfer is reported as an ordinal/structural calibration-object proxy: relative step ordering is often preserved, whereas inter-step metric spacing is compressed and deemed inadequate for direct clearance-threshold decisions. Custom YOLOv8-seg variants achieve mean Intersection over Union (IoU) of 0.88–0.92 across synthetic and testbed splits, while the off-the-shelf baseline yields near-zero overlap in transfer tests. Collision inference is evaluated on deterministic 30-image samples per synthetic/testbed scenario, combining depth-derived height envelopes and boundary-only ground-plane distances to produce clear/warning/alert states and overlays. Median no-render compute latency is 0.736–1.037 s; profiling identifies post-processing, particularly GSE clustering and geometry construction, as the dominant runtime component. The study provides an auditable perception-to-geometry pipeline and highlights the need for uncertainty-aware threshold calibration before deployment.",
-      "summary_zh": "【金融经济学】摘要  \n基于机库的维护、修理和大修（MRO）作业使飞机与地面支持设备（GSE）发生近距离接触，操作人员的错误可能导致结构损伤和作业中断。本研究提出了一种用于智能机库中碰撞风险监测的单目视觉框架，该框架结合了实例分割、领域自适应的单目深度推理以及确定性的安全间距判断机制。研究使用了一对数据集：包含经过像素对齐的红色-绿色-蓝色（RGB）深度信息的合成机库渲染图像，以及一个配套的微型测试平台，该平台配备了缩放的飞机/GSE模型和3D打印的校准物体，并通过定制安装的RGB相机进行拍摄。该双头处理流程包括使用YOLOv8-seg进行六类实例分割，以及使用DepthAnything-V2在训练好的模型框架下进行深度测量。在场景分离的合成测试数据集中，定制训练的深度模型实现了0.135米的平均绝对误差（MAE），而预训练模型的MAE为8.385米，且深度推理时间并未显著增加。在没有密集的RGB相机深度真实值的情况下，测试平台图像可作为校准物体的替代方案：相对步骤顺序通常能够得到保留，但步骤间的距离测量精度较低，不足以直接用于安全间距判断。定制的YOLOv8-seg变体在合成数据和测试数据集...。研究方法：模型校准。",
-      "topics": [
-        "Monocular",
-        "Testbed",
+        "Hidden Markov model",
         "Artificial intelligence",
-        "Pipeline (software)",
-        "Computer science"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Generative AI-Powered Interdisciplinary Chemistry Practice in Junior High: Exploring Matter Composition and Structure",
-      "authors": [
-        "Zhihua Wang",
-        "Xuebing Liu",
-        "Fengxiang Chang",
-        "Cunzheng Lv"
-      ],
-      "venue": "IJCER (International Journal of Chemistry Education Research)",
-      "published_date": "2026-10-12",
-      "doi_url": "https://doi.org/10.20885/ijcer.vol10.iss2.art3",
-      "openalex_url": "https://openalex.org/W7221436653",
-      "cited_by_count": 0,
-      "abstract": "To address persistent issues in junior high chemistry teaching of Composition and Structure of Substances—including fragmented disciplinary perspectives, highly abstract micro-level concepts, and underdeveloped macro-submicro-symbolic triple representation thinking—this study constructs a four-stage interdisciplinary practical teaching model integrated with generative artificial intelligence (AI) and virtual reality (VR). The teaching practice was implemented in a natural ninth-grade class (N=40) in Zhengzhou. To ensure in-depth analysis of the massive multimodal data generated by AI and VR interactions, purposive sampling was employed to select five representative students as a focus group. Following a single-group pretest-posttest design, data from this focus group were evaluated across four dimensions to systematically measure learning outcomes: macro cognition via concept maps, micro cognition via knowledge cards, model deepening through AI text error correction, and transfer competence and AI literacy via AI chat record coding. Post-intervention data revealed significant improvements across all dimensions. In macro cognition, average concept map nodes increased by 108.8% (from 6.8 to 14.2). For micro cognition, accuracy scores of micro-level tasks surged by 170.0% (from 1.0 to 2.7). Furthermore, the error correction rate reached 88.9% during model refinement, while critical probing questions accounted for 45.83% of total chat records, indicating enhanced transfer and AI literacy. These findings confirm that the generative AI-empowered interdisciplinary model effectively broadens students’ cognitive frameworks, lowers learning barriers of abstract chemical knowledge, consolidates mastery of model-based symbolic representation, and fosters preliminary AI critical literacy. It provides a practical, replicable reference for advancing digital interdisciplinary chemistry teaching at the junior high level.",
-      "summary_zh": "【金融经济学】为解决初中化学教学中关于“物质的组成与结构”这一主题所存在的长期问题——包括学科视角的碎片化、高度抽象的微观概念以及宏观-微观-符号三层表征思维能力的欠缺——本研究构建了一个四阶段的跨学科实践教学模型，并将该模型与生成式人工智能（AI）和虚拟现实（VR）技术相结合。该教学实践在郑州的一所普通九年级班级（共40名学生）中得以实施。为了深入分析AI与VR交互所产生的大量多模态数据，研究者采用目的性抽样方法选取了五名学生作为焦点小组进行调研。通过单组前测-后测设计，从四个维度对焦点小组的数据进行了评估：利用概念图评估宏观认知能力，通过知识卡片评估微观认知能力；通过AI文本纠错功能促进模型理解的深化；并通过分析AI聊天记录来评估学生的迁移能力和AI素养。干预后的数据显示，所有维度都取得了显著进步：宏观认知方面，平均概念图节点数量增加了108.8%（从6.8个增加到14.2个）；微观认知方面，微观任务的正确率提升了170.0%（从1.0分提高到2.7分）；在模型优化过程中，错误纠正率达到了88.9%，同时关键性探究问题占聊天记录总量的45.83%，这表明学生的迁移能力和AI素养得到了显著提...。研究方法：误差修正模型。",
-      "topics": [
-        "Competence (human resources)",
-        "Generative grammar",
-        "Computer science",
-        "Cognition",
-        "Mathematics education"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "NeuroEarlyAI: An Explainable Deep Learning Framework with EarlyDetectNet for Alzheimer’s Disease Detection and Classification using MRI Scans",
-      "authors": [
-        "Anil Chakravarthy",
-        "Sasmita Kumari Nayak",
-        "B S Panda"
-      ],
-      "venue": "International Journal of Engineering Trends and Technology",
-      "published_date": "2026-10-12",
-      "doi_url": "https://doi.org/10.14445/22315381/ijett-v74i9p120",
-      "openalex_url": "https://openalex.org/W7221438105",
-      "cited_by_count": 0,
-      "abstract": "Alzheimer’s Disease (AD) is an ageing and progressive neurodegenerative disease, and one of the most prevalent dementias that affects millions of patients worldwide, including millions of people in Europe, and is a public health priority. Early and right diagnosis is of paramount importance for early therapeutic intervention as well as retardation of the disease. The visual search for small changes in the brain is rather time-consuming and subjective. For comparison, we chose two traditional diagnostic procedures: clinical evaluation and manual MRI analysis, where the clinical evaluation is more appropriate for the intended user in healthcare centres. The automatic detection of AD using recent advancements in deep learning are yet to lack a few drawbacks, such as class imbalance, overfitting and generalisation issue on external datasets, low transparency in the decision-making of the deep learning model, which makes it difficult for clinical applications. To fill this gap, in this paper, we propose NeuroEarlyAI, an end-to-end learning framework with EarlyDetectNet, a new model for early and interpretable detection of AD from the structural MRI scans. The framework also consists of sophisticated pre-processing strategies (denoising, data augmentation and skull stripping) to enhance the quality and diversity of the data. EarlyDetectNet has an attention mechanism which highlights clinically relevant anatomical regions. As a contrast, the visual and feature-wise explanation modules are based on the Grad-CAM and SHAP techniques, respectively, which project the model prediction onto the visual and feature-wise explanations. Extensive tests are performed on two publicly available datasets: Alzheimer's MRI Dataset and OASIS-1 dataset. The proposed system demonstrated improvements over the state of the art on reaching accuracy for binary and multi-class classification in a cross-dataset setting, with 96.7% and 93.8% accuracy, respectively. These results show the promise of the applications and broader use of NeuroEarlyAI, a tool that could help to diagnose AD earlier for better patient care.",
-      "summary_zh": "【金融经济学】阿尔茨海默病（AD）是一种与年龄增长相关的进行性神经退行性疾病，也是全球范围内最常见的痴呆症之一，影响着数百万患者，其中包括欧洲的数百万人，因此该疾病已成为公共卫生领域的重点关注对象。早期且准确的诊断对于及时进行治疗干预以及延缓疾病进展至关重要。然而，通过视觉方法来检测大脑中的细微变化既耗时又具有主观性。为了进行对比，我们选择了两种传统的诊断方法：临床评估和手动MRI分析，其中临床评估更适合在医疗机构中使用的用户群体。尽管深度学习技术的最新进展使得自动检测阿尔茨海默病成为可能，但仍存在一些不足之处，例如类别不平衡、过拟合问题以及在外部数据集上的泛化能力较弱，此外深度学习模型的决策过程缺乏透明度，这给临床应用带来了挑战。为了解决这些问题，本文提出了NeuroEarlyAI这一端到端的学习框架，其中包含EarlyDetectNet这一新型模型，该模型能够从结构性MRI扫描中实现阿尔茨海默病的早期且可解释的检测。该框架还采用了先进的预处理技术（去噪、数据增强和颅骨去除）来提升数据的质量和多样性。EarlyDetectNet具备注意力机制，能够突出显示具有临床意义的解剖结构区域。在解释模...。研究方法：深度学习。",
-      "topics": [
-        "Overfitting",
+        "Random forest",
         "Deep learning",
-        "Artificial intelligence",
-        "Computer science",
-        "Machine learning"
+        "Smoothing"
       ],
       "source": "openalex"
     },
     {
-      "title": "CorrFlow: Exact and Permutation-Equivariant Flow Matching on the Correlation Elliptope",
+      "title": "Sobol and GJR-GARCH for Dominant Factors of European Option Prices in Blue-Chip Index Constituent Stocks",
       "authors": [
-        "Gautier Marti"
+        "Nathania Azzah Mu’azara",
+        "Rudianto Artiono"
+      ],
+      "venue": "CAUCHY Jurnal Matematika Murni dan Aplikasi",
+      "published_date": "2026-10-13",
+      "doi_url": "https://doi.org/10.18860/cauchy.v11i2.45307",
+      "openalex_url": "https://openalex.org/W7219589349",
+      "cited_by_count": 0,
+      "abstract": "Conditional volatility-based option pricing research generally emphasizes improving volatility inputs, but has not yet fully explained the relative contribution of each parameter to variation in simulated option-pricing responses for Indonesian index stocks. This study integrates BlackScholes, GJR-GARCH asymmetric volatility, and Sobol global sensitivity analysis to identify dominant factors in a model-generated European call-option response for verified constituents of an Indonesian blue-chip index, denoted Index X. The sample consists of 19 constituents that remained consistent from February 2022 to December 2025. Logarithmic returns are tested for stationarity and ARCH effects, conditional volatility is estimated using GJR-GARCH(1,1), and the BlackScholes response is evaluated with five independently and uniformly distributed inputs: moneyness, maturity, risk-free rate, volatility multiplier, and proportional transaction cost. The results show that all returns are stationary and most stocks exhibit significant ARCH effects. Under the baseline domain, maturity and moneyness are the leading factors, while the volatility multiplier is secondary and the risk-free rate and transaction cost have smaller contributions. The ranking remains contract-dominated under a wider scenario domain and under a Student-t innovation check, although the magnitudes and ordering of maturity and moneyness can change. The contribution of this research is sensitivity decomposition of a specified BlackScholes response with a GJR-GARCH-based volatility input, not evidence of improved pricing accuracy against observed option prices. Issuer and index identities are masked in the manuscript to prevent issuer-specific model outputs from being misconstrued as investment recommendations or comparative assessments; a confidential identity crosswalk is retained for editorial verification.",
+      "summary_zh": "【资产定价】基于条件波动性的期权定价研究通常侧重于改进波动性输入参数，但尚未完全阐明各个参数对印尼指数股票期权价格模拟结果变化的相对影响。本研究结合了Black-Scholes模型、GJR-GARCH非对称波动性模型以及Sobol全局敏感性分析方法，以识别印尼蓝筹指数（记为Index X）中特定成分股的欧式看涨期权价格变化的主要影响因素。样本包括19只从2022年2月持续到2025年12月表现稳定的成分股。研究首先对对数收益率的平稳性和ARCH效应进行了检验，随后使用GJR-GARCH(1,1)模型估计条件波动性，并以五个独立同分布的输入变量（货币性、到期时间、无风险利率、波动性乘数和交易成本）来评估Black-Scholes模型的预测效果。结果表明，所有收益率均具有平稳性特征，且多数股票存在显著的ARCH效应。在基准分析框架下，到期时间和货币性是影响期权价格的主要因素，波动性乘数的作用次之，而无风险利率和交易成本的影响相对较小。在更广泛的情景分析中，尽管到期时间和货币性的相对重要性可能会发生变化，但其排序仍以合约特性为主。本研究的贡献在于利用GJR-GARCH模型对Black-Schole...。研究方法：GARCH 波动率模型。",
+      "topics": [
+        "Econometrics",
+        "Volatility (finance)",
+        "Economics",
+        "Sobol sequence",
+        "Moneyness"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "The Missile and the Toll: Two-Way Flow Through the Strait of Hormuz",
+      "authors": [
+        "Bernhard K Meister"
       ],
       "venue": "arXiv",
-      "published_date": "2026-10-09",
+      "published_date": "2026-10-13",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.13606v1",
+      "openalex_url": "http://arxiv.org/abs/2610.18823v1",
       "cited_by_count": 0,
-      "abstract": "Correlation matrices combine nonlinear positive-definiteness constraints with a simultaneous row-column permutation symmetry. Their generation therefore involves two distinct problems. First, every output must remain on the correlation elliptope, irrespective of how its variables are ordered. Second, the generator must learn the domain-specific distribution occupied by empirical data inside that valid space. Existing financial image generators mix these problems: they learn ordered matrix entries and repair invalid draws afterward. We introduce CorrFlow, which separates them. A generalized Fisher transform maps full-rank correlation matrices bijectively to unconstrained coordinates, guaranteeing valid outputs without projection. A graph flow-matching network learns the empirical distribution in those coordinates and is permutation equivariant: reordering the variables only reorders the output. We compare a conditional CorrGAN reimplementation, image diffusion, and CorrFlow on $80\\times80$ Taiwan equity matrices using five seeds per neural method. CorrFlow produces 100% valid draws without repair and obtains feature sliced-Wasserstein distance $.712\\pm.141$, versus $4.339\\pm.252$ for CorrGAN and $4.610\\pm.191$ for image diffusion after their invalid outputs are projected back to the correlation space. It also improves this distance over historical lookup, while lookup retains higher local coverage. These results support the combined construction under the evaluated training budget; they do not establish superiority over fully tuned image models or isolate the contribution of each component.",
-      "summary_zh": "【风险管理与衍生品】相关矩阵将非线性正定性约束与行列排列的对称性相结合。因此，其生成过程涉及两个不同的问题：首先，无论变量的排序如何，每个输出都必须位于相关椭球面上；其次，生成器必须学习实证数据在该有效空间内所遵循的特定领域分布。现有的金融图像生成方法将这两个问题混合在一起：它们先学习有序的矩阵元素，然后再修复无效的生成结果。我们提出了CorrFlow方法，将这两个问题分开处理。一种广义的Fisher变换能够将满秩相关矩阵一一对应地映射到无约束的坐标系统中，从而保证生成结果的合法性，而无需进行任何投影操作。一个基于图流匹配的网络在这些坐标系统中学习实证数据的分布，并且具有排列不变性（即变量的重新排序只会影响输出结果）。我们使用五种不同的神经网络方法，对$80\\times80$的台湾股票市场相关矩阵进行了实验比较。结果表明，CorrFlow能够生成100%合法的有效结果，且无需任何修复操作，其特征切片Wasserstein距离为$.712\\pm.141$；而CorrGAN在修复无效结果后的距离为$4.339\\pm.252$，图像扩散方法的距离为$4.610\\pm.191$（这些结果是在将无效结果投影回...。",
+      "abstract": "Tolls for safe passage and attacks on shipping are usually treated as mutually exclusive: either ships pay or attacks happen. We argue they are complementary. In a Stackelberg escalation game for the Strait of Hormuz, the enforcer chooses an attack intensity and a toll schedule; the response is to pay, cross exposed, wait, reroute, or exit. Attacks create the willingness to pay; tolls harvest it. The model predicts asymmetry across trade forms: a toll where the cargo owner can pay and the vessel owner will consent, and none where either fails. Any such payment is clandestine, but the model's implications are testable against freight rates, insurance premia, and incident reports.",
+      "summary_zh": "【金融经济学】“安全通行费用”与“对航运的攻击”通常被视为相互排斥的两个现象：要么船舶支付通行费用，要么就会发生攻击。我们认为这两种现象实际上是互补的。在针对霍尔木兹海峡的斯塔克伯格（Stackelberg）升级博弈模型中，执法方会决定攻击的强度和收费方案；而船舶则可以选择支付通行费用、继续航行、等待时机、改变航线或撤离港口作为应对措施。攻击行为会促使船舶所有者产生支付意愿，而收费机制则能够实现这一意愿的转化。该模型预测不同贸易形式之间存在差异：当货物所有者有能力支付费用且船舶所有者也同意支付时，通行费用才能得以收取；反之，如果任一方无法承担费用，通行费用就无法实现。虽然所有此类支付行为都处于隐蔽状态，但该模型的预测结果可以通过 Freight rates（运费）、insurance premia（保险费）以及incident reports（事故报告）等数据进行验证。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "The Geography of (Concurrent) Block Proposing",
+      "authors": [
+        "Ciamac C. Moallemi",
+        "Mallesh M. Pai",
+        "Dan Robinson",
+        "Christoph Schlegel"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-13",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.18812v1",
+      "cited_by_count": 0,
+      "abstract": "The resilience and censorship resistance of a blockchain depend on where the validators and proposers of that blockchain physically operate. We study the economic incentives behind this location choice, both with a single proposer and with multiple concurrent proposers. Formally, we study a game where proposers first choose locations and then compete in a first-price auction for an opportunity whose common value is driven by information from geographically dispersed sources. A single proposer minimizes variance-weighted delay, locating at a weighted median of the sources and co-locating with any dominant one. By contrast, with two proposers, information both observe equally early earns no rent, and each proposer's expected profit is proportional to the standard deviation of the information it receives before its rival. We show that the location game admits the jointly unobserved variance as an ordinal potential, so global solutions of a weighted two-median problem are equilibria. With two sources, one proposer locates at each, however weak one is. With more proposers and at least as many sources, equilibrium locations are distinct under regular bidding. Multiple concurrent proposers thus do more than limit any single proposer's control over inclusion: by rewarding exclusive rather than shared information, they create an economic force toward geographic decentralization.",
+      "summary_zh": "【金融经济学】区块链的弹性及其对审查制度的抵抗能力，取决于负责验证交易和提出交易提案的节点（即“提案者”）的实际运营地点。我们研究了这种地点选择背后的经济动机，既考虑了单个提案者的情况，也考虑了多个提案者同时存在的情况。从形式上讲，我们研究了一个博弈模型：提案者首先选择自己的位置，随后通过第一价格拍卖来争夺交易机会；这些交易机会的共同价值受到来自地理位置分散的信息的影响。在单个提案者的情况下，为了最小化延迟（尤其是延迟的方差分量），提案者会选择位于所有信息源的加权中位数位置，并尽可能与其中占主导地位的信息源位于同一地点。相比之下，在有多个提案者的情况下，如果所有提案者同时且平等地获取信息，则这些信息无法带来任何收益；每个提案者的预期利润与其在竞争对手之前获得的信息的标准差成正比。我们证明了该博弈模型能够将“未被共同观测到的信息方差”视为一个序数型潜在变量，因此该模型的全局最优解（即“加权中位数解”）实际上代表了均衡状态。当信息源仅有两个时，每个提案者都会选择其中一个位置（无论该信息源的“重要性”如何）。如果提案者数量较多且信息源数量至少与提案者数量相当，那么在常规竞价机制下，各提案者的均衡位置...。研究方法：均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Social Status and Corporate Cash Holdings: Evidence from China",
+      "authors": [
+        "Xin-Li Li",
+        "Xin-Ran Zhu",
+        "Ning-Ning Sha",
+        "Fang-Fang Li"
+      ],
+      "venue": "International Journal of Economics Finance and Management Sciences",
+      "published_date": "2026-10-09",
+      "doi_url": "https://doi.org/10.11648/j.ijefm.20261405.22",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:292838180",
+      "cited_by_count": 0,
+      "abstract": "This study investigates whether corporate social status shapes cash-holding decisions and through which channels this effect occurs. Using 11,266 firm-year observations for Chinese A-share listed companies from 2007 to 2024, corporate social status is measured as a market-recognition signal based on analyst attention, and its relationship with cash holdings is examined under year and industry fixed effects. The results show that higher social status is significantly associated with lower corporate cash holdings. This finding remains robust after addressing potential sample-selection bias with a Heckman two-stage model, redefining both cash holdings and social status, excluding years affected by major financial events, and applying alternative model specifications. Further analysis reveals important heterogeneity: the negative effect is more pronounced among non-state-owned enterprises and among firms without close bank-firm ties, suggesting that social status is especially valuable when formal institutional support or relationship-based financing is weaker. Mechanism tests show that social status reduces cash holdings partly by increasing capital expenditure, indicating that higher-status firms are more able, or more willing, to convert liquidity reserves into investment. In addition, financial constraints strengthen the relationship between social status and cash holdings, implying that status-based signals are particularly consequential when firms face tighter access to external finance. This study contributes to research on corporate liquidity management by shifting attention from purely economic determinants to the social attributes of firms. It also provides evidence that market-recognized status can function as an informal governance and resource-allocation mechanism in emerging capital markets. The findings offer practical implications for managers, financial institutions, and policymakers: cash-holding policies should be evaluated not only through balance-sheet indicators, but also through the firm's social position, financing environment, ownership structure, and investment opportunities.",
+      "summary_zh": "【金融经济学】本研究探讨了企业社会地位是否会影响其现金持有决策，以及这种影响是通过何种渠道实现的。研究使用了2007年至2024年间中国A股上市公司的11,266个企业-年份观测数据，将企业社会地位视为基于分析师关注度的市场认可信号，并在控制年度和行业固定效应的情况下分析了其与现金持有量之间的关系。研究结果表明，较高的社会地位与企业较低的现金持有量显著相关。即使在采用Heckman两阶段模型处理潜在的样本选择偏差、重新定义现金持有量和社会地位的衡量标准、排除受重大财务事件影响的年份以及采用不同的模型设定后，这一发现仍然成立。进一步分析揭示了重要的异质性：非国有企业以及与银行关系不紧密的企业中，这种负面效应更为明显，这表明在正式制度支持或基于关系的融资渠道较为薄弱的情况下，社会地位的价值尤为突出。机制分析表明，社会地位通过增加资本支出来降低现金持有量，即地位较高的企业更有能力或更愿意将流动性储备转化为投资。此外，财务约束加剧了社会地位与现金持有量之间的关联，说明在企业面临外部融资渠道受限时，基于社会地位的信号具有更重要的意义。本研究将研究焦点从纯粹的经济决定因素转向企业的社会属性，为企业的流动性...。研究方法：固定效应。",
+      "topics": [
+        "Economics",
+        "Business"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Industrial Land Acquisition and Corporate Financing Preferences: Based on the Land Transaction Data From China",
+      "authors": [
+        "Zhen-Ge Peng",
+        "Bo-Fu Deng",
+        "Li Ji",
+        "Khaldoon Albitar"
+      ],
+      "venue": "International Journal of Finance & Economics",
+      "published_date": "2026-10-09",
+      "doi_url": "https://doi.org/10.1002/ijfe.70314",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:292836007",
+      "cited_by_count": 0,
+      "abstract": "This study investigates the interplay between governmental land resource allocation and its micro‐firms and market efficiency implications within China's unique land system. Using data from A‐share companies listed in Shanghai and Shenzhen between 2007 and 2021, this study empirically examines how industrial land acquisition influences corporate capital structure decisions. The results indicate that post‐land acquisition, firms exhibit a significant debt financing preference, counter to China's conventional equity financing preference but congruent with the Pecking Order Theory. This behaviour shift is attributed to an informational effect, reducing the cost of debt capital while increasing the cost of equity capital due to perceived investment risk. However, firms receiving discounted land concessions achieve simultaneous reductions in both costs of debt and equity, suggesting capital markets prioritise government‐endorsed projects. The study concludes that applying the Modigliani‐Miller Theory in China requires incorporating institutional transaction costs embedded in the land allocation process.",
+      "summary_zh": "【公司金融】本研究探讨了中国独特土地制度下政府土地资源配置与企业行为之间的相互作用，以及这种配置对市场效率的影响。通过分析2007年至2021年间在上海和深圳证券交易所上市的A股公司的数据，实证研究了工业用地收购如何影响企业的资本结构决策。研究结果表明，在土地收购之后，企业表现出显著的债务融资偏好，这一现象与中国的传统股权融资偏好相悖，但符合“啄序理论”（Pecking Order Theory）的预期。这种行为变化归因于信息效应：由于投资者对投资风险的感知增加，债务资本的成本降低，而股权资本的成本上升。然而，获得优惠土地配置的企业在债务和股权成本上都实现了同时下降，这表明资本市场更倾向于支持政府支持的项目。研究结论认为，在中国应用莫迪利亚尼-米勒理论（Modigliani-Miller Theory）时，必须考虑土地配置过程中所蕴含的制度性交易成本。。",
+      "topics": [
+        "Economics",
+        "Business"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "When Does Randomized Oversight Align AI Agents That Can Conceal?",
+      "authors": [
+        "Joshua S. Gans",
+        "Richard T. Holden"
+      ],
+      "venue": "NBER Working Papers",
+      "published_date": "",
+      "doi_url": "",
+      "openalex_url": "https://www.nber.org/papers/w35878#fromrss",
+      "cited_by_count": 0,
+      "abstract": "Oversight changes the evidence it relies on. We ask when randomized audits and scoring align AI agents that can conceal misconduct and alter records. Stronger auditing makes undeterred violations better hidden. Because the provider writes the agent’s objective, sanctions need not stop at forfeiture, and rare audits deter every type of agent if evidence survives concealment and audit draws cannot be learned in advance. When evidence can be erased, deterrence must come from lower gains from violation, such as credit for stopping, or from costlier or fewer ways to conceal. These conditions identify what failed when agents in OpenAI’s cybersecurity evaluations compromised parts of Hugging Face’s infrastructure in July 2026.",
+      "summary_zh": "【金融经济学】监督机制会改变其所依赖的证据。我们质疑：在何种情况下，随机审计与评分机制会促使那些能够掩盖不当行为并篡改记录的AI代理继续运作。更严格的审计措施反而会让违规行为更加难以被发现。由于这些代理的行为目标是由相关机构设定的，因此处罚措施不应仅限于没收资产；如果证据能够在被掩盖后仍然留存，且审计结果无法被提前预测，那么即便是偶尔的审计也能对所有类型的代理产生威慑作用。当证据可以被删除时，威慑力应来源于违规行为所带来的较低收益（例如因停止违规而获得的奖励），或者来源于更昂贵的掩盖手段或更有限的掩盖途径。这些因素揭示了2026年7月OpenAI的网络安全评估中，其代理程序破坏Hugging Face基础设施时究竟是哪些环节出了问题。。研究方法：随机实验。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "nber"
+    },
+    {
+      "title": "How Knowledge Crosses Borders: Evidence from Semiconductor Manufacturing",
+      "authors": [
+        "Pinelopi K. Goldberg",
+        "Réka Juhász",
+        "Giulia Lo Forte",
+        "Jeff Thurk"
+      ],
+      "venue": "NBER Working Papers",
+      "published_date": "",
+      "doi_url": "",
+      "openalex_url": "https://www.nber.org/papers/w35879#fromrss",
+      "cited_by_count": 0,
+      "abstract": "We show that cross-border learning is an important feature of modern semiconductor manufacturing and that several important channels – such as knowledge sharing along global supply chains, the movement of engineers within multinational firms, and foreign direct investment – operate through market mechanisms rather than anonymous technological spillovers. These findings have significant policy implications. When cross-border learning is mediated by purposeful economic relationships, access to frontier knowledge is neither automatic nor guaranteed. Firms and governments can facilitate - or restrict - the international diffusion of technology, implying that policies to foster domestic technological upgrading are likely to be most effective when coupled with continued access to global sources of frontier knowledge.",
+      "summary_zh": "【金融经济学】我们发现，跨境学习是现代半导体制造业的一个重要特征。若干关键机制，如全球供应链中的知识共享、跨国公司内部工程师的流动以及外国直接投资，都是通过市场机制而非隐性的技术溢出效应来实现的。这些发现具有重要的政策意义：当跨境学习依赖于有目的的经济关系时，获取前沿知识既非自动发生，也并非必然实现。企业和政府可以促进或限制技术的国际传播，这意味着，那些旨在推动国内技术升级的政策，只有在能够持续获取全球前沿知识资源的情况下，才会最为有效。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "nber"
+    },
+    {
+      "title": "Modified Black-Scholes Model for Valuing Employee Stock Options with Constant Exit Rate: A Case Study of a Banking Company in Indonesia",
+      "authors": [
+        "Permadi Yulianto",
+        "Rudianto Artiono"
+      ],
+      "venue": "CAUCHY Jurnal Matematika Murni dan Aplikasi",
+      "published_date": "2026-10-13",
+      "doi_url": "https://doi.org/10.18860/cauchy.v11i2.45561",
+      "openalex_url": "https://openalex.org/W7219707670",
+      "cited_by_count": 0,
+      "abstract": "Employee Stock Options (ESO) are a form of compensation given to employees in the form of shares that can be purchased within a specified period. The ESO valuation uses the Black Scholes model, assuming employees remain employed until the vesting period is completed, excluding the employee’s departure from the company before the option rights are exercised. This study aims to determine the value of Employee Stock Options (ESO) by adding a constant exit rate factor. The data from this study are the closing price at BANK XYZ for the calculation of Volatility, for the risk-free interest rate from the Federal Reserve Bank of St. Louis used to calculate the option value using the Black-Scholes model, adjusted for the probability of continued employment (survival probability) obtained from various constant exit rate values. The results of the study using the constant exit rate produce a lower Employee Stock Option value than the calculation using the standard Black-Scholes model. The decline is greater with increasing maturity time because the employee’s probability of remaining employed at the company decreases. By applying a constant exit rate, the assessment results better reflect the real conditions compared to the Black-Scholes model, which does not consider the risk of employee departure from the company",
+      "summary_zh": "【银行与信贷】员工股票期权（ESO）是一种以股票形式发放给员工的薪酬方式，员工可以在规定的时间内购买这些股票。ESO的估值采用了Black-Scholes模型，该模型假设员工会一直任职到期权行权期结束，不包括员工在期权权利行使前离职的情况。本研究旨在通过引入一个恒定的离职率因素来重新评估员工股票期权的价值。研究数据包括XYZ银行的收盘价（用于计算波动率），以及圣路易斯联邦储备银行提供的无风险利率（用于根据Black-Scholes模型计算期权价值），同时根据不同的恒定离职率值调整了员工继续任职的概率（即生存概率）。研究结果表明，使用恒定离职率计算得出的员工股票期权价值低于标准Black-Scholes模型的计算结果。随着到期时间的延长，这种差异变得更加明显，因为员工继续在公司任职的概率会降低。通过引入恒定离职率，评估结果更能反映实际情况，而标准Black-Scholes模型并未考虑员工离职的风险。。",
+      "topics": [
+        "Vesting",
+        "Compensation of employees",
+        "Non-qualified stock option",
+        "Valuation (finance)",
+        "Stock options"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Climate Risk in ESG Portfolios: Evidence from Indonesian Equity Markets",
+      "authors": [
+        "Annisa Syalsabila",
+        "Nur Ikhwana",
+        "Lalu Ramzy Rahmanda"
+      ],
+      "venue": "CAUCHY Jurnal Matematika Murni dan Aplikasi",
+      "published_date": "2026-10-13",
+      "doi_url": "https://doi.org/10.18860/cauchy.v11i2.45016",
+      "openalex_url": "https://openalex.org/W7220849614",
+      "cited_by_count": 0,
+      "abstract": "We examine climate variables in a pipeline for dynamic Value-at-Risk (VaR) of the SRI-KEHATI ESG index and the IHSG (Jakarta Composite Index). Using 1,499 daily observations (20142025), we combine the Least Absolute Shrinkage and Selection Operator (LASSO) over 50 candidate predictors, a quantile regression neural network (QRNN) for VaR at three quantile levels, and SHAP for attribution. LASSO removes all climate variables from both indices. For IHSG, the partial correlation of clean-energy returns falls from 0.121 to 0.0005 once domestic equity factors enter, consistent with domestic absorption, though constituent overlap cannot exclude a purely compositional explanation. A diagnostic quantile regression shows climate contributions rising 2.82-fold from VaR 90% to VaR 99%, but the pattern is flat under the QRNN itself (ratio 1.03). In the main backtest, QRNN has lower pinball loss than Historical Simulation and GARCH(1,1)-t in all 12 DieboldMariano comparisons (p  0.001), although it uses same-day predictors the benchmarks lack and the advantage was not reproduced in the ablation. In a common-sample ablation (n = 249 of 300 nominal test days), LASSO pre-selection is associated with 4 of 6 Kupiec passes versus 0 of 6 without it, but IHSG still fails at two of three quantile levels. Whether SRI-KEHATI screening isolates climate risk was not tested; mediation covers IHSG only.",
+      "summary_zh": "【风险管理与衍生品】我们研究了影响SRI-KEHATI ESG指数和IHSG（雅加达综合指数）动态风险价值（VaR）的气候变量。利用2014至2025年的1,499个日度观测数据，我们结合了最小绝对值收缩与选择算法（LASSO）对50个候选预测因子进行筛选，使用分位数回归神经网络（QRNN）计算三个分位数水平上的VaR，并通过SHAP方法分析各因素的贡献度。LASSO算法最终剔除了这两个指数中的所有气候变量。对于IHSG而言，当纳入国内股票因素后，清洁能源回报的偏相关性从0.121下降至0.0005，这表明国内因素对指数表现有显著影响；不过，由于指数成分股之间存在重叠，因此也不能完全排除这种影响仅由成分股构成差异所致的可能性。诊断性分位数回归分析显示，从90%分位数到99%分位数的VaR计算过程中，气候因素的贡献度增加了2.82倍；而在QRNN模型中，这一变化趋势并不明显（贡献度比值为1.03）。在主要回测中，QRNN在所有12项Diebold-Mariano比较指标中的表现均优于历史模拟法和GARCH(1,1)-t模型（p<0.001），尽管QRNN使用的是与基准模型相同的日度预测因子，但这一优势...。研究方法：GARCH 波动率模型、回归分析、数值模拟、神经网络、LASSO 正则化。",
+      "topics": [
+        "Quantile",
+        "Econometrics",
+        "Quantile regression",
+        "Equity (law)",
+        "Lasso (programming language)"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Discrete-Time Survival Modelling with Dynamic Industrial Graphs for Mortgage Credit Risk",
+      "authors": [
+        "Shiqi Fang"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-13",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.18795v1",
+      "cited_by_count": 0,
+      "abstract": "Mortgage credit risk may exhibit dependence across economically connected areas, even when they are geographically distant. However, current models typically represent cross-area dependence through fixed geographical neighbourhoods, potentially overlooking economic connections that extend beyond physical proximity and evolve over time. These models may fail to capture shared risks among geographically distant but economically similar areas, and cannot describe a changing dependence of risk; it therefore risks retaining economically obsolete connections while omitting newly emerging ones. This paper uses similarities of industrial composition as a measure of economic proximity and develops a discrete-time survival model with dynamic industrial graphs to capture evolving cross-area dependence in mortgage default risk. The resulting graphs are reconstructed annually, allowing both their topology and edge weights to change as regional industrial compositions evolve. Jointly combining a proper conditional autoregressive process with a first-order autoregressive process governs the temporal cross-area dependence and the temporal persistence in latent risk simultaneously. The model is estimated using Integrated Nested Laplace Approximation and evaluated on U.S. mortgage loan-level data against the static industrial graph specifications. The results show that the proposed dynamic model achieves better in-sample fit and out-of-sample discrimination, while its estimated parameters indicate substantial graph-induced cross-area dependence and temporal persistence. These findings demonstrate the value of allowing economically defined neighbourhoods to evolve when modelling mortgage default risk.",
+      "summary_zh": "【银行与信贷】抵押贷款信用风险可能在不同经济关联的地区之间存在关联性，即使这些地区在地理上相距甚远。然而，现有模型通常通过固定的地理邻域来表示这种跨区域关联性，从而可能忽略了那些超越物理距离限制、并随时间变化的经济联系。这些模型可能无法捕捉到地理上相距较远但经济状况相似的地区之间的共同风险，也无法描述风险关联性的动态变化；因此，它们有可能保留过时的经济联系，同时忽略新出现的联系。本文以产业结构相似性作为经济关联性的衡量标准，构建了一个基于离散时间生存模型的动态工业图谱，以捕捉抵押贷款违约风险中的跨区域关联性变化。该模型每年重新构建一次，从而使其拓扑结构和边权重能够随着区域产业结构的变化而调整。通过将适当的条件自回归过程与一阶自回归过程相结合，可以同时解释跨区域关联性的时间变化以及潜在风险的时间持续性。该模型采用积分嵌套拉普拉斯近似（Integrated Nested Laplace Approximation）方法进行估计，并在美国抵押贷款数据上进行验证，与静态工业图谱模型进行了对比。结果表明，所提出的动态模型在样本内拟合度和样本外区分能力方面表现更优，其估计参数也显示出显著的图谱诱导的跨区域...。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "A GLE-LSV model with state-dependent leverage and colored noise",
+      "authors": [
+        "Andrey Itkin"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-13",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.18706v1",
+      "cited_by_count": 0,
+      "abstract": "We study a local stochastic volatility (LSV) model in which the variance factor follows a generalized Langevin equation (GLE) with colored noise, and past returns act on variance through a memory kernel with state-dependent amplitudes. For kernels given by finite sums of exponentials, we prove existence, uniqueness, and non-explosion under a growth condition linking the volatility map to the potential. In a one-mode family with a polynomial potential, feedback through log returns can cause explosion exactly when the squared volatility factor grows faster than the restoring force. Under structural and nondegeneracy conditions, an exact reduced Markovian state has a smooth density solving a deterministic forward equation. The Dupire conditional expectation therefore requires no stochastic partial differential equation. Under a bounded Sharpe ratio, exponential utility selects the minimal entropy martingale measure, whose premium solves a quadratic backward stochastic differential equation. Under a regularity hypothesis, which we verify in special cases with and without leverage, the premium depends only on the current state, and the squared VIX equals the expected average future local stochastic variance. Finally, a regularized calibration problem with bid--ask constraints admits a minimizer whenever a feasible point has finite objective value.",
+      "summary_zh": "【金融经济学】我们研究了一个局部随机波动率（LSV）模型，在该模型中，方差因子遵循带有有色噪声的广义朗之万方程（GLE），而过去的回报通过具有状态依赖幅度的记忆核影响方差。对于由指数函数有限和构成的记忆核，我们在一个将波动率映射与势能联系起来的增长条件下，证明了模型的存在性、唯一性以及不会出现爆炸性增长。在具有多项式势能的单模系统中，当平方波动率因子的增长速度超过恢复力时，通过对数回报的反馈可能导致模型出现爆炸性增长。在结构性和非简并条件下，一个精确的简化马尔可夫状态具有平滑的密度分布，该密度分布满足一个确定性的前向方程。因此，Dupire条件期望值无需依赖随机偏微分方程来计算。在夏普比率有界的情况下，指数效用函数会选择熵最小的鞅测度，其对应的期权价格满足一个二次型的后向随机微分方程。在满足一定规则性的假设下（我们在有无杠杆的特殊情况下验证了这一假设），期权价格仅依赖于当前状态，且VIX的平方等于未来局部随机方差的期望值。最后，当可行点的目标值有限时，一个带有买卖价约束的规范化校准问题存在最优解。。研究方法：模型校准、随机过程。",
       "topics": [
         "Economics",
         "Finance"
