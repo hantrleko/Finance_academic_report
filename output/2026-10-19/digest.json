@@ -1,0 +1,248 @@
+{
+  "date": "2026-10-19",
+  "count": 12,
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "latest_updated": true,
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、金融科技（2 篇）、银行与信贷（1 篇）。方法上以模型校准、调查数据为主。来源分布：arXiv（7 篇）、Semantic Scholar（2 篇）、NBER（2 篇）。其中 2 篇命中顶级期刊白名单。",
+  "insights": {},
+  "papers": [
+    {
+      "title": "ASSESSMENT OF THE ECONOMIC VIABILITY OF TRADITIONAL FISH-PIT PRODUCTION SYSTEMS IN THE LOWER OUEME VALLEY IN BENIN",
+      "authors": [
+        "AISSI Jean-Roitinos"
+      ],
+      "venue": "GSC Advanced Research and Reviews",
+      "published_date": "2026-10-18",
+      "doi_url": "https://doi.org/10.30574/gscarr.2026.29.1.0239",
+      "openalex_url": "https://openalex.org/W7222788891",
+      "cited_by_count": 0,
+      "abstract": "Fish ponds are a traditional fisheries production system widely practiced in the Lower Ouémé Valley in southern Benin. This activity contributes to the income of riparian communities, food security, and the conservation of wetlands, but its economic profitability remains insufficiently documented. This study aims to analyze the economic profitability of fish pit operations in the municipalities of Adjohoun, Aguégués, Bonou, and Dangbo. Socioeconomic data were collected from 366 producers through field surveys. Profitability was assessed using Gordon’s static model, while the determinants of producers’ income were analyzed using the Cobb-Douglas econometric model.\nThe results show that during the first year of operation, the activity exhibits negative profitability, with a deficit ranging from 0 to 750,000 FCFA per fish pit. This situation is mainly due to high initial development costs, particularly labor-related expenses. The econometric analysis reveals that labor costs have a significant negative impact on producers’ income. In contrast, the area under cultivation, production yield, and the unit selling price of fish have a significant positive effect on income. Starting in the second year of operation, fish ponds become economically profitable, with profits ranging from 30,000 to 120,000 FCFA per pond, thanks to lower production costs, particularly those related to labor. The Cobb-Douglas model indicates that the area under cultivation, yield, and the selling price per kilogram of fish account for 98% of the variation in producers’ income. The remaining 2% is attributable to unobserved factors such as hydrological variations, climatic conditions, seasonal fluctuations, and certain technical parameters that are difficult to measure.\nThese results show that fish pond farming is an economically viable activity in the medium term, despite the financial constraints observed during the initial setup phase. They highlight the need to strengthen technical, organizational, and financial support for producers, particularly by facilitating access to means of production, reducing development costs, and improving management practices. Such support would help increase the productivity of fish ponds, maximize farmers’ incomes, and ensure the economic and environmental sustainability of this traditional practice in the Lower Ouémé Valley.",
+      "summary_zh": "【金融经济学】鱼塘是贝宁南部下乌埃梅河谷地区广泛采用的一种传统渔业生产方式。这种生产方式不仅为沿岸社区带来了收入，还促进了粮食安全，并有助于湿地的保护，但其经济效益尚未得到充分研究。本研究旨在分析阿乔洪（Adjohoun）、阿格盖斯（Aguégués）、博努（Bonou）和丹博（Dangbo）等地区的鱼塘养殖项目的经济效益。通过实地调查，研究人员从366名养殖户那里收集了社会经济数据。盈利能力采用戈登静态模型进行评估，而影响养殖户收入的各种因素则通过柯布-道格拉斯（Cobb-Douglas）计量经济模型进行分析。\n\n研究结果表明，在运营的第一年内，鱼塘养殖项目处于亏损状态，每个鱼塘的亏损额在0至75万西非法郎之间。主要原因在于较高的初始开发成本，尤其是劳动力相关费用。计量经济分析显示，劳动力成本对养殖户收入有显著的负面影响。相比之下，养殖面积、产量以及鱼类的销售价格对收入有显著的正面影响。从运营的第二年开始，由于生产成本（尤其是劳动力成本）的降低，鱼塘养殖开始实现盈利，每个鱼塘的利润在3万至12万西非法郎之间。柯布-道格拉斯模型表明，养殖面积、产量以及鱼类的销售价格解释了养殖户收入变化的98%...。研究方法：调查数据。",
+      "topics": [
+        "Profitability index",
+        "Production (economics)",
+        "Agricultural economics",
+        "Econometric model",
+        "Economics"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "From Alpha to Execution: Trading Horizons, Regimes, and Schedules under Concave Impact and Hurst Scaling",
+      "authors": [
+        "Dnyanesh Kulkarni",
+        "Revant Nayar"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-16",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.23749v1",
+      "cited_by_count": 0,
+      "abstract": "Classical execution models assume linear impact, diffusive prices, and an exogenous horizon. We study execution under concave power-law impact and Hurst-scaled price fluctuations, and make two contributions.   First, we choose the execution horizon by maximizing the Sharpe ratio of the trade's realized P&L. Price moves during the execution window are part of that P&L, so executing more slowly reduces its variance, and because impact is concave it can also lower cost per share. Urgency comes only from alpha realized while the order is being worked. The problem is governed by the signs of two quantities: (i) the duration elasticity of impact $a$, which under a structural prior equals the impact-persistence gap $β- H$ and can take either sign; and (ii) the net urgency $ν$, the rate of alpha realization net of exposure relief. When $ν$ keeps its sign over the window, an interior optimum exists, to leading order in $T/t_f$, only when both are positive; otherwise the order should be worked at the fastest or slowest admissible pace. In the interior regime the first-order condition involves no impact coefficient, order size or volume, and the objective is flat: for a large-cap example, the window within 1% of maximal Sharpe spans more than an order of magnitude.   Second, given the window, we derive the schedule shape by convex programming under an envelope cost. For any increasing per-share cost of delay $w(t)$, the KKT solution is $φ\\propto (λ- w(t))_+^{1/β}$. For a Hurst-scaled envelope $w \\propto t^H$, the normalized schedule depends only on $(β, H)$, has a closed form via the incomplete beta function, is front-loaded, and tapers smoothly to zero, saving 10-17% of envelope cost relative to a constant-rate (TWAP) schedule of equal duration. Whether it uses the whole window depends on a single dimensionless robustness level, for which we give a calibration.",
+      "summary_zh": "【金融经济学】传统的执行模型假设影响效应是线性的、价格波动是扩散的，并且存在一个外生的执行期限。我们研究了在凹形幂律影响效应和Hurst尺度价格波动条件下的执行策略，并提出了两项重要贡献。\n\n首先，我们通过最大化交易实现盈亏（P&L）的夏普比率来确定执行期限。执行窗口期间的价格变动也计入该盈亏中，因此较慢的执行速度可以降低盈亏的方差；由于影响效应具有凹性，这种方式还能降低每股的成本。紧迫性仅来源于订单处理过程中实现的“阿尔法”收益（alpha）。问题的关键在于两个量的符号：（i）影响效应的持续时间弹性$a$，在某种结构假设下，该弹性等于影响效应的持续性差距$β - H$，其符号可以是正的或负的；（ii）净紧迫性$ν$，即扣除风险敞口缓解后的阿尔法收益实现速率。当$ν$在整个执行窗口内保持同一符号时，只有在$a$和$ν$都为正的情况下，才存在一个内部最优解（即相对于时间$t_f$而言的最优执行速度）。否则，订单应以最快或最慢的允许速度执行。在内部最优情况下，一阶条件与影响系数、订单规模或成交量无关，且执行目标是一个常数函数；以大盘股为例，夏普比率在1%范围内的执行窗口长度可超过一个数量级。\n\n其...。研究方法：模型校准。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Cross-product Modelling in Continuous Intraday Electricity Markets via Hawkes Processes",
+      "authors": [
+        "Ayoub Jhabli",
+        "Tarek Alskaif",
+        "Kwabena E. Bennin",
+        "Bedir Tekinerdogan",
+        "Joost M. E. Pennings"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-16",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.23619v1",
+      "cited_by_count": 0,
+      "abstract": "As renewable energy integration accelerates, intraday continuous (IDC) electricity markets have become essential for short-term balancing. However, the simultaneous trading of overlapping contracts with varying granularities creates complex, hidden liquidity dependencies that are critical to market stability but remain poorly understood. This paper proposes a multivariate State-Dependent Hawkes Process (SDHP) to model cross-product liquidity dynamics between Quarter-Hourly and Hourly IDC contracts. To determine how cross-product effects vary under different market conditions, we classify the trading sessions into two distinct regimes: 'Normal' and 'Stressed', based on a composite metric of the bid-ask spread, mid-price volatility and queue imbalance. The model is calibrated on the first month of each quarter of 2024 using level 3 limit order book (LOB) data from the Dutch EPEX SPOT IDC market. We find that order flow is overwhelmingly self-driven, with roughly 95\\% of orders arriving in reaction to earlier orders in both regimes. Cross-excitation runs mainly from the Quarter-Hourly to the Hourly contract, but this leadership weakens under stress: the ratio of cumulative cross-excitation falls from 2.8 to 1.5, so the two contracts influence each other almost equally. Stress also makes the Quarter-Hourly to Hourly channel much faster, cutting its mean lag from 6.05 to 0.93 seconds. The strong seasonal variation found in calm periods largely disappears under stress, where all four months converge to the same structure.",
+      "summary_zh": "【金融经济学】随着可再生能源整合的加速，日内连续（IDC）电力市场在短期平衡中变得至关重要。然而，同时交易具有不同时间粒度（粒度）的合约会引发复杂的、隐藏的流动性依赖关系，这些关系对市场稳定至关重要，但目前仍缺乏深入理解。本文提出了一种多变量状态依赖霍克斯过程（SDHP），用于模拟季度合约与小时合约之间的交叉产品流动性动态。为了研究不同市场条件下交叉产品效应的变化，我们根据买卖价差、中间价波动性和订单排队不平衡等综合指标，将交易时段划分为“正常”和“压力”两种状态。该模型使用2024年每个季度首月的荷兰EPEX SPOT IDC市场的三级限价单簿（LOB）数据进行了校准。研究发现，在两种状态下，订单流主要受自身驱动，约95%的订单是对先前订单的响应。交叉激发效应主要从季度合约传递到小时合约，但在压力环境下这种主导作用减弱：累计交叉激发比率从2.8降至1.5，表明两种合约的相互影响趋于平衡。压力还会加快季度合约与小时合约之间的信息传递速度，其平均延迟时间从6.05秒缩短至0.93秒。在平静时期观察到的显著季节性变化在压力环境下基本消失，所有四个月的流动性特征趋于一致。。研究方法：模型校准。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Finite State Automata-Based Decision Support System for Loan Eligibility Assessment in Baznas Microfinance Masjid",
+      "authors": [
+        "Muhammad Romadhona Kusuma",
+        "N. Aziz",
+        "M. Sholeh"
+      ],
+      "venue": "ITQAN: Journal of Islamic Economics, Management, and Finance",
+      "published_date": "2026-10-16",
+      "doi_url": "https://doi.org/10.57053/itqan.v5i2.175",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:293402043",
+      "cited_by_count": 0,
+      "abstract": "BAZNAS Microfinance Masjid (BMM) is a mosque-based Islamic microfinance program that supports community economic empowerment by providing productive financing for Micro, Small, and Medium Enterprises (MSMEs). However, the assessment of financing applications is still subject to manual verification, which may result in inconsistent scoring, data-entry errors, and delays in financing decisions. This study aims to design and implement an automated scoring system based on Finite State Automata (FSA) to support the assessment of financing eligibility for BMM MSME applicants. The proposed system was developed by modeling the financing assessment process as a sequence of states and transitions based on predefined assessment criteria. The system evaluates ten business-related criteria, including business experience, business potential, saving capability, capital turnover, repayment methods, financing facilities, average business revenue, consumer needs, sales reach, and entrepreneurship training. The FSA model was implemented in a web-based scoring application that validates the completeness of applicant responses, calculates the total score, classifies financing eligibility, and visualizes the assessment results using a radar chart. The implemented system successfully produces standardized scoring results and categorizes applicants into three financing eligibility levels: Less Prospect, Fair Prospect, and Prospect, with a maximum score of 30. These results demonstrate that the FSA-based approach can provide a structured and consistent mechanism for automating financing assessment and supporting financing officers in evaluating MSME applications. The proposed system therefore contributes to improving the consistency, transparency, and efficiency of financing assessment within BAZNAS Microfinance Masjid.",
+      "summary_zh": "【银行与信贷】BAZNAS Microfinance Masjid（BMM）是一项基于清真寺的伊斯兰小额信贷项目，通过为微型、小型和中型企业（MSMEs）提供生产性融资来支持社区经济赋权。然而，目前对融资申请的评估仍依赖于人工审核，这可能导致评分标准不一致、数据录入错误以及融资决策延迟。本研究旨在设计并实施一个基于有限状态自动机（FSA）的自动化评分系统，以辅助评估BMM MSME申请者的融资资格。该系统通过将融资评估过程建模为一系列状态及转换过程来实现，评估标准预先设定。系统涵盖十个与业务相关的指标，包括经营经验、业务潜力、储蓄能力、资本周转率、还款方式、融资渠道、平均营业收入、消费者需求、销售覆盖范围以及创业培训情况。FSA模型被应用于一个基于网络的评分系统中，该系统能够验证申请者信息的完整性、计算总得分、判定融资资格，并利用雷达图可视化评估结果。该系统成功生成了标准化的评分结果，并将申请人分为三个融资资格等级：低潜力、中等潜力和高潜力（最高得分为30分）。研究结果表明，基于FSA的方法能够为融资评估提供结构化且一致性的自动化机制，有效辅助融资人员评估MSME申请。因此，该系统有助于提升B...。",
+      "topics": [
+        "Computer Science",
+        "Economics",
+        "Business"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Digital transformation and SME innovation: The mediating role of financing constraints",
+      "authors": [
+        "Meng-Nan Hao",
+        "Ying-Xiu Zhao"
+      ],
+      "venue": "The Economics and Finance Letters",
+      "published_date": "2026-10-12",
+      "doi_url": "https://doi.org/10.18488/29.v13i4.5245",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:293032186",
+      "cited_by_count": 0,
+      "abstract": "This study explores the impact of digital transformation on the innovation of small and medium-sized enterprises (SMEs). Based on 2018–2024 firm-level datasets, our results verify that digital transformation delivers remarkable promotional effects on SME innovation, improving innovation across both quantity and quality dimensions. From an economic perspective, a one-standard-deviation increase in digital transformation brings a 3.5% gain in innovation quantity and a 5.7% lift in innovation quality. Specifically, digital transformation fosters more patent applications and grants, and also increases the technological value of patents. Financing constraints are found to partially mediate the relationship under investigation. Digital transformation can alleviate information asymmetry, enhance the credibility of enterprises, and thus alleviate financing constraints and promote more continuous innovation activities. Further heterogeneity analysis shows that the positive effect of digital transformation on innovation is significantly stronger for non-state-owned enterprises (non-SOEs) than for state-owned enterprises (SOEs) in terms of ownership. This could be because non-SOEs are more market-sensitive and have stronger incentives to transform. As for regional heterogeneity, digital transformation has a significant effect on promoting innovation in the eastern region, and also exerts a positive effect in the west, with a stronger marginal impact. This study builds theoretical bases and implementable guidance for enterprises, regulators, and financial lenders, helping SMEs overcome innovation challenges and encouraging the digital and real economies to become more deeply intertwined.",
+      "summary_zh": "【金融科技】本研究探讨了数字化转型对中小企业（SMEs）创新的影响。基于2018至2024年的企业级数据集，研究结果证实数字化转型对中小企业创新具有显著的促进作用，提升了创新的数量和质量。从经济角度来看，数字化转型程度每提高一个标准差，创新数量增加3.5%，创新质量提高5.7%。具体而言，数字化转型促进了更多的专利申请和授权，并提升了专利的技术价值。研究发现，融资约束在某种程度上调节了这一关系。数字化转型有助于缓解信息不对称问题，增强企业的信誉，从而减轻融资压力并推动更持续的创新活动。进一步的异质性分析表明，就所有制而言，数字化转型对非国有企业的创新促进作用明显强于国有企业。这可能是因为非国有企业对市场更加敏感，且有更强的转型动力。从区域差异来看，数字化转型在东部地区对创新的促进作用尤为显著，在西部地区也具有积极影响，且边际效应更为明显。本研究为企业、监管机构和金融机构提供了理论基础和实用指导，帮助中小企业克服创新难题，并促进数字经济与实体经济的深度融合。。",
+      "topics": [
+        "Economics",
+        "Business",
+        "Computer Science"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Export Controls and the Economics of National Security",
+      "authors": [
+        "Jingting Fan",
+        "Kyle Handley",
+        "Nuno Limão"
+      ],
+      "venue": "NBER Working Papers",
+      "published_date": "",
+      "doi_url": "",
+      "openalex_url": "https://www.nber.org/papers/w35898#fromrss",
+      "cited_by_count": 0,
+      "abstract": "Export controls restrict trade to limit adversaries’ access to goods that contribute to military capability, but their effectiveness depends on how trade and production adjust across countries. We combine new data on U.S. export control classifications and licensing outcomes with a quantitative general equilibrium model featuring dual-use production, input-output linkages, and separate civilian and military final expenditure. We estimate large export and entry frictions from these controls. These effects are substantially smaller for U.S. exports to members of multilateral export control regimes (MECRs): the differential is equivalent to an export cost of 15 to 29 log points. Relative to a counterfactual without differential controls on adversaries, multilateral controls reduce their imports of controlled products far more than unilateral U.S. controls. Only 7% of the reduction in controlled exports under the multilateral regime is replaced by other countries, compared with 28% under unilateral U.S. policy. Multilateral controls reduce adversaries’ real military expenditure by increasing their military price index. The security impact, measured as U.S. real military expenditure relative to adversaries, rises by about 1 log point under multilateral controls but only 0.14 log points under unilateral controls, with both imposing a similar civilian real cost. Even a U.S. embargo fails to reproduce the multilateral security outcome.",
+      "summary_zh": "【国际贸易】出口管制通过限制贸易来阻止对手获取可能增强其军事能力的商品，但其有效性取决于各国在贸易和生产方面的调整情况。我们将关于美国出口管制分类和许可结果的新数据与一个包含军民两用产品生产、投入产出关系以及民用和军用最终支出的定量一般均衡模型相结合，从而评估了这些管制措施所带来的影响。研究发现，这些管制措施对美国向多边出口管制机制（MECRs）成员国出口商品的影响相对较小：这种差异相当于15至29个对数单位的出口成本增加。与未实施差别性管制的情景相比，多边管制措施能更有效地减少对手对这些受管制产品的进口——在多边机制下，受管制产品进口量的减少幅度是单边美国管制措施下的两倍多。在多边机制下，只有7%的受管制产品出口减少量被其他国家所替代，而在单边美国政策下这一比例为28%。多边管制通过提高对手的军事成本指数来降低其实际军事支出。从安全角度来看，美国实际军事支出相对于对手的比例在多边管制下提高了约1个对数单位，而在单边管制下仅提高了0.14个对数单位；尽管两种措施都会给民用经济带来类似的影响，但多边管制带来的安全效益更为显著。即便实施美国禁运，也无法达到多边管制所带来的安全效果。。研究方法：均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "nber"
+    },
+    {
+      "title": "The Net Present Value of the California Billionaire Tax Act",
+      "authors": [
+        "Benjamin Jaros",
+        "Joshua Rauh"
+      ],
+      "venue": "NBER Working Papers",
+      "published_date": "",
+      "doi_url": "",
+      "openalex_url": "https://www.nber.org/papers/w35899#fromrss",
+      "cited_by_count": 0,
+      "abstract": "This paper examines the revenue and migration impact of the 2026 California Billionaire Tax Act, a one-time 5 percent tax on the worldwide net worth of individuals exceeding $1 billion. Using data from the Forbes Billionaire List, news reports detailing the residential real estate holdings of California billionaires, and public announcements of billionaire departures from the state, we estimate the behavioral response and associated revenue loss to this new tax using several different methodologies. Even before accounting for reductions in other tax bases such as the income tax, we estimate that the Act will collect approximately $30 billion (range $28 to 36 billion), less than a third of the $100 billion projected by Galle et al. (2025). This range accounts for the publicly confirmed taxpayer migration that has already eliminated nearly 30 percent of the Act's wealth tax base, applies a litigation-survival discount to the remaining base, and is validated by the wealth tax base elasticity literature. We estimate that California's billionaires contribute $3.3–5.8 billion annually in state income taxes. The present value of permanently lost income tax collections from departures more than offsets the one-time wealth tax revenue, yielding a net present value of negative $38.9 billion. Across 100,000 simulated revenue and discount rate combinations, 85 percent of plausible outcomes produce a negative net present value of state revenues.",
+      "summary_zh": "【金融经济学】本文研究了2026年《加州亿万富翁税法案》对财政收入和人口流动的影响。该法案规定，对全球净资产超过10亿美元的个人一次性征收5%的税款。我们利用《福布斯》亿万富翁排行榜的数据、关于加州亿万富翁房地产持有情况的新闻报道以及有关他们离开该州的公开信息，通过多种方法估算了这一新税制所引发的行为反应及相应的财政收入损失。即便尚未考虑所得税等其他税基的减少，我们估计该法案实际征收的税款约为300亿美元（范围在280亿至360亿美元之间），远低于Galle等人（2025年）预测的1000亿美元。这一估算结果考虑了已确认的纳税人迁移现象（这些迁移行为已使该法案的税基减少了近30%），并对剩余税基应用了“诉讼风险折现”因素，并得到了相关学术研究的验证。据估计，加州亿万富翁每年为该州缴纳的所得税约为33亿至58亿美元。由于纳税人迁移导致的永久性所得税收入损失远超过该法案的一次性税收收入，其净现值为负389亿美元。在10万种不同的收入预测值和折现率组合中，85%的情况均显示出该州财政收入的净现值为负。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "nber"
+    },
+    {
+      "title": "Combinatorial Arbitrage in Prediction Markets",
+      "authors": [
+        "Hongjian Shi",
+        "Daojing Zhai"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-16",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.23517v1",
+      "cited_by_count": 0,
+      "abstract": "We develop a framework to identify and quantify arbitrage across logically related prediction-market contracts. We prove that prices outside the convex hull of admissible payoff vectors admit arbitrage and identify optimal arbitrage portfolios through integer programming. Using venue metadata and semantic analysis of resolution criteria, we recover 1.9 million logical relations and compile them into constraint systems covering more than 255,000 contracts. We replay full-depth Polymarket order books to simulate an arbitrageur executing these portfolios against resting orders. Among settled portfolios, guaranteed profit after spreads and fees equals 2.2% of committed capital, while profit at resolution reaches 3.2%. We find that arbitrage opportunities persist longer and attract less observed participation where relation discovery and execution are more costly.",
+      "summary_zh": "【金融经济学】我们构建了一个框架，用于识别和量化逻辑相关的预测市场合约之间的套利机会。我们证明了那些位于可接受收益向量凸包之外的价格存在套利空间，并通过整数规划方法确定了最优套利组合。利用交易平台的元数据以及对结算规则的语义分析，我们共识别出190万个逻辑关系，并将这些关系转化为约束条件，涵盖了超过25.5万份合约。我们通过回放Polymarket平台的完整订单簿，模拟了套利者执行这些套利组合的过程（这些组合与未成交的订单进行了交易）。在已结算的套利组合中，扣除佣金后的预期利润占投入资本的2.2%；而在结算时，实际获得的利润达到了3.2%。研究发现，在关系发现和执行成本较高的情况下，套利机会持续时间更长，但参与者的数量相对较少。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "On the skew-curvature power law relationship in a stochastic volatility model with infinite variation Lévy jumps",
+      "authors": [
+        "Òscar Burés",
+        "Josep Vives"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-16",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.23488v1",
+      "cited_by_count": 0,
+      "abstract": "The short-term blow up behaviour of the ATM-IV skew is commonly modelled by either a rough volatility process with small Hurst index or an infinite variation Lévy process in the log-price dynamics. In this paper, we examine which is the effect of mixed dynamics (i.e. rough volatility and infinite variation Lévy processes) on the ATM-IV skew and curvature.   The results of the paper show that the analysis of the leading terms of the short-time expansion of both ATM-IV skew and curvature allow us to determine, from a mixed dynamics model, which mechanism originates the power-law behaviour on the skew and on the curvature. Apart from showing that the mixed model also originates a power law, it has also key implications in model design and calibration.   Numerical evidences for the rough Heston model with CGMY Lévy jumps are provided.",
+      "summary_zh": "【风险管理与衍生品】ATM-IV偏度的短期波动行为通常通过具有较小Hurst指数的粗糙波动过程或对数价格动态中的无限变异Lévy过程来建模。在本文中，我们研究了混合动态（即粗糙波动过程与无限变异Lévy过程）对ATM-IV偏度和曲率的影响。研究结果表明，通过对ATM-IV偏度和曲率的短期展开式的主要项进行分析，我们可以从混合动态模型中确定导致其呈现幂律行为的机制。除了证明混合模型本身也能产生幂律分布外，该研究还在模型设计和校准方面具有重要的启示意义。此外，本文还提供了采用CGMY Lévy跳跃的粗糙Heston模型的数值验证结果。。研究方法：模型校准。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Input-output analysis with a sphere packing approach",
+      "authors": [
+        "Munkhbayar Byambadash",
+        "Tumendelger Lkhagvasuren",
+        "Enkhbat Rentsen"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-16",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.23391v1",
+      "cited_by_count": 0,
+      "abstract": "Input-output analysis with linear programming is widely used in the planning of national economies. However, linear programming attains its optimum at a vertex of the feasible set, and a small deviation of the optimal plan in some direction violates a constraint. So far, little attention has been paid to finding sets of production plans which guarantee both the supply-demand balance of an economy and a given level of its gross domestic product (GDP), and the sphere packing approach cannot be applied directly, since the balance equations define a set with an empty interior. In this paper, we introduce the set of $(\\varepsilon,δ)$-solutions, in which GDP may be smaller than its optimal value by at most $\\varepsilon$ and supply may differ from demand by at most $δ$, and we find a sphere with the maximum radius inscribed into this set by solving a linear programming problem. We prove that the optimal radius is positive for positive tolerances, that it is non-decreasing, concave and piecewise linear with respect to the tolerances, and that it is bounded by the narrowest balance constraint, which is determined by a sales-concentration index of sectors. The approach is applied to the official input-output tables of Mongolia for 2010-2019 and 2024. The classical optimal plan has zero robustness, while the robust plan keeps 99.73% of the maximal GDP and, in a Monte Carlo simulation, tolerates independent deviations of all outputs and final demands of up to $\\pm$0.30%. The margin of robust plans is limited by sectors with concentrated sales, mainly education and, increasingly, export-oriented mining, which indicates that a diversification of the users of mining output widens the set of robust plans.",
+      "summary_zh": "【金融经济学】基于线性规划的投入产出分析在国民经济规划中得到了广泛应用。然而，线性规划总是在可行集的某个顶点处达到最优解，而最优方案在某个方向上的微小偏差就可能违反某些约束条件。迄今为止，人们很少关注如何制定既能保证经济供需平衡又能实现特定国内生产总值（GDP）水平的生产计划组合；此外，球体填充方法也无法直接应用于此类问题，因为供需平衡方程所定义的集合内部为空。在本文中，我们提出了$(\\varepsilon,δ)$-解的概念，即GDP的最大偏差不超过$\\varepsilon$，供给与需求的最大差异不超过$\\delta$。通过求解线性规划问题，我们找到了能够包含这些解的最大半径球体。我们证明了：对于正的容忍度值，该最优半径是正的、非递减的、关于容忍度呈凹函数且具有分段线性特性；同时，该半径的上限由各行业的销售集中度指数所决定的最严格供需平衡约束条件所限定。该方法被应用于蒙古国2010-2019年及2024年的官方投入产出数据。传统的最优方案不具备鲁棒性，而鲁棒方案能够保留高达99.73%的最大GDP值；在蒙特卡洛模拟中，该方案能够容忍所有产出和最终需求的独立偏差达到$\\pm$0.30%。鲁棒方案...。研究方法：蒙特卡洛模拟、数值模拟。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Market Efficiency in a Changing Asset Population: Mobility, Entry, and Survival over Cryptocurrency's Full History",
+      "authors": [
+        "Antonis Ballis",
+        "Christos Ioannidis"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-16",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.23283v1",
+      "cited_by_count": 0,
+      "abstract": "Weak-form efficiency implies symmetry restrictions on the Markov chain governing movement across the cryptocurrency capitalisation distribution. We test them on the full listed population: 8,970 assets, 690 weekly cross-sections, 2013 to 2026, with entry, exit and survival observed rather than inferred. Symmetry is rejected in every era, but the asymmetry falls by seventy percent, and what converged is entry-driven compositional churn rather than coins' own valuations. The bottom decile earns 27.5% per week on paper and nothing among assets that trade, on capacity of $293,000. Compensation for neglect exists precisely where trading does not.",
+      "summary_zh": "【金融科技】弱形式效率要求支配加密货币市值分布变化的马尔可夫链满足对称性约束。我们对所有上市资产进行了检验：共8,970只资产，覆盖690个周度数据点（2013年至2026年），观察到的数据包括资产的进入、退出及存续情况，而非通过推断得出的结果。在所有研究时期，对称性假设均被否定；不过资产流动的不对称性降低了70%。研究发现，资产流动的主要驱动因素是资产的重新组合（即资产之间的替换），而非资产自身价值的变动。在市值最低的10%资产中，理论上每周可获得27.5%的收益；而在实际交易的资产中，这一收益为零（这些资产的市值总和为293,000美元）。值得注意的是，只有在缺乏交易活动的资产中，才不存在因信息缺失而导致的收益损失。。研究方法：横截面分析。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "A Characterization of Quantile Stable Matchings in Many-to-Many Markets",
+      "authors": [
+        "Paola Manasero",
+        "Pablo Neme"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-16",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.23282v1",
+      "cited_by_count": 0,
+      "abstract": "We study two-sided many-to-many matching markets where agents' preferences satisfy strong substitutability and the law of aggregate demand (LAD). In this framework, the set of stable matchings forms a finite distributive lattice, and quantile stable matchings exist and satisfy the polarization of interests. Building on the cycle-reduction machinery of Bonifacio et al. (2022), we provide a purely combinatorial characterization of quantile stable matchings formulated in terms of preference cycles and their induced precedence order. Specifically, we define an order-theoretic counting function on cycles and prove that each quantile stable matching corresponds to the elimination of an endogenously determined closed set of cycles starting from the firm-optimal stable matching. This characterization extends the rotation-based framework of Cheng (2008) from one-to-one markets to many-to-many markets and bypasses the need for exhaustive outcome enumeration or partner sorting across the entire stable set.",
+      "summary_zh": "【金融经济学】我们研究了双边多对多匹配市场，在这类市场中，代理人的偏好满足强替代性和总需求法则（LAD）。在这一框架下，稳定的匹配集合构成一个有限的分配格，且存在分位数稳定的匹配，并且这些匹配符合利益极化的特征。基于Bonifacio等人（2022年）提出的循环简化方法，我们提供了一种纯粹的组合学方法来描述分位数稳定的匹配，该方法通过偏好循环及其诱导的优先顺序来表达。具体而言，我们为偏好循环定义了一个序论上的计数函数，并证明了每个分位数稳定的匹配都对应于从企业最优稳定匹配开始消除一组内生确定的封闭循环。这种描述方法将Cheng（2008年）基于旋转机制的模型从一对一市场扩展到了多对多市场，并且无需对所有稳定匹配结果进行穷举计算或对所有潜在伙伴进行排序。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    }
+  ]
+}
