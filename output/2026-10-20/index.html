@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>金融经济学每日文献速递 - 2026-10-20</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem auto; max-width: 900px; line-height: 1.6; color: #111; padding: 0 1rem; }
+    .card { border: 1px solid #e6e6e6; border-radius: 10px; padding: 1rem; margin-bottom: 1rem; }
+    .meta { color: #666; font-size: 0.95rem; }
+    .summary { background: #f8f8f8; padding: 0.8rem; border-radius: 8px; }
+    .note { color: #a15d00; background: #fff7e6; border: 1px solid #ffdf99; padding: 0.75rem; border-radius: 8px; }
+    .overview { background: #e8f4fd; border: 1px solid #b3d9f2; padding: 1rem; border-radius: 10px; margin-bottom: 1.5rem; }
+    .insights { background: #f0f9f2; border: 1px solid #ccead2; padding: 1rem; border-radius: 10px; margin-bottom: 1.5rem; }
+  </style>
+</head>
+<body>
+  <h1>金融经济学每日文献速递</h1>
+  <p class="meta">日期：2026-10-20｜篇数：12</p>
+  <div class="overview"><h2>📢 今日综述</h2><p>本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、货币政策与宏观经济（2 篇）、风险管理与衍生品（1 篇）。方法上以模型校准、均衡模型为主。来源分布：arXiv（9 篇）、NBER（3 篇）。其中 3 篇命中顶级期刊白名单。</p></div>
+  
+  
+  <article class="card">
+    <h2>1. Teacher Supervision, Fixed Representations and Calibration: Exact Risk Calculations for Candidate-Scoring Decision Models</h2>
+    <p class="meta">来源：arxiv｜作者：Agus Sudjianto, Denis Burakov</p>
+    <p class="meta">期刊/来源：arXiv｜发表：2026-10-19｜引用数：0</p>
+    <p class="meta">主题：Economics, Finance</p>
+    <p><a href="http://arxiv.org/abs/2610.26797v1" target="_blank" rel="noopener noreferrer">链接</a></p>
+    <p class="summary"><strong>中文摘要（自动生成）:</strong> 【风险管理与衍生品】候选评分决策模型会针对一组提交的答案返回一个概率分布。其中一个系统的公开文档Jev以及其开源对应版本JevAny中描述了三种影响这些概率估计结果的训练因素：来自更大模型的“软目标”数据、预训练好的固定模型结构（即“冻结的预训练主干网络”），以及温度校准机制。我们通过高斯替代模型（Gaussian surrogates）来分析这些因素，因为在这些模型中可以精确计算有限样本下的风险。如果学生模型仅基于教师模型提供的目标数据进行训练，它就会继承教师的偏见；更多的学生数据也无法消除这种偏见，同时与教师模型的结果一致性也无法揭示这种偏见的存在。只有当样本量达到某个特定阈值时，固定模型结构才能有效降低风险。在Probit模型中，精确的重新校准过程实际上是一种温度调整机制：只有当教师模型的系数方向正确时，这种调整才能完全消除多余的风险；否则会留下校准诊断工具无法检测到的残差。根据Luce的选择公理（Choice Axiom），如果候选评分在事件细节不断细化后仍能保持一致性，那么它们必须满足对数和指数（log-sum-exp）的聚合规则。通过对美国消费者金融保护局（Consumer Financ...。研究方法：模型校准。</p>
+  </article>
+<article class="card">
+    <h2>2. Cooperative Multi-Agent Reinforcement Learning for Market Making on Prediction-Market Order Books</h2>
+    <p class="meta">来源：arxiv｜作者：Skander Lejmi</p>
+    <p class="meta">期刊/来源：arXiv｜发表：2026-10-19｜引用数：0</p>
+    <p class="meta">主题：Economics, Finance</p>
+    <p><a href="http://arxiv.org/abs/2610.26789v1" target="_blank" rel="noopener noreferrer">链接</a></p>
+    <p class="summary"><strong>中文摘要（自动生成）:</strong> 【金融经济学】做市商通过提供买卖资产的价格来维持市场的流动性，在赚取价差的同时管理库存风险。我们研究了在预测市场（尤其是Polymarket）上使用多智能体强化学习进行训练的做市商行为，这些市场的订单簿较为稀薄，因此存在独特的挑战。本研究主要关注三个核心问题：首先，由于逆向选择现象，基于真实数据训练的策略可能会停止报价；其次，报价的后果可能在交易发生后的很长时间才显现；最后，预测市场的L2数据无法识别出用于模拟所需的个别订单。为了解决这些问题，我们从Polymarket中重构了订单级别的LOBSTER格式数据，并在417个真实市场中使用JaxMARL-HFT框架对智能体进行了训练。我们丰富了基础做市商的观测信息（包括订单簿内容和近期交易流量），重新设计了其交易策略和库存管理机制，并提出了一种合作式多智能体架构，将做市商分为报价者和风险管理者两个角色，其中风险管理者采用循环独立近端策略优化（IPPO）算法进行训练。我们还探讨了奖励机制的设计，特别是奖励的混合方式以及交易完成后的收益分配规则，以缓解智能体之间的利益冲突。经过改进后的单智能体做市商报价频率更高，且持有的未成交订单带来的损失更小。尽管...。研究方法：断点回归、数值模拟。</p>
+  </article>
+<article class="card">
+    <h2>3. Foreign Giants&#x27; Broad Shoulders: The Causal Effect of Foreign Ideas on U.S. Innovation</h2>
+    <p class="meta">来源：nber｜作者：Tarek Alexander Hassan, Aakash Kalyani, Juan Cruz Lopez Del Valle</p>
+    <p class="meta">期刊/来源：NBER Working Papers｜发表：｜引用数：0</p>
+    <p class="meta">主题：Economics, Finance</p>
+    <p><a href="https://www.nber.org/papers/w35900#fromrss" target="_blank" rel="noopener noreferrer">链接</a></p>
+    <p class="summary"><strong>中文摘要（自动生成）:</strong> 【金融经济学】我们通过构建1887年至2024年间提交的1300万项专利的全文数据，构建了一个技术发展的“谱系图”，以此研究外来思想在美国创新中的作用。通过追踪哪些早期技术被用于新技术的研发过程中，我们揭示了一个大规模的技术重组输入-输出网络，该网络明确了那些作为美国创新输入来源的外国技术。我们得出了四个主要发现：首先，外来思想无处不在——54%的美国技术至少基于一项外国技术输入，而最具创新活力的美国技术对外国技术的依赖程度最高；其次，外来思想对美国创新具有显著的影响；利用移民的历史分布作为地方起源变化的外生因素，我们发现那些更易接触特定国家知识的美国县区会从该国吸收更多技术，并进而创造出更多基于这些技术的美国产品；第三，外来思想不仅决定了技术变革的规模，还影响了其方向：那些本地技术库中已包含相关外国技术的县区更有可能率先开发这些技术；此外，随着美国创新中心从内陆向沿海地区转移，外来思想的来源也发生了变化；最后，这些影响对当地劳动力市场产生了长期影响——几十年后，那些吸收了大量外来技术的县区不仅拥有更多相关就业岗位，还创造了更多基于这些技术的美国产品的工作机会。。</p>
+  </article>
+<article class="card">
+    <h2>4. Modeling and Evaluating the Labor Market and Fiscal Effects of Immigration</h2>
+    <p class="meta">来源：nber｜作者：Michele Battisti, Giovanni Peri, Eleonora Romano</p>
+    <p class="meta">期刊/来源：NBER Working Papers｜发表：｜引用数：0</p>
+    <p class="meta">主题：Economics, Finance</p>
+    <p><a href="https://www.nber.org/papers/w35901#fromrss" target="_blank" rel="noopener noreferrer">链接</a></p>
+    <p class="summary"><strong>中文摘要（自动生成）:</strong> 【劳动经济学】移民通过劳动力市场和公共预算对本地居民产生影响，然而这些影响渠道通常被分开研究。我们在一个包含搜寻与匹配摩擦、技能差异导致的累进劳动税、资本税以及公共物品的一般均衡模型中综合考虑了这两种影响，并根据17个经合组织国家2015至2019年的数据对模型进行了校准。移民流入量增加一个百分点对本地居民的福利影响因国家而异，其方向和程度取决于移民的技能构成、移民与本地居民的工资差距、本地失业率以及税收的累进性。对于技能构成与2019至2024年移民群体相匹配的情况，在17个经济体中有14个经济体的本地居民福利得到了提升；在大多数情况下，不同技能群体的居民都从中受益，尽管受益途径各不相同。低技能本地居民主要通过就业机会的增加以及与高技能移民的互补性获得了更高的税前收入；而高技能本地居民则主要受益于较低的劳动税负担。因此，评估移民政策需要同时考虑劳动力市场和财政方面的影响渠道——仅单独分析其中一个渠道无法全面了解谁会受益以及为何会受益。。研究方法：均衡模型、模型校准。</p>
+  </article>
+<article class="card">
+    <h2>5. Probability-Weighting Functions for Normal Tempered-Stable Laws: Orthogonal Channels and Information-Theoretic Indices</h2>
+    <p class="meta">来源：arxiv｜作者：Akash Deep, Bhathiya Divelgama, A. Alexandre Trindade, W. Brent Lindquist, Svetlozar T. Rachev</p>
+    <p class="meta">期刊/来源：arXiv｜发表：2026-10-19｜引用数：0</p>
+    <p class="meta">主题：Economics, Finance</p>
+    <p><a href="http://arxiv.org/abs/2610.26746v1" target="_blank" rel="noopener noreferrer">链接</a></p>
+    <p class="summary"><strong>中文摘要（自动生成）:</strong> 【金融经济学】。论文标题：Probability-Weighting Functions for Normal Tempered-Stable Laws: Orthogonal Channels and Information-Theoretic Indices。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：模型校准。</p>
+  </article>
+<article class="card">
+    <h2>6. Synthetic Control: An Exact Geometric Formulation</h2>
+    <p class="meta">来源：arxiv｜作者：Alberto Abadie, Yucheng Shang</p>
+    <p class="meta">期刊/来源：arXiv｜发表：2026-10-19｜引用数：0</p>
+    <p class="meta">主题：Economics, Finance</p>
+    <p><a href="http://arxiv.org/abs/2610.26576v1" target="_blank" rel="noopener noreferrer">链接</a></p>
+    <p class="summary"><strong>中文摘要（自动生成）:</strong> 【金融经济学】合成控制方法将受处理单元与一组供体单元的凸组合进行匹配，其中每个预测因子的相对重要性由权重矩阵$V$决定。在标准实践中，$V$是通过一个非凸的双层优化问题来确定的，该问题缺乏收敛性保证。本文为合成控制估计量推导出了一个精确的几何解。对于任何正定矩阵$V$，合成控制可以通过将受处理单元的预测因子投影到在$V$加权范数下的供体预测因子的凸包上来获得。随着$V$在其候选集合中的变化，这些投影会描绘出所有可能的合成控制集合。我们对这个集合进行了描述：当受处理单元的预测因子向量位于供体预测因子的凸包之外时，在一般正定矩阵$V$下，可获得的合成控制集合是那些从受处理单元能够看到的供体凸包的各个面的并集；对于对角线矩阵$V$，可以通过符号兼容性测试来确定可获得的集合；当受处理单元位于凸包内部时，则存在精确的匹配结果。我们选择使得受处理单元与每个参与合成控制的供体之间的匹配差异平均值最小的那个匹配方案。这些描述方法用一种快速的枚举方法替代了双层优化，该方法能够保证在所有可能的合成控制集合中找到全局最优解。此外，用于选择供体权重的Karush-Kuhn-Tucker条件可以确定出一组正定的预测因子...。研究方法：合成控制法、优化方法。</p>
+  </article>
+<article class="card">
+    <h2>7. Promotion Signaling and Signal Jamming: An Analysis of Job Title Inflation</h2>
+    <p class="meta">来源：arxiv｜作者：Yi Chen, Michael Waldman, Zhenda Yin</p>
+    <p class="meta">期刊/来源：arXiv｜发表：2026-10-19｜引用数：0</p>
+    <p class="meta">主题：Economics, Finance</p>
+    <p><a href="http://arxiv.org/abs/2610.26494v1" target="_blank" rel="noopener noreferrer">链接</a></p>
+    <p class="summary"><strong>中文摘要（自动生成）:</strong> 【货币政策与宏观经济】自Waldman（1984年）的研究以来，人们普遍认识到晋升在劳动力市场中的重要作用之一在于，晋升能够作为劳动者高能力的信号。在本文中，我们探讨了一种日益普遍的现象——职位头衔膨胀（job title inflation），这种现象实际上起到了干扰信号传递的作用，从而降低了晋升所具有的信息传递价值。首先，我们构建了一个两期模型，分析了职位头衔膨胀如何在均衡状态下产生，并解释了它为何能够提升社会福利：一方面是因为劳动者本身重视那些听起来令人印象深刻的职位头衔；另一方面是因为这种做法减少了因信息传递不透明而导致的就业配置效率低下。随后，我们在模型中加入了年轻劳动者关于人力资本积累的投资决策因素，发现在这种情况下职位头衔膨胀反而可能降低社会福利。也就是说，当晋升及其带来的工资增长成为劳动者投资人力资本的重要激励时，即使这种做法降低了整体效率和工作者的预期效用，职位头衔膨胀的现象仍可能持续存在。
+
+接下来，我们考虑了三种扩展情况：（i）劳动者流动率较高的环境；（ii）工资透明度较高的环境；（iii）劳动者可见性存在差异的环境。除了探讨职位头衔膨胀如何作为一种均衡现象出现（这种现象可能提升...。研究方法：均衡模型。</p>
+  </article>
+<article class="card">
+    <h2>8. Regime-Aware Interpretable Ranking for Sector Rotation</h2>
+    <p class="meta">来源：arxiv｜作者：Kelvin J. L. Koa, Ziling Liu, Xinyang Li, Shuowei Feng, Ruoyu Liang</p>
+    <p class="meta">期刊/来源：arXiv｜发表：2026-10-19｜引用数：0</p>
+    <p class="meta">主题：Economics, Finance</p>
+    <p><a href="http://arxiv.org/abs/2610.26456v1" target="_blank" rel="noopener noreferrer">链接</a></p>
+    <p class="summary"><strong>中文摘要（自动生成）:</strong> 【金融经济学】行业轮动是基准相对投资组合管理中常见的决策方式，投资组合经理会根据各行业的表现来决定增持或减持的幅度。我们将这一任务定义为：根据行业未来预期风险调整后的主动表现（通过行业与基准指数的夏普比率来衡量）对行业进行排序。这样的排序应能够保留时间信息，用经济上易于理解的信号特征来表达模型输出结果，同时考虑宏观经济环境变化对信号相关性的影响，并捕捉行业之间的相互依赖关系。我们提出了RegimeRank这一可解释的行业排序模型，该模型通过专家定义的时间特征来表示基本面和技术面信号，利用交叉注意力机制将这些特征与学习到的宏观经济因素相结合，并通过自注意力机制来模拟行业间的相互依赖关系。预期梯度分析可以识别出各个信号转换对排序结果的贡献，而宏观经济和行业间注意力机制则有助于诊断模型中的条件作用和关系结构。我们在2002年至2024年的标准普尔500指数周数据上对RegimeRank进行了评估，采用组合净化交叉验证方法进行测试，结果显示该模型在多个排序指标上均优于传统的排序方法和机器学习基线模型。消融实验验证了潜在宏观经济因素、市场环境条件以及行业间建模机制的贡献作用，而归因分析和注意力分析则揭示...。</p>
+  </article>
+<article class="card">
+    <h2>9. Almost Uniform Bias Correction for Persistent Panel Local Projections</h2>
+    <p class="meta">来源：arxiv｜作者：Geert Dhaene, Arturas Juodis</p>
+    <p class="meta">期刊/来源：arXiv｜发表：2026-10-19｜引用数：0</p>
+    <p class="meta">主题：Economics, Finance</p>
+    <p><a href="http://arxiv.org/abs/2610.26427v1" target="_blank" rel="noopener noreferrer">链接</a></p>
+    <p class="summary"><strong>中文摘要（自动生成）:</strong> 📌 研究问题：本文研究面板局部投影中固定效应估计器的性质及各种偏差修正方法，特别是在包含自回归控制变量的持续性面板设置下。
+
+🔬 研究方法：通过分析偏差和方差，并允许目标和控制变量均具有持续性，来评估固定效应估计器及各种偏差修正方法。
+
+📊 核心发现：理论发现表明半面板刀切法在非平稳设置下具有理想的偏差减少特性；建议实证研究人员使用偏差修正调整后的标准误来处理抽样不确定性。
+
+💡 应用价值：为政策分析中的脉冲响应估计提供更优的偏差修正方法，帮助实证研究者正确处理抽样不确定性。</p>
+  </article>
+<article class="card">
+    <h2>10. A Model of U.S. Monetary Policy and the Global Financial Cycle</h2>
+    <p class="meta">来源：nber｜作者：Rohan Kekre, Moritz Lenel</p>
+    <p class="meta">期刊/来源：NBER Working Papers｜发表：｜引用数：0</p>
+    <p class="meta">主题：Economics, Finance</p>
+    <p><a href="https://www.nber.org/papers/w35902#fromrss" target="_blank" rel="noopener noreferrer">链接</a></p>
+    <p class="summary"><strong>中文摘要（自动生成）:</strong> 【货币政策与宏观经济】我们提出了一个一般均衡模型，在该模型中，美国的货币政策通过重新评估存在货币错配的套利者的财富来影响全球风险溢价。假设这些套利者的投资组合具有均值-方差效率，那么他们必然会做空美元。因此，美国货币政策的紧缩会侵蚀套利者的净资产，并推高全球风险价格。我们利用这一机制来解释美国货币政策对国际资产价格的影响，并量化了相关的宏观经济溢出效应以及国外政策反应的作用。在美元利率可能上升的未来情境下，套利者的美元融资需求以及美国货币政策的溢出效应将会减弱。。研究方法：均衡模型。</p>
+  </article>
+<article class="card">
+    <h2>11. SHADE: Shrinkage via Halted Alpha-stable Denoising for Heavy-Tailed Probabilistic Time Series Forecasting</h2>
+    <p class="meta">来源：arxiv｜作者：Jiahao Weng, Jiyu Liu</p>
+    <p class="meta">期刊/来源：arXiv｜发表：2026-10-19｜引用数：0</p>
+    <p class="meta">主题：Economics, Finance</p>
+    <p><a href="http://arxiv.org/abs/2610.26358v1" target="_blank" rel="noopener noreferrer">链接</a></p>
+    <p class="summary"><strong>中文摘要（自动生成）:</strong> 【金融经济学】时间序列观测数据极易受到噪声的影响，许多现实世界中的时间序列数据都具有较低的信噪比（SNR），同时还伴随着重尾分布和时变干扰。当使用高斯扩散模型进行预测时，如果将模型完全还原到无噪声状态，可能会导致预测分布过于狭窄且预测结果过于自信。我们提出了SHADE（SHADE：一种基于α-稳定Lévy扩散的预测算法），该算法在非零深度下进行预测，使得残差稳定核能够起到分布层面的收缩作用。通过将模型停止风险分解为平滑偏差和估计误差，我们开发了一种能够根据数据规模自动调整收缩参数的机制，以确定最优的收缩量τ*；同时，该算法还采用了一种无需显式噪声标签的上下文自适应停止策略。在α≤1.3的极端重尾情况下，该算法的性能尤为突出：在各种合成噪声环境中，预测的中位数CRPS（Categorical Relative Performance Score）提高了21.7%，同时负对数似然（NLL）显著降低；加密货币和外汇数据进一步证明了该算法在真实数据中的尾部校正能力。在接近轻尾分布或信噪比较高的数据情况下，该算法会自动转换为高斯扩散模型或完全去噪模式。总体而言，SHADE的预测误差与现有强基线模型相当，...。研究方法：模型校准。</p>
+  </article>
+<article class="card">
+    <h2>12. The Control Layer Behind Rule-Following Agents Trading Across Market Conditions</h2>
+    <p class="meta">来源：arxiv｜作者：Saad Naja, Nasser Odtallah, Jake Van-Praag, Sarah May</p>
+    <p class="meta">期刊/来源：arXiv｜发表：2026-10-19｜引用数：0</p>
+    <p class="meta">主题：Economics, Finance</p>
+    <p><a href="http://arxiv.org/abs/2610.26324v1" target="_blank" rel="noopener noreferrer">链接</a></p>
+    <p class="summary"><strong>中文摘要（自动生成）:</strong> 【金融经济学】交易纪律常常让投资者失败。我们的研究测试了四种人工智能交易代理是否遵循其既定的交易策略和风险规则。在赋予代理真正的自主权或资金之前，我们向交易者提供了相关证据以及一个评估工具包，以帮助他们区分交易结果中的运气成分与规则执行情况。研究分析了2026年2月12日至8月27日期间在同一资产类别和执行条件下产生的2,627笔已完成交易。其中大部分交易是使用实时价格进行模拟的，交易手续费为0.09%；仅有18%的交易涉及真实的超流动性订单。每笔交易都明确了具体的交易策略、止损点和目标价格，且每个代理最多只能同时持有5笔未平仓头寸。最终，扣除手续费后，所有代理的整体交易结果均为净盈利。所有四种代理的规则执行率均较高，即便是那些未能盈利的代理也不例外。盈利能力反映了代理实际盈利次数与其盈亏平衡点的关系。系统默认采用了类似机构投资者的风险控制机制，能够在市场下跌29%后实现止损并恢复盈利（尽管存在个别例外情况）。所有代理都严格遵循了既定的交易纪律：他们将97.5%的潜在亏损控制在预设的止损范围内，且大部分亏损都在预设的价位被平仓。即使在市场波动较大的时期，这些代理的风险控制能力也保持稳定。在24...。</p>
+  </article>
+</body>
+</html>
