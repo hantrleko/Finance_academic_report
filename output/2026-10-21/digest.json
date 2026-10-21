@@ -1,0 +1,251 @@
+{
+  "date": "2026-10-21",
+  "count": 12,
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "latest_updated": true,
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（8 篇）、公司金融（2 篇）、绿色金融与可持续发展（1 篇）。方法上以回归分析、优化方法为主。来源分布：arXiv（8 篇）、Semantic Scholar（3 篇）、OpenAlex（1 篇）。其中 1 篇命中顶级期刊白名单。",
+  "insights": {},
+  "papers": [
+    {
+      "title": "Visual Trend Analysis of E-Commerce Thumbnails Using Parallel Computing for Image Big Data",
+      "authors": [
+        "Muhamad Tio Ariyanto",
+        "Haris Maulana",
+        "Muhammad Rifky  Afandi",
+        "Eddy Prasetyo Nugroho"
+      ],
+      "venue": "Komputika Jurnal Sistem Komputer",
+      "published_date": "2026-10-20",
+      "doi_url": "https://doi.org/10.34010/komputika.v15i1.19194",
+      "openalex_url": "https://openalex.org/W7164555110",
+      "cited_by_count": 0,
+      "abstract": "The rapid growth of e-commerce platforms has led to the massive accumulation of product thumbnail images, making manual visual analysis inefficient and conventional sequential processing methods insufficient to handle such data volumes in a timely manner. Given the crucial role of thumbnails in influencing consumer purchasing decisions, computational strategies are required to accelerate the analysis process without compromising classification accuracy. This study applies a parallel computing approach combined with deep learning to improve the efficiency of visual trend analysis using two primary datasets: 2,608 images for model training and validation, and 40,254 images for large-scale inference. The proposed framework integrates parallel image preprocessing on multi-core CPUs, the development of a Convolutional Neural Network based on MobileNetV2 using a transfer learning approach, and batch-based parallel inference on GPUs. The developed model demonstrates stable and convergent performance, achieving a training accuracy of 0.85 and a validation accuracy of 0.83. Efficiency testing during the preprocessing stage shows that the parallel approach is more effective under large data workloads, providing a speed improvement of up to 1.58×. During the inference stage, predictions for 500 images can be completed in 1.84 seconds compared to 41.76 seconds using the sequential method, resulting in a significant computational speedup of 22.8×. Big data analysis reveals a polarization of visual strategies, where technology product categories are dominated by infographic-style thumbnails, fashion categories rely heavily on human model representations, and household product categories emphasize clean product visuals supported by promotional elements. This study concludes that the application of parallel computing significantly enhances the efficiency and scalability of visual big data analysis in e-commerce and supports more operational and strategic mapping of visual trends.",
+      "summary_zh": "【金融经济学】电子商务平台的快速发展导致了大量产品缩略图的积累，这使得手动视觉分析变得效率低下，传统的顺序处理方法也无法及时处理如此庞大的数据量。鉴于缩略图在影响消费者购买决策中的关键作用，需要采用计算策略来加速分析过程，同时不牺牲分类的准确性。本研究采用并行计算技术与深度学习相结合的方法，利用两个主要数据集来提高视觉趋势分析的效率：2,608张图像用于模型训练和验证，40,254张图像用于大规模推理。所提出的框架整合了多核CPU上的并行图像预处理、基于MobileNetV2的卷积神经网络（通过迁移学习方法实现），以及GPU上的批量并行推理。该模型表现出稳定且收敛的性能，训练准确率为0.85，验证准确率为0.83。在预处理阶段的效率测试表明，在处理大规模数据时并行方法更为有效，速度提升了高达1.58倍。在推理阶段，500张图像的预测处理时间仅需1.84秒，而顺序方法则需要41.76秒，计算速度提升了22.8倍。大数据分析揭示了视觉策略的差异化：技术类产品类别主要使用信息图风格的缩略图；时尚类产品类别高度依赖人工制作的模型图像；而家居产品类别则强调清晰的产品视觉效果，并辅以促销元素。研究结论表明...。研究方法：深度学习、神经网络。",
+      "topics": [
+        "Computer science",
+        "Thumbnail",
+        "Big data",
+        "Scalability",
+        "Preprocessor"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Optimal Incentive-Compatible Assignments with Endogenous School Priorities",
+      "authors": [
+        "Federico Echenique",
+        "Juan S. Pereyra"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-20",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.28582v1",
+      "cited_by_count": 0,
+      "abstract": "We study whether a planner can favor students at schools they rank more highly while preserving truthful reporting. The standard implementation of the deferred acceptance (DA) algorithm is typically not the solution. With interior cutoffs, DA with multiple tie-breaking (DA-MTB) solves the planner's optimization problem if and only if the planner's payoff from a school assignment is independent of the students' preferences. This is typically not the case, and strict incentive compatibility under DA-MTB leaves room for improvement via preference-dependent priority adjustments. We characterize optimal rank-dependent cutoff adjustments in a two-school model and show that, in a many-school environment, near-optimal approximately incentive-compatible assignments can be chosen with small support (so each type of student may only attend a small number of schools).",
+      "summary_zh": "【金融经济学】我们研究了在保持信息真实性的前提下，规划者是否能够优先考虑那些在学校排名较高的学生。标准实现的延迟录取（Deferred Acceptance, DA）算法通常并非最佳解决方案。通过引入内部截止条件（internal cutoffs），当规划者从学校分配中获得的收益与学生的偏好无关时，带有多重平局处理机制的延迟录取算法（DA-MTB）才能解决规划者的优化问题。然而实际情况往往并非如此，因此严格遵循DA-MTB的激励相容性要求仍有改进空间——可以通过根据学生偏好调整优先级来实现更优的分配方案。我们在一个包含两所学校的模型中分析了最优的、基于排名变化的截止条件调整策略，并证明在多所学校的环境中，即使支持率较低（即每种类型的学生可能只能就读于少数几所学校），仍可以选择近似最优且具有激励相容性的分配结果。。研究方法：优化方法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "OptScientist: Automated Discovery of Optimization Laws",
+      "authors": [
+        "Ma ZhenYao",
+        "Yue Liang",
+        "Jian-Qiao Zhu"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-20",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.28562v1",
+      "cited_by_count": 0,
+      "abstract": "Many scientific phenomena are best understood as outcomes of underlying optimization problems, yet automated scientific discovery has largely focused on recovering equations that describe observed input-output patterns. We introduce OptScientist, a novel automated framework for discovering compact symbolic optimization laws directly from data. OptScientist comprises (i) a model that infers symbolic optimization problems by first learning to represent data as an optimization problem and then extracting its symbolic form, and (ii) an LLM agentic system embedding the model in a discovery process that integrates theoretical priors from scientific literature, discovers candidate laws, abstracts their underlying mechanisms, and suggests new data to collect. We first evaluate OptScientist on OptFeynman, a novel benchmark of 99 physics-derived optimization problems, where OptScientist recovers ground-truth laws for over 80% of the problems and remains robust to noisy contextual information, while substantially outperforming machine-learning, symbolic, and LLM-based model-discovery baselines. On human risky choice and central-bank monetary policy, OptScientist discovers compact symbolic optimization laws that achieve held-out predictive performance competitive with leading baselines, while using few parameters and substantially fewer tokens than LLM baselines. Overall, OptScientist extends automated scientific discovery to uncovering optimization laws that generate observed phenomena, enabling automated theory building across the physical, biological, behavioral, and social sciences.",
+      "summary_zh": "【金融经济学】许多科学现象本质上可以理解为潜在优化问题的结果，然而自动化科学发现至今主要侧重于提取描述观测到的输入-输出模式的方程式。我们提出了OptScientist这一新型自动化框架，它能够直接从数据中发现简洁的符号化优化规律。OptScientist包括两部分：（i）一个模型，该模型首先学习将数据表示为优化问题，进而提取其符号形式；（ii）一个基于大型语言模型（LLM）的智能系统，该系统将模型融入发现过程中，整合来自科学文献的理论先验知识，发现候选规律，抽象其背后的机制，并建议收集新的数据。我们首先在OptFeynman这一包含99个物理相关优化问题的新基准测试中评估了OptScientist的性能。结果表明，OptScientist成功恢复了超过80%问题的真实优化规律，并且对带有噪声的背景信息具有很强的鲁棒性，同时显著优于基于机器学习、符号化方法或LLM的模型发现工具。在人类风险决策和中央银行货币政策领域，OptScientist发现的符号化优化规律在预测能力上可与领先方法相媲美，且所需参数数量远少于LLM基线模型，使用的计算资源（即“令牌”数量）也大幅减少。总体而言，OptScie...。研究方法：优化方法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Board Membership Diversity and Market Value of Listed Consumer Goods Firms in Nigeria.",
+      "authors": [
+        "Mayen Nsima Umoffong",
+        "S. Okpo",
+        "D. Akpan"
+      ],
+      "venue": "SIAR-Global Journal of Economics Finance & Accounting",
+      "published_date": "2026-10-18",
+      "doi_url": "https://doi.org/10.66694/siar.gjefa20264002",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:293751795",
+      "cited_by_count": 0,
+      "abstract": "The composition and diversity of firms’ boards is crucial in firms’ financial performance. This \nstems from the fact that the right combination of board membership is an indication of the right \ndecisions and increased market value. This study was conducted to investigate whether the \ndiversity of board membership has any relationship with the market value of consumer goods \nfirms in Nigeria. The independent variable of the study was diversity of board membership which \nwas measured by institutional membership, foreign membership, membership gender diversity, \nindependent membership and board financial expertise; while the dependent variable was market \nvalue, and was proxied by market capitalisation. The population of the study comprised of \nseventeen (17) consumer goods firms in Nigeria, from which a sample of eight (8) was selected. \nThe study adopted ex post facto research design as data for the study were obtained from \nsecondary sources through published annual reports and accounts of the sampled firms from 2015 \nto 2024. The data obtained were analysed with descriptive statistics, correlation and panel \nregression models using the SPSS version 20 statistical packages. The findings of the study \nrevealed that institutional membership, gender diversity, independent membership of the board \nand board financial expertise have significant positive relationships with the market capitalisation, \nindicating that increase in these variables will lead to increase in the market value of consumer \ngoods firms in Nigeria. However, foreign membership had negative relationship with market \ncapitalisation of consumer goods firms in Nigeria. Consequently, it was concluded that diversity \nof board membership significantly influences the market value of consumer goods firms in \nNigeria. It was therefore recommended amongst others, that institutional investors should strive \nto nominate competent members to represent them in the board.",
+      "summary_zh": "【公司金融】企业董事会的构成与多样性对其财务表现至关重要。这是因为合适的董事会成员组合能够确保企业做出正确的决策，并提升企业的市场价值。本研究旨在探讨董事会成员的多样性是否与尼日利亚消费品企业的市场价值之间存在关联。研究的自变量为董事会成员的多样性，具体衡量指标包括机构背景成员、外籍成员占比、性别多样性、独立董事比例以及董事会的财务专业能力；因变量为市场价值，通过市值来表示。研究对象为尼日利亚的17家消费品企业，最终选取了8家作为样本。研究采用事后研究方法，数据来源于2015至2024年间这些企业的公开年度报告和财务报表等二手资料。数据分析采用了描述性统计、相关性分析以及面板回归模型（SPSS 20统计软件）。研究结果表明，机构背景成员、性别多样性、独立董事比例以及董事会的财务专业能力与市值之间存在显著的正相关关系，说明这些因素的提升将有助于提升尼日利亚消费品企业的市场价值；然而，外籍成员占比与市值呈负相关。因此可以得出结论：董事会成员的多样性对尼日利亚消费品企业的市场价值具有显著影响。研究建议机构投资者应努力提名具备专业能力的成员加入董事会。。研究方法：回归分析。",
+      "topics": [
+        "Business",
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "CEO\n Reputation and Corporate Sustainability: International Evidence",
+      "authors": [
+        "Zhong-Xue Wu",
+        "Yilmaz Guney",
+        "P. Andrikopoulos"
+      ],
+      "venue": "International Journal of Finance & Economics",
+      "published_date": "2026-10-14",
+      "doi_url": "https://doi.org/10.1002/ijfe.70316",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:293051445",
+      "cited_by_count": 0,
+      "abstract": "Using a sample of 7107 unique firms across 41 countries from 2002 to 2022, we examined whether CEO reputation influences corporate sustainability performance. Consistent with stakeholder theory, CEO reputation is found to be positively associated with sustainability performance. This level of increased sustainability engagement is also positively related to firm value, indicating that it is value‐enhancing rather than inefficient. Moreover, CEO power strengthens the reputation‐sustainability relationship, whereas strong corporate governance weakens it. The association is weaker in countries characterised by high power distance and strong institutional environments, but stronger in cultures with greater masculinity. In economic terms, a one‐standard‐deviation increase in CEO reputation is associated with a 2.63% increase in corporate sustainability performance. The findings remain robust across machine‐learning‐based specifications, propensity‐score‐matched difference‐in‐differences analyses, and additional tests addressing endogeneity concerns. The study contributes to the literature on executive reputation and corporate sustainability and has important implications for corporate boards, regulators, and policymakers.",
+      "summary_zh": "【绿色金融与可持续发展】本研究选取了2002至2022年间来自41个国家的7107家不同企业的样本，探讨了首席执行官（CEO）的声誉是否会影响企业的可持续发展绩效。研究结果与利益相关者理论一致，发现CEO的声誉与企业的可持续发展绩效呈正相关。这种提升的可持续发展表现同样与企业价值正相关，表明这种行为能够增加企业价值而非降低效率。此外，CEO的权力会增强声誉与可持续发展之间的正相关关系，而强大的公司治理结构则会削弱这种关系。在权力距离较大且制度环境较为完善的国家中，这种相关性较弱；而在男性化特征较强的文化背景下，这种相关性则更为显著。从经济角度来看，CEO声誉每提高一个标准差，企业的可持续发展绩效就会提升2.63%。这些发现在不同基于机器学习的模型、倾向得分匹配的差异分析法以及针对内生性问题的额外测试中均具有稳定性。本研究为关于高管声誉与企业可持续发展的文献做出了贡献，并对企业董事会、监管机构和政策制定者具有重要的启示意义。。",
+      "topics": [
+        "Business",
+        "Environmental Science",
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Overlapping Reserves without a Common Priority: Theory and an Application to School Choice in Chile",
+      "authors": [
+        "Battal Doğan",
+        "Kenzo Imamura",
+        "M. Bumin Yenmez"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-20",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.28471v1",
+      "cited_by_count": 0,
+      "abstract": "We study matching markets with overlapping reserves governed by heterogeneous priorities. When applicants qualify for multiple reserves, how they are routed can affect reserve utilization and which applicants are admitted. We introduce classify-and-rank choice rules that yield strategy-proof deferred acceptance mechanisms satisfying maximum reserve utilization and priority-respect. We axiomatically characterize our mechanism's admission outcomes for any given classification and reserve order. With two reserve categories, we provide a foundation for the reserve order and establish its distributional implications for access across eligibility groups. Using nine cycles of Chilean school admissions, which feature such reserves, we document reserve-utilization failures under the deployed mechanism and show that their frequency depends sharply on the reserve order. We show how our mechanism can be adapted to Chile's institutional setting to prevent such failures. Under this alternative mechanism, the reserve order generates a distributional pattern across eligibility groups, consistent with our theory.",
+      "summary_zh": "【金融经济学】我们研究了具有重叠储备名额的匹配市场，这些储备名额的分配受到不同优先级规则的约束。当申请者符合多个储备名额的资格时，他们的分配方式会影响到储备名额的利用率以及最终被录取的申请者。我们提出了一种“分类排序”选择规则，该规则能够实现策略防御性的延迟录取机制，同时确保最大程度的储备名额利用率和对优先级的尊重。我们通过公理化方法描述了该机制在任意给定分类和储备名额分配顺序下的录取结果。以智利学校招生为例（该招生过程存在此类储备名额安排），我们记录了实际运行机制下出现的储备名额利用效率低下现象，并发现这种现象的频率显著受到储备名额分配顺序的影响。我们还展示了如何根据智利的制度环境对这一机制进行调整，以防止此类问题的发生。在这种改进后的机制下，储备名额的分配顺序能够产生符合我们理论预测的、在不同资格群体之间的公平分配结果。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Entry, Exit, and Technological Progress in Markov-Perfect Duopoly",
+      "authors": [
+        "Jaap H. Abbring",
+        "Jeffrey R. Campbell",
+        "Nan Yang"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-20",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.28440v1",
+      "cited_by_count": 0,
+      "abstract": "This paper establishes the existence and essential uniqueness of an intuitively refined Markov-perfect equilibrium in a duopoly game with sunk costs, barriers to entry, firm-specific technological progress, and irreversible exit. We develop an algorithm that quickly computes the equilibrium by solving for fixed points of a finite sequence of auxiliary contraction mappings, which we label Fake Backward Induction. We illustrate the game's practical value with a quantitative analysis of competition policy in a stochastically growing market with firms idiosyncratically learning by aging. Computing one equilibrium of this example takes 10.2 seconds on one Apple M5 Pro core.",
+      "summary_zh": "【金融经济学】本文证明了在存在沉没成本、进入壁垒、企业特定技术进步以及不可逆退出机制的双寡头博弈中，一种直观改进的马尔可夫完美均衡的存在性及其本质唯一性。我们设计了一种算法，通过求解一系列辅助压缩映射的不动点来快速计算该均衡，该方法被我们称为“伪逆向归纳法”（Fake Backward Induction）。我们通过一个定量分析来说明该博弈的实际应用价值，该分析针对的是一个随机增长的市场环境，其中企业通过“老化”过程实现学习。在这个例子中，使用一台苹果M5 Pro处理器计算一个均衡所需的时间为10.2秒。。研究方法：随机过程、均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "The Scale of Universalization in Multiplicative Kantian Equilibrium",
+      "authors": [
+        "Igor Sloev",
+        "Gerasimos Lianos"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-20",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.28180v1",
+      "cited_by_count": 0,
+      "abstract": "Multiplicative Kantian equilibrium requires agents to evaluate whether they would prefer all players to change their actions by a common proportional factor. This note argues that such a counterfactual is not fully specified by the material payoff environment alone: one must also specify the scale in which proportional universalization is performed. Building on the Sher-Roemer discussion of strategic non-invariance, we characterize how a smooth monotone reparametrization of actions changes the multiplicative Kantian first-order condition. We then illustrate the issue in a simple two-country abatement problem. Universalizing physical abatement and universalizing abatement expenditures are both natural interpretations of \"doing one's part,\" but they lead to different Kantian outcomes, even though they describe the same material environment. The note also identifies special cases in which the interior first-order condition is representation-invariant, including common-exponent power transformations and symmetric profiles under identical transformations. The conclusion is constructive: applying multiplicative Kantian equilibrium to an economic environment requires specifying both the use of the Kantian criterion and the represented scale in which the Kantian counterfactual is evaluated.",
+      "summary_zh": "【金融经济学】乘法型康德均衡要求参与者判断他们是否希望所有参与者都按照一个共同的比例因子改变自己的行为。本文认为，这样的反事实情境并不能仅通过物质收益环境来完全确定：还需要明确比例性普遍化所采用的具体尺度。在借鉴Sher-Roemer关于战略不变性的研究基础上，我们分析了行为的平滑单调重新参数化如何改变乘法型康德第一阶条件。随后，我们通过一个简单的两国减排问题来说明这一现象。无论是普遍化物理减排措施还是普遍化减排支出，都是对“尽自己的一份力”的自然诠释；然而，尽管它们描述的是相同的物质环境，却会导致不同的康德均衡结果。本文还指出了某些特殊情况，在这些情况下内部第一阶条件具有表征不变性，包括具有相同指数的幂变换以及在进行相同变换时的对称性特征。结论具有建设性：将乘法型康德均衡应用于经济环境时，必须同时明确康德标准的适用范围以及评估康德反事实情境所依据的表示尺度。。研究方法：均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Where Has the Foreign Signal Gone?",
+      "authors": [
+        "Piyush Akimitsu",
+        "Ulrich Hounyo"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-20",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.28175v1",
+      "cited_by_count": 0,
+      "abstract": "We compare the relation between sentiment noise in the Twitter feed and losses for stocks of domestic and foreign firms. The mean quarterly domestic-foreign difference in the slope of next-quarter losses on measured noise is -1.40 (Newey-West t = -2.99). This slope is negative for 78 and 48 percent of the quarters for domestic and foreign stocks, respectively (block-bootstrap p = 0.016). Thus, this relationship is temporally more stable for domestic stocks. We use a noisy rational expectations model to explain these patterns through the composition of the contributor pool. The feeds for stocks of foreign firms have higher repeat-author concentration and a larger model-implied nonfundamental component than those for domestic firms. We interpret these differences through the producer-knowledge mismatch hypothesis. For foreign firms, the English-language contributor pool underrepresents the home-market investors who tend to possess informational advantages about them. Thus, the foreign signal is not gone but diluted.",
+      "summary_zh": "【金融经济学】我们研究了Twitter信息流中的情感噪声与国内外公司股票收益之间的关系。根据研究结果，衡量噪声后，国内外股票下一季度收益跌幅的季度平均差异为-1.40（Newey-West检验t值为-2.99）。在所有季度中，分别有78%和48%的国内股票和国外股票的收益跌幅斜率为负（基于块 Bootstrap 方法的p值为0.016）。因此，这种关系在时间上对国内股票更为稳定。我们采用了一个包含噪声因素的理性预期模型来解释这些现象，该模型考虑了信息来源的构成差异。国外公司的信息流中重复发文作者的比例较高，且模型预测的非基本面因素占比也更大。我们通过“生产者知识不匹配”假说来解释这些差异：对于国外公司而言，使用英语撰文的作者群体未能充分反映那些可能对其拥有更多信息的本国市场投资者。因此，国外公司的信息信号并未完全消失，而是被稀释了。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "A multiplier bootstrap score test for Tobit specification",
+      "authors": [
+        "Xuewen Li",
+        "Xiaojun Song",
+        "Xiaogang Wang",
+        "Feipeng Zhang"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-20",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.28169v1",
+      "cited_by_count": 0,
+      "abstract": "In this paper, we propose a simple score-based specification test for the Tobit regression model, implemented through a computationally efficient multiplier bootstrap. We test correct specification through the conditional moment restriction that the generalized Tobit residual has zero conditional mean, and construct a feasible score-based empirical process using the integrated conditional moments approach, conditioning on the estimated index so that no smoothing or tuning parameter is required. We derive a first-order uniform representation of the feasible process, showing how its limiting behavior is affected by maximum-likelihood estimation of the structural parameter, and obtain the asymptotic properties of the corresponding Kolmogorov--Smirnov statistic under the null, fixed alternatives, and a sequence of local alternatives. Since the limiting null distribution is non-pivotal, $p$-values are obtained from a multiplier bootstrap that mimics the first-order representation and therefore captures the parameter estimation uncertainty. Monte Carlo experiments, including an unknown-scale design, an index-visible/index-invisible power study, and comparisons with existing specification tests, confirm accurate size and competitive power across a range of designs and covariate dimensions. Two empirical applications further demonstrate the practical utility of our approach.",
+      "summary_zh": "【金融经济学】在本文中，我们提出了一种基于得分的简单规范检验方法，用于Tobit回归模型，该方法通过计算效率较高的乘数自助法（multiplier bootstrap）来实现。我们通过条件矩约束来检验模型的正确规范性——即广义Tobit残差的条件均值应为零，并利用积分条件矩方法（integrated conditional moments approach）构建了一个可行的基于得分的经验过程。该过程是在估计出的指数变量条件下进行的，因此无需任何平滑处理或调整参数。我们推导出了该可行过程的一阶均匀表示形式（first-order uniform representation），并分析了结构参数的最大似然估计对其极限行为的影响；同时，我们还得到了在原假设、固定替代假设以及一系列局部替代假设下，相应Kolmogorov–Smirnov统计量的渐近性质。由于极限原假设分布并非关键性分布（non-pivotal distribution），因此$p$值是通过模仿一阶均匀表示形式的乘数自助法获得的，从而能够准确反映参数估计的不确定性。蒙特卡洛实验（包括未知尺度设计、指数变量可见/不可见情况下的功效研究，以...。研究方法：回归分析、蒙特卡洛模拟、实验方法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Forward-Looking Financial Reporting Risk Screening in Saudi Listed Firms: Evidence from the Beneish M-Score and Explainable Machine Learning",
+      "authors": [
+        "Ibrahim M. Sweiti"
+      ],
+      "venue": "Journal of Economics, Finance and Accounting Studies",
+      "published_date": "2026-10-16",
+      "doi_url": "https://doi.org/10.32996/jefas.2026.8.10.3",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:293583501",
+      "cited_by_count": 0,
+      "abstract": "Most applications of the Beneish M-Score are contemporaneous: they screen financial statements after a reporting year has ended. This study asks whether the eight Beneish indicators measured in year t contain information about the following year's Beneish screening classification. The analysis uses a balanced panel of 66 Saudi listed non-financial firms from 2018 to 2025, yielding 528 annual financial statements and 462 M-Score observations for 2019-2025. Under the primary M > -1.78 rule, 66 of 462 firm-years (14.3%) generate a screening signal. On the untouched 2025 holdout, logistic regression achieves ROC-AUC = 0.718 and average precision = 0.371, while Random Forest achieves ROC-AUC = 0.684 and average precision = 0.406 and produces the higher precision and F1 at the pre-specified 0.50 decision-score threshold. A rolling-origin stability analysis across 2021-2025 uses the continuous current-year M-Score as the benchmark: pooled ROC-AUC is 0.537 for M_t, 0.661 for logistic regression, and 0.653 for Random Forest. Firm-cluster bootstrap inference indicates that both fitted models improve discrimination relative to M_t, whereas their difference is not statistically distinguishable. Unweighted refits produce similar ranking performance. SHAP identifies TATA as the leading Random Forest feature, followed by DEPI, AQI, and DSRI. The evidence supports explainable machine learning as a complementary prioritization tool rather than a calibrated fraud probability or a substitute for professional review.",
+      "summary_zh": "【公司金融】Beneish M-Score 的大多数应用都是在报告年度结束后进行的：它们会在该年度的财务报表发布后对其进行评估。本研究探讨了在年度 t 测量的八个 Beneish 指标是否能够预测下一年的 Beneish 评估结果。分析使用了 2018 至 2025 年间 66 家沙特上市的非金融企业的数据，共获得了 528 份年度财务报表和 462 个 M-Score 评分数据。根据主要的判断标准（M > -1.78），在 462 个企业年度中，有 66 个（占 14.3%）产生了评估信号。对于未纳入分析的 2025 年数据，逻辑回归模型的 ROC-AUC 为 0.718，平均精确度为 0.371；随机森林模型的 ROC-AUC 为 0.684，平均精确度为 0.406，并且在预先设定的 0.50 分数阈值下实现了更高的精确度和 F1 分数。通过对 2021 至 2025 年的数据进行滚动分析，以当年的连续 M-Score 评分作为基准，汇总后的 ROC-AUC 分别为：M_t 为 0.537，逻辑回归模型为 0.661，随机森林模型为 0.653。企业群体自助法（cluster boot...。研究方法：回归分析、模型校准、机器学习、随机森林。",
+      "topics": [
+        "Business",
+        "Economics",
+        "Computer Science"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Digital Nudge Effects in Optimal Stopping Games: Antagonistic Interactions in Layered Choice Architectures",
+      "authors": [
+        "Batisse Manhardt",
+        "Ja-Nae Duane"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-20",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.28154v1",
+      "cited_by_count": 0,
+      "abstract": "Digital nudges have become a prominent area of research in human-centered interaction, yet little is known about how they interact when deployed together. This study examines the individual and combined effects of anchoring, salience, and social proof digital nudges on stopping behavior and outcome quality in a sequential decision task. Using a 2^3 between-subjects factorial design grounded in the secretary problem (N = 181), we find that (1) an anchor nudge significantly increased exploration rather than constraining it (b = 1.207, p = .017); (2) the salience nudge produced the smallest effect of any condition; and (3) combining the anchor and social proof nudges produced the worst outcome quality of any condition ($181.83 vs. $192.21 for anchor-only), with outcome quality declining monotonically as nudge count increased. These findings provide the first controlled evidence for a digital nudge crowding-out effect with direct implications for the ethical design of digital interfaces.",
+      "summary_zh": "📌 研究问题：本研究考察了锚定、显著性和社会证明等数字助推在顺序决策任务中对停止行为和结果质量的个体及组合效应。\n\n🔬 研究方法：研究采用基于秘书问题的2^3组间因子设计，样本量为181人。\n\n📊 核心发现：锚定助推显著增加了探索而非限制了探索；显著性助推效应最小；锚定与社会证明的组合产生了最差的结果质量，且结果质量随助推数量增加而单调递减。\n\n💡 应用价值：研究提供了数字助推挤出效应的首个受控证据，直接影响了",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    }
+  ]
+}
