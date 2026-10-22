@@ -1,0 +1,269 @@
+{
+  "date": "2026-10-22",
+  "count": 12,
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "latest_updated": true,
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（8 篇）、资产定价（1 篇）、绿色金融与可持续发展（1 篇）。方法上以数值模拟、实验方法为主。来源分布：OpenAlex（6 篇）、arXiv（4 篇）、Semantic Scholar（2 篇）。其中 1 篇命中顶级期刊白名单。",
+  "insights": {},
+  "papers": [
+    {
+      "title": "Practical identifiability and parameter estimation of compartmental epidemiological models",
+      "authors": [
+        "Q. Y. Chen",
+        "Zoi Rapti",
+        "Yannis Drossinos",
+        "Jesús Cuevas–Maraver",
+        "George A. Kevrekidis"
+      ],
+      "venue": "Proceedings of the Royal Society A Mathematical Physical and Engineering Sciences",
+      "published_date": "2026-10-21",
+      "doi_url": "https://doi.org/10.1098/rspa.2025.1080",
+      "openalex_url": "https://openalex.org/W4400104319",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  Practical parameter identifiability in ODE-based epidemiological models is a known issue, yet one that merits further study. It is essentially ubiquitous owing to noise and errors in real data. In this study, to avoid uncertainty stemming from data of unknown quality, simulated data with added noise are used to investigate practical identifiability in two distinct epidemiological models. Particular emphasis is placed on the role of initial conditions, which are assumed unknown, except those that are directly measured. Instead of just focusing on one method of estimation, we use and compare results from various broadly used methods, including maximum likelihood and Markov chain Monte Carlo (MCMC) estimation. Among other findings, our analysis revealed that the MCMC estimator is overall more robust than the point estimators considered. Its estimates and predictions are improved when the initial conditions of certain compartments are fixed so that the model becomes globally identifiable. For the point estimators and as concerns the question of whether fixing or fitting the initial conditions that are not directly measured improves parameter estimates, we find that the answer is model-dependent. Specifically, in the standard susceptible-exposed-infected-recovered (SEIR) model, fixing the initial condition for the susceptible population S(0) improved parameter estimates, while this was not true when fixing the initial condition of the asymptomatic population in a more involved model. Our study corroborates the change in quality of parameter estimates upon usage of pre-peak or post-peak time series. Finally, our examples suggest that in the presence of significantly noisy data, the value of structural identifiability is moot.",
+      "summary_zh": "📌 研究问题：ODE流行病学模型中的实际参数可识别性是一个普遍存在的问题，主要源于真实数据中的噪声和误差，且初始条件通常未知。\n\n🔬 研究方法：研究利用添加了噪声的模拟数据来分析两种不同流行病学模型中的实际可识别性，并对比了最大似然估计和马尔可夫链蒙特卡洛（MCMC）等多种估计方法。\n\n📊 核心发现：MCMC估计器整体上比点估计器更具鲁棒性，且在固定部分初始条件以实现全局可识别性时表现更佳；对于点估计器，固定未测量的初始条件是否改善参数估计取决于具体模型结构。\n\n💡 应用价值：该研究为在噪声数据环境下进行",
+      "topics": [
+        "Identifiability",
+        "Estimation",
+        "Econometrics",
+        "Estimation theory",
+        "Computer science"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Contagion and escalation of rule violations",
+      "authors": [
+        "Lucas Molleman",
+        "Karlijn Hoyer",
+        "Gerben A. van Kleef",
+        "Christin Scholz",
+        "Jan Hausfeld"
+      ],
+      "venue": "Proceedings of the Royal Society B Biological Sciences",
+      "published_date": "2026-10-21",
+      "doi_url": "https://doi.org/10.1098/rspb.2026.1940",
+      "openalex_url": "https://openalex.org/W7113766963",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  Human societies rely on rules to coordinate behaviour, sustain cooperation and maintain social order. Yet compliance can be fragile when rules are weakly enforced and individuals observe others violating them. Prior research shows that rule violations and other antisocial behaviours can spread through social influence, but less is known about how the severity of violations shapes these dynamics. In many real-world settings, rule-breaking occurs in degrees, from minor infractions to major violations, and individuals may not only imitate others but sometimes exceed the violations they observe. Here, we combine simulations and a behavioural experiment (n = 750) to study how the magnitude of observed rule violations shapes subsequent violations, and how this can generate escalation dynamics. Our simulations show that when individuals occasionally escalate beyond observed violations, even rare escalation can trigger a rapid shift from widespread compliance to collective rule-breaking. In our pre-registered experiment, observing major violations strongly increased rule-breaking, especially when committed by socially close others. Observing minor violations prompted many participants to follow suit and a minority to escalate beyond the violations they observed. Parameterizing the simulations with these behavioural responses shows that such escalators can disproportionately undermine collective compliance. These results highlight how asymmetric responses to rule violations and rare escalatory behaviour can transform small deviations into large-scale breakdowns of rule compliance.",
+      "summary_zh": "【金融经济学】摘要  \n人类社会依赖规则来协调行为、维持合作与秩序。然而，当规则执行不力且人们目睹他人违反规则时，遵守规则的行为可能会变得脆弱。先前的研究表明，规则违规行为及其他反社会行为会通过社会影响传播开来，但关于违规行为的严重程度如何影响这种传播机制的研究尚不多。在许多现实情境中，规则违反行为具有不同程度的严重性，从轻微违规到严重违规都有；个体不仅可能模仿他人的行为，有时甚至会超越他们所观察到的违规行为。在本研究中，我们结合了模拟实验和行为实验（样本量n=750），探讨观察到的违规行为严重程度如何影响后续的违规行为，以及这种影响如何引发行为的升级。模拟结果显示，当个体偶尔超越所观察到的违规行为进行更严重的违规时，即便是罕见的升级行为也可能迅速导致普遍的规则遵守行为转变为集体性的规则违反。在预先设计的实验中，观察到严重违规行为会显著增加违规行为的发生率，尤其是当违规者与观察者具有密切的社会关系时；而观察到轻微违规行为则促使许多参与者效仿违规者，少数参与者甚至会超越他们所观察到的违规行为。通过将这些行为反应纳入模拟模型，我们发现这类“升级者”可能会对集体规则遵守行为造成不成比例的破坏。这些结...。研究方法：数值模拟、实验方法。",
+      "topics": [
+        "Economics",
+        "De-escalation",
+        "Computer science",
+        "Actuarial science",
+        "Psychology"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Memory Manipulation",
+      "authors": [
+        "Benson Tsz Kin Leung"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-21",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.29847v1",
+      "cited_by_count": 0,
+      "abstract": "We study persuasion that works through memory: a manipulator alters the probabilities with which a Bayesian decision-maker recalls the signals he has received. The decision-maker corrects for the elevated or reduced probabilities of recalling different signals, and this correction disciplines what manipulation can achieve. Manipulation cannot move the average posterior. It backfires on decision-makers with few memories, whose sparse recall is evidence against the favored state, yet it is effective on those with many, who can be led to arbitrarily confident beliefs in the wrong state. It thickens the right tail of the belief distribution and, under Poisson memory, lowers its hazard rate. In a monopoly pricing application, the seller manipulates memory retrieval at high prices, and manipulation in turn raises the optimal price. In a narrative persuasion application, memory manipulation reduces information provision and creates echo chambers.",
+      "summary_zh": "【金融经济学】我们研究了通过记忆起作用的说服机制：操纵者会改变贝叶斯决策者回忆所接收信息的概率。决策者会根据这些回忆概率的增减进行相应的调整，这种调整限制了操纵行为所能达到的效果。操纵行为无法改变决策者的平均后验概率分布。对于记忆能力较弱的决策者来说，这种操纵反而会适得其反——他们稀疏的回忆反而会成为支持对立观点的证据；而对于记忆能力较强的决策者而言，操纵者却能让他们对错误观点产生极度自信的信念。操纵行为会拉长信念分布的右侧尾部（即高概率区域），并在泊松记忆模型下降低信念分布的危险率（即错误信念发生的概率）。在垄断定价情境中，卖方通过操纵消费者的记忆来影响价格决策，从而推高商品价格；而在叙事说服场景中，记忆操纵会减少信息的传递，进而形成信息孤岛（即人们只接触与自己观点一致的信息）。。研究方法：贝叶斯方法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Lineage-Aware Search Control for LLM-Based Evolutionary Factor Mining",
+      "authors": [
+        "Xintong Liu",
+        "Chenkai Zhang",
+        "Yanzhao Ma",
+        "Peng Yang"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-21",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.29663v1",
+      "cited_by_count": 0,
+      "abstract": "Formulaic alpha factor mining searches for symbolic expressions that transform market data into predictive signals. Recent LLM-based evolutionary factor mining methods use large language models as semantic variation operators. Under the conventional LLM-EA paradigm, stochastic variation and fitness-based selection can leave the search weakly directed and concentrated around a narrow set of structurally similar factors. We argue that these limitations arise because current methods mainly organize search at the individual and population levels, leaving lineage-level control underused. A lineage connects successive factor variants through evolutionary descent. We propose LineageEvo, which uses lineage in two coupled forms of search control: (1) lineage-conditioned LLM variation, which distills Lineage-Scoped Search Experience into operator-specific priors and fuses them with global operator priors, providing persistent, lineage-relevant guidance for LLM generation; and (2) lineage-stratified search allocation, which balances factor quality against lineage concentration by distributing the search budget across lineages during evolutionary search. Together, these mechanisms make semantic variation more direction aware and prevent branches from dominating the evolution, thereby promoting the discovery of predictive and diverse factors. We evaluate LineageEvo on CSI 500 and S&P 500 in terms of factor predictiveness, portfolio performance, search efficiency, and lineage- and expression-level diversity. LineageEvo achieves the strongest predictive performance on both markets, while LSPS produces a more balanced lineage distribution and a structurally broader factor pool. The results support lineage as a useful intermediate unit for controlling LLM-based evolutionary factor search.",
+      "summary_zh": "【资产定价】公式化的阿尔法因子挖掘方法旨在寻找能够将市场数据转化为预测信号的符号表达式。近期基于大型语言模型（LLM）的进化因子挖掘方法将这类模型作为语义变异的运算符来使用。在传统的LLM-EA框架下，随机变异和基于适应度的选择机制可能导致搜索过程缺乏明确的方向性，并且主要集中在结构相似的因子集合上。我们认为这些局限性源于现有方法主要在个体和群体层面进行搜索组织，而忽略了在“谱系”（lineage）层面的控制作用。谱系通过进化过程将连续的因子变体连接起来。我们提出了LineageEvo算法，该算法通过两种相互关联的搜索控制机制来利用谱系信息：（1）基于谱系的LLM变异机制，它将特定谱系内的搜索经验转化为运算符特定的先验知识，并将其与全局运算符先验相结合，为LLM的生成提供持续的、与谱系相关的指导；（2）基于谱系的搜索资源分配机制，通过在进化搜索过程中将搜索资源分配给不同的谱系，从而在保证因子质量的同时避免某些谱系过度占据主导地位。这两种机制共同提升了语义变异的方向性，防止了某些特定分支在进化过程中占据主导地位，从而促进了具有预测能力和多样性的因子的发现。我们在CSI 500指数和S&P 50...。研究方法：大语言模型、随机过程。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "The Impact of Food Production, Agricultural Value Added, and Economic Growth on the Ecological Footprint in D8 Countries",
+      "authors": [
+        "Yasin Söğüt"
+      ],
+      "venue": "International Journal of Islamic Economics and Finance Studies",
+      "published_date": "2026-10-18",
+      "doi_url": "https://doi.org/10.54427/ijisef.1937353",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:293789578",
+      "cited_by_count": 0,
+      "abstract": "This study examines the impact of the food production index, agricultural value added and GDP per capita on the ecological footprint in the D8 countries (Bangladesh, Indonesia, Iran, Malaysia, Egypt, Nigeria, Pakistan and Türkiye) during the period 1990–2022. The study utilised a panel data approach; following descriptive statistics and tests for multicollinearity, the analysis process included the Breusch-Pagan LM and Pesaran LMadj tests for cross-sectional dependence, the Pesaran CADF unit root test for stationarity, the Delta test for homogeneity, and the Westerlund cointegration test to assess the presence of a long-run relationship. Long-run coefficients were analysed using the DOLSMG estimator, whilst causality relationships were examined using the Dumitrescu-Hurlin panel causality test. The findings indicate that, across the panel, the food production index, agricultural value added and GDP per capita increase the ecological footprint in a positive and statistically significant manner. Country-specific results, however, reveal that these relationships are not homogeneous and may manifest in different directions in some countries. Furthermore, bidirectional causality was identified between the ecological footprint and all variables. These results indicate that food production, agricultural value creation and economic growth in the D8 countries increase environmental pressure. Therefore, policymakers must support production and growth targets with policies focused on high resource efficiency, environmental friendliness and sustainable development.",
+      "summary_zh": "【金融经济学】本研究探讨了1990年至2022年间，食品生产指数、农业增加值及人均GDP对D8国家（孟加拉国、印度尼西亚、伊朗、马来西亚、埃及、尼日利亚、巴基斯坦和土耳其）生态足迹的影响。研究采用了面板数据分析方法；在进行了描述性统计和多重共线性检验后，分析过程包括Breusch-Pagan LM检验和Pesaran LMadj检验以评估变量间的横截面依赖性，Pesaran CADF单位根检验以判断数据的平稳性，Delta检验以检验数据的一致性，以及Westerlund协整检验以确定是否存在长期关系。长期系数通过DOLSMG估计量进行估计，而因果关系则通过Dumitrescu-Hurlin面板因果检验进行分析。研究结果表明，总体而言，食品生产指数、农业增加值及人均GDP对生态足迹具有正向且统计显著的促进作用。然而，各国具体情况显示这些关系并不一致，在某些国家中可能表现为不同的趋势。此外，研究发现生态足迹与所有变量之间存在双向因果关系。这些结果表明，D8国家的食品生产、农业价值创造及经济增长加剧了环境压力。因此，政策制定者必须通过制定注重资源高效利用、环境友好性和可持续发展的政策来支持生产和增长目标。。研究方法：面板数据、协整分析、横截面分析。",
+      "topics": [
+        "Economics",
+        "Environmental Science"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "International Evidence on the Relationship Between\n ESG\n Decoupling and Earnings Quality",
+      "authors": [
+        "Sally Ahmed",
+        "Yasser Eliwa",
+        "N. O'Sullivan"
+      ],
+      "venue": "International Journal of Finance & Economics",
+      "published_date": "2026-10-19",
+      "doi_url": "https://doi.org/10.1002/ijfe.70318",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:293821632",
+      "cited_by_count": 0,
+      "abstract": "This study examines the association between environmental, social, and governance (ESG) decoupling and earnings quality (EQ) using an international sample of firms over the period 2005–2024. ESG decoupling refers to the misalignment between firms' ESG disclosure and ESG performance. The results show that ESG decoupling is negatively associated with EQ, suggesting that greater divergence between what firms communicate about ESG and what they substantively achieve is linked to lower‐quality financial reporting. This finding is consistent with legitimacy theory, which distinguishes between symbolic and substantive organisational behaviour. Further analysis shows that the negative association is stronger in countries with weaker governance quality, indicating that the institutional environment shapes the extent to which ESG misalignment is associated with reporting quality. Additional tests distinguishing between the direction of misalignment reveal that greenwashing is negatively associated with EQ, whereas brownwashing is not significantly associated with EQ. Overall, the findings extend the literature by showing that ESG decoupling is relevant to both the credibility of sustainability reporting and financial reporting quality, and that this association varies across governance settings.",
+      "summary_zh": "【绿色金融与可持续发展】本研究利用2005至2024年间的国际企业样本，探讨了环境、社会和治理（ESG）脱节与收益质量（EQ）之间的关联。ESG脱节指的是企业ESG信息披露与其实际ESG表现之间的不一致性。研究结果表明，ESG脱节与收益质量呈负相关，即企业所宣称的ESG成果与其实际实现情况之间的差距越大，其财务报告的质量就越低。这一发现与合法性理论相吻合，该理论区分了企业的象征性行为与实质性行为。进一步分析显示，在治理质量较弱的国家中，这种负相关关系更为显著，表明制度环境影响了ESG信息失真与财务报告质量之间的关联程度。通过区分信息失真的不同方向，研究发现“漂绿”（greenwashing）行为与收益质量呈负相关，而“漂棕”（brownwashing）行为与收益质量之间则无明显关联。总体而言，本研究拓展了现有文献，表明ESG脱节不仅影响可持续性报告的公信力，也影响财务报告的质量，并且这种关联会因治理环境的不同而有所差异。。",
+      "topics": [
+        "Business",
+        "Environmental Science",
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Dynamics-informed deep learning for predicting extreme events",
+      "authors": [
+        "Eirini Katsidoniotaki",
+        "Themistoklis P. Sapsis"
+      ],
+      "venue": "Proceedings of the Royal Society A Mathematical Physical and Engineering Sciences",
+      "published_date": "2026-10-21",
+      "doi_url": "https://doi.org/10.1098/rspa.2026.0073",
+      "openalex_url": "https://openalex.org/W7135035213",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  Predicting extreme events in high-dimensional chaotic dynamical systems remains a fundamental challenge because these events are rare, intermittent and often driven by transient dynamical mechanisms that are difficult to identify from limited observations. We propose a fully data-driven framework for real-time forecasting of extreme events based on an interpretable, mechanism-aware precursor that tracks the transient instabilities preceding event onset. Specifically, we use the finite-time Lyapunov exponent (FTLE) as the precursor, computed directly from state snapshots through a reduced-order, equation-agnostic formulation. By restricting the instability dynamics to an adaptively evolving subspace spanned by optimal time-dependent (OTD) modes, the method substantially reduces the computational cost of classical FTLE evaluation while retaining the dominant transiently amplifying directions. The resulting FTLE sequence serves as input to a transformer-based model that forecasts the system observable at future lead times, enabling long-lead prediction of extreme events. We demonstrate the framework on Kolmogorov flow, a canonical model of intermittent turbulence. The results show that explicitly encoding transient instability mechanisms substantially extends extreme-event prediction horizons compared to baseline observable-based approaches.",
+      "summary_zh": "【金融经济学】摘要  \n在高维混沌动力系统中预测极端事件仍然是一个根本性挑战，因为这些事件发生频率较低、具有间歇性，并且通常由难以通过有限观测数据识别的瞬态动力机制驱动。我们提出了一种完全基于数据的实时极端事件预测框架，该框架利用一个可解释的、能够识别动力机制的预兆信号来追踪事件发生前的瞬态不稳定性。具体而言，我们采用有限时间李雅普诺夫指数（FTLE）作为预兆信号，该指数通过一种降阶的、不依赖于具体方程的公式直接从系统状态快照中计算得出。通过将不稳定性动力学限制在由最优时变（OTD）模式构成的自适应演化子空间内，该方法大幅降低了传统FTLE计算的计算成本，同时保留了主要的瞬态放大方向。所得到的FTLE序列被输入到一个基于Transformer的模型中，该模型能够预测系统在未来不同时间点的状态，从而实现极端事件的长期预测。我们在Kolmogorov流（一种典型的间歇性湍流模型）上验证了该框架的有效性。实验结果表明，与基于传统可观测量的方法相比，显式编码瞬态不稳定机制显著扩展了极端事件的预测范围。。研究方法：Transformer 模型。",
+      "topics": [
+        "Extreme learning machine",
+        "Computer science",
+        "Event (particle physics)",
+        "Lyapunov exponent",
+        "Identification (biology)"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "The Influence of Islamic Capital Market Education and Literacy on Students’ Investment Activity in Digital Sharia Investment Platforms",
+      "authors": [
+        "Maulida Rahma",
+        "Nur Ahmadi Bi Rahmani",
+        "Yenni Samri Juliati Nasution"
+      ],
+      "venue": "IQTISHADIA Jurnal Ekonomi & Perbankan Syariah",
+      "published_date": "2026-10-21",
+      "doi_url": "https://doi.org/10.19105/iqtishadia.v13i1.24826",
+      "openalex_url": "https://openalex.org/W7222997431",
+      "cited_by_count": 0,
+      "abstract": "Despite the growing number of students with sharia investment accounts, active participation in digital Islamic investment platforms remains limited indicating a gap between financial education and actual investment behavior. This study examines the influence of Islamic capital market education and literacy on students’ investment activity on digital sharia platforms. Using a quantitative explanatory approach, data were collected from 95 students in the fifth and seventh semesters of the Faculty of Islamic Economics and Business (FEBI) at UIN North Sumatra, selected through purposive sampling. Data were analyzed using multiple linear regression with SPSS version 27. The results show that Islamic capital market education has a positive but statistically non-significant effect on investment activity (β = 0.415; t = 1.726; Sig = 0.088). In contrast, Islamic capital market literacy has a positive and significant effect (β = 0.717; t = 3.274; Sig = 0.001), making it the most dominant predictor (standardized β = 0.463). Simultaneously, both variables significantly explain 46.5% of the variation in investment activity (F = 39.997; Sig= 0.000). These findings suggest that improving applied literacy not merely theoretical education is essential to stimulate active investment behavior, with practical implications for curriculum design, investment gallery programs, and Islamic fintech platform development targeting university students..",
+      "summary_zh": "📌 研究问题：伊斯兰资本市场教育和素养如何影响学生在数字伊斯兰平台上的投资活动？\n\n🔬 研究方法：采用定量解释性方法，通过目的性抽样收集95名学生的数据，并使用SPSS 27进行多元线性回归分析。\n\n📊 核心发现：伊斯兰资本市场教育对投资活动有正向但不显著的影响，而伊斯兰资本市场 literacy 有正向且显著的影响，两者共同解释了46.5%的变异。\n\n💡 应用价值：研究表明，提升应用素养而非仅依靠理论教育对于刺激积极投资行为至关重要，为课程设计、投资画廊项目及伊斯兰金融科技平台开发提供了实践指导。",
+      "topics": [
+        "Investment (military)",
+        "Islam",
+        "Sharia",
+        "Human capital",
+        "Financial literacy"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Component-based approach to assessing the applicability of large language models in decision support systems",
+      "authors": [
+        "D. E. Chikrin",
+        "A. V. Puga"
+      ],
+      "venue": "INFORMACIONNYE TEHNOLOGII",
+      "published_date": "2026-10-21",
+      "doi_url": "https://doi.org/10.17587/it.32.507-518",
+      "openalex_url": "https://openalex.org/W7222998170",
+      "cited_by_count": 0,
+      "abstract": "The article proposes a component-based approach to assessing the applicability of large language models in decision support systems. The necessity of multidimensional evaluation is substantiated, and an original methodology for component-based assessment is presented, taking into account both the content of the text and its suitability for specific applied contexts. Unlike existing review scales, the approach suggests the use of operational applicability profiles of the response and a decision-making procedure at the level of a specific output. The components capture verifiable properties of the response and serve as the basis for reproducible metrics and evaluation criteria. The approach is oriented toward typical decision support system tasks and can be applied in both expert and automated scenarios. The methodology can be used to verify generated results and enhance the substantiation of trust in them.",
+      "summary_zh": "【金融经济学】本文提出了一种基于组件的方法，用于评估大型语言模型在决策支持系统中的适用性。文章强调了多维度评估的必要性，并提出了一种原创的基于组件的评估方法，该方法同时考虑了文本的内容及其在特定应用场景中的适用性。与现有的评估量表不同，该方法建议使用针对具体输出的“操作适用性概况”以及相应的决策流程。这些组件能够捕捉到响应的可验证属性，为可复制的指标和评估标准提供了基础。该方法适用于典型的决策支持系统任务，既可用于专家决策场景，也可用于自动化决策场景。此外，该评估方法还可用于验证生成的结果，并增强人们对这些结果的信任度。。研究方法：大语言模型。",
+      "topics": [
+        "Computer science",
+        "Decision support system",
+        "Verifiable secret sharing",
+        "Decision analysis",
+        "Basis (linear algebra)"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "AI-Enabled ATC Decision Support Systems: A Systematic Review Of Trajectory Prediction, Conflict Detection, And Human-AI Teaming In The Loop",
+      "authors": [
+        "Nur Suraya Sahol Hamid",
+        "Nawal Aswan Abdul Jalil",
+        "Fairuz Izzuddin Romli",
+        "Siti Azfanizam Ahmad",
+        "Muhammad Firdaus Ismail"
+      ],
+      "venue": "Unknown",
+      "published_date": "2026-10-21",
+      "doi_url": "https://doi.org/10.47836/pjai.1.1.01",
+      "openalex_url": "https://openalex.org/W7223001419",
+      "cited_by_count": 0,
+      "abstract": "This systematic literature review (SLR) synthesises recent evidence on artificial intelligence (AI)-enabled Air Traffic Control (ATC) decision-support systems and examines how AI is used to improve operational performance, safety, and resilience in increasingly complex airspace. Research on machine learning, optimisation, and automation has expanded rapidly, but evidence remains fragmented across application areas and validation settings. A Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) 2020-guided protocol was used to search Scopus and IEEE Xplore for English-language journal articles published from 2021 to 2025. Following screening, full-text eligibility assessment, and final reconciliation of study type, scope, and duplicate records, 30 eligible primary studies (n = 30) were included in the qualitative synthesis. The abstract level reporting completeness appraisal yielded a mean score of 80.28% and a median of 83.33%; 16 of 30 studies (53.33%) scored at least 80%, including six studies (20.00%) that scored at least 90%. These percentages describe reporting completeness rather than algorithmic performance. Because the included studies evaluated different operational tasks, datasets, outcome measures, and validation settings, their performance results were not directly commensurable; combining them into a single pooled model-performance percentage would therefore risk conflating non-equivalent metrics. Performance evidence was instead synthesised comparatively by application area, validation setting, and operational trade-off, so that study level performance was interpreted within the metric and dataset used by each primary study rather than averaged across non-equivalent tasks. Three themes were identified: (1) AI-enabled ATC/Air Traffic Management (ATM) operations, including delay and capacity management, conflict resolution, trajectory prediction, and traffic-pattern analytics; (2) aviation safety, surveillance, and resilience, including unmanned aerial vehicle (UAV)-related risks, Global Navigation Satellite System (GNSS) interference, sensing, monitoring, and safety assurance; and (3) aviation-connected smart mobility and intelligent transportation systems (ITS), including UAV logistics and related surface-transport applications. Comparative synthesis indicated that prediction methods were increasingly connected to operational decision support, whereas conflict-resolution and resilience approaches continued to rely substantially on simulation, experimental datasets, or bounded validation environments. Overall, the evidence showed increasing operational relevance, but important gaps remained in explainability, real-world validation, human-AI interaction, robustness, and system integration before wider safety-critical ATC deployment.",
+      "summary_zh": "【金融经济学】本系统文献综述（SLR）综合了近期关于基于人工智能（AI）的空中交通管制（ATC）决策支持系统的研究证据，探讨了AI如何用于提升在日益复杂的空域中的运行效率、安全性和系统韧性。机器学习、优化与自动化领域的研究发展迅速，但相关证据在不同应用领域和验证环境中的分布仍较为分散。研究团队遵循《系统评价和荟萃分析优先报告项目指南（PRISMA 2020）》的要求，通过Scopus和IEEE Xplore数据库检索了2021至2025年间发表的英文期刊文章。经过筛选、全文适用性评估以及研究类型、范围和重复记录的最终核对后，共有30篇符合要求的研究被纳入定性分析。摘要层面的报告完整性评估结果显示，平均得分为80.28%，中位数为83.33%；其中16篇研究（占53.33%）的得分达到80%以上，其中6篇研究（占20.00%）的得分甚至达到了90%及以上。这些百分比反映的是报告的完整性，而非算法的实际性能。由于纳入的研究评估了不同的操作任务、数据集、结果指标和验证环境，其性能结果无法直接进行比较；因此，将它们合并为单一的总体性能百分比可能会导致不同指标之间的混淆。为了更准确地分析性能，研究团队按...。研究方法：数值模拟、机器学习、实验方法。",
+      "topics": [
+        "Metric (unit)",
+        "Scopus",
+        "Computer science",
+        "Air traffic control",
+        "Decision support system"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Distributions or Quantiles? A Convex Variational Theory of Worst-Case Risk",
+      "authors": [
+        "Jianjun Gao",
+        "Jonathan Li",
+        "Zhen Wang",
+        "Yang Zhang"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-21",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.29652v1",
+      "cited_by_count": 0,
+      "abstract": "Worst-case risk evaluation is central to finance and operations research, yet existing analytical results remain fragmented and largely confined to ambiguity sets with specific structures. Using spectral risk measures as the underlying class, we develop a convex variational theory that unifies these analyses and extends them to richer ambiguity models. The theory rests on a representation principle: use the quantile or distribution formulation that preserves convexity of the full ambiguity set. In both representations, the resulting optimality conditions provide a systematic route to identify the worst-case law and determine its risk value. This approach recovers classical central-moment bounds and yields closed-form or semi-closed-form solutions for practically motivated models involving Wasserstein ambiguity with tail stress, two-sided expected shortfall (ES) bands, asymmetric partial moments, geometric-moment bounds, and exponential- or Gaussian-reference Kullback--Leibler (KL) neighborhoods. Beyond these analytical results, the same theory yields projection-based algorithms with fixed-grid convergence under the stated assumptions. In a high-dimensional portfolio application, we establish an exact projection identity for mean-anchored joint KL ambiguity under a Gaussian reference. The resulting standardized worst-case ES coefficient applies to every portfolio, reducing robust portfolio selection to an exact second-order cone program after a single calibration.",
+      "summary_zh": "【风险管理与衍生品】最坏情况风险评估在金融与运筹学研究中占据核心地位，然而现有的分析成果仍然较为零散，且大多局限于具有特定结构的模糊集（ambiguity sets）。我们以谱风险度量（spectral risk measures）作为基础理论框架，构建了一种凸变分理论（convex variational theory），该理论能够将这些分析方法统一起来，并将其扩展到更复杂的模糊模型中。该理论基于一个核心原则：选择能够保持整个模糊集凸性的分位数或分布表示方式。无论采用哪种表示方法，所得到的最优性条件都能为确定最坏情况及其风险值提供系统化的途径。这种方法不仅能够恢复传统的中心矩（central-moment）界限，还能为实际应用中的模型（如具有尾部压力的Wasserstein模糊模型、双边预期亏损（expected shortfall, ES）区间模型、非对称偏矩模型、几何矩界限模型，以及基于指数分布或高斯分布的Kullback-Leibler（KL）邻域模型）提供封闭形式或半封闭形式的解。除了这些分析成果外，该理论还推导出了基于投影的算法，在给定假设条件下可实现固定网格收敛（fixed-grid ...。研究方法：模型校准。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Demand Estimation for Rationally Inattentive Consumers",
+      "authors": [
+        "Ruolei Zhu"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-21",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.29600v1",
+      "cited_by_count": 0,
+      "abstract": "We develop a rational-inattention BLP (RI-BLP) model for demand estimation from aggregate market shares, allowing for endogenous prices and unobserved preference heterogeneity. We establish conditions for uniqueness of market-share inversion and construct a simulated RI-BLP GMM estimator with instrumental-variable moments and market-share constraints. Under regularity and simulation-accuracy conditions, the estimator is consistent and asymptotically normal as the number of markets grows, with the number of products fixed. Monte Carlo experiments show accurate recovery of mean utility coefficients, with less precise estimates of dispersion parameters. In a canned-tuna application, RI-BLP and logit yield similar average own-price elasticities. Unlike logit, the fitted RI-BLP model implies that a price increase can reduce demand even for similar products and shift demand toward the outside option.",
+      "summary_zh": "【金融经济学】我们构建了一个基于理性忽视（rational-inattention）原理的BLP（BLP）模型（RI-BLP），用于从总体市场份额中估算需求，该模型能够考虑内生价格和未观测到的消费者偏好异质性。我们确立了市场份额反演唯一性的条件，并构建了一个包含工具变量矩和市场份额约束的模拟RI-BLP广义矩估计器（GMM estimator）。在满足常规性及模拟精度要求的条件下，随着市场数量的增加（产品数量保持不变），该估计量具有渐近一致性且呈正态分布。蒙特卡洛实验表明，该模型能够准确估计平均效用系数，但对分散参数的估计精度较低。在金枪鱼罐头市场的应用案例中，RI-BLP模型与Logit模型得出的平均自身价格弹性结果相似。与Logit模型不同，RI-BLP模型的预测结果显示：即使对于同类产品，价格上涨也会导致需求减少，并使需求向替代品（即“外部选项”）转移。。研究方法：广义矩估计、蒙特卡洛模拟、数值模拟、实验方法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    }
+  ]
+}
