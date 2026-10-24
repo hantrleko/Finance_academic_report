@@ -1,146 +1,140 @@
-# 金融经济学每日文献速递（2026-10-23）
+# 金融经济学每日文献速递（2026-10-24）
 
 共筛选到 **12** 篇文献。
 
 > 📢 **今日综述**
 >
-> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、风险管理与衍生品（3 篇）、公司金融（1 篇）。方法上以回归分析、固定效应为主。来源分布：arXiv（6 篇）、OpenAlex（4 篇）、Semantic Scholar（2 篇）。
+> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、绿色金融与可持续发展（2 篇）、风险管理与衍生品（1 篇）。方法上以机器学习、调查数据为主。来源分布：OpenAlex（7 篇）、arXiv（4 篇）、Semantic Scholar（1 篇）。
 
-## 1. The Two Cultures of Prevalence Mapping: Small Area Estimation and Model-Based Geostatistics
+## 1. Machine Learning Prediction of Transport Properties in Amorphous Polymer Electrolytes Using Chemically Informed Structural Descriptors
 - 来源：openalex
-- 作者：Jon Wakefield, Peter A. Gao, Geir‐Arne Fuglstad, Zehang Li
-- 期刊/来源：Statistical Science
-- 发表日期：2026-10-22
-- 引用数：5
-- 主题：Small area estimation, Estimation, Context (archaeology), Covariate, Consistency (knowledge bases)
-- 链接：[DOI](https://doi.org/10.1214/25-sts990) [链接](https://openalex.org/W4286901088)
-
-**中文摘要（自动生成）**：【风险管理与衍生品】在低收入和中等收入国家（LMICs），准确估计次国家级别的健康和人口统计指标对于制定政策及识别健康差异至关重要。许多需要关注的指标都是二元结果的比例，而估算这些比例的过程通常被称为“患病率制图”（prevalence mapping）。在这些国家，健康和生命记录数据较为有限，因此患病率制图主要依赖于采用复杂抽样设计进行的家庭调查数据。然而，往往需要在空间分辨率较高的情况下进行估算，但此时现有数据不足以支持可靠的加权估计。本文综述了两种用于患病率制图的方法：小区域估计（Small Area Estimation, SAE）方法（源自调查统计领域）和基于模型的地理统计学（Model-Based Geostatistics, MBG）方法（源自空间统计领域）。SAE模型可以是“区域级”或“单元级”的，通常使用特定区域的随机效应，并依赖于高质量的协变量数据（这些数据多来自行政来源）；而针对二元响应的单元级模型则相对较少发展。MBG方法明确指定了二元响应模型，同时纳入了连续的空间随机效应，并能够利用卫星图像等替代数据源，这些模型通常在贝叶斯框架下进行研究。SAE方法常通过加入抽样权重或对抽...。研究方法：随机效应、贝叶斯方法、调查数据。
-
-## 2. On the Minimum Strength of (Unobserved) Covariates to Overturn an Insignificant Result
-- 来源：openalex
-- 作者：Danielle Tsao, Ronan Perry, Carlos Cinelli
-- 期刊/来源：Statistical Science
-- 发表日期：2026-10-22
+- 作者：Srinithin Ganesh, Tyler Paupst, Paromita Nath, Aditya Dilip Lele
+- 期刊/来源：ACS Omega
+- 发表日期：2026-10-23
 - 引用数：0
-- 主题：Covariate, Statistics, Econometrics, Mathematics, Economics
-- 链接：[DOI](https://doi.org/10.1214/25-sts1013) [链接](https://openalex.org/W4402701820)
+- 主题：Electrolyte, Polymer, Materials science, Flexibility (engineering), Ionic conductivity
+- 链接：[DOI](https://doi.org/10.1021/acsomega.6c09949) [链接](https://openalex.org/W7131706843)
 
-**中文摘要（自动生成）**：【风险管理与衍生品】我们研究了在何种条件下，向回归方程中添加变量能够使原本统计上不显著的结论变得显著。具体而言，我们确定了这些变量与因变量、自变量或仅与因变量之间的最小关联强度，以使观察到的t统计量超过预设的显著性阈值。有趣的是，我们发现仅通过减小标准误差来改变统计结果几乎是不可能的；实际上，必须同时改变点估计值才能实现这种转变。我们的研究结果可用于针对未观测变量进行敏感性分析，并确定在给定不同观测协变量子集的情况下所能获得的最大t值。此外，这些结果还可能为实证研究中观察到的某些变化模式提供代数解释，例如Lenz和Sahn（Polit. Anal. 29 (2021) 356–369）所记录的现象。。研究方法：回归分析。
+**中文摘要（自动生成）**：【金融经济学】。论文标题：Machine Learning Prediction of Transport Properties in Amorphous Polymer Electrolytes Using Chemically Informed Structural Descriptors。摘要概述：该研究围绕「Electrolyte、Polymer、Materials science」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：机器学习、神经网络、随机森林、梯度提升。
 
-## 3. Causal inference in staggered adoption panels: The correct comparison set depends on your intervention
+## 2. Exploring sustainable telework productivity: a framework for adapting to socio-political instability
+- 来源：openalex
+- 作者：Fatemeh Nemati, Alireza Amini, MohammadHossein Ronaghi, Maryam Lotfi
+- 期刊/来源：International Journal of Productivity and Performance Management
+- 发表日期：2026-10-23
+- 引用数：0
+- 主题：Productivity, Interdependence, Sustainability, Business, Sociotechnical system
+- 链接：[DOI](https://doi.org/10.1108/ijppm-09-2025-0976) [链接](https://openalex.org/W7218591463)
+
+**中文摘要（自动生成）**：【绿色金融与可持续发展】。论文标题：Exploring sustainable telework productivity: a framework for adapting to socio-political instability。摘要概述：该研究围绕「Productivity、Interdependence、Sustainability」相关议题展开，属于绿色金融与可持续发展方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：结构模型、调查数据。
+
+## 3. Multichoice Modeling: Exploring Decision Configuration Space under Uncertainty
 - 来源：arxiv
-- 作者：Ian Lundberg, Yaling Xu
+- 作者：Mariia Kozlova, Roman Stepanova, Alexander Walzer, Andrea Saltelli
 - 期刊/来源：arXiv
 - 发表日期：2026-10-22
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2610.31537v1)
+- 链接：[链接](http://arxiv.org/abs/2610.31038v1)
 
-**中文摘要（自动生成）**：【金融经济学】一种用于因果推断的强大数据结构是“交错采纳”（staggered adoption）：许多单元在多个时间段内被观察，其中一些单元在不同时间点接受了不可逆的处理，而另一些单元则未接受任何处理。在这一背景下常用的方法包括差异-in-differences（DID）、固定效应模型（fixed effects）、匹配（matching）和合成控制（synthetic control）。这些方法都是通过比较接受处理与未接受处理的单元的未来结果来回答这样一个问题：对于那些接受了处理的单元，如果它们没有接受处理，将会出现什么样的结果？我们指出，这个问题实际上隐藏了两个截然不同的因果研究问题。第一个问题是：如果在实际接受处理的时间点立即实施干预措施来阻止该处理，会发生什么？第二个问题是：如果对一个已经接受处理的单元实施长期禁令，在所有测量结果的时间点之前都禁止该处理，那么这个单元的情况会如何？我们展示了在处理采纳具有条件可忽略性（conditionally ignorable treatment adoption）或存在平行趋势（parallel trends）的情况下，如何回答这两个问题。我们...。研究方法：合成控制法、因果推断、固定效应。
+**中文摘要（自动生成）**：【金融经济学】决策支持在应对不确定性方面已经取得了显著进展，但在描述决策本身的结构方面却相对薄弱。因此，在对不确定性进行分析之前，决策空间往往就被人为缩小了，导致各种选择之间的相互作用及其潜在影响被忽视。本文提出了多选项建模（multichoice modeling）这一框架，旨在在不确定性条件下明确表示复杂的决策配置空间，并使其能够被计算机有效处理。借鉴“崎岖景观”（rugged landscapes）的逻辑概念，我们将这类问题视为“条件性绩效景观”（contingent performance landscapes）：相互依赖的选择会生成特定于某种配置的结果，而这些结果的价值会随着不确定的未来情境而变化。该计算框架将多维决策空间与不确定性空间整合到一个统一的模拟过程中。此外，我们采用基于方差的敏感性分析来识别关键决策因素，并通过条件分布分析来比较不同配置下的绩效表现。通过三个案例研究（制造流程升级、并购策略和抵押贷款设计）来验证这一框架的有效性。对比传统的仅关注不确定性的分析方法与多选项建模方法，这些案例表明：扩展决策配置空间能够揭示出意想不到的互补性、具有不同风险特性的近乎最优配置，以及...。研究方法：数值模拟。
 
-## 4. A Resource Allocation Tournament
+## 4. Risk Sensitivity and Stationary Equilibrium in Incomplete Markets
 - 来源：arxiv
-- 作者：Adam Nathaniel, Refael Hassin
+- 作者：Qingyin Ma, John Stachurski, Bin Wu
 - 期刊/来源：arXiv
 - 发表日期：2026-10-22
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2610.31418v1)
+- 链接：[链接](http://arxiv.org/abs/2610.30956v1)
 
-**中文摘要（自动生成）**：📌 研究问题：本文研究了一个受体育联赛启发的资源分配锦标赛，探讨代理人在多场遭遇战中如何分配有限资源以最大化收益，并比较了“总积分”与“赢家通吃”两种不同的支付方案。
+**中文摘要（自动生成）**：【风险管理与衍生品】我们研究了具有风险敏感偏好的不完全市场经济中的静态均衡与比较静态分析。我们证明了：对于任何非负的风险敏感度水平，都存在一个静态均衡。在收入独立的情况下，较高的风险敏感度会在价格固定的条件下略微增加总体储蓄，并略微降低最低和最高的均衡利率。在收入遵循随机单调马尔可夫过程的情况下，当较低的风险敏感度参数足够小或较高的参数足够大时，上述比较结果仍然成立。然而，对于中等风险敏感度水平，较高的风险敏感度反而可能降低储蓄，并提高最低和最高的均衡利率，这与现有文献中的结论相反。通过精确的分解，我们揭示了导致这些变化的具体机制。。研究方法：随机过程、均衡模型。
 
-🔬 研究方法：研究通过博弈论分析，对3名及4名及以上玩家的模型进行了均衡求解，并开发了一种带有随机惯性的最佳响应动态算法来近似求解复杂情况下的均衡。
-
-📊 核心发现：对于3名玩家，研究给出了两种支付方案下的完整均衡特征；对于4名及以上玩家，发现“总积分”方案存在Blotto型均衡，而“赢家通吃”方案则需要数值算法分析。
-
-💡 应用价值：该研究为理解体育联赛及其他竞争环境中的资源分配策略提供了理论框架，并开发的方法可用于解决
-
-## 5. Workforce Aging and Firm Productivity: Evidence from Türkiye
+## 5. Financial Flexibility and Profitability of Non-Financial Firms Listed at the Nairobi Securities Exchange, Kenya
 - 来源：semantic_scholar
-- 作者：Mahmut Ablay, Seren Özsoy
-- 期刊/来源：Review of Middle East Economics and Finance
-- 发表日期：2026-10-21
-- 引用数：0
-- 主题：Economics
-- 链接：[DOI](https://doi.org/10.1515/rmeef-2026-0019) [链接](https://api.semanticscholar.org/CorpusID:293700003)
-
-**中文摘要（自动生成）**：【公司金融】摘要：劳动力老龄化是否会降低企业生产率？我们利用2013至2023年间土耳其的雇主-员工匹配数据以及企业资产负债表，对这一问题在大型新兴经济体中进行了研究，共计涵盖了约175万个企业-年份的观测样本。通过分析企业内部劳动力的年龄结构，我们发现老年员工占比越高，企业生产率越低：50岁及以上员工占比每增加一个百分点，人均附加值就会下降约8.3%。虽然总体相关性较高，但这在很大程度上是由于年轻劳动力被分配到了生产率更高的企业中；但在经过筛选后，这种负面效应仍然存在。平均来看，老龄化对生产率的负面影响在制造业和常规密集型服务业中最为显著（约为11%），在建筑业和贸易业中则减弱至约一半，而在农业行业中则几乎不存在这种影响。将企业的年龄结构与工作任务的特点相结合后，我们进一步验证了这一机制：当工作中包含较多的非常规人际互动内容时，老龄化对生产率的负面影响会减弱；而当工作中包含较多常规性和分析性任务时，负面影响则会加剧。实际上，影响生产率的关键因素并非劳动力的年龄，而是他们所从事的工作类型。这是针对大型新兴经济体首次在企业层面获得的关于老龄化与生产率关系的研究证据之一。。
-
-## 6. ASSESSING TAX CONSEQUENCES AND RISKS OF ANALYTICAL MISINTERPRETATION OF BOOK-TAX DIFFERENCES IN ARMENIAN ELECTRICITY-SECTOR COMPANIES
-- 来源：semantic_scholar
-- 作者：A. Sargsyan, Ani A. Serobyan
-- 期刊/来源：Economics, Finance and Accounting
-- 发表日期：2026-10-20
+- 作者：N. Mwewa, J. Ndegwa, James Murunga
+- 期刊/来源：Journal of Economics, Finance and Accounting Studies
+- 发表日期：2026-10-17
 - 引用数：0
 - 主题：Economics, Business
-- 链接：[DOI](https://doi.org/10.59503/29538009-2026.3.19-51) [链接](https://api.semanticscholar.org/CorpusID:293884031)
+- 链接：[DOI](https://doi.org/10.32996/jefas.2026.8.10.4) [链接](https://api.semanticscholar.org/CorpusID:293822514)
 
-**中文摘要（自动生成）**：【风险管理与衍生品】本研究利用2016至2025年间三家亚美尼亚电力行业公司的数据，探讨了账面税与实际税差异所带来的税务后果以及由此可能导致的分析误解风险。研究采用了多种方法进行实证分析，包括有效税率的核对、当期税款的跨文档比对、递延税项的多阶段核对、递延税项的总额与净额分析，以及对税前亏损结转使用的敏感性评估。研究结果表明，过高的有效税率不应被单独视为企业具有税收激进行为或较高税务风险的依据。在30个公司年度数据样本中，有5个样本（占16.7%）的年度递延税项变化无法仅通过利润或损失中的递延税项来完全解释。以High Voltage Electric Networks为例，2022年其报告的递延税负债为4490万亚美尼亚德拉姆，而其递延税资产与负债的总额却高达36亿亚美尼亚德拉姆，这凸显了仅使用递延税项净额信息所带来的局限性。在涉及税前亏损结转的15个样本中，有8个样本（占53.3%），区分税前亏损结转的影响会改变对账面税差异的判断方向。研究结果支持将税务风险与分析误解风险区分开来，并为构建多阶段的账面税差异核对框架提供了依据。。
+**中文摘要（自动生成）**：【公司金融】非金融企业在创造就业机会、减少贫困以及促进国家国内生产总值的增长和发展方面，对经济做出了积极且至关重要的贡献。然而，关于财务灵活性与企业盈利能力之间的因果关系，学者们仍存在争议，尤其是在非洲的新兴资本市场中，这种关系的直接影响仍不明确。本研究考察了2015年至2024年间，肯尼亚内罗毕证券交易所（NSE）上市的非金融企业的财务灵活性对其盈利能力的影响。研究采用了纵向面板研究设计，并使用了来自42家非金融企业的企业级二手数据。盈利能力通过资产回报率（ROA）来衡量，而财务灵活性则通过“企业现金比率减去行业现金比率再加上行业债务比率的最大值减去企业债务比率（或为零）”来定义。在估计之前，研究人员对数据进行了正态性、多重共线性、异方差性、序列相关性和平稳性的诊断性检验。Chow检验和Hausman检验支持采用固定效应模型，并采用了企业分组后的稳健标准误差。研究结果表明，财务灵活性对盈利能力具有显著的直接影响。研究认为，具备较高财务灵活性的企业更能适应融资需求和投资机会，从而提升盈利能力。研究建议在NSE上市的非金融企业管理者应通过规范的流动性规划、多元化的融资渠道以及保持未使用的债务能...。
 
-## 7. Economic lifetime-aware wind farm control
+## 6. FINANCIAL PLANNING MEDIATES FINANCIAL LITERACY AND CAPITAL ACCESS IN ENTERPRISE INVESTMENT DECISIONS
 - 来源：openalex
-- 作者：Abhinav Anand, Robert Braunbehrens, Adrien Guilloré, Carlo L. Bottasso
-- 期刊/来源：Wind energy science
-- 发表日期：2026-10-22
-- 引用数：2
-- 主题：Control (management), Environmental science, Natural resource economics, Economics, Business
-- 链接：[DOI](https://doi.org/10.5194/wes-11-3949-2026) [链接](https://openalex.org/W4409980054)
+- 作者：Neneng Susanti, Sakina Ichsani, Denny Saputera, Nanda Gyska Restiana
+- 期刊/来源：EKUITAS (Jurnal Ekonomi dan Keuangan)
+- 发表日期：2026-10-23
+- 引用数：0
+- 主题：Financial literacy, Finance, Financial plan, Business, Investment (military)
+- 链接：[DOI](https://doi.org/10.24034/j25485024.y2026.v10.i3.7867) [链接](https://openalex.org/W7223196726)
 
-**中文摘要（自动生成）**：【金融经济学】我们提出了一种基于经济寿命考虑的风电场控制（WFC）方法，该方法在多个方面实现了创新。首先，优化过程以经济利润模型为指导，而非普遍采用的发电量作为目标。通过关注利润而非发电量，运营优化不仅考虑了售电收入（在现货市场可能以变动价格出售电力），还考虑了运营和维护（O&M）成本。其次，由于疲劳引起的损伤是一个受预算限制的变量，我们明确指出控制措施对损伤的影响会为其他控制措施留下相应的空间；而现有方法通常会任意限制或惩罚导致疲劳的负荷，忽略了这种耦合关系。为实现这一目标，优化过程受到寿命的明确约束，确保风电场中的风力涡轮机及其部件能够达到预期的使用寿命。与其他基于优化的WFC方法类似，所提出的方法会预先计算出每台涡轮机的最优控制参数，并根据环境条件在运行时以开环方式调度这些参数。在介绍了这种基于经济寿命考虑的WFC方法后，论文分析了两个案例研究：第一个案例采用简化的环境条件，用于展示新控制策略的性能及其对频繁启动情况下疲劳负荷的影响；第二个案例则基于实际气象数据，模拟了一个小型风电场的运行情况。通过与以往发布的控制策略进行比较，突显了该方法的优势——这些传统策略要么忽略部件损伤，要么以简...。研究方法：优化方法。
+**中文摘要（自动生成）**：【金融经济学】本研究探讨了金融素养和资本获取对投资决策的影响，其中财务规划作为中介变量，研究了印度尼西亚西爪哇省食品和饮料行业微型、小型及中型企业（MSMEs）的决策过程。研究采用定量方法，采用描述性和验证性研究设计。数据通过分层随机抽样方式从135位MSME所有者处收集，调查工具为李克特量表问卷。研究结果表明，金融素养和资本获取对财务规划具有积极且显著的影响；同时，这两者也对投资决策产生积极且显著的影响。此外，财务规划对投资决策具有积极且显著的作用，并在金融素养、资本获取与投资决策之间的关系中起到显著的中介作用。研究强调，要改善MSME的投资决策，需要同时提升金融素养、拓宽资本获取渠道并鼓励有效的财务规划实践。这些因素有助于优化资源配置，支持食品和饮料行业MSME的长期可持续发展。。
 
-## 8. Retrofitters, pragmatists, and activists: public interest litigation for accountable automated decision-making
+## 7. E-commerce development and rural dietary quality in China: spatial spillovers and nonlinear associations
 - 来源：openalex
-- 作者：Henry Fraser, Zahra Stardust
-- 期刊/来源：Law & Society Review
-- 发表日期：2026-10-22
+- 作者：Aixi Han, Pingyang Liu
+- 期刊/来源：Journal of Agribusiness in Developing and Emerging Economies
+- 发表日期：2026-10-23
 - 引用数：0
-- 主题：Public interest, Accountability, Corporate governance, Economic Justice, Political science
-- 链接：[DOI](https://doi.org/10.1017/lsr.2026.10124) [链接](https://openalex.org/W7104289959)
+- 主题：Panel data, Quality (philosophy), Spillover effect, Econometrics, Spatial analysis
+- 链接：[DOI](https://doi.org/10.1108/jadee-03-2026-0221) [链接](https://openalex.org/W7223198120)
 
-**中文摘要（自动生成）**：【金融经济学】摘要  
-本文探讨了公益诉讼在推动澳大利亚人工智能（AI）与自动化决策（ADM）领域问责制方面的作用。由于ADM监管面临政治和地缘政治方面的阻碍，有效的治理机制必须依赖于现有法律的执行。通过采访澳大利亚的公益诉讼律师、技术政策活动家和技术法律学者，本文将公益诉讼视为促进ADM透明度、问责制与正义的更大体系的一部分。文章分析了某些参与者所提出的“改造”现有法律以适应ADM需求的策略与方法，这些方法不仅包括创新的法律论证，还涵盖社区建设、变革理论的合作探讨、对诉讼对象及诉讼理由的精心选择，以及平衡诉讼各方利益的做法。当然，本文也指出了这些策略及澳大利亚法律体系的局限性。在能够克服这些局限性的情况下，文章提出了亟需解决的制度性问题——缺乏相应的制度安排，有效的诉讼与问责机制将难以发挥作用。本文对法律和技术领域的学者、受ADM影响的个人与群体、公益诉讼律师和技术律师、民间社会组织及政策制定者都具有重要的参考价值。。
+**中文摘要（自动生成）**：【金融经济学】。论文标题：E-commerce development and rural dietary quality in China: spatial spillovers and nonlinear associations。摘要概述：该研究围绕「Panel data、Quality (philosophy)、Spillover effect」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：面板数据、调查数据。
 
-## 9. Beyond city pairs: Higher-order information in urban growth across borders
+## 8. BEYOND TECHNOSTRESS AI Fatigue as a Cumulative Adaptation Burden in Education and Work
+- 来源：openalex
+- 作者：Wael Badawy
+- 期刊/来源：Emirati Journal of Applied Psychology
+- 发表日期：2026-10-23
+- 引用数：0
+- 主题：Psychology, Adaptation (eye), Task (project management), Applied psychology, Cognitive load
+- 链接：[DOI](https://doi.org/10.54878/bxxewh81) [链接](https://openalex.org/W7223198136)
+
+**中文摘要（自动生成）**：【金融经济学】人工智能已不再是一种偶尔使用的工具，而成为人们持续面对的工作与学习方式。用户必须反复决策：何时将任务委托给人工智能、如何向它提供指导、是否信任其结果、如何验证其准确性，以及如何分配责任。本文将“AI疲劳”定义为一种综合性的心理状态，表现为在面对人工智能交互、评估、修正、学习及角色调整等需求时，个体的认知能力、情感状态或动机水平逐渐下降；这些需求的增长速度超过了个体通过恢复机制或获得支持的速度。研究将“技术压力”“自动化带来的警觉性”“认知负荷与负担的转移”“信任机制的调整”“数字疲劳”等概念与“工作需求-资源模型”（Job Demands–Resources model）联系起来，并提出了一种名为“暴露-适应-耗竭-反应”（Exposure–Adaptation–Depletion–Response）的分析框架，该框架包含五个维度，用于描述AI使用过程中可能产生的影响。同时，研究还构建了一个AI疲劳负荷模型，该模型将使用频率与任务的不确定性、任务的重要性、修正工作的负担、干扰因素、角色冲突以及强制性的采用速度等因素区分开来。分析结果基于2026年修订后的15项AI疲劳量表（AI ...。研究方法：模型校准。
+
+## 9. Carbon price distortion and energy resource misallocation: evidence from China’s emissions trading scheme
+- 来源：openalex
+- 作者：Liangpeng Wu, Jingrui Zhang, Youan Ke, Xiaoyong Zhou
+- 期刊/来源：Management System Engineering
+- 发表日期：2026-10-23
+- 引用数：0
+- 主题：Carbon price, Economics, Emissions trading, Distortion (music), Allowance (engineering)
+- 链接：[DOI](https://doi.org/10.1007/s44176-026-00079-0) [链接](https://openalex.org/W7223198591)
+
+**中文摘要（自动生成）**：【绿色金融与可持续发展】摘要  
+科斯定理指出，碳市场应主要承担两项职能：价格发现与资源配置。然而，碳价格扭曲可能会削弱这两种职能，引发对资源错配以及潜在的“扭曲叠加”效应的担忧。本研究构建了一个包含要素价格扭曲和碳排放约束的广义成本函数，用以衡量碳价格扭曲的程度。利用2000至2022年间中国30个省份的面板数据，并采用差分法（difference-in-differences approach），我们分析了碳价格扭曲对碳排放交易体系（ETS）试点地区能源资源错配的影响。研究结果表明，能源资源错配现象在各省普遍存在，且存在显著的地区差异。更为重要的是，ETS的实施加剧了试点地区的能源资源错配问题，表明该政策在当前阶段尚未有效引导能源资源向高效、低碳领域流动。碳价格扭曲进一步放大了这一负面效应：碳价格偏离合理水平的程度越大，ETS对能源资源配置的负面影响就越明显。机制分析表明，碳价格扭曲主要通过限制能源投入和抑制绿色创新来加剧能源资源错配。这些发现为改进配额分配、优化碳价格形成提供了实证支持，从而有助于优化能源资源配置并实现中国的“双碳”目标。。研究方法：双重差分、面板数据、优化方法。
+
+## 10. Artificial Intelligence Applications in Pregnancy, Childbirth, and the Postpartum Period: A Scoping Review
+- 来源：openalex
+- 作者：Gustavo Gonçalves dos Santos, ANNA PAULA MENDES MARQUES DE LIMA FRANCO, Francini Castilha do Nascimento, Letícia Eduarda de Oliveira, MRIO CSAR DE SIQUEIRA LIMA
+- 期刊/来源：Nursing Reports
+- 发表日期：2026-10-23
+- 引用数：0
+- 主题：Thematic analysis, Mental health, Breastfeeding, Digital health, Psychology
+- 链接：[DOI](https://doi.org/10.3390/nursrep16110377) [链接](https://openalex.org/W7223198886)
+
+**中文摘要（自动生成）**：【金融科技】。论文标题：Artificial Intelligence Applications in Pregnancy, Childbirth, and the Postpartum Period: A Scoping Review。摘要概述：该研究围绕「Thematic analysis、Mental health、Breastfeeding」相关议题展开，属于金融科技方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：机器学习。
+
+## 11. Equilibria and Learning in Competitive Market Making
 - 来源：arxiv
-- 作者：Cillian Hourican, Debraj Roy
+- 作者：Matteo Onger, Luigi Foscari
 - 期刊/来源：arXiv
 - 发表日期：2026-10-22
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2610.31159v1)
+- 链接：[链接](http://arxiv.org/abs/2610.30891v1)
 
-**中文摘要（自动生成）**：【金融经济学】我们运用高阶信息度量方法来研究跨国界及不同空间单元之间的城市增长现象。研究分析了8,808个功能城市区域，这些数据基于国家账户中分配的网格化GDP估算值。在29.93%的跨国界城市对以及2.00%的国内城市对中，估算出的O信息值为负。这种十五倍的差异在依赖强度相当的情况下缩减为四倍，并且在数据质量限制条件下依然存在。针对特定目标的分解结果显示了信息在这些城市之间的重叠或结合方式。行政分区在国家内部的随机地图对应范围内具有平均O信息值。这些发现表明，解读地理依赖性时需要明确比较的城市和空间单元；而经济联系则仍需另行独立验证。。
+**中文摘要（自动生成）**：【金融经济学】。论文标题：Equilibria and Learning in Competitive Market Making。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：数值模拟、均衡模型。
 
-## 10. Intraday Forecasting Ability and Liquidity Provision of Institutional Traders
+## 12. The Reaction of Financial Markets to the Releases of DeepSeek R1 and Kimi K3: A Critical Analysis
 - 来源：arxiv
-- 作者：Xinlei Hao, Jiajun Guo, Jussi Keppo, Xianhua Peng
+- 作者：Marco Taboga
 - 期刊/来源：arXiv
 - 发表日期：2026-10-22
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2610.31141v1)
+- 链接：[链接](http://arxiv.org/abs/2610.30886v1)
 
-**中文摘要（自动生成）**：【国际贸易】本研究利用来自证券交易所的高频数据集，探讨了预测能力与流动性供给如何影响机构交易者的日内盈利能力。研究发现，交易者普遍具备持续的预测能力。具体而言，基于这些熟练交易者的成交行为所设计的策略在各种交易频率下均实现了16%至63%的年化夏普比率（Sharpe Ratio）。我们将买卖成交行为与相应的头寸相匹配，将实际盈亏（P&L）与预测指标以及这两种成交行为的流动性作用联系起来。研究结果表明，预测能力的提升与盈利能力之间存在直接关联：预测能力指标每提高一个标准差，每个匹配头寸的盈亏会增加1.02至1.19个货币单位。此外，我们通过被动成交的数量（零次、一次或两次）来衡量头寸内的流动性供给强度。回归分析显示，每个头寸中包含一次被动成交时，盈亏比不含被动成交时高出1.28至1.31个货币单位；而包含两次被动成交时，盈亏比则高出3.79至3.82个货币单位，这进一步凸显了流动性供给所带来的显著财务收益。。研究方法：回归分析。
-
-## 11. Testing for peer effects in short panels without identifying the network structure
-- 来源：arxiv
-- 作者：Tom Boot, Artūras Juodis
-- 期刊/来源：arXiv
-- 发表日期：2026-10-22
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2610.31106v1)
-
-**中文摘要（自动生成）**：【金融经济学】我们提出了一种基于工具变量的检验方法，用于研究在潜在网络结构未知的情况下短期面板数据中的同伴效应。该检验方法通过汇总潜在同伴的协变量投影结果与个体自身残差结果之间的成对比较来避免对网络结构的估计。该方法适用于固定样本量（T固定）、大样本量（N较大）的情境，并考虑了个体固定效应、异质斜率、异方差性以及单元内部的序列相关性。我们还开发了一种加权扩展版本，以纳入共同的时间效应。当结果投影分量的范数不为零时，该检验的极限分布服从标准高斯分布；当投影分量的范数接近零时，极限分布可能不再服从标准高斯分布。我们推导出了条件高斯极限分布，并设计了一种可行的条件蒙特卡洛程序来获得具有统一有效性的临界值。蒙特卡洛模拟结果表明，这种条件检验方法能够在保持对潜在同伴效应假设的检验功效的同时，实现精确的统计功效控制。。研究方法：固定效应、蒙特卡洛模拟、实验方法。
-
-## 12. Directionally Correct Views in Portfolio Optimization
-- 来源：arxiv
-- 作者：Ojas Kumar, Sreejit Dey, Sarvesh Ravichandran Iyer, Sandeep Juneja
-- 期刊/来源：arXiv
-- 发表日期：2026-10-22
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2610.31074v1)
-
-**中文摘要（自动生成）**：【金融经济学】投资组合优化技术通常利用历史数据来估计用于马科维茨模型（Markowitz-type models）或机器学习模型（ML models）的参数。有效的资产配置需要一种方法，将现有数据与投资期限内的预期条件相匹配。受Black-Litterman框架的启发，我们探讨了纳入专家观点是否能够带来更优的投资组合配置。在一个简单的马科维茨模型框架下，我们发现即使是非常少量的、方向正确的信息也能显著改善投资决策。我们还讨论了如何利用基于熵（entropy-based）的原理将专家观点整合到端到端的投资组合模型（end-to-end portfolio models）中。令人有些意外的是，我们的实证结果表明，一旦纳入了方向正确的专家意见，简单的马科维茨模型与端到端模型具有相当的表现。。研究方法：优化方法。
+**中文摘要（自动生成）**：【金融经济学】。论文标题：The Reaction of Financial Markets to the Releases of DeepSeek R1 and Kimi K3: A Critical Analysis。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。
