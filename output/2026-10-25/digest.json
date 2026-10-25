@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-25",
+  "count": 7,
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "latest_updated": true,
+  "overview": "本期共收录 7 篇论文。研究方向主要集中在金融经济学（7 篇）。方法上以机器学习、均衡模型为主。来源分布：arXiv（5 篇）、OpenAlex（1 篇）、Semantic Scholar（1 篇）。其中 1 篇命中顶级期刊白名单。",
+  "insights": {},
+  "papers": [
+    {
+      "title": "Software Defect Prediction: A Systematic Review and a Conceptual Framework for Stable, Actionable Explanations (AISD-F)",
+      "authors": [
+        "Dikeledi Irene Thubisi",
+        "Bassey Echeng Isong",
+        "Rodney Buang Sebopelo"
+      ],
+      "venue": "Journal of Information Systems and Informatics",
+      "published_date": "2026-10-24",
+      "doi_url": "https://doi.org/10.63158/journalisi.v8i5.1823",
+      "openalex_url": "https://openalex.org/W7223263547",
+      "cited_by_count": 0,
+      "abstract": "Machine learning-based Software Defect Prediction (SDP) has largely focused on improving prediction accuracy, but recent research has placed greater emphasis on making predictions understandable and useful to developers. This systematic review examines the use of Explainable Artificial Intelligence (XAI) in SDP and the evidence supporting its reliability in practice. Following PRISMA guidelines, 40 peer-reviewed studies, primarily published between 2020 and 2025, were selected from IEEE Xplore, SpringerLink, ScienceDirect, Google Scholar, and Scopus. The studies were examined in terms of XAI methods, explanation reliability and stability, dataset quality, and model selection. LIME and SHAP were the most frequently used methods, yet multi-run evaluations showed changes in their feature rankings across configurations, in contrast to the reliability reported by many single-run studies. Data-quality problems, particularly SZZ-related label noise, class imbalance, and multicollinearity, often had a greater effect on prediction reliability than model architecture. The review also found growing use of line-level and just-in-time prediction, although consistent validation at industrial scale remains limited. Within the reviewed corpus, no study provides controlled evidence that XAI explanations improve developers' ability to resolve software defects, and the field currently lacks industrial-scale validation and controlled developer studies of XAI-assisted defect resolution. Based on these findings, this paper proposes the Actionable and Interpretable Software Defect Framework (AISD-F), a conceptual, five-stage modular architecture (not yet empirically validated) that is intended to integrate data quality assurance, hybrid model selection, dual-layer explanation, and CI/CD into a unified research agenda for explainable SDP, rather than a deployment-ready solution.",
+      "summary_zh": "【金融经济学】。论文标题：Software Defect Prediction: A Systematic Review and a Conceptual Framework for Stable, Actionable Explanations (AISD-F)。摘要概述：该研究围绕「Computer science、Reliability (semiconductor)、Software quality」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：机器学习。",
+      "topics": [
+        "Computer science",
+        "Reliability (semiconductor)",
+        "Software quality",
+        "Field (mathematics)",
+        "Data science"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?",
+      "authors": [
+        "Amirreza Zeinali",
+        "Jon Saad-Falcon",
+        "Avanika Narayan",
+        "Mersad Abbasi",
+        "Jonathan S. Hartley"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-22",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.30858v1",
+      "cited_by_count": 0,
+      "abstract": "An AI system can produce more economically valuable work while delivering less value for the energy it consumes. We therefore ask: How much economic value does an AI system create per unit of energy consumed? We formalize economic value in two ways: (1) net dollar value, the output's dollar value minus AI-system execution cost, and (2) time saving, the expert's completion time minus the AI system's completion time. Dividing each by measured end-to-end energy yields Net Value per Joule (NVJ) and Time Saving per Joule (TSJ), reported in USD/MJ and hours/MJ. We study 220 public GDPval tasks across 44 occupations, serving five open-weight models locally and evaluating four accelerator types. First, the occupation groups where AI systems succeed most often, deliver the greatest dollar value, or save the most time do not necessarily provide the greatest economic return per joule. For example, among the tested tasks, engineering work delivers about 10% more net dollar value per task than software development. Yet software development delivers about 27% more net value per joule. Second, GLM 5.2 delivers the highest average net dollar value, at $72.27 per task using 0.430 MJ, equivalent in energy to about four hours of active laptop use. By contrast, Gemma 4 31B delivers 56% of that net dollar value using just 23% of the energy, achieving approximately 2.5 times the NVJ and 2.8 times the TSJ. Third, across four single-accelerator deployments, Qwen3.6-27B's NVJ varies by a factor of 4.32 and TSJ by 9.27, with B200 leading both. Additionally, one and eight H100s deliver similar net dollar value, but eight reduce completion time by 22% at 3.24 times the energy. Our framework makes output value and expert time saving under an energy budget explicit objectives for improving models, accelerators, and software, while offering a new basis for assessing AI's potential economic effect on occupational work.",
+      "summary_zh": "【金融经济学】。论文标题：Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "A Weakly Group Strategy-Proof and Pareto-Stable Matching Mechanism with Two-Sided Indifferences under Gross Substitutes",
+      "authors": [
+        "Yasushi Kawase",
+        "Ryosuke Sato"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-22",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.30807v1",
+      "cited_by_count": 0,
+      "abstract": "We study finite many-to-one matching markets with indifferences on both sides and publicly known firm preferences over sets of workers. A standard approach breaks ties uniformly at random and runs deferred acceptance, which is strategy-proof for workers but may select a weakly stable matching that is Pareto dominated under the agents' original preferences. For the broad class of markets in which each firm's preferences admit a gross substitutes (GS) representation, we construct a deterministic generalized deferred acceptance mechanism that is weakly stable, Pareto efficient with respect to both sides, worker weakly group strategy-proof, and implementable in strongly polynomial time given value oracles for the GS representations. This domain includes nonresponsive firm preferences, such as additive scores under matroid constraints and assignment values. Our analysis bridges ordinal matching with indifferences and competitive equilibria under imperfectly transferable utility. Although the mechanism uses only ordinal comparisons, it returns a seller-optimal equilibrium matching of a tiered auxiliary market, and the equilibrium structure of this market yields the stability, efficiency, and incentive guarantees.",
+      "summary_zh": "【金融经济学】我们研究了存在双方偏好差异以及企业对工人集合的偏好信息为公开透明的有限多对一匹配市场。传统处理方法会随机平局处理，并采用延迟接受机制（deferred acceptance）进行匹配；该机制对工人来说是策略安全的（即工人无法通过策略改变匹配结果），但可能产生一个在各方原始偏好下处于帕累托劣势的弱稳定匹配。对于那些企业偏好满足“总体替代品”（gross substitutes, GS）表示形式的市场类别，我们设计了一种确定性的广义延迟接受机制：该机制具有弱稳定性、对双方而言均满足帕累托效率要求、对工人群体策略具有弱防御性，并且在给定GS表示形式的价值预言器（value oracle）条件下，能够在强多项式时间内实现匹配过程。这类市场包括企业偏好不敏感的情况，例如在拟阵约束（matroid constraints）或分配值（assignment values）下的加性评分（additive scores）情形。我们的分析将存在偏好差异的排序匹配问题与不完全可转移效用下的竞争均衡理论联系了起来。尽管该机制仅使用序数比较，但它仍能实现卖方最优的辅助市场匹配结果；而这个辅助市场的均衡结构本...。研究方法：均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Financial Inclusion and Financial Development Across Nations Throughout the Economic Cycle",
+      "authors": [
+        "Elena Margarint",
+        "James Boyer",
+        "Faten Ben Bouheni"
+      ],
+      "venue": "International Journal of Finance & Economics",
+      "published_date": "2026-10-20",
+      "doi_url": "https://doi.org/10.1002/ijfe.70315",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:293865680",
+      "cited_by_count": 0,
+      "abstract": "This study examines the nexus between financial inclusion and financial development within procyclical financial systems of lower and upper‐middle‐income countries from 2002 to 2021. Financial development is measured as the growth in credit to the private sector as a percentage of GDP, while financial inclusion encompasses both outstanding deposits with commercial banks as a percentage of GDP and ATM availability. The empirical analysis yields significant findings. Quantile regression results demonstrate heterogeneity in financial inclusion and financial development across the sample countries. Specifically, in lower‐middle‐income economies, the cyclical component of ATM availability (ATMC) demonstrates no statistically significant effect on financial development across most quantiles, with exceptions at the 25th and 75th percentiles. Conversely, ATMC exhibits substantial influence on financial development dynamics in upper‐middle‐income countries. Additionally, the usage dimension of financial inclusion (BCr_GDPproc: commercial bank deposits as a percentage of GDP) demonstrates a statistically significant positive association with financial development in lower‐middle‐income countries. These findings illuminate financial disparities in procyclicality contexts across countries stratified by income levels and underscore the efficacy of panel quantile regression in capturing the complex and heterogeneous nuances of financial development dynamics. The results suggest that macroeconomic financial factors, particularly within the framework of economic cyclicality, are determinants of financial inclusion. This research presents two key practical implications: from a banking sector perspective, it advocates for the expedited adoption of technological innovations in developing economies to enhance customers' financial management capabilities; from a regulatory perspective, it recommends the enhancement of financial literacy initiatives and institutional support for banks undergoing technological transitions to improve service delivery.",
+      "summary_zh": "【金融经济学】本研究探讨了2002年至2021年间，低收入国家和中高收入国家在顺周期金融体系下金融包容性与金融发展之间的关联。金融发展通过私营部门信贷增长占GDP的比例来衡量，而金融包容性则包括商业银行存款占GDP的比例以及自动取款机（ATM）的普及程度。实证分析得出了重要发现：不同国家在金融包容性和金融发展方面存在显著差异。具体而言，在低收入国家中，自动取款机普及程度的周期性因素对金融发展的影响在大多数分位数上并不显著，仅在第25和第75分位数上存在显著差异；而在中高收入国家中，这一因素对金融发展动态具有显著影响。此外，金融包容性的使用维度（BCr_GDPproc，即商业银行存款占GDP的比例）与低收入国家的金融发展呈显著正相关。这些发现揭示了不同收入水平国家在金融顺周期性方面的差异，并强调了面板分位数回归方法在捕捉金融发展动态的复杂性和异质性方面的有效性。研究结果表明，宏观经济金融因素，尤其是在经济周期性的框架下，是决定金融包容性的关键因素。本研究提出了两个重要的实践启示：从银行业角度来看，建议发展中国家加快采用技术创新以提升客户的金融管理能力；从监管角度来看，建议加强金融知识普及工作，并...。研究方法：回归分析。",
+      "topics": [
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "The Delegation Divide: An Open Index of AI-Agent Delegability across Occupations and Countries",
+      "authors": [
+        "Cristian Espinal Maya",
+        "Santiago Jiménez Londoño"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-22",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.30752v1",
+      "cited_by_count": 0,
+      "abstract": "35.2% of task time in world employment is at least partly delegable to AI agents in 2026, and only 2.5% can be handed over in full. Existing measures score exposure to generative AI, mostly for the United States. We build the Agent Delegability Index (ADI): two language models rate all 18,796 O*NET 30.2 task statements on a frozen, preregistered rubric of delegation levels and barriers; tasks are mapped to 433 ISCO-08 unit groups and weighted by ILOSTAT employment in 146 countries. Four findings. First, delegable employment rises with income, from 22.5% in low-income to 48.7% in high-income countries, a slope of 7.23 percentage points per log point of GDP per capita. This delegation divide is compositional: the physical barrier dominates the jobs poorer countries employ most. Second, at the occupation level ADI tracks exposure closely (r = 0.93 with Eloundou et al. and 0.89 with Felten et al.), above the preregistered bound of 0.80; ADI adds delegation levels and barriers on top of exposure, for the world, not a new ranking of occupations. Third, full delegation is rare and peaks for tasks that take a human about twelve minutes (11.8 minutes). Fourth, the preregistered adoption gap is not supported: across 101 countries, delegability and observed AI usage correlate at r = 0.86, and the gap between them is not wider in middle-income countries (p = 0.27). Model agreement is kappa = 0.77; a blind human rating of 300 tasks agrees with the model consensus at kappa = 0.85, and an agentic panel with web search at kappa = 0.87. We release the index, the atlas, the prompts and an MCP server at https://github.com/Cespial/delegation-divide.",
+      "summary_zh": "【金融经济学】。论文标题：The Delegation Divide: An Open Index of AI-Agent Delegability across Occupations and Countries。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Multiple Stopping and Exercise Boundaries for American Put Options",
+      "authors": [
+        "Katsunori Ano"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-22",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.30637v1",
+      "cited_by_count": 0,
+      "abstract": "This article studies a finite-horizon American put option with up to $m$ exercise rights under the risk-neutral Black--Scholes model, where consecutive exercises must be separated by a prescribed refractory period $δ>0$ and unused rights may expire. For each number of remaining rights, we show that optimal exercise is characterized by a single exercise boundary and that these boundaries are ordered by the number of remaining rights. We prove optimality of the first boundary-hitting time and establish local Lipschitz continuity of the exercise boundaries within each open deadline strip. Away from the deadlines, we derive smooth fit, the associated quasi-variational inequality and free-boundary formulation, an early-exercise-premium representation, recursive Volterra-type boundary equations, and a verification theorem. We also extend the recursive formulation to an independent random termination time, thereby allowing for exogenous termination of the option contract.",
+      "summary_zh": "【金融经济学】。论文标题：Multiple Stopping and Exercise Boundaries for American Put Options。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "When News Gets Old: Portfolio Allocation with Reinforcement Learning and Large Language Models",
+      "authors": [
+        "Bolin Song",
+        "Surui Xiang"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-22",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.30564v1",
+      "cited_by_count": 0,
+      "abstract": "Financial news can influence investment decisions long after publication. Timely news may reach an investor before prices fully adjust, whereas older news may already be reflected in prices. We examine two ways to handle aging signals: retain them and give a portfolio policy timing information, or filter them out before portfolio selection. A fixed large language model (LLM) extracts signals from public SEC disclosures. We compare these treatments in reinforcement learning (RL) policies and LLMs that choose portfolios directly. We evaluate returns after trading costs in historical tests over 2023-2025. RL choices respond to timing information in a controlled test, but historical returns show no consistent benefit from adding it. For the LLM, filtering old news produced the highest average net return, reaching 18.43% per year when news delivery was delayed by four weeks. This exceeded the returns of all RL strategies that used news.",
+      "summary_zh": "【金融经济学】。论文标题：When News Gets Old: Portfolio Allocation with Reinforcement Learning and Large Language Models。摘要概述：该研究围绕「Economics、Finance」相关议题展开，属于金融经济学方向的研究。。结论要点：已基于原文英文摘要提炼主题信息，建议结合原文获取精确结论与量化结果。。研究方法：大语言模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    }
+  ]
+}
