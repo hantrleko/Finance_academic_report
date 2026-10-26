@@ -1,0 +1,247 @@
+{
+  "date": "2026-10-26",
+  "count": 12,
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "latest_updated": true,
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（8 篇）、行为金融（1 篇）、风险管理与衍生品（1 篇）。方法上以实验方法、数值模拟为主。来源分布：arXiv（7 篇）、Semantic Scholar（2 篇）、NBER（2 篇）。其中 3 篇命中顶级期刊白名单。",
+  "insights": {},
+  "papers": [
+    {
+      "title": "Arabert with Graph Attention for Imbalanced Arabic Sentiment Classification: An Ablation Study of Fusion Strategies",
+      "authors": [
+        "H. A. Ali",
+        "A. Sabir"
+      ],
+      "venue": "African Journal Of Applied Research",
+      "published_date": "2026-10-25",
+      "doi_url": "https://doi.org/10.26437/rh2xbg62",
+      "openalex_url": "https://openalex.org/W7223445554",
+      "cited_by_count": 0,
+      "abstract": "Purpose: This study examines whether combining AraBERT with a Graph Attention Network (GAT) over a semantic text graph improves three-class classification. \nDesign/Methodology/Approach: Experiments were conducted on hotel reviews (HARD, 392,512 texts) and book reviews (LABR, 59,620 texts). Both corpora are imbalanced in almost identical proportions — negative 13.06%, neutral 19.92%, positive 67.01% in HARD, and 13.13%, 19.47%, 67.40% in LABR. A stratified 70/15/15 split preserves these proportions, giving evaluation partitions of 58,878 and 8,944 reviews, respectively. We compared four configurations: AraBERT alone (M1), a frozen encoder feeding the graph network (M2), a fine-tuned encoder whose sentence representation is replaced by the pooled graph states (M3), and a fine-tuned encoder whose pooled graph states are fused with the retained CLS representation (M4). Each configuration was trained with three seeds on a fixed stratified split. \nResearch Limitation: The paired t-test over three seeds does not reach significance in either corpus.\nFindings: On LABR, M4 obtained the highest F1-Macro (0.6263 ± 0.0036 against 0.6226 ± 0.0036 for M1), and McNemar's test was significant in two of the three seeds. On HARD, the ordering was reversed (0.8337 ± 0.0040 for M1 against 0.8304 ± 0.0028 for M4). M3 did not exceed the baseline, and M2 fell clearly below it. \nPractical Implication: Establishing a clearer benefit will require a more precise graph, in particular one derived from syntactic parsing rather than lexical matching, and a tighter form of integration than the concatenation used here. \nSocial Implication: Sentiment analysis is a natural language processing technique which seeks to determine whether the expressed sentiment is positive, negative or neutral so that an institution/researcher can gain insights from a large set of unstructured data.\nOriginality/Value: The study isolates the manner of combination rather than the presence of the graph: fusing the pooled graph states with the retained CLS representation improves on the baseline, whereas substituting them for it does not, a distinction not previously separated for Arabic document-level sentiment.",
+      "summary_zh": "【行为金融】**目的**：本研究探讨将AraBERT与图注意力网络（Graph Attention Network, GAT）结合使用在语义文本图上处理，是否能够提升三类分类任务的性能。  \n\n**设计/方法/途径**：实验数据来源于酒店评论（HARD，共392,512条文本）和书籍评论（LABR，共59,620条文本）。这两个语料库的类别分布几乎完全不平衡：HARD中负面评论占13.06%、中性评论占19.92%、正面评论占67.01%；LABR中负面评论占13.13%、中性评论占19.47%、正面评论占67.40%。采用70/15/15的分层划分方式来保持这种不平衡比例，分别得到58,878条和8,944条用于评估的评论数据。我们比较了四种配置：仅使用AraBERT（M1）、使用固定编码器作为图网络的输入（M2）、使用微调后的编码器并将句子表示替换为聚合后的图状态（M3），以及使用微调后的编码器并将聚合后的图状态与保留的CLS表示融合（M4）。每种配置均在固定的分层数据集上使用三种不同的随机种子进行训练。  \n\n**研究局限性**：在任一语料库中，基于三种随机种子的配对t检验均未能达到统...。研究方法：情绪分析、实验方法。",
+      "topics": [
+        "Natural language processing",
+        "Graph",
+        "Computer science",
+        "Artificial intelligence",
+        "Sentence"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "On the continuity of conditional distributions and stratification for derivative pricing",
+      "authors": [
+        "Aleksandar Arandjelovic",
+        "Patrick Cheridito"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-23",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.32970v1",
+      "cited_by_count": 0,
+      "abstract": "Stratification can reduce the estimator variance in Monte Carlo simulations by partitioning the sample space according to a low-dimensional factor and sampling separately within the resulting strata, making it well suited to the valuation of path-dependent claims in high-dimensional financial models. Its performance, however, depends critically on the choice of the stratification factor, and effective low-dimensional factors are generally difficult to identify in complex continuous-time models. Neural networks provide a flexible approximation class for this purpose and have proved useful in related variance-reduction problems in quantitative finance. In this paper, we study the construction of neural stratification factors for derivative pricing under proportional allocation in continuous-time models. Since the numerical construction of a stratification factor typically involves approximation, we establish continuity results for the associated conditional expectations and, more generally, conditional distributions, and provide several counterexamples showing the limits of this continuity theory. Combined with density results for neural networks, our findings yield a universal approximation theorem for admissible stratification factors. We conclude with numerical experiments involving a constant-maturity-swap range accrual in a two-factor Gaussian short-rate model and a worst-of autocallable in a Wishart stochastic covariance model, where the learned factors outperform all considered benchmarks.",
+      "summary_zh": "【风险管理与衍生品】分层方法可以通过根据低维因子对样本空间进行划分，并在划分后的各个层内分别进行抽样，从而降低蒙特卡洛模拟中的估计量方差，因此非常适合用于高维金融模型中路径依赖型索赔的估值。然而，其性能在很大程度上取决于分层因子的选择，而在复杂的连续时间模型中，有效的低维因子通常难以确定。神经网络为此类问题提供了一种灵活的近似方法，并已在量化金融中的相关方差降低问题中展现出实用性。在本文中，我们研究了在连续时间模型下，基于比例分配原则构建用于衍生品定价的神经分层因子的方法。由于分层因子的数值构造通常涉及近似处理，我们建立了相关条件期望（以及更一般意义上的条件分布）的连续性理论，并通过几个反例揭示了该连续性理论的局限性。结合神经网络的密度性质，我们的研究结果推导出了一个适用于所有可接受分层因子的通用近似定理。最后，我们通过数值实验验证了这一理论的有效性：实验对象包括一个双因子高斯短期利率模型中的恒定到期日互换范围累积结构，以及一个Wishart随机协方差模型中的“最差情况自动赎回”（worst-of autocallable）结构，结果表明所学习到的分层因子优于所有对比基准模型。。研究方法：蒙特卡洛模拟、数值模拟、神经网络、实验方法、随机过程。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Fiscal Dominance and Global Determinacy",
+      "authors": [
+        "Alessandro Piergallini"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-23",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.32963v1",
+      "cited_by_count": 0,
+      "abstract": "The existing literature on monetary-fiscal policy interactions emphasizes that an active monetary/passive fiscal policy regime causes global indeterminacy of equilibrium, supporting liquidity traps and self-fulfilling hyperinflations as possible equilibrium outcomes. In a nonlinear New Keynesian model with costly price adjustment, I show that an analogous critique, with different global macroeconomic dynamics, extends to a passive monetary/active fiscal policy regime whenever the fiscal response to government liabilities is below the steady-state real interest rate but positive. In this case, although the equilibrium is locally unique according to the Blanchard-Kahn conditions, there exist multiple inflation paths originating around the saddle path that converge asymptotically to the central bank's target rate while satisfying the private sector's transversality condition. I demonstrate that global determinacy instead requires a pure regime of fiscal dominance, with primary surpluses set independently of the real value of government liabilities. Only then are all nonlinear off-saddle trajectories ruled out as equilibria, for they violate the private sector's transversality condition or its no-Ponzi game condition, or imply an infeasible allocation. The transversality condition coincides with the government debt valuation equation, in which primary surpluses are discounted at the endogenous real interest rate, and pins down a unique initial jump in inflation onto the saddle path, leading to the unique steady state. The results imply that, when globally determinate, inflation is a fiscal phenomenon, shaped by the central bank's interest-rate policy.",
+      "summary_zh": "【金融经济学】现有关于货币-财政政策相互作用的文献指出，积极的货币政策或消极的财政政策会导致全球均衡的不确定性，从而使得流动性陷阱和自我实现的恶性通货膨胀成为可能的均衡结果。在一个存在价格调整成本的非线性新凯恩斯模型中，我证明了类似的观点——尽管全球宏观经济动态有所不同——同样适用于消极的货币政策和积极的财政政策组合。当政府对政府负债的财政反应低于稳态实际利率但为正时，就会出现这种情况。在这种情况下，虽然根据Blanchard-Kahn条件均衡是局部唯一的，但存在多条通货膨胀路径，这些路径围绕鞍点路径展开，并最终收敛到中央银行的目标利率，同时满足私营部门的横截条件。我指出，要实现全球均衡，必须实行纯粹的财政主导政策，即初级盈余的规模应独立于政府负债的实际价值来确定。只有在这种情况下，所有非鞍点路径才能被排除在均衡之外，因为它们要么违反了私营部门的横截条件或无庞氏博弈条件，要么意味着资源配置不可行。横截条件与政府债务估值方程一致，该方程中初级盈余是按照内生实际利率进行折现的；这一条件决定了通货膨胀在起始阶段的唯一变动方向，从而引导经济达到唯一的稳态。研究结果表明，当经济实现全球均衡时，通货膨胀本...。研究方法：均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Research on the Impact of Enterprise Digital Transformation on The Impact of Corporate Digital Transformation on Stock Price Synchronization: Evidence from Chinese A-share Listed Firms",
+      "authors": [
+        "Qian Liu",
+        "Zhi-Zhi Gu"
+      ],
+      "venue": "Journal of Economics and Public Finance",
+      "published_date": "2026-10-19",
+      "doi_url": "https://doi.org/10.22158/jepf.v12n3p170",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:293825566",
+      "cited_by_count": 0,
+      "abstract": "The digital transformation of enterprises is a major trend among firms currently. Clarifying its impact on stock price synchronization is a basic issue to explore how the digital transformation of enterprises can empower the capital market. Based on the data of Chinese Shanghai and Shenzhen A-share listed companies from 2010 to 2024, this paper studies the impact of digital transformation of Chinese companies on stock price synchronization. The results show that digital transformation will lead to stock price synchronization. The mechanism analysis shows that the digital transformation of enterprises improves corporate governance level and improves the stock price synchronization of the external path that analysts pay attention to. Furthermore, the efficiency of enterprise digital transformation on stock price synchronization is more significant in industries with a high level of marketization and fierce competition and small-scale enterprises. This article provides data for a deep understanding of the impact of digital transformation on stock price synchronization, provides theoretical support based on pricing efficiency for the digital transformation of enterprises to drive high capital markets, and has beneficial enlightenment for gradually improving the allocation of resources in the capital market.",
+      "summary_zh": "【公司金融】企业数字化转型是目前企业界的主要趋势之一。明确其对公司股价同步性的影响，是探讨企业数字化转型如何赋能资本市场的一个基本问题。本文基于2010年至2024年间中国沪深A股上市公司的数据，研究了企业数字化转型对公司股价同步性的影响。研究结果表明，数字化转型确实能够促进股价同步性的提升。机制分析显示，企业数字化转型通过提升公司治理水平，改善了分析师所关注的外部路径（即市场信息传递机制），从而促进了股价同步性的提高。此外，在市场化程度高、竞争激烈的行业以及小型企业中，企业数字化转型对股价同步性的促进作用更为显著。本文为深入理解数字化转型对股价同步性的影响提供了实证数据，并基于定价效率理论，为推动资本市场发展提供了理论支持，同时对企业逐步优化资本市场资源配置具有积极的启示意义。。",
+      "topics": [
+        "Business",
+        "Computer Science",
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Defective Product Recalls and Corporate Financing Costs: Insights From New Energy Vehicle Recalls",
+      "authors": [
+        "B. Lin",
+        "Jiang-Nan Li"
+      ],
+      "venue": "International Journal of Finance & Economics",
+      "published_date": "2026-10-21",
+      "doi_url": "https://doi.org/10.1002/ijfe.70317",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:293929834",
+      "cited_by_count": 0,
+      "abstract": "Defective vehicle recalls constitute an important institutional arrangement for ensuring driving safety and protecting consumer rights. While China's new energy vehicle market has expanded rapidly, the extent to which large‐scale defective vehicle recalls affect corporate debt cost premia remains unclear. Using 80 quarters of recall data disclosed by the State Administration for Market Regulation, this study employs the CSDID estimator and event study methods to examine the impact of defective product recalls on firms' debt financing costs. The main contributions and findings are as follows: (1) based on data disclosed by the State Administration for Market Regulation, we manually process more than 2000 unstructured recall announcements and, for the first time, construct a comprehensive and systematic dataset on the number and proportion of automobile recalls in China over time, thereby documenting the distinctive features of China's recall system; (2) within the event window, defective vehicle recalls convey negative signals to the market, alter creditors' prior beliefs, and generate a debt risk premium, thereby increasing firms' debt financing costs; (3) credit ratings serve as an important mechanism through which recall events raise debt costs; (4) firms with higher default risk are more vulnerable to recall shocks and experience a greater increase in debt financing costs. This study provides a new empirical perspective on reputation capital theory with evidence from the Chinese market and suggests that firms should strictly control product quality and enhance transparency in manufacturing standards to maintain brand reputation.",
+      "summary_zh": "【金融经济学】有缺陷的车辆召回是确保驾驶安全和保护消费者权益的重要制度安排。尽管中国新能源汽车市场发展迅速，但大规模车辆召回对企业债务成本溢价的影响程度仍不明确。本研究利用国家市场监督管理总局公布的80个季度的召回数据，采用CSDID估计量和事件研究方法，分析了产品召回对企业债务融资成本的影响。主要贡献和发现如下：（1）基于国家市场监督管理总局公布的数据，我们手动处理了2000多条非结构化的召回公告，并首次构建了一个全面系统的数据库，记录了中国汽车召回的数量和比例随时间的变化情况，从而揭示了中国召回制度的独特特征；（2）在事件发生期间，有缺陷的车辆召回向市场传递负面信号，改变债权人的预期，并产生债务风险溢价，进而增加企业的债务融资成本；（3）信用评级是召回事件影响债务成本的重要机制；（4）违约风险较高的企业更容易受到召回冲击，其债务融资成本上升幅度更大。本研究从中国市场的实际数据出发，为声誉资本理论提供了新的实证视角，建议企业应严格控制产品质量并提高制造标准的透明度，以维护品牌声誉。。研究方法：双重差分、事件研究。",
+      "topics": [
+        "Economics",
+        "Business"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Beliefs Over Contracts",
+      "authors": [
+        "Francis Annan",
+        "Collin B. Raymond"
+      ],
+      "venue": "NBER Working Papers",
+      "published_date": "",
+      "doi_url": "",
+      "openalex_url": "https://www.nber.org/papers/w35788#fromrss",
+      "cited_by_count": 0,
+      "abstract": "We study how firms choose among incentive contracts and how accurately managers predict their effects. Using a survey of managerial beliefs and a large-scale field experiment, we randomly assign agents at the market level to several widely used, expenditure-equivalent incentive schemes. In the field, the best-performing contract raises weekly firm profit by over 55% relative to the status quo, despite being ranked lower by managers, whereas the worst-performing contract performs as predicted. Managers reliably avoid poorly performing contracts but systematically underestimate top-performing ones. Standard contract theory does better as a forecaster here: an unbiased textbook principal orders the contracts correctly, or very nearly so, correctly identifying the profit leader where managers do not; where it does miss, the error is similar to managers’ and for a similar reason. We show that the performance differences across contracts reflect a mix of labor-supply and risk responses, and that managerial predictability varies with contract complexity and managerial hierarchy. Our results highlight the importance of contract design for firm performance and reveal systematic limits to managerial cognition in shaping incentives.",
+      "summary_zh": "【金融经济学】我们研究了企业在不同激励合同之间的选择行为，以及管理者对这些合同效果的预测能力。通过调查管理者的观点并开展大规模的实地实验，我们将市场层面的代理人随机分配到几种广泛使用的、等效于支出的激励方案中。实验结果显示，尽管这些合同在管理者眼中的排名较低，但表现最佳的合同能使企业每周利润提升超过55%；而表现最差的合同则完全符合管理者的预期。管理者能够有效避免选择效果不佳的合同，但却系统性地低估了表现最佳的合同。标准合同理论在预测合同效果方面表现更为准确：一个无偏见的“教科书式”委托人能够正确地选择合同，或者在管理者判断失误的情况下也能几乎正确地识别出利润最高的合同；当理论预测出现偏差时，其误差与管理者自身的预测误差相似，且原因也相同。我们的研究指出，合同之间的绩效差异反映了劳动力供给和风险反应的共同作用，并且管理者的预测能力会随着合同复杂性的增加以及管理层次的不同而变化。研究结果强调了合同设计对企业管理绩效的重要性，同时也揭示了管理者在制定激励机制时认知上的局限性。。研究方法：实验方法、调查数据、田野实验。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "nber"
+    },
+    {
+      "title": "HouseholdBench: Evaluating Large Language Models as Predictors of Household Economic Behavior",
+      "authors": [
+        "Jin Huang",
+        "Diego Ferreras Garrucho",
+        "Yutong Xie",
+        "Walter M. Yuan",
+        "Qiaozhu Mei",
+        "Chen Lian",
+        "Jonathon Hazell"
+      ],
+      "venue": "NBER Working Papers",
+      "published_date": "",
+      "doi_url": "",
+      "openalex_url": "https://www.nber.org/papers/w35927#fromrss",
+      "cited_by_count": 0,
+      "abstract": "Large language models (LLMs) have the potential to meet a key goal in economics: a quantitative model of household decision making, across a variety of settings. Yet existing evaluations cover few surveys and outcomes, and do not study how households adjust to changing economic conditions. We introduce a new evaluation, HouseholdBench, which unites 6 U.S. household surveys and 32 prediction tasks spanning numeric, categorical and probabilistic outcomes, related to consumption, income, labor, expectations, and housing. Using past behavior, demographics and macroeconomic conditions, the tasks test whether LLMs predict behavior, including how households adjust to changes in various policies. We evaluate 13 proprietary and open-weight LLMs against a no-change baseline and a gradient boosted tree model. Most LLMs outperform the no-change baseline, including for policy response tasks—with the best model lowering error for numeric outcomes by 12.2%. Across most tasks, gradient-boosted trees rank first; leading proprietary LLMs approach their performance, but open-weight models lag. LLMs exhibit systematic over- and underprediction across different tasks. We identify methods that enable a 4 billion parameter open-weight model to match proprietary models’ performance: fine-tuning and aggregating 16 predictions per observation. Improvements generalize to policy-response tasks, which are excluded from fine-tuning. We release our datasets, code, and leaderboard on our website.",
+      "summary_zh": "【劳动经济学】大型语言模型（LLMs）在经济学领域具有实现一个关键目标的潜力：构建一个能够涵盖多种情境下的家庭决策行为的定量模型。然而，现有的评估研究仅涉及少数调查和结果，并未探讨家庭如何适应不断变化的经济环境。我们提出了一个新的评估框架——HouseholdBench，该框架整合了6项美国家庭调查数据以及32项预测任务，这些任务涵盖了与消费、收入、劳动力、预期和住房相关的数值型、分类型和概率型结果。通过分析过去的行为数据、人口统计信息以及宏观经济状况，这些任务用于检验LLMs是否能够准确预测家庭行为，尤其是家庭对各种政策变化的反应。我们将13种专有LLMs和开放权重LLMs与“无变化”基准模型以及梯度提升树模型进行了对比。结果显示，大多数LLMs的表现均优于“无变化”基准模型，尤其是在政策响应任务中表现尤为突出——其中表现最佳的模型将数值型结果的预测误差降低了12.2%。在大多数任务中，梯度提升树模型的排名最高；领先的专有LLMs也接近其最佳表现，但开放权重模型的表现相对滞后。LLMs在不同任务中存在系统性的过度预测或低估现象。我们发现了一些方法，可以使一个拥有40亿参数的开放权重模型达到与...。研究方法：梯度提升、大语言模型、调查数据。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "nber"
+    },
+    {
+      "title": "Optimal collective investment under regulatory uncertainty",
+      "authors": [
+        "An Chen",
+        "Christian Laudagé",
+        "Shihao Zhu"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-23",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.32959v1",
+      "cited_by_count": 0,
+      "abstract": "We study optimal collective investment subject to a Value-at-Risk (VaR)-type constraint that accounts for uncertainty about future regulatory requirements. The constraint incorporates several possible wealth thresholds and imposes a minimum weighted average probability of meeting them. We characterize the optimal terminal wealth, which combines regions of constant wealth at regulatory thresholds with Merton-type investment regions. Unlike a classical VaR constraint with only one threshold, our formulation generates protection against several thresholds. For two possible thresholds, we identify when both are protected and when protection concentrates on the larger one. Numerical results show that the regulatory constraint can substantially reshape the optimal payoff and generate large welfare losses relative to unconstrained investment when the required compliance probability is high, even the smaller wealth threshold is high, or initial capital is limited. In heterogeneous investor pools, welfare losses depend strongly on the composition of the risk aversions and the Pareto weights governing risk sharing. Losses are particularly pronounced when highly risk-averse investors dominate the pool. Moreover, investors with smaller capital contributions can bear disproportionately large shares of the total welfare loss, while larger contributors may bear less than their capital-proportional share. Thus, regulatory uncertainty not only reduces aggregate welfare but can also create substantial disparities in how its costs are distributed among investors.",
+      "summary_zh": "【金融经济学】我们研究了在考虑未来监管要求不确定性的风险价值（VaR）类型约束下的最优集体投资问题。该约束包含了多个可能的财富阈值，并要求实现这些阈值的最小加权平均概率。我们描述了最优的最终财富分布，这种分布结合了在监管阈值处财富保持不变的区间以及采用Merton模型进行投资的区间。与仅有一个阈值的传统VaR约束不同，我们的模型能够提供对多个阈值的保护。对于两个可能的阈值，我们分析了在何时两个阈值都能得到保护，以及在何时保护主要集中在较大的阈值上。数值结果表明，当所需的合规概率较高、较小的财富阈值也较高或初始资本有限时，监管约束会显著改变最优收益，并导致相对于无约束投资而言的巨大福利损失。在投资者构成多样化的情况下，福利损失强烈依赖于风险厌恶程度的分布以及决定风险分担的帕累托权重。当高风险厌恶的投资者占主导地位时，损失尤为明显。此外，资本贡献较小的投资者可能承担较大的总福利损失份额，而资本贡献较大的投资者所承担的损失可能低于其资本比例应有的份额。因此，监管不确定性不仅会降低总体福利，还可能在投资者之间造成福利成本的巨大差异。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Information Requirements for Resolving Implementation Impossibilities",
+      "authors": [
+        "Yuta Nakamura"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-23",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.32958v1",
+      "cited_by_count": 0,
+      "abstract": "We develop a framework for assessing implementation impossibilities through the information required to resolve them. Domain covers describe information used to select a mechanism without restricting admissible preferences. Coarsening a cover weakens the required information. In quasi-linear public decision problems with a status quo, we study two impossibilities of dominant-strategy implementation: combining efficiency and individual rationality with either budget feasibility or budget balancedness. Under an interval cover based on bounds on maximal social surplus, we characterize the social choice rules implementable in dominant strategies and satisfying the first set of axioms. Under a surplus-level cover based on exact surplus levels, we obtain the corresponding characterization for the second set of axioms. Both covers are minimal: no strictly coarser cover permits implementation under the respective requirements. These economically interpretable minimal covers deepen our understanding of the informational severity of each impossibility.",
+      "summary_zh": "【金融经济学】我们构建了一个框架，用于通过解决实施难题所需的信息来评估这些难题的可行性。领域覆盖（domain covers）描述了用于选择机制的信息，同时不对可接受的偏好设置任何限制。对覆盖范围的细化会降低所需信息的数量。在存在现状的准线性公共决策问题中，我们研究了两种主导策略实施的不可能性：在实现效率与个体理性目标的同时，还需满足预算可行性或预算平衡性要求。基于最大社会剩余上限的区间覆盖（interval cover），我们明确了能够在主导策略下实施并满足第一组公理的社会选择规则；而基于精确剩余水平的覆盖范围，则揭示了满足第二组公理的社会选择规则的特征。这两种覆盖范围都是“最小化”的：不存在更粗略的覆盖方式能够在相应条件下实现目标。这些具有经济解释意义的“最小化”覆盖范围，加深了我们对每种实施难题信息复杂性的理解。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms",
+      "authors": [
+        "Yuhang Ji",
+        "Fasheng Xu",
+        "Tianjun Feng"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-23",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.32945v1",
+      "cited_by_count": 0,
+      "abstract": "Large language model (LLM) platforms introducing advertising must decide how much capability ad revenue should fund and what consumers should pay to avoid ads. We study a monopolistic platform that jointly chooses costly response quality, advertising intensity, and subscription prices when advertising reduces user value but better service raises advertising returns. Three findings follow. First, when partly ad-supported and ad-free plans coexist, advertising can finance useful service for consumers who receive none under pure subscription. Lower effective quality in middle plans weakens the alternatives available to premium users, allowing higher prices for unchanged ad-free service. Some fully ad-supported users gain utility, while partly ad-supported and ad-free users lose: broader access can coexist with utility polarization. Second, an intermediate advertising cap can maximize consumer surplus by preserving some revenue that finances service while limiting degradation. Third, cheaper compute can raise quality and reduce ad intensity, yet sufficiently large cost reductions can increase aggregate advertising revenue above its initial level because better service raises the value of the remaining advertised interactions. An extension shows how advertising-funded upgrades can bring plans to the same maximum capability and advertising exposure, eliminating the basis for different prices. These results make menu design central to evaluating LLM advertising: the consequences extend beyond users who see ads to the alternatives and prices faced by those who do not.",
+      "summary_zh": "【金融经济学】引入广告的大型语言模型（LLM）平台必须决定广告收入应资助多少服务功能，以及消费者应支付多少费用以避开广告。我们研究了一个垄断性平台，该平台在广告会降低用户价值但优质服务能提升广告收益的情况下，共同决定广告的投放强度、响应质量以及订阅价格。研究得出了以下三个主要结论：  \n\n首先，当部分依赖广告支持的计划与完全无广告的计划共存时，广告可以为那些在纯订阅模式下无法获得任何服务的消费者提供有价值的服务。中等价格计划中的较低服务质量削弱了高级用户的可选方案，从而使得无广告服务的定价得以提高。部分依赖广告支持的用户能够从中获益，而完全依赖广告支持的用户则会受损——更广泛的访问权限与用户福利的两极分化可以同时存在。  \n\n其次，设定一个适度的广告投放上限可以在保留部分用于服务支出的收入的同时，限制服务质量的下降，从而最大化消费者剩余。  \n\n第三，降低计算成本可以提高服务质量并减少广告投放强度；然而，如果成本降低幅度足够大，总体广告收入仍有可能超过初始水平，因为优质服务会提升剩余广告互动的价值。进一步的研究表明，通过广告资助的服务升级可以使各种计划达到相同的最高服务功能和广告曝光量，从而消...。研究方法：大语言模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "A metric on solutions of the bargaining problem",
+      "authors": [
+        "Stefan Steinerberger"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-23",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.32877v1",
+      "cited_by_count": 0,
+      "abstract": "We consider the classic bargaining problem: two players have to agree on a `fair' division $(x,y) \\in Ω\\subset \\mathbb{R}_{\\geq 0}^2$ which results in Player 1 receiving $x$ and Player 2 receiving $y$. The usual approach to this problem has been to impose a number of desirable axioms that a fair division should have and then conclude that the solution is uniquely defined by the axioms. We take an orthogonal view, avoid the discussion of axioms, and ask whether different and contradicting axioms may give rise to similar solutions. To this end, we define a natural metric on the space of solutions to the bargaining problem. The metric shows a strong internal consistency between the three celebrated solutions due to Nash (1950), Raiffa (1953) and Kalai-Smorodinsky (1975). It identifies problematic cases for the Utilitarian solution and the Perles-Maschler solution (1981). The area monotonic solution of Anbarci-Bigelow (1988) is shown to be nearly perfectly located on a shortest path from Nash to Kalai-Smorodinsky.",
+      "summary_zh": "【金融经济学】我们研究了经典的讨价还价问题：两名参与者需要就一个“公平”的分配方案 $(x,y) \\in Ω\\subset \\mathbb{R}_{\\geq 0}^2$ 达成一致，使得玩家1获得 $x$，玩家2获得 $y$。传统上，解决这个问题的方法是设定一系列公平分配应满足的公理，然后根据这些公理得出唯一的解。我们采取了不同的视角，避免讨论具体的公理，而是探讨不同的、甚至相互矛盾的公理是否可能导致相似的分配结果。为此，我们在讨价还价问题的解空间上定义了一个自然的度量标准。该度量标准揭示了纳什（Nash, 1950）、雷法（Raiffa, 1953）和卡莱-斯莫罗丁斯基（Kalai-Smorodinsky, 1975）提出的三种著名解之间的内在一致性；同时指出了功利主义解（Utilitarian solution）和佩尔斯-马斯赫勒解（Perles-Maschler solution, 1981）中存在的问题。此外，安巴尔奇-比格洛（Anbarci-Bigelow, 1988）提出的基于面积单调性的解被证明几乎完美地位于从纳什解到卡莱-斯莫罗丁斯基解的最短路径上。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Local Polynomial Estimation in Irregular Correlated Random Coefficient Panel Data Models",
+      "authors": [
+        "Yelong Chen",
+        "Hua Jin",
+        "Yuxuan Ren"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-23",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.32846v1",
+      "cited_by_count": 0,
+      "abstract": "We study estimation of the average partial effect (APE) in an irregular correlated random coefficients panel data model in which the time dimension equals the number of random coefficients, $T=p$, and the density function is degenerate. We extend Graham and Powell (2012) in two directions. First, we allow the density of $d_i=\\det(X_i)$ to vanish or diverge at the origin at the polynomial rate $|d|^{a}$ with $a>-1$, and show that the aggregate time effects and the APE remain identified for every such $a$, extending earlier work studying the case $a = 0$. Second, we propose a three-step estimator: an $m$th-order local polynomial regression over the stayers for the time effects; a local polynomial fit of the conditional mean coefficient just outside the trimming threshold; and an imputation step that extrapolates the latter into the stayer region rather than discarding stayers. We establish joint asymptotic normality in three regimes determined by the sign of $a$, and obtain a convergence rate approaching $n^{-(m+1)/(2m+3)}$ when $a=0$, against $n^{-1/3}$ for Graham and Powell (2012), whose estimator is the special case $m=0$, $a=0$. The results show that smoothness of the underlying conditional expectations can be traded for a faster convergence rate in irregularly identified models. Simulations confirm lower bias and root mean squared error across designs. We redo the overidentification analysis of a markup model in Raval (2023), allowing for correlated random elasticities.",
+      "summary_zh": "【金融经济学】我们研究了在不规则相关随机系数面板数据模型中平均部分效应（APE）的估计问题。在该模型中，时间维度等于随机系数的数量，即 $T = p$，且密度函数具有退化特性。我们在两个方面对 Graham 和 Powell（2012）的研究进行了扩展。首先，我们允许密度函数 $d_i = \\det(X_i)$ 在原点处以多项式速率 $|d|^{a}$（其中 $a > -1$）消失或发散，并证明在这种情况下，总体时间效应和 APE 仍然可以被准确估计，从而扩展了之前仅针对 $a = 0$ 情况的研究。其次，我们提出了一种三步估计方法：首先对“留存样本”（即未受到剔除影响的样本）进行 $m$ 阶局部多项式回归以估计时间效应；其次对剔除阈值附近的条件均值系数进行局部多项式拟合；最后通过插值方法将拟合结果扩展到“留存样本”区域，而不是直接剔除这些样本。我们根据 $a$ 的符号确定了三种不同的渐近正态性条件，并证明了当 $a = 0$ 时，估计量的收敛速度可达到 $n^{-(m+1)/(2m+3)}$，而 Graham 和 Powell（2012）的估计量在 $m = 0, a = 0$ 时仅收敛到 ...。研究方法：面板数据、回归分析、数值模拟。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    }
+  ]
+}
