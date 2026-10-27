@@ -1,0 +1,240 @@
+{
+  "date": "2026-10-27",
+  "count": 12,
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "latest_updated": true,
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（5 篇）、风险管理与衍生品（2 篇）、资产定价（1 篇）。方法上以均衡模型、回归分析为主。来源分布：arXiv（8 篇）、NBER（3 篇）、Semantic Scholar（1 篇）。其中 3 篇命中顶级期刊白名单。",
+  "insights": {},
+  "papers": [
+    {
+      "title": "Adequacy radii for stepped-wedge trials with time-varying effects",
+      "authors": [
+        "Stanisław M. S. Halkiewicz",
+        "Sergey Alexeev"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-26",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.35853v1",
+      "cited_by_count": 0,
+      "abstract": "Complete stepped-wedge designs guarantee eventual intervention delivery, but their final periods contain no concurrent controls. Under exposure-time heterogeneity this creates a design-analysis tension: a constant-effect analysis can be precise while targeting a design-dependent contrast, whereas an exposure-time indicator (ETI) analysis targets a prespecified time-averaged effect but may be much less precise. We develop an adequacy radius that quantifies the size of exposure-time heterogeneity compatible with a prespecified tolerance for estimand mismatch, and combine it with precision calculations to compare complete wedges with rollout-constrained hybrid designs that retain a wait-list arm. For a balanced wedge with a wait-list under the Hussey-Hughes model, the wait-list share and the correlation act on the constant-effect GLS estimand through a single scalar; we prove that the radius increases strictly with the wait-list share and decreases strictly with the within-cluster correlation, but remains bounded. Numerical optimisation and a model-based redesign of a weekend allied-health trial show that intermediate hybrids make estimand-aligned ETI analysis materially more affordable, giving a robustness-precision frontier rather than a binary choice between a complete wedge and a parallel trial. A second trial, of digital adherence support for tuberculosis treatment, has the same radius but no detectable heterogeneity; its test of a constant effect would detect heterogeneity large enough to halve the coverage of the nominal interval only 37% of the time. The contribution is a diagnostic and design principle: when exposure-time heterogeneity is plausible, retaining concurrent controls reduces the price of analysing the estimand one intends to report.",
+      "summary_zh": "【风险管理与衍生品】完整的阶梯楔形设计能够确保最终实现干预措施的实施，但其最终研究阶段不包含同时进行的对照组。在暴露时间存在异质性的情况下，这会引发设计分析与实际结果的矛盾：恒定效应分析在针对设计依赖性变量时可能具有较高的精确度，而暴露时间指标（ETI）分析虽然能够捕捉到预先设定的时间平均效应，但其精确度可能较低。我们提出了一种“充分性半径”概念，用于量化与预设的估计量偏差容忍度相容的暴露时间异质性程度，并将其与精确度计算相结合，以比较完整楔形设计与保留等待名单组的混合设计。在Hussey-Hughes模型下，对于包含等待名单的平衡楔形设计，等待名单的比例和群体内相关性通过一个单一的标量影响恒定效应的广义线性模型（GLS）估计量；我们证明该充分性半径会随着等待名单比例的增加而严格增大，随着群体内相关性的降低而严格减小，但其值始终处于一定范围内。通过对一项周末联合健康试验的数值优化和基于模型的重新设计，我们发现采用混合设计能够显著降低估计量对齐所需的成本，从而实现精确度与稳健性之间的平衡，而无需在完整楔形设计与平行试验之间做出二选一的选择。另一项关于结核病治疗数字化依从性支持的试验虽然也采用了相同的充...。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "AI in Econometric Theory: An Example",
+      "authors": [
+        "Isaiah Andrews",
+        "Anna Mikusheva"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-26",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.35831v1",
+      "cited_by_count": 0,
+      "abstract": "This note contains a story and a paper. The paper is about the admissibility of two-stage least squares with weak instruments, a topic we have worked on together since 2019. The story is about how we (or, rather, our LLMs) wrote the paper, and some thoughts on what this may mean for our field.",
+      "summary_zh": "【金融经济学】这篇简报包含一个故事和一篇学术论文。论文探讨了在弱工具条件下使用两阶段最小二乘法（two-stage least squares）的合理性，这是我们自2019年以来共同研究的一个课题。故事讲述了我们（或者更准确地说，是我们的大型语言模型，LLMs）是如何完成这篇论文的，以及这对我们所在领域可能意味着什么。。研究方法：两阶段最小二乘。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "The effect of urban density on stock returns: evidence from satellite imagery and firms in the United States",
+      "authors": [
+        "Mahsa Memarian",
+        "Carles Vergara-Alert",
+        "S. Benetti"
+      ],
+      "venue": "Journal of economics and finance",
+      "published_date": "2026-10-26",
+      "doi_url": "https://doi.org/10.1007/s12197-026-09789-3",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:293942622",
+      "cited_by_count": 0,
+      "abstract": "We study how the urban density of the areas where firms are located impacts their stock returns. Using high-resolution satellite images and image segmentation algorithms, we develop measures of building density for the most populated metropolitan statistical areas (MSAs) in the US. We find that firms in urban areas with a higher potential for density increase are perceived as less risky in the stock market because they can feasibly sustain their growth, leading to lower stock returns. This effect is stronger for smaller and younger firms.",
+      "summary_zh": "【资产定价】我们研究了企业所在地地区的城市密度对其股票回报的影响。通过使用高分辨率卫星图像和图像分割算法，我们为美国人口最多的大都市统计区（MSAs）建立了建筑密度的衡量指标。研究发现，位于具有较高密度增长潜力的城市区域的企业在股市中被视为风险较低，因为这些企业能够持续实现增长，从而导致较低的股票回报。这种效应在规模较小、成立时间较短的企业中更为明显。。",
+      "topics": [
+        "Economics",
+        "Geography"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Strategic Monetary Policy in Open Economies",
+      "authors": [
+        "Louphou Coulibaly",
+        "Charles Engel"
+      ],
+      "venue": "NBER Working Papers",
+      "published_date": "",
+      "doi_url": "",
+      "openalex_url": "https://www.nber.org/papers/w35928#fromrss",
+      "cited_by_count": 0,
+      "abstract": "We examine optimal non-cooperative monetary policy in a two-country New Keynesian setting with complete financial markets and pricing to market for goods. In contrast to the case in which the law of one price holds for goods, currency misalignments are an important consideration even for self-oriented policymakers. Financial markets are critical in the analysis. Under “full” commitment, the optimal policy considers the effects on asset values and hence wealth distribution across countries. Optimal policy under full commitment differs from the “partial” commitment case in which the policy commitment is not made until after asset markets clear. Surprisingly, the optimal targeting rule under strategic policy with full commitment is the same as under cooperative policy. In this setting, changes in state-contingent claim prices offset the wealth a self-oriented policymaker might seek through terms-of-trade manipulation, and we show that there are no gains from cooperation. Although a policy chosen under partial commitment may be desirable from a country’s perspective, the resulting Nash equilibrium yields lower welfare.",
+      "summary_zh": "【货币政策与宏观经济】我们研究了一个包含两个国家的新凯恩斯主义框架下的最优非合作货币政策，该框架具有完善的金融市场以及商品价格完全反映市场供求关系的特点。与商品价格具有单一性（即“一价定律”成立）的情形不同，即使对于以自身利益为导向的决策者而言，货币错配也是一个重要的考虑因素。金融市场在分析中起着关键作用。在“完全承诺”条件下，最优货币政策会考虑到资产价值的变化，进而影响两国之间的财富分配。完全承诺下的最优政策与“部分承诺”情形存在差异——在后者中，政策承诺直到资产市场出清后才作出。令人惊讶的是，在具有完全承诺的战略性政策下，最优的货币政策规则与合作政策下的规则是相同的。在这种环境下，状态依赖的索赔价格变动会抵消以自身利益为导向的决策者可能通过操纵贸易条件来寻求的财富收益，我们证明了合作并不会带来任何额外好处。尽管从某个国家的角度来看，部分承诺下选择的政策可能是可取的，但由此产生的纳什均衡会导致更低的福利水平。。研究方法：均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "nber"
+    },
+    {
+      "title": "The Occupational Ladder: Implications for Life-Cycle Wage Dynamics",
+      "authors": [
+        "Henry E. Siu",
+        "Kelly Foley",
+        "Matias Cortes"
+      ],
+      "venue": "NBER Working Papers",
+      "published_date": "",
+      "doi_url": "",
+      "openalex_url": "https://www.nber.org/papers/w35929#fromrss",
+      "cited_by_count": 0,
+      "abstract": "Some occupations pay higher wages than others, even conditional on worker characteristics, implying that occupations can be ranked on a ladder. We develop a simple decomposition to study the role this occupational ladder plays in average wage growth and in the fanning out of wages over the life cycle. We present three main findings. First, the distribution of employment shifts towards higher-paying occupations as workers gain experience. This contributes modestly to average life-cycle wage growth, with greatest impact in early career. Second, this upward movement in the occupational employment distribution is not accompanied by increasing dispersion; thus, the occupational ladder does not directly contribute to the fanning out of wages. Third, early-career workers who are well-positioned on the occupational ladder tend to earn wages far below the occupational average. However, by mid-career, workers’ relative wages within occupations (their positions on the job ladder) no longer depend on their occupation. This change in the covariance between individuals’ positions on the job and occupational ladders is a major contributor to the fanning out of wages over workers’ careers.",
+      "summary_zh": "【劳动经济学】某些职业的工资高于其他职业，即使考虑到劳动者的个人特征也是如此，这表明职业可以按照某种顺序进行排序。我们提出了一种简单的分解方法来研究这种职业排序对平均工资增长以及工资在生命周期中分布变化的影响。我们得出了三个主要发现：首先，随着劳动者经验的积累，就业分布逐渐向高薪职业倾斜；这一趋势对平均生命周期工资增长的贡献较为有限，但在职业生涯早期影响最为显著。其次，职业就业分布的上升并未伴随着工资差距的扩大；因此，职业排序本身并不会直接导致工资分布的扩大。第三，职业生涯初期处于较高职业地位的劳动者所获得的工资往往远低于该职业的平均水平。然而，到了职业生涯中期，劳动者在某一职业内的相对工资（即他们在职业阶梯上的位置）不再受其所从事职业的影响。个体在职业阶梯和职业分布上的这种位置关联性的变化，是导致劳动者职业生涯中工资差距扩大的主要原因。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "nber"
+    },
+    {
+      "title": "Model Selection for Off-Policy Evaluation via Pairwise Bellman Validation",
+      "authors": [
+        "Lars van der Laan",
+        "Vasilis Syrgkanis",
+        "Nathan Kallus"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-26",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.35748v1",
+      "cited_by_count": 0,
+      "abstract": "Model selection and hyperparameter tuning pose a central challenge in off-policy evaluation (OPE) because errors of fitted Q-functions and occupancy-ratio estimates cannot be directly evaluated from held-out transitions. Bellman-residual and minimax validation methods often require auxiliary regressions or optimization over separate critic classes, adding computational and tuning costs. We introduce pairwise Bellman validation (PBV), a tuning-free minimax procedure for selecting among finite classes of fitted Q-functions and occupancy-ratio estimators using held-out transitions. PBV constructs critics from pairwise candidate differences, requiring only finitely many empirical moment calculations without auxiliary validation models or separate critic optimization. We establish finite-sample oracle inequalities relative to the best available candidate, even under candidate-class misspecification. Our key insight is that Q-function errors and log ratios between candidate and true occupancy ratios provide oracle critics whose Bellman and adjoint Bellman moments control estimation error. Pairwise candidate differences approximate these unknown critics, while penalties account for comparator approximation error. For Q-function selection, we first develop unweighted PBV, which evaluates pairwise Bellman moments under the offline distribution and admits oracle guarantees under a pairwise coercivity condition relating the offline distribution to the target-policy dynamics. We then develop target-aligned PBV (TA-PBV), which uses marginalized importance weighting to provide error control without pairwise coercivity. For occupancy-ratio selection, we develop adjoint PBV (A-PBV), which evaluates adjoint Bellman moments against log-ratio critics. On Hopper and Deep OPE, unweighted PBV performs competitively, while target-occupancy weighting can improve performance in settings with controlled overlap.",
+      "summary_zh": "【金融经济学】模型选择与超参数调优在离策略评估（Off-policy Evaluation, OPE）中构成了核心挑战，因为拟合的Q函数误差及占用率估计值无法通过保留的样本数据直接进行评估。贝尔曼残差（Bellman-residual）和极小极大（minimax）验证方法通常需要额外的回归分析或针对不同评估器的优化过程，这会增加计算成本和调优难度。我们提出了基于成对样本数据的贝尔曼验证（Pairwise Bellman Validation, PBV）方法——这是一种无需额外调优的极小极大算法，能够利用保留的样本数据在有限的Q函数及占用率估计器类别中进行选择。PBV通过计算成对候选值之间的差异来构建评估器，仅需进行有限次数的经验矩计算，无需依赖辅助验证模型或单独的评估器优化过程。即使在候选类别设定不准确的情况下，我们也能证明该算法相对于最优候选方案具有有限的样本性能保证。我们的关键发现在于：Q函数的误差以及候选值与真实占用率之间的对数比率能够生成具有良好性能的评估器，其贝尔曼矩（Bellman moments）及伴随贝尔曼矩（adjoint Bellman moments）能够有效控制估计误差...。研究方法：回归分析、优化方法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain",
+      "authors": [
+        "Pranay Anchuri"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-26",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.35738v1",
+      "cited_by_count": 0,
+      "abstract": "Demand on blockchain-based marketplaces arrives in bursts and at a high rate. On these platforms the data are completely visible, which makes it feasible to compare the bursty demand against the usual load. The congestion manifests as an increased demand for gas, the primary resource a blockchain sells. Existing studies consider how to price the gas. The demand itself, and what it is made of during bursts, has not been measured. We measure it on Robinhood Chain, a layer-2 blockchain that quickly became a venue for trading tokenized equities and memecoins. We collected the data from every block of its first three active months and more than 50 million Uniswap swaps that occurred during bursty periods. We find that a burst trades about as many pools as a quiet period, mostly different ones, and trades them harder, on top of elevated demand that accumulated for hours. With the bursts aligned on their peaks, the median peak is 2.5 times the usual load. Both the rise and the fall of the demand are described by the sum of two exponential functions with different timescales, a slow one of hours and a fast one of minutes. Against a matched quiet period, a burst has 1.05 times the pools, 1.40 times the trades, and 1.21 times the senders. We use two models to explain the arrival of bursts: externally triggered cascades and self-excitation. The former fits the data relatively better. Inside a burst, the entry of each trader into a pool is followed for about 24 seconds by more entries than the existing traders predict. Whether this is because of imitation or because of a shared signal is left open.",
+      "summary_zh": "【金融经济学】基于区块链的市场平台所面临的需求呈现出突发性且强度较高的特点。在这些平台上，所有数据都是完全透明的，这使得人们能够将这种突发性需求与平台的常规负载进行对比。这种需求激增的现象表现为对“gas”（区块链交易中使用的核心资源）的需求增加。“gas”的定价是现有研究的主要关注点，但需求本身的变化规律，尤其是在突发性需求期间的具体构成，尚未得到充分研究。我们在Robinhood Chain这一层2区块链平台上进行了相关测量——该平台迅速成为了交易代币化股票和“memecoins”的主要场所。我们收集了该平台在最初三个月内的所有交易数据，以及突发性需求期间发生的超过5000万笔Uniswap交易记录。研究发现，在需求激增期间，平台上的交易池数量与平静时期相当，但交易的对象大多不同；同时交易活跃度也显著提高。由于需求峰值与突发时段高度吻合，需求峰值的中位数是平常负载的2.5倍。需求的增减过程可以用两个指数函数来描述：一个时间尺度为小时，另一个为分钟。与平静时期相比，需求激增期间的交易池数量增加了1.05倍，交易笔数增加了1.40倍，发送者数量增加了1.21倍。我们提出了两种模型来解释这种突发...。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Weekend Crypto Volatility and Monday Market Risk",
+      "authors": [
+        "Pedram Ebadollahyvahed",
+        "Nneka Umeorah"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-26",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.35702v1",
+      "cited_by_count": 0,
+      "abstract": "Cryptocurrencies trade continuously while major traditional markets close over the weekend. We examine whether weekend cryptocurrency volatility predicts Monday variance in equity, commodity and fixed-income markets. Using daily range-based variance measures for Bitcoin, Ether, XRP, the S&P 500, gold and a US Treasury ETF over 2017-2026, we augment heterogeneous autoregressive models with a common weekend cryptocurrency factor. Predictive content is weak before 2024 but significant thereafter. In the post-2024 sample, a one-standard-deviation increase in the factor is associated with 27-54% higher fitted Monday variance. Adding the factor reduces out-of-sample QLIKE losses by 11-22%, although statistical evidence varies across markets. Friday cryptocurrency volatility does not reproduce the result, and coin-specific variation adds no significant predictive information beyond the common factor. An endogenous procedure estimates a break in late 2023, during growing anticipation of US spot-Bitcoin ETF approval. However, ETF-flow interactions provide no evidence of amplification through greater measured Monday flow activity, leaving the mechanism unresolved. The findings suggest that calendar-specific volatility measures reveal predictive information that aggregate connectedness measures may obscure.",
+      "summary_zh": "【风险管理与衍生品】加密货币在主要传统市场周末休市期间仍持续交易。我们研究了周末加密货币的波动性是否能够预测周一股票、商品和固定收益市场的波动性。通过使用2017年至2026年间比特币（Bitcoin）、以太坊（Ether）、瑞波币（XRP）、标准普尔500指数（S&P 500）、黄金以及美国国债ETF的日波动范围指标，我们在异质自回归模型中加入了一个共同的周末加密货币因素。研究发现，在2024年之前，这一因素的预测能力较弱；但在2024年之后，其预测效果变得显著。在2024年之后的样本中，该因素每增加一个标准差，周一市场波动性会提高27%至54%。加入该因素后，样本外QLIKE损失减少了11%至22%，不过不同市场的统计证据存在差异。周五的加密货币波动性并未呈现出类似的趋势；此外，特定加密货币的波动性并未提供超出共同因素之外的额外预测信息。一项内生性分析表明，这种变化发生在2023年末，当时市场对美国比特币ETF获批的预期日益增强。然而，ETF资金流动与周一市场波动性的关系并未显示出通过增加资金流动来放大波动性的证据，因此这一机制仍不明确。研究结果表明，特定于日历的波动性指标能够揭示一些预测信息，...。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Self-Confirming Equilibrium under Model Misspecification",
+      "authors": [
+        "Riccardo Formenti"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-26",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.35692v1",
+      "cited_by_count": 0,
+      "abstract": "We study the steady states of games played recurrently within large anonymous populations of players who receive partial ex-post feedback about the play of their opponents. Departing from the classical Bayesian account, players do not trust their conjectures as a correct description of the strategic environment but consider them as approximations of a reality that is only partially modeled and partially observed. We introduce games with feedback and uncertainty attitudes, in which the normal-form structure is enriched with a profile of feedback functions and, for each player, a preference functional that encodes aversion to misspecification and to ambiguity. The induced misspecification sensitive criterion contains the variational, maxmin, and smooth-ambiguity evaluations as special cases and collapses to expected utility when beliefs are unambiguous and the player is neutral to misspecification. The appropriate steady-state notion for such games is the Self-Confirming Equilibrium under Model Misspecification (SCEM), which requires each player to best respond to a set of structured conjectures that the feedback generated by equilibrium play cannot falsify. In contrast with the classical theory and with its ambiguity-averse extensions, mixed-strategy Nash Equilibria need not be self-confirming. We therefore develop a companion notion of Robust Nash Equilibrium (R-NE), in which every supported action remains optimal under a variational evaluation. Robust Nash equilibria refine SCEM, exist whenever the statistical distances are continuous, thereby delivering existence of SCEM, and coincide with the latter under fully informative feedback. Under observationally consistent divergences and observable payoffs, R-NE and SCEM reduce, respectively, to Nash equilibrium and Self-Confirming Equilibrium under Ambiguity (SCEA), which generalizes smooth self-confirming equilibrium.",
+      "summary_zh": "【公司金融】我们研究了在大型匿名玩家群体中反复进行的博弈的稳态行为。这些玩家能够获得关于对手策略的部分事后反馈。与传统贝叶斯理论不同，玩家并不认为自己的猜测能够准确描述战略环境，而是将其视为对现实情况的近似描述——这种现实仅被部分建模和观察。我们提出了具有反馈机制和不确定性态度的博弈模型，在该模型中，博弈的正规形式结构通过反馈函数的具体形式得到丰富；同时，每个玩家都拥有一个偏好函数，用以表达对模型误设和模糊性的厌恶。这种基于模型误设的评估标准包含了变分评估、极小极大评估以及平滑模糊性评估等特殊情况；当玩家的信念明确且对模型误设持中立态度时，该评估标准会退化为期望效用。这类博弈的适当稳态概念是“模型误设下的自我确认均衡”（Self-Confirming Equilibrium, SCEM），它要求每个玩家都能针对一组由均衡策略产生的反馈无法证伪的结构性猜测做出最佳反应。与传统理论及其规避模糊性的扩展模型不同，混合策略纳什均衡（Mixed-Strategy Nash Equilibria）并不一定具备自我确认特性。因此，我们提出了另一个概念——“鲁棒纳什均衡”（Robust Nash Equil...。研究方法：贝叶斯方法、均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Regression Adjustment for Ratios of Treatment Effects in Randomized Experiments",
+      "authors": [
+        "Haruo Kakehi"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-26",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.35666v1",
+      "cited_by_count": 0,
+      "abstract": "We study regression adjustment for ratios of treatment effects in completely randomized experiments. The existing literature adjusts the numerator and denominator separately, but this approach misses the efficiency target, loss of which matters more when richer or high-dimensional covariate information and flexible or regularized prediction methods are used to pursue further efficiency gains. We propose a two-step estimator that directly predicts the relevant transformed outcome. Using cross-fitting, our method accommodates high-dimensional first-stage prediction while keeping the final adjustment fixed-dimensional, thereby avoiding instability from a growing number of adjustment covariates. We further develop persistence-based LASSO theory that does not require sparsity, permits more covariates than observations, and allows cross-validated penalty selection under prediction-level conditions. For additional efficiency gains, our augmented two-step estimator nests the benchmark adjustment spaces and is therefore asymptotically no less efficient than the benchmark estimators, while its feasible conservative variance estimator satisfies the same efficiency ordering. Simulation studies and a real-data analysis demonstrate that our proposed estimator performs better than existing methods.",
+      "summary_zh": "【金融经济学】我们研究了完全随机实验中治疗效果比值的回归调整问题。现有文献通常分别调整分子和分母，但这种方法未能实现效率优化目标；当存在更丰富的协变量信息或更高维度的协变量时，以及使用灵活的或正则化的预测方法来进一步提升效率时，效率损失的影响更为显著。我们提出了一种两步估计方法，该方法能够直接预测相关的转换后结果。通过交叉验证，我们的方法能够在保持最终调整结果维度固定的同时，适应高维的第一阶段预测需求，从而避免因调整协变量数量增加而导致的计算不稳定问题。此外，我们还发展了一种基于持久性的LASSO理论，该理论不要求协变量具有稀疏性，允许使用的协变量数量超过观测值的数量，并能在预测层面条件下进行交叉验证的惩罚参数选择。为了进一步提高效率，我们改进的两步估计方法将基准调整空间纳入其中，因此其效率在渐近意义上不低于现有的基准估计方法；同时，我们提出的保守方差估计方法也满足了相同的效率排序要求。仿真研究和实际数据分析均表明，我们提出的估计方法优于现有的方法。。研究方法：回归分析、数值模拟、LASSO 正则化、随机实验、实验方法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "College Success: Understanding the Roles of Financial Aid, Loans, Preparation, and Incentives",
+      "authors": [
+        "Douglas N. Harris",
+        "Christopher R. Taber",
+        "Alan Yang"
+      ],
+      "venue": "NBER Working Papers",
+      "published_date": "",
+      "doi_url": "",
+      "openalex_url": "https://www.nber.org/papers/w35930#fromrss",
+      "cited_by_count": 0,
+      "abstract": "Over the past four decades, the earnings gap between college graduates and non-graduates has widened substantially, prompting interest in policies aimed at promoting higher education among low-income students. A key challenge for these policies is the high college dropout rate. This paper develops a dynamic model of college enrollment and completion with rich individual heterogeneity to assess how various factors influence college attendance, dropout, and graduation. We estimate the model using data from longitudinal surveys, results of quasi-experimental studies on grant aid, and large-scale randomized controlled trials. We use the model to simulate the effects of tuition subsidies, college loans, financial incentives, and increased pre-college skills on attendance and completion. We find moderate effects of most unconditional financial policies on attendance, with small effects on completion conditional on attendance. By contrast, some merit-based incentives, such as forgiving student loans upon receipt of a bachelor’s degree, have substantial effects. However, this type of policy and other financial subsidies accrue even more than the others to students from relatively wealthy backgrounds. Overall, it appears infeasible to design a financial aid policy that is simultaneously effective in raising attainment and fiscally progressive. By comparison, we find that the greatest potential for increasing attainment could come from better preparing students for college.",
+      "summary_zh": "【银行与信贷】在过去四十年中，大学毕业生与非毕业生之间的收入差距显著扩大，这引发了人们对旨在促进低收入学生接受高等教育的政策的关注。这些政策面临的一个关键挑战是较高的大学辍学率。本文构建了一个包含丰富个体差异的动态模型，用以分析各种因素如何影响大学入学率、辍学率和毕业率。我们利用纵向调查数据、关于助学金的准实验研究结果以及大规模随机对照试验的数据对模型进行了估计。通过该模型，我们模拟了学费补贴、大学贷款、经济激励措施以及提升学生入学前技能等因素对入学率和毕业率的影响。研究发现，大多数无条件经济政策对入学率的影响较为温和，而对已入学学生的毕业率影响较小；相比之下，某些基于成绩的激励措施（例如学生在获得学士学位后免除贷款）具有显著效果。然而，这类政策以及其他经济补贴对来自相对富裕家庭的学生带来的好处更为明显。总体而言，设计一种既能有效提高教育水平又能体现财政公平性的助学金政策似乎是不可行的。相比之下，我们认为通过更好地为学生进入大学做准备，可能更有利于提升他们的教育成就。。研究方法：随机实验、实验方法、调查数据。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "nber"
+    },
+    {
+      "title": "Extremal Perfect Monotone Equilibria in Bayesian Games with Strategic Complementarities",
+      "authors": [
+        "Wei He",
+        "Yeneng Sun",
+        "Hanping Xu"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-26",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.35511v1",
+      "cited_by_count": 0,
+      "abstract": "We study sharp bounds on equilibrium behavior in Bayesian games when players may make mistakes. Under strategic complementarities, the set of behavioral perfect equilibria has a largest and a smallest element, both in pure strategies. We ask when these bounds are monotone and how they depend on the way mistakes are made. For monotone supermodular games, we consider limits of equilibria under increasing perturbations, in the sense that conditional tremble distributions have full support and increase stochastically with type. We show that the largest and smallest perfect equilibria exist, which are pure and monotone. Under the general perfection notion, the extremal perfect equilibria continue to be monotone in the setting with finite actions. With infinite actions, the extremal perfect equilibria can be nonmonotone, and the set of perfect monotone equilibria can even lack extrema.",
+      "summary_zh": "【金融经济学】我们研究了在贝叶斯博弈中，当玩家可能犯错时，均衡行为的精确界限。在策略互补性条件下，行为完美均衡的集合在纯策略中存在最大值和最小值。我们探讨了这些界限是否具有单调性，以及它们如何依赖于玩家犯错的方式。对于具有单调超模性质的游戏，我们考虑了在逐渐增加的扰动下均衡的极限情况，即条件性“颤抖”分布具有完全支撑集，并且其概率分布会随着类型的增加而随机变化。我们证明了最大和最小的完美均衡确实存在，且它们都是纯策略且具有单调性的。在一般的完美性定义下，即使在有限行动的情境下，极端完美均衡仍然保持单调性；然而在无限行动的情况下，极端完美均衡可能不再具有单调性，而且完美均衡的集合中可能不存在极值。。研究方法：贝叶斯方法、随机过程、均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    }
+  ]
+}
