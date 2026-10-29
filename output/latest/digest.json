@@ -1,73 +1,247 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "count": 12,
   "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
   "latest_updated": true,
-  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（5 篇）、房地产金融（3 篇）、银行与信贷（1 篇）。方法上以回归分析、机器学习为主。来源分布：arXiv（7 篇）、OpenAlex（3 篇）、Semantic Scholar（2 篇）。",
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、银行与信贷（2 篇）、劳动经济学（1 篇）。方法上以机器学习、神经网络为主。来源分布：OpenAlex（7 篇）、arXiv（4 篇）、Semantic Scholar（1 篇）。其中 1 篇命中顶级期刊白名单。",
   "insights": {},
   "papers": [
     {
-      "title": "Gaussian Noise–Augmented Machine Learning Models for Predicting the Healing Performance of Self-Healing Concrete",
+      "title": "Supervising the search process produces reliable and generalizable information-seeking agents",
       "authors": [
-        "Omar Omar",
-        "Heena Dhasmana",
-        "Hassan Noorvand",
-        "Marwa Hassan"
+        "Guangzhi Xiong",
+        "Qiao Jin",
+        "Xiao Wang",
+        "Fang Yin",
+        "Haolin Liu"
       ],
-      "venue": "Journal of Materials in Civil Engineering",
-      "published_date": "2026-10-27",
-      "doi_url": "https://doi.org/10.1061/jmcee7.mteng-22801",
-      "openalex_url": "https://openalex.org/W7128063876",
+      "venue": "Nature Communications",
+      "published_date": "2026-10-28",
+      "doi_url": "https://doi.org/10.1038/s41467-026-78807-z",
+      "openalex_url": "https://openalex.org/W4407785632",
+      "cited_by_count": 1,
+      "abstract": "Abstract\n                  \n                    Large language models (LLMs) are transforming web search by shifting from document ranking to synthesizing answers, and are increasingly deployed as autonomous agentic search systems that iteratively interact with external knowledge sources. Despite this progress, building effective search agents remains challenging because high-quality intermediate search steps are difficult to generate. Previous approaches have primarily relied on outcome supervision, rewarding agents only for producing correct final answers. This often leads to reward hacking and excessive dependence on parametric memory, limiting generalization to out-of-domain tasks. To address these limitations, we introduce RAG-Gym, a framework that shifts supervision from final answers to the search process itself. With RAG-Gym, we systematically investigate architecture design, parameter optimization, and action evaluation, identifying reasoning reflection as a critical capability for search agents. Building on this insight, we propose Re\n                    2\n                    Search++, a process-supervised agent that achieves substantial improvements on multi-hop information-seeking benchmarks, especially in out-of-domain settings. Performance gains are driven primarily by higher-quality search queries rather than answer optimization alone, and the learned search critics transfer across models, including proprietary LLMs. These findings show that supervising the search process produces more reliable and generalizable information-seeking agents.",
+      "summary_zh": "【金融经济学】摘要\n\n大型语言模型（LLMs）通过从文档排名转向答案合成，正在改变网页搜索的方式，并逐渐被部署为能够与外部知识源进行迭代交互的自主搜索系统。尽管取得了这些进展，构建有效的搜索代理仍然具有挑战性，因为难以生成高质量的中间搜索步骤。以往的方法主要依赖于结果监督，仅对生成正确最终答案的代理进行奖励。这往往导致奖励机制被滥用，以及过度依赖参数化记忆，从而限制了模型对领域外任务的泛化能力。为了解决这些问题，我们提出了RAG-Gym框架，该框架将监督重点从最终答案转移到搜索过程本身。在RAG-Gym框架中，我们系统地研究了架构设计、参数优化和行为评估，发现推理反思能力是搜索代理的关键属性。基于这一发现，我们提出了ReSearch++，这是一种基于过程监督的搜索代理，在多跳信息检索基准测试中取得了显著提升，尤其是在领域外场景中。性能的提升主要得益于更高质量的搜索查询，而不仅仅是答案优化本身；此外，所学到的搜索评估机制可以在不同模型之间迁移，包括专有的LLMs。这些结果表明，对搜索过程进行监督能够培养出更可靠、更具泛化能力的信息检索代理。。研究方法：大语言模型、优化方法。",
+      "topics": [
+        "Process (computing)",
+        "Process management",
+        "Computer science",
+        "Knowledge management",
+        "Business"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "The speed-to-scrutiny paradox in social media-driven HRM: evidence from Albania",
+      "authors": [
+        "Albana Boriçi",
+        "Arjola Halluni",
+        "Elvisa Drishti",
+        "Ylvije Boriçi Kraja"
+      ],
+      "venue": "Employee Relations",
+      "published_date": "2026-10-28",
+      "doi_url": "https://doi.org/10.1108/er-10-2025-0958",
+      "openalex_url": "https://openalex.org/W7139970380",
       "cited_by_count": 0,
-      "abstract": "Abstract\n                  \n                    Self-healing concrete is an innovative approach to extend concrete’s service life by autonomously repairing cracks, thereby reducing the environmental impact of the construction industry. Although a few studies have employed machine learning (ML) models to predict the healing efficiency of concrete, they often overlooked the impact of critical variables such as bacteria type, encapsulation method, and environmental conditions. In addition, their predictive performance was limited by data scarcity and weak generalization, resulting in lower\n                    \n                      \n                        \n                          \n                            R\n                          \n                          \n                            2\n                          \n                        \n                      \n                    \n                    and higher root-mean square error (RMSE), and mean absolute error (MAE) values. This study applied train-fold-only Gaussian noise data augmentation to improve the generalization of ML models in predicting the self-healing efficiency of bacterial concrete. Data augmentation was embedded in a nested cross-validation scheme, using an outer fivefold StratifiedKFold and an inner threefold grid search cross-validation on the augmented training folds for hyperparameter tuning. Five ML algorithms, extreme gradient boosting (XGB), gradient boosting regression (GBR), support vector regression (SVR), long short-term memory (LSTM), and gated recurrent units (GRUs), were evaluated. Input variables included bacterial encapsulation techniques, healing conditions, and mix design parameters. The results showed that augmentation significantly enhanced model robustness and accuracy. XGB and GBR models achieved the highest\n                    \n                      \n                        \n                          \n                            R\n                          \n                          \n                            2\n                          \n                        \n                      \n                    \n                    values of 0.92 and 0.91, respectively, with substantial reductions in RMSE and MAE values compared with nonaugmented models. These results indicate a notable improvement in prediction reliability over prior studies. Shapley additive explanations (SHAP) and permutation analyses confirmed healing time and initial crack width as dominant features in both models. XGB captured more nonlinear variation in secondary features, whereas GBR exhibited more consistent and balanced attributions. These findings provide deeper insights into model behavior beyond conventional accuracy metrics.",
-      "summary_zh": "【金融经济学】摘要\n\n自修复混凝土是一种创新技术，通过自主修复混凝土中的裂缝来延长其使用寿命，从而降低建筑行业对环境的影响。尽管已有部分研究采用机器学习（ML）模型来预测混凝土的自修复效率，但这些研究往往忽略了细菌类型、封装方法以及环境条件等关键因素的影响。此外，由于数据稀缺和泛化能力较弱，这些模型的预测性能受到限制，导致均方根误差（RMSE）和平均绝对误差（MAE）值较高。\n\n本研究仅使用训练数据集进行了高斯噪声数据增强处理，以提高机器学习模型在预测细菌诱导混凝土自修复效率方面的泛化能力。数据增强方法被纳入嵌套交叉验证方案中：外部采用五折分层交叉验证（StratifiedKFold），内部通过三折网格搜索交叉验证对增强后的训练数据进行超参数调整。评估了五种机器学习算法：极端梯度提升（XGB）、梯度提升回归（GBR）、支持向量回归（SVR）、长短期记忆网络（LSTM）和门控循环单元（GRUs）。输入变量包括细菌封装技术、修复条件以及混合设计参数。结果表明，数据增强显著提升了模型的鲁棒性和预测准确性。XGB和GBR模型的预测准确率分别达到了0.92和0.91，且其RMSE和MAE值相较于未增强模...。研究方法：回归分析、机器学习、梯度提升。",
+      "abstract": "Purpose\n                    This study examines the dual role of social media in human resource management (HRM), highlighting how digital platforms simultaneously enhance recruitment efficiency while intensifying ethical, legal and governance challenges. Focusing on Albania as a transition economy, the study explores how HR professionals navigate the tension between speed, reach and visibility, and the requirements of fairness, privacy and regulatory compliance.\n                  \n                  \n                    Design/methodology/approach\n                    Drawing on McFarland and Ployhart's (2015) discrete ambient stimuli (DAS) framework, complemented by signalling theory, the study adopts a qualitative multi-case design based on 12 semi-structured key-informant interviews with HR decision-makers in 12 organisations, grouped by level of recruitment formalisation, across banking, technology, consulting, microfinance and public administration. Data were analysed thematically using a codebook that separates platform properties (DAS), recruiter interpretation of candidate signals and HR practices, combining theory-driven coding with inductive insights from the Albanian context.\n                  \n                  \n                    Findings\n                    The findings show that social media transform recruitment by enhancing accessibility, immediacy and targeting precision, enabling faster and more cost-effective talent acquisition. However, these efficiencies are accompanied by heightened exposure to privacy risks, data permanence and evaluative bias. The study identifies a “speed-to-scrutiny” paradox, whereby the same platform characteristics that accelerate recruitment also expand the scope of candidate evaluation and ethical vulnerability. In response, HR professionals develop emergent governance practices, including General Data Protection Regulation (GDPR)-aligned policies, “minimum data” principles and ethical training, although implementation remains uneven across organisations.\n                  \n                  \n                    Originality/value\n                    This study extends the DAS framework to a post-socialist context, integrating it with signalling theory to specify how platform-specific stimuli, as contextual antecedents, alter the candidate signals on which recruiters rely. It identifies institutional formalisation as a boundary condition that moderates whether platform signals supplement or substitute for formal screening. It advances the concept of the speed-to-scrutiny paradox as a core mechanism linking digital efficiency with ethical complexity in HRM, and offers context-sensitive insights into how organisations develop hybrid governance practices in emerging digital labour markets.",
+      "summary_zh": "【金融经济学】**研究目的**  \n本研究探讨了社交媒体在人力资源管理（HRM）中的双重作用，强调了数字平台在提升招聘效率的同时，也加剧了伦理、法律和治理方面的挑战。以阿尔巴尼亚这一转型经济体为例，研究分析了人力资源专业人士如何在招聘速度、覆盖范围与透明度之间寻求平衡，同时满足公平性、隐私保护及合规性要求。\n\n**研究设计/方法论**  \n基于McFarland和Ployhart（2015）提出的“离散环境刺激”（Discrete Ambient Stimuli, DAS）框架，并结合信号理论，本研究采用定性多案例研究方法。通过对12家不同行业（银行、科技、咨询、小额信贷和公共管理）中的人力资源决策者进行12次半结构化访谈（按招聘流程的正式化程度分组），收集数据。数据通过编码手册进行主题分析，该手册涵盖了平台特性、招聘人员对候选人信息的解读以及人力资源管理实践等方面，将理论指导的编码方法与阿尔巴尼亚地区的实际情况相结合。\n\n**研究结果**  \n研究发现，社交媒体通过提高招聘的便捷性、即时性和精准度，促进了更快速、更经济高效的 talent 招聘。然而，这些效率提升也带来了隐私风险增加、数据永...。",
+      "topics": [
+        "Political science",
+        "Government (linguistics)",
+        "Economics",
+        "Sociology",
+        "Focus (optics)"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Algorithmic Monoculture in Machine Learning-based Site-Specific Fertilizer Recommendation",
+      "authors": [
+        "Abdelghani Belgaid"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-27",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.36941v1",
+      "cited_by_count": 0,
+      "abstract": "Machine learning recommendations are often evaluated one model at a time, despite deployment across interconnected decision makers. For continuous NPK fertilizer prescriptions, correlated errors can aggregate across farms and generate systemic costs. A model of shared and farm-specific recommendation errors links expected social loss to model adoption shares; the Herfindahl-Hirschman Index characterizes concentration effects when common model errors are independent and predictive risks are equal. A covariance-generalized formulation captures the dependence between model families. A two-model threshold characterizes when privately optimal monoculture is socially dominated, and a convex portfolio rule limits average private predictive regret. Nine model families across five Moroccan cereal systems provide a benchmark-based calibration. Under illustrative parameters and a 10% regret cap, accuracy-constrained diversification lowers modeled social loss in all five systems by 10.89-41.53% (mean 19.41%). Uniform allocation reduces modeled loss in this setting, but breaches the regret cap in every crop. Correlation sensitivity shows that highly dependent model errors attenuate the benefits of diversification. These counterfactual outcomes are not estimates of agronomic or monetary welfare; the framework identifies adoption architecture and error dependence as ecosystem-level evaluation variables.",
+      "summary_zh": "【金融经济学】机器学习推荐系统通常是通过逐一评估单个模型来进行的，尽管这些模型实际上被应用于多个相互关联的决策者。对于连续性的氮磷钾（NPK）肥料配方推荐系统而言，模型中的相关误差可能会在各个农场之间累积，从而引发系统性成本。本研究提出了一个模型，该模型将推荐误差分为“共享误差”和“农场特定误差”，并将预期的社会损失与模型的采用比例联系起来；赫芬达尔-赫希曼指数（Herfindahl-Hirschman Index）用于描述当模型误差相互独立且预测风险相同时的集中度效应。通过引入协方差泛化（covariance-generalization）方法，可以捕捉不同模型之间的依赖关系。通过设定一个双模型阈值，可以判断在何种情况下单一作物的最优选择会从社会角度来看被其他选择所取代；而凸组合规则（convex portfolio rule）则有助于限制平均私人预测损失。研究选取了摩洛哥五种谷物种植系统中的九个模型家族作为基准进行校准。在特定的参数设置下（预测损失上限为10%），在保证推荐准确性的前提下实施多样化策略能够将所有五种系统的模型预测社会损失降低10.89%至41.53%（平均降低19.41%）...。研究方法：模型校准、机器学习。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "A Deep Learning-Driven Operator Splitting Scheme for Free Boundary Problems: An Application to American Option Pricing in Incomplete Markets",
+      "authors": [
+        "Dong Yan",
+        "Haocheng Zhu",
+        "Yao Li"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-27",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.36921v1",
+      "cited_by_count": 0,
+      "abstract": "This paper proposes a deep learning-driven operator splitting scheme for high-dimensional free-boundary problems, with American option pricing as a representative application. In a market with proportional transaction costs, a stochastic liquidity risk with an empirically validated nonlinear drift based on S&P 500 data, and two-factor stochastic volatility, the pricing problem takes the form of a five-dimensional highly nonlinear variational inequality. The proposed scheme decomposes this variational inequality at each time layer into an elliptic continuation equation approximated by a physics-informed neural network and a closed-form projection step enforcing the early-exercise constraint. A conditional $\\ell^\\infty$ stability bound is derived under stated resolvent and Lipschitz assumptions. The scheme is validated against finite-difference and least-squares Monte Carlo benchmarks, and both the option prices and the learned exercise boundary show close agreement with the reference solutions. Sensitivity analyses with respect to the key model parameters are also reported.",
+      "summary_zh": "【金融经济学】本文提出了一种基于深度学习的算子分裂方法，用于求解高维自由边界问题，以美式期权定价作为典型应用案例。在考虑比例交易成本、基于标准普尔500指数数据验证的非线性漂移项以及双因子随机波动性的市场环境中，期权定价问题可归结为一个五维的高阶非线性变分不等式。所提出的方法将这一变分不等式在每个时间层分解为两部分：一部分由物理信息驱动的神经网络近似求解的椭圆型连续方程，另一部分则是用于满足提前行权约束的封闭形式投影步骤。在满足特定解算条件和Lipschitz连续性假设的前提下，本文推导出了该算法的条件$\\ell^\\infty$稳定性界限。通过有限差分法和最小二乘蒙特卡洛模拟方法对算法进行了验证，结果表明期权价格及学习得到的行权边界与参考解高度吻合。此外，本文还分析了关键模型参数对算法性能的影响。。研究方法：蒙特卡洛模拟、深度学习、神经网络、随机过程。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Do Climate Risks Precede Climate Communication? Global Evidence From Central Banks",
+      "authors": [
+        "Muhammad Bilal Zafar"
+      ],
+      "venue": "International Journal of Finance & Economics",
+      "published_date": "2026-10-22",
+      "doi_url": "https://doi.org/10.1002/ijfe.70323",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:293945383",
+      "cited_by_count": 0,
+      "abstract": "Climate change increasingly intersects with central bank mandates through macroeconomic volatility, financial stability, and systemic risk. This study examines whether physical climate vulnerability, institutional readiness, and domestic climate‐policy intensity shape climate‐related central bank communication using a global panel of central bank speeches from 1996 to 2024. The results show that greater climate vulnerability and stronger climate‐policy intensity are associated with higher subsequent climate discourse, while institutional readiness is also positively related to communication in several specifications. The effect of vulnerability is strongest among central banks that already communicate more intensively about climate issues. Predictive tests further indicate temporal ordering from vulnerability to climate discourse, with weaker evidence that communication precedes subsequent policy development. A supplementary Paris Agreement analysis shows that climate communication increased after 2016 across vulnerability groups, but more rapidly among low‐ and medium‐vulnerability countries. The findings suggest that central bank climate communication responds to climate‐related exposure, while its intensity also depends on institutional readiness and the broader policy environment.",
+      "summary_zh": "📌 研究问题：物理气候脆弱性、制度准备情况和国内气候政策强度如何影响央行关于气候问题的沟通？\n\n🔬 研究方法：研究利用1996年至2024年的全球央行讲话面板数据，考察上述因素对气候相关沟通的影响。\n\n📊 核心发现：研究发现气候脆弱性和国内气候政策强度越高，央行随后的气候话语也越多；制度准备情况与沟通呈正相关。预测性测试表明气候风险暴露先于气候沟通，且脆弱性对已密集沟通央行的影响最强。\n\n💡 应用价值：研究表明央行气候沟通主要对气候相关暴露做出反应，其强度还取决于制度准备情况和更广泛的政策环境。",
+      "topics": [
+        "Environmental Science",
+        "Economics",
+        "Political Science"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Advancing value creation in B2B market research – a human–AI collaboration framework for large language model",
+      "authors": [
+        "Anshul Saxena",
+        "Jayant Mahajan"
+      ],
+      "venue": "Journal of Business and Industrial Marketing",
+      "published_date": "2026-10-28",
+      "doi_url": "https://doi.org/10.1108/jbim-07-2025-0700",
+      "openalex_url": "https://openalex.org/W7223791943",
+      "cited_by_count": 0,
+      "abstract": "Purpose\n                    This study aims to examine how prompt design influences the quality of large language model (LLM)-generated business-to-business (B2B) market research outputs. It also proposes a switch-point governance mechanism for converting LLM-generated drafts into decision-ready market intelligence artefacts.\n                  \n                  \n                    Design/methodology/approach\n                    The study uses an exploratory pilot evaluation of three market-facing LLM-based tools: ChatGPT, Gemini and Perplexity AI. The tools are compared across three benchmark B2B market research tasks and three prompt types: basic, context-augmented and role-specific. In total, 81 outputs were generated. A role-specific benchmark subset of 27 outputs was then assessed using automated metrics and blinded human ratings. The automated metrics included relevance through cosine similarity, reference overlap through ROUGE-F1, cross-run semantic stability, latency, token length and readability through Flesch Reading Ease. Human evaluators rated the outputs on relevance, completeness, factuality, instruction-following and insightfulness. One-way ANOVA and non-parametric checks are reported as exploratory task-level tests, not as confirmatory evidence of model superiority.\n                  \n                  \n                    Findings\n                    Role-specific prompts produced the strongest descriptive scores in this pilot setting. Within the benchmark subset, Gemini showed the strongest observed profile, with higher average relevance, reference overlap and semantic stability, along with lower latency. ChatGPT produced relevant outputs but tended to generate longer and less readable drafts. Perplexity generated concise and readable summaries, but its outputs were less aligned with the reference brief and decision-facing requirements. Human ratings followed a similar descriptive pattern. Cross-run semantic stability showed directional alignment with higher decision-readiness ratings, offering preliminary support for P1. The proposed switch-point matrix illustrates P2 by mapping automated confidence signals and human judgement to four escalation actions: accept, judge, review/redo and rewrite.\n                  \n                  \n                    Research limitations/implications\n                    The study is an exploratory pilot case. The task set is small, and the task-level ANOVA is based on only three observations per tool. The findings may also vary across domains, model versions, prompt libraries and organisational contexts. Future research should expand the task bank, include more B2B sectors, use larger rater pools, compare additional model versions and test the switch-point thresholds in live market intelligence workflows.\n                  \n                  \n                    Practical implications\n                    The study provides a replicable workflow for B2B market intelligence teams. It shows how teams can standardise prompt design, screen LLM-generated outputs, combine automated checks with human evaluation and allocate decision rights through transparent escalation rules.\n                  \n                  \n                    Social implications\n                    The framework supports accountable use of LLM-based market research by reducing the risk that persuasive but weakly grounded claims enter managerial decision-making. It also highlights the need for human oversight; evidence checks and traceable governance in AI-supported knowledge work.\n                  \n                  \n                    Originality/value\n                    The study extends service-dominant logic to LLM-mediated B2B market research by treating LLM outputs as candidate value propositions rather than finished knowledge products. Its main contribution is the operationalisation of decision-rights governance through cross-run semantic stability and switch-point logic.",
+      "summary_zh": "【劳动经济学】**目的**  \n本研究旨在探讨提示设计如何影响大型语言模型（LLM）生成的B2B市场研究输出的质量，并提出了一种将LLM生成的草稿转化为可用于决策的市场情报成果的转换机制。  \n\n**设计/方法/途径**  \n本研究通过探索性试点评估了三种基于LLM的市场研究工具：ChatGPT、Gemini和Perplexity AI。这些工具在三项B2B市场研究任务中进行了对比，评估了三种类型的提示：基本提示、增强上下文的提示以及特定角色的提示。共生成了81份输出结果。其中27份特定角色的输出结果通过自动化指标和盲评进行了评估。自动化指标包括通过余弦相似度衡量相关性、通过ROUGE-F1衡量参考文献重叠度、跨次运行的语义稳定性、响应时间、词长以及通过Flesch阅读易度衡量可读性。评估人员从相关性、完整性、事实准确性、指令遵循性和洞察力等方面对输出结果进行了评分。作为探索性任务层面的测试，本研究使用了单因素方差分析（ANOVA）和非参数检验方法，而非用于验证模型优越性的证据。  \n\n**研究结果**  \n在本次试点研究中，特定角色的提示产生了最高的描述性评分。在基准样本中，Gemini的表...。研究方法：大语言模型。",
+      "topics": [
+        "Perplexity",
+        "Computer science",
+        "Benchmark (surveying)",
+        "Readability",
+        "Relevance (law)"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Assessing the robustness of machine learning-based automated valuation models across heterogeneous residential markets in Malaysia",
+      "authors": [
+        "Li Yin Ong",
+        "Muhammad Najib Razali",
+        "Ain Farhana Jamaludin",
+        "Khadijah Md Ariffin"
+      ],
+      "venue": "International Journal of Housing Markets and Analysis",
+      "published_date": "2026-10-28",
+      "doi_url": "https://doi.org/10.1108/ijhma-07-2026-0247",
+      "openalex_url": "https://openalex.org/W7223795815",
+      "cited_by_count": 0,
+      "abstract": "Purpose\n                    This study aims to examine the comparative robustness of machine-learning-based automated valuation models (AVMs) for residential property valuation across different Malaysian market settings. It evaluates random forest (RF), extreme gradient boosting (XGBoost) and artificial neural network (ANN) models by considering predictive accuracy, temporal consistency and computational feasibility, while distinguishing comparative performance across independently modelled data sets from genuine cross-market transferability.\n                  \n                  \n                    Design/methodology/approach\n                    A quantitative comparative approach is applied using an empirical residential property data set from Johor Bahru and simulated scenarios representing Kuala Lumpur and Penang in Malaysia. RF, XGBoost and ANN models are independently developed and evaluated within each case using prediction-error measures and reported temporal performance. Computational execution is assessed separately as an indicator of technical feasibility. The analytical framework interprets model performance as conditional on the interaction between algorithm characteristics, data set structure, preprocessing and validation design rather than as an inherent property of a particular modelling technique.\n                  \n                  \n                    Findings\n                    The findings show that relative model performance varies across the evaluated data sets, with different machine-learning approaches demonstrating stronger predictive performance under different conditions. This indicates that there is no universal model that can be assumed to perform consistently across heterogeneous residential market settings. Predictive accuracy and temporal consistency also represent distinct dimensions of model performance, while computational feasibility alone does not establish operational efficiency within professional valuation practice. The findings therefore support context-specific model evaluation, independent validation and continued professional oversight before AVMs are adopted for operational valuation, lending, portfolio management, taxation or mass appraisal applications.\n                  \n                  \n                    Originality/value\n                    This study contributes an exploratory framework for evaluating AVMs beyond a simple comparison of predictive accuracy by integrating accuracy, temporal consistency, computational feasibility and the evidential status of the underlying data sets. It further clarifies the distinction between cross-market comparative robustness and model transferability, while positioning AVMs as components of a broader valuation system involving data governance, validation, professional judgement, transparency and accountability. For Malaysia and the wider valuation profession, this study provides a basis for developing more rigorous validation practices, professional guidance and governance frameworks for the responsible integration of machine learning into property valuation.",
+      "summary_zh": "【金融经济学】**目的**  \n本研究旨在考察基于机器学习的自动化估值模型（AVMs）在马来西亚不同市场环境下对住宅物业估值的相对稳健性。通过评估预测准确性、时间一致性和计算可行性，研究了随机森林（RF）、极端梯度提升（XGBoost）和人工神经网络（ANN）模型的性能，并区分了独立建模数据集之间的比较结果与真正的跨市场适用性。\n\n**设计/方法/途径**  \n本研究采用定量比较方法，使用了来自柔佛巴鲁的实证住宅物业数据集，以及模拟的吉隆坡和槟城市场数据。在每种情况下，分别独立开发并评估RF、XGBoost和ANN模型，通过预测误差指标来衡量其性能，并记录其时间表现。计算执行能力也被单独评估，作为技术可行性的指标。分析框架将模型性能解释为算法特性、数据集结构、预处理和验证设计之间相互作用的结果，而非某种特定建模技术固有的属性。\n\n**研究结果**  \n研究结果表明，不同模型在不同数据集上的表现存在差异，某些机器学习方法在特定条件下表现出更强的预测能力。这表明不存在一种能够在异质性住宅市场环境中始终表现稳定的通用模型。预测准确性和时间一致性代表了模型性能的不同维度，而仅凭计算可行性无法判断模型在...。研究方法：机器学习、神经网络、随机森林、XGBoost、梯度提升。",
+      "topics": [
+        "Valuation (finance)",
+        "Computer science",
+        "Robustness (evolution)",
+        "Econometrics",
+        "Preprocessor"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Multiparametric magnetic resonance imaging histogram and habitat analysis for predicting 1p/19q codeletion in isocitrate dehydrogenase-mutant gliomas",
+      "authors": [
+        "Kazuya Sakoda",
+        "nagano shota"
+      ],
+      "venue": "The Egyptian Journal of Radiology and Nuclear Medicine",
+      "published_date": "2026-10-28",
+      "doi_url": "https://doi.org/10.1186/s43055-026-01893-y",
+      "openalex_url": "https://openalex.org/W7223805333",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  \n                    Background\n                    Quantitative T2-FLAIR analysis and multiparametric MRI habitat imaging may provide noninvasive information regarding 1p/19q status in IDH-mutant gliomas. The primary aim was to determine whether adding habitat-derived features to whole-region histogram features improves prediction of 1p/19q codeletion. We retrospectively analyzed 122 patients with World Health Organization grade 2 or 3 gliomas. Precontrast T1-weighted, postcontrast T1-weighted, T2-weighted, and FLAIR images were normalized using patient-specific normal-appearing white matter. Whole-region histogram, habitat-derived, and combined models were evaluated in whole-tumor and tumor-core-like regions using 20 repetitions of nested fivefold cross-validation.\n                  \n                  \n                    Results\n                    In the whole-tumor analysis, the whole-region histogram, habitat-derived, and combined models achieved areas under the receiver operating characteristic curve of 0.747, 0.681, and 0.734, respectively. The corresponding values in the tumor-core-like analysis were 0.777, 0.734, and 0.766. The whole-tumor habitat-derived model had a lower area under the curve than the whole-region histogram model, with a difference of − 0.066 (95% confidence interval, − 0.130 to − 0.003). The combined model did not improve discrimination in either region. Whole-tumor habitat centroids were more stable than tumor-core-like centroids.\n                  \n                  \n                    Conclusions\n                    Whole-region histogram features provided moderate discrimination of 1p/19q codeletion, whereas habitat-derived features did not provide incremental predictive value. T2-FLAIR difference and T2-weighted distributional features were selected most consistently. These findings support further evaluation of the simpler histogram approach in independent datasets but do not support replacement of tissue-based molecular testing.",
+      "summary_zh": "【金融经济学】摘要\n\n背景\n定量T2-FLAIR分析和多参数MRI栖息地成像技术可为IDH突变胶质瘤中的1p/19q基因状态提供无创性信息。本研究的主要目的是探讨将基于栖息地特征的信息与全区域直方图特征结合是否能够提高1p/19q基因缺失的预测准确性。我们回顾性分析了122名患有世界卫生组织2级或3级胶质瘤的患者，这些患者的影像数据包括对比增强前的T1加权图像、对比增强后的T1加权图像、T2加权图像以及FLAIR图像，并使用患者自身的正常白质作为基准进行图像标准化处理。通过20次嵌套五折交叉验证，分别在全肿瘤区域和类肿瘤核心区域评估了基于全区域直方图的特征、基于栖息地特征的特征以及结合这两种特征的模型。\n\n结果\n在全肿瘤区域的分析中，基于全区域直方图的模型、基于栖息地特征的模型以及结合这两种特征的模型的接收者操作特征曲线（ROC）下面积分别为0.747、0.681和0.734；在类肿瘤核心区域的分析中，相应数值分别为0.777、0.734和0.766。与基于全区域直方图的模型相比，基于栖息地特征的模型的ROC下面积较低，差异为-0.066（95%置信区间为-0.130至-0.003）。结合这两...。",
+      "topics": [
+        "Histogram",
+        "Fluid-attenuated inversion recovery",
+        "Medicine",
+        "Pattern recognition (psychology)",
+        "Centroid"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Free Cash Flow, Business Risk, and Non-Debt Tax Shield Effects on Debt Policy",
+      "authors": [
+        "Florensia Galuh Kinasih",
+        "Fitri Mareta",
+        "Destia Pentiana",
+        "Anita Kusuma Dewi"
+      ],
+      "venue": "Jurnal Relevansi Ekonomi Manajemen dan Bisnis",
+      "published_date": "2026-10-28",
+      "doi_url": "https://doi.org/10.61401/relevansi.v10i5.733",
+      "openalex_url": "https://openalex.org/W7223827832",
+      "cited_by_count": 0,
+      "abstract": "This study examines the effects of free cash flow, business risk, and non-debt tax shield on the debt policy of food and beverage subsector companies listed on the Indonesia Stock Exchange for the 2021-2025 period, drawing on agency, trade-off, and pecking order theories. Of the 48 companies selected through purposive sampling, one company with negative equity throughout the period was excluded, yielding a balanced panel of 47 companies and 235 firm-year observations. Debt policy was measured by the Debt-to-Equity Ratio (DER), free cash flow by operating cash flow minus capital expenditure and the change in net working capital scaled by total assets, business risk by the rolling standard deviation of the operating profit margin, and non-debt tax shield by depreciation expense scaled by total assets, with firm size, profitability (Return on Assets/ROA), tangibility, and sales growth as control variables. After winsorization at the 1st and 99th percentiles, the Chow, Breusch-Pagan Lagrange Multiplier, and robust Hausman tests favored the random effect model, which was estimated with firm-clustered robust standard errors. Free cash flow (coefficient=-7.517, p=0.712) and non-debt tax shield (coefficient=827.908, p=0.308) have no significant effect on debt policy, whereas business risk has a positive effect (coefficient=395.951, p=0.045) that is not robust across alternative specifications. The three variables are not jointly significant (F=1.388, p=0.247). Profitability is negatively related (p=0.043) and firm size positively related (p=0.016) to debt policy. The evidence favors the pecking order explanation, in which internally generated profits, rather than free cash flow, reduce reliance on debt.",
+      "summary_zh": "【货币政策与宏观经济】本研究考察了自由现金流、业务风险和非债务税收抵免对2021-2025年间在印度尼西亚证券交易所上市的食品和饮料行业公司债务政策的影响，研究基于代理理论、权衡理论和啄序理论。通过目的性抽样选取的48家公司中，有1家公司在整个研究期间始终处于负资产状态，因此最终纳入研究的样本为47家公司，共包含235个公司-年份观测值。债务政策通过资产负债率（DER）来衡量；自由现金流则通过经营现金流减去资本支出后得到的数值，再除以总资产来计算；业务风险通过营业利润率的滚动标准差来表示；非债务税收抵免则通过折旧费用除以总资产来衡量。控制变量包括公司规模、盈利能力（资产回报率/ROA）、资产变现能力和销售额增长。在对数据进行了第1和第99百分位的 winsorization 处理后，Chow 检验、Breusch-Pagan 拉格朗日乘数检验以及稳健的 Hausman 检验均支持随机效应模型，并采用公司聚类的稳健标准误差对模型进行了估计。结果显示，自由现金流（系数=-7.517，p=0.712）和非债务税收抵免（系数=827.908，p=0.308）对债务政策没有显著影响；而业务风险（系数=395.9...。研究方法：随机效应。",
+      "topics": [
+        "Tax shield",
+        "Operating cash flow",
+        "Free cash flow",
+        "Monetary economics",
+        "Economics"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Image-Based Soil Nutrient Prediction Using Machine Learning and Deep Learning Models",
+      "authors": [
+        "Preity Mishra",
+        "S.K. Chaulya",
+        "Vikash Kumar",
+        "Naresh Kumar",
+        "Abhinek Agarwal"
+      ],
+      "venue": "Computing and artificial intelligence.",
+      "published_date": "2026-10-28",
+      "doi_url": "https://doi.org/10.59400/cai4241",
+      "openalex_url": "https://openalex.org/W7223830476",
+      "cited_by_count": 0,
+      "abstract": "Recent advances in precision agriculture have enabled the use of machine learning and image processing for rapid soil nutrient assessment. This study presents a non-destructive approach for estimating soil nutrient content from digital soil images captured using a camera and analyzed through specialized software. A dataset of 1,500 soil images was processed using color correction, noise reduction, and feature extraction techniques to improve data quality. Five machine learning models, Random Forest, Extreme Gradient Boosting (XGBoost), Light Gradient Boosting Machine (LightGBM), Gradient Boosting Machine (GBM), and a Stacking Regressor, were evaluated for predicting nitrogen, phosphorus, and potassium levels. A Convolutional Neural Network (CNN) based deep learning model was served as a benchmark. No single model was best for every nutrient and metric. For nitrogen, GBM achieved the lowest test MAE (0.1652), whereas the Stacking Regressor achieved the highest test R² (0.9886). For potassium, Random Forest achieved the lowest test MAE (0.0051), whereas XGBoost achieved the highest test R² (0.9999). For phosphorus, XGBoost achieved both the lowest test MAE (0.1558) and the highest test R² (0.9929). Thus, the best-performing model depends on the nutrient and evaluation metric. Further validation using independent field datasets is required to establish robustness under diverse environmental conditions.",
+      "summary_zh": "【金融经济学】精准农业领域的最新进展使得机器学习和图像处理技术能够被用于快速评估土壤养分含量。本研究提出了一种非破坏性的方法，通过使用相机拍摄的数字土壤图像，并借助专用软件进行分析来估算土壤养分含量。研究人员对包含1,500张土壤图像的数据集进行了处理，采用了颜色校正、噪声去除和特征提取等技术以提高数据质量。为了预测氮、磷和钾的含量，评估了五种机器学习模型：随机森林（Random Forest）、极端梯度提升算法（Extreme Gradient Boosting, XGBoost）、轻量级梯度提升机（Light Gradient Boosting Machine, LightGBM）、梯度提升机（Gradient Boosting Machine, GBM）以及堆叠回归器（Stacking Regressor）。同时，还以基于卷积神经网络（Convolutional Neural Network, CNN）的深度学习模型作为基准。没有一种模型在所有养分指标上都能表现出最佳性能。对于氮元素，GBM模型的测试平均绝对误差（MAE）最低（0.1652），而堆叠回归器的测试R²值最高（0.9886）...。研究方法：机器学习、深度学习、神经网络、随机森林、XGBoost、梯度提升。",
       "topics": [
         "Artificial intelligence",
         "Machine learning",
-        "Computer science",
-        "Gaussian process",
-        "Support vector machine"
+        "Random forest",
+        "Gradient boosting",
+        "Deep learning"
       ],
       "source": "openalex"
     },
     {
-      "title": "The Complex Value of Temporary Communities",
+      "title": "Depositing More Should Not Earn Less: Supplier Income Monotonicity and Rate Curve Design in Pooled Lending Markets",
       "authors": [
-        "Hilde Remøy",
-        "Chiara Mazzarella"
-      ],
-      "venue": "Cogitatio (Cogitatio)",
-      "published_date": "2026-10-27",
-      "doi_url": "https://doi.org/10.17645/up.13137",
-      "openalex_url": "https://openalex.org/W7223450475",
-      "cited_by_count": 0,
-      "abstract": "Across Europe, a shortage of affordable housing and workspace coexists with widespread vacancy in buildings, lots, and public spaces. Since the 1970s, squatting, anti-squatting, and co-management practices have turned this contradiction into an opportunity, with young people, activists, and creatives temporarily reclaiming empty spaces and, when displaced by rising rents, forming urban nomad communities. While the social and cultural relevance of these initiatives is widely recognised, the value they generate—and how to assess it—remains poorly understood. This thematic issue brings together 10 contributions that examine how temporary reuse of real estate and public space creates value for real estate management, urban development, and local communities, and why diverse actors choose to engage in it. The collected articles present cases from Belgium, the Netherlands, Portugal, Germany, Italy, Curaçao, and Australia, and identify four interrelated dimensions of value: activation, commons, care, and transformation that unfold differently across places, scales, and temporalities. Together, they argue that temporary communities generate effects that persist beyond the end of the temporary use itself, reshaping perceptions of place and future development trajectories, and call for new frameworks to recognise and support this complex value.",
-      "summary_zh": "【房地产金融】在欧洲各地，经济适用住房和工作空间的短缺与建筑物、土地及公共空间的普遍空置现象并存。自20世纪70年代以来，擅自占用空置房屋的行为、反擅自占用政策以及共同管理实践将这一矛盾转化为一种机遇：年轻人、社会活动家及创意人士暂时占据这些空置空间；当租金上涨迫使他们迁离时，又会形成城市游牧社区。尽管这些举措的社会和文化意义已得到广泛认可，但其所产生的价值以及如何评估这种价值仍缺乏深入理解。本期专题汇集了10篇研究文章，探讨了房地产和公共空间的临时再利用如何为房地产管理、城市发展及当地社区创造价值，以及为何不同主体会选择参与其中。文章案例来自比利时、荷兰、葡萄牙、德国、意大利、库拉索岛和澳大利亚，归纳出四个相互关联的价值维度：空间激活、公共资源共享、社区关怀与空间转型。这些案例表明，临时社区所产生的影响会持续到临时使用期结束后，从而重塑人们对空间的认知和未来的发展方向。文章呼吁建立新的评估框架，以识别和支持这种复杂的价值。。",
-      "topics": [
-        "Real estate",
-        "Value (mathematics)",
-        "Relevance (law)",
-        "Gentrification",
-        "Space (punctuation)"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Contemporaneous Transmission Networks and Systemic Risk in European Banking",
-      "authors": [
-        "Minh Duc Duong",
-        "Alessio Moneta",
-        "Fabrizio Lillo",
-        "Caterina Giannetti",
-        "Tu Anh Doan Nguyen"
+        "Ahzam Khan",
+        "Cavey Cool"
       ],
       "venue": "arXiv",
       "published_date": "2026-10-27",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.37487v1",
+      "openalex_url": "http://arxiv.org/abs/2610.36899v1",
       "cited_by_count": 0,
-      "abstract": "We study how contemporaneous equity-return transmission shapes systemic exposure among 51 listed European banks. Using a recursive non-Gaussian network model on volatility-standardized returns, we construct two market-capitalization-weighted measures based on direct and indirect transmission effects: the Systemic Impact Score (SIS), capturing a bank's potential influence on other institutions, and the Systemic Vulnerability Score (SVS), capturing its exposure to disturbances originating elsewhere. The fitted network reveals distinct transmitting and receiving roles, highlighting differences between institutions with substantial outward influence and those with high incoming sensitivity. Receiving roles are generally more reproducible than transmitting roles across repeated network discovery, and selected connections remain informative about lower-tail dependence in subsequent observations. Volatility standardization substantially reduces detected dependence among recovered shocks, although the full-sample model does not satisfy the designated criterion for supporting shock independence. Alternative recursive orderings also yield comparable directional tail asymmetries, limiting the extent to which these patterns validate a particular ordering. The results provide complementary measures of model-implied systemic transmission and vulnerability, with explicit attention to uncertainty and identification limits",
-      "summary_zh": "【银行与信贷】我们研究了同期股票收益传导机制如何影响51家欧洲上市公司的系统性风险暴露。通过使用基于波动率标准化的收益的递归非高斯网络模型，我们构建了两个以市值为权重的指标，分别用于衡量直接和间接的传导效应：系统性影响得分（Systemic Impact Score, SIS），用于评估银行对其他机构的潜在影响；以及系统性脆弱性得分（Systemic Vulnerability Score, SVS），用于衡量银行对来自外部冲击的敏感度。拟合的网络模型揭示了不同机构在传导和接收冲击过程中的不同角色，突显了那些具有较强外部影响力机构与那些对外部冲击高度敏感的机构之间的差异。在多次网络重构过程中，接收冲击的机构角色通常比传导冲击的机构角色更具稳定性；某些关键连接在后续观测中仍能有效反映尾部依赖性特征。尽管波动率标准化处理显著降低了冲击之间的相关性，但整个样本模型的结果并未完全满足冲击独立性的判定标准。其他递归排序方法也得出了类似的方向性尾部不对称性，这表明这些模式并不能完全验证某种特定的排序方式。我们的研究为模型所揭示的系统性传导和脆弱性提供了互补的度量方法，并充分考虑了不确定性及模型识别的局限性。。",
+      "abstract": "In utilization dependent interest rate models, adding liquidity can reduce a supplier's total interest income even as the supplier's balance increases. A supplier holding a fraction $α$ of final pool supply keeps income nondecreasing with a marginal deposit exactly when $α(1+η)\\leq1$, where $η$ is the elasticity of the borrow rate with respect to utilization. When the condition fails, the supplier can instead raise its income by withdrawing, which pushes utilization further up. On two public Drift markets, a lender held more of the pool than the curve protected in at least one hour in nine on SOL and one in thirteen on USDC. A protocol turns this into a design constraint by choosing, at each utilization, the largest supplier share it intends to protect. That choice caps the elasticity, and integrating the cap describes every admissible curve. Protecting the same share at every utilization gives a power law boundary, and protecting every fresh depositor gives a hyperbolic one. On a multiple kink USDT market, compliant repairs can lower or raise supplier income, because the constraint governs how income responds to a deposit and not the price level.",
+      "summary_zh": "【银行与信贷】在依赖使用量的利率模型中，增加流动性可能会降低供应商的总利息收入，即便供应商的余额有所增加。当供应商持有的最终供应池份额为α时，只要满足α(1+η)≤1的条件，其收入就能保持不变，其中η表示借款利率对使用量的弹性。若该条件不成立，供应商可以通过提取存款来增加收入，从而进一步推动使用量的增加。在两个公开的Drift市场中，至少有九个小时的SOL市场和十三个小时的USDC市场中，贷款方持有的供应池份额超过了相应曲线所保护的份额。一种协议通过为每次使用量选择供应商打算保护的最大份额，将这一行为转化为设计约束。这种选择限制了借款利率的弹性，而将这一限制纳入模型后可以描述所有可行的利率曲线。如果每次使用量都保护相同的份额，得到的利率曲线呈幂律分布；如果保护所有新存款者，得到的利率曲线则呈双曲线分布。在具有多个价格拐点的USDT市场中，合规的存款行为可能会降低或提高供应商的收入，因为该约束影响的是收入对存款的反应，而非价格水平本身。。",
       "topics": [
         "Economics",
         "Finance"
@@ -75,173 +249,20 @@
       "source": "arxiv"
     },
     {
-      "title": "Hosting is not capturing: an exposure-capability framework and Hungary's electric-vehicle battery bet",
+      "title": "A Semiparametric Real-Time GARCH Model with Nonstationary Variance",
       "authors": [
-        "Zoltan Bartha"
+        "Muyi Li",
+        "Yajia Chen",
+        "Yuqing Xu",
+        "Feiyu Jiang"
       ],
       "venue": "arXiv",
       "published_date": "2026-10-27",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.37445v1",
+      "openalex_url": "http://arxiv.org/abs/2610.36739v1",
       "cited_by_count": 0,
-      "abstract": "How should a dependent economy respond when a polycrisis turns economic integration from a source of efficiency into a surface of vulnerability? This paper develops the exposure-capability framework, which maps a country's strategic options along two dimensions - the concentration of its external dependence and the depth of its productive capability - and yields four ideal strategies. It applies the framework to Hungary's large-scale bet on electric-vehicle battery manufacturing, asking what the concentrated exposure purchased: movement toward a higher position in the battery value chain, as a catch-up gamble, or the reproduction of the country's existing position under a new product, as dependent entrenchment. Using a firm-level panel of Hungary's largest companies for 2010-2024, it tests four hypotheses and examines the conditions attached to the support that financed the investments. The sector has expanded enormously, but its value capture neither rises beyond the recovery from construction losses nor shifts up the chain: production remains concentrated in the lowest-value stage, matures only to the level of comparably young foreign-owned firms, and does not cover its own costs. The support that financed it required investment volume, revenue and employment retention; capability-relevant criteria entered the decree as considerations rather than conditions, and a capability-contingent instrument within the same scheme went unused. On the evidence to 2024 the bet is a lateral substitution at constant quality, in which battery-cell fabrication replaces automotive assembly at the same dependent position. Hosting the green transition's supply chain, the case shows, is not the same as capturing its value.",
-      "summary_zh": "【金融经济学】当多重危机使经济一体化从提高效率的途径转变为增加脆弱性的因素时，依赖型经济体应如何应对？本文提出了“暴露-能力框架”（Exposure-Capability Framework），该框架从两个维度——对外部依赖的集中程度以及生产能力的深度——来分析一个国家的战略选择，并据此提出了四种理想的战略方案。作者以匈牙利在电动汽车电池制造领域的大规模投资为例，探讨了这种集中性投资究竟带来了何种结果：是促使该国在电池产业链中向上攀升，实现追赶目标；还是使其在现有基础上通过新产品巩固自身依赖地位。研究使用了2010至2024年间匈牙利最大企业的微观数据，检验了四个相关假设，并分析了支持这些投资的政策条件。尽管该产业规模大幅扩张，但其价值创造能力并未显著提升——生产仍集中在产业链的低附加值环节，仅达到类似年轻外资企业的水平，且无法实现成本自给。为支持该产业所需的政策措施包括增加投资规模、保障收入和维持就业岗位；虽然政策文件中确实包含了与生产能力相关的考量因素，但这些因素并未被严格作为投资条件；同时，同一政策体系中原本设计的基于生产能力条件的激励机制也未能得到有效利用。根据截至2024年的数据，这...。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "The Effect of Investment Opportunity Set, Profitability, and Funding Decisions on Company Value in the Property and Real Estate Sector",
-      "authors": [
-        "Risa Dinar Yulandi",
-        "Rosmini Ramli"
-      ],
-      "venue": "Moneta : Journal of Economics and Finance",
-      "published_date": "2026-10-22",
-      "doi_url": "https://doi.org/10.61978/moneta.v4i4.1379",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:293981842",
-      "cited_by_count": 0,
-      "abstract": "This study aims to analyze the factors that cause company value to decline and fail to fully recover after the pandemic, as reflected in the average Tobin’s Q that remaining below one dring 2021 - 2024. This condition raises questions about the extent to which the Investment Opportunity Set (IOS), profitability, and funding decisions can explain variations in company value. The method used is a quantitative approach with panel data regression analysis. The sample consisted of 15 companies selected using purposive sampling based on data availability during the observation period. The results showed that IOS and funding decisions had a positive effect, whereas profitability did not. These findings suggest that the market responds more to growth prospects and funding structure than to profit performance when evaluating property and real estate companies during the post-pandemic period. Therefore, from a managerial perspective, optimizing investment opportunity set and appropriate funding decisions are key to increasing firm value. For investors, these findings indicate that growth prospects and funding structure should be a primary consideration in strategic decision-making.",
-      "summary_zh": "【房地产金融】本研究旨在分析导致公司价值下降以及疫情过后未能完全恢复的因素，这一现象体现在2021年至2024年间公司的平均托宾Q值始终低于1。这一情况引发了关于投资机会集（Investment Opportunity Set, IOS）、盈利能力以及融资决策在多大程度上能够解释公司价值变化的问题。研究采用定量方法，通过面板数据回归分析来进行分析。样本选取了15家公司，这些公司是根据观察期间数据可获得性通过目的性抽样方法确定的。研究结果表明，投资机会集和融资决策对公司价值具有积极影响，而盈利能力则没有这种作用。这些发现表明，在评估疫情后的房地产公司时，市场更关注公司的增长前景和融资结构，而非其盈利表现。因此，从管理角度来看，优化投资机会集和做出适当的融资决策是提升公司价值的关键。对于投资者而言，这些发现意味着在战略决策过程中应将公司的增长前景和融资结构作为主要考虑因素。。研究方法：面板数据、回归分析。",
-      "topics": [
-        "Economics",
-        "Business"
-      ],
-      "source": "semantic_scholar"
-    },
-    {
-      "title": "Financial trust and self-directed retirement investing in pension plans",
-      "authors": [
-        "Joelle H. Fong",
-        "Zeewan Lee"
-      ],
-      "venue": "Journal of Pension Economics and Finance",
-      "published_date": "2026-10-22",
-      "doi_url": "https://doi.org/10.1017/s1474747226100225",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:293985010",
-      "cited_by_count": 0,
-      "abstract": "Despite the increasing popularity of self-directed accounts within pension plans, little is known about what drives voluntary participation in such accounts. This paper examines how financial trust influences the usage of self-directed accounts in Singapore’s national pension scheme using data from the World Values Survey and instrumental variable methods. We find that financial trust drives self-investment of pension monies: A one-unit increase in trust increases the likelihood of participation by 45 percentage points, controlling for covariates. This finding remains robust when potential endogeneity and alternative empirical specifications are considered. Our findings highlight the critical role of trust in shaping retirement investment behavior and pension choices.",
-      "summary_zh": "📌 研究问题：金融信任如何影响新加坡国家养老金计划中自我导向账户的自愿参与？\n\n🔬 研究方法：利用世界价值观调查数据，并采用工具变量方法来处理潜在的内生性问题。\n\n📊 核心发现：研究发现金融信任显著驱动养老金投资，信任增加一个单位可使参与概率提高45个百分点，且该结论在控制协变量及考虑内生性后依然稳健。\n\n💡 应用价值：该研究强调了信任在塑造退休投资行为和养老金选择中的关键作用。",
-      "topics": [
-        "Economics"
-      ],
-      "source": "semantic_scholar"
-    },
-    {
-      "title": "Economies of Collective Temporary Occupations in Brussels",
-      "authors": [
-        "Chiara Mazzarella",
-        "Michaël Peeters",
-        "Daniele Cannatella",
-        "Hilde Remøy"
-      ],
-      "venue": "Cogitatio (Cogitatio)",
-      "published_date": "2026-10-27",
-      "doi_url": "https://doi.org/10.17645/up.11845",
-      "openalex_url": "https://openalex.org/W7223461005",
-      "cited_by_count": 0,
-      "abstract": "In European cities, strengthening local grassroots initiatives is trending. Citizen groups often find space only by temporarily occupying unused buildings, which, in turn, creates value through diverse activities and economies. While temporary uses are acknowledged for their capacity to generate social and cultural value, the diverse economies they activate remain undefined. This article investigates the economies generated by collective temporary occupations (CTOs) in the reuse of vacant real estate in the Brussels-Capital Region. Based on the hypothesis that CTOs contribute to post-growth urban development, this article explores economic activation, spatial characteristics, and temporal dimension in 10 cases. Results show that CTOs enhance place quality by combining artistic creation, sports facilities, circular production, welfare services, and sharing practices. From small neighbourhood infrastructure to large metropolitan hubs, temporality ranges from 1 to 10 years, with longer-lasting initiatives functioning as commons despite their temporary status. By recognising the diverse dimensions of value creation and the role of CTOs as generators of new economies, this research contributes to the study of temporary uses in post-growth urban planning.",
-      "summary_zh": "【房地产金融】在欧洲城市中，加强地方基层倡议已成为一种趋势。市民团体通常通过暂时占用闲置建筑来获得活动空间，而这些空间通过各种多样的活动和经济活动创造了价值。尽管临时性使用方式因其能够产生社会和文化价值而受到认可，但其所激活的多元化经济形态尚未得到充分界定。本文研究了布鲁塞尔首都大区在重新利用闲置房地产过程中，通过集体临时占用（Collective Temporary Occupations, CTOs）所形成的经济效应。基于“CTOs有助于后增长时代城市发展”的假设，本文通过10个具体案例探讨了经济激活机制、空间特征及时间维度。研究结果表明，CTOs通过结合艺术创作、体育设施、循环生产、福利服务及共享模式等方式提升了场所品质。从小型社区基础设施到大型都市中心，这些临时性使用的持续时间从1年到10年不等；其中一些长期持续的倡议尽管具有临时性质，但仍发挥着公共空间的作用。通过认识到价值创造的多元维度以及CTOs作为新型经济形态创造者的角色，本研究为后增长时代城市规划中的临时性使用方式提供了有益的参考。。",
-      "topics": [
-        "Temporality",
-        "Commons",
-        "Grassroots",
-        "Real estate",
-        "Metropolitan area"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Optimal Order Placement under a State-Dependent Hawkes Process Limit Order Book model",
-      "authors": [
-        "Jonathan Chávez Casillas",
-        "Li Gan"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-27",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.37324v1",
-      "cited_by_count": 0,
-      "abstract": "We study optimal quote placement for a market maker facing order flow modeled by a state-dependent Hawkes process. A block-based linear demand specification links market-order counts to execution volumes, providing the demand moments required by a continuous time discrete state dynamic programming formulation. Under a quadratic terminal inventory penalty, we characterize inventory-dependent quotes and derive backward recursions for the coefficients of a quadratic value function. Numerical experiments using LOBSTER data examine quote distributions, inventory exposure, and terminal wealth. The implemented strategy yields higher aggregate terminal wealth than fixed-spread benchmarks at one and three ticks, but lower wealth than the two-tick benchmark. These results illustrate the framework's numerical implementation and distinguish terminal-wealth comparisons from evaluation under the inventory-penalized objective.",
-      "summary_zh": "【金融经济学】我们研究了做市商在面对由状态依赖的Hawkes过程建模的订单流时的最优报价策略。基于块的线性需求模型将市场订单数量与执行量联系起来，为连续时间离散状态动态规划模型的构建提供了所需的需求数据。在考虑二次终端库存惩罚的情况下，我们分析了库存对报价的影响，并推导出了二次价值函数系数的递归计算方法。利用LOBSTER数据进行的数值实验考察了报价分布、库存风险以及最终财富水平。实践证明，该策略在单个和三个交易tick的情况下能够实现比固定利差策略更高的最终财富总额，但在两个交易tick的情况下财富水平低于后者。这些结果展示了该模型的数值实现方法，并明确了在考虑库存惩罚目标下的财富比较与常规评估方法之间的差异。。研究方法：实验方法。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Climate change, sea level rise, and the agricultural revolution",
-      "authors": [
-        "Ridhika Mishra",
-        "Richard S. J. Tol"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-27",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.37306v1",
-      "cited_by_count": 0,
-      "abstract": "We test various hypotheses for the invention and spread of agriculture: higher temperatures, increased seasonality, carbon dioxide fertilization, sea level rise, and technological progress on the extensive margin. We successfully replicate Matranga (QJE 2024). His seasonality hypothesis survives alternative data, estimators, and competing hypotheses. Population density played a role in the invention of agriculture, while spatial diffusion was important for its spread. Sea level rise and climate change had a minor effect on the population density of the areas that first adopted agriculture. Extrapolating a logit model for the invention of agriculture, some now-submerged areas in the Persian Gulf, Mediterranean, and Yellow Sea were suitable for early agriculture. Over time, technological progress was the main factor in extending agriculture's extensive margin.",
-      "summary_zh": "【绿色金融与可持续发展】我们检验了关于农业发明与传播的各种假说，包括温度升高、季节性增强、二氧化碳的肥料效应、海平面上升以及技术进步等因素对农业发展的影响。我们的研究结果成功复制了Matranga（QJE 2024）的研究结论。他的关于季节性变化的假说在面对不同的数据来源、估算方法以及其他竞争性假说时依然成立。人口密度在农业的发明过程中起到了重要作用，而空间扩散则对农业的传播具有关键意义。海平面上升和气候变化对最初采用农业的地区的人口密度影响较小。通过对农业发明过程的逻辑回归模型进行推断，我们发现波斯湾、地中海和黄海中一些如今已被淹没的区域在古代适宜发展农业。随着时间的推移，技术进步成为农业扩展的主要驱动力。。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Personal preference or system role? Battery swapping among UK electric vehicle users",
-      "authors": [
-        "Janak Parmar",
-        "Huseyin Ayan",
-        "Dilum Dissanayake",
-        "Margaret Bell"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-27",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.37269v1",
-      "cited_by_count": 0,
-      "abstract": "Battery swapping replaces a depleted EV battery with a charged one, reducing waiting time and enabling off-peak charging. Evidence on acceptance, however, remains concentrated in Asian markets, and most studies examine individual adoption intentions. This study asks whether current UK EV users judge swapping differently as a purchase option and as a technology for the transport system. Using Behavioural Reasoning Theory, an integrated choice and latent variable model, and latent class analysis, we analyse perceived usefulness, energy-system concerns, practical barriers, and satisfaction with current charging. Usefulness and energy-system concerns relate more strongly to expectations about the system. Battery compatibility and station coverage relate more strongly to personal preference, while spare battery costs relate to expectations about network viability. User groups differ in how they balance benefits, barriers, and satisfaction with existing charging. Policy should address driver barriers and network viability as distinct but connected priorities.",
-      "summary_zh": "📌 研究问题：英国电动汽车用户是将电池交换视为个人购买选项，还是将其视为交通系统的技术？\n\n🔬 研究方法：结合行为推理理论、集成选择和潜变量模型以及潜类分析。\n\n📊 核心发现：研究发现有用性和能源系统担忧更关联系统期望，而电池兼容性和站点覆盖率更关联个人偏好；同时，不同用户群体在平衡利益、障碍和现有充电满意度方面存在差异。\n\n💡 应用价值：政策制定者应将解决驾驶员障碍和网络可行性视为既独立又相互关联的优先事项。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "An Application of Geometric Riemannian Pricing Algorithm for Valuing Catastrophe Bonds in Incomplete Markets: Market-Consistent Financial Entropy and the Split of Frequency and Severity Risk Premia",
-      "authors": [
-        "Saeid Safarveisi"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-27",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.37171v1",
-      "cited_by_count": 0,
-      "abstract": "This paper presents a framework for pricing catastrophe (CAT) bonds in incomplete markets through Riemannian geometric optimization of financial entropy. We formulate pricing-measure selection as a maximum financial entropy problem on a finite-dimensional manifold of equivalent measures, parameterized by the non-hedgeable market prices of catastrophe frequency and severity risk, with discounting fixed by the default-free term structure. Since unconstrained entropy maximization recovers the physical measure, we incorporate observed secondary-market spreads, both pooled and date by date. For a compound Poisson-generalized Pareto loss model with Wang distortion, we derive closed-form expressions for financial entropy and the Riemannian metric. We show that CAT bond prices depend on frequency and severity premia primarily through the risk-neutral trigger intensity, making the two premia unidentifiable from market data alone; the entropy criterion resolves this ambiguity. Using a hypothetical earthquake CAT bond calibrated to quarterly spreads of Golden State Re II Ltd. (Series 2014-1), we obtain risk-neutral trigger intensities of 6.58 to 10.45 times the physical intensity (9.20 pooled and 18.26 at the end of 2015). The model-implied risk multiple aligns with the market spread-to-expected-loss ratio (8.87 versus 8.81 at issuance). The minimal-entropy measure attributes 53.5% to 63.7% of the log risk multiple to frequency risk, reflecting the selection principle rather than market identification. Finally, equating the coupon with the quoted spread understates the risk multiple by approximately half.",
-      "summary_zh": "【风险管理与衍生品】本文提出了一种在非完全市场中对灾难（CAT）债券进行定价的框架，该方法基于金融熵的黎曼几何优化理论。我们将定价度量选择问题构建为一个在有限维流形上的最大金融熵问题，该流形由灾难发生频率和严重性风险的不可对冲市场价格参数化，折现率则由无违约的期限结构确定。由于无约束的熵最大化能够恢复物理度量，因此我们结合了观察到的二级市场利差数据（包括汇总数据及按日期划分的数据）。对于一个包含Wang畸变的复合泊松-广义帕累托损失模型，我们推导出了金融熵和黎曼度量的封闭形式表达式。研究表明，CAT债券的价格主要通过风险中性触发强度来反映频率和严重性风险，这使得这两种风险溢价无法仅通过市场数据单独识别；而熵准则能够消除这种不确定性。通过使用以Golden State Re II Ltd.（2014-1系列）季度利差为基准的假设地震CAT债券进行验证，我们得出的风险中性触发强度为物理强度的6.58至10.45倍（汇总数据为9.20倍，2015年底为18.26倍）。模型预测的风险倍数与市场利差与预期损失比率相符（分别为8.87倍和8.81倍）。最小熵度量将对数风险倍数的53.5%至63.7%归因于频率风...。研究方法：模型校准、优化方法。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Identifying and disentangling direct and spillover effects using multiple pre-treatment periods",
-      "authors": [
-        "Martin Huber"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-10-27",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.37049v1",
-      "cited_by_count": 0,
-      "abstract": "Under interference, the treatment of some units affects the outcomes of others, so that the effect on a treated unit consists of a direct and a spillover component. A non-treated comparison group then generally identifies neither component, but the difference between the total effect on the treated and the spillover effect on the comparison units. We show that both components are identified separately when multiple pre-treatment periods are available, without an uncontaminated comparison group. Under no anticipation, pre-treatment outcomes are free of both components for every unit. Extrapolating the pre-treatment trend within a group, as in interrupted time series approaches, therefore identifies the counterfactual outcome in the absence of any treatment. Applied to the treated it gives the total effect on them, applied to the non-treated at a given level of exposure the spillover effect on them. Disentangling the two components in addition requires effect homogeneity across treated and non-treated units with the same exposure and covariates, as well as common support in exposure. We derive doubly robust and Neyman-orthogonal expressions for the effects of interest, which permits controlling for covariates by machine learning, and establish asymptotic normality. A simulation study confirms the root-$n$ behaviour of the estimators and the reliability of the standard errors. We apply the framework to the compulsory licensing of enemy-owned patents in the United States in 1919. Licensing raised patenting in the licensed subclasses and in technologically close ones alike, so that a comparison-group design understates the total effect.",
-      "summary_zh": "【金融经济学】在干扰因素的作用下，对某些单元的处理会影响到其他单元的结果，因此对受处理单元的影响包含直接效应和溢出效应两个部分。未经处理的对照组通常无法识别这两个效应，只能观察到受处理单元的总体效应与对照组受到的溢出效应之间的差异。我们证明了，在存在多个处理前时期且没有受污染的对照组的情况下，这两个效应是可以被分别识别的。在没有预期的情况下，每个单元的处理前结果都不包含这两个效应。通过类似中断时间序列方法的方式，对组内处理前趋势进行外推，可以得出在没有处理情况下的反事实结果：该方法对受处理单元而言能够得出其总体效应，对未受处理单元而言则能得出其在特定暴露水平下的溢出效应。要进一步区分这两个效应，还需要满足以下条件：受处理单元和未受处理单元在暴露程度和协变量方面具有同质性，并且在暴露水平上存在共同特征。我们推导出了双重稳健且符合Neyman正交性的效应表达式，这些表达式允许通过机器学习来控制协变量，并证明了效应的渐近正态性。模拟研究验证了估计量的根号n行为以及标准误差的可靠性。我们将这一框架应用于1919年美国对敌方拥有的专利实施强制许可的情况。该政策不仅提高了被许可专利子类别的专利申请数量，也...。研究方法：时间序列、数值模拟、机器学习。",
+      "abstract": "We propose a semiparametric real-time GARCH (SRT-GARCH) model that combines a smooth deterministic long-run volatility component with a stationary short-run process driven by contemporaneous return innovations. The model accommodates gradual changes in unconditional variance while allowing short-run volatility to respond directly to current information rather than relying solely on lagged observations. We derive the variance normalization, conditional moments, and closed-form conditional density of the model. For estimation, we develop a two-step procedure that combines kernel smoothing with conditional Gaussian maximum likelihood. Under Gaussian innovations and mild regularity conditions, we establish consistency and asymptotic normality of the short-run parameter estimator. The analysis exploits geometric moment contraction to control serial dependence and shows that estimating the long-run component adds a positive semidefinite rank-one adjustment to the oracle covariance matrix obtained when the long-run component is known. The resulting asymptotic covariance matrix admits a plug-in estimator that requires neither lag truncation nor additional tuning parameters. Monte Carlo simulations show good finite-sample performance of the estimator and the associated inference procedure. Applications to FTSE~100 returns and U.S. natural gas futures show that allowing for a time-varying long-run component improves forecasting relative to the parametric RT-GARCH benchmark, while the additional real-time feedback mechanism provides more pronounced gains in the natural gas application than in the FTSE application. The proposed model also delivers competitive one-step-ahead Value-at-Risk forecasts.",
+      "summary_zh": "【风险管理与衍生品】我们提出了一种半参数实时GARCH（SRT-GARCH）模型，该模型将一个平滑的确定性长期波动性成分与一个由当期收益创新驱动的平稳短期过程相结合。该模型能够适应无条件方差的渐进变化，同时允许短期波动性直接响应当前信息，而不仅仅依赖于滞后观测值。我们推导出了该模型的方差标准化公式、条件矩以及封闭形式的条件密度函数。在估计方面，我们开发了一种结合核平滑技术与条件高斯最大似然法的两步估计程序。在高斯创新假设和温和的规则性条件下，我们证明了短期参数估计量的一致性和渐近正态性。分析过程中利用了几何矩收缩特性来控制序列相关性，并表明在已知长期成分的情况下，估计长期成分会对得到的“神谕”协方差矩阵进行一个正半定秩一的调整。所得到的渐近协方差矩阵允许使用一种无需滞后截断或额外调整参数的直接估计方法。蒙特卡洛模拟结果表明，该估计量及其相关推断方法在有限样本情况下表现良好。将模型应用于FTSE 100指数收益率和美国天然气期货的数据分析发现，引入时变长期成分能够提升预测精度（相对于参数化的RT-GARCH基准模型而言）；而在天然气期货的应用中，实时反馈机制带来的改进效果尤为显著。此外，该模型还能够提...。研究方法：GARCH 波动率模型、最大似然估计、蒙特卡洛模拟、数值模拟。",
       "topics": [
         "Economics",
         "Finance"
