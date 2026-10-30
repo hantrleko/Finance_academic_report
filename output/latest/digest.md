@@ -1,174 +1,139 @@
-# 金融经济学每日文献速递（2026-10-29）
+# 金融经济学每日文献速递（2026-10-30）
 
 共筛选到 **12** 篇文献。
 
 > 📢 **今日综述**
 >
-> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、银行与信贷（2 篇）、劳动经济学（1 篇）。方法上以机器学习、神经网络为主。来源分布：OpenAlex（7 篇）、arXiv（4 篇）、Semantic Scholar（1 篇）。其中 1 篇命中顶级期刊白名单。
+> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（9 篇）、绿色金融与可持续发展（1 篇）、公司金融（1 篇）。方法上以模型校准、随机过程为主。来源分布：arXiv（8 篇）、Semantic Scholar（4 篇）。其中 3 篇命中顶级期刊白名单。
 
-## 1. Supervising the search process produces reliable and generalizable information-seeking agents
-- 来源：openalex
-- 作者：Guangzhi Xiong, Qiao Jin, Xiao Wang, Fang Yin, Haolin Liu
-- 期刊/来源：Nature Communications
-- 发表日期：2026-10-28
-- 引用数：1
-- 主题：Process (computing), Process management, Computer science, Knowledge management, Business
-- 链接：[DOI](https://doi.org/10.1038/s41467-026-78807-z) [链接](https://openalex.org/W4407785632)
-
-**中文摘要（自动生成）**：【金融经济学】摘要
-
-大型语言模型（LLMs）通过从文档排名转向答案合成，正在改变网页搜索的方式，并逐渐被部署为能够与外部知识源进行迭代交互的自主搜索系统。尽管取得了这些进展，构建有效的搜索代理仍然具有挑战性，因为难以生成高质量的中间搜索步骤。以往的方法主要依赖于结果监督，仅对生成正确最终答案的代理进行奖励。这往往导致奖励机制被滥用，以及过度依赖参数化记忆，从而限制了模型对领域外任务的泛化能力。为了解决这些问题，我们提出了RAG-Gym框架，该框架将监督重点从最终答案转移到搜索过程本身。在RAG-Gym框架中，我们系统地研究了架构设计、参数优化和行为评估，发现推理反思能力是搜索代理的关键属性。基于这一发现，我们提出了ReSearch++，这是一种基于过程监督的搜索代理，在多跳信息检索基准测试中取得了显著提升，尤其是在领域外场景中。性能的提升主要得益于更高质量的搜索查询，而不仅仅是答案优化本身；此外，所学到的搜索评估机制可以在不同模型之间迁移，包括专有的LLMs。这些结果表明，对搜索过程进行监督能够培养出更可靠、更具泛化能力的信息检索代理。。研究方法：大语言模型、优化方法。
-
-## 2. The speed-to-scrutiny paradox in social media-driven HRM: evidence from Albania
-- 来源：openalex
-- 作者：Albana Boriçi, Arjola Halluni, Elvisa Drishti, Ylvije Boriçi Kraja
-- 期刊/来源：Employee Relations
-- 发表日期：2026-10-28
-- 引用数：0
-- 主题：Political science, Government (linguistics), Economics, Sociology, Focus (optics)
-- 链接：[DOI](https://doi.org/10.1108/er-10-2025-0958) [链接](https://openalex.org/W7139970380)
-
-**中文摘要（自动生成）**：【金融经济学】**研究目的**  
-本研究探讨了社交媒体在人力资源管理（HRM）中的双重作用，强调了数字平台在提升招聘效率的同时，也加剧了伦理、法律和治理方面的挑战。以阿尔巴尼亚这一转型经济体为例，研究分析了人力资源专业人士如何在招聘速度、覆盖范围与透明度之间寻求平衡，同时满足公平性、隐私保护及合规性要求。
-
-**研究设计/方法论**  
-基于McFarland和Ployhart（2015）提出的“离散环境刺激”（Discrete Ambient Stimuli, DAS）框架，并结合信号理论，本研究采用定性多案例研究方法。通过对12家不同行业（银行、科技、咨询、小额信贷和公共管理）中的人力资源决策者进行12次半结构化访谈（按招聘流程的正式化程度分组），收集数据。数据通过编码手册进行主题分析，该手册涵盖了平台特性、招聘人员对候选人信息的解读以及人力资源管理实践等方面，将理论指导的编码方法与阿尔巴尼亚地区的实际情况相结合。
-
-**研究结果**  
-研究发现，社交媒体通过提高招聘的便捷性、即时性和精准度，促进了更快速、更经济高效的 talent 招聘。然而，这些效率提升也带来了隐私风险增加、数据永...。
-
-## 3. Algorithmic Monoculture in Machine Learning-based Site-Specific Fertilizer Recommendation
+## 1. When Does Storage Complement Solar? Investment and Cost Recovery under Advanced Net Metering
 - 来源：arxiv
-- 作者：Abdelghani Belgaid
+- 作者：Nathan Engelman Lado, Ahmed Alahmed, Audun Botterud, Saurabh Amin
 - 期刊/来源：arXiv
-- 发表日期：2026-10-27
+- 发表日期：2026-10-29
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2610.36941v1)
+- 链接：[链接](http://arxiv.org/abs/2610.40650v1)
 
-**中文摘要（自动生成）**：【金融经济学】机器学习推荐系统通常是通过逐一评估单个模型来进行的，尽管这些模型实际上被应用于多个相互关联的决策者。对于连续性的氮磷钾（NPK）肥料配方推荐系统而言，模型中的相关误差可能会在各个农场之间累积，从而引发系统性成本。本研究提出了一个模型，该模型将推荐误差分为“共享误差”和“农场特定误差”，并将预期的社会损失与模型的采用比例联系起来；赫芬达尔-赫希曼指数（Herfindahl-Hirschman Index）用于描述当模型误差相互独立且预测风险相同时的集中度效应。通过引入协方差泛化（covariance-generalization）方法，可以捕捉不同模型之间的依赖关系。通过设定一个双模型阈值，可以判断在何种情况下单一作物的最优选择会从社会角度来看被其他选择所取代；而凸组合规则（convex portfolio rule）则有助于限制平均私人预测损失。研究选取了摩洛哥五种谷物种植系统中的九个模型家族作为基准进行校准。在特定的参数设置下（预测损失上限为10%），在保证推荐准确性的前提下实施多样化策略能够将所有五种系统的模型预测社会损失降低10.89%至41.53%（平均降低19.41%）...。研究方法：模型校准、机器学习。
+**中文摘要（自动生成）**：【金融经济学】我们研究了在净能量计量（NEM）制度及分时电价机制下，具有发电和用电双重功能的用户（prosumer）在光伏发电（PV）与储能系统运营及投资决策方面的协同行为。传统的NEM制度会在一个结算周期内，按照零售电价对用户的净发电量进行补偿，且该定价通常保持不变。为更准确地反映系统的实际成本，许多美国州正在重新设计电价结构，采用分时定价机制，并对超出零售电量的发电量提供低于零售电价的补偿。我们将用户的决策问题构建为一个成本最小化模型，其中包含充电/放电行为、光伏投资以及储能投资决策。我们通过分析得出了在六个不同电价区间内用户的最优决策方案。基于这些分析结果，我们探讨了光伏发电与储能系统之间的互补或替代关系，并分析了私人分布式能源资源（DER）激励措施与配电公司（DU）为这类用户提供服务所产生的净成本之间的关联。对于储能和光伏发电项目而言，当其投资成本高于为用户提供服务的成本时，不存在任何能够同时降低非用户用电量所产生的电费的单一定价方案。在相同条件下，光伏发电与储能之间的互补性会降低配电公司在特定电价下的成本回收率。通过以马萨诸塞州为例的案例研究，我们将电价设计特点与分布式能源资源的互动...。研究方法：随机过程。
 
-## 4. A Deep Learning-Driven Operator Splitting Scheme for Free Boundary Problems: An Application to American Option Pricing in Incomplete Markets
+## 2. Finding Competitive Equilibria in Online Marketplaces with Platform Fees, Taxes, and Subsidies
 - 来源：arxiv
-- 作者：Dong Yan, Haocheng Zhu, Yao Li
+- 作者：Taihei Oki, Ryosuke Sato
 - 期刊/来源：arXiv
-- 发表日期：2026-10-27
+- 发表日期：2026-10-29
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2610.36921v1)
+- 链接：[链接](http://arxiv.org/abs/2610.40626v1)
 
-**中文摘要（自动生成）**：【金融经济学】本文提出了一种基于深度学习的算子分裂方法，用于求解高维自由边界问题，以美式期权定价作为典型应用案例。在考虑比例交易成本、基于标准普尔500指数数据验证的非线性漂移项以及双因子随机波动性的市场环境中，期权定价问题可归结为一个五维的高阶非线性变分不等式。所提出的方法将这一变分不等式在每个时间层分解为两部分：一部分由物理信息驱动的神经网络近似求解的椭圆型连续方程，另一部分则是用于满足提前行权约束的封闭形式投影步骤。在满足特定解算条件和Lipschitz连续性假设的前提下，本文推导出了该算法的条件$\ell^\infty$稳定性界限。通过有限差分法和最小二乘蒙特卡洛模拟方法对算法进行了验证，结果表明期权价格及学习得到的行权边界与参考解高度吻合。此外，本文还分析了关键模型参数对算法性能的影响。。研究方法：蒙特卡洛模拟、深度学习、神经网络、随机过程。
+**中文摘要（自动生成）**：【金融经济学】我们研究了在多单元交易网络中的均衡计算问题，这些网络的估值满足广义完全替代品假设，并且交易双方及交易本身具有分段线性转移函数。这些转移函数用于模拟在线市场中的平台费用、税收、补贴以及会员折扣等机制。我们提出的渐进式定价算法以不同的速率逐步提高价格，并在有限次迭代后达到最小均衡价格向量；每次迭代均可在我们的预言机模型和算术模型下以强多项式时间复杂度完成。随后可以高效地恢复均衡分配结果。该方法通过引入次模流（submodular flow）公式，将原本为升价拍卖设计的原始-对偶（primal-dual）技术扩展到了处理购买与销售之间互补性问题的场景。在存在替代品和互补品的单一卖方市场中，我们的框架还进一步扩展了Sun和Yang（2009年）以及Shioura和Yang（2015年）提出的双轨拍卖机制，使其能够适应针对不同投标者和商品类型的转移函数。。研究方法：均衡模型。
 
-## 5. Do Climate Risks Precede Climate Communication? Global Evidence From Central Banks
+## 3. Towards a Low‐Carbon Economy: How Carbon Pricing Mitigates the Adverse Environmental Impact of Financial Development
 - 来源：semantic_scholar
-- 作者：Muhammad Bilal Zafar
+- 作者：Tho N. A. Pham, Chau Le, Shrabani Saha
 - 期刊/来源：International Journal of Finance & Economics
-- 发表日期：2026-10-22
+- 发表日期：2026-10-23
 - 引用数：0
-- 主题：Environmental Science, Economics, Political Science
-- 链接：[DOI](https://doi.org/10.1002/ijfe.70323) [链接](https://api.semanticscholar.org/CorpusID:293945383)
+- 主题：Environmental Science, Economics
+- 链接：[DOI](https://doi.org/10.1002/ijfe.70320) [链接](https://api.semanticscholar.org/CorpusID:294329247)
 
-**中文摘要（自动生成）**：📌 研究问题：物理气候脆弱性、制度准备情况和国内气候政策强度如何影响央行关于气候问题的沟通？
+**中文摘要（自动生成）**：【绿色金融与可持续发展】本研究通过分析1990至2024年间70个发达国家和发展中国家的数据，探讨了碳定价是否能够在金融发展与环境可持续性之间实现平衡。通过运用交互作用模型以及多种碳定价采纳方式和价格严格程度的衡量指标，研究发现：金融发展会加剧二氧化碳排放，而碳定价则能够直接减少排放，并缓解金融扩张对环境的负面影响。相比之下，碳排放交易体系在减排效果上更为显著且估计更为精确。值得注意的是，碳税的有效性取决于价格信号的强度：单纯采用碳税并不能显著降低排放量，只有较高的碳税税率才能带来显著的减排效果。这一结果表明，除非碳税税率足够高，足以影响生产、投资和能源使用决策，否则仅实施碳税可能难以达到预期效果。机制分析进一步表明，碳定价通过促进从化石燃料向可再生能源的转型来支持脱碳进程。自《巴黎协定》签署以来，碳定价的有效性得到了进一步提升，尤其是碳排放交易体系。研究结果对不同的模型设定和内生性检验都具有较强的稳健性。总体而言，研究表明碳定价有助于减轻金融发展带来的环境成本，并推动向清洁能源的转型。同时，这也强调了在制定碳定价政策时，需要充分考虑各国的经济状况、制度能力及气候政策目标。。
 
-🔬 研究方法：研究利用1996年至2024年的全球央行讲话面板数据，考察上述因素对气候相关沟通的影响。
-
-📊 核心发现：研究发现气候脆弱性和国内气候政策强度越高，央行随后的气候话语也越多；制度准备情况与沟通呈正相关。预测性测试表明气候风险暴露先于气候沟通，且脆弱性对已密集沟通央行的影响最强。
-
-💡 应用价值：研究表明央行气候沟通主要对气候相关暴露做出反应，其强度还取决于制度准备情况和更广泛的政策环境。
-
-## 6. Advancing value creation in B2B market research – a human–AI collaboration framework for large language model
-- 来源：openalex
-- 作者：Anshul Saxena, Jayant Mahajan
-- 期刊/来源：Journal of Business and Industrial Marketing
-- 发表日期：2026-10-28
+## 4. Increase Fund Source and Reduce Expenditures: Supplier Stability and Firms' Short‐Term Debt for Long‐Term Investment
+- 来源：semantic_scholar
+- 作者：Xiao Chen, Ziang Lin
+- 期刊/来源：International Journal of Finance & Economics
+- 发表日期：2026-10-23
 - 引用数：0
-- 主题：Perplexity, Computer science, Benchmark (surveying), Readability, Relevance (law)
-- 链接：[DOI](https://doi.org/10.1108/jbim-07-2025-0700) [链接](https://openalex.org/W7223791943)
+- 主题：Economics, Business
+- 链接：[DOI](https://doi.org/10.1002/ijfe.70321) [链接](https://api.semanticscholar.org/CorpusID:294334499)
 
-**中文摘要（自动生成）**：【劳动经济学】**目的**  
-本研究旨在探讨提示设计如何影响大型语言模型（LLM）生成的B2B市场研究输出的质量，并提出了一种将LLM生成的草稿转化为可用于决策的市场情报成果的转换机制。  
+**中文摘要（自动生成）**：【公司金融】由于短期债务用于长期投资而产生的期限错配是金融风险的重要来源。在本文中，我们研究了供应商稳定性是否会影响企业依赖短期债务进行长期投资的程度。研究发现，稳定的供应商关系能够显著缓解这种期限错配现象。这种效应在非国有企业、融资约束较大的企业以及信息环境较差的企业中更为明显。机制分析表明，供应商稳定性通过两种途径发挥作用：一是拓宽企业的资金来源，二是降低企业的支出成本。此外，我们还发现，供应商稳定性带来的融资结构改善能够降低企业的财务风险并提升其市场价值。总体而言，我们的研究结果强调了供应商稳定性在优化企业融资政策中的作用，并通过引入供应链视角拓展了关于期限匹配问题的学术研究。。
 
-**设计/方法/途径**  
-本研究通过探索性试点评估了三种基于LLM的市场研究工具：ChatGPT、Gemini和Perplexity AI。这些工具在三项B2B市场研究任务中进行了对比，评估了三种类型的提示：基本提示、增强上下文的提示以及特定角色的提示。共生成了81份输出结果。其中27份特定角色的输出结果通过自动化指标和盲评进行了评估。自动化指标包括通过余弦相似度衡量相关性、通过ROUGE-F1衡量参考文献重叠度、跨次运行的语义稳定性、响应时间、词长以及通过Flesch阅读易度衡量可读性。评估人员从相关性、完整性、事实准确性、指令遵循性和洞察力等方面对输出结果进行了评分。作为探索性任务层面的测试，本研究使用了单因素方差分析（ANOVA）和非参数检验方法，而非用于验证模型优越性的证据。  
-
-**研究结果**  
-在本次试点研究中，特定角色的提示产生了最高的描述性评分。在基准样本中，Gemini的表...。研究方法：大语言模型。
-
-## 7. Assessing the robustness of machine learning-based automated valuation models across heterogeneous residential markets in Malaysia
-- 来源：openalex
-- 作者：Li Yin Ong, Muhammad Najib Razali, Ain Farhana Jamaludin, Khadijah Md Ariffin
-- 期刊/来源：International Journal of Housing Markets and Analysis
-- 发表日期：2026-10-28
-- 引用数：0
-- 主题：Valuation (finance), Computer science, Robustness (evolution), Econometrics, Preprocessor
-- 链接：[DOI](https://doi.org/10.1108/ijhma-07-2026-0247) [链接](https://openalex.org/W7223795815)
-
-**中文摘要（自动生成）**：【金融经济学】**目的**  
-本研究旨在考察基于机器学习的自动化估值模型（AVMs）在马来西亚不同市场环境下对住宅物业估值的相对稳健性。通过评估预测准确性、时间一致性和计算可行性，研究了随机森林（RF）、极端梯度提升（XGBoost）和人工神经网络（ANN）模型的性能，并区分了独立建模数据集之间的比较结果与真正的跨市场适用性。
-
-**设计/方法/途径**  
-本研究采用定量比较方法，使用了来自柔佛巴鲁的实证住宅物业数据集，以及模拟的吉隆坡和槟城市场数据。在每种情况下，分别独立开发并评估RF、XGBoost和ANN模型，通过预测误差指标来衡量其性能，并记录其时间表现。计算执行能力也被单独评估，作为技术可行性的指标。分析框架将模型性能解释为算法特性、数据集结构、预处理和验证设计之间相互作用的结果，而非某种特定建模技术固有的属性。
-
-**研究结果**  
-研究结果表明，不同模型在不同数据集上的表现存在差异，某些机器学习方法在特定条件下表现出更强的预测能力。这表明不存在一种能够在异质性住宅市场环境中始终表现稳定的通用模型。预测准确性和时间一致性代表了模型性能的不同维度，而仅凭计算可行性无法判断模型在...。研究方法：机器学习、神经网络、随机森林、XGBoost、梯度提升。
-
-## 8. Multiparametric magnetic resonance imaging histogram and habitat analysis for predicting 1p/19q codeletion in isocitrate dehydrogenase-mutant gliomas
-- 来源：openalex
-- 作者：Kazuya Sakoda, nagano shota
-- 期刊/来源：The Egyptian Journal of Radiology and Nuclear Medicine
-- 发表日期：2026-10-28
-- 引用数：0
-- 主题：Histogram, Fluid-attenuated inversion recovery, Medicine, Pattern recognition (psychology), Centroid
-- 链接：[DOI](https://doi.org/10.1186/s43055-026-01893-y) [链接](https://openalex.org/W7223805333)
-
-**中文摘要（自动生成）**：【金融经济学】摘要
-
-背景
-定量T2-FLAIR分析和多参数MRI栖息地成像技术可为IDH突变胶质瘤中的1p/19q基因状态提供无创性信息。本研究的主要目的是探讨将基于栖息地特征的信息与全区域直方图特征结合是否能够提高1p/19q基因缺失的预测准确性。我们回顾性分析了122名患有世界卫生组织2级或3级胶质瘤的患者，这些患者的影像数据包括对比增强前的T1加权图像、对比增强后的T1加权图像、T2加权图像以及FLAIR图像，并使用患者自身的正常白质作为基准进行图像标准化处理。通过20次嵌套五折交叉验证，分别在全肿瘤区域和类肿瘤核心区域评估了基于全区域直方图的特征、基于栖息地特征的特征以及结合这两种特征的模型。
-
-结果
-在全肿瘤区域的分析中，基于全区域直方图的模型、基于栖息地特征的模型以及结合这两种特征的模型的接收者操作特征曲线（ROC）下面积分别为0.747、0.681和0.734；在类肿瘤核心区域的分析中，相应数值分别为0.777、0.734和0.766。与基于全区域直方图的模型相比，基于栖息地特征的模型的ROC下面积较低，差异为-0.066（95%置信区间为-0.130至-0.003）。结合这两...。
-
-## 9. Free Cash Flow, Business Risk, and Non-Debt Tax Shield Effects on Debt Policy
-- 来源：openalex
-- 作者：Florensia Galuh Kinasih, Fitri Mareta, Destia Pentiana, Anita Kusuma Dewi
-- 期刊/来源：Jurnal Relevansi Ekonomi Manajemen dan Bisnis
-- 发表日期：2026-10-28
-- 引用数：0
-- 主题：Tax shield, Operating cash flow, Free cash flow, Monetary economics, Economics
-- 链接：[DOI](https://doi.org/10.61401/relevansi.v10i5.733) [链接](https://openalex.org/W7223827832)
-
-**中文摘要（自动生成）**：【货币政策与宏观经济】本研究考察了自由现金流、业务风险和非债务税收抵免对2021-2025年间在印度尼西亚证券交易所上市的食品和饮料行业公司债务政策的影响，研究基于代理理论、权衡理论和啄序理论。通过目的性抽样选取的48家公司中，有1家公司在整个研究期间始终处于负资产状态，因此最终纳入研究的样本为47家公司，共包含235个公司-年份观测值。债务政策通过资产负债率（DER）来衡量；自由现金流则通过经营现金流减去资本支出后得到的数值，再除以总资产来计算；业务风险通过营业利润率的滚动标准差来表示；非债务税收抵免则通过折旧费用除以总资产来衡量。控制变量包括公司规模、盈利能力（资产回报率/ROA）、资产变现能力和销售额增长。在对数据进行了第1和第99百分位的 winsorization 处理后，Chow 检验、Breusch-Pagan 拉格朗日乘数检验以及稳健的 Hausman 检验均支持随机效应模型，并采用公司聚类的稳健标准误差对模型进行了估计。结果显示，自由现金流（系数=-7.517，p=0.712）和非债务税收抵免（系数=827.908，p=0.308）对债务政策没有显著影响；而业务风险（系数=395.9...。研究方法：随机效应。
-
-## 10. Image-Based Soil Nutrient Prediction Using Machine Learning and Deep Learning Models
-- 来源：openalex
-- 作者：Preity Mishra, S.K. Chaulya, Vikash Kumar, Naresh Kumar, Abhinek Agarwal
-- 期刊/来源：Computing and artificial intelligence.
-- 发表日期：2026-10-28
-- 引用数：0
-- 主题：Artificial intelligence, Machine learning, Random forest, Gradient boosting, Deep learning
-- 链接：[DOI](https://doi.org/10.59400/cai4241) [链接](https://openalex.org/W7223830476)
-
-**中文摘要（自动生成）**：【金融经济学】精准农业领域的最新进展使得机器学习和图像处理技术能够被用于快速评估土壤养分含量。本研究提出了一种非破坏性的方法，通过使用相机拍摄的数字土壤图像，并借助专用软件进行分析来估算土壤养分含量。研究人员对包含1,500张土壤图像的数据集进行了处理，采用了颜色校正、噪声去除和特征提取等技术以提高数据质量。为了预测氮、磷和钾的含量，评估了五种机器学习模型：随机森林（Random Forest）、极端梯度提升算法（Extreme Gradient Boosting, XGBoost）、轻量级梯度提升机（Light Gradient Boosting Machine, LightGBM）、梯度提升机（Gradient Boosting Machine, GBM）以及堆叠回归器（Stacking Regressor）。同时，还以基于卷积神经网络（Convolutional Neural Network, CNN）的深度学习模型作为基准。没有一种模型在所有养分指标上都能表现出最佳性能。对于氮元素，GBM模型的测试平均绝对误差（MAE）最低（0.1652），而堆叠回归器的测试R²值最高（0.9886）...。研究方法：机器学习、深度学习、神经网络、随机森林、XGBoost、梯度提升。
-
-## 11. Depositing More Should Not Earn Less: Supplier Income Monotonicity and Rate Curve Design in Pooled Lending Markets
+## 5. Optimal Policy With Noisy Sufficient Statistics
 - 来源：arxiv
-- 作者：Ahzam Khan, Cavey Cool
+- 作者：José Luis Montiel Olea, Mikkel Plagborg-Møller, Christian K. Wolf
 - 期刊/来源：arXiv
-- 发表日期：2026-10-27
+- 发表日期：2026-10-29
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2610.36899v1)
+- 链接：[链接](http://arxiv.org/abs/2610.40582v1)
 
-**中文摘要（自动生成）**：【银行与信贷】在依赖使用量的利率模型中，增加流动性可能会降低供应商的总利息收入，即便供应商的余额有所增加。当供应商持有的最终供应池份额为α时，只要满足α(1+η)≤1的条件，其收入就能保持不变，其中η表示借款利率对使用量的弹性。若该条件不成立，供应商可以通过提取存款来增加收入，从而进一步推动使用量的增加。在两个公开的Drift市场中，至少有九个小时的SOL市场和十三个小时的USDC市场中，贷款方持有的供应池份额超过了相应曲线所保护的份额。一种协议通过为每次使用量选择供应商打算保护的最大份额，将这一行为转化为设计约束。这种选择限制了借款利率的弹性，而将这一限制纳入模型后可以描述所有可行的利率曲线。如果每次使用量都保护相同的份额，得到的利率曲线呈幂律分布；如果保护所有新存款者，得到的利率曲线则呈双曲线分布。在具有多个价格拐点的USDT市场中，合规的存款行为可能会降低或提高供应商的收入，因为该约束影响的是收入对存款的反应，而非价格水平本身。。
+**中文摘要（自动生成）**：【金融经济学】我们研究了政策制定者应如何设定$k$个政策工具，以便在存在政策因果效应统计不确定性的线性-二次模型中最佳地实现$m$个（可能是动态的）目标。将估计的效应代入文献中常用的“充分统计量”最优政策公式中，可能会导致无限风险。实际上，当$m>1$时，无论数据如何，维持现状都是唯一的极小极大最优选择；而当$m,k>1$时，维持现状则是唯一的极小极大遗憾最优选择。尽管如此，我们仍建议政策制定者采用Fisher（1962）和Brainard（1967）提出的简单、缓和版的插入规则。这种谨慎的规则不仅在大多数参数空间内优于不采取任何行动的策略，其最坏情况风险也接近于实证相关模型中的极小极大值。政策制定者应使用无偏但估计分散的估计方法（如局部投影）来获取因果效应估计值，而不是使用有偏但估计精确的方法（如向量自回归）。。研究方法：向量自回归、局部投影法、回归分析。
 
-## 12. A Semiparametric Real-Time GARCH Model with Nonstationary Variance
+## 6. Exponential Convergence of the Lifted Gradient Flow of the Bass Functional
 - 来源：arxiv
-- 作者：Muyi Li, Yajia Chen, Yuqing Xu, Feiyu Jiang
+- 作者：Danila Litvinov
 - 期刊/来源：arXiv
-- 发表日期：2026-10-27
+- 发表日期：2026-10-29
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2610.36739v1)
+- 链接：[链接](http://arxiv.org/abs/2610.40404v1)
 
-**中文摘要（自动生成）**：【风险管理与衍生品】我们提出了一种半参数实时GARCH（SRT-GARCH）模型，该模型将一个平滑的确定性长期波动性成分与一个由当期收益创新驱动的平稳短期过程相结合。该模型能够适应无条件方差的渐进变化，同时允许短期波动性直接响应当前信息，而不仅仅依赖于滞后观测值。我们推导出了该模型的方差标准化公式、条件矩以及封闭形式的条件密度函数。在估计方面，我们开发了一种结合核平滑技术与条件高斯最大似然法的两步估计程序。在高斯创新假设和温和的规则性条件下，我们证明了短期参数估计量的一致性和渐近正态性。分析过程中利用了几何矩收缩特性来控制序列相关性，并表明在已知长期成分的情况下，估计长期成分会对得到的“神谕”协方差矩阵进行一个正半定秩一的调整。所得到的渐近协方差矩阵允许使用一种无需滞后截断或额外调整参数的直接估计方法。蒙特卡洛模拟结果表明，该估计量及其相关推断方法在有限样本情况下表现良好。将模型应用于FTSE 100指数收益率和美国天然气期货的数据分析发现，引入时变长期成分能够提升预测精度（相对于参数化的RT-GARCH基准模型而言）；而在天然气期货的应用中，实时反馈机制带来的改进效果尤为显著。此外，该模型还能够提...。研究方法：GARCH 波动率模型、最大似然估计、蒙特卡洛模拟、数值模拟。
+**中文摘要（自动生成）**：【金融经济学】我们证明了在鞅最优传输框架下，提升后的Bass梯度流具有多维指数收敛性。设$(\mu, \nu)$是一对不可约随机变量，其目标支撑集为紧致凸集，源支撑集严格位于目标支撑集内部，并且目标密度的值在其内部几乎处处都有上界且不为零。对于任意有界的$\sigma(X)$-可测初始状态，该流在$L^2$范数下会指数级收敛到全局最小化器，并且函数值差距也会指数级减小。这两个收敛性质在任意非负时间点都成立，且初始误差以精确的系数形式作为前因子。定量分析依赖于具有共同$L^\infty$界限和固定均值的集合上的强凸性。我们的证明方法包括：通过插值熵端点势函数，利用两个条件副本来消除未知的势增量，并得到一个与正则化参数无关的Hessian下界。去除正则化处理后，原始函数会呈现出曲率特性；已知的定性理论为流形的轨道提供了统一的界限。这一结果扩展了Backhoff-Veraguas、Pammer和Schachermayer在一维情况下得到的指数收敛性结论。主要结果已在Lean 4中进行了形式化表述。本文的撰写过程中使用了人工智能技术（详见第8节）。。
+
+## 7. Comparing tail forecasts: the number of exceedances is the sample size
+- 来源：arxiv
+- 作者：Raphael Coelho
+- 期刊/来源：arXiv
+- 发表日期：2026-10-29
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2610.40366v1)
+
+**中文摘要（自动生成）**：【金融经济学】当通过一个一致的评分标准来比较两种关于尾部特征的预测（例如高覆盖率下的预测区间、极端分位数或预期亏损（ES））时，评分差异是可以提前预测的——除非实际结果超出了某项预测的范畴。真正影响评估结果的是“超出预测的次数”，而非观测值的总数；这一超出次数实际上构成了有效的样本量。对于覆盖率水平为α的预测区间，进行比较所需的观测值数量会以1/α的速度增长，而所需的超出次数则不会相应增加；对于某些预测对而言，任何检验方法都无法达到更好的评估效果。一种在任何情况下都有效且无需任何分布假设的置信序列能够实现这种评估效率；而通过评分差异范围进行校准的Hoeffding型检验方法则需要1/α倍的观测值数量。当超出预测的情况较为罕见时，Diebold-Mariano检验会判定较为保守的预测模型更优（至少在渐近意义上，无论实际哪个模型更优，这种判定都能保证“没有观测到超出预测的情况”）；通常的小样本修正方法无法消除这种偏差，而自助法（bootstrap）版本则能在很大程度上纠正这一问题。对于风险价值（Value-at-Risk, ES）预测而言，即使在没有假设的情况下，也可以证明较为保守的ES预测模型在...。研究方法：模型校准。
+
+## 8. Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals
+- 来源：arxiv
+- 作者：Zihan Chen, Lei Nico Zheng, Di Zhu
+- 期刊/来源：arXiv
+- 发表日期：2026-10-29
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2610.40324v1)
+
+**中文摘要（自动生成）**：【金融经济学】人们越来越多地在网络上分享个人目标，并邀请他人对这些目标进行预测。关于“规划谬误”（planning fallacy）的研究发现，观察者对个人行为的预测往往比当事人本身更为悲观。预测市场通过汇集这些判断，利用了“群体智慧”（wisdom of crowds）。我们研究了Manifold平台上的6,150个预测市场，其中1,660名用户对自己的未来进行了预测（例如“我会……吗？”）。我们重新分析了所有交易订单和执行过程，并将这些关于个人未来的预测市场与那些针对外部事件的预测市场进行了比较。结果显示，针对个人未来的预测市场给出的“是”（YES）的预测结果比最终实际结果低4.4个百分点；而针对外部事件的预测市场则几乎与实际情况相符（仅低0.9个百分点）。在相同的价格水平下，这种差异为2.2个百分点；在同时参与两种类型预测市场的用户中，这一差异为1.9个百分点。这种过度乐观的预测在市场开盘时并不存在，但在交易一天内就开始显现，即使当事人并未进行任何交易；这种趋势在交易结束前一周达到顶峰。在市场运行的第一天，观察者会将外部市场的价格拉向基准水平，但会将针对个人未来的预测市场的价格进一步推向...。研究方法：模型校准。
+
+## 9. A Proof for Generalized Egalitarianism
+- 来源：arxiv
+- 作者：Wei ShuAng
+- 期刊/来源：arXiv
+- 发表日期：2026-10-29
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2610.40312v1)
+
+**中文摘要（自动生成）**：【金融经济学】本文证明了一个刚性定理，该定理描述了在一般决策理论约束条件下以及弱洛伦兹优势（weak Lorenz dominance）作用下的基尼型洛伦兹面积排序（Gini-type Lorenz-area ordering）特征，从而解决了这一平等主义研究领域长期存在的特征描述问题。当然，这并不意味着更广泛的探索就此结束。从某种意义上说，这反而可能标志着我们试图通过共同的数学语言将社会选择理论、福利经济学和形式道德哲学联系起来的努力迈出了重要一步。主要的证明策略最初是由作者本人独立完成的，不过5.6sol和Astra无需任何额外提示便能够轻松复现这一证明过程。。
+
+## 10. THE SPATIAL COORDINATION MECHANISMS AND OPTIMIZATION PATHWAYS FOR URBAN ELDERLY CARE RESOURCES IN THE CONTEXT OF AN AGING POPULATION: AN ANALYSIS BASED ON GUANGZHOU
+- 来源：semantic_scholar
+- 作者：Li-Fen Zheng, Hao-Xuan Huang, Guan-Hong Chen
+- 期刊/来源：Journal of Trends in Finance and Economics
+- 发表日期：2026-10-23
+- 引用数：0
+- 主题：Sociology, Geography, Economics
+- 链接：[DOI](https://doi.org/10.61784/jtfe3084) [链接](https://api.semanticscholar.org/CorpusID:293978281)
+
+**中文摘要（自动生成）**：【金融经济学】为探讨人口老龄化背景下大城市中老年护理服务资源的空间协调问题，本研究以广州为案例，从空间治理的角度分析了老年护理服务资源配置的实际挑战、形成机制及优化路径。研究发现，广州的人口老龄化现象存在明显的空间差异：中心城区老龄化人口较为集中，而周边地区老龄化进程迅速加快；对老年护理的需求正从整体增长转向区域差异化发展。目前，老年护理资源的配置仍存在资源分布与人口趋势不匹配、区域供需协调不足以及资源利用效率低下等问题。其主要原因包括人口动态与公共资源规划之间的时间错配、限制老年护理资源空间流动的行政边界，以及未能充分满足多样化老年护理需求的传统供给导向型模式。因此，有必要改进需求识别机制，优化老年护理资源的空间分布，加强跨区域协同治理，并推动老年护理资源配置方式从分散式向协调式转变，从而提升大城市老年护理服务系统的适应能力和治理效能。。研究方法：优化方法。
+
+## 11. Does the Belt and Road Initiative Reshape Imported Financial Risk? Evidence From China
+- 来源：semantic_scholar
+- 作者：Zheng-Tao Cheng, Lin Jiang, Yi-Ming Lei, Xin Zhong
+- 期刊/来源：International Journal of Finance & Economics
+- 发表日期：2026-10-23
+- 引用数：0
+- 主题：Economics, Business
+- 链接：[DOI](https://doi.org/10.1002/ijfe.70322) [链接](https://api.semanticscholar.org/CorpusID:294351242)
+
+**中文摘要（自动生成）**：【风险管理与衍生品】在全球金融市场日益紧密相连的背景下，以及中国持续推动高水平对外开放的背景下，如何在扩大开放的同时有效防范外来金融风险，已成为平衡经济发展与金融安全的重要课题。本文利用2010至2024年间中国上市公司的数据，基于极值理论构建了企业层面的外来金融风险指标，并研究了“一带一路”倡议实施后企业外来金融风险的变化情况。研究结果表明，与其它企业相比，那些此前已与“一带一路”沿线国家有业务往来的企业在倡议实施后外来金融风险显著下降。渠道分析发现，汇率风险敞口、海外地理多元化以及运营韧性可能是导致外来金融风险下降的潜在因素。进一步分析还揭示了不同风险来源的“双刃剑”效应：在倡议实施前与“一带一路”沿线国家有业务往来的企业在来自发达市场的金融风险方面有所降低，但在倡议实施后与新兴市场的金融风险关联度却增强。这表明，虽然市场多元化有助于降低对传统发达市场风险的依赖，但更深入地融入“一带一路”新兴市场则可能增加对这些市场金融波动的敏感性。本文为企业层面提供了关于开放与金融安全之间关系的实证证据，为政策制定者和企业在开放进程中寻求平衡发展与安全提供了重要参考。。
+
+## 12. Recognizing Dominance through Local Improvement
+- 来源：arxiv
+- 作者：Linchen Zhang
+- 期刊/来源：arXiv
+- 发表日期：2026-10-29
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2610.40243v1)
+
+**中文摘要（自动生成）**：【金融经济学】“策略防伪性（Strategy-proofness）”是衡量行为可预测性的传统标准，然而参与者往往无法采取占优策略（dominant strategies）。现有的大多数简化理论（simplity concepts）将这些行为失灵归因于“条件性推理（contingent reasoning）”的成本，它们通过将占优策略的最坏情况与替代策略的最佳情况进行比较来降低这种成本。我认为还有另一种方法，这种方法能更充分地利用策略集合（strategy set）的结构，我将这种结构形式化为一种“邻接关系（neighbor relation）”。比较相邻策略可以减少条件性推理的需求；即使存在某种不确定性（contingency），这种方法也能简化对策略集合的搜索过程。我提出了一种新的简化标准：如果通过不断转向更优的策略（improving neighbor）总能找到占优策略，那么该机制就具备“局部可改进性（local improvement solvability）”。在最粗糙的邻接关系下，策略防伪性仍然是这一标准；许多经典机制在更精细的邻接关系下也满足这一标准。在不存在重复占优策略的扩展形式...。
