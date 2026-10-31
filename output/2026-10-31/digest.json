@@ -1,0 +1,240 @@
+{
+  "date": "2026-10-31",
+  "count": 12,
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "latest_updated": true,
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（8 篇）、风险管理与衍生品（2 篇）、金融科技（1 篇）。方法上以均衡模型、回归分析为主。来源分布：arXiv（7 篇）、Semantic Scholar（5 篇）。",
+  "insights": {},
+  "papers": [
+    {
+      "title": "Who Says What: Strategic Communication in Networks",
+      "authors": [
+        "Anuj Bhowmik",
+        "Saptarshi P. Ghosh",
+        "Iman Kundu",
+        "Sandipan Saha"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-29",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.40230v1",
+      "cited_by_count": 0,
+      "abstract": "We study a multiplayer communication coordination game in which privately informed agents communicate through a social network and choose their optimal actions while balancing them against their own bliss points and those of their neighbours. We show that equilibrium actions are convex combinations of the expected bliss points of all players, with weights determined by a degree-discounted Bonacich centrality measure. We also characterize when players report truthfully, over-report, or under-report their private information, and show that the incentive to misreport depends critically on the receiver's position in the network. A striking implication is that even under identical preferences, fully revealing communication may not be realized, and information transmission may remain coarse in a star network while becoming almost fully informative in a complete network. Finally, when biases are endogenously chosen, strategic responses to neighbours' biases are governed by their centralities, and unbiasedness may emerge as a Nash equilibrium.",
+      "summary_zh": "【金融经济学】我们研究了一个多人通信协调博弈，在该博弈中，拥有私人信息的代理通过社交网络进行交流，并在权衡自身与邻居的幸福水平（bliss points）的基础上选择最优行动。研究发现，均衡状态下的行动是所有参与者预期幸福水平的凸组合，其权重由一种基于度数折扣的Bonacich中心性度量方法确定。我们还分析了参与者在何种情况下会如实报告、夸大或隐瞒私人信息，并指出错误报告的动机在很大程度上取决于信息接收者在网络中的位置。一个显著的结论是：即使在偏好相同的情况下，也可能无法实现完全透明的信息交流；在星形网络中信息传递可能仍然较为粗糙，而在完全连接的网络中信息传递则几乎可以达到完全透明的程度。最后，当偏见是内生决定的时，代理对邻居偏见的策略性反应会受到其网络中心性的影响，而无偏性可能成为纳什均衡的一种结果。。研究方法：均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "The Generalised Kessler Syndrome and the Persian Gulf",
+      "authors": [
+        "Bernhard K Meister"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-29",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.40129v1",
+      "cited_by_count": 0,
+      "abstract": "The term Kessler syndrome was coined for a runaway orbital cascade creating a high-density debris field. The idea is generalised and applied to supply chains. An additive channel enables failures to generate further failures; a subtractive channel erodes the capacity to contain and restore. When damage outpaces repair, failure becomes irreversible and the system settles into a new state. Supplies connect the theory to its application. Stocks insulate subsystems from one another, and their exhaustion exposes dependencies. For the Persian Gulf states, restrictions on maritime supplies from spring 2026 are inadequately compensated by air and road transport alternatives. This depletes inventories unevenly across products and impairs the functioning of the logistics system itself. Throughput optimisation builds fragility everywhere; the Gulf is where it is becoming visible, with the Strait of Hormuz restriction as the trigger. Formulated as a Kelly portfolio allocation under a weakest-link payoff, the optimal strategy concentrates resources on the lagging rather than the leading inputs.",
+      "summary_zh": "【金融经济学】“凯斯勒综合征”这一术语最初用于描述一种导致轨道碎片密度急剧增加的连锁反应现象。这一概念后来被推广并应用于供应链管理领域。在供应链中，某些因素（如“加性机制”）会促使故障进一步扩散；而另一些因素（如“减性机制”）则会削弱系统应对故障的能力。当系统受损的速度超过修复速度时，故障将变得不可逆转，系统会进入一种新的稳定状态。供应链中的库存机制使得各个子系统相互隔离，但库存的耗尽会暴露出它们之间的依赖关系。对于波斯湾国家而言，自2026年春季以来对海上物资运输的限制，并未通过航空和公路运输等替代方案得到充分弥补。这种状况导致不同产品的库存分布不均，进而影响了整个物流系统的运作效率。吞吐量的优化反而加剧了系统的脆弱性；在波斯湾地区，这种脆弱性尤为明显，霍尔木兹海峡的交通限制成为了引发问题的关键因素。从“最弱环节收益”角度出发，最优策略应将资源优先投入到那些发展滞后的环节，而非表现良好的环节。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Impact of Oil Rent on Economic Well-Being in a Frontier Developing Country: Role of Institutional Quality and Access to Finance",
+      "authors": [
+        "E. Agu",
+        "J. Oladipo",
+        "P. K. Ozili",
+        "E. Agu"
+      ],
+      "venue": "Review of business and economics studies",
+      "published_date": "2026-10-27",
+      "doi_url": "https://doi.org/10.26794/2308-944x-2026-14-3-6-26",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295356765",
+      "cited_by_count": 0,
+      "abstract": "Knowledge\n gap\n . Despite the established link between oil rent and economic growth, the moderating effect of institutional quality and access to finance on the relationship between oil rent and economic well-being remains unexplored.\n Research objectives\n . This study examines the effect of oil rent on economic well-being in Nigeria — a country that is both a net oil exporter and net importer of petroleum products. We also examine how the relationship is influenced by the quality of governance institutions and access to finance during the 1996 to 2021 period.\n Results.\n \n We find that oil rent improves economic well-being in Nigeria through higher gross domestic product (GDP) per capita growth, economic growth and low unemployment. Institutional quality enhances the contribution of oil rent to economic well-being by decreasing the level of unemployment in Nigeria. Access to finance through bank branch expansion did not translate oil rent into positive economic well-being. There is a uni-directional granger causality between oil rent and GDP per capita growth, GDP growth rate and unemployment rate.\n Implications\n . The findings call on policymakers to increase oil rent due to its significant role in improving economic well-being. They should strengthen governance institutions by introducing laws and policies that protect public interests and combat corruption in the petroleum sector to increase oil rent and its positive trickle-down effect on people. Policymakers also need to identify other appropriate mechanisms for broadening access to finance for members of the public who need financing to access the infrastructure and products that were built using oil wealth, such as schools and hospitals.\n Contribution.\n The study makes a valuable contribution to the literature on resource dependence by examining the relatively underexplored case of a country that simultaneously exports crude oil and imports refined petroleum products. This perspective extends beyond the conventional focus on net oil-exporting economies and provides a fresh contribution to the resource curse debate.",
+      "summary_zh": "【金融经济学】**知识缺口**  \n尽管石油租金与经济增长之间存在明确的关联，但制度质量与融资渠道对这种关系的影响尚未得到充分研究。  \n\n**研究目的**  \n本研究探讨了石油租金对尼日利亚经济福祉的影响。尼日利亚既是石油净出口国，也是石油产品的净进口国。同时，我们分析了1996年至2021年间治理机构的质量和融资渠道如何影响这一关系。  \n\n**研究结果**  \n研究发现，石油租金通过促进人均国内生产总值（GDP）增长、推动经济增长以及降低失业率来提升尼日利亚的经济福祉。良好的制度质量通过减少失业率，进一步增强了石油租金对经济福祉的积极作用。然而，通过扩大银行网点来改善融资渠道并未直接转化为显著的经济福祉提升。石油租金与人均GDP增长、GDP增长率及失业率之间存在单向的格兰杰因果关系。  \n\n**政策启示**  \n研究结果表明，鉴于石油租金对提升经济福祉的重要作用，政策制定者应适当提高石油租金水平。为此，他们需要制定保护公共利益、打击石油行业腐败的法律和政策，以增强治理机构的效能。此外，政策制定者还需探索其他有效途径，为需要资金的民众提供更多融资支持，使他们能够利用石油财富建设的基础设施和...。",
+      "topics": [
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "The Development of Machine Learning in Quantitative Finance",
+      "authors": [
+        "Xing-Yao Li"
+      ],
+      "venue": "Advances in Economics, Management and Political Sciences",
+      "published_date": "2026-10-27",
+      "doi_url": "https://doi.org/10.54254/2754-1169/2026.ld38096",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295348909",
+      "cited_by_count": 0,
+      "abstract": "The rapid growth of financial data and artificial intelligence has increased the use of machine learning in quantitative finance. Machine learning provides new ways to identify complex patterns in financial data and support financial prediction and decision-making. This paper provides an introductory review of machine learning methods and their applications in quantitative finance. It first introduces the basic machine learning process and then focuses on three main applications: stock price prediction, portfolio management and credit risk assessment. Support Vector Machine, Neural Network and Random Forest are discussed for stock prediction; Genetic Algorithm, Reinforcement Learning and Deep Reinforcement Learning are reviewed for portfolio management; and Logistic Regression, Random Forest and XGBoost are examined for credit risk assessment. The paper also discusses three major challenges, including limited model interpretability, insufficient incorporation of external information and limited adaptability to changing market conditions. Corresponding future directions include explainable artificial intelligence, the integration of alternative and multimodal data, and adaptive learning methods. Overall, this review provides a structured overview of current machine learning applications in quantitative finance and may help readers better understand existing developments, major challenges and possible future directions in this field.",
+      "summary_zh": "【金融经济学】随着金融数据量和人工智能技术的迅速增长，机器学习在量化金融领域的应用日益广泛。机器学习为识别金融数据中的复杂模式提供了新的方法，从而支持金融预测和决策制定。本文对机器学习方法及其在量化金融中的应用进行了综述。首先介绍了机器学习的基本流程，随后重点探讨了三个主要应用领域：股票价格预测、投资组合管理和信用风险评估。在股票价格预测方面，文章讨论了支持向量机（Support Vector Machine, SVM）、神经网络（Neural Network）和随机森林（Random Forest）；在投资组合管理方面，分析了遗传算法（Genetic Algorithm）、强化学习（Reinforcement Learning）和深度强化学习（Deep Reinforcement Learning）；在信用风险评估方面，研究了逻辑回归（Logistic Regression）、随机森林（Random Forest）和XGBoost。文章还指出了三个主要挑战：模型可解释性不足、外部信息整合程度较低以及适应市场变化的能力有限。未来的研究方向包括发展可解释的人工智能技术、整合多种类型的数据以及采用...。研究方法：回归分析、机器学习、神经网络、随机森林、XGBoost。",
+      "topics": [
+        "Computer Science",
+        "Business",
+        "Economics",
+        "Mathematics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Smooth Threshold GARCH: Quasi Maximum Likelihood Estimation and Empirical Evidence",
+      "authors": [
+        "Jonas Fiedler Frederiksen",
+        "Frederik Vilandt"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-29",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.40047v1",
+      "cited_by_count": 0,
+      "abstract": "It is well established that the volatility of daily stock returns responds asymmetrically to news, as described by the news impact curve (NIC), which relates volatility to the previous return. Empirical studies suggest that (i) volatility reacts more strongly to negative returns than to positive returns of the same magnitude, (ii) the point of asymmetry, where the NIC attains its minimum, is positive, and (iii) returns above this point often do not increase volatility at all. The popular GJR and A-GARCH models each rule out one of these features. We study the Smooth Threshold GARCH (STGARCH) model, which nests both and allows for (i)-(iii) by combining an estimated threshold, the point of asymmetry, with separate slopes on either side of it. Although the likelihood is not twice continuously differentiable in the threshold, we show that the quasi maximum likelihood estimator is consistent and converges at the usual $\\sqrt{n}$-rate, whether or not (iii) holds. If (iii) does not hold, the estimator is asymptotically normal, while if it holds, the slope above the threshold is zero, a value on the boundary of the parameter space, and the limit is non-Gaussian. In that case, the $t$-statistic for (iii) converges to the positive part of a standard normal variable, and the $t$-test of the GJR model remains valid. These results allow us to test the GJR and A-GARCH models, as well as (i)-(iii), within the STGARCH using standard normal critical values. For daily returns on five major stock indices, we reject the GJR model for all five and the A-GARCH model for three, suggesting that the STGARCH improves upon both. Volatility is lowest after returns 0.3-0.6 percentage points above their conditional mean, in line with (i) and (ii). Finally, the hypothesis in (iii) is rejected for two of the five indices.",
+      "summary_zh": "【金融经济学】已有充分研究表明，日股票回报的波动性对新闻的反应具有非对称性，这一现象可通过“新闻冲击曲线”（News Impact Curve, NIC）来描述，该曲线将波动性与股票之前的回报水平联系起来。实证研究指出：（i）波动性对负面回报的反应比对同等幅度的正面回报更为强烈；（ii）新闻冲击曲线达到最小值的那个非对称点位于正数区域；（iii）在该点之后的回报往往不会进一步增加波动性。然而，流行的GJR（Gaussian-Jarque-Rosenberg）模型和A-GARCH（Autoregressive Generalized ARCH）模型分别排除了上述特征中的某一项。我们研究了“平滑阈值GARCH”（Smooth Threshold GARCH, STGARCH）模型，该模型通过结合一个估计得到的非对称点以及该点两侧的不同斜率，同时满足了上述三个特征。尽管该模型中阈值处的似然函数并非二次连续可微的，但我们证明了准最大似然估计量是一致的，并且无论（iii）是否成立，其收敛速度均为常规的$\\sqrt{n}$。如果（iii）不成立，该估计量具有渐近正态性；如果（iii）成立，则阈值以上的斜率...。研究方法：GARCH 波动率模型、最大似然估计。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "How Different are Different Differences-in-Differences? A Large-Scale Meta-Analysis",
+      "authors": [
+        "Peter Hull"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-29",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.39995v1",
+      "cited_by_count": 0,
+      "abstract": "I use AI-assisted replication to assess the empirical importance of negative weights in two-way fixed effects (TWFE) estimation, drawing on 1,346 staggered-adoption specifications from 108 economics papers. TWFE estimates are highly correlated with estimates from modern difference-in-differences methods, with observed sign reversals in 10.8-14.5% of comparisons and greater precision for TWFE. Hierarchical models that account for estimation noise imply a 91-98% correlation between estimands and a 0.6-2.1% probability of obtaining a statistically significant TWFE estimate with the opposite sign from the modern estimand. These findings suggest negative weights may be a less serious problem in practice, and illustrate how AI can support large-scale empirical assessments of new econometric methods.",
+      "summary_zh": "【金融经济学】我利用人工智能辅助的复制检验方法，评估了双向固定效应（TWFE）估计中负权重的实际重要性。研究基于108篇经济学论文中提出的1,346个分阶段采用（staggered-adoption）研究设计。TWFE的估计结果与现代差异-in-differences方法的估计结果高度相关：在10.8%至14.5%的比较案例中观察到符号反转现象，且TWFE的估计精度更高。考虑到估计误差的层次模型表明，两种估计量之间的相关性为91%至98%；同时，获得与现代估计量符号相反的统计显著TWFE估计量的概率为0.6%至2.1%。这些发现表明，在实际应用中，负权重可能并非一个严重的问题，并展示了人工智能如何支持对新计量经济学方法进行的大规模实证评估。。研究方法：双重差分、固定效应。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Strong rate for one-dimensional driftless continuous strict local martingales",
+      "authors": [
+        "Antoine Jacquier"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-29",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.39896v1",
+      "cited_by_count": 0,
+      "abstract": "For one-dimensional strict local martingales of the form $\\mathrm{d} X_t=σ(X_t) \\mathrm{d} W_t$ starting from $X_{0}=x_{0}>0$, we prove the strong rate $\\mathbb{E}\\left[|X^h_N-X_T|\\right] \\lesssim h^{\\min\\{θα,\\frac{1}{2}\\}}$ for a discrete scheme~$X^h$ truncated at a level $h^{-α}$, with time step~$h$, as $h\\downarrow 0$, where~$θ$ depends on the truncation property. For the CEV model $σ(x)\\equiv x^{1+γ}$ in particular, the rate is~$\\frac{1}{2}$ for any $γ\\in (0,1)$ (up to a logarithmic pre-factor at $γ=\\frac{1}{2}$).",
+      "summary_zh": "【金融经济学】对于形式为 $\\mathrm{d} X_t = σ(X_t) \\mathrm{d} W_t$ 的一维严格局部鞅，其初始值为 $X_{0} = x_{0} > 0$，我们证明了当时间步长 $h$ 趋近于 0 时，对于在水平 $h^{-α}$ 处截断的离散方案 $X^h$，其强收敛速率满足 $\\mathbb{E}\\left[|X^h_N - X_T|\\right] \\lesssim h^{\\min\\{θα, \\frac{1}{2}\\}$，其中 $θ$ 取决于截断性质。特别地，对于 CEV 模型（其中 $\\sigma(x) \\equiv x^{1+γ}$），该收敛速率为 $\\frac{1}{2}$（对于所有 $γ \\in (0,1)$ 都成立，仅在 $γ = \\frac{1}{2}$ 时存在一个对数因子）。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Threshold Regression with a Nearly Integrated Threshold Variable",
+      "authors": [
+        "Chaoyi Chen",
+        "Thanasis Stengos"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-29",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.39871v1",
+      "cited_by_count": 0,
+      "abstract": "This paper considers threshold regression with an integrated or local-to-unity threshold variable and a threshold fixed in levels. We study the least squares threshold estimator and establish its asymptotic theory under both fixed and diminishing threshold effects. Under a fixed effect, the threshold estimator has a compound Cox argmin limit, whereas under a diminishing effect, its limiting distribution is characterized by a two-sided Brownian argmax with a random scale. We also develop likelihood ratio inference, which is asymptotically pivotal under a diminishing effect and conservative under Gaussian errors for a fixed effect, and show that conventional $t$-ratios for the slope coefficients remain asymptotically standard normal. A sup-Wald test is proposed to detect threshold effects that may be too small for consistent threshold localization. We further extend the framework to allow for integrated slope regressors and for contemporaneous endogeneity of the threshold variable, showing that the leading endogenous contribution cancels over shrinking threshold windows. Monte Carlo simulations examine the finite-sample performance of the proposed methods. An illustration using public debt and economic growth highlights the relevance of allowing for a persistent threshold variable.",
+      "summary_zh": "【风险管理与衍生品】本文研究了具有积分型或局部单位阈值变量以及固定水平阈值的阈值回归模型。我们探讨了最小二乘阈值估计量，并在阈值效应固定和递减两种情况下建立了其渐近理论。在阈值效应固定的情况下，该估计量具有复合Cox argmin极限；而在阈值效应递减的情况下，其极限分布表现为具有随机尺度的双侧布朗ian argmax过程。我们还开发了似然比推断方法，该方法在阈值效应递减时具有渐近关键性，在高斯误差下对固定效应具有保守性，并证明了传统$t$比率用于估计斜率系数时仍能保持渐近正态性。为了检测可能过小的阈值效应以实现阈值定位的一致性，我们提出了一种sup-Wald检验方法。此外，我们将研究框架扩展到允许使用积分型斜率回归量以及阈值变量的同时期内生性，结果表明，在阈值窗口逐渐缩小的过程中，主要的内生贡献会相互抵消。通过蒙特卡洛模拟检验了所提出方法的有限样本性能。以公共债务和经济增长为例，说明了允许存在持久性阈值变量的重要性。。研究方法：固定效应、回归分析、蒙特卡洛模拟、数值模拟。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "When are complements and substitutes dual?",
+      "authors": [
+        "Philip R. Neary"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-10-29",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2610.39844v1",
+      "cited_by_count": 0,
+      "abstract": "For binary-action games on bipartite networks, strategic complements and strategic substitutes are one and the same: each can be transformed into the other by relabelling the actions of every player on exactly one side. In this note, I show that bipartiteness is necessary and sufficient for such a relabelling; as a consequence, bipartite networks are precisely those on which every binary-action game with strategic substitutes must have a pure-strategy Nash equilibrium.",
+      "summary_zh": "【金融经济学】对于在二分网络上的二元行动博弈而言，战略互补性与战略替代性实际上是同一概念：通过重新标记某一侧所有玩家的行动，两者可以相互转化。在本文中，我证明了二分性是实现这种转换的必要条件也是充分条件；因此，二分网络正是那些包含战略替代性的二元行动博弈必定存在纯策略纳什均衡的网络。。研究方法：均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Opportunities and Risks of Exchange Services in Decentralized Finance",
+      "authors": [
+        "M. Abramova",
+        "S. Krivoruchko",
+        "O. Lunyakov",
+        "A. Fiapshev"
+      ],
+      "venue": "Review of business and economics studies",
+      "published_date": "2026-10-27",
+      "doi_url": "https://doi.org/10.26794/2308-944x-2026-14-3-64-81",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295352801",
+      "cited_by_count": 0,
+      "abstract": "The article discusses the development of the financial market in the context of a possible convergence of decentralized finance and the traditional financial system. As an\n object\n of research, the authors chose the product segment of the field of decentralized finance, which allows decentralized trading of digital assets. The stock exchange is the direct analogy in the field of traditional finance. The\n purpose\n of the study was to substantiate regulating measures in the field of decentralized finance based on a decomposition analysis of processes, to give a description of unique opportunities, and to identify traditional and specific risks associated with the provision of decentralized exchange services. The authors used\n methods\n of system analysis, decomposition analysis and comparative analysis. During the analysis, the authors identified and described the key components in the architecture of a decentralized exchange service. In addition, they compared a decentralized exchange service and exchange services provided by traditional financial intermediaries. The following comparable parameters were considered: the method of storage and accounting of rights to traded assets, clearing, execution of orders, place of storage of assets, organization of asset trading, requirements for identification of bidders.\n The scientific novelty\n lies in the decomposition of the service exchange process in decentralized finance with the identification and description of specific risks. The authors\n concluded\n that decentralized exchanges democratize access to their services, but at the same time they increase currently known risks and create new ones. Based on the results of the analysis, the article formalizes measures to regulate decentralized finance. Recommendations, related to the convergence of decentralized financial services and the traditional financial system, are intended to be included in the Roadmap for the Development of the Financial Market of the Russian Federation.",
+      "summary_zh": "【风险管理与衍生品】本文探讨了在去中心化金融与传统金融体系可能融合的背景下金融市场的发展趋势。作为研究对象，作者选择了去中心化金融领域中允许数字资产进行去中心化交易的产品类别，而证券交易所则是传统金融体系中的对应机构。研究的目的是通过流程分解分析来论证针对去中心化金融的监管措施，描述其独特优势，并识别与提供去中心化交易服务相关的传统风险与特定风险。作者采用了系统分析、分解分析和比较分析等方法。在分析过程中，作者识别并描述了去中心化交易服务架构中的关键组成部分，并将去中心化交易服务与传统金融中介机构提供的交易服务进行了对比。比较的参数包括：交易资产权益的存储与记账方式、清算机制、订单执行流程、资产存储地点以及参与者身份验证要求等。\n\n本文的学术创新之处在于对去中心化金融交易流程进行了细致分解，并明确了其中存在的特定风险。作者认为，去中心化交易所虽然提升了服务的普及性，但同时也加剧了现有风险并带来了新的风险。基于分析结果，本文提出了规范去中心化金融的相应措施。关于去中心化金融服务与传统金融体系融合的相关建议，旨在纳入《俄罗斯联邦金融市场发展路线图》中。。",
+      "topics": [
+        "Economics",
+        "Business"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Research on the Inclusive Finance Effect of Digital Renminbi",
+      "authors": [
+        "Cheng-Bo Ruan"
+      ],
+      "venue": "Advances in Economics, Management and Political Sciences",
+      "published_date": "2026-10-27",
+      "doi_url": "https://doi.org/10.54254/2754-1169/2026.ld38086",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295328118",
+      "cited_by_count": 0,
+      "abstract": "Amid the ongoing wave of the digital and intelligent technological revolution, central bank digital currency has become an important vehicle to reshape the financial service system. As China's self-developed central bank digital currency, digital renminbi provides a new tool to break through the bottlenecks in the development of traditional inclusive finance. Relying on its legal tender attributes and advantages of digital technologies, digital renminbi effectively expands the reach of financial services and serves as a key measure to improve the quality and efficiency of inclusive finance. This paper systematically discusses the theoretical mechanism through which digital renminbi empowers inclusive finance, and conducts empirical tests using the panel data fixed-effects model, with the outstanding loan balance of inclusive small and micro enterprises as the explained variable. The study shows that the launch of digital renminbi pilots exerts a significant positive driving effect on regional inclusive finance development. In addition, regional economic development level, fiscal expenditure, urbanization rate and internet penetration rate all significantly promote the expansion of inclusive credit; by contrast, deepening population aging and rising inflation level generate negative restraining effects. This paper proposes to steadily expand digital renminbi pilots and promote the application of smart contracts, implement differentiated downward outreach strategies adapted to local conditions, strengthen digital infrastructure and carry out age-friendly transformation, so as to offer empirical evidence for the construction of China's inclusive finance ecosystem.",
+      "summary_zh": "【金融科技】在数字化和智能化技术革命持续发展的背景下，央行数字货币已成为重塑金融服务体系的重要工具。作为中国自主研发的央行数字货币，数字人民币为突破传统普惠金融发展中的瓶颈提供了新的手段。凭借其法定货币属性和数字技术的优势，数字人民币有效扩展了金融服务的覆盖范围，成为提升普惠金融质量和效率的关键举措。本文系统探讨了数字人民币推动普惠金融发展的理论机制，并采用面板数据固定效应模型进行了实证分析，以普惠型小微企业的未偿还贷款余额作为被解释变量。研究结果表明，数字人民币试点的推出对区域普惠金融发展具有显著的积极促进作用。此外，区域经济发展水平、财政支出、城镇化率和互联网普及率均显著推动了普惠信贷的扩张；相反，人口老龄化加剧和通货膨胀率上升则产生了负面抑制效应。本文建议稳步推进数字人民币试点工作，推广智能合约的应用，根据地方实际情况制定差异化的推广策略，加强数字基础设施建设，并推动金融服务的适老化改造，从而为中国普惠金融生态体系的构建提供实证支持。。研究方法：面板数据。",
+      "topics": [
+        "Economics",
+        "Computer Science",
+        "Business"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Do firms respond to competition in corporate finance decisions? Evidence from India’s Competition Act",
+      "authors": [
+        "Nabendu Paul",
+        "Pankaj Gupta",
+        "Akash Krishnan"
+      ],
+      "venue": "Journal of economics and finance",
+      "published_date": "2026-10-30",
+      "doi_url": "https://doi.org/10.1007/s12197-026-09788-4",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295323966",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  \n                    We select a sample of non-financial listed Indian firms to analyse the effect of competition on innovation and on firms’ corporate finance decisions. Using firm-level data for 3,716 companies from 1998 to 2006 sourced from the\n                    CMIE\n                    Prowess database, we exploit the Competition Act (2002) in India as an exogenous policy shock and apply a difference-in-differences (\n                    DiD\n                    ) framework to estimate its causal effects. The findings show that treated firms innovated between 0.19% and 2.51% more than control firms after the enactment of the Competition Act (2002). However, these firms did not exhibit higher capital expenditure or external financing; instead, they reduced leverage—particularly secured debt—and exhibited more cautious risk-taking, while dividend payouts remained broadly unchanged. Overall, the 2002 reform enhanced innovation while inducing financial conservatism. This pattern aligns with Arrow’s (1962) competition–innovation mechanism and the financial-flexibility view that, in emerging markets, stronger competition pushes firms to become more efficient and innovative while encouraging prudent financial behaviour. This study offers the first clear evidence from an emerging economy showing that competition policy reform can both encourage innovation and promote careful financial behaviour. It adds to the ongoing debate about whether competition drives firms to take more risks or makes them act more conservatively in their financial decisions.",
+      "summary_zh": "【公司金融】摘要\n\n我们选取了印度部分非金融类上市公司的样本，以分析竞争对创新以及企业财务决策的影响。利用来自CMIE Prowess数据库的1998至2006年间3,716家公司的企业级数据，我们将印度《竞争法》（2002年）视为一种外生政策冲击，并采用差异-in-differences（DiD）方法来估计其因果效应。研究结果表明，在《竞争法》（2002年）实施后，受政策影响的公司的创新活动比对照组公司增加了0.19%至2.51%。然而，这些公司并未表现出更高的资本支出或外部融资需求；相反，它们降低了杠杆率（尤其是有担保债务），同时采取了更为谨慎的风险承担策略，而股息支付水平基本保持不变。总体而言，2002年的改革在促进创新的同时，也增强了企业的财务保守性。这一现象与Arrow（1962年）提出的竞争-创新机制以及“财务灵活性理论”相符——即在新兴市场中，更激烈的竞争促使企业提高效率、增强创新能力，同时促使企业采取更为审慎的财务行为。本研究首次为新兴经济体提供了明确证据，证明竞争政策改革既能鼓励创新，又能促进企业采取更为谨慎的财务决策。这为关于竞争是促使企业承担更多风险还是使其在财务决策上...。研究方法：双重差分。",
+      "topics": [
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    }
+  ]
+}
