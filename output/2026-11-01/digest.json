@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-01",
+  "count": 6,
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "latest_updated": true,
+  "overview": "本期共收录 6 篇论文。研究方向主要集中在金融经济学（3 篇）、公司金融（2 篇）、风险管理与衍生品（1 篇）。方法上以调查数据、均衡模型为主。来源分布：Semantic Scholar（6 篇）。其中 1 篇命中顶级期刊白名单。",
+  "insights": {},
+  "papers": [
+    {
+      "title": "Artificial Intelligence Adoption and Supply Chain Finance: Evidence from China's A-Share Listed Firms",
+      "authors": [
+        "Yang-Xin Wang"
+      ],
+      "venue": "Advances in Economics, Management and Political Sciences",
+      "published_date": "2026-10-27",
+      "doi_url": "https://doi.org/10.54254/2754-1169/2026.38240",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295363381",
+      "cited_by_count": 0,
+      "abstract": "In recent years companies have used artificial intelligence (AI) to raise efficiency, to support decisions and to process data. This paper uses Chinese A-share listed companies to test whether firm-level AI adoption helps supply chain finance to grow. The AI index comes from text analysis of annual reports, and a panel over 2011 to 2023 is estimated; AI adoption is positively related to supply chain finance, and its coefficient stays stable after the model controls firm size, leverage, profitability and market value. The data come from the CSMAR database and annual reports; the sample drops financial and special treatment (ST) firms, keeps firm-years with more than 300 employees, and adds firm and year fixed effects to absorb unobserved firm features and macro shocks. The subsample results show that the positive relation is mainly in medium and large firms; there AI raises financing demand, information transparency and credit access, and this supports supply chain finance. Formal coefficient-difference tests show that this relation is significantly weaker in relatively small firms, and medium-sized and large firms show no statistical difference.",
+      "summary_zh": "【公司金融】近年来，企业纷纷采用人工智能（AI）来提高效率、辅助决策以及处理数据。本文以中国A股上市公司为研究对象，探讨企业层面的人工智能应用是否有助于供应链金融的发展。研究通过分析年报中的文本信息构建了人工智能指数，并对2011年至2023年的数据进行了实证分析。结果表明，人工智能的应用与供应链金融之间存在正相关关系；在控制企业规模、杠杆率、盈利能力及市值等因素后，这种相关性依然稳定。数据来源于CSMAR数据库和上市公司年报。研究排除了财务困境企业及特殊处理（ST）企业，仅保留员工人数超过300人的企业样本，并加入了企业及年份的固定效应以解释潜在的未观测企业特征和宏观经济冲击。子样本分析显示，这种正向关系主要体现在中型和大型企业中：人工智能提升了企业的融资需求、信息透明度以及信贷获取能力，从而促进了供应链金融的发展。进一步的系数差异检验表明，这种关系在小型企业中显著减弱，而中型和大型企业之间则不存在统计学上的差异。。研究方法：固定效应、文本分析。",
+      "topics": [
+        "Business",
+        "Computer Science",
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "The Number of Minor Children and Household Allocation to Risky Financial Assets: Evidence from the 2021 China Household Finance Survey",
+      "authors": [
+        "Xin-Yue Zhang",
+        "Rao-Feng Guo",
+        "Zi-Jie Gao",
+        "Pei-Zhuo Wang"
+      ],
+      "venue": "International Business & Economics Studies",
+      "published_date": "2026-10-29",
+      "doi_url": "https://doi.org/10.22158/ibes.v8n4p122",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295389107",
+      "cited_by_count": 0,
+      "abstract": "Using microdata on 17,744 households from the 2021 China Household Finance Survey (CHFS), this study employs Probit and Tobit models to examine the association between the number of minor children and household participation in risky financial markets, as well as the share of financial assets allocated to risky assets. After controlling for homeownership, marital status, and household economic characteristics, each additional minor child is associated with an average decrease of 0.54 percentage points in the probability of market participation and 3.32 percentage points in the risky asset share. Both baseline estimates are statistically significant at the 10% level. These findings are consistent with liquidity constraints and precautionary saving. Estimates by number of children suggest a nonlinear pattern: the coefficients for households with two or more minor children are negative and statistically significant, whereas those for households with one minor child are not statistically significant. The negative association is more pronounced in the rural sample; the corresponding coefficients in the urban sample are not statistically significant. By jointly examining market participation, portfolio allocation, nonlinear patterns, and urban–rural differences, this study adds microeconomic evidence on the relationship between household demographic structure and financial asset allocation. The findings also inform the coordinated design of policies supporting childbearing and financial inclusion.",
+      "summary_zh": "【风险管理与衍生品】本研究利用2021年中国家庭金融调查（CHFS）中17,744户家庭的微观数据，通过Probit和Tobit模型探讨了未成年子女数量与家庭参与高风险金融市场行为之间的关系，以及家庭金融资产中用于高风险资产的比例。在控制了房屋所有权、婚姻状况和家庭经济特征等因素后，每增加一个未成年子女，家庭参与金融市场的概率平均下降0.54个百分点，用于高风险资产的金融资产比例平均下降3.32个百分点。这两种基线估计结果在10%的显著性水平上均具有统计学意义。这些发现与流动性约束和预防性储蓄行为相符。根据子女数量的不同，研究结果呈现出非线性模式：拥有两个或更多未成年子女的家庭的相关系数为负值且具有统计学意义，而只有一个未成年子女的家庭的相关系数则不具有统计学意义。这种负相关关系在农村样本中更为明显；而在城市样本中，相关系数并不具有统计学意义。通过综合分析家庭市场参与度、资产配置模式以及城乡差异，本研究为家庭人口结构与金融资产配置之间的关系提供了微观经济层面的证据。这些发现也为制定支持生育政策和促进金融包容性的政策提供了参考依据。。研究方法：调查数据。",
+      "topics": [
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "China Evergrande Group's High-Leverage Capital Structure: Formation Logic and Risk Evolution from a Corporate Finance Perspective",
+      "authors": [
+        "Zheng-Yang Li"
+      ],
+      "venue": "Advances in Economics, Management and Political Sciences",
+      "published_date": "2026-10-27",
+      "doi_url": "https://doi.org/10.54254/2754-1169/2026.ld38329",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295348992",
+      "cited_by_count": 0,
+      "abstract": "The real estate sector is by nature capital-intensive, and high leverage has long been a standard practice for property developers across global markets. In China, the debt-fueled high-turnover growth model has backed the rapid expansion of the property industry for decades, but it has also built up considerable hidden debt risks. The launch of the \"Three Red Lines\" regulatory policy in 2020 has sharply tightened financing rules for developers, and the risks tied to extreme leverage strategies have gradually come to the surface. As the most representative player with an aggressive leverage strategy in the industry, China Evergrande Group's 2021 debt default has become a landmark case of corporate financial distress. This paper uses a literature review combined with case study analysis, and draws on trade-off theory and financial distress cost frameworks, supplemented by an accounting perspective, to explain how Evergrande's high-leverage capital structure formed and how its risks evolved and spread. The study finds that Evergrande's leverage level moved far past the optimal range predicted by traditional theory, pushed by scale expansion incentives, implicit expectations of policy support, and internal managerial agency problems. Accounting tools such as off-balance-sheet financing further hid the true size of its debt burden. Once external financing conditions tightened, accumulated risks set off a spiral of rising financial distress costs, which eventually grew into a full-scale liquidity crisis.",
+      "summary_zh": "【公司金融】房地产行业本质上属于资本密集型产业，高杠杆率长期以来一直是全球房地产市场开发商的普遍做法。在中国，以债务驱动的高周转率增长模式支撑了房地产行业的快速发展，但同时也积累了相当大的隐性债务风险。2020年出台的“三条红线”监管政策大幅收紧了对开发商的融资限制，与极端杠杆策略相关的风险逐渐暴露出来。作为业内最具代表性的高杠杆策略实施者，中国恒大集团在2021年的债务违约事件成为了企业财务困境的典型案例。本文通过文献综述与案例分析相结合的方法，借鉴权衡理论及财务困境成本框架，并结合会计学视角，探讨了恒大高杠杆资本结构的形成过程及其风险的发展与扩散机制。研究发现，受规模扩张冲动、对政策支持的隐性预期以及内部管理代理问题的影响，恒大的杠杆率远超传统理论预测的最佳范围；此外，表外融资等会计手段进一步掩盖了其真实的债务负担。一旦外部融资环境恶化，累积的风险引发了财务困境成本的螺旋式上升，最终演变为全面的流动性危机。。",
+      "topics": [
+        "Business",
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Tax Reform and Non-Oil Tax Revenue in Nigeria: Evidence from Democratic Regime Period 1999-2025",
+      "authors": [
+        "H. Samuel",
+        "Emmnuel Okon Emenyi",
+        "S. Okpo",
+        "E. Ukpong"
+      ],
+      "venue": "SIAR-Global Journal of Economics Finance & Accounting",
+      "published_date": "2026-10-27",
+      "doi_url": "https://doi.org/10.66694/siar.gjefa20264005",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295332054",
+      "cited_by_count": 0,
+      "abstract": "Nigeria's persistent dependence on petroleum revenue has heightened the importance of \nstrengthening non-oil tax revenue as a sustainable source of public finance. Although successive \ngovernments have introduced tax reforms aimed at broadening the tax base, improving \ncompliance and strengthening revenue administration, empirical evidence on the effects of \nspecific tax reform instruments on non-oil tax revenue remains limited. This study examines the \nrelationship between tax reform and non-oil tax revenue in Nigeria: evidence from 1999 to 2025 \nusing three principal explanatory variables: tax reform events (TRE), personal income tax reform \nevents (PITR), and education tax rate (ETR), while controlling for real non-oil gross domestic \nproduct (RNOGDP). Annual time-series data covering 1999–2025 were obtained from relevant \nNigerian fiscal and macroeconomic sources. To prevent structural changes in the RNOGDP series \nfrom contaminating the estimated tax relationships, structural-break controls for 2011 and 2016 \nwere incorporated into the final specification. The study employed unit-root testing and an \nautoregressive distributed lag (ARDL) error-correction framework to distinguish between short\nrun and long-run relationships. The results indicate that TRE has a positive and statistically \nsignificant long-run effect on non-oil tax revenue (β = 0.1849, p = .028), while PITR has a \nnegative and significant effect (β = −0.7574, p = .032). ETR has a large positive and statistically \nsignificant long-run coefficient (β = 136.1290, p < .001), while RNOGDP is also positive and \nsignificant (β = 1.2702, p < .001). The structural-break controls for 2011 and 2016 are statistically \nsignificant, confirming the importance of accounting for changes in the RNOGDP series. The \nerror-correction coefficient of −0.9146 (p < .001) indicates rapid adjustment toward long-run \nequilibrium. The study concludes that the effectiveness of tax reform in increasing non-oil tax \nrevenue depends not only on the introduction of reforms but also on the specific instrument and \nthe broader economic environment. It recommends strengthening reform implementation, \nimproving personal income tax administration, and maintaining education-tax policies that \nsupport sustainable revenue mobilisation.",
+      "summary_zh": "【金融经济学】尼日利亚长期依赖石油收入，这使得增强非石油税收作为公共财政的可持续来源变得尤为重要。尽管历届政府都推出了旨在扩大税基、提高税收遵从性和加强税收管理的税收改革措施，但关于具体税收改革措施对非石油税收收入影响的实证证据仍然有限。本研究探讨了税收改革与尼日利亚非石油税收收入之间的关系，使用了1999年至2025年的数据，并考虑了三个主要解释变量：税收改革事件（TRE）、个人所得税改革事件（PITR）和教育税率（ETR），同时控制了实际非石油国内生产总值（RNOGDP）的影响。相关数据来源于尼日利亚的财政和宏观经济部门。为防止RNOGDP序列中的结构性变化干扰税收关系的估计，研究在最终模型中加入了2011年和2016年的结构断点控制。研究采用了单位根检验和自回归分布滞后（ARDL）误差修正模型来区分短期和长期关系。结果表明，税收改革对非石油税收收入具有显著的长期正向影响（β = 0.1849，p = 0.028）；个人所得税改革则具有显著的长期负向影响（β = −0.7574，p = 0.032）；教育税率的长期系数显著为正（β = 136.1290，p < 0.001），实际非石油国内...。研究方法：均衡模型。",
+      "topics": [
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Signaling with debt currency choice",
+      "authors": [
+        "E. Eren",
+        "S. Malamud",
+        "Hao-Nan Zhou"
+      ],
+      "venue": "Journal of Financial Economics",
+      "published_date": "2026-11-01",
+      "doi_url": "https://doi.org/10.1016/j.jfineco.2026.104355",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:291782927",
+      "cited_by_count": 0,
+      "abstract": "We document that firms in emerging markets borrow more in foreign currency when the local currency actually provides a better hedge in downturns. Motivated by this fact, we develop an international corporate finance model in which firms facing adverse selection choose the foreign currency share of their debt. In the unique separating equilibrium, good firms optimally expose themselves to currency risk to signal their type. Crucially, the nature of this equilibrium depends on the co-movement between cash flows and the exchange rate. We provide extensive empirical evidence for this signaling channel using a granular dataset including more than 4,800 firms in 19 emerging markets between 2005 and 2021. Our results have implications for evaluating and mitigating risks arising from currency mismatches in corporate balance sheets.",
+      "summary_zh": "【金融经济学】我们发现，在经济低迷时期，当本币能够提供更有效的对冲机制时，新兴市场中的企业会更倾向于以外币进行借贷。基于这一观察，我们构建了一个国际企业金融模型，在该模型中，面临逆向选择风险的企业会自主选择其债务中外币的比例。在该模型所描述的独特均衡状态下，优质企业会主动承担货币风险以向市场传递自身的类型信息。这一均衡状态的形成关键取决于现金流与汇率之间的联动关系。我们利用包含19个新兴市场4800多家企业在2005至2021年间的详细数据，提供了大量实证证据来支持这一信号传递机制的存在。我们的研究结果对于评估和缓解企业资产负债表中因货币错配而产生的风险具有重要的实践意义。。研究方法：均衡模型。",
+      "topics": [
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Working Capital Alchemy: Unveiling Triple Effects and Accounting Best Practices for Global Enterprise Success in Economic Shifts",
+      "authors": [
+        "Enkeleda Lulaj"
+      ],
+      "venue": "Economics Series",
+      "published_date": "2026-10-25",
+      "doi_url": "https://doi.org/10.2478/sues-2026-0019",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:293940990",
+      "cited_by_count": 0,
+      "abstract": "Abstract This study examines how working capital mastery drives working capital optimization across receivables and credit management, cash flow and payables management, and liquidity and contingency management, while assessing the moderating role of working capital resilience. Using survey data from 202 finance professionals across manufacturing, hospitality, and tourism, and commercial sectors in Kosovo (2023–2025), the study applies factor analysis, structural equation modeling, and moderation analysis. The findings show that stronger working capital mastery consistently improves all dimensions of working capital optimization. Working capital resilience selectively moderates these relationships, weakening the effects on receivables and liquidity management while slightly strengthening the effects on cash flow and payables management. Overall, the results highlight that aligning working capital mastery with resilience is critical for financial performance, operational efficiency, and adaptability during economic shifts.",
+      "summary_zh": "【金融经济学】摘要：本研究探讨了营运资金管理能力如何推动企业在应收账款与信用管理、现金流与应付账款管理以及流动性和应急管理方面的营运资金优化，并评估了营运资金弹性的调节作用。研究基于2023至2025年间科索沃制造业、酒店业、旅游业及商业领域202名财务专业人士的调查数据，运用了因子分析、结构方程建模和调节效应分析等方法。研究结果表明，较强的营运资金管理能力能够持续提升营运资金优化的各个维度。营运资金弹性在某些方面起到了调节作用：它减弱了营运资金管理对应收账款管理和流动性管理的影响，同时略微增强了其对现金流管理和应付账款管理的影响。总体而言，研究结果强调，在经济变化期间，将营运资金管理能力与弹性相结合对于提升财务绩效、运营效率及企业适应能力至关重要。。研究方法：调查数据、优化方法。",
+      "topics": [
+        "Business",
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    }
+  ]
+}
