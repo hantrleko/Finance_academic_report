@@ -1,102 +1,104 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "count": 12,
   "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
   "latest_updated": true,
-  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（8 篇）、资产定价（1 篇）、银行与信贷（1 篇）。方法上以数值模拟、回归分析为主。来源分布：arXiv（7 篇）、NBER（3 篇）、Semantic Scholar（2 篇）。其中 3 篇命中顶级期刊白名单。",
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（6 篇）、金融科技（1 篇）、收入分配与福利（1 篇）。方法上以回归分析、模型校准为主。来源分布：arXiv（8 篇）、OpenAlex（2 篇）、NBER（2 篇）。其中 2 篇命中顶级期刊白名单。",
   "insights": {},
   "papers": [
     {
-      "title": "Functional Tensor Trains for High-Order Greeks and Exposure Tails of Multi-Asset Structured Products",
+      "title": "Human-AI Collaboration in Urban Digital Transformation: Balancing Efficiency and Human Values in Shanghai’s AI-Enabled Talent Recruitment",
       "authors": [
-        "Javier Lopez-Piqueres",
-        "Atithi Acharya",
-        "Yue Sun",
-        "Niraj Kumar"
+        "Ting Li",
+        "Salme Yahya"
       ],
-      "venue": "arXiv",
-      "published_date": "2026-10-30",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.42119v1",
+      "venue": "Digital Technologies Research and Applications",
+      "published_date": "2026-11-02",
+      "doi_url": "https://doi.org/10.54963/dtra.v5i4.100334",
+      "openalex_url": "https://openalex.org/W7225035663",
       "cited_by_count": 0,
-      "abstract": "Risk management of worst-of autocallables needs price sensitivities (Greeks) up to third order and the potential future exposure, a tail quantile of the note's future value. In Monte Carlo, each order of differentiation multiplies the sampling noise by a factor that grows with the observation frequency, and nested simulation turns the noise of its inner paths into a bias of the quantile. We instead solve the backward pricing recursion, storing the continuation value as an $hp$ functional tensor train (hp-FTT) whose piecewise-polynomial cores are split at the barriers, so that worst-of barrier events act exactly, with rank one. For Gaussian transitions we show that the polynomial degree sufficient for an error $\\varepsilon$ grows only as $\\sqrt{\\log(1/\\varepsilon)}$. One solve then gives every Greek at any spot without sampling noise, by integrating the likelihood-ratio weight against the stored value, and the values it stores at future dates replace inner simulation. Against the strongest Monte Carlo estimators we could build or find published, on worst-of autocallables observed monthly on three to five assets, the order of the Greek and the accuracy decide which method is cheaper. At $1\\%$ accuracy Monte Carlo is more than an order of magnitude cheaper for deltas, second-order Greeks go either way, and hp-FTT is cheaper for every third-order Greek, by up to two orders of magnitude. At $0.1\\%$ hp-FTT is cheaper for every Greek we could check, under geometric Brownian motion and local volatility alike. For the exposure alone Monte Carlo is cheaper at $1\\%$ and hp-FTT at $0.1\\%$, and a solve run for the Greeks yields it for little more than scenario sampling. Sampling pays in variance for each derivative and hp-FTT in rank for each asset, so Monte Carlo keeps low-order Greeks at percent accuracy, rarely observed contracts and many assets.",
-      "summary_zh": "【金融经济学】最差情况自动赎回型金融产品的风险管理需要价格敏感性参数（即希腊字母）的三阶导数，以及潜在的未来风险敞口——即该金融产品未来价值的尾部分位数。在蒙特卡洛模拟中，每一阶微分都会使采样噪声乘以一个随观测频率增加而增大的因子；而嵌套模拟则将内部路径的噪声转化为分位数的偏差。我们采用另一种方法：通过反向定价递归算法进行计算，并将连续价值存储为一个称为“hp-FTT”（hp-Functional Tensor Train）的数学结构。该结构的核心部分由分段多项式构成，在触发障碍条件时能够实现精确的数值计算（即阶数为1）。对于高斯过程下的资产价格变动，我们证明：为实现误差范围$\\varepsilon$所需的多项式阶数仅与$\\sqrt{\\log(1/\\varepsilon)}$成正比。通过将似然比权重积分到已存储的价值上，即可无需采样噪声即可计算出任意时刻的各个希腊字母参数；而hp-FTT在存储的未来日期值则可以替代内部模拟的结果。在与我们构建或找到的最强蒙特卡洛估计方法相比（这些方法用于观测三个月到五个月内价格变动的三到五种资产的最差情况自动赎回型金融产品），希腊字母参数的阶数和计算精度决定了...。研究方法：蒙特卡洛模拟、数值模拟。",
+      "abstract": "In the context of the urban digital revolution, recruitment through AI technologies has become common practice to address competition in the labor market. However, it is still unclear how the effectiveness of such recruitment is connected with humanistic values. For this research, an exploratory qualitative research design was used, involving semi-structured interviews with eight human resource professionals in Shanghai. Based on the results, the use of AI in recruitment led to increased efficiency mainly when screening candidates through high-volume, standardized processes, although the promised efficiency was not delivered in practice because the introduction of the AI system increased the workload. Patterns of human-machine cooperation were observed in different companies: tech companies and foreign companies are inclined to adopt interactive adjustment approaches, while state-owned enterprises retain human-dominated decision-making. Transparency of algorithms was still lacking in numerous instances, and there was an asymmetry in the accountability framework of algorithms, wherein disobeying algorithms carries more personal consequences than obeying them. The more experienced professionals became more autonomous in their work, while the less experienced professionals depended more on the algorithm. Issues like management support, information accuracy, and departmental integration have a major impact on implementation. This study contributes to the theory of human-machine collaboration by proposing the concept of asymmetric algorithmic accountability, which captures the uneven distribution of organizational consequences for following versus overriding AI recommendations and shapes practitioner behavior in ways that extend beyond individual trust or algorithmic transparency.",
+      "summary_zh": "【金融科技】在城市数字化革命的背景下，利用人工智能技术进行招聘已成为应对劳动力市场竞争的常见做法。然而，这种招聘方式的有效性与人文价值观之间的关联仍不明确。为此，本研究采用了探索性定性研究方法，对上海的八位人力资源专业人士进行了半结构化访谈。研究结果表明，人工智能在招聘中的应用主要提高了筛选候选人的效率，尤其是在处理大量标准化流程时；不过实际操作中并未实现预期的效率提升，因为人工智能系统的引入反而增加了工作负担。在不同类型的企业中观察到了人机协作的模式：科技公司及外资企业更倾向于采用交互式调整策略，而国有企业则仍以人为主导的决策方式为主。在许多情况下，算法的透明度仍然不足，且算法的问责机制存在不对称性——违反算法规定所带来的个人后果比遵守算法更为严重。经验丰富的专业人士在工作中表现出更高的自主性，而经验不足的专业人士则更依赖算法的决策结果。管理支持、信息准确性以及部门间的协同等因素对人工智能招聘的实施效果具有重要影响。本研究通过提出“不对称算法问责”这一概念，为探讨人机协作理论做出了贡献。该概念揭示了在遵循或无视人工智能建议时，组织所承担后果的分配不均现象，并进一步阐释了从业者的行为模式，这...。",
       "topics": [
-        "Economics",
-        "Finance"
+        "Transparency (behavior)",
+        "Accountability",
+        "Knowledge management",
+        "Exploratory research",
+        "Context (archaeology)"
       ],
-      "source": "arxiv"
+      "source": "openalex"
     },
     {
-      "title": "Valid GMM Inference with Non-parametrically Generated Discrete Type",
+      "title": "Biaya Modal, Profitabilitas, dan Efisiensi Aktivitas Operasi terhadap Nilai Perusahaan Sektor Teknologi di BEI",
       "authors": [
-        "Taegyu Yang"
+        "Anisa Yurhana",
+        "Mariyam Zanariyah",
+        "Veny Mayasari"
       ],
-      "venue": "arXiv",
-      "published_date": "2026-10-30",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.42052v1",
+      "venue": "MOTIVASI",
+      "published_date": "2026-11-02",
+      "doi_url": "https://doi.org/10.32502/syh65f02",
+      "openalex_url": "https://openalex.org/W7225038279",
       "cited_by_count": 0,
-      "abstract": "The recent progress in machine learning and classification methods has enabled researchers to predict economic discrete attributes that are not observed in standard datasets. These range from missing demographics, such as ethnicity and poverty status, to economic categories, such as innovative firms, metropolitan areas, occupational groups, binary treatment status, and counterfactual status. Although the plug-in procedure is widely used in empirical applications, nonparametric first-stage estimation recovering the labels can introduce regularization bias because of its slow convergence rate. Even if the double/debiased machine learning approach provides a way to correct the regularization bias, the according bias-correction term is not well defined in our problem, because even a small first-stage error can change the type discontinuously. To address this problem, we smooth the discontinuous type indicators using a smooth kernel function and a shrinking tuning parameter $b$. We then construct a well-defined Neyman-orthogonal score and define the appropriate debiased estimator. We show that this debiased estimator satisfies $\\sqrt{Nb}$-consistency and asymptotic normality under regularity conditions. The slower $\\sqrt{Nb}$ convergence rate is the cost of correcting the regularization bias when the nonparametric first-stage learner enters the moment function through discontinuous functions.",
-      "summary_zh": "【金融经济学】近年来，机器学习和分类方法取得了显著进展，使得研究人员能够预测标准数据集中未包含的经济离散属性。这些属性涵盖了缺失的人口统计信息（如种族和贫困状况），以及经济分类（如创新型企业、大都市区、职业群体、二元处理状态和反事实状态）等。尽管插值法在实证应用中得到了广泛使用，但由于其收敛速度较慢，非参数第一阶段估计在恢复标签时可能会引入正则化偏差。即使双重/去偏机器学习方法能够纠正这种正则化偏差，但在我们的问题中，相应的偏差校正项并未得到明确定义，因为即使是很小的第一阶段误差也可能导致类型发生突变。为了解决这一问题，我们使用平滑核函数和收缩调整参数$b$来平滑这些类型指标的突变。随后，我们构建了一个定义明确的Neyman-正交得分，并定义了适当的去偏估计量。研究表明，在满足常规条件的情况下，该去偏估计量具有$\\sqrt{Nb}$-一致性及渐近正态性。当非参数第一阶段学习器通过不连续函数影响矩函数时，较慢的$\\sqrt{Nb}$收敛速度成为纠正正则化偏差的代价。。研究方法：机器学习。",
+      "abstract": "Purpose— This study aims to examine the effect of cost of capital, profitability, and operational activity efficiency on firm value among technology sector companies listed on the Indonesia Stock Exchange (IDX) during the 2023–2025 period.\nDesign/methodology— This study employs a quantitative approach using secondary data obtained from the Indonesia Stock Exchange. The sample was determined using a purposive sampling method, resulting in 54 observations from technology sector companies during the 2023–2025 period. The independent variables consist of cost of capital, profitability, and operational activity efficiency, while firm value is the dependent variable. Data analysis was performed using multiple linear regression with the assistance of SPSS version 27.\nFindings— The results indicate that cost of capital has a significant positive effect on firm value. Profitability has a significant positive effect on firm value, indicating that higher profitability reflects better company performance and prospects, thereby increasing investor confidence and firm value. Operational activity efficiency also has a significant positive effect on firm value, indicating that companies that efficiently utilize their assets to generate sales tend to have higher firm value.",
+      "summary_zh": "📌 研究问题：本研究旨在考察资本成本、盈利能力及运营活动效率对2023-2025年期间印尼证券交易所科技公司企业价值的影响。\n\n🔬 研究方法：研究采用定量方法，利用SPSS 27软件对来自印尼证券交易所的二手数据进行多元线性回归分析，样本由54家科技公司构成。\n\n📊 核心发现：研究发现，资本成本、盈利能力及运营活动效率均对企业价值产生显著的正向影响，表明更高的盈利能力和资产利用效率能提升投资者信心并增加公司价值。\n\n💡 应用价值：该研究为投资者和管理层提供了重要参考，揭示了提升资本效率、盈利能力和运营效率对于增强企业市场价值的重要性。",
       "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Factors Affecting the Participation of Small and Medium Enterprises (SMEs) in Foreign Trade: Empirical Evidence From SMEs in Lusaka, Zambia",
-      "authors": [
-        "Peter Chikonde",
-        "Peter Silwimba"
-      ],
-      "venue": "Journal of Economics, Business, and Commerce",
-      "published_date": "2026-10-28",
-      "doi_url": "https://doi.org/10.69739/jebc.v3i2.2386",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:295324450",
-      "cited_by_count": 0,
-      "abstract": "The purpose of this study was to investigate the factors affecting the participation of Small and Medium Enterprises (SMEs) in foreign trade in Lusaka, Zambia. The objective was to establish how access to finance, regulatory and trade policy, and entrepreneurial knowledge affect the SMEs' trade participation. A quantitative research design was adopted, and 65 SMEs were selected using simple random sampling. Data were collected through structured questionnaires and analyzed using Megastat. The findings disclosed that SMEs' involvement in foreign trade was impacted by access to financing, with 32.3% reporting that 26%-50% of foreign transactions required external financing and 40% relying primarily on personal savings and family assistance. The SME category and reliance on outside funding were found to be significantly associated by chi-square test (X2=40.29, p-value <0.001). Participation was also found to be influenced by regulatory trade policy, especially through taxation, licensing requirements, certification standards, customs procedures, and compliance costs. The observed mean and the predicted value differed statistically significantly, according to a one-sample t-test (mean =2.600, t= -17.35). Although 41.5% reported that 1%-25% of management teams had received formal international trade training, entrepreneurial knowledge has a positive impact on participation in foreign trade. Knowledge of foreign market entry strategies and restrictions pertaining to international payment methods was significantly improved, according to a chi-square test (X2= 145.69,df=16, p <0.001). The findings imply that policy and practice should address financing barriers, regulatory complexity, and trade-related knowledge gaps to strengthen SMEs' international participation. The study comes to the conclusion that SMEs' participation in international trade can be increased by strengthening international trade, streamlining trade regulations, and expanding access to financing.",
-      "summary_zh": "【资产定价】本研究的目的是探讨影响赞比亚卢萨卡地区中小企业（SMEs）参与对外贸易的各种因素。研究旨在分析融资渠道、监管政策与贸易政策以及企业家知识对中小企业贸易参与度的影响。研究采用定量研究方法，通过简单随机抽样选取了65家中小企业作为样本，并通过结构化问卷收集数据，随后利用Megastat软件对数据进行分析。\n\n研究结果表明，中小企业的对外贸易参与情况受到融资条件的制约：32.3%的受访企业表示其26%至50%的对外贸易活动需要外部融资支持，而40%的企业主要依赖个人储蓄和家庭援助。卡方检验（X²=40.29，p值<0.001）显示，中小企业类型与其对外部资金的依赖程度之间存在显著关联。此外，监管政策（尤其是税收政策、许可要求、认证标准、海关程序及合规成本）也对企业的贸易参与度产生显著影响。单样本t检验结果显示（均值=2.600，t=-17.35），实际观察到的均值与预期值存在统计学上的显著差异。尽管41.5%的受访企业表示其管理团队中仅有1%至25%的人员接受过正式的国际贸易培训，但企业家知识对企业的对外贸易参与具有积极促进作用。卡方检验进一步表明（X²=145.69，df=16，p<...。",
-      "topics": [
+        "Profitability index",
+        "Stock exchange",
         "Business",
-        "Economics"
+        "Nonprobability sampling",
+        "Enterprise value"
       ],
-      "source": "semantic_scholar"
+      "source": "openalex"
     },
     {
-      "title": "A Study on the Impact of Banking Fintech on the Continuous Innovation of Specialized, Refined, Distinctive, and Innovative Enterprises",
+      "title": "Unconfoundedness as an Information Constraint",
       "authors": [
-        "Yu-Ting Du"
+        "Christoph Breunig"
       ],
-      "venue": "Advances in Economics, Management and Political Sciences",
-      "published_date": "2026-10-27",
-      "doi_url": "https://doi.org/10.54254/2754-1169/2026.38361",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:295329819",
+      "venue": "arXiv",
+      "published_date": "2026-11-02",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.03550v1",
       "cited_by_count": 0,
-      "abstract": "\"Specialized, Refined, Distinctive, and Innovative\" (SRDI) enterprises have long focused on niche markets, but their sustained innovation is often affected by external financing conditions, given their long R&D cycles, technological risks, and delays in commercializing research outcomes. As commercial banks increasingly integrate data, algorithms, and digital infrastructure into lending operations, the way they assess innovation-related information and allocate technology-related loans has changed. Research in this area has therefore moved beyond loan availability to examine loan terms, financing costs, and innovation quality. This paper distinguishes between regional digital finance, platform-based fintech, and bank-internal fintech. It reviews existing research on how bank fintech relates to the sustained innovation of SRDI enterprises, with particular attention to loan terms, risk pricing, and their applicable conditions. Existing research suggests that bank fintech can supplement traditional financial and collateral information, thereby improving financing conditions for asset-light enterprises; studies on \"Specialized, Refined, Unique, and New\" enterprises have found that digital finance and fintech organizations help sustain R&D activities and drive key technological breakthroughs. However, existing studies still face limitations in matching bank and enterprise data, identifying loan contracts, and measuring sustained innovation. Whether the application of fintech can generate long-term innovation returns through adjustments in loan terms and pricing requires further examination based on the integration of enterprise, bank, loan, and patent data.",
-      "summary_zh": "【银行与信贷】“专业化、精细化、差异化及创新性”（SRDI）企业长期以来一直专注于细分市场，但由于其研发周期较长、技术风险较高以及研究成果商业化存在延迟，其持续创新能力常常受到外部融资条件的影响。随着商业银行越来越多地将数据、算法和数字基础设施融入贷款业务，它们评估与创新相关的信息以及分配技术相关贷款的方式也随之发生了变化。因此，该领域的研究已从单纯关注贷款的可获得性，扩展到对贷款条款、融资成本和创新质量的探讨。本文区分了区域数字金融、基于平台的金融科技以及银行内部的金融科技，并回顾了现有研究，探讨了银行金融科技如何促进SRDI企业的持续创新，特别关注贷款条款、风险定价及其适用条件。现有研究表明，银行金融科技能够补充传统的财务信息和抵押品信息，从而改善轻资产企业的融资条件；针对“专业化、精细化、独特及创新性”企业的研究发现，数字金融和金融科技组织有助于维持研发活动并推动关键的技术突破。然而，现有研究在匹配银行与企业数据、识别贷款合同以及衡量持续创新能力方面仍存在局限性。金融科技的应用是否能够通过调整贷款条款和定价来产生长期创新回报，还需要结合企业、银行、贷款和专利数据进一步研究。。",
+      "abstract": "This paper provides an information-theoretic characterization of unconfoundedness within a general class of models allowing for endogenous selection. We impose a conditional mutual information (CMI) restriction requiring that the information about treatment contained in a potential outcome, conditional on covariates, does not exceed that contained in its latent heterogeneity. Under the maintained model conditions, this restriction is equivalent to a multiplicative factorization of treatment probabilities into separate functions of latent heterogeneity and covariates. Although the CMI restriction permits endogenous selection, sufficiently rich variation in treatment probabilities across covariate values makes it equivalent to unconfoundedness for the corresponding potential outcome. For binary treatments, any nonconstant propensity score suffices; for multiple treatments, a full-rank condition on the second-moment matrix of the propensity-score vector is sufficient. State-specific restrictions bound residual selection and imply exogeneity for individual treatment states under boundary-support conditions. Extensions cover continuous treatments and instrument exogeneity.",
+      "summary_zh": "【金融经济学】本文从信息论的角度对一类允许内生选择的模型中的无混杂性进行了刻画。我们提出了一个条件互信息（CMI）约束，要求在给定协变量的条件下，潜在结果中包含的治疗信息量不得超过其中潜在异质性所包含的信息量。在保持模型条件的情况下，这一约束等价于将治疗概率分解为潜在异质性和协变量的函数。尽管CMI约束允许内生选择，但只要治疗概率在协变量值上存在足够丰富的变化，就意味着相应的潜在结果具有无混杂性。对于二元治疗，任何非恒定的倾向得分都满足要求；对于多重治疗，倾向得分向量的二阶矩矩阵需要满足满秩条件。特定状态的约束可以限制残差选择，并在边界支持条件下确保各个治疗状态的外生性。本文的扩展内容涵盖了连续治疗和工具变量外生性的情况。。研究方法：倾向得分匹配。",
       "topics": [
-        "Business",
         "Economics",
-        "Computer Science"
+        "Finance"
       ],
-      "source": "semantic_scholar"
+      "source": "arxiv"
     },
     {
-      "title": "Can Home Visits Re-Engage Chronically Absent Students? Evidence from the LEAP Program",
+      "title": "Symbol-based residual certification of reduced and neural surrogates for tempered-fractional CGMY pricing",
       "authors": [
-        "Eric Brunner",
-        "Shangyue Jiang",
-        "Stephen Ross"
+        "Davood Damircheli"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-02",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.03463v1",
+      "cited_by_count": 0,
+      "abstract": "We certify reduced and neural approximations of European-put price trajectories under the Carr--Geman--Madan--Yor model by residual bounds for the spline Galerkin discretisation of the tempered-fractional pricing equation. The Galerkin matrices are Toeplitz sections of an explicit periodised Fourier symbol; summing the alias series to a stated tail makes the assembled system exact to $10^{-8}$. A Lévy--Khintchine argument gives the parameter-explicit bound $λ_{\\min}(S_I)\\ge r\\,m_{\\min}$ for the symmetric part, valid for $Y\\in(0,2)\\setminus\\{1\\}$, replacing numerical spectral estimates. A banded comparison norm built from the mass and stiffness symbols yields a rigorous certificate at $O(N)$ cost with explicit effectivity, and empirical interpolation of the symbol makes the operator affine in about 36 terms with a rigorous error transfer, so a reduced model is certified at a cost independent of $N$; a three-stage rule escalates to the full-order bounds only when needed. At the resolution that prices the whole parameter box to one cent ($N=1024$), the full-order certificate costs 6% of a direct solve, and the certified POD--Galerkin model of rank 80 costs 3% of it and settles 99.8% of $10^4$ queries without touching the full space. No false accept occurs on any query with a reference solution (150 inside the parameter box, 264 outside), and outside the box the certificate accepts 193 of the 210 queries on which the reduced model is still within one cent. The neural reduced models trained here miss the one-cent tolerance by a factor of at least 46; the certificate detects this at every query in a few milliseconds and explains it as a trade-off between temporal smoothness and coefficient accuracy. A residual certificate for the American put is proved as an outlook.",
+      "summary_zh": "【金融经济学】我们通过残差界限方法，对Carr–Geman–Madan–Yor模型下的欧式看跌期权价格轨迹的简化模型及神经网络近似模型进行了验证。该方法基于样条Galerkin离散化技术，用于处理具有温度分数特征的定价方程。Galerkin矩阵是显式周期性傅里叶符号的Toeplitz子矩阵；通过对混叠序列进行求和处理（直至指定的尾部范围），整个离散化系统的误差可控制在$10^{-8}$以内。Lévy–Khintchine理论为对称部分提供了参数显式的误差界限$\\lambda_{\\min}(S_I)\\ge r\\,m_{\\min}$，该结论适用于$Y\\in(0,2)\\setminus\\{1\\}$区间，从而无需依赖数值谱估计。基于质量和刚度符号构建的带状比较范数能够在$O(N)$的计算成本下提供严格的误差证明，并确保算法的有效性。通过对符号进行经验插值处理，算子可以被表示为大约36个项的仿射函数，从而实现精确的误差传递；因此简化模型的验证成本与数据量$N$无关。只有在必要时，才会采用三阶段算法来获得完整阶数的误差界限。在将整个参数区间内的价格精度控制在1美分以内的情况下（$N=1024$），完整阶数...。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Saving for the Machines",
+      "authors": [
+        "Jesús Fernández-Villaverde"
       ],
       "venue": "NBER Working Papers",
       "published_date": "",
       "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w35961#fromrss",
+      "openalex_url": "https://www.nber.org/papers/w35964#fromrss",
       "cited_by_count": 0,
-      "abstract": "Beginning in the summer of 2021, the state of Connecticut launched the Learner Engagement and Attendance Program (LEAP) where home visits by school personnel were conducted with students identified as chronically absent from Connecticut’s 15 most disadvantaged school districts. Home visits were designed to connect students and their families directly with teachers to foster strong connections. We use student-level data from 2021–22 through 2023-24 to estimate event studies of the effect of LEAP on student attendance, chronic absenteeism, disciplinary incidents, and student achievement. Utilizing models that address selection into treatment timing over student observable and unobservable attributes, we find that students who received the LEAP intervention experienced approximately a 4 to 5 percentage point increase in attendance rates, a 13 to 15 percentage point decline in chronic absenteeism, and a 3 to 5 percentage point decline in the number of disciplinary incidents. Notably, initial event studies indicated increasing treatment effects over time, but after correcting for selection on unobservables treatment effects appeared constant over time. These effects were broad based, with similar impacts by gender, race and ethnicity, and free or reduced-price lunch status. These attendance and discipline results provide suggest that the LEAP intervention increased student noncognitive skills.",
-      "summary_zh": "【金融经济学】自2021年夏季起，康涅狄格州推出了“学习者参与与出勤计划”（Learner Engagement and Attendance Program，简称LEAP）。该计划要求学校工作人员对来自该州15个最贫困学区的长期缺勤学生进行家访，旨在帮助学生及其家庭与教师建立直接联系，从而促进良好的师生关系。我们利用2021-2022年度至2023-2024年度的学生数据，对该计划对学生出勤率、长期缺勤情况、纪律问题以及学业成绩的影响进行了分析。通过运用能够考虑学生在可观测和不可观测属性方面的选择偏倚的模型，我们发现接受LEAP干预的学生出勤率提高了约4%至5%，长期缺勤率下降了13%至15%，纪律问题发生的次数减少了3%至5%。值得注意的是，初步的研究结果显示干预效果随时间有所增强，但在控制了不可观测因素的选择偏倚后，干预效果趋于稳定。这些积极变化具有普遍性，无论学生的性别、种族、族裔背景，或是是否享受免费或优惠午餐政策，其影响均无明显差异。这些数据表明，LEAP干预措施有助于提升学生的非认知能力。。",
+      "abstract": "When machines can perform a growing share of tasks, growth depends on two margins: how the task structure affects the returns to accumulating machines, and how strongly capital accumulation responds to those returns. I argue that, in a standard task model, capital supply governs the size of the growth boom associated with automation, while the task structure sets the duration of this growth boom and the evolution of wages. I document how the same technology path that generates 11.7% annual growth when households choose their saving rate optimally delivers only 2.2% when the saving rate is fixed at the calibrated U.S. 2025 level of 23%. Therefore, slow growth might reflect too little capital accumulation instead of a technological bottleneck. Also, the saving rate rises mainly because automation raises the capital share, not because households become thriftier. Long yields price the growth boom: the ten-year real yield jumps from 5.1% to 13.6% on impact. In my benchmark calibration, hand-to-mouth households lose the equivalent of two-fifths to two-thirds of their consumption, while keeping them on trend temporarily costs at most a fifth of GDP.",
+      "summary_zh": "【金融经济学】当机器能够承担越来越多的任务时，经济增长取决于两个关键因素：任务结构如何影响对机器投资的回报，以及资本积累对这些回报的反应程度。我认为，在标准的任务模型中，资本供应决定了自动化带来的经济增长高峰的规模；而任务结构则决定了这一增长高峰的持续时间以及工资水平的演变。研究表明，当家庭能够根据最优策略选择储蓄率时，同样的技术路径能够带来11.7%的年增长率；但如果将储蓄率固定在2025年美国的水平（23%）上，这一增长率仅为2.2%。因此，经济增长缓慢可能更多地反映了资本积累不足，而非技术瓶颈。此外，储蓄率的上升主要是由于自动化提高了资本在总收入中的占比，而非家庭变得更加节俭。长期来看，这种技术变革会对经济增长产生显著影响：十年期实际收益率从5.1%跃升至13.6%。在我的基准情景下，那些只能勉强维持基本生活的家庭会失去相当于其消费总额五分之二到三分之二的收入；而若暂时维持这些家庭的现有生活水平，最多只需要花费GDP的五分之一。。研究方法：模型校准。",
       "topics": [
         "Economics",
         "Finance"
@@ -104,20 +106,19 @@
       "source": "nber"
     },
     {
-      "title": "Unraveling the Cobweb of Global Imbalances: Drivers, Vulnerabilities and Adjustment Scenarios",
+      "title": "Income Inequality and Intergenerational Mobility in Russia: Trends, Sources, and Measurement",
       "authors": [
-        "Stefan Avdjiev",
-        "Kristin Forbes",
-        "Tsvetelina Nenova",
-        "Marjorie Santos"
+        "Kristina Butaeva",
+        "Steven N. Durlauf",
+        "Dmitry Rudenko"
       ],
       "venue": "NBER Working Papers",
       "published_date": "",
       "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w35962#fromrss",
+      "openalex_url": "https://www.nber.org/papers/w35965#fromrss",
       "cited_by_count": 0,
-      "abstract": "This paper analyses the evolution and drivers of the stock of global imbalances in order to assess associated vulnerabilities and potential adjustment scenarios. These imbalances have recently increased sharply, with a deterioration in the US net international investment position (NIIP) mirrored by NIIP improvements in most other major economies. We decompose these NIIP changes into their proximate drivers for a sample of 28 economies and find that financial factors (including valuation changes and investment income flows) are the primary drivers of global imbalances at both short and long horizons, while trade also plays a significant role (especially at long horizons). Valuation gains on international investment positions have supported economic growth in many countries since 2010, while also increasing their vulnerability to financial market adjustments. To assess the implications and potential risks, we simulate the spillovers through this cobweb of global imbalances from: (i) a sharp dollar depreciation, (ii) a repricing of equity markets, (iii) higher interest rates, and (iv) a halving of trade imbalances. These scenarios highlight the large international spillovers that would be associated with any reduction in global imbalances, the heterogeneous impact of various rebalancing mechanisms on individual countries and the limits of popular proposals for reducing these imbalances. The persistence of global imbalances underscores the importance of building resilience to the large spillovers that can occur through this cobweb of international exposures.",
-      "summary_zh": "【金融经济学】本文分析了全球失衡状况的演变及其驱动因素，旨在评估由此产生的脆弱性及可能的调整路径。近年来，全球失衡现象显著加剧，其中美国的净国际投资头寸（NIIP）持续恶化，而大多数其他主要经济体的NIIP状况则有所改善。我们对28个经济体的NIIP变化进行了分解，发现金融因素（包括估值变动和投资收入流动）是短期和长期内全球失衡的主要驱动因素；贸易也在其中发挥了重要作用（尤其是在长期）。自2010年以来，国际投资头寸的估值上涨推动了许多国家的经济增长，但同时也增加了这些国家对金融市场波动的敏感性。为了评估这些失衡现象可能带来的影响和风险，我们模拟了以下四种情景下的全球失衡传导效应：（1）美元急剧贬值；（2）股市重新定价；（3）利率上升；（4）贸易失衡减半。这些情景表明，任何形式的全球失衡减少都会引发巨大的国际连锁反应，不同再平衡机制对各国的影响各不相同，同时现有的一些减少失衡的提议也存在局限性。全球失衡的持续存在凸显了增强抵御这些国际风险传导能力的重要性。。",
+      "abstract": "This chapter documents trends in income and inequality in Russia from the collapse of the Soviet Union through 2025, drawing on official statistics, the existing literature, and household survey microdata. It also reviews evidence on intergenerational mobility. While there is a consensus that inequality dramatically increased during the 1990s, its post-2000 trajectory is contested. Initial household survey studies usually found a decline, whereas official statistics reported a comparatively stable Gini coefficient. Our analysis of Russia's major household surveys, harmonized using common measurement conventions, aligns with the survey-based literature, indicating that the Gini coefficient generally fell from approximately 0.45–0.48 in the early 2000s to 0.29–0.38 in the early 2020s. We further find that most inequality arises within rather than between regions, urban and rural areas, and education and occupation groups. Household labor-market attachment, region, and household composition account for the largest shares of the explained variance in log income. The large literature on inequality is complemented by a small literature on intergenerational mobility. Here, the various studies on intergenerational dynamics in education, occupation, and income across post-Soviet cohorts conclude that, even against the background of dramatic structural changes, family background remains strongly associated with children’s outcomes.",
+      "summary_zh": "【收入分配与福利】本章基于官方统计数据、现有文献以及家庭调查微观数据，记录了自苏联解体至2025年间俄罗斯收入与不平等状况的发展趋势。同时，本章也回顾了有关代际流动性的研究证据。尽管普遍认为20世纪90年代不平等现象急剧加剧，但21世纪00年代之后的发展趋势仍存在争议：早期的家庭调查结果显示不平等程度有所下降，而官方统计数据显示基尼系数相对稳定。通过对俄罗斯主要家庭调查数据的分析（这些数据采用了统一的测量标准），我们发现基尼系数从21世纪初的约0.45–0.48下降到了2020年代初的0.29–0.38。进一步研究发现，大多数不平等现象存在于不同地区、城乡之间，以及不同教育水平和职业群体之间。家庭劳动力市场参与情况、地区因素以及家庭构成结构能够解释收入差异中的大部分变化。关于不平等现象的丰富研究文献之外，关于代际流动性的研究相对较少。现有研究表明，尽管社会结构发生了巨大变化，家庭背景仍然对子女的就业和收入状况具有重要影响。。研究方法：调查数据。",
       "topics": [
         "Economics",
         "Finance"
@@ -125,17 +126,21 @@
       "source": "nber"
     },
     {
-      "title": "When is the deepest drawdown also the longest?",
+      "title": "Penalize the Common Trade: A Collision-Aware Layer for Learned Portfolios",
       "authors": [
-        "Yinhao Wu"
+        "Eric Benhamou",
+        "Jean-Jacques Ohana",
+        "Beatrice Guez",
+        "Ethan Setrouk",
+        "Chamyl Saadi"
       ],
       "venue": "arXiv",
-      "published_date": "2026-10-30",
+      "published_date": "2026-11-02",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.41990v1",
+      "openalex_url": "http://arxiv.org/abs/2611.03453v1",
       "cited_by_count": 0,
-      "abstract": "Does the deepest drawdown take the longest to recover? For random walks with iid increments of positive finite mean, we find that the deepest and longest episodes are eventually distinct almost surely under light-tailed losses, but coincide with probability tending to one under heavy-tailed losses. More precisely, when losses have a finite exponential moment, the deepest episode's duration, relative to the longest among $n$ episodes, converges in probability to an explicit $ρ\\in(0,1)$, while its descending duration rank is $n^{1-ρ+o_{\\mathbb{P}}(1)}$. These limits hold for every fixed number of leading depths; in the Gaussian model, $ρ=1/2$, independently of drift and variance. The separation reflects the different exponential costs of reaching a large depth and sustaining a long episode. For regularly varying losses, a common large loss governs both depth and duration: the duration ratio tends to one almost surely, and for every fixed $k$, the $k$ deepest and $k$ longest episodes have the same indices in the same order with probability tending to one. For any $k_n\\to\\infty$ with $k_n=o(n)$, the proportion of common episodes among the $k_n$ deepest and $k_n$ longest converges in probability to zero in the light-tailed case and to one in the heavy-tailed case. These ranking laws also hold for completed drawdowns within a deterministic observation horizon.",
-      "summary_zh": "【金融经济学】最深的亏损是否需要最长的时间才能恢复？对于具有独立同分布（iid）且均值为正的随机增量过程，我们发现，在轻尾损失情况下，最深和持续时间最长的亏损事件最终几乎可以确定地是不同的；而在重尾损失情况下，这两种事件以概率趋近于1的方式重合。更准确地说，当损失具有有限的指数矩时，最深亏损事件的持续时间相对于所有$n$个亏损事件中的最长事件而言，其概率收敛于一个具体的值$ρ\\in(0,1)$；同时，该事件在亏损持续时间排名中的位置为$n^{1-ρ+o_{\\mathbb{P}}(1)}$。这些结论适用于任意固定的最大亏损深度数量；在高斯模型中，无论漂移项和方差如何变化，$ρ$始终为$1/2$。这种差异反映了达到较大亏损深度与维持长时间亏损之间的不同成本。对于具有规律变化幅度的损失，一次较大的亏损同时决定了亏损的深度和持续时间：持续时间的比例几乎可以确定地趋近于1；对于任意固定的$k$，最深的$k$个事件和持续时间最长的$k$个事件按照相同的顺序排列，其概率也趋近于1。对于任意满足$k_n=o(n)$的$k_n\\to\\infty$的情况，在轻尾损失情况下，最深的$k_n$个事件与持续时间最长的$...。",
+      "abstract": "Different learning systems can make nearly the same trade when they share data, objectives, or representations. The market then sees decision concentration even if the models look diverse. We call exposure to this shared direction a signal collision. A linear-impact game shows the basic externality: each allocator chooses too much common exposure because it does not bear the full price effect imposed on others. An overlap-dependent toll recovers the social choice, and a feedback model gives the exact gain at which return-responsive allocation becomes unstable. We also state the restrictive spectral conditions under which a leading eigenportfolio can reveal the collision direction. These results motivate a simple post-model layer: subtract a penalty for loading on the recent common return mode before forming the portfolio. In a frozen panel of ten liquid cross-asset ETFs, 760 completed weeks from January 2012 through July 2026, and exact self-financing costs of 10 basis points per dollar traded, this layer changes maximum drawdown from 23.6% to 14.1%, volatility from 12.6% to 10.7%, and excess-return Sharpe from 0.664 to 0.667. A volatility-matched momentum diagnostic still draws down 19.9%. Paired stationary-bootstrap uncertainty is wide: the 95% interval for drawdown improvement is $[-3.3,18.4]$ percentage points and includes zero. The result establishes a reproducible risk-control association and specifies the holdings-and-flow validation needed to attribute the common direction to AI crowding. AI-use disclosure. Generative AI tools, including OpenAI Codex, assisted manuscript preparation. For this preprint version, Codex assisted with LaTeX editing, author and venue metadata, compilation, and layout checks.",
+      "summary_zh": "【国际贸易】不同的学习系统在共享数据、目标或表示方式时，几乎可以实现相同的效果。即使模型看起来各不相同，市场仍会观察到决策的集中现象。我们将这种共享趋势称为“信号冲突”。线性影响模型揭示了这一基本的外部性：每个决策者都会选择过多的共同投资组合，因为他们无需承担这种决策对他人造成的全部负面影响。通过引入依赖重叠度的收费机制，可以恢复社会最优选择；而反馈模型则能够精确指出在何种收益水平下，基于收益的分配策略会变得不稳定。我们还提出了相应的条件，说明在何种情况下，一个主导性的投资组合能够揭示这种信号冲突的方向。这些研究结果促使我们提出了一种简单的模型改进方法：在构建投资组合之前，对那些过度依赖近期共同收益模式的投资进行惩罚。在2012年1月至2026年7月期间，选取了10只流动性较强的跨资产交易型开放式指数基金（ETF）的数据（共760个完整交易周），假设每美元交易量的自筹资金成本为10个基点，采用该方法后，最大回撤率从23.6%降至14.1%，波动率从12.6%降至10.7%，超额收益的夏普比率从0.664提升至0.667。不过，即使采用波动率匹配的动量策略，最大回撤率仍能达到19.9%。此外，...。",
       "topics": [
         "Economics",
         "Finance"
@@ -143,17 +148,17 @@
       "source": "arxiv"
     },
     {
-      "title": "Zero Crossings on the Accuracy-Smoothness Frontier: Maximal Monotone and Minimal Inflection Non Stationary Predictors",
+      "title": "On inverse aggregate network assignment games",
       "authors": [
-        "Marc Wildi"
+        "Joseph Y. J. Chow"
       ],
       "venue": "arXiv",
-      "published_date": "2026-10-30",
+      "published_date": "2026-11-02",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.41963v1",
+      "openalex_url": "http://arxiv.org/abs/2611.03409v1",
       "cited_by_count": 0,
-      "abstract": "The Smooth Sign Accuracy (SSA) framework resolves the smoothness--accuracy dilemma for stationary predictors by balancing mean squared error (MSE) against the frequency of sign changes. We generalize it to non-stationary integrated processes (I-SSA), deriving MSE-optimal predictors constrained by the expected duration between turning points (I(1)) or inflection points (I(2)). The resulting maximal-monotone and minimal-inflection predictors, filters, and smoothers customize classic benchmarks along a new efficient Accuracy--Smoothness (AS) frontier. Tracking the identity (the original data) along this frontier defines the \\emph{I-SSA trend}, a novel smoothing concept that, unlike classical filters, imposes no artificial structure on the data-generating process and is directly interpretable through explicit control of turning- or inflection-point frequency. The optimization is a quadratically constrained quadratic program (QCQP) that reduces to a Generalized Trust Region Subproblem (GTRS) with hidden convexity. On its feasible, invertible region the problem is convex with a well-defined global optimum, and an exact closed-form expression delivers the efficient AS frontier. Under fairly general assumptions, finite-sample solutions converge to an asymptotic I-SSA predictor, devoid of integration boundary perturbations. The framework unifies mean squared error on non-stationary levels, and sign accuracy, zero-crossing frequency, and target correlation on stationary differences.",
-      "summary_zh": "【金融经济学】平滑符号精度（SSA）框架通过平衡均方误差（MSE）与符号变化频率，解决了平稳预测变量在平滑性与准确性之间的矛盾。我们将该框架推广到非平稳积分过程（I-SSA），提出了受转折点间预期持续时间（I(1)）或拐点间预期持续时间（I(2)）约束的MSE最优预测器。由此产生的最大单调预测器、最小拐点预测器、滤波器及平滑器，为经典的性能评估指标构建了一条新的、高效的“准确性-平滑性”（AS）前沿。沿着这条前沿追踪原始数据，可以定义出一种新颖的平滑方法——I-SSA趋势。与传统滤波器不同，I-SSA趋势不会对数据生成过程施加人为结构，并且可以通过对转折点或拐点频率的显式控制来实现直接解释。该优化问题属于二次约束二次规划（QCQP）类型，可转化为具有隐式凸性的广义信赖域子问题（GTRS）。在其可行且可逆的解域内，问题具有凸性且存在明确的全局最优解；通过精确的封闭形式表达式，可以得出高效的AS前沿。在较为一般的假设条件下，有限样本解能够收敛到渐近的I-SSA预测器，且不受积分边界扰动的影响。该框架统一了非平稳情况下的均方误差评估方法，以及平稳情况下的符号准确性、零交叉频率和目标相关性分析方法。。研究方法：优化方法。",
+      "abstract": "To design platforms for multi-operator mobility markets coordinating their operations or infrastructure to support them, models are needed to understand the behavior of these operators and travelers in a shared network. Assignment games can prove useful, but operationalizing them requires adopting a more generalized aggregate assignment game framework that allows for identification and estimation. We extend such a framework to aggregate network assignment games, proposing a path-based formulation and a PURC-based formulation along with solution algorithms. An inverse optimization model is proposed for the link-based formulation. It is solved by a quadratic program that separates into a buyer block, which retains the node potentials and imposes every observed zero-flow cell, and a seller block. This estimator, introduced in the literature for uncapacitated route choice, is extended here to a capacitated two-sided market, with rationing prices supported on observed binding links and operator supply scales estimated by group. Computational tests with a toy network demonstrate the economic value of these models. A large-scale Long Island Rail Road network example (897 nodes, 671 census tracts, 123 LIRR stations, 8,320 directed links) is calibrated to 2026 fares, timetabled seat supply and National Transit Database operating costs. With 10-50% of links sampled, the misspecified inverse model fits oracle link flows with R^2>=96%. Held-out link error falls from 29% to 19%, correlations with the true rationing prices rise from 49% to 75%, and social optimal gross surplus is recovered within 6%. Deadweight loss is overestimated by 10-17%. Ablation tests show that ignoring the inactive cells more than doubles the held-out error and, at 30-50% sampling, roughly halves the correlation of the pricing wedge, while ignoring the rationing prices degrades every metric.",
+      "summary_zh": "【金融经济学】为了设计用于多运营商移动市场的平台，以协调这些运营商的运营或基础设施，需要建立模型来理解它们在共享网络中的行为。分配博弈（assignment games）在这方面可以发挥重要作用，但将其实际应用起来需要采用一种更为通用的聚合分配博弈框架，以便能够对相关数据进行识别和估算。我们扩展了这种框架，提出了基于路径的分配博弈模型以及基于PURC（Probabilistic Utility Routing Criterion）的分配博弈模型，并配套相应的求解算法。对于基于链接的分配模型，我们提出了一个逆向优化模型，该模型通过一个二次规划问题进行求解，该问题分为两个部分：买方部分保留节点的潜在状态并规定所有观测到的零流量节点；卖方部分则负责制定价格。这种用于无容量限制路径选择的估算方法被扩展到了有容量限制的双边市场中，其中价格制定基于观测到的有效链接情况，而运营商的供应规模则通过分组方式进行估算。通过在一个小型网络上的计算测试，验证了这些模型的经济价值。我们以长岛铁路网络（包含897个节点、671个普查区域、123个车站和8,320条有向链接）为例，根据2026年的票价、时刻表座位供应情况以...。研究方法：模型校准、优化方法。",
       "topics": [
         "Economics",
         "Finance"
@@ -161,18 +166,20 @@
       "source": "arxiv"
     },
     {
-      "title": "Evaluating Maternity Leave Reforms When RD Fails",
+      "title": "Specification LASSO and a Flexible Characteristics-Based Asset Pricing Model",
       "authors": [
-        "Clara von Bismarck-Osten",
-        "Andrei Zeleneev"
+        "Chaohua Dong",
+        "Shuyi Ge",
+        "Shaoran Li",
+        "Wen Su"
       ],
       "venue": "arXiv",
-      "published_date": "2026-10-30",
+      "published_date": "2026-11-02",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.41881v1",
+      "openalex_url": "http://arxiv.org/abs/2611.03391v1",
       "cited_by_count": 0,
-      "abstract": "This paper documents that expansions of UK maternity pay in the 2000s improved children's test scores while reducing maternal employment. Extending job protection alone generated similar employment effects but no detectable impact on children. None of these effects are recoverable with a conventional regression discontinuity (RD) design because eligibility is only imperfectly captured by the available data. We explain why existing corrections for measurement error in RD are not well suited and propose a simple imputation-based solution. The approach preserves RD's main advantages, nonparametric identification and transparency, and remains valid even when measurement error has economic content.",
-      "summary_zh": "【金融经济学】本文研究表明，2000年代英国 maternity pay（产假津贴）的增加提高了儿童的考试成绩，但同时减少了母亲的就业率。仅扩大就业保护措施也能产生类似的就业效应，但对儿童的学习成绩没有显著影响。由于现有数据无法完全准确反映资格认定情况，这些效应无法通过传统的回归不连续性（Regression Discontinuity, RD）方法进行修正。我们分析了现有RD误差修正方法的不适用性，并提出了一种基于插补的简单解决方案。该方法保留了RD方法的主要优势，即非参数估计和透明性，并且即使在测量误差具有经济含义的情况下依然有效。。研究方法：断点回归、回归分析。",
+      "abstract": "This paper studies a partially linear semiparametric additive model that allows for interactions among variables in high-dimensional settings. We propose the Specification LASSO (S-LASSO), a two-step method that integrates LASSO and Adaptive Group LASSO to simultaneously perform variable selection and model specification. Theoretically, we establish that S-LASSO possesses oracle properties in terms of selection consistency and asymptotic normality. Monte Carlo simulations confirm that S-LASSO outperforms existing alternatives across a variety of scenarios. Empirically, we apply S-LASSO to a characteristics-based asset pricing model, exploring the linear and nonlinear effects of asset-specific characteristics on cross-sectional returns, as well as their interactions with firm size.",
+      "summary_zh": "【资产定价】本文研究了一种部分线性的半参数加性模型，该模型能够处理高维数据中变量之间的交互作用。我们提出了 Specification LASSO（S-LASSO），这是一种结合了 LASSO 和 Adaptive Group LASSO 的两步方法，用于同时进行变量选择和模型设定。从理论上讲，我们证明了 S-LASSO 在变量选择的一致性和渐近正态性方面具有优良的性能。蒙特卡洛模拟结果表明，在多种情景下，S-LASSO 的表现优于现有的其他方法。在实证研究中，我们将 S-LASSO 应用于基于资产特征的定价模型，探讨了资产特定特征对横截面回报的线性及非线性影响，以及这些特征与企业规模之间的交互作用。。研究方法：横截面分析、蒙特卡洛模拟、数值模拟、LASSO 正则化。",
       "topics": [
         "Economics",
         "Finance"
@@ -180,18 +187,21 @@
       "source": "arxiv"
     },
     {
-      "title": "A New GAUSS Software Component for Implementing Dynamic Tests of Contagion with an Application",
+      "title": "Can We Stop the Backtest Yet? Anytime-Valid Promotion Tests for Adaptive Financial Research Agents",
       "authors": [
-        "Abdulnasser Hatemi-J",
-        "Alan Mustafa"
+        "Eric Benhamou",
+        "Jean-Jacques Ohana",
+        "Beatrice Guez",
+        "Ethan Setrouk",
+        "Chamyl Saadi"
       ],
       "venue": "arXiv",
-      "published_date": "2026-10-30",
+      "published_date": "2026-11-02",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.41740v1",
+      "openalex_url": "http://arxiv.org/abs/2611.03384v1",
       "cited_by_count": 0,
-      "abstract": "The main goal of this article is to present a new software component created by the authors in GAUSS for implementing dynamic tests for contagion. These tests are aimed at providing the possibilities of testing for spiller-over effects between financial markets during a crisis or during a pandemic situation such as the one that we experienced recently. Unlike standard tests for contagion that have fixed dates for a potential shift, the tests implemented here are dynamic in the sense that the potential contagion effect is measured across the time span. The leverage bootstrap simulation technique is utilized in order to generate critical values that are reliable when the tests are implemented in order to make sure that the conducted inference is accurate. Since the approach is new, software component needs to be created for conducting the underlying tests, which is accomplished via this article. The module is very easy to implement by the general practitioners via a graphical user interface. An application is offered by using real data from stock markets in order to demonstrate how the software component can be used.",
-      "summary_zh": "【金融经济学】本文的主要目的是介绍作者在GAUSS中开发的一个新软件组件，该组件用于实现动态传染性测试。这些测试旨在评估金融危机或类似近期疫情这样的突发公共卫生事件期间金融市场之间的传染效应。与那些具有固定潜在变化日期的标准传染性测试不同，本文所实现的测试具有动态性，即传染效应是在整个时间跨度内进行测量的。为了生成可靠的临界值以确保推断结果的准确性，采用了杠杆自助法（leverage bootstrap）模拟技术。由于这种方法属于创新性尝试，因此需要专门开发相应的软件组件来执行这些测试，而这正是本文所要完成的内容。该模块通过图形用户界面（GUI）使得普通用户能够非常便捷地使用。文章还提供了基于真实股市数据的应用实例，以展示该软件组件的实际应用方式。。研究方法：数值模拟。",
+      "abstract": "Financial research agents can generate and monitor trading rules faster than a human can document the resulting selection process. Candidates appear at data-dependent times, weak rules are abandoned, and promising ones are watched until they cross a reporting threshold. We introduce PROMOTE, a protocol that assigns every candidate predictable testing wealth at birth and accumulates a cost-aware e-process only from subsequent returns. If lifetime allocations sum to at most one, a weighted Ville argument bounds the probability of ever promoting a rule whose declared bounded net score has always had nonpositive conditional mean. The result permits dependent candidates, adaptive births, and indefinite monitoring. We audit the implementation in two settings. A retrospective pseudo-out-of-sample replay contains 24 panel--rule hypotheses, 3,000 shared-sign null paths, injected alternatives, and public ETF and industry data. Repeated unadjusted tests produce a family crossing in 94.5% of null paths, versus 0.0% for PROMOTE; at a 15-bp aligned ETF-component perturbation, PROMOTE has 70.1% target power and median crossing session 2,327. A separate exact mean-zero experiment lets an agent select candidate identities and birth times from past scores; the funded gate has 1.77% false-family crossings across 3,000 programs. The market replay produces zero promotions after costs. The certificate controls historical false promotion under the declared null; it is not a certificate that an earlier edge remains profitable at deployment. AI-use disclosure. Generative AI tools, including OpenAI Codex, assisted manuscript preparation. For this preprint version, Codex assisted with LaTeX editing, author and venue metadata, compilation, and layout checks.",
+      "summary_zh": "【金融经济学】金融研究代理能够比人类更快地生成和监控交易规则。候选规则会在数据驱动的时机出现，表现不佳的规则会被立即淘汰，而具有潜力的规则则会持续被观察，直到它们达到某个报告阈值。我们提出了PROMOTE协议，该协议为每个候选规则在初始阶段分配一个可预测的测试资金，并仅根据后续的回报来累积与成本相关的评估信息。如果整个生命周期内的资金分配总额不超过一个固定值，那么Ville的加权论证可以用来限制那些其声明的净收益条件均值始终为负的规则被提升的概率。这一机制允许存在相互依赖的候选规则、动态的规则生成过程以及无限制的监控机制。我们在两种不同的环境中对PROMOTE协议的实现进行了验证：一种回顾性的伪样本外回放实验包含了24个规则假设、3,000条具有相同符号的零假设路径、人为引入的替代方案以及公开的ETF数据和行业数据；在重复进行未调整的测试中，有94.5%的零假设路径出现了规则交叉现象，而PROMOTE协议仅实现了0.0%的交叉率；当ETF成分数据发生15个基点的扰动时，PROMOTE协议的目标检测能力达到了70.1%，并在第2,327个测试周期内实现了规则交叉。另一项精确的实验中，代理可以根据...。研究方法：实验方法。",
       "topics": [
         "Economics",
         "Finance"
@@ -199,17 +209,18 @@
       "source": "arxiv"
     },
     {
-      "title": "Covariance Identification from Regression Residuals",
+      "title": "Sharp Identification for Regression with Interval-Observed and Missing Covariates",
       "authors": [
-        "Yanping Chen"
+        "Martin Fankhauser",
+        "Gil Jan Peled"
       ],
       "venue": "arXiv",
-      "published_date": "2026-10-30",
+      "published_date": "2026-11-02",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2610.41722v1",
+      "openalex_url": "http://arxiv.org/abs/2611.03345v1",
       "cited_by_count": 0,
-      "abstract": "Regression residuals are projections of the errors, not observations of them. This paper characterizes what residuals identify about the error covariance. Residualization acts on the covariance through a known linear map, and under an unrestricted covariance model the directions it destroys are exactly those generated by the column space of the regressors. A linear covariance functional is identified if and only if it does not load on these lost directions, and restricting the covariance model, for instance to diagonal or clustered form, shrinks them. The central result separates projection loss from moment-selection loss: projecting the residual covariance onto the maintained covariance structure loses no identifying information, so cross-cluster, long-lag, and long-distance residual products add no identifying directions. They can still improve conditioning, since restricting to the aligned moments squares the condition number. This equivalence relies on the orthogonal-projection geometry of OLS, and generally fails for non-orthogonal transformation. Quadratic statistics in the outcome that are free of the regression coefficients additionally identify the covariance between the fitted and residual components, but not the covariance within the span of the regressors. Because the OLS sandwich variance depends only on that block, it is not identified by any such statistic under an unrestricted covariance model; robust variance estimation draws its identification from maintained restrictions on the covariance structure.",
-      "summary_zh": "【风险管理与衍生品】回归残差实际上是误差的投影，而非误差的观测值本身。本文探讨了残差在揭示误差协方差特征方面的作用。残差化过程通过一个已知的线性映射作用于协方差结构；在无约束的协方差模型下，这种映射所破坏的协方差方向正是由回归量构成的列空间所生成的那些方向。一个线性协方差泛函只有在不依赖于这些被破坏的方向时，才能被有效识别；通过对协方差模型进行限制（例如将其限制为对角形式或聚类形式），这些被破坏的方向会被进一步缩减。本文的核心结论区分了“投影损失”与“矩选择损失”：将残差协方差投影到保留的协方差结构上并不会丢失任何用于识别误差特征的信息；因此，跨簇、长滞后或长距离的残差乘积并不会引入新的识别方向。尽管如此，这些残差乘积仍能改善数据的条件数（即数据的稳定性），因为仅保留相关矩值可以使条件数趋于平方。这种等价性依赖于普通最小二乘法（OLS）中的正交投影几何特性，但在非正交变换情况下则不再成立。结果变量中那些不包含回归系数的二次统计量虽然能够揭示拟合部分与残差部分之间的协方差，却无法揭示回归量所张成空间内的协方差。由于OLS方法中的方差估计仅依赖于该特定块数据，因此在无约束的协方差模型下，任何此类统计量都...。研究方法：回归分析。",
+      "abstract": "Researchers frequently estimate regressions when key variables are missing or observed only through intervals. Imputation or assumptions about the observation process can yield seemingly precise but misleading conclusions. We develop methods for identification and inference that remain robust to such incomplete data. For a broad class of conditional moment models, we characterize the sharp identified set, the set of all parameter values consistent with the observed data and maintained regression model, without restricting how incomplete observations arise. We establish Hausdorff-consistent estimation and uniformly valid confidence regions, and develop computationally tractable implementations for common regression models. In an application relating interval-elicited discount rates to on-time high-school graduation, conventional inference excludes zero, whereas our interval-data-robust confidence regions include it. Exploiting sharp identification nevertheless yields substantially tighter confidence regions than non-sharp alternatives.",
+      "summary_zh": "【风险管理与衍生品】当关键变量缺失或仅以区间形式观测到时，研究人员经常需要进行回归分析。通过插补或对观测过程做出假设，虽然可以得到看似精确的结论，但这些结论可能具有误导性。我们开发了能够在数据不完整的情况下依然保持稳健性的识别与推断方法。对于一类广泛的条件矩模型，我们定义了“精确识别集”——即所有与观测数据一致且回归模型保持不变的参数值集合，同时不对观测数据的缺失方式做出任何限制。我们建立了具有Hausdorff一致性的估计方法以及统一有效的置信区间，并为常见的回归模型设计了计算上可行的实现方案。在一个将区间估计的折现率与高中按时毕业率相关联的应用研究中，传统推断方法会排除折现率为零的情况，而我们基于区间数据的置信区间则允许这种情况存在。尽管存在这种不确定性，利用精确识别方法得到的置信区间仍然比非精确识别方法得到的置信区间更为精确。。研究方法：回归分析。",
       "topics": [
         "Economics",
         "Finance"
@@ -217,25 +228,22 @@
       "source": "arxiv"
     },
     {
-      "title": "Affirmative Action, Faculty Productivity and Caste Interactions: Evidence from Engineering Colleges in India",
+      "title": "EventGPT: Next-Event Pretraining on Banking Customer Histories",
       "authors": [
-        "Robert W. Fairlie",
-        "Saurabh Khanna",
-        "Prashant Loyalka",
-        "Gagandeep S. Sachdeva"
+        "Denis Burakov"
       ],
-      "venue": "NBER Working Papers",
-      "published_date": "",
+      "venue": "arXiv",
+      "published_date": "2026-11-02",
       "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w35963#fromrss",
+      "openalex_url": "http://arxiv.org/abs/2611.03302v1",
       "cited_by_count": 0,
-      "abstract": "Affirmative action programs are often criticized because of concerns that they result in lower worker productivity and efficiency losses. We study the relative productivity of workers benefiting from an aggressive affirmative action policy in a setting where hiring constraints are mandated upon employers and are typically likely to bind. In India, colleges are required to reserve approximately 50 percent of faculty hires for individuals from disadvantaged caste and social class groups. We collect and analyze data from a nationally representative sample of 50 engineering and technology colleges in India, some of which randomly assign students to classrooms. We find that reservation category faculty have lower levels of education, lower professorial ranks and fewer years of experience in academia than general category faculty who are not hired through reservations. Yet, even with lower qualifications, we do not detect meaningful differences in instructional quality between reservation category faculty and general category faculty across a wide range of measures that include course grades, follow-on course grades, standardized test scores, dropout, attendance, graduate school plans, and graduation. In fact, we find that, at least for immediate effects on course grades, students taught by reservation category faculty perform slightly better than students taught by general category faculty. We also estimate “teacher-like-me” effects of reservation category faculty on the relative course performance and longer-term outcomes of reservation category students and cannot reject the hypothesis of null effects. Furthermore, even in the face of potential discrimination and resentment against faculty hiring quotas, general category students perform slightly better in classrooms taught by reservation category faculty than general category faculty. Finally, estimates of differences between reservation category and general category faculty in several measures of research productivity and administrative service are small in magnitude and not statistically different from zero. The findings have implications for the heated debates over affirmative action programs found in many countries around the world and in India which is now the largest country in the world.",
-      "summary_zh": "【公司金融】平权行动计划常常受到批评，因为人们担心这些计划会导致员工生产力下降和效率损失。我们研究了在雇主必须遵守招聘限制（且这些限制通常具有约束力的情况下）中，受益于积极平权行动政策的员工的相对生产力。在印度，各大学被要求为来自弱势种姓和社会阶层的群体预留约50%的教职岗位。我们收集并分析了来自印度50所具有代表性的工程和技术学院的数据，其中一些学院会随机将学生分配到不同的教学班级中。研究发现，通过招聘配额录用的教师在教育水平、教授职称以及学术经验方面均低于未通过配额录用的普通教师。然而，尽管资格较低，我们在包括课程成绩、后续课程成绩、标准化考试分数、辍学率、出勤率、研究生升学计划以及毕业情况在内的多个指标上，并未发现这两类教师在教学质量上存在显著差异。事实上，至少在课程成绩这一指标上，由配额教师授课的学生表现略优于由普通教师授课的学生。我们还评估了配额教师对学生相对课程表现及长期发展影响的效应，但无法排除这些效应为零的可能性。此外，即使存在对教师招聘配额的歧视和不满情绪，由配额教师授课的班级中，普通学生的表现也略优于由普通教师授课的班级。最后，我们在研究生产力和行政服务等多个指标上测得的...。",
+      "abstract": "A model pretrained to predict a customer's next event can estimate the probability of future events without training on their labels and provide a reusable representation for supervised downstream banking tasks. We pretrain EventGPT, a hierarchical causal transformer, by next-token maximum likelihood estimation on the public Multimodal Banking Dataset (MBD-mini: 100,224 clients, 38.8 million transactions and 66.3 million geolocation pings). Keeping one state per event, EventGPT trains in about two hours on one L4 GPU at windows up to 8,192 tokens. From its next-event distribution, with no labels, EventGPT scores five targets of the form \"the client makes a transaction of a given kind for the first time next month\" at ROC-AUC 0.79 to 0.92. Gradient boosting on 114 engineered features needs 10,000 to 300,000 labeled client-months to match it on four targets and stays below it on the fifth. For product prediction, frozen EventGPT embeddings score below the engineered features (mean ROC-AUC 0.787 against 0.808 over five test folds), and a rank-averaged ensemble of EventGPT, profile fields and token counts with the engineered features adds 0.014 to 0.017, of which 0.007 to 0.016 is EventGPT's own. The code and pretrained weights are released.",
+      "summary_zh": "【银行与信贷】本文提出了一种预训练模型，该模型能够预测客户的后续行为事件。这种模型无需使用带有标签的数据进行训练，即可估算未来事件的概率，并为监督式下游银行任务提供可复用的数据表示。我们通过使用公开的多模态银行数据集（MBD-mini：包含100,224位客户、3880万笔交易记录以及6630万条地理位置信息）对EventGPT（一种分层因果变换器模型）进行预训练，训练方法采用基于下一个词元的最大似然估计算法。在每次事件仅保留一个状态的情况下，EventGPT仅需约两小时的时间，利用L4级别的GPU在最大8,192个词元的窗口范围内完成训练。在没有任何标签的情况下，该模型能够以0.79至0.92的ROC-AUC分数准确预测五种类型的事件（例如“客户下个月首次进行某种类型的交易”）。通过对114个人工构建的特征进行梯度提升训练，虽然需要1万到30万条带有标签的客户交易记录数据才能在四个预测目标上达到与EventGPT相当的水平，但在第五个目标上的表现仍低于EventGPT。在产品预测任务中，仅使用预训练的EventGPT嵌入特征得到的预测结果（平均ROC-AUC为0.787）低于人工构建的特征（...。研究方法：最大似然估计、梯度提升、Transformer 模型。",
       "topics": [
         "Economics",
         "Finance"
       ],
-      "source": "nber"
+      "source": "arxiv"
     }
   ]
 }
