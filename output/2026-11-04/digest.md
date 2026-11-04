@@ -1,0 +1,159 @@
+# 金融经济学每日文献速递（2026-11-04）
+
+共筛选到 **12** 篇文献。
+
+> 📢 **今日综述**
+>
+> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（8 篇）、资产定价（3 篇）、行为金融（1 篇）。方法上以机器学习、贝叶斯方法为主。来源分布：arXiv（7 篇）、OpenAlex（5 篇）。
+
+## 1. A machine learning framework of ground-state properties of finite nuclei foraccelerated Bayesian exploration : NucleiML
+- 来源：openalex
+- 作者：Anagh Venneti, C. Mondal, Sk Adil Imam, Sarmistha Banik, Bijay Kumar Agrawal
+- 期刊/来源：Chinese Physics C
+- 发表日期：2026-11-03
+- 引用数：0
+- 主题：Consistency (knowledge bases), Computer science, Bayesian probability, Machine learning, Set (abstract data type)
+- 链接：[DOI](https://doi.org/10.1088/1674-1137/aebcef) [链接](https://openalex.org/W4415979405)
+
+**中文摘要（自动生成）**：【金融经济学】摘要  
+核状态方程（EoS）的全球行为通常通过有限核（FN）的数据、重离子碰撞以及中子星（NS）的天文观测来研究。来自有限核的约束信息（如结合能和电荷半径）在塑造EoS直至饱和密度阶段起着至关重要的作用。然而，将这些约束信息显式纳入计算模型会带来较高的计算成本，尤其是在研究模型不确定性而非优化单一模型时。为了解决这一问题，我们提出了NucleiML（NML）这一机器学习框架，该框架基于相对论性平均场模型生成的少数有限核的基态性质进行训练。NML使我们能够高效地将有限核和中子星的性质整合到贝叶斯推理框架中。实验结果表明，该方法在计算有限核性质时具有较高的准确性，并且计算速度提升了约10^4倍；在贝叶斯框架中，计算速度更是提升了约10^3倍。本研究为将该方法扩展到更广泛的核种类提供了依据，有望未来能够将整个核图谱纳入中子星性质的研究中。。研究方法：贝叶斯方法、机器学习。
+
+## 2. Selecting the right path: a framework for lead-time reduction in consumer goods supply chains
+- 来源：openalex
+- 作者：Javier Cabello, Cipriano Forza, Hvam Lars
+- 期刊/来源：International Journal of Productivity and Performance Management
+- 发表日期：2026-11-03
+- 引用数：0
+- 主题：Supply chain, Business, Reduction (mathematics), Industrial organization, Consumption (sociology)
+- 链接：[DOI](https://doi.org/10.1108/ijppm-11-2025-1120) [链接](https://openalex.org/W7214842569)
+
+**中文摘要（自动生成）**：【金融经济学】**目的**  
+消费品企业常常因预测不准确而面临严重的库存短缺问题，某些产品意外成为畅销品，从而导致高昂的缺货成本。本文将缩短交货期的决策视为提升企业响应能力、缓解库存短缺的关键因素，并将这一决策视为在不确定性环境下的绩效管理优先级问题。  
+
+**设计/方法/途径**  
+本研究基于设计科学方法构建了一个实用的方向选择框架，并通过具体案例指导管理者评估和优先考虑缩短交货期的举措。该框架整合了相关文献的见解与可行性评估标准，运用多标准决策分析原则，从预期投资回报（即投入与效果之间的比率）及实施可行性角度对各项举措进行评估。  
+
+**研究结果**  
+该研究提出了一个基于理论且经过实证验证的框架，用于在需求难以预测的情境下识别和规划缩短交货期的举措，明确了用于优先考虑响应性改进的绩效管理逻辑。案例分析表明，那些具有较高预期收益-投入比率的举措，在考虑实施风险和对假设的敏感性后，未必仍具有较高的优先级。  
+
+**研究局限性与启示**  
+本研究通过将缩短交货期问题重新定义为在不确定性环境下的决策问题，拓展了绩效管理研究的范围，将研究重点从绩效评估扩展到干预措施的选择，将零散的响...。
+
+## 3. Left-Digit Bias: Theory and Empirical Evidence from a Tax Salience Experiment
+- 来源：arxiv
+- 作者：Kaushil Patel
+- 期刊/来源：arXiv
+- 发表日期：2026-11-03
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.05342v1)
+
+**中文摘要（自动生成）**：【行为金融】当商品价格以整数形式（如1美元、2美元等）呈现时，需求往往会急剧下降。为了解释这一现象（即所谓的“左位数字偏见”），我们构建了一个随机效用模型，在该模型中，消费者只有在商品价格低于某个特定的注意力阈值时才会考虑购买该商品。由于大量消费者的注意力阈值为整数，因此会导致需求出现不连续性。当引入税收时，该模型预测消费者（尤其是存在左位数字偏见的消费者）的需求反应会比理性选择情况下更为疲软。通过分析一项税收实验的数据，我们发现该模型能够很好地解释消费者的实际行为，并在一定程度上揭示了消费者相对于不同阈值的支付意愿分布。需求反应疲软并不一定意味着税收负担过高；理解这一具体机制对于福利分析具有重要意义。。研究方法：实验方法。
+
+## 4. Mitigating Return Drag and Regime Whipsaws in Sector Rotation: An Asymmetric Downside-Aware Nested Clustered Optimization Framework
+- 来源：arxiv
+- 作者： Supriadi
+- 期刊/来源：arXiv
+- 发表日期：2026-11-03
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.05310v1)
+
+**中文摘要（自动生成）**：【资产定价】层次聚类与嵌套聚类优化（NCO）技术有效缓解了传统马科维茨协方差矩阵所面临的数学病态问题。然而，在股票市场中仍存在两个结构性缺陷：（1）对称方差对上行和下行收益波动的惩罚程度相同，这导致 momentum 强劲的板块面临显著的收益拖累；（2）无约束的隐马尔可夫模型（HMM）表现出过度频繁的制度转换（即所谓的“波动性不稳定”现象），从而导致交易频繁和交易成本增加。为此，我们提出了具有粘性制度动态的非对称下行风险嵌套聚类优化算法（Asym-Sticky-NCO），用于对标准普尔500指数中的全部11个行业板块进行战术性资产配置调整。该算法在层次聚类和两阶段资产分配过程中，用 Bawa-Lindenberg 下行半协方差矩阵替代了对称协方差矩阵。此外，我们还引入了具有对角线自转换持久性先验（\k{appa}）和自适应置信边界（δ）的粘性高斯隐马尔可夫模型，以增强宏观经济因素的稳定性。通过对2020年8月至2025年12月这65个月的数据进行严格的前瞻性回测，我们发现该算法将年均复合收益率（CAGR）从10.65%（使用传统NCO方法）提升至13.41%（年化增长276个基点），总收益率...。研究方法：机器学习、优化方法。
+
+## 5. Supply disruptions and predictability of oil return volatility: a GARCH-MIDAS approach
+- 来源：openalex
+- 作者：Afees Adebare Salisu, Ahamuefula E. Ogbonna, Rangan Gupta, Luis A. Gil‐Alana
+- 期刊/来源：Journal of Economics and Finance
+- 发表日期：2026-11-03
+- 引用数：0
+- 主题：Predictability, Volatility (finance), Autoregressive model, Econometrics, Economics
+- 链接：[DOI](https://doi.org/10.1007/s12197-026-09796-4) [链接](https://openalex.org/W7225074844)
+
+**中文摘要（自动生成）**：【资产定价】摘要  
+我们采用广义自回归条件异方差性-混合数据抽样（GARCH-MIDAS）框架，研究发现：从2013年1月至2024年8月期间，全球及美国供应状况的月度指标（及其区域和产品特定组成部分）通过分析2亿笔货物交易数据，显著增加了西德克萨斯中间原油（WTI）价格的日波动性。此外，在样本期内，这些指标对油价波动性的预测能力在统计上具有显著性，并且相较于基于GARCH-MIDAS模型预测的波动性（RV），在2020年1月及之后的样本外时期，这些指标能够带来显著的短期、中期和长期预测收益。将这些综合的供应中断指数纳入GARCH-MIDAS框架后，其预测效果优于其他广泛使用的全球供应限制和经济状况的月度衡量指标。我们的研究结果对投资者和政策制定者具有重要的启示意义。。研究方法：GARCH 波动率模型。
+
+## 6. Economic and institutional drivers of renewable energy adoption: A cross-country panel analysis
+- 来源：openalex
+- 作者：Semyon Maksimovich Raikhlin, Н. Н. Трофимова, Alena Nikolaevna Martemyanova, Степук Елена Ивановна
+- 期刊/来源：Clean Energy Science and Technology
+- 发表日期：2026-11-03
+- 引用数：0
+- 主题：Renewable energy, Counterfactual thinking, Wind power, Economics, Grid parity
+- 链接：[DOI](https://doi.org/10.18686/cest949) [链接](https://openalex.org/W7225084488)
+
+**中文摘要（自动生成）**：【金融经济学】本文探讨了影响各国可再生能源采纳差异的经济和制度因素，重点关注太阳能和风能领域。与以往仅比较可再生能源占比或分析单一支持政策的研究不同，我们提出了“可再生能源部署缺口指数”（Renewable Deployment Gap Index，RDGI），该指数用于衡量实际可再生能源部署情况与在特定资源、宏观经济和监管条件下预期部署水平之间的差距。实证分析基于2010至2023年间各国组成的面板数据集，研究方法包括固定国家和年份效应模型、带有滞后因变量的动态模型，以及将监管质量提升至领先国家水平的反事实情景分析。研究结果表明，电力行业中化石燃料的惯性是阻碍可再生能源发展的最持久因素：化石燃料发电占比越高，可再生能源（不包括水力发电）的占比越低，尤其是太阳能和风能的发电占比更低。此外，“可持续能源监管指标”（Regulatory Indicators for Sustainable Energy，RISE）工具在跨国比较中的解释能力优于国内短期动态分析。反事实分析显示，如果RISE分布中处于第90百分位以下的国家将其监管质量提升至领先国家的水平，预计太阳能和风能的发电占比平均将增加约11....。研究方法：面板数据、固定效应。
+
+## 7. Bureaucratic Reform and Regional Financial Management Quality in Relation to Audit Findings: The Moderating Role of Local Government Integrity
+- 来源：openalex
+- 作者：Raisa Maharani, Islahuddin Islahuddin, Fifi Yusmita, Darwanis Darwanis, Indayani Indayani
+- 期刊/来源：Inkubis Jurnal Ekonomi dan Bisnis
+- 发表日期：2026-11-03
+- 引用数：0
+- 主题：Bureaucracy, Audit, Accounting, Panel data, Business
+- 链接：[DOI](https://doi.org/10.59261/inkubis.v8i4.532) [链接](https://openalex.org/W7225087973)
+
+**中文摘要（自动生成）**：【金融经济学】背景：尽管印度尼西亚政府持续推进官僚体制改革，但在2021至2023年间，审计发现的数量仍呈上升趋势。目前尚不清楚正式的改革措施和财务管理评估是否能够减少审计发现的数量，以及制度诚信是否会影响这些关联关系。
+
+目的：本研究旨在探讨官僚体制改革与地区财务管理质量对审计发现的影响，并评估政府诚信是否能够调节这两种关联关系。
+
+方法：本研究采用观察性定量面板分析法，分析了2021至2023年间印度尼西亚508个县/市政府中的381个政府（共计1,143个政府年度的数据），使用官方二手资料进行实证分析。研究方法包括固定效应面板回归模型和调节回归分析（MRA）。
+
+结果：官僚体制改革与审计发现的数量呈正相关（β = 0.694747，p = 0.0012）；而财务管理质量与审计发现的数量之间未发现统计学上的显著关联（β = 0.024320，p = 0.0967）。官僚体制改革与政府诚信的交互作用呈负相关且具有显著性（β = −0.082746，p = 0.0229），而财务管理质量与政府诚信的交互作用则不显著（β = −0.001859，p = 0.4507）。
+
+结论：在观察到的参考水...。研究方法：面板回归、回归分析。
+
+## 8. Regret-based Characterization, Information Limits, and the Sample Complexity of Auditing Adaptive Policies
+- 来源：arxiv
+- 作者：Irene Aldridge
+- 期刊/来源：arXiv
+- 发表日期：2026-11-03
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.05227v1)
+
+**中文摘要（自动生成）**：【金融经济学】一项政策的性能可以通过其在平均状态下的表现或对信息的响应来衡量。对于有限视界马尔可夫决策过程（MDP）中的任何马尔可夫策略π，设ν为其开环边际分布，该分布决定了π在每一步的平均行动选择。我们证明了在内在动态条件下，J(π) - J(ν) 等于 ∑_t tr Cov(Q^ν_t, π_t)。仅基于即时成本的评估可能会得出错误的结论。将协方差表示为联合分布与乘积分布之间的差异，可以得到不等式 |J(π) - J(ν)| ≤ ∑_t span_t√(I(s_t; a_t)/2)，其中span_t是一个常数。因此，MDP的适应性差距受到其最优策略所利用的信息量的限制。从π自身的“强盗式”反馈日志中估计J(π) - J(ν)需要Θ(℧^2 log(1/η)/δ^2)轮迭代时间，其中℧^2是平均的χ^2散度。同时，确定性且非恒定的策略根本无法被有效评估。我们还为基于情节的MDP提供了一种基于重要性抽样的评估方法。。
+
+## 9. Efficient Equilibrium Computation in Colonel Blotto Games
+- 来源：arxiv
+- 作者：Martin Bichler, Abheek Ghosh
+- 期刊/来源：arXiv
+- 发表日期：2026-11-03
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.05221v1)
+
+**中文摘要（自动生成）**：【金融经济学】“布洛托上校”（Colonel Blotto）是一种基本的资源分配博弈：两名玩家需要将他们的预算分配到不同的战场上，每个战场上获得的资源越多，该战场就越具有价值。对于这种经典的连续型博弈模型，当预算任意设定、且各战场上的价值可能不同但对两名玩家来说都相同时，如何高效地计算出均衡解这一问题至今仍未得到解决。我们提出了一种完全多项式时间复杂度的近似算法：该算法能够在输入长度和 $1/\varepsilon$ 的多项式时间内求解出一个 $\varepsilon$-纳什均衡（$\varepsilon$-Nash equilibrium）；当 $\varepsilon$ 固定时，算法的时间复杂度几乎与输入长度成线性关系。在预算和战场价值分布较为均衡的情况下，我们甚至能够在线性时间内求得精确的均衡解。。研究方法：均衡模型。
+
+## 10. Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction
+- 来源：arxiv
+- 作者：Jingqiu Ding, Daojing Zhai
+- 期刊/来源：arXiv
+- 发表日期：2026-11-03
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.05218v1)
+
+**中文摘要（自动生成）**：【资产定价】传统的公共订单簿数据仅汇总交易信息，而未揭示交易背后的账户信息。Hyperliquid的Level-4记录系统则能够识别出那些长期使用的匿名钱包地址。我们通过分析按共识顺序排列的交易消息，重建了完整的订单簿信息，并将钱包身份作为预测短期回报的特征进行评估。2026年7月1日至27日的记录涵盖了171亿条交易信息，涉及147,113个钱包发出的1,430万笔交易订单，交易总额达843亿美元，这些交易发生在十个市场中。在三个模型市场中，按交易额加权的十秒内成交排名在相邻的十天时间窗口内保持稳定（Spearman rho = 0.52）；经过协变量调整后的验证结果显示，排名前1%的交易在成交价格上的优势达到了3.11个基点。在100毫秒的时间粒度下，通过分析之前被评估为表现最佳的10%钱包的11个特征，样本外预测的R²值从10.88%提升到了12%。。
+
+## 11. Bang-Bang Correlation Sensitivity: A Local-to-Global Dichotomy for Correlation Preference
+- 来源：arxiv
+- 作者：Yi-Chun Chen, Soo Hong Chew, Xinhan Zhang
+- 期刊/来源：arXiv
+- 发表日期：2026-11-03
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.05188v1)
+
+**中文摘要（自动生成）**：【金融经济学】在风险情境下的二元选择可能取决于不同结果之间的联合分布方式。我们发现，在有限的结果空间中，连续性、完备性和介数性质对这种依赖关系施加了从局部到全局的约束：如果两种选择具有相同的边际分布，那么无论它们的结果如何联合分布，人们对这两种选择的无差异性意味着对于所有基于相同结果的彩票，它们都具有相关性不敏感性。在存在相关性敏感性的情况下，这三个公理足以刻画相关性加权效用函数，该函数将状态间的比较与边际彩票的双线性函数相结合。而在相关性不敏感的情况下，再加入一个投影独立性公理，就可以得到Fishburn（1982）提出的偏对称双线性表示方法。强独立性则将相关性加权效用简化为Lanzani（2022）提出的相关性期望效用表示形式。我们将这种相关性敏感性的刻画方法扩展到一般可度量结果空间上支持的有限概率彩票。所建立的框架能够区分相关性效应与经典独立性的偏离，并提出了可检验的约束条件，将这些条件用于关联具有相同分布的彩票之间的选择行为与Allais效应（即相关性效应）。。
+
+## 12. Correlation Probabilistic Sophistication
+- 来源：arxiv
+- 作者：Yi-Chun Chen, Soo Hong Chew, Xinhan Zhang
+- 期刊/来源：arXiv
+- 发表日期：2026-11-03
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.05110v1)
+
+**中文摘要（自动生成）**：【金融经济学】我们研究了在不确定性条件下的二元选择问题，其中两种行为之间的比较可能取决于它们实际结果的联合分布。这一研究背景促使我们提出了“相关性概率复杂性”（Correlation Probabilistic Sophistication, CPS）这一概念，这是一种主观简化原则，它既扩展了传统的概率复杂性理论，也拓展了Fishburn提出的非传递性主观期望效用模型。我们展示了如何通过同时发生的事件可交换性来构建一个唯一且可求解的、具有有限可加性的主观概率模型，并将行为之间的二元比较转化为相应的联合概率分布。在凸值范围内，所构建的联合概率分布域与完整的有限联合概率分布域完全一致，从而实现了风险相关性的概率表示的转换；在完备性和强独立性条件下，该模型进一步发展为具有斜对称比较核的相关性期望效用模型。当满足完备性和传递性时，CPS理论又退化为传统的概率复杂性理论。此外，我们还将该框架扩展到了多个“小世界”（即不同的不确定性来源）的情形，使得相关性敏感性能够根据不确定性来源的不同而发生变化。。
