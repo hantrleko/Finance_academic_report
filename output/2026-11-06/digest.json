@@ -1,0 +1,264 @@
+{
+  "date": "2026-11-06",
+  "count": 12,
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "latest_updated": true,
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、银行与信贷（1 篇）、绿色金融与可持续发展（1 篇）。方法上以回归分析、横截面分析为主。来源分布：OpenAlex（7 篇）、arXiv（3 篇）、Semantic Scholar（2 篇）。",
+  "insights": {},
+  "papers": [
+    {
+      "title": "Extending AIMNet2 to Macrocyclic Peptides through Data-Efficient Continual Training",
+      "authors": [
+        "Runtian Gao",
+        "R.I. Zubatyuk",
+        "Olexandr Isayev"
+      ],
+      "venue": "The Journal of Physical Chemistry A",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.1021/acs.jpca.6c06253",
+      "openalex_url": "https://openalex.org/W7212151602",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  Macrocyclic peptides are among the most promising therapeutic modalities, yet no general-purpose machine-learned interatomic potential (MLIP) has been systematically benchmarked for their conformational analysis. We show that on the MPCONF196 macrocyclic benchmark, the four-model AIMNet2 ensemble outperforms MACE-OFF23(S), despite macrocycles being entirely absent from its training data. A single AIMNet2 model is 3- to 5-fold faster and needs 5- to 63-fold less GPU memory than the MACE-OFF23 models at their default float64-precision. The four-model ensemble is about as fast as MACE-OFF23 but retains a 3- to 32-fold memory advantage even against MACE-OFF23 in float32. The larger MACE-OFF23(M) and MACE-OFF23(L) models remain more accurate. To narrow this gap, we introduce a continual training protocol that requires new quantum-chemical labels for fewer than 25,000 domain-specific conformers (&amp;lt;0.13% of the training corpus) while preserving conformational-energy accuracy on nonmacrocyclic molecules. On a sequence-disjoint holdout of unseen CREMP macrocyclic peptides, the resulting model, AIMNet2-macro, reduces conformational energy RMSE by 25 to 27% and DFT force RMSE by 20% (25% on backbone atoms) and improves lowest-energy conformer recovery relative to the original AIMNet2. It retains the conformational-energy accuracy of the original model on the nonmacrocyclic drug-like molecules of CONFORGE and also improves accuracy on the structurally distinct macrocycles of MPCONF196, although this smaller improvement is not statistically significant. Among the ten training strategies compared, only continual training on the combined corpus (AIMNet2-macro) achieves this improvement without degrading small-molecule accuracy. AIMNet2-macro is therefore the best balanced, though not the most accurate, of the models tested. As an independent case study, AIMNet2-macro reproduces DFT conformational energies of six cyclosporine A conformers with an RMSE of 0.78 kcal mol–1 and the correct rank ordering, the lowest error among the MLIPs and semiempirical methods evaluated on this system. The continual training strategy has been adopted in the AIMNet2 (2025) release, which unifies small-molecule, macrocyclic, and intermolecular-interaction treatment in a single production potential.",
+      "summary_zh": "【金融经济学】摘要  \n大环肽是目前最具前景的治疗手段之一，然而目前尚不存在一种通用的机器学习原子间势能（MLIP）方法能够系统地用于其构象分析。研究表明，在MPCONF196大环肽基准测试中，尽管AIMNet2模型训练数据中完全不含大环肽，但由四个模型组成的AIMNet2集成模型的性能仍优于MACE-OFF23(S)模型。单个AIMNet2模型的计算速度比MACE-OFF23模型快3至5倍，且所需GPU内存仅为后者的1/5至1/63（在默认的float64精度下）。尽管如此，该集成模型的计算速度与MACE-OFF23模型相当，但在float32精度下仍具有3至32倍的内存优势。相比之下，更大的MACE-OFF23(M)和MACE-OFF23(L)模型在准确性方面表现更优。为缩小这一差距，我们提出了一种持续训练策略：该策略仅需为不到25,000个特定结构构象生成新的量子化学标签（占训练数据总量的0.13%以下），同时仍能保持对非大环分子的构象能量预测的准确性。在包含未见过的CREMP大环肽的独立测试数据集上，改进后的AIMNet2-macro模型将构象能量预测的均方根误差（RMSE）降低了25...。",
+      "topics": [
+        "Conformational isomerism",
+        "Computer science",
+        "Metastability",
+        "Training set",
+        "Intermolecular force"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "How does the institutional framework affect bank financing in the private sector? Empirical evidence from West African economic and monetary union",
+      "authors": [
+        "Clémence Mianseli Ouali",
+        "Windinkonté Séogo"
+      ],
+      "venue": "Journal of Economic Studies",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.1108/jes-01-2026-0071",
+      "openalex_url": "https://openalex.org/W7225223670",
+      "cited_by_count": 0,
+      "abstract": "Purpose\n                    This study analyzes how the institutional framework affects bank financing in the private sector of the West African Economic and Monetary Union (WAEMU).\n                  \n                  \n                    Design/methodology/approach\n                    The analysis is based on a panel of 68 banks in 7 countries of the union, over the period 2000–2022. The dynamic method cross-sectional autoregressive distributed lag (CS-ARDL) is used to assess the combined effect of prudential standards of the Central Bank of West African States (BCEAO) and World Bank governance on bank financing of the private sector.\n                  \n                  \n                    Findings\n                    The results show that the institutional framework influences private-sector bank lending primarily through prudential regulation. The transformation ratio exhibits the most stable and significant association across all specifications, reflecting banks' ability to convert short-term funds into long-term financing. The solvency ratio is also positively and significantly associated with credit, consistent with the bank capital channel. The liquidity ratio becomes significant only when governance and prudential standards are considered jointly. Bank deposits and financial depth are also positively associated with credit. Governance shows no significant direct association with credit, although indirect, delayed or conditional effects cannot be ruled out.\n                  \n                  \n                    Research limitations/implications\n                    One limitation of this study is that it does not explicitly account for banks' trade-offs between financing the private sector and holding government securities. This issue is important for the analysis of bank financing in the WAEMU, as the literature suggests that increased exposure to sovereign securities may be associated with reduced credit availability to the private sector, with some studies identifying a threshold beyond which this relationship becomes adverse. Future research could incorporate data on banks' exposure to government securities to examine how the institutional framework and prudential standards are associated with the allocation of resources between these two asset classes.\n                  \n                  \n                    Practical implications\n                    Three implications follow directly from the results. Regarding bank capitalization, the BCEAO should maintain a gradual and predictable path for tightening prudential requirements, allowing banks to adjust their credit policies without abrupt contraction. Regarding liquidity, since its effect is only identifiable when the institutional framework is considered as a whole, liquidity supervision would benefit from being coordinated with the monitoring of other prudential dimensions rather than treated in isolation; authorities could explore mechanisms that incentivize banks to channel a larger share of their excess liquidity toward financing the private sector. Finally, policies promoting longer maturities for bank funding would serve as a direct lever for supporting private-sector credit.\n                  \n                  \n                    Social implications\n                    From a societal perspective, improving the flow of credit to small and medium enterprises (SMEs) and the informal sector, which together account for more than 80% of employment in the WAEMU, would foster productive investment, job creation and financial inclusion. The prudential channels highlighted in this study, particularly capitalization and resource transformation, thus appear to be relevant levers for supporting this dynamic, even though the present analysis does not allow for a direct measurement of their impact on end beneficiaries. These findings are particularly significant in a context where these sectors account for the majority of regional employment.\n                  \n                  \n                    Originality/value\n                    While existing studies on the WAEMU rarely examine either governance or prudential regulation within the same econometric specification, this study contributes by jointly integrating these two dimensions of the institutional framework without aggregating them into a single composite indicator at the individual bank level. It thus provides new empirical insights into how institutional quality translates into bank financing of the private sector in a regional context where these two dimensions remain understudied in combination.",
+      "summary_zh": "【银行与信贷】**研究目的**  \n本研究旨在分析制度框架如何影响西非经济货币联盟（WAEMU）私营部门的银行融资情况。  \n\n**研究设计/方法**  \n分析基于该联盟7个国家中68家银行的样本数据，时间跨度为2000年至2022年。研究采用了动态横截面自回归分布滞后模型（CS-ARDL），以评估西非国家中央银行（BCEAO）的审慎监管标准与世界银行治理机制对私营部门银行融资的综合影响。  \n\n**研究结果**  \n研究结果表明，制度框架主要通过审慎监管机制影响私营部门的银行贷款。其中，“转换比率”在所有模型设定中均表现出最稳定且显著的关联，反映了银行将短期资金转化为长期融资的能力；“偿付能力比率”也与信贷呈正相关关系，这与银行资本渠道的理论一致。只有当同时考虑治理机制和审慎监管标准时，“流动性比率”才显示出显著相关性。此外，银行存款和金融市场的深度也与信贷存在正相关关系。尽管治理机制与信贷之间没有直接的显著关联，但也不能排除其间接、滞后或条件性的影响。  \n\n**研究局限性与启示**  \n本研究的局限性在于未明确考虑银行在为私营部门提供融资与持有政府债券之间的权衡。这一问题对于分析WAEM...。研究方法：横截面分析。",
+      "topics": [
+        "Financial system",
+        "Corporate governance",
+        "Economics",
+        "Market liquidity",
+        "Private sector"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Cross-Border Ownership and Input Access: Evidence from the Lithium Supply Chain",
+      "authors": [
+        "Kei Irizawa"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-05",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.08430v1",
+      "cited_by_count": 0,
+      "abstract": "How does cross-border ownership shape the lithium supply chain? Using global data on mines and refineries, I estimate a model in which ownership can lower refiners' effective ore costs, encourage mines to restrict spot sales, and soften competition. To study these effects, I examine policies motivated by national security concerns about reliable access to critical mineral inputs: divestiture of Chinese stakes in overseas producers and a ban on ore exports to China. Divestiture increases spot ore supply but leaves lithium output nearly unchanged, while continued trade preserves Chinese access to ore. The export ban reduces global lithium supply because refining capacity elsewhere cannot fully replace lost Chinese production. Ownership transfers do not reserve ore for domestic production; restricting Chinese access imposes a substantial supply cost at existing capacities.",
+      "summary_zh": "【金融经济学】跨境所有权如何影响锂供应链的运作？通过分析全球范围内的矿山和精炼厂数据，我建立了一个模型，该模型表明：所有权结构可以降低精炼企业的矿石采购成本，促使矿山限制现货销售，并减弱市场竞争。为研究这些影响，我重点考察了出于国家安全考虑而实施的相关政策，例如中国减持海外生产商的股份以及禁止向中国出口矿石。虽然中国减持海外生产商的股份会增加现货矿石供应，但锂产品的总产量基本保持不变；而继续允许矿石出口则能保障中国对矿石的获取。然而，出口禁令会减少全球锂供应，因为其他地区的精炼产能无法完全弥补中国产能的缺失。此外，所有权结构的调整并不会专门为国内生产预留矿石资源；限制中国获取矿石的行为实际上会在现有产能条件下增加显著的供应成本。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Patch Attention Wisely: Understanding Patch Length in Attention-Based Forecasting",
+      "authors": [
+        "Junyu Chen",
+        "Likai Chen",
+        "Weining Wang"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-05",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.08160v1",
+      "cited_by_count": 0,
+      "abstract": "Attention-based time series forecasters commonly group consecutive observations into patches. Patch length is known to have a substantial impact on forecasting performance, yet its selection remains largely empirical. We develop a theoretical framework that explains why patch length matters for forecasting accuracy and provides a principled basis for its selection. For linear state-space models, we derive an exact factorization of the forecasting coefficient matrix that separates forecast dynamics from filtering dynamics. We show that dominance of a single forecast component at long horizons does not generally imply a rank-one representation. This explains why longer horizons alone need not reduce representational complexity. We combine the factorization with estimation bounds to develop a patch-selection criterion that balances representation and estimation errors under temporal dependence. Our analysis establishes conditions under which balanced patching is justified and clarifies how predictive structure, head count, training sample size, and long-run dependence enter the selection criterion.",
+      "summary_zh": "【金融经济学】基于注意力机制的时间序列预测器通常会将连续的观测值分组为若干“数据块”（即“patch”）。已知数据块的长度对预测性能有显著影响，但其选择方式在很大程度上仍依赖于经验判断。我们构建了一个理论框架，解释了数据块长度为何对预测准确性至关重要，并为数据块长度的选择提供了理论依据。对于线性状态空间模型，我们推导出了预测系数矩阵的精确分解方法，该方法能够将预测动态与滤波动态区分开来。研究表明，在较长的预测时段内，某个预测成分占据主导地位并不意味着该预测成分的矩阵秩一定为1；这解释了为何仅延长预测时段并不一定会增加模型的表示复杂性。我们将这种分解方法与估计误差界限相结合，提出了一种数据块选择标准，该标准能够在时间依赖性条件下平衡模型的表示复杂性和估计误差。我们的分析明确了在何种条件下采用这种平衡的数据块划分方法是合理的，并阐明了预测结构、数据块数量、训练样本规模以及长期依赖性等因素如何影响数据块的选择过程。。研究方法：时间序列。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "GREEN FINANCE AND SME INCLUSION IN ZIMBABWE: EVIDENCE FROM THE MANUFACTURING SECTOR IN BINDURA",
+      "authors": [
+        "F. Sithole",
+        "Talent Kondo"
+      ],
+      "venue": "Economics",
+      "published_date": "2026-11-01",
+      "doi_url": "https://doi.org/10.65957/article.19",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295494589",
+      "cited_by_count": 0,
+      "abstract": "Green finance is increasingly recognized as a central instrument for advancing climate mitigation and sustainable development, yet its distributive effects remain poorly understood in developing economies where small and medium enterprises (SMEs) dominate industrial activity. This study examines access to green finance among manufacturing SMEs in Bindura, Zimbabwe, identifying the structural determinants of inclusion and the institutional mechanisms driving exclusion. A mixed-methods approach is employed, combining quantitative survey data from 36 manufacturing firms analyzed through binary logistic regression with qualitative evidence from key informant interviews with financial institutions and policy actors. The results reveal that green finance access is highly selective: firm size, collateral availability, and awareness are significant positive predictors of access, while smaller and asset-constrained firms are systematically excluded. Green finance is predominantly delivered through conventional asset-based lending models underpinned by risk perceptions that disadvantage SMEs, reinforcing credit rationing and information asymmetry. These findings challenge the assumption that green finance is inherently inclusive and suggest that current frameworks risk entrenching a dual transition in which only better-positioned firms participate. Policy reforms should prioritize risk-sharing mechanisms, SME-adapted financial instruments, and targeted information dissemination to ensure a more equitable and effective green transition.",
+      "summary_zh": "【绿色金融与可持续发展】绿色金融日益被视为推动气候缓解和可持续发展的关键工具，然而在以中小企业（SMEs）为主导工业活动的发展中经济体中，其分配效应仍不甚明了。本研究考察了津巴布韦宾杜拉地区制造业中小企业获取绿色金融的情况，分析了影响其参与程度的结构性因素以及导致其被排斥的制度机制。研究采用了混合方法，结合了36家制造业企业的定量调查数据（通过二元逻辑回归进行分析）以及来自金融机构和政策制定者的关键信息提供者的定性访谈结果。研究结果表明，绿色金融的获取具有高度选择性：企业规模、抵押品可用性以及企业的风险意识是影响其能否获得绿色金融的重要正向因素，而规模较小、资产受限的企业则系统性地被排除在绿色金融体系之外。绿色金融主要通过传统的基于资产的贷款模式提供，但这些模式所依据的风险评估方式对中小企业不利，从而加剧了信贷配给和信息不对称问题。这些发现质疑了绿色金融本质上具有包容性的观点，并表明现有框架有可能导致一种“双重转型”现象——只有那些处于有利地位的企业才能参与绿色金融。政策改革应优先考虑风险分担机制、适合中小企业的金融工具以及有针对性的信息传播，以确保绿色转型的公平性和有效性。。研究方法：回归分析、调查数据。",
+      "topics": [
+        "Environmental Science",
+        "Economics",
+        "Business"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Dividend Growth Model and Capital Asset Pricing Model (CAPM) in an Introductory Finance Course",
+      "authors": [
+        "Chanwit Phengpis"
+      ],
+      "venue": "Journal of Applied Business and Economics",
+      "published_date": "2026-10-30",
+      "doi_url": "https://doi.org/10.33423/dbtxgy05",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295433211",
+      "cited_by_count": 0,
+      "abstract": "The dividend growth model and Capital Asset Pricing Model (CAPM) are typically covered in an introductory finance course at an undergraduate level. In this paper, I show that an instructor can enhance students’ learning and stimulate their interest in these models and related concepts by incorporating a real-world example of stock valuation into teaching the course. The example should be appropriate for this introductory course in that it enables students to learn real-world finance, while not overwhelming them with the process that is too complicated. I use a timely example of Kenvue, Inc. which is a consumer health company and formerly the Consumer Healthcare division of Johnson & Johnson. Kenvue was spun off in November 2021 and first traded under the stock ticker KVUE in May 2023. Despite the insufficiency of direct stock price data, I demonstrate step-by-step how students can practically obtain other related data and information mostly from the internet and apply the dividend growth model and CAPM formulae along with Excel Spreadsheets to find a fair value Kenvue stock. Students can replicate the process for valuation of other dividend paying stocks as well.",
+      "summary_zh": "【资产定价】股息增长模型和资本资产定价模型（CAPM）通常是本科金融入门课程中的核心内容。在本文中，我提出了一种教学方法：通过将股票估值的实际案例融入课程教学，可以提升学生的学习效果，并激发他们对这些模型及相关概念的兴趣。所选案例应适合入门课程的特点，既能让学生了解真实的金融运作情况，又不会因过程过于复杂而令他们感到困惑。我以Kenvue公司为例进行讲解——这是一家专注于消费者健康领域的公司，曾隶属于强生公司的消费者医疗保健部门。Kenvue公司于2021年11月从强生集团分拆出来，并于2023年5月首次在股市上市，股票代码为KVUE。尽管直接获取该公司股价的数据较为困难，但我详细展示了学生如何通过互联网获取其他相关数据与信息，然后运用股息增长模型和CAPM公式，结合Excel电子表格来计算Kenvue股票的合理价值。学生也可以将这一方法应用于其他派息股票的估值过程中。。",
+      "topics": [
+        "Business",
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Constrained risk rationalization: how economically vulnerable consumers justify counterfeit purchases in Colombia’s informal markets",
+      "authors": [
+        "Mark Scott Rosenbaum",
+        "Diana C. Arcila Perdomo",
+        "Oscar Naranjo Del Giudice"
+      ],
+      "venue": "International Journal of Emerging Markets",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.1108/ijoem-10-2025-2442",
+      "openalex_url": "https://openalex.org/W7225227815",
+      "cited_by_count": 0,
+      "abstract": "Purpose\n                    This study explores how economically constrained mothers rationalize risky purchases of counterfeit household goods in informal markets, extending attention beyond luxury counterfeits and treating caregiving responsibility as a central analytic concern.\n                  \n                  \n                    Design/methodology/approach\n                    Using grounded theory, the study analyzes 45 intercept interviews with low-income mothers shopping in two San Andresito markets in Bogotá, Colombia. Analysis used open coding, constant comparison and selective coding, with saturation tracked through a code-emergence log.\n                  \n                  \n                    Findings\n                    Mothers rationalize counterfeit purchases through Constrained Risk Rationalization (CRR): economic necessity, social normalization, trust-based mitigation and psychological trade-offs. Together, these mechanisms may help make counterfeit buying a practical, morally defensible response to household need.\n                  \n                  \n                    Research limitations/implications\n                    This first-stage qualitative study is bounded to brief interviews with one participant group in one market system. Future research should test CRR through ethnographic and mixed-method designs.\n                  \n                  \n                    Practical implications\n                    Risk warnings may be less effective when consumers already know the risks but perceive few alternatives. Responses may be more effective if they focus on affordability, community trust and safer local options.\n                  \n                  \n                    Social implications\n                    Counterfeit purchasing in informal markets is tied to poverty, exclusion and provisioning pressures; reducing it may require addressing these conditions, not enforcement or deterrence alone.\n                  \n                  \n                    Originality/value\n                    The paper extends counterfeit consumption research beyond luxury goods, offering a process-based account of how necessity, norms, trust and coping may operate together, and brings gendered caregiving responsibility into counterfeit consumption research in emerging markets.",
+      "summary_zh": "【风险管理与衍生品】**研究目的**  \n本研究探讨了经济条件受限的母亲如何在非正规市场中理性地选择购买假冒家居用品。研究不仅关注奢侈品假冒问题，还将育儿责任作为核心分析焦点。  \n\n**研究设计/方法**  \n采用扎根理论方法，对在哥伦比亚波哥大两个San Andresito市场购物的45位低收入母亲进行了深入访谈。数据分析过程中运用了开放式编码、持续比较法和选择性编码技术，并通过编码记录来监控分析的饱和度。  \n\n**研究结果**  \n母亲们通过“受限风险理性化”（Constrained Risk Rationalization, CRR）机制来解释其购买假冒产品的行为：这些机制包括经济必要性、社会常态化的认知、基于信任的风险缓解方式以及心理上的权衡。综合来看，这些因素可能使购买假冒产品成为满足家庭需求的实际且道德上可接受的应对方式。  \n\n**研究局限性与启示**  \n作为初步的定性研究，本研究仅基于对一个市场系统中某一参与者群体的访谈数据。未来的研究应通过民族志调查和混合方法来进一步验证“受限风险理性化”理论。  \n\n**实践意义**  \n当消费者已经了解相关风险但缺乏其他选择时，风险警示可...。",
+      "topics": [
+        "Counterfeit",
+        "Business",
+        "Purchasing",
+        "Qualitative research",
+        "Grounded theory"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Beyond institutional compatibility: a typological analysis of collective skill formation system transplantation",
+      "authors": [
+        "Kenan Hai",
+        "Tiancheng He"
+      ],
+      "venue": "Asian Review of Political Economy",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.1007/s44216-026-00093-9",
+      "openalex_url": "https://openalex.org/W7225228702",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  Governments around the world face an urgent challenge: rapidly upskilling their workforces. A skilled workforce is essential to sustaining economic growth and competitiveness in an increasingly complex global market. The German Dual System, characterised by the integration of firm-based training and public vocational schooling, is a prominent model for skill formation globally. However, outcomes of its transnational transplantation vary significantly, ranging from successful adoptions and hybrid systems to outright failures. This article clarifies the different approaches to the transplantation of collective skill formation systems at the conceptual level. It has developed a theoretical framework that integrates actor-network theory, institutional complementarity, and historical institutionalism. Using a typological approach, four ideal types of transplantation were theoretically determined based on the interaction among the actor's ability, willingness, and institutional compatibility. The core viewpoint of this article points out that in a host country with a coordinated market economy, successful transplantation is not automatic. On the contrary, it depends on complex alliances of multi-participant coalitions with sufficient power and motivation, as well as a friendly institutional environment characterized by strong complementarity and weak constraints of historical heritage. This article emphasizes that transplanting complex systems, such as CSFS, is a highly negotiated political process, while simplistic institutional borrowing often neglects the fundamental structure and historical prerequisites for success.",
+      "summary_zh": "【金融经济学】摘要  \n世界各国政府都面临着一个紧迫的挑战：迅速提升劳动力的技能水平。在日益复杂的全球市场中，拥有高素质的劳动力对于维持经济增长和竞争力至关重要。德国的“双元制”教育体系（即企业培训与公立职业学校相结合的模式）是全球范围内技能培养的典范。然而，该体系在跨国推广过程中的效果差异显著，既有成功实施的案例，也有失败的例子。本文从概念层面分析了各国在推广集体技能培养体系时所采取的不同路径，并构建了一个整合了“行动者网络理论”、“制度互补性”及“历史制度主义”观点的理论框架。通过类型学方法，基于行动者的能力、意愿以及制度间的兼容性，本文理论界定了四种不同的推广模式。文章的核心观点是：在市场经济体系较为完善的东道国中，体系的成功推广并非自然而然的结果，而是依赖于多方参与者组成的联盟所形成的复杂合作关系——这些联盟需要具备足够的权力和动力，同时还需要一个具有较强制度互补性且历史束缚较少的友好环境。文章强调，像“双元制”这样的复杂体系移植本质上是一个高度协商的政治过程；而简单的制度借鉴往往忽视了实现成功所需的基本结构和历史前提条件。。",
+      "topics": [
+        "Complementarity (molecular biology)",
+        "Transplantation",
+        "Economic system",
+        "Conceptual framework",
+        "Face (sociological concept)"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Investigating the efficiency of rural industrial integration development in China: based on the undesirable super-efficiency SBM-Malmquist model",
+      "authors": [
+        "Zenan Sun",
+        "Mo Chen"
+      ],
+      "venue": "Frontiers in Sustainable Food Systems",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.3389/fsufs.2026.1894351",
+      "openalex_url": "https://openalex.org/W7225230861",
+      "cited_by_count": 0,
+      "abstract": "Promoting rural industrial integration development (RIID) to boost farmers’ income is a core strategy for rural revitalization and common prosperity. A reasonable and objective evaluation of RIID efficiency that jointly accounts for farmers’ income growth and the food-security and environmental constraints entailed by integration is critical for advancing sustainable rural development. This paper applies the super-efficiency SBM model with undesirable outputs and the Malmquist index to measure China’s RIID efficiency across 30 provinces from 2012 to 2023, analyzing its spatio-temporal evolution. The results show that the national annual average RIID efficiency fluctuated between 0.423 and 0.663, exhibiting a three-stage trajectory of “steady rise—fluctuating bottoming-out—accelerated climb” alongside a descriptively observed east–central–west gradient (eastern leading, central following, western lagging) that does not attain statistical significance. The annual average Malmquist index reached 1.060, corresponding to an average annual growth rate of 6.0%, and efficiency catch-up became the dominant driver of productivity growth in the later stage. The exploratory regression further reveals that rural human capital and transportation infrastructure are significantly and positively associated with RIID efficiency. This study integrates farmers’ income growth, farmland non-grain conversion, and agricultural non-point source pollution into the efficiency evaluation system of rural industrial integration development. It also provides new empirical evidence regarding the spatio-temporal evolution characteristics and driving factors of rural industrial integration, which can support the formulation of differentiated and welfare-oriented rural development policies in China and other developing economies.",
+      "summary_zh": "【金融经济学】促进农村产业融合发展（RIID）以增加农民收入是实现农村振兴和共同繁荣的核心策略。对RIID效率进行合理、客观的评估至关重要，这种评估需要同时考虑农民收入增长以及产业融合所带来的粮食安全和环境约束因素，从而推动可持续的农村发展。本文采用包含不良产出的超效率SBM模型和Malmquist指数，对中国2012年至2023年间30个省份的RIID效率进行了测度，并分析了其时空演变趋势。研究结果表明，全国年均RIID效率在0.423至0.663之间波动，呈现出“稳步上升—波动稳定—加速提升”的发展轨迹；同时观察到东部地区领先、中部地区跟进、西部地区滞后的空间分布特征，但这种空间差异并未达到统计学上的显著性。年均Malmquist指数为1.060，对应的年均增长率为6.0%，在后期阶段效率提升成为推动生产力增长的主要动力。进一步的研究发现，农村人力资本和交通基础设施与RIID效率之间存在显著的正相关关系。本研究将农民收入增长、耕地非粮食化利用以及农业非点源污染等因素纳入农村产业融合发展效率评估体系，为理解农村产业融合的时空演变特征及其驱动因素提供了新的实证依据，有助于为中国及其他发展中国家...。研究方法：回归分析。",
+      "topics": [
+        "Malmquist index",
+        "Index (typography)",
+        "Productivity",
+        "Economics",
+        "China"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Comparative Study of Gender-Based Health Policies in Indonesia and the Philippines: Strategies and Equity Impact",
+      "authors": [
+        "Budhi Rahardjo",
+        "Ismi Dwi Astuti Nurhaeni",
+        "Anik Lestari",
+        "Widiyanto"
+      ],
+      "venue": "Media Publikasi Promosi Kesehatan Indonesia (MPPKI)",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.56338/mppki.v9i11.9877",
+      "openalex_url": "https://openalex.org/W7225233953",
+      "cited_by_count": 0,
+      "abstract": "Introduction: Gender equality remains a central challenge in achieving the Sustainable Development Goals (SDGs), particularly SDGs 3 and 5, in Southeast Asia. This study compares gender-based health policies in Indonesia and the Philippines, focusing on how policy strategies and implementation affect health equity.\nMethods: This study employed a qualitative comparative design (Mill's Method of Difference), analysing national policy documents from 2015 to 2025. The study is grounded in Sabatier and Mazmanian’s policy implementation framework and intersectionality theory to provide a comprehensive evaluation of both countries’ approaches.\nResults: The Philippines demonstrates a relatively explicit rights-based policy architecture, with clearer legal mandates, institutional responsibilities, and documented implementation mechanisms. Indonesia relies more heavily on gender mainstreaming across broader development and health-planning instruments, with implementation responsibilities distributed across existing institutions. The comparison identifies differences in health-worker training, community participation, monitoring arrangements, and access-related patterns. However, population-level health indicators are interpreted as contextual and corroborative evidence rather than as direct measures of policy effectiveness, because the study design cannot establish causal effects.\nConclusion: The comparison suggests that gender-responsive health policy implementation is associated with the configuration of legal mandates, institutional capacity, contextual conditions, and equity-oriented community participation. Policy learning from the Philippine case may inform Indonesia, but implementation would require adaptation to Indonesia's decentralised governance and sociocultural context.",
+      "summary_zh": "【金融经济学】引言：性别平等仍是实现可持续发展目标（SDGs），尤其是SDGs 3和5的关键挑战，在东南亚地区尤为突出。本研究比较了印度尼西亚和菲律宾在性别健康政策方面的差异，重点探讨了政策策略与实施对健康公平的影响。\n\n方法：本研究采用定性比较设计（Mill的差异方法），分析了2015年至2025年的国家政策文件。研究基于Sabatier和Mazmanian的政策实施框架以及交叉性理论，对两国的做法进行了全面评估。\n\n结果：菲律宾在基于权利的政策构建方面表现得较为明确，具有更清晰的法律授权、机构职责和记录在案的实施机制。而印度尼西亚则更多地依赖将性别平等纳入更广泛的发展和健康规划框架中，实施责任分散在现有机构之间。比较结果显示，两国在卫生工作者培训、社区参与、监测安排以及获取医疗服务方面存在差异。然而，由于研究设计无法确定因果关系，因此人口层面的健康指标只能作为背景信息和辅助证据，而不能直接反映政策效果。\n\n结论：研究表明，性别敏感的健康政策实施与法律授权的配置、机构能力、具体背景条件以及以公平为导向的社区参与密切相关。菲律宾的经验可以为印度尼西亚提供政策参考，但印度尼西亚在实施过程中需要根...。",
+      "topics": [
+        "Equity (law)",
+        "Mainstreaming",
+        "Public economics",
+        "Health policy",
+        "Gender mainstreaming"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Transfer Pricing, Capital Intensity, Thin Capitalization, dan Penghindaran Pajak pada Perusahaan Pertambangan yang Terdaftar di Bursa Efek Indonesia Periode 2021–2024",
+      "authors": [
+        "Rio Ramadan",
+        "Fitri Mareta",
+        "Umarudin Kurniawan"
+      ],
+      "venue": "Journal of Authentic Research",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.36312/jar.v5i4.5936",
+      "openalex_url": "https://openalex.org/W7225236920",
+      "cited_by_count": 0,
+      "abstract": "Penerimaan pajak Indonesia masih menghadapi praktik penghindaran pajak, terutama pada sektor pertambangan yang memiliki aset tetap besar, transaksi pihak berelasi, dan kebutuhan pendanaan tinggi. Temuan penelitian terdahulu tentang transfer pricing, capital intensity, dan thin capitalization belum konsisten, dan hubungan ketiganya dengan penghindaran pajak pada periode setelah berlakunya kewajiban dokumentasi transfer pricing dan batas rasio utang terhadap modal masih perlu ditelaah. Penelitian ini menganalisis hubungan ketiga variabel tersebut dengan penghindaran pajak pada perusahaan pertambangan yang terdaftar di Bursa Efek Indonesia periode 2021–2024. Sampel dipilih secara purposive sebanyak 20 perusahaan (80 observasi; 75 observasi setelah lima pencilan dikeluarkan). Penghindaran pajak diukur dengan cash effective tax rate (CETR), sehingga CETR yang lebih rendah menunjukkan penghindaran pajak yang lebih tinggi, dan data dianalisis dengan regresi linear berganda. Transfer pricing berhubungan negatif dengan CETR (B = −1,480; p = 0,008), yang mengindikasikan penghindaran pajak yang lebih tinggi; capital intensity berhubungan positif dengan CETR (B = 1,599; p = 0,040), yang mengindikasikan penghindaran pajak yang lebih rendah; dan thin capitalization tidak berhubungan signifikan (p = 0,345). Model secara simultan signifikan (F = 4,163; p = 0,009) dengan adjusted R² sebesar 0,114. Temuan ini mengimplikasikan bahwa pengawasan transaksi pihak berelasi pada perusahaan pertambangan tetap relevan. Hasil penelitian bersifat asosiatif dan perlu dikonfirmasi dengan analisis data panel serta ukuran penghindaran pajak alternatif.\nIndonesia's tax revenue still faces tax avoidance, particularly in the mining sector, which has large fixed assets, related-party transactions, and high financing needs. Previous findings on transfer pricing, capital intensity, and thin capitalization are inconsistent, and their relationship with tax avoidance in the period after transfer pricing documentation requirements and the debt-to-equity limit took effect still needs examination. This study analyzes the relationship between these three variables and tax avoidance in mining companies listed on the Indonesia Stock Exchange in 2021–2024. A purposive sample of 20 companies was used (80 observations; 75 after five outliers were excluded). Tax avoidance was measured by the cash effective tax rate (CETR), so a lower CETR indicates higher tax avoidance, and the data were analyzed with multiple linear regression. Transfer pricing was negatively associated with CETR (B = −1.480; p = 0.008), indicating higher tax avoidance; capital intensity was positively associated with CETR (B = 1.599; p = 0.040), indicating lower tax avoidance; and thin capitalization was not significantly associated (p = 0.345). The model was jointly significant (F = 4.163; p = 0.009), with an adjusted R² of 0.114. These findings imply that monitoring related-party transactions in mining companies remains relevant. The results are associative and need to be confirmed with panel data analysis and alternative tax avoidance measures.",
+      "summary_zh": "【金融经济学】印度尼西亚的税收收入仍面临避税行为，尤其是在拥有大量固定资产、存在关联方交易以及融资需求较高的采矿行业。以往关于转让定价、资本密集度和资本结构薄弱（thin capitalization）的研究结果并不一致，它们与避税行为之间的关系在转让定价文件要求及债务与资本比率限制实施后的时期仍需进一步探讨。本研究分析了2021至2024年间在印度尼西亚证券交易所上市的采矿公司中这三个变量与避税行为之间的关系。研究采用目的性抽样方法选取了20家公司作为样本（共80个观测值；剔除5个异常值后剩余75个观测值）。避税程度通过现金有效税率（CETR）来衡量，较低的CETR值表示较高的避税行为，数据通过多元线性回归进行分析。结果显示：转让定价与CETR呈负相关（B = −1.480；p = 0.008），表明存在较高的避税行为；资本密集度与CETR呈正相关（B = 1.599；p = 0.040），表明避税行为较低；而资本结构薄弱与避税行为无显著关联（p = 0.345）。整个模型具有统计学意义（F = 4.163；p = 0.009），调整后的R²值为0.114。这些发现表明，对采矿公司关联方交易...。研究方法：面板数据、回归分析。",
+      "topics": [
+        "Business",
+        "Business administration",
+        "Tax avoidance",
+        "Cash",
+        "Tax revenue"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Economies of scale and the equity-efficiency trade-off: Evidence from a piped water network in rural Bangladesh",
+      "authors": [
+        "Md. Ahasan Habib",
+        "Anna Tompsett"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-05",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.08031v1",
+      "cited_by_count": 0,
+      "abstract": "Policymakers who set prices for public infrastructure often anticipate an equity-efficiency trade-off: while higher prices could increase revenues from fee-paying users, helping to offset costs, they may reduce take-up among the poor. But this trade-off is fundamentally altered in the presence of economies of scale, which are common in infrastructure networks. We elicit willingness to pay for a household-level piped drinking water connection in rural Bangladesh, where truthful revelation of preferences is incentivized by the opportunity to connect to a new pipeline network that we construct, and we use project cost data to measure economies of scale. Combining the two, we show that the cost-effectiveness-maximizing price---that which minimizes the cost per connected household---is zero. Economies of scale strongly dominate revenues raised by user fees. More generally, the two conditions needed for a zero price to maximize cost-effectiveness are important economies of scale and high sensitivity of demand to prices near zero, which is well documented across developing countries. Since a zero price naturally maximizes equity, we conclude that economies of scale can eliminate the equity-efficiency trade-off.",
+      "summary_zh": "【国际贸易】为公共基础设施定价的决策者通常会面临公平性与效率之间的权衡：虽然较高的价格可以通过向付费用户收费来增加收入，从而帮助弥补成本，但可能会降低低收入群体的使用意愿。然而，在存在规模经济的情况下，这种权衡会发生根本性的变化，而规模经济在基础设施网络中十分普遍。我们在孟加拉国农村地区调查了居民对家庭级管道饮用水连接的支付意愿；在该地区，由于有机会接入我们新建的管道网络，人们更愿意如实表达自己的偏好。我们利用项目成本数据来衡量规模经济的程度。综合这两项研究结果，我们发现能够实现成本效益最大化的价格（即使每个连接家庭的成本最低的价格）实际上是零。规模经济对用户收费所带来的收入影响远大于其他因素。更一般地说，实现零价格以最大化成本效益的两个关键条件是：显著的规模经济效应，以及需求对价格变化的高度敏感性（这一现象在发展中国家普遍存在）。由于零价格本身就能最大化公平性，我们得出结论：规模经济可以消除公平性与效率之间的权衡。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    }
+  ]
+}

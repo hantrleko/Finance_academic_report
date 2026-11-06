@@ -1,71 +1,68 @@
 {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "count": 12,
-  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)",
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
   "latest_updated": true,
-  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（11 篇）、风险管理与衍生品（1 篇）。方法上以实验方法、均衡模型为主。来源分布：arXiv（9 篇）、OpenAlex（3 篇）。",
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、银行与信贷（1 篇）、绿色金融与可持续发展（1 篇）。方法上以回归分析、横截面分析为主。来源分布：OpenAlex（7 篇）、arXiv（3 篇）、Semantic Scholar（2 篇）。",
   "insights": {},
   "papers": [
     {
-      "title": "Large language model developments",
+      "title": "Extending AIMNet2 to Macrocyclic Peptides through Data-Efficient Continual Training",
       "authors": [
-        "E. Joseph Sharkey",
-        "Philip Colin Treleaven",
-        "Sara Craciun"
+        "Runtian Gao",
+        "R.I. Zubatyuk",
+        "Olexandr Isayev"
       ],
-      "venue": "Royal Society Open Science",
-      "published_date": "2026-11-04",
-      "doi_url": "https://doi.org/10.1098/rsos.252099",
-      "openalex_url": "https://openalex.org/W4414750690",
+      "venue": "The Journal of Physical Chemistry A",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.1021/acs.jpca.6c06253",
+      "openalex_url": "https://openalex.org/W7212151602",
       "cited_by_count": 0,
-      "abstract": "Abstract\n                  Large language models (LLMs) are generative artificial intelligence (AI) models trained with vast amounts of data and context, and excel at processing, understanding and generating human language, using transformer models to learn statistical relationships between tokens. LLMs are a subset of transformer models, and hence are closely related but not interchangeable. Given the ‘explosion’ of LLM research, the challenge is tracking emerging developments and matching LLMs to applications. This paper reviews LLM developments with the aim of understanding the underlying models’ computational strengths and weaknesses, building on previous work focusing on LLM optimization (Sharkey &amp; Treleaven 2025 Optimising large language models: taxonomy and techniques. SSRN Scholarly Paper no. 5278456. Rochester, NY: SSRN). We find that despite their power, LLMs (transformers) face several key challenges. These include: (i) computational complexity and resource requirements—training and deploying large models is extremely costly and slow, and energy consumption is a concern; (ii) understanding long sequences and dependencies—even with enhancements, models can struggle with very long-range dependencies or context lengths beyond their window (e.g. maintaining coherence in a long document), which reflects the more fundamental absence of continual learning; (iii) interpretability and bias—it remains difficult to interpret why a model produces a given output, and models can inadvertently amplify biases present in training data; and (iv) optimization challenges, including fine-tuning for specific tasks without overfitting or losing generality and ensuring efficient inference (latency, the delay before a response is completed) for real-time applications. In summary, this review focuses on architectural, optimization and interpretability developments in LLMs. It does not aim to provide a systematic benchmark comparison, exhaustive implementation details or empirical performance evaluation, which are covered extensively elsewhere. The authors are committed to updating this review aligned to constant changes in the technology; please reach out with any additions.",
-      "summary_zh": "【金融经济学】摘要  \n大型语言模型（LLMs）是一种基于生成式人工智能（AI）的模型，通过大量数据和上下文进行训练，能够在处理、理解和生成人类语言方面表现出色。它们利用Transformer架构来学习语言符号之间的统计关系。LLMs属于Transformer模型的一个子集，因此两者之间存在密切联系，但不可互换。鉴于LLM研究领域的快速发展，当前面临的挑战是如何跟踪新兴的研究成果，并将这些模型有效地应用于实际场景中。本文旨在回顾LLM的发展历程，深入探讨其计算能力的优势与局限性，同时延续以往关于LLM优化方面的研究（参见Sharkey & Treleaven 2025年的论文《优化大型语言模型：分类与技术》（SSRN学术论文编号5278456，纽约罗切斯特：SSRN）。研究发现，尽管LLMs具备强大的性能，但仍存在若干关键问题：  \n（1）计算复杂性与资源需求：训练和部署大型模型成本高昂、耗时较长，且能源消耗问题日益突出；  \n（2）处理长序列与依赖关系：即便经过优化，模型仍难以处理超长范围的依赖关系或超出其处理范围的上下文信息（例如在长文档中保持文本连贯性），这反映了模型缺乏持续学习能力的问...。研究方法：大语言模型、Transformer 模型、优化方法。",
+      "abstract": "Abstract\n                  Macrocyclic peptides are among the most promising therapeutic modalities, yet no general-purpose machine-learned interatomic potential (MLIP) has been systematically benchmarked for their conformational analysis. We show that on the MPCONF196 macrocyclic benchmark, the four-model AIMNet2 ensemble outperforms MACE-OFF23(S), despite macrocycles being entirely absent from its training data. A single AIMNet2 model is 3- to 5-fold faster and needs 5- to 63-fold less GPU memory than the MACE-OFF23 models at their default float64-precision. The four-model ensemble is about as fast as MACE-OFF23 but retains a 3- to 32-fold memory advantage even against MACE-OFF23 in float32. The larger MACE-OFF23(M) and MACE-OFF23(L) models remain more accurate. To narrow this gap, we introduce a continual training protocol that requires new quantum-chemical labels for fewer than 25,000 domain-specific conformers (&amp;lt;0.13% of the training corpus) while preserving conformational-energy accuracy on nonmacrocyclic molecules. On a sequence-disjoint holdout of unseen CREMP macrocyclic peptides, the resulting model, AIMNet2-macro, reduces conformational energy RMSE by 25 to 27% and DFT force RMSE by 20% (25% on backbone atoms) and improves lowest-energy conformer recovery relative to the original AIMNet2. It retains the conformational-energy accuracy of the original model on the nonmacrocyclic drug-like molecules of CONFORGE and also improves accuracy on the structurally distinct macrocycles of MPCONF196, although this smaller improvement is not statistically significant. Among the ten training strategies compared, only continual training on the combined corpus (AIMNet2-macro) achieves this improvement without degrading small-molecule accuracy. AIMNet2-macro is therefore the best balanced, though not the most accurate, of the models tested. As an independent case study, AIMNet2-macro reproduces DFT conformational energies of six cyclosporine A conformers with an RMSE of 0.78 kcal mol–1 and the correct rank ordering, the lowest error among the MLIPs and semiempirical methods evaluated on this system. The continual training strategy has been adopted in the AIMNet2 (2025) release, which unifies small-molecule, macrocyclic, and intermolecular-interaction treatment in a single production potential.",
+      "summary_zh": "【金融经济学】摘要  \n大环肽是目前最具前景的治疗手段之一，然而目前尚不存在一种通用的机器学习原子间势能（MLIP）方法能够系统地用于其构象分析。研究表明，在MPCONF196大环肽基准测试中，尽管AIMNet2模型训练数据中完全不含大环肽，但由四个模型组成的AIMNet2集成模型的性能仍优于MACE-OFF23(S)模型。单个AIMNet2模型的计算速度比MACE-OFF23模型快3至5倍，且所需GPU内存仅为后者的1/5至1/63（在默认的float64精度下）。尽管如此，该集成模型的计算速度与MACE-OFF23模型相当，但在float32精度下仍具有3至32倍的内存优势。相比之下，更大的MACE-OFF23(M)和MACE-OFF23(L)模型在准确性方面表现更优。为缩小这一差距，我们提出了一种持续训练策略：该策略仅需为不到25,000个特定结构构象生成新的量子化学标签（占训练数据总量的0.13%以下），同时仍能保持对非大环分子的构象能量预测的准确性。在包含未见过的CREMP大环肽的独立测试数据集上，改进后的AIMNet2-macro模型将构象能量预测的均方根误差（RMSE）降低了25...。",
       "topics": [
+        "Conformational isomerism",
         "Computer science",
-        "Transformer",
-        "Artificial intelligence",
-        "Language model",
-        "Generative grammar"
+        "Metastability",
+        "Training set",
+        "Intermolecular force"
       ],
       "source": "openalex"
     },
     {
-      "title": "EMSA-YOLO: An Enhanced Multiscale Attention Model for Pavement Defect Detection",
+      "title": "How does the institutional framework affect bank financing in the private sector? Empirical evidence from West African economic and monetary union",
       "authors": [
-        "Qin Ye",
-        "Shuwan Pan",
-        "Haikun Chen",
-        "Yuanda Lin",
-        "Lixin Zheng"
+        "Clémence Mianseli Ouali",
+        "Windinkonté Séogo"
       ],
-      "venue": "Journal of Transportation Engineering Part B Pavements",
-      "published_date": "2026-11-04",
-      "doi_url": "https://doi.org/10.1061/jpeodx.pveng-1970",
-      "openalex_url": "https://openalex.org/W7225146777",
+      "venue": "Journal of Economic Studies",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.1108/jes-01-2026-0071",
+      "openalex_url": "https://openalex.org/W7225223670",
       "cited_by_count": 0,
-      "abstract": "Abstract\n                  Accurate and efficient identification of pavement defects is crucial for reducing traffic accident rates and ensuring the safety of road users’ lives and property. To effectively address the multiscale issue in pavement defect detection and significantly improve the detection accuracy of pavement defects, this study takes the YOLOv8 model as the basic framework. A new detection model is designed through targeted improvements, which is named Enhanced Multiscale Attention-YOLO (EMSA-YOLO), which integrates multiscale attention mechanisms with large-target feature extraction capabilities. Firstly, to enhance the extraction of defect features across multiple spatial scales, the EMSA module is designed to expand the receptive field and incorporate multiscale contextual information through the application of a learned weight matrix. Secondly, DySample is employed to optimize the upsampling process in the neck network, yielding clearer fused feature images and enhancing the detection accuracy of small-sized potholes. Finally, we add a new P6 large target detection layer to expand the receptive field and capture multiscale features, which enables the model to capture deeper semantic features and improve the detection of longitudinal and transverse cracks. Experimental results on the RDD2022 dataset demonstrate that the EMSA-YOLO achieves 84.1% mAP@50 and 57.5% mAP@50-95, outperforming the baseline by 2.1% and 1.7%, respectively. Significant accuracy improvements are observed in three critical defect categories: transverse crack with a 2.4% increase, alligator crack with a 4.8% increase, and potholes with a 1.4% increase compared to the baseline performance.",
-      "summary_zh": "【金融经济学】摘要  \n准确高效地识别路面缺陷对于降低交通事故发生率、保障道路使用者的生命和财产安全至关重要。为有效解决路面缺陷检测中的多尺度问题并显著提升检测精度，本研究以YOLOv8模型为基础框架，通过针对性改进设计了一种新的检测模型——增强型多尺度注意力-YOLO（EMSA-YOLO）。该模型融合了多尺度注意力机制与大规模目标特征提取能力。首先，通过引入EMSA模块扩展感受野并运用学习得到的权重矩阵整合多尺度上下文信息，从而增强不同空间尺度下缺陷特征的提取能力；其次，采用DySample技术优化颈部网络中的上采样过程，获得更清晰的融合特征图像，进而提高对小型坑洞的检测精度；最后，新增P6大规模目标检测层以扩大感受野并捕捉多尺度特征，使模型能够捕捉更深层次的语义信息，提升对纵向和横向裂缝的检测效果。在RDD2022数据集上的实验结果表明，EMSA-YOLO的mAP@50指标达到84.1%，mAP@50-95指标达到57.5%，分别比基线模型提高了2.1%和1.7%。在三种关键缺陷类别上，检测精度均有显著提升：横向裂缝的检测精度提高了2.4%，鳄鱼裂缝提高了4.8%，坑洞提高了1.4%。。研究方法：实验方法。",
+      "abstract": "Purpose\n                    This study analyzes how the institutional framework affects bank financing in the private sector of the West African Economic and Monetary Union (WAEMU).\n                  \n                  \n                    Design/methodology/approach\n                    The analysis is based on a panel of 68 banks in 7 countries of the union, over the period 2000–2022. The dynamic method cross-sectional autoregressive distributed lag (CS-ARDL) is used to assess the combined effect of prudential standards of the Central Bank of West African States (BCEAO) and World Bank governance on bank financing of the private sector.\n                  \n                  \n                    Findings\n                    The results show that the institutional framework influences private-sector bank lending primarily through prudential regulation. The transformation ratio exhibits the most stable and significant association across all specifications, reflecting banks' ability to convert short-term funds into long-term financing. The solvency ratio is also positively and significantly associated with credit, consistent with the bank capital channel. The liquidity ratio becomes significant only when governance and prudential standards are considered jointly. Bank deposits and financial depth are also positively associated with credit. Governance shows no significant direct association with credit, although indirect, delayed or conditional effects cannot be ruled out.\n                  \n                  \n                    Research limitations/implications\n                    One limitation of this study is that it does not explicitly account for banks' trade-offs between financing the private sector and holding government securities. This issue is important for the analysis of bank financing in the WAEMU, as the literature suggests that increased exposure to sovereign securities may be associated with reduced credit availability to the private sector, with some studies identifying a threshold beyond which this relationship becomes adverse. Future research could incorporate data on banks' exposure to government securities to examine how the institutional framework and prudential standards are associated with the allocation of resources between these two asset classes.\n                  \n                  \n                    Practical implications\n                    Three implications follow directly from the results. Regarding bank capitalization, the BCEAO should maintain a gradual and predictable path for tightening prudential requirements, allowing banks to adjust their credit policies without abrupt contraction. Regarding liquidity, since its effect is only identifiable when the institutional framework is considered as a whole, liquidity supervision would benefit from being coordinated with the monitoring of other prudential dimensions rather than treated in isolation; authorities could explore mechanisms that incentivize banks to channel a larger share of their excess liquidity toward financing the private sector. Finally, policies promoting longer maturities for bank funding would serve as a direct lever for supporting private-sector credit.\n                  \n                  \n                    Social implications\n                    From a societal perspective, improving the flow of credit to small and medium enterprises (SMEs) and the informal sector, which together account for more than 80% of employment in the WAEMU, would foster productive investment, job creation and financial inclusion. The prudential channels highlighted in this study, particularly capitalization and resource transformation, thus appear to be relevant levers for supporting this dynamic, even though the present analysis does not allow for a direct measurement of their impact on end beneficiaries. These findings are particularly significant in a context where these sectors account for the majority of regional employment.\n                  \n                  \n                    Originality/value\n                    While existing studies on the WAEMU rarely examine either governance or prudential regulation within the same econometric specification, this study contributes by jointly integrating these two dimensions of the institutional framework without aggregating them into a single composite indicator at the individual bank level. It thus provides new empirical insights into how institutional quality translates into bank financing of the private sector in a regional context where these two dimensions remain understudied in combination.",
+      "summary_zh": "【银行与信贷】**研究目的**  \n本研究旨在分析制度框架如何影响西非经济货币联盟（WAEMU）私营部门的银行融资情况。  \n\n**研究设计/方法**  \n分析基于该联盟7个国家中68家银行的样本数据，时间跨度为2000年至2022年。研究采用了动态横截面自回归分布滞后模型（CS-ARDL），以评估西非国家中央银行（BCEAO）的审慎监管标准与世界银行治理机制对私营部门银行融资的综合影响。  \n\n**研究结果**  \n研究结果表明，制度框架主要通过审慎监管机制影响私营部门的银行贷款。其中，“转换比率”在所有模型设定中均表现出最稳定且显著的关联，反映了银行将短期资金转化为长期融资的能力；“偿付能力比率”也与信贷呈正相关关系，这与银行资本渠道的理论一致。只有当同时考虑治理机制和审慎监管标准时，“流动性比率”才显示出显著相关性。此外，银行存款和金融市场的深度也与信贷存在正相关关系。尽管治理机制与信贷之间没有直接的显著关联，但也不能排除其间接、滞后或条件性的影响。  \n\n**研究局限性与启示**  \n本研究的局限性在于未明确考虑银行在为私营部门提供融资与持有政府债券之间的权衡。这一问题对于分析WAEM...。研究方法：横截面分析。",
       "topics": [
-        "Upsampling",
-        "Computer science",
-        "Feature extraction",
-        "Feature (linguistics)",
-        "Artificial intelligence"
+        "Financial system",
+        "Corporate governance",
+        "Economics",
+        "Market liquidity",
+        "Private sector"
       ],
       "source": "openalex"
     },
     {
-      "title": "Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure",
+      "title": "Cross-Border Ownership and Input Access: Evidence from the Lithium Supply Chain",
       "authors": [
-        "Siyi Yu"
+        "Kei Irizawa"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-04",
+      "published_date": "2026-11-05",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.06888v1",
+      "openalex_url": "http://arxiv.org/abs/2611.08430v1",
       "cited_by_count": 0,
-      "abstract": "Automation is often justified as relief from dull, dirty, and dangerous work. I examine how these conditions relate to occupational AI exposure using 21 O*NET items across 754 US occupations. Higher exposure is associated with lower condition scores under a large language model (LLM) measure and AI Occupational Exposure (AIOE), with equal occupation weights and employment weights. Adjustment for physical demands, required education, training and experience, and wages reduces the composite association. The adjusted confidence intervals include zero for LLM exposure and remain below zero for AIOE. Separating repetition from restricted discretion also changes what the combined Dull score conveys. These comparisons show how item groupings and occupational characteristics shape the interpretation of exposure estimates. Occupational profiles offer a starting point for selecting contrasting research settings. Establishing desired automation or realized relief requires evidence about workers' preferences and specific interventions.",
-      "summary_zh": "【金融经济学】自动化常被视为一种解脱，能够让人们摆脱枯燥、肮脏且危险的工作。本文通过分析754种美国职业中21项O*NET职业分类标准（O*NET items），探讨了这些工作条件与职业人工智能（AI）暴露程度之间的关系。研究发现，在使用大型语言模型（LLM）和人工智能职业暴露度（AIOE）进行评估时，职业人工智能暴露程度较高的职业，其工作条件评分较低（评估时均考虑了职业权重和就业权重）。在调整了工作体力要求、所需教育水平、培训经历以及工资等因素后，这种关联程度有所减弱；调整后的置信区间显示，对于人工智能暴露而言，其关联系数可能为零，而对于人工智能职业暴露度而言，该系数仍低于零。此外，将重复性劳动与自主决策受限的因素区分开来，也会改变综合评估结果的含义。这些比较结果表明，职业分类标准的划分方式及职业特征会直接影响对人工智能暴露程度的解读。职业特征为选择不同的研究对象提供了参考依据。要确定自动化带来的预期效益或实际缓解效果，需要掌握有关工人偏好及具体干预措施的相关证据。。研究方法：大语言模型。",
+      "abstract": "How does cross-border ownership shape the lithium supply chain? Using global data on mines and refineries, I estimate a model in which ownership can lower refiners' effective ore costs, encourage mines to restrict spot sales, and soften competition. To study these effects, I examine policies motivated by national security concerns about reliable access to critical mineral inputs: divestiture of Chinese stakes in overseas producers and a ban on ore exports to China. Divestiture increases spot ore supply but leaves lithium output nearly unchanged, while continued trade preserves Chinese access to ore. The export ban reduces global lithium supply because refining capacity elsewhere cannot fully replace lost Chinese production. Ownership transfers do not reserve ore for domestic production; restricting Chinese access imposes a substantial supply cost at existing capacities.",
+      "summary_zh": "【金融经济学】跨境所有权如何影响锂供应链的运作？通过分析全球范围内的矿山和精炼厂数据，我建立了一个模型，该模型表明：所有权结构可以降低精炼企业的矿石采购成本，促使矿山限制现货销售，并减弱市场竞争。为研究这些影响，我重点考察了出于国家安全考虑而实施的相关政策，例如中国减持海外生产商的股份以及禁止向中国出口矿石。虽然中国减持海外生产商的股份会增加现货矿石供应，但锂产品的总产量基本保持不变；而继续允许矿石出口则能保障中国对矿石的获取。然而，出口禁令会减少全球锂供应，因为其他地区的精炼产能无法完全弥补中国产能的缺失。此外，所有权结构的调整并不会专门为国内生产预留矿石资源；限制中国获取矿石的行为实际上会在现有产能条件下增加显著的供应成本。。",
       "topics": [
         "Economics",
         "Finance"
@@ -73,18 +70,19 @@
       "source": "arxiv"
     },
     {
-      "title": "Regression with Many Generated Controls",
+      "title": "Patch Attention Wisely: Understanding Patch Length in Attention-Based Forecasting",
       "authors": [
-        "Timothy Christensen",
-        "Daniel Vebman"
+        "Junyu Chen",
+        "Likai Chen",
+        "Weining Wang"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-04",
+      "published_date": "2026-11-05",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.06855v1",
+      "openalex_url": "http://arxiv.org/abs/2611.08160v1",
       "cited_by_count": 0,
-      "abstract": "We consider linear regression when some covariates are endogenous, a variable sufficient to control for endogeneity exists but is latent, and the practitioner can generate many proxies for the latent control. For instance, one could cheaply but imperfectly impute the latent control using different AI/ML methods, each generating a different proxy. There are several options the practitioner might consider in this scenario: including all proxies or factors computed from the proxies as controls, instrumental variables estimation, and some nonlinear variants thereof. We use a transparent model to derive the implicit estimand each approach targets, determine when these estimands recover the parameter of interest, and provide some practical recommendations. We show that with a sufficiently rich set of generated controls, practitioners can consistently estimate the parameter of interest without relying on validation data.",
-      "summary_zh": "【金融经济学】我们研究了在某些协变量为内生变量、存在能够控制内生性的变量但该变量是潜在的、且研究者能够为该潜在控制变量生成多个替代指标时的线性回归问题。例如，可以使用不同的人工智能/机器学习方法来低成本但并不完美地估计该潜在控制变量，每种方法都会生成一个不同的替代指标。在这种情况下，研究者可以考虑几种方法：将所有替代指标或从这些替代指标计算出的因素都作为控制变量纳入模型；使用工具变量进行估计；或者采用一些非线性估计方法。我们通过一个透明的模型来明确每种方法所针对的隐含估计量，确定这些估计量何时能够准确反映感兴趣的参数，并提出一些实际建议。研究表明，只要生成的替代指标足够丰富，研究者就可以在不依赖验证数据的情况下一致地估计出感兴趣的参数。。研究方法：工具变量、回归分析。",
+      "abstract": "Attention-based time series forecasters commonly group consecutive observations into patches. Patch length is known to have a substantial impact on forecasting performance, yet its selection remains largely empirical. We develop a theoretical framework that explains why patch length matters for forecasting accuracy and provides a principled basis for its selection. For linear state-space models, we derive an exact factorization of the forecasting coefficient matrix that separates forecast dynamics from filtering dynamics. We show that dominance of a single forecast component at long horizons does not generally imply a rank-one representation. This explains why longer horizons alone need not reduce representational complexity. We combine the factorization with estimation bounds to develop a patch-selection criterion that balances representation and estimation errors under temporal dependence. Our analysis establishes conditions under which balanced patching is justified and clarifies how predictive structure, head count, training sample size, and long-run dependence enter the selection criterion.",
+      "summary_zh": "【金融经济学】基于注意力机制的时间序列预测器通常会将连续的观测值分组为若干“数据块”（即“patch”）。已知数据块的长度对预测性能有显著影响，但其选择方式在很大程度上仍依赖于经验判断。我们构建了一个理论框架，解释了数据块长度为何对预测准确性至关重要，并为数据块长度的选择提供了理论依据。对于线性状态空间模型，我们推导出了预测系数矩阵的精确分解方法，该方法能够将预测动态与滤波动态区分开来。研究表明，在较长的预测时段内，某个预测成分占据主导地位并不意味着该预测成分的矩阵秩一定为1；这解释了为何仅延长预测时段并不一定会增加模型的表示复杂性。我们将这种分解方法与估计误差界限相结合，提出了一种数据块选择标准，该标准能够在时间依赖性条件下平衡模型的表示复杂性和估计误差。我们的分析明确了在何种条件下采用这种平衡的数据块划分方法是合理的，并阐明了预测结构、数据块数量、训练样本规模以及长期依赖性等因素如何影响数据块的选择过程。。研究方法：时间序列。",
       "topics": [
         "Economics",
         "Finance"
@@ -92,157 +90,170 @@
       "source": "arxiv"
     },
     {
-      "title": "Formal divergence and legal relation preservation in Hong Kong judgment translation",
+      "title": "GREEN FINANCE AND SME INCLUSION IN ZIMBABWE: EVIDENCE FROM THE MANUFACTURING SECTOR IN BINDURA",
       "authors": [
-        "Jingjing Wu",
-        "Wanying Wei",
-        "Qianqian Wu"
+        "F. Sithole",
+        "Talent Kondo"
       ],
-      "venue": "International Journal of Legal Discourse",
-      "published_date": "2026-11-04",
-      "doi_url": "https://doi.org/10.1515/ijld-2026-3012",
-      "openalex_url": "https://openalex.org/W7225149814",
+      "venue": "Economics",
+      "published_date": "2026-11-01",
+      "doi_url": "https://doi.org/10.65957/article.19",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295494589",
       "cited_by_count": 0,
-      "abstract": "Abstract\n                  Legal English secures precision through dense qualificational syntax, and the evaluation of machine-translated legal texts often reads lower structural complexity as weaker legal precision. Whether formal simplification actually entails the loss of legally relevant relations has rarely been tested. This study examines the question in 57 Chinese-language Hong Kong judgments, comparing their official English translations with DeepSeek-V3.2 and ChatGPT output generated under a minimal prompt. Relative to the official translations, both model translations are shorter, lexically denser and markedly lower in subordination and complex nominal density. Their higher all-word lexical diversity lies in function words and has no counterpart in content words. A prespecified relation-level analysis then traced 192 source instances of qualification and scope marking into all three versions. Each version preserved the traced relations in over 97 % of its evaluable renderings, 98.06 % when the three versions are pooled. Of the eleven shifts, two occur in the official translations, five in DeepSeek and four in ChatGPT. The judgments with the greatest complex nominal divergence showed no larger model excess of shifts. The shifts that altered the reading of a judgment included changes in quantifier force, party coverage, attribution and restrictive scope, and the aggregate profile did not identify where they occurred. The findings separate formal simplification from relational loss. Legal precision in translated judgments is better evaluated through relational fidelity than through structural density, while corpus profiles remain appropriate for describing how production conditions package legal meaning.",
-      "summary_zh": "【金融经济学】摘要  \n法律英语通过严谨的限定性句法结构确保语言的精确性；然而，对机器翻译的法律文本进行评估时，人们常认为其结构复杂性较低意味着法律精确性也较差。正式简化是否真的会导致法律相关意义的丧失，这一问题迄今鲜有研究。本研究以57份中文香港判决书为例，将其官方英文译本与DeepSeek-V3.2及ChatGPT在简单提示下生成的译本进行对比分析。与官方译本相比，这两种机器生成的译本在长度上更短、词汇使用更为密集，但从从句结构及复杂名词的使用来看精确性明显较低。尽管机器译本在总词汇多样性上更高（尤其是功能词方面），但在实义词层面并未表现出类似优势。随后，研究者对源文本中192处限定关系与范围标记进行了追踪分析，发现所有三个译本在超过97%的译文中均准确保留了这些关系（当三个译本合并分析时，这一比例上升至98.06%）。在所有11处语言变化中，2处出现在官方译本中，5处出现在DeepSeek译本中，4处出现在ChatGPT译本中。那些在复杂名词使用上差异最大的判决书，并未显示出机器译本在语言变化上的显著优势。这些语言变化主要体现在量词的意义强度、当事人涵盖范围、归属关系的表述以及限定范围的...。",
+      "abstract": "Green finance is increasingly recognized as a central instrument for advancing climate mitigation and sustainable development, yet its distributive effects remain poorly understood in developing economies where small and medium enterprises (SMEs) dominate industrial activity. This study examines access to green finance among manufacturing SMEs in Bindura, Zimbabwe, identifying the structural determinants of inclusion and the institutional mechanisms driving exclusion. A mixed-methods approach is employed, combining quantitative survey data from 36 manufacturing firms analyzed through binary logistic regression with qualitative evidence from key informant interviews with financial institutions and policy actors. The results reveal that green finance access is highly selective: firm size, collateral availability, and awareness are significant positive predictors of access, while smaller and asset-constrained firms are systematically excluded. Green finance is predominantly delivered through conventional asset-based lending models underpinned by risk perceptions that disadvantage SMEs, reinforcing credit rationing and information asymmetry. These findings challenge the assumption that green finance is inherently inclusive and suggest that current frameworks risk entrenching a dual transition in which only better-positioned firms participate. Policy reforms should prioritize risk-sharing mechanisms, SME-adapted financial instruments, and targeted information dissemination to ensure a more equitable and effective green transition.",
+      "summary_zh": "【绿色金融与可持续发展】绿色金融日益被视为推动气候缓解和可持续发展的关键工具，然而在以中小企业（SMEs）为主导工业活动的发展中经济体中，其分配效应仍不甚明了。本研究考察了津巴布韦宾杜拉地区制造业中小企业获取绿色金融的情况，分析了影响其参与程度的结构性因素以及导致其被排斥的制度机制。研究采用了混合方法，结合了36家制造业企业的定量调查数据（通过二元逻辑回归进行分析）以及来自金融机构和政策制定者的关键信息提供者的定性访谈结果。研究结果表明，绿色金融的获取具有高度选择性：企业规模、抵押品可用性以及企业的风险意识是影响其能否获得绿色金融的重要正向因素，而规模较小、资产受限的企业则系统性地被排除在绿色金融体系之外。绿色金融主要通过传统的基于资产的贷款模式提供，但这些模式所依据的风险评估方式对中小企业不利，从而加剧了信贷配给和信息不对称问题。这些发现质疑了绿色金融本质上具有包容性的观点，并表明现有框架有可能导致一种“双重转型”现象——只有那些处于有利地位的企业才能参与绿色金融。政策改革应优先考虑风险分担机制、适合中小企业的金融工具以及有针对性的信息传播，以确保绿色转型的公平性和有效性。。研究方法：回归分析、调查数据。",
       "topics": [
-        "Divergence (linguistics)",
-        "Linguistics",
-        "Subordination (linguistics)",
-        "Function (biology)",
-        "Relation (database)"
+        "Environmental Science",
+        "Economics",
+        "Business"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Dividend Growth Model and Capital Asset Pricing Model (CAPM) in an Introductory Finance Course",
+      "authors": [
+        "Chanwit Phengpis"
+      ],
+      "venue": "Journal of Applied Business and Economics",
+      "published_date": "2026-10-30",
+      "doi_url": "https://doi.org/10.33423/dbtxgy05",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295433211",
+      "cited_by_count": 0,
+      "abstract": "The dividend growth model and Capital Asset Pricing Model (CAPM) are typically covered in an introductory finance course at an undergraduate level. In this paper, I show that an instructor can enhance students’ learning and stimulate their interest in these models and related concepts by incorporating a real-world example of stock valuation into teaching the course. The example should be appropriate for this introductory course in that it enables students to learn real-world finance, while not overwhelming them with the process that is too complicated. I use a timely example of Kenvue, Inc. which is a consumer health company and formerly the Consumer Healthcare division of Johnson & Johnson. Kenvue was spun off in November 2021 and first traded under the stock ticker KVUE in May 2023. Despite the insufficiency of direct stock price data, I demonstrate step-by-step how students can practically obtain other related data and information mostly from the internet and apply the dividend growth model and CAPM formulae along with Excel Spreadsheets to find a fair value Kenvue stock. Students can replicate the process for valuation of other dividend paying stocks as well.",
+      "summary_zh": "【资产定价】股息增长模型和资本资产定价模型（CAPM）通常是本科金融入门课程中的核心内容。在本文中，我提出了一种教学方法：通过将股票估值的实际案例融入课程教学，可以提升学生的学习效果，并激发他们对这些模型及相关概念的兴趣。所选案例应适合入门课程的特点，既能让学生了解真实的金融运作情况，又不会因过程过于复杂而令他们感到困惑。我以Kenvue公司为例进行讲解——这是一家专注于消费者健康领域的公司，曾隶属于强生公司的消费者医疗保健部门。Kenvue公司于2021年11月从强生集团分拆出来，并于2023年5月首次在股市上市，股票代码为KVUE。尽管直接获取该公司股价的数据较为困难，但我详细展示了学生如何通过互联网获取其他相关数据与信息，然后运用股息增长模型和CAPM公式，结合Excel电子表格来计算Kenvue股票的合理价值。学生也可以将这一方法应用于其他派息股票的估值过程中。。",
+      "topics": [
+        "Business",
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Constrained risk rationalization: how economically vulnerable consumers justify counterfeit purchases in Colombia’s informal markets",
+      "authors": [
+        "Mark Scott Rosenbaum",
+        "Diana C. Arcila Perdomo",
+        "Oscar Naranjo Del Giudice"
+      ],
+      "venue": "International Journal of Emerging Markets",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.1108/ijoem-10-2025-2442",
+      "openalex_url": "https://openalex.org/W7225227815",
+      "cited_by_count": 0,
+      "abstract": "Purpose\n                    This study explores how economically constrained mothers rationalize risky purchases of counterfeit household goods in informal markets, extending attention beyond luxury counterfeits and treating caregiving responsibility as a central analytic concern.\n                  \n                  \n                    Design/methodology/approach\n                    Using grounded theory, the study analyzes 45 intercept interviews with low-income mothers shopping in two San Andresito markets in Bogotá, Colombia. Analysis used open coding, constant comparison and selective coding, with saturation tracked through a code-emergence log.\n                  \n                  \n                    Findings\n                    Mothers rationalize counterfeit purchases through Constrained Risk Rationalization (CRR): economic necessity, social normalization, trust-based mitigation and psychological trade-offs. Together, these mechanisms may help make counterfeit buying a practical, morally defensible response to household need.\n                  \n                  \n                    Research limitations/implications\n                    This first-stage qualitative study is bounded to brief interviews with one participant group in one market system. Future research should test CRR through ethnographic and mixed-method designs.\n                  \n                  \n                    Practical implications\n                    Risk warnings may be less effective when consumers already know the risks but perceive few alternatives. Responses may be more effective if they focus on affordability, community trust and safer local options.\n                  \n                  \n                    Social implications\n                    Counterfeit purchasing in informal markets is tied to poverty, exclusion and provisioning pressures; reducing it may require addressing these conditions, not enforcement or deterrence alone.\n                  \n                  \n                    Originality/value\n                    The paper extends counterfeit consumption research beyond luxury goods, offering a process-based account of how necessity, norms, trust and coping may operate together, and brings gendered caregiving responsibility into counterfeit consumption research in emerging markets.",
+      "summary_zh": "【风险管理与衍生品】**研究目的**  \n本研究探讨了经济条件受限的母亲如何在非正规市场中理性地选择购买假冒家居用品。研究不仅关注奢侈品假冒问题，还将育儿责任作为核心分析焦点。  \n\n**研究设计/方法**  \n采用扎根理论方法，对在哥伦比亚波哥大两个San Andresito市场购物的45位低收入母亲进行了深入访谈。数据分析过程中运用了开放式编码、持续比较法和选择性编码技术，并通过编码记录来监控分析的饱和度。  \n\n**研究结果**  \n母亲们通过“受限风险理性化”（Constrained Risk Rationalization, CRR）机制来解释其购买假冒产品的行为：这些机制包括经济必要性、社会常态化的认知、基于信任的风险缓解方式以及心理上的权衡。综合来看，这些因素可能使购买假冒产品成为满足家庭需求的实际且道德上可接受的应对方式。  \n\n**研究局限性与启示**  \n作为初步的定性研究，本研究仅基于对一个市场系统中某一参与者群体的访谈数据。未来的研究应通过民族志调查和混合方法来进一步验证“受限风险理性化”理论。  \n\n**实践意义**  \n当消费者已经了解相关风险但缺乏其他选择时，风险警示可...。",
+      "topics": [
+        "Counterfeit",
+        "Business",
+        "Purchasing",
+        "Qualitative research",
+        "Grounded theory"
       ],
       "source": "openalex"
     },
     {
-      "title": "Stability and Perfection in Constrained Weighted Network Games",
+      "title": "Beyond institutional compatibility: a typological analysis of collective skill formation system transplantation",
       "authors": [
-        "Julien Fixary",
-        "Rémi Castera",
-        "Rida Laraki"
+        "Kenan Hai",
+        "Tiancheng He"
       ],
-      "venue": "arXiv",
-      "published_date": "2026-11-04",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.06775v1",
+      "venue": "Asian Review of Political Economy",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.1007/s44216-026-00093-9",
+      "openalex_url": "https://openalex.org/W7225228702",
       "cited_by_count": 0,
-      "abstract": "We introduce a general framework of constrained weighted network formation in which agents allocate resources across coalitional interactions while facing feasibility constraints. More precisely, we allow arbitrary coalitions of agents to be assigned a continuous weight, and we incorporate both coalitional capacity constraints and individual budget constraints into the model. This framework extends the weighted network formation model of Bich and Morhaim by combining continuous interaction intensities with endogenous feasibility restrictions. Within this setting, we introduce a new notion of stability -- called coalitionwise stability -- extending pairwise stability to constrained network games. Under standard continuity and componentwise quasiconcavity assumptions on payoff functions, we establish the existence of coalitionwise stable networks. We then investigate refinements of stability inspired by the notion of perfect equilibrium introduced by Selten, and by the notion of perfect pairwise stability developed by Bich and Teteryatnikova for network games. The presence of feasibility constraints fundamentally alters the geometry of the feasible set, which no longer possesses a product structure. As a consequence, trembling-hand type refinements become substantially more delicate, since perturbations of some interactions may render other interactions infeasible. Nevertheless, we introduce constrained analogues of both the trembling-hand and perturbative notions of perfect stability considered by Bich and Teteryatnikova, and study their existence and their relationship. In particular, we show the equivalence between these trembling-hand and perturbative formulations under some componentwise monotonicity assumption.",
-      "summary_zh": "【金融经济学】我们提出了一个受限加权网络形成的通用框架，在该框架中，代理在面临可行性约束的情况下，通过联盟互动来分配资源。更具体地说，我们允许为任意代理联盟分配一个连续的权重，并将联盟容量约束和个体预算约束纳入模型中。这一框架通过结合连续的互动强度与内生的可行性限制，扩展了Bich和Morhaim提出的加权网络形成模型。在此框架下，我们引入了一个新的稳定性概念——称为“联盟稳定性”，它将成对稳定性扩展到了受限网络博弈中。在收益函数满足标准连续性和逐组分拟凹性假设的前提下，我们证明了联盟稳定网络的存在性。随后，我们借鉴了Selten提出的完美均衡概念以及Bich和Teteryatnikova为网络博弈开发的完美成对稳定性概念，对稳定性进行了进一步研究。可行性约束的存在从根本上改变了可行集的几何结构，使得可行集不再具有乘积结构。因此，类似于“颤抖手”（trembling-hand）类型的稳定性改进变得更为复杂，因为某些互动的微小扰动可能导致其他互动变得不可行。尽管如此，我们仍然提出了受限条件下的“颤抖手”稳定性改进以及Bich和Teteryatnikova提出的完美稳定性改进的类似概念，并研究了它...。研究方法：均衡模型。",
+      "abstract": "Abstract\n                  Governments around the world face an urgent challenge: rapidly upskilling their workforces. A skilled workforce is essential to sustaining economic growth and competitiveness in an increasingly complex global market. The German Dual System, characterised by the integration of firm-based training and public vocational schooling, is a prominent model for skill formation globally. However, outcomes of its transnational transplantation vary significantly, ranging from successful adoptions and hybrid systems to outright failures. This article clarifies the different approaches to the transplantation of collective skill formation systems at the conceptual level. It has developed a theoretical framework that integrates actor-network theory, institutional complementarity, and historical institutionalism. Using a typological approach, four ideal types of transplantation were theoretically determined based on the interaction among the actor's ability, willingness, and institutional compatibility. The core viewpoint of this article points out that in a host country with a coordinated market economy, successful transplantation is not automatic. On the contrary, it depends on complex alliances of multi-participant coalitions with sufficient power and motivation, as well as a friendly institutional environment characterized by strong complementarity and weak constraints of historical heritage. This article emphasizes that transplanting complex systems, such as CSFS, is a highly negotiated political process, while simplistic institutional borrowing often neglects the fundamental structure and historical prerequisites for success.",
+      "summary_zh": "【金融经济学】摘要  \n世界各国政府都面临着一个紧迫的挑战：迅速提升劳动力的技能水平。在日益复杂的全球市场中，拥有高素质的劳动力对于维持经济增长和竞争力至关重要。德国的“双元制”教育体系（即企业培训与公立职业学校相结合的模式）是全球范围内技能培养的典范。然而，该体系在跨国推广过程中的效果差异显著，既有成功实施的案例，也有失败的例子。本文从概念层面分析了各国在推广集体技能培养体系时所采取的不同路径，并构建了一个整合了“行动者网络理论”、“制度互补性”及“历史制度主义”观点的理论框架。通过类型学方法，基于行动者的能力、意愿以及制度间的兼容性，本文理论界定了四种不同的推广模式。文章的核心观点是：在市场经济体系较为完善的东道国中，体系的成功推广并非自然而然的结果，而是依赖于多方参与者组成的联盟所形成的复杂合作关系——这些联盟需要具备足够的权力和动力，同时还需要一个具有较强制度互补性且历史束缚较少的友好环境。文章强调，像“双元制”这样的复杂体系移植本质上是一个高度协商的政治过程；而简单的制度借鉴往往忽视了实现成功所需的基本结构和历史前提条件。。",
       "topics": [
-        "Economics",
-        "Finance"
+        "Complementarity (molecular biology)",
+        "Transplantation",
+        "Economic system",
+        "Conceptual framework",
+        "Face (sociological concept)"
       ],
-      "source": "arxiv"
+      "source": "openalex"
     },
     {
-      "title": "You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems",
+      "title": "Investigating the efficiency of rural industrial integration development in China: based on the undesirable super-efficiency SBM-Malmquist model",
       "authors": [
-        "Zihan Chen",
-        "Lei Nico Zheng",
-        "Di Zhu"
+        "Zenan Sun",
+        "Mo Chen"
       ],
-      "venue": "arXiv",
-      "published_date": "2026-11-04",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.06696v1",
+      "venue": "Frontiers in Sustainable Food Systems",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.3389/fsufs.2026.1894351",
+      "openalex_url": "https://openalex.org/W7225230861",
       "cited_by_count": 0,
-      "abstract": "Recommender systems usually learn what people want from what they have done. Platforms could also ask people directly, but asking is costly: 98.8% of the prompts in our data went unanswered. Theories of statistical prediction imply that a person's own forecast adds little to a recommender algorithm built from many people's behavior. Theories of dispersed knowledge imply that people hold information about their own taste that the data lack. We test the two with the MovieLens Beliefs dataset. In 2023-2024, a homepage prompt asked members how they expected to rate movies they said they had not seen. Of 26,020 such expectations, 551 from 277 members were followed by a rating at least a day later. We compare each expectation with four benchmarks: the platform's own predicted rating, two collaborative-filtering models (matrix factorization and an item neighborhood), and a stack trained on other members' outcomes. The trained models use each member's latest ratings. People predict their own ratings more accurately than all four benchmarks (correlation 0.69, against 0.34 for MovieLens and 0.54 to 0.59 for the trained recommenders). Added to all the machine forecasts and features, the expectation lowers out-of-sample mean squared error by 26%. The gain holds when models are trained on earlier expectations and tested on later ones. A member's earlier expectations about other movies do not replace the current one. In ordering a member's own movies, the trained recommenders are statistically indistinguishable from the person. On old, heavily rated movies, the machines do as well or better. The results reconcile the two theories: the crowd's data suffice where they are rich, and the person adds information about the specific item. We derive four design principles for preference elicitation and recommender evaluation.",
-      "summary_zh": "【金融经济学】推荐系统通常通过分析用户的历史行为来预测他们的兴趣。虽然平台也可以直接询问用户的需求，但这种方式成本较高——在我们的数据中，98.8%的询问都未得到回应。统计预测理论认为，单个用户的预测对基于多人行为构建的推荐算法的辅助作用有限；而分散知识理论则指出，用户掌握着数据中缺失的关于自身偏好的信息。我们使用MovieLens Beliefs数据集对这两种观点进行了验证。在2023-2024年期间，网站主页向用户询问了他们对未观看电影的预期评分。在收到的26,020条预期评分中，仅有277名用户的551条评分在一天后得到了实际验证。我们将这些预期评分与四种基准结果进行了比较：平台自身的预测评分、两种协同过滤模型（矩阵分解和项目邻域模型），以及基于其他用户评分结果训练的推荐模型。这些推荐模型均使用了用户的最新评分数据。实验结果显示，用户对自己电影的评分预测准确度高于所有四种基准方法（用户预测与实际评分的相关性为0.69，而MovieLens模型的相关性为0.34，基于用户历史行为的推荐模型的相关性为0.54至0.59）。将用户的预期评分纳入机器预测结果后，模型的样本外均方误差降低了26%。...。",
+      "abstract": "Promoting rural industrial integration development (RIID) to boost farmers’ income is a core strategy for rural revitalization and common prosperity. A reasonable and objective evaluation of RIID efficiency that jointly accounts for farmers’ income growth and the food-security and environmental constraints entailed by integration is critical for advancing sustainable rural development. This paper applies the super-efficiency SBM model with undesirable outputs and the Malmquist index to measure China’s RIID efficiency across 30 provinces from 2012 to 2023, analyzing its spatio-temporal evolution. The results show that the national annual average RIID efficiency fluctuated between 0.423 and 0.663, exhibiting a three-stage trajectory of “steady rise—fluctuating bottoming-out—accelerated climb” alongside a descriptively observed east–central–west gradient (eastern leading, central following, western lagging) that does not attain statistical significance. The annual average Malmquist index reached 1.060, corresponding to an average annual growth rate of 6.0%, and efficiency catch-up became the dominant driver of productivity growth in the later stage. The exploratory regression further reveals that rural human capital and transportation infrastructure are significantly and positively associated with RIID efficiency. This study integrates farmers’ income growth, farmland non-grain conversion, and agricultural non-point source pollution into the efficiency evaluation system of rural industrial integration development. It also provides new empirical evidence regarding the spatio-temporal evolution characteristics and driving factors of rural industrial integration, which can support the formulation of differentiated and welfare-oriented rural development policies in China and other developing economies.",
+      "summary_zh": "【金融经济学】促进农村产业融合发展（RIID）以增加农民收入是实现农村振兴和共同繁荣的核心策略。对RIID效率进行合理、客观的评估至关重要，这种评估需要同时考虑农民收入增长以及产业融合所带来的粮食安全和环境约束因素，从而推动可持续的农村发展。本文采用包含不良产出的超效率SBM模型和Malmquist指数，对中国2012年至2023年间30个省份的RIID效率进行了测度，并分析了其时空演变趋势。研究结果表明，全国年均RIID效率在0.423至0.663之间波动，呈现出“稳步上升—波动稳定—加速提升”的发展轨迹；同时观察到东部地区领先、中部地区跟进、西部地区滞后的空间分布特征，但这种空间差异并未达到统计学上的显著性。年均Malmquist指数为1.060，对应的年均增长率为6.0%，在后期阶段效率提升成为推动生产力增长的主要动力。进一步的研究发现，农村人力资本和交通基础设施与RIID效率之间存在显著的正相关关系。本研究将农民收入增长、耕地非粮食化利用以及农业非点源污染等因素纳入农村产业融合发展效率评估体系，为理解农村产业融合的时空演变特征及其驱动因素提供了新的实证依据，有助于为中国及其他发展中国家...。研究方法：回归分析。",
       "topics": [
+        "Malmquist index",
+        "Index (typography)",
+        "Productivity",
         "Economics",
-        "Finance"
+        "China"
       ],
-      "source": "arxiv"
+      "source": "openalex"
     },
     {
-      "title": "Universal Nonexistence of Monotone Equilibrium in Multiunit Auctions with Risk Aversion",
+      "title": "Comparative Study of Gender-Based Health Policies in Indonesia and the Philippines: Strategies and Equity Impact",
       "authors": [
-        "Wei He",
-        "Yeneng Sun",
-        "Hanping Xu"
+        "Budhi Rahardjo",
+        "Ismi Dwi Astuti Nurhaeni",
+        "Anik Lestari",
+        "Widiyanto"
       ],
-      "venue": "arXiv",
-      "published_date": "2026-11-04",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.06644v1",
+      "venue": "Media Publikasi Promosi Kesehatan Indonesia (MPPKI)",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.56338/mppki.v9i11.9877",
+      "openalex_url": "https://openalex.org/W7225233953",
       "cited_by_count": 0,
-      "abstract": "We establish universal nonexistence results for monotone pure-strategy equilibrium in multiunit auctions with risk-averse bidders. Fix any number of bidders greater than one and any profile of strictly increasing concave utilities, with at least one strictly risk-averse bidder. Under uniform pricing, for every supply of at least three units, we construct independent, full-support type distributions under which neither lowest-winning-bid nor highest-losing-bid pricing admits an admissible monotone equilibrium. Under discriminatory pricing, we construct a finite supply and independent, full-support type distributions that preclude monotone pure-strategy equilibrium. We extend these results to all-pay auctions and finite bid grids.",
-      "summary_zh": "【风险管理与衍生品】我们为具有风险厌恶投标人的多单位拍卖中的单调纯策略均衡建立了普遍性的不存在性定理。假设投标人数大于1，且所有投标人的效用函数均为严格递增的凹函数（其中至少有一名投标人是严格风险厌恶的）。在统一定价机制下，对于任何数量不少于3单位的商品供应，我们能够构造出独立的、具有完全支持性质的分布；在这些分布下，无论是最低中标价定价还是最高落标价定价，都无法形成满足条件的单调均衡。在歧视性定价机制下，我们同样能够构造出有限的供应量以及独立的、具有完全支持性质的分布，这些分布能够确保单调纯策略均衡的不存在性。此外，我们将这些结论扩展到了全支付拍卖和有限投标范围的情形中。。研究方法：均衡模型。",
+      "abstract": "Introduction: Gender equality remains a central challenge in achieving the Sustainable Development Goals (SDGs), particularly SDGs 3 and 5, in Southeast Asia. This study compares gender-based health policies in Indonesia and the Philippines, focusing on how policy strategies and implementation affect health equity.\nMethods: This study employed a qualitative comparative design (Mill's Method of Difference), analysing national policy documents from 2015 to 2025. The study is grounded in Sabatier and Mazmanian’s policy implementation framework and intersectionality theory to provide a comprehensive evaluation of both countries’ approaches.\nResults: The Philippines demonstrates a relatively explicit rights-based policy architecture, with clearer legal mandates, institutional responsibilities, and documented implementation mechanisms. Indonesia relies more heavily on gender mainstreaming across broader development and health-planning instruments, with implementation responsibilities distributed across existing institutions. The comparison identifies differences in health-worker training, community participation, monitoring arrangements, and access-related patterns. However, population-level health indicators are interpreted as contextual and corroborative evidence rather than as direct measures of policy effectiveness, because the study design cannot establish causal effects.\nConclusion: The comparison suggests that gender-responsive health policy implementation is associated with the configuration of legal mandates, institutional capacity, contextual conditions, and equity-oriented community participation. Policy learning from the Philippine case may inform Indonesia, but implementation would require adaptation to Indonesia's decentralised governance and sociocultural context.",
+      "summary_zh": "【金融经济学】引言：性别平等仍是实现可持续发展目标（SDGs），尤其是SDGs 3和5的关键挑战，在东南亚地区尤为突出。本研究比较了印度尼西亚和菲律宾在性别健康政策方面的差异，重点探讨了政策策略与实施对健康公平的影响。\n\n方法：本研究采用定性比较设计（Mill的差异方法），分析了2015年至2025年的国家政策文件。研究基于Sabatier和Mazmanian的政策实施框架以及交叉性理论，对两国的做法进行了全面评估。\n\n结果：菲律宾在基于权利的政策构建方面表现得较为明确，具有更清晰的法律授权、机构职责和记录在案的实施机制。而印度尼西亚则更多地依赖将性别平等纳入更广泛的发展和健康规划框架中，实施责任分散在现有机构之间。比较结果显示，两国在卫生工作者培训、社区参与、监测安排以及获取医疗服务方面存在差异。然而，由于研究设计无法确定因果关系，因此人口层面的健康指标只能作为背景信息和辅助证据，而不能直接反映政策效果。\n\n结论：研究表明，性别敏感的健康政策实施与法律授权的配置、机构能力、具体背景条件以及以公平为导向的社区参与密切相关。菲律宾的经验可以为印度尼西亚提供政策参考，但印度尼西亚在实施过程中需要根...。",
       "topics": [
-        "Economics",
-        "Finance"
+        "Equity (law)",
+        "Mainstreaming",
+        "Public economics",
+        "Health policy",
+        "Gender mainstreaming"
       ],
-      "source": "arxiv"
+      "source": "openalex"
     },
     {
-      "title": "Does Frontier AI Strengthen Cyber Defense? Evidence from Project Glasswing",
+      "title": "Transfer Pricing, Capital Intensity, Thin Capitalization, dan Penghindaran Pajak pada Perusahaan Pertambangan yang Terdaftar di Bursa Efek Indonesia Periode 2021–2024",
       "authors": [
-        "Thomas Mosk"
+        "Rio Ramadan",
+        "Fitri Mareta",
+        "Umarudin Kurniawan"
       ],
-      "venue": "arXiv",
-      "published_date": "2026-11-04",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.06629v1",
+      "venue": "Journal of Authentic Research",
+      "published_date": "2026-11-05",
+      "doi_url": "https://doi.org/10.36312/jar.v5i4.5936",
+      "openalex_url": "https://openalex.org/W7225236920",
       "cited_by_count": 0,
-      "abstract": "Defenders and attackers race to find the same software flaws. I use the launch of Project Glasswing, which gave a small group of large US tech firms early access to Claude Mythos Preview, a model for finding software vulnerabilities, to study how access to frontier AI affects defenders, external researchers, and attackers. Using the universe of publicly disclosed vulnerabilities, I find that firms with access more than doubled their disclosures relative to Chinese and Russian tech firms without access, disclosed about 150 percent more high-impact vulnerabilities, and fixed reported flaws as quickly as before. As treated firms found more flaws themselves, external researchers, who sell their findings through bug bounties, reported about half as many vulnerabilities in treated firms' code and more in other firms' code, without leaving the market. There is no evidence that attackers exploited the additional vulnerabilities: the share exploited within a month of disclosure fell by about two thirds, mainly because a smaller share was already exploited when disclosed, while the number exploited did not change. Frontier AI helped defenders find and fix more flaws before attackers exploited them, but its restricted release creates an asymmetry in software security between firms in different countries.",
-      "summary_zh": "【金融经济学】防御者和攻击者都在争相发现相同的软件漏洞。我以Project Glasswing的发布为例进行研究——该项目让美国几家大型科技公司提前获得了Claude Mythos Preview的试用权限，该工具用于检测软件漏洞。通过分析这一案例，我探讨了前沿人工智能技术对防御者、外部研究人员以及攻击者的影响。研究发现，拥有该技术的公司披露的漏洞数量是未获得该技术的中国和俄罗斯科技公司的两倍多，其中高影响力漏洞的披露量增加了约150%，并且这些公司修复漏洞的速度与之前相同。由于获得该技术的公司能够自行发现更多漏洞，那些通过漏洞赏金计划出售发现结果的外部研究人员在处理这些公司的代码时发现的漏洞数量减少了一半，而在其他公司的代码中发现的漏洞数量却增加了。没有证据表明攻击者利用了这些新增的漏洞：在漏洞被披露后的一个月内，被利用的漏洞比例下降了约三分之二，主要是因为在披露时已有部分漏洞被利用，而实际被利用的漏洞数量并未发生变化。前沿人工智能技术确实帮助防御者更快地发现并修复了漏洞，但其有限的推广范围导致了不同国家公司之间的软件安全状况存在差异。。",
+      "abstract": "Penerimaan pajak Indonesia masih menghadapi praktik penghindaran pajak, terutama pada sektor pertambangan yang memiliki aset tetap besar, transaksi pihak berelasi, dan kebutuhan pendanaan tinggi. Temuan penelitian terdahulu tentang transfer pricing, capital intensity, dan thin capitalization belum konsisten, dan hubungan ketiganya dengan penghindaran pajak pada periode setelah berlakunya kewajiban dokumentasi transfer pricing dan batas rasio utang terhadap modal masih perlu ditelaah. Penelitian ini menganalisis hubungan ketiga variabel tersebut dengan penghindaran pajak pada perusahaan pertambangan yang terdaftar di Bursa Efek Indonesia periode 2021–2024. Sampel dipilih secara purposive sebanyak 20 perusahaan (80 observasi; 75 observasi setelah lima pencilan dikeluarkan). Penghindaran pajak diukur dengan cash effective tax rate (CETR), sehingga CETR yang lebih rendah menunjukkan penghindaran pajak yang lebih tinggi, dan data dianalisis dengan regresi linear berganda. Transfer pricing berhubungan negatif dengan CETR (B = −1,480; p = 0,008), yang mengindikasikan penghindaran pajak yang lebih tinggi; capital intensity berhubungan positif dengan CETR (B = 1,599; p = 0,040), yang mengindikasikan penghindaran pajak yang lebih rendah; dan thin capitalization tidak berhubungan signifikan (p = 0,345). Model secara simultan signifikan (F = 4,163; p = 0,009) dengan adjusted R² sebesar 0,114. Temuan ini mengimplikasikan bahwa pengawasan transaksi pihak berelasi pada perusahaan pertambangan tetap relevan. Hasil penelitian bersifat asosiatif dan perlu dikonfirmasi dengan analisis data panel serta ukuran penghindaran pajak alternatif.\nIndonesia's tax revenue still faces tax avoidance, particularly in the mining sector, which has large fixed assets, related-party transactions, and high financing needs. Previous findings on transfer pricing, capital intensity, and thin capitalization are inconsistent, and their relationship with tax avoidance in the period after transfer pricing documentation requirements and the debt-to-equity limit took effect still needs examination. This study analyzes the relationship between these three variables and tax avoidance in mining companies listed on the Indonesia Stock Exchange in 2021–2024. A purposive sample of 20 companies was used (80 observations; 75 after five outliers were excluded). Tax avoidance was measured by the cash effective tax rate (CETR), so a lower CETR indicates higher tax avoidance, and the data were analyzed with multiple linear regression. Transfer pricing was negatively associated with CETR (B = −1.480; p = 0.008), indicating higher tax avoidance; capital intensity was positively associated with CETR (B = 1.599; p = 0.040), indicating lower tax avoidance; and thin capitalization was not significantly associated (p = 0.345). The model was jointly significant (F = 4.163; p = 0.009), with an adjusted R² of 0.114. These findings imply that monitoring related-party transactions in mining companies remains relevant. The results are associative and need to be confirmed with panel data analysis and alternative tax avoidance measures.",
+      "summary_zh": "【金融经济学】印度尼西亚的税收收入仍面临避税行为，尤其是在拥有大量固定资产、存在关联方交易以及融资需求较高的采矿行业。以往关于转让定价、资本密集度和资本结构薄弱（thin capitalization）的研究结果并不一致，它们与避税行为之间的关系在转让定价文件要求及债务与资本比率限制实施后的时期仍需进一步探讨。本研究分析了2021至2024年间在印度尼西亚证券交易所上市的采矿公司中这三个变量与避税行为之间的关系。研究采用目的性抽样方法选取了20家公司作为样本（共80个观测值；剔除5个异常值后剩余75个观测值）。避税程度通过现金有效税率（CETR）来衡量，较低的CETR值表示较高的避税行为，数据通过多元线性回归进行分析。结果显示：转让定价与CETR呈负相关（B = −1.480；p = 0.008），表明存在较高的避税行为；资本密集度与CETR呈正相关（B = 1.599；p = 0.040），表明避税行为较低；而资本结构薄弱与避税行为无显著关联（p = 0.345）。整个模型具有统计学意义（F = 4.163；p = 0.009），调整后的R²值为0.114。这些发现表明，对采矿公司关联方交易...。研究方法：面板数据、回归分析。",
       "topics": [
-        "Economics",
-        "Finance"
+        "Business",
+        "Business administration",
+        "Tax avoidance",
+        "Cash",
+        "Tax revenue"
       ],
-      "source": "arxiv"
+      "source": "openalex"
     },
     {
-      "title": "Weak Atomic Continuity and Subgame Perfection",
+      "title": "Economies of scale and the equity-efficiency trade-off: Evidence from a piped water network in rural Bangladesh",
       "authors": [
-        "Enxian Chen",
-        "Wei He",
-        "Yeneng Sun",
-        "Hanping Xu"
+        "Md. Ahasan Habib",
+        "Anna Tompsett"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-04",
+      "published_date": "2026-11-05",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.06620v1",
+      "openalex_url": "http://arxiv.org/abs/2611.08031v1",
       "cited_by_count": 0,
-      "abstract": "Subgame-perfect equilibrium need not exist in continuous games with perfect information when Nature moves. Under standard regularity assumptions, we prove that weak atomic continuity of Nature's transition probabilities yields a measurable pure-strategy subgame-perfect equilibrium for finite and infinite horizons. The condition, originating in the population genetics literature, is necessary for the existence of subgame-perfect equilibrium uniformly over the remaining primitives: whenever this condition is violated, one can construct a dynamic game with no subgame-perfect equilibrium, even in behavioral strategies. The proof preserves compactness and upper hemicontinuity of continuation payoff correspondences under integration without requiring convexity.",
-      "summary_zh": "【金融经济学】在具有完美信息的连续博弈中，当“自然”（即博弈中的随机因素）进行选择时，子博弈完美均衡可能并不存在。在标准的规则性假设下，我们证明了如果“自然”的转移概率具有弱原子连续性（即转移概率在任意小的邻域内都是连续的），那么无论博弈的期限是有限的还是无限的，都存在一个可测量的纯策略子博弈完美均衡。这一条件最初来源于群体遗传学领域，它是确保所有剩余博弈元素上子博弈完美均衡存在的必要条件：只要这一条件被违反，即使采用行为策略，也可以构造出一个不存在子博弈完美均衡的动态博弈。我们的证明在不需要凸性的情况下，保持了连续支付函数的紧凑性和上半连续性，并且能够在积分过程中保持这些性质。。研究方法：均衡模型。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found",
-      "authors": [
-        "Henry Zhang"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-11-04",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.06607v1",
-      "cited_by_count": 0,
-      "abstract": "Agentic research loops that let a language model propose a change, run a fixed experiment and keep whatever improves the metric work well in machine learning. In trading research the same loop is a machine for producing false discoveries: a backtest that \"improves the metric\" is, by default, overfit, look-ahead, a multiple-comparisons artifact, cost-free, or market drift wearing a strategy. We describe Autonomous Quant Researcher, an open-source loop built on the opposite premise: the model proposes, and only trusted code decides. Proposals are strict declarative JSON over a fixed vocabulary, so there is no model-written code to sandbox. Evaluation runs on immutable chronological stores split into discovery, validation and a final holdout that can be opened exactly once, after a durable receipt is written. Acceptance is a conjunction of absolute gates (positive edge and net P&L after costs, a positive weekly-cluster bootstrap lower bound, survival at elevated costs, per-year stability and sample floors), never a single score. Duplicates are refused before they spend a trial, and every formulation, refusal, crash and result is kept in a hash-chained, append-only ledger. We report every campaign run to date, across 0DTE options priced from traded option bars, overnight SPX verticals, daily ETF rules, technical-analysis premises, Kalshi crypto binaries, earnings options, off-exchange volume and a pre-registered alternative-data campaign. Most hypotheses fail, and we report them. Two results survive their pre-registered bars. The clearest example of the loop working is a failure: a language-model survivor that passed discovery and validation with Sharpe ratios near 3 and fell to 0.26 on its single holdout use. The value of such a loop lies less in what it finds than in how hard it is to make it report something that is not there.",
-      "summary_zh": "【金融经济学】在机器学习中，一种有效的研究机制是：语言模型提出修改方案，然后执行固定实验，并保留所有能够提升评估指标（如“metric”）的修改内容。然而在交易研究中，这种机制却可能被滥用，成为产生错误结论的工具：那些看似“改善了评估指标”的回测结果，往往源于过度拟合、前瞻性分析、多重比较的误差、无实际成本的假设，或是市场环境的变化对策略的影响。我们提出了“Autonomous Quant Researcher”（自主量化研究员）这一开源工具，其设计理念与此截然相反：模型仅提出修改建议，最终是否采纳这些建议由经过严格验证的代码来决定。所有修改提案都以结构化的JSON格式表达，且必须遵循固定的词汇表，从而避免了模型自动生成代码可能带来的问题。评估过程基于不可篡改的时间序列数据，数据被分为三个阶段：发现阶段、验证阶段以及最终的独立验证阶段（该阶段的数据仅在生成可靠验证结果后才能被访问）。评估标准包括多个方面，如绝对收益阈值、扣除成本后的净利润、每周收益的最低要求、在高成本环境下的策略稳定性以及每年的收益稳定性等，而绝非单一的评分标准。任何重复的提案在尝试执行前都会被拒绝，所有的修改过程、拒绝结果、...。研究方法：机器学习、实验方法。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Approximate minimax regret for conditionally similar tests",
-      "authors": [
-        "Andrés Aradillas Fernández"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-11-04",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.06557v1",
-      "cited_by_count": 0,
-      "abstract": "We construct approximately minimax regret optimal tests in a scalar Gaussian instrumental variables experiment. This example shows how conditionally similar tests allow a novel approximation approach, allowing us to optimize weights over alternatives to minimize worst-case power regret. Stochastic mirror descent and averaging yield finite-iteration guarantees with exact conditional similarity. We establish bounds for exact and simulated powers and illustrate the procedure numerically. This initial algorithm shows how existing nearly-optimal test computation methods can be extended to include composite alternative hypothesis sets without the computational cost associated with maintaining size control.",
-      "summary_zh": "【金融经济学】我们在一个标量高斯工具变量实验中构建了近似极小极大遗憾最优检验。这个例子展示了条件相似的检验如何提供一种新的近似方法，使我们能够优化不同检验的权重，以最小化最坏情况下的检验功效遗憾。随机镜像下降（Stochastic Mirror Descent）和平均化技术能够保证在有限迭代次数内获得精确的条件相似性结果。我们建立了精确检验功效和模拟检验功效的界限，并通过数值方法对这一过程进行了验证。这一初步算法表明，现有的近似最优检验计算方法可以扩展到包含复合备择假设集的情况，而无需承担维持样本量控制所带来的计算成本。。研究方法：工具变量、实验方法、随机过程。",
+      "abstract": "Policymakers who set prices for public infrastructure often anticipate an equity-efficiency trade-off: while higher prices could increase revenues from fee-paying users, helping to offset costs, they may reduce take-up among the poor. But this trade-off is fundamentally altered in the presence of economies of scale, which are common in infrastructure networks. We elicit willingness to pay for a household-level piped drinking water connection in rural Bangladesh, where truthful revelation of preferences is incentivized by the opportunity to connect to a new pipeline network that we construct, and we use project cost data to measure economies of scale. Combining the two, we show that the cost-effectiveness-maximizing price---that which minimizes the cost per connected household---is zero. Economies of scale strongly dominate revenues raised by user fees. More generally, the two conditions needed for a zero price to maximize cost-effectiveness are important economies of scale and high sensitivity of demand to prices near zero, which is well documented across developing countries. Since a zero price naturally maximizes equity, we conclude that economies of scale can eliminate the equity-efficiency trade-off.",
+      "summary_zh": "【国际贸易】为公共基础设施定价的决策者通常会面临公平性与效率之间的权衡：虽然较高的价格可以通过向付费用户收费来增加收入，从而帮助弥补成本，但可能会降低低收入群体的使用意愿。然而，在存在规模经济的情况下，这种权衡会发生根本性的变化，而规模经济在基础设施网络中十分普遍。我们在孟加拉国农村地区调查了居民对家庭级管道饮用水连接的支付意愿；在该地区，由于有机会接入我们新建的管道网络，人们更愿意如实表达自己的偏好。我们利用项目成本数据来衡量规模经济的程度。综合这两项研究结果，我们发现能够实现成本效益最大化的价格（即使每个连接家庭的成本最低的价格）实际上是零。规模经济对用户收费所带来的收入影响远大于其他因素。更一般地说，实现零价格以最大化成本效益的两个关键条件是：显著的规模经济效应，以及需求对价格变化的高度敏感性（这一现象在发展中国家普遍存在）。由于零价格本身就能最大化公平性，我们得出结论：规模经济可以消除公平性与效率之间的权衡。。",
       "topics": [
         "Economics",
         "Finance"
