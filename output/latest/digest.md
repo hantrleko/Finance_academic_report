@@ -1,170 +1,148 @@
-# 金融经济学每日文献速递（2026-11-06）
+# 金融经济学每日文献速递（2026-11-07）
 
 共筛选到 **12** 篇文献。
 
 > 📢 **今日综述**
 >
-> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、银行与信贷（1 篇）、绿色金融与可持续发展（1 篇）。方法上以回归分析、横截面分析为主。来源分布：OpenAlex（7 篇）、arXiv（3 篇）、Semantic Scholar（2 篇）。
+> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（8 篇）、收入分配与福利（2 篇）、绿色金融与可持续发展（1 篇）。方法上以回归分析、均衡模型为主。来源分布：OpenAlex（5 篇）、arXiv（5 篇）、Semantic Scholar（2 篇）。其中 1 篇命中顶级期刊白名单。
 
-## 1. Extending AIMNet2 to Macrocyclic Peptides through Data-Efficient Continual Training
+## 1. Proof of a Conjecture of Matherne, Morales, and Selover on Encodings of Unit Interval Orders
 - 来源：openalex
-- 作者：Runtian Gao, R.I. Zubatyuk, Olexandr Isayev
-- 期刊/来源：The Journal of Physical Chemistry A
-- 发表日期：2026-11-05
+- 作者：Félix Gélinas, Adrien Segovia, Hugh Thomas
+- 期刊/来源：The Electronic Journal of Combinatorics
+- 发表日期：2026-11-06
+- 引用数：2
+- 主题：Bijection, Conjecture, Bijection, injection and surjection, Combinatorics, Unit interval
+- 链接：[DOI](https://doi.org/10.37236/11825) [链接](https://openalex.org/W4312206089)
+
+**中文摘要（自动生成）**：【金融经济学】存在两种从包含$n$个元素的单位区间序到从$(0,0)$到$(n,n)$的Dyck路径之间的双射映射。一种方法是将不可比较的元素对视为构成Dyck路径与对角线之间的“盒子”集合；另一种方法是找到一种特定的部分列表（按照Guay-Paquet、Rowland和Morales的定义），该列表能够生成一个同构的偏序集，并将这种部分列表解释为Dyck路径的面积序列。Matherne、Morales和Selover推测，对于任何单位区间序，这两种Dyck路径都通过Haglund著名的zeta双射映射相互关联。在本文中，我们证明了他们的这一猜想。。
+
+## 2. Local convergence of a proximal type method for weakly convex minimization
+- 来源：openalex
+- 作者：Valdinês Leite de Sousa Júnior, Lucas Vidal de Meireles, Samara Costa Lima, Gilson do Nascimento Silva
+- 期刊/来源：Computational and Applied Mathematics
+- 发表日期：2026-11-06
 - 引用数：0
-- 主题：Conformational isomerism, Computer science, Metastability, Training set, Intermolecular force
-- 链接：[DOI](https://doi.org/10.1021/acs.jpca.6c06253) [链接](https://openalex.org/W7212151602)
+- 主题：Monotonic function, Algorithm, Convergence (economics), Envelope (radar), Range (aeronautics)
+- 链接：[DOI](https://doi.org/10.1007/s40314-026-03952-6) [链接](https://openalex.org/W4385644130)
 
 **中文摘要（自动生成）**：【金融经济学】摘要  
-大环肽是目前最具前景的治疗手段之一，然而目前尚不存在一种通用的机器学习原子间势能（MLIP）方法能够系统地用于其构象分析。研究表明，在MPCONF196大环肽基准测试中，尽管AIMNet2模型训练数据中完全不含大环肽，但由四个模型组成的AIMNet2集成模型的性能仍优于MACE-OFF23(S)模型。单个AIMNet2模型的计算速度比MACE-OFF23模型快3至5倍，且所需GPU内存仅为后者的1/5至1/63（在默认的float64精度下）。尽管如此，该集成模型的计算速度与MACE-OFF23模型相当，但在float32精度下仍具有3至32倍的内存优势。相比之下，更大的MACE-OFF23(M)和MACE-OFF23(L)模型在准确性方面表现更优。为缩小这一差距，我们提出了一种持续训练策略：该策略仅需为不到25,000个特定结构构象生成新的量子化学标签（占训练数据总量的0.13%以下），同时仍能保持对非大环分子的构象能量预测的准确性。在包含未见过的CREMP大环肽的独立测试数据集上，改进后的AIMNet2-macro模型将构象能量预测的均方根误差（RMSE）降低了25...。
+本文的主要目的是开发并分析一种用于弱凸函数局部最小化的近端方法。我们引入这种算法的动机在于提高其在优化问题中的通用性和适用范围，并为典型推广情况提供更具适应性的方法版本。我们的研究大量依赖于莫罗包络（Moreau envelope），这是一种用于分析近端算子行为的著名数学工具。通过利用莫罗包络的性质，我们证明了该近端算法在局部情况下是收敛的。此外，我们还提出了一个复杂性分析结果，以评估该算法的实际可行性，并通过一个数值示例来说明该算法的实际表现。。研究方法：优化方法。
 
-## 2. How does the institutional framework affect bank financing in the private sector? Empirical evidence from West African economic and monetary union
-- 来源：openalex
-- 作者：Clémence Mianseli Ouali, Windinkonté Séogo
-- 期刊/来源：Journal of Economic Studies
-- 发表日期：2026-11-05
-- 引用数：0
-- 主题：Financial system, Corporate governance, Economics, Market liquidity, Private sector
-- 链接：[DOI](https://doi.org/10.1108/jes-01-2026-0071) [链接](https://openalex.org/W7225223670)
-
-**中文摘要（自动生成）**：【银行与信贷】**研究目的**  
-本研究旨在分析制度框架如何影响西非经济货币联盟（WAEMU）私营部门的银行融资情况。  
-
-**研究设计/方法**  
-分析基于该联盟7个国家中68家银行的样本数据，时间跨度为2000年至2022年。研究采用了动态横截面自回归分布滞后模型（CS-ARDL），以评估西非国家中央银行（BCEAO）的审慎监管标准与世界银行治理机制对私营部门银行融资的综合影响。  
-
-**研究结果**  
-研究结果表明，制度框架主要通过审慎监管机制影响私营部门的银行贷款。其中，“转换比率”在所有模型设定中均表现出最稳定且显著的关联，反映了银行将短期资金转化为长期融资的能力；“偿付能力比率”也与信贷呈正相关关系，这与银行资本渠道的理论一致。只有当同时考虑治理机制和审慎监管标准时，“流动性比率”才显示出显著相关性。此外，银行存款和金融市场的深度也与信贷存在正相关关系。尽管治理机制与信贷之间没有直接的显著关联，但也不能排除其间接、滞后或条件性的影响。  
-
-**研究局限性与启示**  
-本研究的局限性在于未明确考虑银行在为私营部门提供融资与持有政府债券之间的权衡。这一问题对于分析WAEM...。研究方法：横截面分析。
-
-## 3. Cross-Border Ownership and Input Access: Evidence from the Lithium Supply Chain
+## 3. Discrete Choice under Congestion: Equilibrium and Welfare
 - 来源：arxiv
-- 作者：Kei Irizawa
+- 作者：Debopam Bhattacharya, Matias Makiranta
 - 期刊/来源：arXiv
 - 发表日期：2026-11-05
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.08430v1)
+- 链接：[链接](http://arxiv.org/abs/2611.07787v1)
 
-**中文摘要（自动生成）**：【金融经济学】跨境所有权如何影响锂供应链的运作？通过分析全球范围内的矿山和精炼厂数据，我建立了一个模型，该模型表明：所有权结构可以降低精炼企业的矿石采购成本，促使矿山限制现货销售，并减弱市场竞争。为研究这些影响，我重点考察了出于国家安全考虑而实施的相关政策，例如中国减持海外生产商的股份以及禁止向中国出口矿石。虽然中国减持海外生产商的股份会增加现货矿石供应，但锂产品的总产量基本保持不变；而继续允许矿石出口则能保障中国对矿石的获取。然而，出口禁令会减少全球锂供应，因为其他地区的精炼产能无法完全弥补中国产能的缺失。此外，所有权结构的调整并不会专门为国内生产预留矿石资源；限制中国获取矿石的行为实际上会在现有产能条件下增加显著的供应成本。。
+**中文摘要（自动生成）**：【收入分配与福利】在许多选择情境中，对某种选项的总需求增加会降低个人选择该选项所获得的收益。当更多通勤者选择开车出行时，驾车出行相较于乘坐火车变得不那么具有吸引力，从而导致高速公路拥堵。在这种情况下，针对拥堵问题的干预措施可以将交通压力转移到其他地方，同时也会削弱基于个人偏好的资源分配机制，从而使整体福利效应在理论上变得难以确定。我们构建了一个实证框架来分析这类内生性拥堵现象。研究表明，在这些情境下，均衡是存在的且是唯一的，无论效用函数的形式或偏好异质性的维度/分布如何；即使某个选项的拥堵状况影响了其他选择的收益，均衡依然成立。在采用线性指数结构的模型中，关于选择的微观数据能够使我们半参数地识别某些干预措施的效用差异及其福利效应，但并非所有干预措施都能被准确评估。我们将该框架应用于剑桥大学的本科生招生过程：候选人通过该校的一个学院进行申请，录取概率取决于申请人数与该学院招生能力的比值。利用25,325名申请者的行政数据，我们模拟了两种反事实情景：（1）集中随机分配；（2）热门学院的学费上涨。结果显示，随机分配机制会降低所有人的福利——虽然它消除了个人的选择自由，但并未提高录取机会，因为这种分配方式...。研究方法：均衡模型。
 
-## 4. Patch Attention Wisely: Understanding Patch Length in Attention-Based Forecasting
+## 4. Unobserved Consideration and Consumer Welfare
 - 来源：arxiv
-- 作者：Junyu Chen, Likai Chen, Weining Wang
+- 作者：Debopam Bhattacharya, Ryan J. Martin
 - 期刊/来源：arXiv
 - 发表日期：2026-11-05
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.08160v1)
+- 链接：[链接](http://arxiv.org/abs/2611.07774v1)
 
-**中文摘要（自动生成）**：【金融经济学】基于注意力机制的时间序列预测器通常会将连续的观测值分组为若干“数据块”（即“patch”）。已知数据块的长度对预测性能有显著影响，但其选择方式在很大程度上仍依赖于经验判断。我们构建了一个理论框架，解释了数据块长度为何对预测准确性至关重要，并为数据块长度的选择提供了理论依据。对于线性状态空间模型，我们推导出了预测系数矩阵的精确分解方法，该方法能够将预测动态与滤波动态区分开来。研究表明，在较长的预测时段内，某个预测成分占据主导地位并不意味着该预测成分的矩阵秩一定为1；这解释了为何仅延长预测时段并不一定会增加模型的表示复杂性。我们将这种分解方法与估计误差界限相结合，提出了一种数据块选择标准，该标准能够在时间依赖性条件下平衡模型的表示复杂性和估计误差。我们的分析明确了在何种条件下采用这种平衡的数据块划分方法是合理的，并阐明了预测结构、数据块数量、训练样本规模以及长期依赖性等因素如何影响数据块的选择过程。。研究方法：时间序列。
+**中文摘要（自动生成）**：【收入分配与福利】当消费者的考虑集具有异质性且无法观测时，我们能否识别价格变动所带来的福利效应？我们发现，在考虑范围有限但稳定的情况下，福利分布与在完全考虑所有选项的情况下所遵循的函数关系是相同的。这一结果允许存在不受限制的收入效应、偏好异质性，以及偏好与考虑范围之间的关联性。在这一类情况下，即使考虑范围有限，仍然可以通过保持选择概率和货币度量补偿的方式来构建完全考虑情况下的福利分布模型：即使无法确定消费者的具体考虑范围和偏好，需求与福利水平仍然是可以识别的。当价格上涨导致消费者的考虑范围缩小时，可以通过需求数据以及对考虑范围缩减程度的限制来界定福利分布的范围。。
 
-## 5. GREEN FINANCE AND SME INCLUSION IN ZIMBABWE: EVIDENCE FROM THE MANUFACTURING SECTOR IN BINDURA
+## 5. Does Institutional Quality Determine Environmental Sustainability?
 - 来源：semantic_scholar
-- 作者：F. Sithole, Talent Kondo
-- 期刊/来源：Economics
-- 发表日期：2026-11-01
+- 作者：Monica Singhania, Anisha
+- 期刊/来源：International Journal of Finance & Economics
+- 发表日期：2026-11-03
 - 引用数：0
-- 主题：Environmental Science, Economics, Business
-- 链接：[DOI](https://doi.org/10.65957/article.19) [链接](https://api.semanticscholar.org/CorpusID:295494589)
+- 主题：Environmental Science, Economics
+- 链接：[DOI](https://doi.org/10.1002/ijfe.70324) [链接](https://api.semanticscholar.org/CorpusID:295565669)
 
-**中文摘要（自动生成）**：【绿色金融与可持续发展】绿色金融日益被视为推动气候缓解和可持续发展的关键工具，然而在以中小企业（SMEs）为主导工业活动的发展中经济体中，其分配效应仍不甚明了。本研究考察了津巴布韦宾杜拉地区制造业中小企业获取绿色金融的情况，分析了影响其参与程度的结构性因素以及导致其被排斥的制度机制。研究采用了混合方法，结合了36家制造业企业的定量调查数据（通过二元逻辑回归进行分析）以及来自金融机构和政策制定者的关键信息提供者的定性访谈结果。研究结果表明，绿色金融的获取具有高度选择性：企业规模、抵押品可用性以及企业的风险意识是影响其能否获得绿色金融的重要正向因素，而规模较小、资产受限的企业则系统性地被排除在绿色金融体系之外。绿色金融主要通过传统的基于资产的贷款模式提供，但这些模式所依据的风险评估方式对中小企业不利，从而加剧了信贷配给和信息不对称问题。这些发现质疑了绿色金融本质上具有包容性的观点，并表明现有框架有可能导致一种“双重转型”现象——只有那些处于有利地位的企业才能参与绿色金融。政策改革应优先考虑风险分担机制、适合中小企业的金融工具以及有针对性的信息传播，以确保绿色转型的公平性和有效性。。研究方法：回归分析、调查数据。
+**中文摘要（自动生成）**：【绿色金融与可持续发展】环境可持续性在很大程度上取决于发展战略与制度治理之间的协调性。然而，关于制度质量在环境退化过程中所起作用的实证证据仍存在较大争议。尽管制度通常被视为环境治理的核心要素，但现有研究的结果却呈现出复杂且有时相互矛盾的现象。本研究通过对134项实证研究中得出的792个效应量进行综合元分析，试图澄清这一模糊性。通过运用随机效应模型、多层次混合效应模型以及贝叶斯模型平均法，该分析在充分考虑异质性、研究依赖性和发表偏倚的情况下，评估了制度质量与环境退化之间的平均关联程度。研究结果表明，总体而言，较高的制度质量与较低的环境退化程度相关，但这种关联具有很强的条件性。 subgroup 分析显示，世界治理指数和政治风险指数所揭示的负相关关系更为稳健；此外，生态足迹指标的影响强度高于碳排放指标。元回归分析进一步指出，基础设施、技术水平、全球化进程、外国直接投资以及地区背景是影响这种关联的关键调节因素。这些发现表明，制度质量更多地起到一种调节作用，而非决定环境结果的唯一因素。。研究方法：回归分析、贝叶斯方法。
 
-## 6. Dividend Growth Model and Capital Asset Pricing Model (CAPM) in an Introductory Finance Course
+## 6. Applying the COPRAS Method for Stock Price Prediction: A Comparative Analysis of Selected Companies
 - 来源：semantic_scholar
-- 作者：Chanwit Phengpis
-- 期刊/来源：Journal of Applied Business and Economics
-- 发表日期：2026-10-30
+- 作者：V. Prasanth, M. Ramachandran, Chinnasami Sivaji
+- 期刊/来源：Trends in Finance and Economics
+- 发表日期：2026-10-31
 - 引用数：0
 - 主题：Business, Economics
-- 链接：[DOI](https://doi.org/10.33423/dbtxgy05) [链接](https://api.semanticscholar.org/CorpusID:295433211)
+- 链接：[DOI](https://doi.org/10.46632/tfe/4/4/1) [链接](https://api.semanticscholar.org/CorpusID:295487693)
 
-**中文摘要（自动生成）**：【资产定价】股息增长模型和资本资产定价模型（CAPM）通常是本科金融入门课程中的核心内容。在本文中，我提出了一种教学方法：通过将股票估值的实际案例融入课程教学，可以提升学生的学习效果，并激发他们对这些模型及相关概念的兴趣。所选案例应适合入门课程的特点，既能让学生了解真实的金融运作情况，又不会因过程过于复杂而令他们感到困惑。我以Kenvue公司为例进行讲解——这是一家专注于消费者健康领域的公司，曾隶属于强生公司的消费者医疗保健部门。Kenvue公司于2021年11月从强生集团分拆出来，并于2023年5月首次在股市上市，股票代码为KVUE。尽管直接获取该公司股价的数据较为困难，但我详细展示了学生如何通过互联网获取其他相关数据与信息，然后运用股息增长模型和CAPM公式，结合Excel电子表格来计算Kenvue股票的合理价值。学生也可以将这一方法应用于其他派息股票的估值过程中。。
+**中文摘要（自动生成）**：【金融经济学】本文探讨了高级算法和方法在股票价格预测中的应用。股票价格预测具有重要意义，因为它对金融领域具有重大影响，能够影响投资决策和市场策略。准确的预测模型不仅有助于财富创造，还能提前识别出表现不佳的投资项目，从而避免市场波动。研究指出了金融时间序列分析中存在的固有挑战——非平稳性、非线性和高波动性——这些挑战要求不断开发更为复杂的分析方法。研究分析了影响股票价格的内部因素（公司利润、负债、竞争状况）和外部因素（油价、汇率、政治稳定性）。传统的股票趋势预测算法依赖于历史时间序列数据，而新兴的方法则结合了人工智能和机器学习技术，其中人工神经网络（ANN）在高级预测建模中表现出色，其性能优于传统的回归方法，尽管在优化输入变量和网络架构方面仍存在挑战。本文特别强调了生成对抗网络（GAN）在股票价格预测中的优异表现。此外，研究还提出了一种基于龙fly算法（DFA）优化的深度信念网络（DBN）的新型股票价格预测模型，该模型利用了社交媒体数据中的市场情绪分析。在评估过程中，本研究采用了复杂比例评估（COPRAS）方法以及其他多标准决策方法（如层次分析法AHP），这些方法有助于根据多种标准对不同的预测模...。研究方法：时间序列、回归分析、机器学习、深度学习、神经网络、情绪分析。
 
-## 7. Constrained risk rationalization: how economically vulnerable consumers justify counterfeit purchases in Colombia’s informal markets
+## 7. Gender, immigration and entrepreneurship
 - 来源：openalex
-- 作者：Mark Scott Rosenbaum, Diana C. Arcila Perdomo, Oscar Naranjo Del Giudice
-- 期刊/来源：International Journal of Emerging Markets
-- 发表日期：2026-11-05
+- 作者：Kun Michelle Yang, Jintong Tang, Wenping Ye, Shaji Khan
+- 期刊/来源：New England journal of entrepreneurship
+- 发表日期：2026-11-06
 - 引用数：0
-- 主题：Counterfeit, Business, Purchasing, Qualitative research, Grounded theory
-- 链接：[DOI](https://doi.org/10.1108/ijoem-10-2025-2442) [链接](https://openalex.org/W7225227815)
+- 主题：Immigration, Female entrepreneurs, Demographic economics, Entrepreneurship, Business
+- 链接：[DOI](https://doi.org/10.1108/neje-12-2025-0123) [链接](https://openalex.org/W4386238524)
 
-**中文摘要（自动生成）**：【风险管理与衍生品】**研究目的**  
-本研究探讨了经济条件受限的母亲如何在非正规市场中理性地选择购买假冒家居用品。研究不仅关注奢侈品假冒问题，还将育儿责任作为核心分析焦点。  
+**中文摘要（自动生成）**：【金融经济学】**研究目的**  
+本研究探讨了性别与移民身份的交叉如何影响女性的创业参与度，从而帮助她们实现经济独立和自主。基于交叉性理论（intersectionality）和角色一致性理论（role congruity theory），本研究分析了国家层面的性别不平等如何影响性别、移民身份与创业行为之间的关系。  
 
 **研究设计/方法**  
-采用扎根理论方法，对在哥伦比亚波哥大两个San Andresito市场购物的45位低收入母亲进行了深入访谈。数据分析过程中运用了开放式编码、持续比较法和选择性编码技术，并通过编码记录来监控分析的饱和度。  
+我们的横断面分析使用了来自63个国家、共计272,910名受访者的数据。研究方法包括逻辑回归分析（logistic regression），并采用了倾向得分匹配（propensity score matching）、Probit回归（probit regression）以及熵平衡技术（entropy balancing technique）等稳健性检验方法。  
 
 **研究结果**  
-母亲们通过“受限风险理性化”（Constrained Risk Rationalization, CRR）机制来解释其购买假冒产品的行为：这些机制包括经济必要性、社会常态化的认知、基于信任的风险缓解方式以及心理上的权衡。综合来看，这些因素可能使购买假冒产品成为满足家庭需求的实际且道德上可接受的应对方式。  
+研究结果表明，移民女性在创业过程中面临多重挑战，且国家层面的性别不平等对她们的事业发展产生了显著影响。总体而言，女性在创业过程中更容易受到阻碍；与男性移民及本土男性相比，移民女性在创业方面处于更为不利的地位。值得注意的是，在性别不平等程度较高的国家中，女性身份与创...。研究方法：倾向得分匹配、横截面分析、回归分析。
 
-**研究局限性与启示**  
-作为初步的定性研究，本研究仅基于对一个市场系统中某一参与者群体的访谈数据。未来的研究应通过民族志调查和混合方法来进一步验证“受限风险理性化”理论。  
-
-**实践意义**  
-当消费者已经了解相关风险但缺乏其他选择时，风险警示可...。
-
-## 8. Beyond institutional compatibility: a typological analysis of collective skill formation system transplantation
+## 8. Evaluating the Geometric Brownian Motion Model for Gold Price Movements (XAU/USD) across Market Conditions
 - 来源：openalex
-- 作者：Kenan Hai, Tiancheng He
-- 期刊/来源：Asian Review of Political Economy
-- 发表日期：2026-11-05
+- 作者：Pandya Tungga Prabaswara, Nalar Istiqomah
+- 期刊/来源：Analitika Journal of Economics Management and Business
+- 发表日期：2026-11-06
 - 引用数：0
-- 主题：Complementarity (molecular biology), Transplantation, Economic system, Conceptual framework, Face (sociological concept)
-- 链接：[DOI](https://doi.org/10.1007/s44216-026-00093-9) [链接](https://openalex.org/W7225228702)
+- 主题：Econometrics, Volatility (finance), Geometric Brownian motion, Mathematics, Economics
+- 链接：[DOI](https://doi.org/10.55080/analitika.v1i2.1979) [链接](https://openalex.org/W7225293358)
+
+**中文摘要（自动生成）**：【风险管理与衍生品】本研究评估了几何布朗运动（GBM）模型在稳定和经济不稳定两种条件下预测黄金价格（XAU/USD）以及评估相关风险的表现。每日收盘价数据被划分为样本内和样本外两个时期，其中回报率和波动率参数是根据样本内数据估算得出的，并用于蒙特卡洛模拟中。预测准确性通过平均绝对百分比误差（MAPE）来衡量，而风险则通过风险价值（VaR）和预期亏损（ES）来评估。研究结果表明，在两种经济条件下，MAPE值均超过了20%，这表明GBM模型的预测准确性处于中等水平。尽管该模型在稳定时期表现略好，但这种差异并不具有统计学意义。相比之下，风险估算结果显示，VaR和ES的值介于58%至59%之间，且在经济不稳定时期风险值更高。这反映了市场风险因波动率上升而增加。总体而言，研究结果表明，虽然GBM模型能够捕捉到黄金价格的一般走势，但在准确预测价格水平以及捕捉极端市场波动方面存在局限性，尤其是在经济不稳定时期。。研究方法：蒙特卡洛模拟、数值模拟。
+
+## 9. When expertise fails: detection of artificial intelligence - generated vitiligo imagery across the spectrum of dermatological experience; a cross-sectional exploratory study
+- 来源：openalex
+- 作者：Jonathan Shapiro, Itay Cohen, Mor Atlas, Anna Lyakhovitsky, Shany Sherman
+- 期刊/来源：Visual Computing for Industry Biomedicine and Art
+- 发表日期：2026-11-06
+- 引用数：0
+- 主题：Vitiligo, Exploratory research, Artificial intelligence, Psychology, Inter-rater reliability
+- 链接：[DOI](https://doi.org/10.1186/s42492-026-00239-9) [链接](https://openalex.org/W7225296159)
 
 **中文摘要（自动生成）**：【金融经济学】摘要  
-世界各国政府都面临着一个紧迫的挑战：迅速提升劳动力的技能水平。在日益复杂的全球市场中，拥有高素质的劳动力对于维持经济增长和竞争力至关重要。德国的“双元制”教育体系（即企业培训与公立职业学校相结合的模式）是全球范围内技能培养的典范。然而，该体系在跨国推广过程中的效果差异显著，既有成功实施的案例，也有失败的例子。本文从概念层面分析了各国在推广集体技能培养体系时所采取的不同路径，并构建了一个整合了“行动者网络理论”、“制度互补性”及“历史制度主义”观点的理论框架。通过类型学方法，基于行动者的能力、意愿以及制度间的兼容性，本文理论界定了四种不同的推广模式。文章的核心观点是：在市场经济体系较为完善的东道国中，体系的成功推广并非自然而然的结果，而是依赖于多方参与者组成的联盟所形成的复杂合作关系——这些联盟需要具备足够的权力和动力，同时还需要一个具有较强制度互补性且历史束缚较少的友好环境。文章强调，像“双元制”这样的复杂体系移植本质上是一个高度协商的政治过程；而简单的制度借鉴往往忽视了实现成功所需的基本结构和历史前提条件。。
+生成式人工智能（AI）能够生成高度逼真的皮肤科图像，这引发了人们对临床医生区分真实病理情况与合成图像能力的担忧。为了评估皮肤科专业技能是否会影响AI生成的白癜风图像的识别能力，并检验该算法的自我识别能力，我们进行了一项参与者盲法横断面研究。研究中，31名皮肤科医生根据经验水平被分组，他们在不知合成图像数量和具体身份的情况下，将一张AI生成的白癜风图像与三张真实对照图像进行分类。评估者间的一致性通过Fleiss’ kappa统计量进行衡量；同时，这些合成图像还接受了三种大型多模态模型的分析。结果发现，住院医师比资深皮肤科医生和行业专家更频繁地识别出AI生成的图像。在得知正确分类结果后，专家们指出了图像中的生物学异常特征，而住院医师主要依赖直觉进行判断；此外，AI模型在图像识别任务和识别后的异常图像识别任务中的表现存在差异。本研究的局限性在于仅评估了单一疾病（白癜风）的AI生成图像，因此其结论可能不适用于其他皮肤科病变类型、图像生成方式或多张图像的场景。这项探索性研究表明，更丰富的临床经验与对合成图像的识别率降低有关；这一现象是否反映了专业技能的普遍影响，还需进一步研究。这...。研究方法：横截面分析。
 
-## 9. Investigating the efficiency of rural industrial integration development in China: based on the undesirable super-efficiency SBM-Malmquist model
-- 来源：openalex
-- 作者：Zenan Sun, Mo Chen
-- 期刊/来源：Frontiers in Sustainable Food Systems
-- 发表日期：2026-11-05
-- 引用数：0
-- 主题：Malmquist index, Index (typography), Productivity, Economics, China
-- 链接：[DOI](https://doi.org/10.3389/fsufs.2026.1894351) [链接](https://openalex.org/W7225230861)
-
-**中文摘要（自动生成）**：【金融经济学】促进农村产业融合发展（RIID）以增加农民收入是实现农村振兴和共同繁荣的核心策略。对RIID效率进行合理、客观的评估至关重要，这种评估需要同时考虑农民收入增长以及产业融合所带来的粮食安全和环境约束因素，从而推动可持续的农村发展。本文采用包含不良产出的超效率SBM模型和Malmquist指数，对中国2012年至2023年间30个省份的RIID效率进行了测度，并分析了其时空演变趋势。研究结果表明，全国年均RIID效率在0.423至0.663之间波动，呈现出“稳步上升—波动稳定—加速提升”的发展轨迹；同时观察到东部地区领先、中部地区跟进、西部地区滞后的空间分布特征，但这种空间差异并未达到统计学上的显著性。年均Malmquist指数为1.060，对应的年均增长率为6.0%，在后期阶段效率提升成为推动生产力增长的主要动力。进一步的研究发现，农村人力资本和交通基础设施与RIID效率之间存在显著的正相关关系。本研究将农民收入增长、耕地非粮食化利用以及农业非点源污染等因素纳入农村产业融合发展效率评估体系，为理解农村产业融合的时空演变特征及其驱动因素提供了新的实证依据，有助于为中国及其他发展中国家...。研究方法：回归分析。
-
-## 10. Comparative Study of Gender-Based Health Policies in Indonesia and the Philippines: Strategies and Equity Impact
-- 来源：openalex
-- 作者：Budhi Rahardjo, Ismi Dwi Astuti Nurhaeni, Anik Lestari, Widiyanto
-- 期刊/来源：Media Publikasi Promosi Kesehatan Indonesia (MPPKI)
-- 发表日期：2026-11-05
-- 引用数：0
-- 主题：Equity (law), Mainstreaming, Public economics, Health policy, Gender mainstreaming
-- 链接：[DOI](https://doi.org/10.56338/mppki.v9i11.9877) [链接](https://openalex.org/W7225233953)
-
-**中文摘要（自动生成）**：【金融经济学】引言：性别平等仍是实现可持续发展目标（SDGs），尤其是SDGs 3和5的关键挑战，在东南亚地区尤为突出。本研究比较了印度尼西亚和菲律宾在性别健康政策方面的差异，重点探讨了政策策略与实施对健康公平的影响。
-
-方法：本研究采用定性比较设计（Mill的差异方法），分析了2015年至2025年的国家政策文件。研究基于Sabatier和Mazmanian的政策实施框架以及交叉性理论，对两国的做法进行了全面评估。
-
-结果：菲律宾在基于权利的政策构建方面表现得较为明确，具有更清晰的法律授权、机构职责和记录在案的实施机制。而印度尼西亚则更多地依赖将性别平等纳入更广泛的发展和健康规划框架中，实施责任分散在现有机构之间。比较结果显示，两国在卫生工作者培训、社区参与、监测安排以及获取医疗服务方面存在差异。然而，由于研究设计无法确定因果关系，因此人口层面的健康指标只能作为背景信息和辅助证据，而不能直接反映政策效果。
-
-结论：研究表明，性别敏感的健康政策实施与法律授权的配置、机构能力、具体背景条件以及以公平为导向的社区参与密切相关。菲律宾的经验可以为印度尼西亚提供政策参考，但印度尼西亚在实施过程中需要根...。
-
-## 11. Transfer Pricing, Capital Intensity, Thin Capitalization, dan Penghindaran Pajak pada Perusahaan Pertambangan yang Terdaftar di Bursa Efek Indonesia Periode 2021–2024
-- 来源：openalex
-- 作者：Rio Ramadan, Fitri Mareta, Umarudin Kurniawan
-- 期刊/来源：Journal of Authentic Research
-- 发表日期：2026-11-05
-- 引用数：0
-- 主题：Business, Business administration, Tax avoidance, Cash, Tax revenue
-- 链接：[DOI](https://doi.org/10.36312/jar.v5i4.5936) [链接](https://openalex.org/W7225236920)
-
-**中文摘要（自动生成）**：【金融经济学】印度尼西亚的税收收入仍面临避税行为，尤其是在拥有大量固定资产、存在关联方交易以及融资需求较高的采矿行业。以往关于转让定价、资本密集度和资本结构薄弱（thin capitalization）的研究结果并不一致，它们与避税行为之间的关系在转让定价文件要求及债务与资本比率限制实施后的时期仍需进一步探讨。本研究分析了2021至2024年间在印度尼西亚证券交易所上市的采矿公司中这三个变量与避税行为之间的关系。研究采用目的性抽样方法选取了20家公司作为样本（共80个观测值；剔除5个异常值后剩余75个观测值）。避税程度通过现金有效税率（CETR）来衡量，较低的CETR值表示较高的避税行为，数据通过多元线性回归进行分析。结果显示：转让定价与CETR呈负相关（B = −1.480；p = 0.008），表明存在较高的避税行为；资本密集度与CETR呈正相关（B = 1.599；p = 0.040），表明避税行为较低；而资本结构薄弱与避税行为无显著关联（p = 0.345）。整个模型具有统计学意义（F = 4.163；p = 0.009），调整后的R²值为0.114。这些发现表明，对采矿公司关联方交易...。研究方法：面板数据、回归分析。
-
-## 12. Economies of scale and the equity-efficiency trade-off: Evidence from a piped water network in rural Bangladesh
+## 10. Designing Public Information for Strategic Advice
 - 来源：arxiv
-- 作者：Md. Ahasan Habib, Anna Tompsett
+- 作者：Vasudha Jain, Jaideep Roy
 - 期刊/来源：arXiv
 - 发表日期：2026-11-05
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.08031v1)
+- 链接：[链接](http://arxiv.org/abs/2611.07744v1)
 
-**中文摘要（自动生成）**：【国际贸易】为公共基础设施定价的决策者通常会面临公平性与效率之间的权衡：虽然较高的价格可以通过向付费用户收费来增加收入，从而帮助弥补成本，但可能会降低低收入群体的使用意愿。然而，在存在规模经济的情况下，这种权衡会发生根本性的变化，而规模经济在基础设施网络中十分普遍。我们在孟加拉国农村地区调查了居民对家庭级管道饮用水连接的支付意愿；在该地区，由于有机会接入我们新建的管道网络，人们更愿意如实表达自己的偏好。我们利用项目成本数据来衡量规模经济的程度。综合这两项研究结果，我们发现能够实现成本效益最大化的价格（即使每个连接家庭的成本最低的价格）实际上是零。规模经济对用户收费所带来的收入影响远大于其他因素。更一般地说，实现零价格以最大化成本效益的两个关键条件是：显著的规模经济效应，以及需求对价格变化的高度敏感性（这一现象在发展中国家普遍存在）。由于零价格本身就能最大化公平性，我们得出结论：规模经济可以消除公平性与效率之间的权衡。。
+**中文摘要（自动生成）**：【金融经济学】一位负责人在专家的建议下做出决策，该专家私下了解当地实际情况。在收到建议之前，她可以委托对某个独立状态（如未来需求）进行公开研究，这种研究会改变她们所倾向的不同决策方案之间的预期冲突。我们发现，沟通机制决定了最佳的研究内容。在最佳中介机制下，建议的价值与冲突程度呈正相关，因此完全披露信息是最优选择。当负责人必须遵循某种行动规则时，她可能更倾向于不获取任何信息；而具有信息价值的研究则会出具证明冲突程度较高的报告。在缺乏中介机制且信息传播成本较低的情况下，均衡信息数量的变化会导致建议价值的非线性波动（即出现“向上突变”）。最佳的研究方案能够避免某些沟通障碍，从而实现两种截然不同的沟通模式，并且能够跳过所有中间模式，其效果明显优于完全披露信息或完全不披露信息的情况。当负责人保留原始数据时，选择性公开部分信息可以在不牺牲预测准确性的前提下提升建议的质量。我们还讨论了这一发现对财政预测和支出机构可能产生的影响。。研究方法：均衡模型。
+
+## 11. Stay, Reposition, or Recharge: Battery-Aware Operation of Robotaxi Fleets
+- 来源：arxiv
+- 作者：Philipp Afèche, Saif Benjaafar,  Jiayu,  Zhao
+- 期刊/来源：arXiv
+- 发表日期：2026-11-05
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.07699v1)
+
+**中文摘要（自动生成）**：【金融经济学】电动机器人出租车正从试点项目迅速发展为大规模的商业应用。与传统的人工驾驶网约车不同，这类车辆需要集中式的车队管理以及对车辆电池电量（SoC）的精细控制。我们研究了车队管理者应如何在这些系统中协同制定服务调度、空车回程调度、车辆怠速运行以及充电等决策。我们建立了一个连续时间流体模型，用于描述车辆在不同位置和电量状态下的动态变化，并发现了经典车辆调度模型中缺失的两种基于电量信息的控制策略：提前返回充电站（RTD）和基于电量信息的重新调度策略。特别地，最优解决方案采用了简单的阈值机制——当车辆电量低于某个阈值时，应返回充电站进行充电；当电量高于该阈值时，则无需返回。此外，车辆也不应在电量低于同一阈值的情况下进行重新调度；而在电量高于该阈值时，行驶目的地的选择取决于车辆的电量是否与目的地的电池电量需求相匹配（这一概念在论文中有所阐述）。我们通过比较完全基于电量信息的调度策略与忽略电量信息的调度策略（即在RTD和重新调度决策中不考虑电量因素的策略），量化了电量信息的重要性。研究发现，由于存在高电量车辆利用率不足以及低电量车辆被过度派遣到充电成本较高的地点之间的权衡，两者之间的性能差距可能非...。研究方法：模型校准。
+
+## 12. Willingness-to-pay space and preference space: a unified treatment of equivalence, heterogeneity and interpretation
+- 来源：arxiv
+- 作者：Stephane Hess
+- 期刊/来源：arXiv
+- 发表日期：2026-11-05
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.07698v1)
+
+**中文摘要（自动生成）**：【金融经济学】越来越多的选择建模研究选择在“支付意愿（WTP）空间”中对模型进行估计，但这些研究往往将WTP空间视为与“偏好空间”不同的模型，并误读了其参数所代表的含义。本文汇总了这些研究中的观点，并对它们进行了系统的分析，主要基于一个关键条件：即两种模型规格必须相同。实际上，WTP空间只是对原始模型的重新参数化表达；当系数非随机时，这两种模型在似然值、WTP估计值及标准误差方面是完全一致的。在成本敏感性存在确定性异质性或非线性的情况下，WTP仍需通过偏导数的比值来计算；不过通过简单的标准化处理，仍可以在参考点处得到直接估计的WTP值。对于随机异质性情况，潜在类别模型在这两个空间中是等价的；而其他混合模型只有在其隐含分布相匹配时才具有等价性（例如全协方差对数正态分布模型）。此外，模型中的独立性并非一个中性的假设。。
