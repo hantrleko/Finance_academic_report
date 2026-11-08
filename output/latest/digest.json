@@ -1,71 +1,75 @@
 {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "count": 12,
   "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
   "latest_updated": true,
-  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（8 篇）、收入分配与福利（2 篇）、绿色金融与可持续发展（1 篇）。方法上以回归分析、均衡模型为主。来源分布：OpenAlex（5 篇）、arXiv（5 篇）、Semantic Scholar（2 篇）。其中 1 篇命中顶级期刊白名单。",
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（8 篇）、国际贸易（2 篇）、风险管理与衍生品（1 篇）。方法上以实验方法、优化方法为主。来源分布：OpenAlex（5 篇）、arXiv（5 篇）、Semantic Scholar（2 篇）。其中 1 篇命中顶级期刊白名单。",
   "insights": {},
   "papers": [
     {
-      "title": "Proof of a Conjecture of Matherne, Morales, and Selover on Encodings of Unit Interval Orders",
+      "title": "Mapping Future Energy Journeys Through Modeling the Global Transport of Synthetic Energy Carriers",
       "authors": [
-        "Félix Gélinas",
-        "Adrien Segovia",
-        "Hugh Thomas"
+        "Uwe Langenmayr",
+        "Julia Schuler",
+        "Viktor Slednev",
+        "Wolf Fïchtner"
       ],
-      "venue": "The Electronic Journal of Combinatorics",
-      "published_date": "2026-11-06",
-      "doi_url": "https://doi.org/10.37236/11825",
-      "openalex_url": "https://openalex.org/W4312206089",
-      "cited_by_count": 2,
-      "abstract": "There are two bijections from unit interval orders on $n$ elements to Dyck paths from $(0,0)$ to $(n,n)$. One is to consider the pairs of incomparable elements as forming the set of boxes between a Dyck path and the diagonal. Another is to find a particular part listing (in the sense of Guay-Paquet, Rowland and Morales) which yields an isomorphic poset, and to interpret the part listing as the area sequence of a Dyck path. Matherne, Morales, and Selover conjectured that, for any unit interval order, these two Dyck paths are related by Haglund's well-known zeta bijection. In this paper we prove their conjecture.",
-      "summary_zh": "【金融经济学】存在两种从包含$n$个元素的单位区间序到从$(0,0)$到$(n,n)$的Dyck路径之间的双射映射。一种方法是将不可比较的元素对视为构成Dyck路径与对角线之间的“盒子”集合；另一种方法是找到一种特定的部分列表（按照Guay-Paquet、Rowland和Morales的定义），该列表能够生成一个同构的偏序集，并将这种部分列表解释为Dyck路径的面积序列。Matherne、Morales和Selover推测，对于任何单位区间序，这两种Dyck路径都通过Haglund著名的zeta双射映射相互关联。在本文中，我们证明了他们的这一猜想。。",
-      "topics": [
-        "Bijection",
-        "Conjecture",
-        "Bijection, injection and surjection",
-        "Combinatorics",
-        "Unit interval"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Local convergence of a proximal type method for weakly convex minimization",
-      "authors": [
-        "Valdinês Leite de Sousa Júnior",
-        "Lucas Vidal de Meireles",
-        "Samara Costa Lima",
-        "Gilson do Nascimento Silva"
-      ],
-      "venue": "Computational and Applied Mathematics",
-      "published_date": "2026-11-06",
-      "doi_url": "https://doi.org/10.1007/s40314-026-03952-6",
-      "openalex_url": "https://openalex.org/W4385644130",
+      "venue": "Nature Communications",
+      "published_date": "2026-11-07",
+      "doi_url": "https://doi.org/10.1038/s41467-026-78710-7",
+      "openalex_url": "https://openalex.org/W4403063794",
       "cited_by_count": 0,
-      "abstract": "Abstract\n                  The main purpose of this paper is to develop and analyze a proximal-type method for the local minimization of weakly convex functions. Our motivation for introducing this algorithm is to increase its versatility and applicability in a broader range of scenarios in optimization and introduce a more adaptable version of the method for typical generalizations. Our study relies heavily on the Moreau envelope, a well-known mathematical tool used to analyze the behavior of the proximal operator. By leveraging the properties of the Moreau envelope, we are able to prove that the proximal algorithm converges in local contexts. Moreover, we present a complexity result to assess the practical feasibility of the proximal algorithm and provide a numerical example to illustrate the practical behavior of the algorithm.",
-      "summary_zh": "【金融经济学】摘要  \n本文的主要目的是开发并分析一种用于弱凸函数局部最小化的近端方法。我们引入这种算法的动机在于提高其在优化问题中的通用性和适用范围，并为典型推广情况提供更具适应性的方法版本。我们的研究大量依赖于莫罗包络（Moreau envelope），这是一种用于分析近端算子行为的著名数学工具。通过利用莫罗包络的性质，我们证明了该近端算法在局部情况下是收敛的。此外，我们还提出了一个复杂性分析结果，以评估该算法的实际可行性，并通过一个数值示例来说明该算法的实际表现。。研究方法：优化方法。",
+      "abstract": "Abstract\n                  Synthetic energy carriers can connect renewable-energy-rich potential production regions with distant demand centers, but the emergence of trade depends on total supply costs. Here, we develop a spatially resolved heuristic combining hydrogen production costs with ports, pipelines, and shipping routes, as well as syntheses, cracking, and reformation processes, to identify key import corridors. Across 10,883 production locations and seven different scenarios, we find that export regions connected to the importer through retrofit-ready pipelines remain competitive despite only moderate renewable potentials. Meanwhile, for remote exporters competitiveness depends on port availability and coastal access through pipeline networks. Gaseous hydrogen dominates short pipeline routes, and ammonia is preferred for maritime trade, whereas methanol and methane emerge in long multimodal chains. Additional results show that low-cost heat availability is required for the competitiveness of liquid organic hydrogen carriers, while accounting for market values of conventional counterparts boosts ammonia and methanol trade.",
+      "summary_zh": "【金融经济学】摘要  \n合成能源载体能够将富含可再生能源的潜在生产区域与遥远的需求中心连接起来，但贸易的实现取决于总供应成本。本文提出了一种空间分析方法，该方法综合考虑了氢气的生产成本、港口设施、输气管道、航运路线以及合成、裂解和重整等工艺过程，以确定关键的进口通道。在研究了10,883个生产地点和7种不同情景后，我们发现：即使可再生能源潜力较为有限，通过具备改造条件的输气管道与进口市场相连的地区仍具有竞争力。对于偏远地区的出口商而言，其竞争力则取决于港口的可用性以及通过输气管道网络实现的沿海通道。在短距离输气管道运输中，气体氢气更具优势；而在海上运输中，氨气是更优的选择；而在长距离的多模式运输链中，甲醇和甲烷则更具竞争力。此外，研究还表明，液态有机氢载体的竞争力需要依赖低成本的热能供应；同时，考虑传统能源产品的市场价值后，氨气和甲醇的贸易量会进一步增加。。",
       "topics": [
-        "Monotonic function",
-        "Algorithm",
-        "Convergence (economics)",
-        "Envelope (radar)",
-        "Range (aeronautics)"
+        "Perspective (graphical)",
+        "Energy transport",
+        "Energy carrier",
+        "Energy (signal processing)",
+        "Business"
       ],
       "source": "openalex"
     },
     {
-      "title": "Discrete Choice under Congestion: Equilibrium and Welfare",
+      "title": "Computational Compound Prioritization Strategy Incorporating Docking Variability and Interaction Energies Identifies Putative LRH-1 Binders",
       "authors": [
-        "Debopam Bhattacharya",
-        "Matias Makiranta"
+        "Ana Cristina Chang-Gonzalez",
+        "Alexis N. Campbell",
+        "Eric W. Bell",
+        "Raymond Blind",
+        "Jens Meiler"
+      ],
+      "venue": "Journal of Chemical Information and Modeling",
+      "published_date": "2026-11-07",
+      "doi_url": "https://doi.org/10.1021/acs.jcim.6c02790",
+      "openalex_url": "https://openalex.org/W7163826740",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  Compound ranking in structure-based computer-aided drug discovery notoriously yields highly ranked false positives due to sampling and, more frequently, scoring errors. We developed a compound prioritization strategy that utilizes sampled docked poses from complementary docking approaches, i.e., targeted physics-based docking and blind docking with a generative model, into multiple conformations of the target protein to train two multilayer perceptron (MLP) models. The MLPs predict binders or activators at the orthosteric ligand-binding pocket of the nuclear receptor Liver Receptor Homologue-1 (LRH-1, NR5A2). Our approach circumvents the reliance on a single docked pose for scoring compounds or individual scoring metrics for compound ranking. In an out-of-distribution compound set, we observed that the MLPs identified compounds that are chemically dissimilar from those in the training set and are sensitive to single scaffold modifications, making the MLPs potential tools for lead optimization. We applied the MLPs on a pilot study prospective drug discovery campaign, which resulted in the identification of four putative LRH-1 binders. We found that a combination of scoring and prediction metrics enriches for hit compounds across library sizes. In all, this work presents a method to leverage structural and experimental data to aid drug discovery for a challenging protein target.",
+      "summary_zh": "【风险管理与衍生品】摘要  \n在基于结构的计算机辅助药物发现过程中，化合物排名常常因采样误差和评分错误而产生大量高排名的假阳性结果。我们提出了一种化合物优先级评估策略，该方法结合了多种对接方法（包括基于物理原理的定向对接和基于生成模型的盲对接）所得到的目标蛋白多构象数据，用于训练两个多层感知器（MLP）模型。这些MLP模型能够预测核受体Liver Receptor Homologue-1（LRH-1, NR5A2）的配体结合位点上的结合剂或激活剂。我们的方法避免了仅依赖单一对接结果或单一评分指标来进行化合物排名的局限性。在测试集（包含训练集中不存在的化合物）中，MLP模型成功识别出与训练集化合物在化学结构上存在差异的化合物，并且对化合物骨架的微小修改具有敏感性，这表明它们具有潜在的先导化合物优化价值。我们将该模型应用于一项初步的药物发现研究，最终发现了四种可能的LRH-1结合剂。实验结果表明，结合多种评分和预测指标能够提高不同规模化合物库中候选化合物的筛选效率。总体而言，本研究提出了一种利用结构和实验数据来辅助针对复杂蛋白质靶点进行药物发现的方法。。研究方法：实验方法、优化方法。",
+      "topics": [
+        "Virtual screening",
+        "Prioritization",
+        "Computer science",
+        "Machine learning",
+        "Artificial intelligence"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Cores of $3$-distant convex games",
+      "authors": [
+        "Keisuke Bando",
+        "Toshiyuki Hirai",
+        "Kenzo Imamura",
+        "Ryuhei Mizutani"
       ],
       "venue": "arXiv",
       "published_date": "2026-11-05",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.07787v1",
+      "openalex_url": "http://arxiv.org/abs/2611.07572v1",
       "cited_by_count": 0,
-      "abstract": "In many choice settings, a rise in aggregate demand for an option lowers an individual's payoff from choosing it. Driving becomes less attractive than taking a train when more commuters drive, clogging the highway. In such cases, a targeted intervention that mitigates the externality at the congested option can divert it elsewhere and also undermine preference based sorting, making overall welfare effects theoretically ambiguous. We develop an empirical framework to analyze such scenarios of endogenous congestion. We show that in these settings, equilibrium exists and is unique without restrictions on functional-form of utilities or dimension/distribution of preference heterogeneity, and even when congestion at one option affects payoffs from other choices. Under a linear-index structure, micro-data on choice enables semiparametric identification of utility contrasts and welfare effects of some, but not all, interventions. We apply the framework to Cambridge undergraduate admissions, where candidates apply through one constituent college, and admission probability depends on application numbers relative to capacity in that college. Using administrative micro-data on 25,325 applicants, we calculate welfare under two counterfactuals: (i) centralized random allocation and (ii) higher rent at popular colleges. Random allocation reduces welfare for everyone: it removes individual choice without improving admission chances since, by design, lower congestion at a college exactly counterbalances the lower probability of being allocated there. Targeted rent increase produces both gains and losses, with median loss for men and median gain for women. This exercise shows how identified preferences and equilibrium feedback jointly determine welfare when choices entail externalities.",
-      "summary_zh": "【收入分配与福利】在许多选择情境中，对某种选项的总需求增加会降低个人选择该选项所获得的收益。当更多通勤者选择开车出行时，驾车出行相较于乘坐火车变得不那么具有吸引力，从而导致高速公路拥堵。在这种情况下，针对拥堵问题的干预措施可以将交通压力转移到其他地方，同时也会削弱基于个人偏好的资源分配机制，从而使整体福利效应在理论上变得难以确定。我们构建了一个实证框架来分析这类内生性拥堵现象。研究表明，在这些情境下，均衡是存在的且是唯一的，无论效用函数的形式或偏好异质性的维度/分布如何；即使某个选项的拥堵状况影响了其他选择的收益，均衡依然成立。在采用线性指数结构的模型中，关于选择的微观数据能够使我们半参数地识别某些干预措施的效用差异及其福利效应，但并非所有干预措施都能被准确评估。我们将该框架应用于剑桥大学的本科生招生过程：候选人通过该校的一个学院进行申请，录取概率取决于申请人数与该学院招生能力的比值。利用25,325名申请者的行政数据，我们模拟了两种反事实情景：（1）集中随机分配；（2）热门学院的学费上涨。结果显示，随机分配机制会降低所有人的福利——虽然它消除了个人的选择自由，但并未提高录取机会，因为这种分配方式...。研究方法：均衡模型。",
+      "abstract": "Convex cooperative games have a nonempty core and admit an efficient construction of core allocations. However, economically natural local frictions may violate convexity. We study the core of $3$-distant convex games, which permit violations of convexity only between closely related coalitions. Although the core of such a game may be empty, we establish a simple necessary and sufficient condition for its nonemptiness. We also develop a strongly polynomial-time combinatorial algorithm for finding a core allocation whenever one exists. Finally, we demonstrate the applicability of the framework to oligopolistic competition with merger synergies and profit allocation of joint production with complementary inputs.",
+      "summary_zh": "📌 研究问题：凸合作博弈在局部摩擦下可能违反凸性，导致核心可能为空。本文旨在研究3- distant convex games的核心性质及其存在条件。\n\n🔬 研究方法：本文建立了核心非空性的简单必要且充分条件，并开发了一种强多项式时间的组合算法，用于在核心存在时寻找核心分配。\n\n📊 核心发现：3- distant convex games的核心可能为空，但存在明确的判别条件；同时，在核心存在的情况下，能够通过算法高效找到分配方案。\n\n💡 应用价值：该框架可应用于具有兼并协同效应的寡头竞争以及互补投入的联合生产利润分配问题。",
       "topics": [
         "Economics",
         "Finance"
@@ -73,18 +77,20 @@
       "source": "arxiv"
     },
     {
-      "title": "Unobserved Consideration and Consumer Welfare",
+      "title": "Transparency in Team Contracts",
       "authors": [
-        "Debopam Bhattacharya",
-        "Ryan J. Martin"
+        "Paul Dütting",
+        "Yingkai Li",
+        "Inbal Talgam-Cohen",
+        "Jinzhao Wu"
       ],
       "venue": "arXiv",
       "published_date": "2026-11-05",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.07774v1",
+      "openalex_url": "http://arxiv.org/abs/2611.07494v1",
       "cited_by_count": 0,
-      "abstract": "Can welfare effects of price change be identified when consumers' consideration sets are heterogeneous and unobserved? We establish that the welfare distribution is the same functional of structural choice probabilities under stable but limited consideration as under full consideration. The result permits unrestricted income-effects, preference heterogeneity, and dependence between preferences and consideration. Within this class, limited consideration admits a full-consideration representation preserving choice-probabilities and money-metric compensation: consideration/preferences can remain unidentified while demand and welfare are identified. When consideration sets contract as prices rise, the welfare distribution can be bounded using demand and a bound on choice-set attrition.",
-      "summary_zh": "【收入分配与福利】当消费者的考虑集具有异质性且无法观测时，我们能否识别价格变动所带来的福利效应？我们发现，在考虑范围有限但稳定的情况下，福利分布与在完全考虑所有选项的情况下所遵循的函数关系是相同的。这一结果允许存在不受限制的收入效应、偏好异质性，以及偏好与考虑范围之间的关联性。在这一类情况下，即使考虑范围有限，仍然可以通过保持选择概率和货币度量补偿的方式来构建完全考虑情况下的福利分布模型：即使无法确定消费者的具体考虑范围和偏好，需求与福利水平仍然是可以识别的。当价格上涨导致消费者的考虑范围缩小时，可以通过需求数据以及对考虑范围缩减程度的限制来界定福利分布的范围。。",
+      "abstract": "In contract design, the principal is often better informed about the project's chances of succeeding than the agents. To incentivize effort, the principal has two main tools: first, to design a contract, sharing part of the project's success among the agents; second, to design a (Bayesian) persuasion scheme, selectively sharing information with the agents. In this work we are interested in the optimal combination of both these tools.   We tackle the joint problem through the prism of simplicity vs. optimality, and establish a stark dichotomy: The simple disclosure scheme of full transparency achieves a tight $4/3$-approximation to the optimal combination of information disclosure and team contract, when the team's production function is submodular. In contrast, full transparency can be arbitrarily far from optimal when production is supermodular.   The techniques that we develop to bound the gap for submodular functions, also yield a new deterministic polynomial-time approximation algorithm for pure multi-agent contract design, with a significantly improved approximation ratio of $2.311$, and thus a $3.081$-approximation algorithm for the joint information and contracting problem.",
+      "summary_zh": "【金融经济学】在合同设计中，委托人通常比代理人更了解项目成功的可能性。为了激励代理人的努力，委托人主要有两种手段：首先，设计合同，将项目成功的一部分收益分配给代理人；其次，设计一种（贝叶斯）说服机制，有选择地向代理人透露信息。在这项研究中，我们关注这两种手段的最佳组合。我们从“简单性”与“最优性”的角度来探讨这个问题，并得出了一个鲜明的结论：当团队的生产函数是次模的（即满足某些数学性质）时，完全透明的信息披露机制能够实现信息披露与团队合同组合的最优解的紧密$4/3$近似。相反，当生产函数是超模的时，完全透明可能远远偏离最优解。我们开发的技术不仅用于量化次模函数情况下的差距，还提供了一种新的确定性多项式时间近似算法，用于纯多代理人合同设计，其近似比率显著提高至$2.311$；同时，我们也为联合信息与合同设计问题提供了一种$3.081$近似的算法。。研究方法：贝叶斯方法。",
       "topics": [
         "Economics",
         "Finance"
@@ -92,18 +98,18 @@
       "source": "arxiv"
     },
     {
-      "title": "Does Institutional Quality Determine Environmental Sustainability?",
+      "title": "The Impact of the Construction of Pilot Free Trade Zones on Reducing Carbon Emissions in Resource-based Cities",
       "authors": [
-        "Monica Singhania",
-        "Anisha"
+        "Zhi-Wei Hong",
+        "Jian-Yun Zeng"
       ],
-      "venue": "International Journal of Finance & Economics",
-      "published_date": "2026-11-03",
-      "doi_url": "https://doi.org/10.1002/ijfe.70324",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:295565669",
+      "venue": "Journal of Economics and Public Finance",
+      "published_date": "2026-11-01",
+      "doi_url": "https://doi.org/10.22158/jepf.v12n3p192",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295488768",
       "cited_by_count": 0,
-      "abstract": "Environmental sustainability increasingly depends on the alignment between development strategies and institutional governance, yet empirical evidence on the role of institutional quality in shaping environmental degradation remains highly contested. While institutions are widely theorised as central to environmental governance, existing studies report mixed and sometimes contradictory findings. This study addresses this ambiguity through a comprehensive meta‐analysis of 792 effect sizes drawn from 134 empirical studies examining the relationship between institutional quality and environmental degradation. Using random‐effects models, multilevel mixed‐effects models, and Bayesian model averaging, the analysis evaluates the average association between institutional quality and environmental degradation while explicitly accounting for heterogeneity, study dependence and publication bias. The results indicate that, on average, stronger institutional quality is associated with lower environmental degradation, though this relationship is highly conditional. Subgroup analyses show that World Governance and Political Risk indices yield more robust negative associations than narrower or compositionally heterogeneous measures and that effects are stronger for ecological footprint than carbon emissions. Meta‐regression identifies infrastructure, technology, globalisation, foreign direct investment and regional context as key moderators. The findings suggest institutional quality functions as a conditioning framework rather than a uniform determinant of environmental outcomes.",
-      "summary_zh": "【绿色金融与可持续发展】环境可持续性在很大程度上取决于发展战略与制度治理之间的协调性。然而，关于制度质量在环境退化过程中所起作用的实证证据仍存在较大争议。尽管制度通常被视为环境治理的核心要素，但现有研究的结果却呈现出复杂且有时相互矛盾的现象。本研究通过对134项实证研究中得出的792个效应量进行综合元分析，试图澄清这一模糊性。通过运用随机效应模型、多层次混合效应模型以及贝叶斯模型平均法，该分析在充分考虑异质性、研究依赖性和发表偏倚的情况下，评估了制度质量与环境退化之间的平均关联程度。研究结果表明，总体而言，较高的制度质量与较低的环境退化程度相关，但这种关联具有很强的条件性。 subgroup 分析显示，世界治理指数和政治风险指数所揭示的负相关关系更为稳健；此外，生态足迹指标的影响强度高于碳排放指标。元回归分析进一步指出，基础设施、技术水平、全球化进程、外国直接投资以及地区背景是影响这种关联的关键调节因素。这些发现表明，制度质量更多地起到一种调节作用，而非决定环境结果的唯一因素。。研究方法：回归分析、贝叶斯方法。",
+      "abstract": "As the world accelerates its response to climate change, resource-based cities that have long depended on resource development face a particularly difficult task in cutting carbon emissions. This study focuses on China’s Pilot Free Trade Zones (FTZs), a major institutional innovation, and takes a closer look at how they affect the environment of resource-based cities. Using a difference-in-differences (DID) model, the study analyzes panel data on carbon emissions from resource-based cities before and after FTZs establishment. The results show that establishing FTZs significantly reduce carbon emissions in these cities. This carbon-reduction effect works through three channels: lowering energy consumption intensity, increasing foreign direct investment, and enhancing green technological innovation. The effect is more pronounced in the central and western regions and in declining cities. These findings offer useful implications for promoting coordinated regional development and designing differentiated policies. They also highlight the critical role of institutional innovation in achieving the “dual carbon” goals.",
+      "summary_zh": "【国际贸易】随着全球对气候变化的应对措施不断加快，那些长期以来依赖资源开发的资源型城市在减少碳排放方面面临着尤为艰巨的挑战。本研究聚焦于中国的自由贸易试验区（FTZs），这一重要的制度创新举措，并深入探讨了它们对资源型城市环境的影响。通过使用差异-in-differences（DID）模型，研究分析了自由贸易试验区设立前后资源型城市碳排放的面板数据。研究结果表明，自由贸易试验区的设立显著降低了这些城市的碳排放。这种减排效应主要通过三个途径实现：降低能源消耗强度、吸引更多外国直接投资以及促进绿色技术创新。这种效应在中西部地区以及经济衰退的城市中更为显著。这些发现为推动区域协调发展及制定差异化政策提供了有益的启示，同时也凸显了制度创新在实现“双碳”目标中的关键作用。。研究方法：双重差分、面板数据。",
       "topics": [
         "Environmental Science",
         "Economics"
@@ -111,109 +117,109 @@
       "source": "semantic_scholar"
     },
     {
-      "title": "Applying the COPRAS Method for Stock Price Prediction: A Comparative Analysis of Selected Companies",
+      "title": "Unilateral Penalty or Mutual Disaster? Assessing the Asymmetric Reduction Effects of Sanctions on Aggregate and Segmented Trade",
       "authors": [
-        "V. Prasanth",
-        "M. Ramachandran",
-        "Chinnasami Sivaji"
+        "Hua Zhang",
+        "Liu-Guo Shao",
+        "T. Lan"
       ],
-      "venue": "Trends in Finance and Economics",
-      "published_date": "2026-10-31",
-      "doi_url": "https://doi.org/10.46632/tfe/4/4/1",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:295487693",
+      "venue": "International Journal of Finance & Economics",
+      "published_date": "2026-11-01",
+      "doi_url": "https://doi.org/10.1002/ijfe.70325",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295531223",
       "cited_by_count": 0,
-      "abstract": "This paper explores the application in advanced algorithms and methodologies Stock price forecasting is extremely important as it has a significant financial impact, influencing investment decisions and market strategies accurate market forecasting. Effective predictive models offer benefits beyond wealth creation, including early identification of failing investments to prevent market disruptions. The study acknowledges the inherent challenges in financial time series analysis—non-stationarity, nonlinearity, and high volatility—which necessitate continued development of more sophisticated analytical approaches. The research examines both internal factors (company profits, liabilities, competition) and external factors (oil prices, exchange rates, political stability) that influence stock prices. Traditional stock trend prediction algorithms rely on historical time series data, while newer approaches incorporate AI and Machine learning methods, including artificial neural networks (ANNs), are important in advanced predictive modeling and have shown better performance than traditional regression methods, though significant challenges remain in optimizing input variables and network architecture. The paper particularly highlights the promising performance The study uses Machine learning and deep learning approaches, particularly the use of Generative Adversarial Networks (GANs), are used to predict final prices. which outperform other methods. In addition, the research introduces a novel approach stock price prediction model, built on the basis of Dragonfly Algorithm (DFA)-optimized Deep Belief Network (DBN), which leverages market Sentiment analysis from social media data. For evaluation, this study uses the Complex Proportionality Assessment (COPRAS) method along with other multi-criteria decision-making methods (MCDM) methods, such as the Analytical Hierarchy Process (AHP), are used in decision-making processes analysis. These methods help assess and rank different prediction models based on multiple criteria, providing a robust framework for addressing complex financial forecasting challenges. The integrated approach combining statistical methods with machine learning techniques based on technical analysis offers valuable insights for investors, particularly those focused on short-term investments. This research contributes to ongoing efforts to develop more accurate forecasting models, though acknowledges that no universal solution has yet been established.",
-      "summary_zh": "【金融经济学】本文探讨了高级算法和方法在股票价格预测中的应用。股票价格预测具有重要意义，因为它对金融领域具有重大影响，能够影响投资决策和市场策略。准确的预测模型不仅有助于财富创造，还能提前识别出表现不佳的投资项目，从而避免市场波动。研究指出了金融时间序列分析中存在的固有挑战——非平稳性、非线性和高波动性——这些挑战要求不断开发更为复杂的分析方法。研究分析了影响股票价格的内部因素（公司利润、负债、竞争状况）和外部因素（油价、汇率、政治稳定性）。传统的股票趋势预测算法依赖于历史时间序列数据，而新兴的方法则结合了人工智能和机器学习技术，其中人工神经网络（ANN）在高级预测建模中表现出色，其性能优于传统的回归方法，尽管在优化输入变量和网络架构方面仍存在挑战。本文特别强调了生成对抗网络（GAN）在股票价格预测中的优异表现。此外，研究还提出了一种基于龙fly算法（DFA）优化的深度信念网络（DBN）的新型股票价格预测模型，该模型利用了社交媒体数据中的市场情绪分析。在评估过程中，本研究采用了复杂比例评估（COPRAS）方法以及其他多标准决策方法（如层次分析法AHP），这些方法有助于根据多种标准对不同的预测模...。研究方法：时间序列、回归分析、机器学习、深度学习、神经网络、情绪分析。",
+      "abstract": "Is the impact of sanctions on two‐way trade between sanctioning and sanctioned countries symmetric? This paper compares the differential impact of sanctions on sanctioning and sanctioned countries, with evidence from aggregate trade, segmented trade, and industry‐specific trade. The results show that the impacts of sanctions on both sanctioning and sanctioned countries are negative, widespread, and asymmetric, with a more pronounced negative effect on sanctioned countries. Specifically, for sanctioning countries, sanctions have a more negative impact on trade in intermediate goods and forward participation in the global value chains, as well as on the agriculture, forestry, fishing, mining, and quarrying sectors. Conversely, for sanctioned countries, sanctions have a greater impact on final goods, backward participation in the global value chains, and the manufacturing sectors. By adopting a two‐way perspective and analysing at a segmented trade and industry‐specific level, this paper contributes to the literature on the impact of sanctions on international trade.",
+      "summary_zh": "【国际贸易】制裁对实施制裁国与受制裁国之间的双向贸易的影响是否是对称的？本文通过汇总贸易数据、细分贸易数据以及行业特定贸易数据，比较了制裁对这两类国家产生的不同影响。研究结果表明，制裁对两国都产生了负面影响，且这种影响具有普遍性和不对称性，其中受制裁国的受影响程度更为严重。具体而言，对于实施制裁的国家而言，制裁对中间产品贸易、在全球价值链中的前向参与度以及农业、林业、渔业、采矿和采石等行业产生了更为显著的负面影响；而对于受制裁的国家来说，制裁对最终产品贸易、在全球价值链中的后向参与度以及制造业产生了更大的影响。本文采用双向视角，并在细分贸易和行业特定层面进行分析，为研究制裁对国际贸易影响的文献做出了贡献。。",
       "topics": [
-        "Business",
-        "Economics"
+        "Economics",
+        "Political Science"
       ],
       "source": "semantic_scholar"
     },
     {
-      "title": "Gender, immigration and entrepreneurship",
+      "title": "MambaSleepCVD for prediction of long term cardiovascular outcomes from polysomnography",
       "authors": [
-        "Kun Michelle Yang",
-        "Jintong Tang",
-        "Wenping Ye",
-        "Shaji Khan"
+        "Alessia Calzoni",
+        "Andrew Dei Rossi",
+        "Giuliana Monachino",
+        "Beatrice Zanchi",
+        "Luigi Fiorillo"
       ],
-      "venue": "New England journal of entrepreneurship",
-      "published_date": "2026-11-06",
-      "doi_url": "https://doi.org/10.1108/neje-12-2025-0123",
-      "openalex_url": "https://openalex.org/W4386238524",
+      "venue": "npj Digital Medicine",
+      "published_date": "2026-11-07",
+      "doi_url": "https://doi.org/10.1038/s41746-026-03450-3",
+      "openalex_url": "https://openalex.org/W7212056391",
       "cited_by_count": 0,
-      "abstract": "Purpose\n                    This study examines how the intersection of gender and immigration affects women's entrepreneurial engagement, empowering them to achieve financial independence and autonomy. Grounded in intersectionality and role congruity theory, it explores how national gender inequality influences the relationship between gender, immigration and the pursuit of entrepreneurship.\n                  \n                  \n                    Design/methodology/approach\n                    Our cross-sectional analysis utilizes data from 63 countries and 272,910 individuals. We employ logistic regression analysis along with robust checks such as propensity score matching, probit regression and the entropy balancing technique.\n                  \n                  \n                    Findings\n                    The findings highlight the compound challenges faced by immigrant women in entrepreneurship and the influence of national gender inequality on women's entrepreneurial pursuits. Our investigation reveals that women generally face discouragement from pursuing entrepreneurship. Immigrant women face more disadvantages in pursuing entrepreneurship compared with male immigrants and male natives. Notably, our results suggest that the negative relationship between being a woman and entrepreneurial activity is weaker in countries with higher levels of gender inequality.\n                  \n                  \n                    Social implications\n                    It suggests that policy adjustments promoting entrepreneurship in contexts with varying levels of gender equality could foster sustainable development among both native and immigrant populations.\n                  \n                  \n                    Originality/value\n                    The study contributes to the literature by (1) revealing the compounded challenges women immigrants face in entrepreneurship and (2) highlighting how national gender inequality affects women's entrepreneurial pursuits.",
-      "summary_zh": "【金融经济学】**研究目的**  \n本研究探讨了性别与移民身份的交叉如何影响女性的创业参与度，从而帮助她们实现经济独立和自主。基于交叉性理论（intersectionality）和角色一致性理论（role congruity theory），本研究分析了国家层面的性别不平等如何影响性别、移民身份与创业行为之间的关系。  \n\n**研究设计/方法**  \n我们的横断面分析使用了来自63个国家、共计272,910名受访者的数据。研究方法包括逻辑回归分析（logistic regression），并采用了倾向得分匹配（propensity score matching）、Probit回归（probit regression）以及熵平衡技术（entropy balancing technique）等稳健性检验方法。  \n\n**研究结果**  \n研究结果表明，移民女性在创业过程中面临多重挑战，且国家层面的性别不平等对她们的事业发展产生了显著影响。总体而言，女性在创业过程中更容易受到阻碍；与男性移民及本土男性相比，移民女性在创业方面处于更为不利的地位。值得注意的是，在性别不平等程度较高的国家中，女性身份与创...。研究方法：倾向得分匹配、横截面分析、回归分析。",
+      "abstract": "Abstract\n                  Long-term cardiovascular disease (CVD) risk prediction remains a major global clinical priority. This study investigates how much prognostic information full-night polysomnography (PSG) carries after explicitly controlling demographic confounding, and whether combining specialized unimodal representations with continuous fusion mechanisms can effectively leverage it. We adopt a modular framework based on Coupled Mamba for simultaneous cross-modal and temporal fusion, capturing long-range dependencies and dynamic interactions between physiological modalities throughout sleep. With this capability, we assess whether specialized supervised representations from task-specific unimodal encoders offer prognostic value comparable to task-agnostic multimodal self-supervised pre-training. Validated on the Sleep Heart Health Study (SHHS) dataset, our approach achieves performance comparable to or better than current state-of-the-art architectures in the fully supervised, data-abundant regime, although the cardiac channel alone accounts for most of the discriminative signal. More importantly, we show that in the reference dataset chronological age strongly drives survival ranking; when provided as an explicit input, it can create a shortcut that obscures the contribution of PSG-derived physiology. Ultimately, our findings suggest that supervised unimodal experts integrated through a fusion engine provide a flexible pathway for prognostic risk ranking from sleep recordings, while reliable CVD screening will require independent external cohorts and explicit confounder control.",
+      "summary_zh": "【金融经济学】摘要  \n长期心血管疾病（CVD）的风险预测仍是全球临床研究的重点。本研究在严格控制人口统计学混杂因素后，探讨了整夜多导睡眠监测（PSG）所携带的预后信息量，以及将专门的单模态表示与连续融合机制相结合是否能够有效利用这些信息。我们采用基于Coupled Mamba的模块化框架，实现跨模态和时间上的同步融合，捕捉睡眠过程中不同生理指标之间的长期依赖关系和动态交互。通过这一技术，我们评估了来自特定任务的单模态编码器的专门化监督表示是否具有与任务无关的多模态自监督预训练相当的预后价值。在Sleep Heart Health Study（SHHS）数据集上的验证表明，我们的方法在数据充足、完全监督的条件下，其性能可与当前最先进的架构相媲美甚至更优，尽管心脏通道本身占据了大部分区分性信号。更重要的是，我们发现年龄这一因素在生存率排序中起着关键作用；当年龄作为显式输入时，它可能会掩盖PSG所获取的生理数据的实际贡献。总体而言，我们的研究结果表明，通过融合引擎整合的监督单模态模型为基于睡眠记录的预后风险排序提供了一种灵活的方法，而可靠的CVD筛查仍需要独立的外部数据集和严格的混杂因素控制。。",
       "topics": [
-        "Immigration",
-        "Female entrepreneurs",
-        "Demographic economics",
-        "Entrepreneurship",
-        "Business"
+        "Polysomnography",
+        "Modalities",
+        "Medicine",
+        "Discriminative model",
+        "Confounding"
       ],
       "source": "openalex"
     },
     {
-      "title": "Evaluating the Geometric Brownian Motion Model for Gold Price Movements (XAU/USD) across Market Conditions",
+      "title": "Comparative Evaluation of Machine Learning Models for Credit Card Approval Prediction Using Class Imbalance Handling Methods in the PyCaret AutoML Framework",
       "authors": [
-        "Pandya Tungga Prabaswara",
-        "Nalar Istiqomah"
+        "Mario Suryowisnu Wicaksono",
+        "Magdalena A. Ineke Pakereng"
       ],
-      "venue": "Analitika Journal of Economics Management and Business",
-      "published_date": "2026-11-06",
-      "doi_url": "https://doi.org/10.55080/analitika.v1i2.1979",
-      "openalex_url": "https://openalex.org/W7225293358",
+      "venue": "Jurnal JTIK (Jurnal Teknologi Informasi dan Komunikasi)",
+      "published_date": "2026-11-07",
+      "doi_url": "https://doi.org/10.35870/jtik.v11i1.7884",
+      "openalex_url": "https://openalex.org/W7225393454",
       "cited_by_count": 0,
-      "abstract": "This study evaluates the performance of the Geometric Brownian Motion (GBM) model in predicting prices and estimating the risk of XAU/USD under stable and unstable economic conditions. Daily closing price data are divided into in-sample and out-of-sample periods, where return and volatility parameters are estimated from the in-sample data and applied in Monte Carlo simulations. Prediction accuracy is assessed using the Mean Absolute Percentage Error (MAPE), while risk is measured using Value at Risk (VaR) and Expected Shortfall (ES). The results indicate that MAPE values exceed 20% in both economic conditions, suggesting that the predictive accuracy of the GBM model remains moderate. Although the model performs slightly better during stable periods, the difference is not statistically significant. In contrast, risk estimation results show that VaR and ES range between 58% and 59%, with higher values observed during unstable periods. This reflects an increase in market risk driven by higher volatility. Overall, the findings suggest that while GBM is capable of capturing the general movement of gold prices, it has limitations in accurately predicting price levels and capturing extreme market fluctuations, particularly during periods of economic instability.",
-      "summary_zh": "【风险管理与衍生品】本研究评估了几何布朗运动（GBM）模型在稳定和经济不稳定两种条件下预测黄金价格（XAU/USD）以及评估相关风险的表现。每日收盘价数据被划分为样本内和样本外两个时期，其中回报率和波动率参数是根据样本内数据估算得出的，并用于蒙特卡洛模拟中。预测准确性通过平均绝对百分比误差（MAPE）来衡量，而风险则通过风险价值（VaR）和预期亏损（ES）来评估。研究结果表明，在两种经济条件下，MAPE值均超过了20%，这表明GBM模型的预测准确性处于中等水平。尽管该模型在稳定时期表现略好，但这种差异并不具有统计学意义。相比之下，风险估算结果显示，VaR和ES的值介于58%至59%之间，且在经济不稳定时期风险值更高。这反映了市场风险因波动率上升而增加。总体而言，研究结果表明，虽然GBM模型能够捕捉到黄金价格的一般走势，但在准确预测价格水平以及捕捉极端市场波动方面存在局限性，尤其是在经济不稳定时期。。研究方法：蒙特卡洛模拟、数值模拟。",
+      "abstract": "Credit card approval processes are often performed manually, leading to inefficiencies, higher operational costs, and inconsistent decision-making. This study comparatively evaluates several machine learning models under different class imbalance handling strategies to predict credit card approval using the PyCaret AutoML framework. Two experimental scenarios were conducted on a dataset of 25,128 credit card applications, namely PyCaret's built-in SMOTE-based imbalance handling and random undersampling. In the SMOTE-based scenario, the Random Forest model achieved high accuracy, but its recall for the minority class was only 36.11%. In contrast, random undersampling produced more balanced performance, with the Gradient Boosting model achieving 100% recall. These findings indicate that class imbalance handling plays a critical role in credit card approval prediction, and that random undersampling provides more reliable minority-class detection than PyCaret's built-in SMOTE approach for the evaluated dataset.",
+      "summary_zh": "【银行与信贷】信用卡审批流程通常采用手动方式完成，这导致了效率低下、运营成本增加以及决策不一致的问题。本研究利用PyCaret AutoML框架，比较评估了多种机器学习模型在不同类别不平衡处理策略下的信用卡审批预测能力。实验在包含25,128份信用卡申请的数据集上进行了两次测试，分别采用了PyCaret内置的基于SMOTE的不平衡处理方法以及随机欠采样方法。在基于SMOTE的处理方法中，随机森林模型取得了较高的准确率，但其对少数类的召回率仅为36.11%；而随机欠采样方法则实现了更平衡的性能表现，其中梯度提升模型的少数类召回率达到了100%。研究结果表明，类别不平衡处理在信用卡审批预测中起着关键作用，并且对于所评估的数据集而言，随机欠采样方法在检测少数类数据方面比PyCaret内置的SMOTE方法更为可靠。。研究方法：机器学习、随机森林、梯度提升、实验方法。",
       "topics": [
-        "Econometrics",
-        "Volatility (finance)",
-        "Geometric Brownian motion",
-        "Mathematics",
-        "Economics"
+        "Undersampling",
+        "Machine learning",
+        "Credit card",
+        "Random forest",
+        "Artificial intelligence"
       ],
       "source": "openalex"
     },
     {
-      "title": "When expertise fails: detection of artificial intelligence - generated vitiligo imagery across the spectrum of dermatological experience; a cross-sectional exploratory study",
+      "title": "Studi Literatur : Pengaruh Cash Turnover, Inventory Turnover, dan Total Assets Turnover terhadap Kinerja Keuangan",
       "authors": [
-        "Jonathan Shapiro",
-        "Itay Cohen",
-        "Mor Atlas",
-        "Anna Lyakhovitsky",
-        "Shany Sherman"
+        "Amanda Safrina"
       ],
-      "venue": "Visual Computing for Industry Biomedicine and Art",
-      "published_date": "2026-11-06",
-      "doi_url": "https://doi.org/10.1186/s42492-026-00239-9",
-      "openalex_url": "https://openalex.org/W7225296159",
+      "venue": "Jurnal Semesta Ilmu Manajemen dan Ekonomi",
+      "published_date": "2026-11-07",
+      "doi_url": "https://doi.org/10.71417/j-sime.v3i2.2398",
+      "openalex_url": "https://openalex.org/W7225399064",
       "cited_by_count": 0,
-      "abstract": "Abstract\n                  Generative artificial intelligence (AI) can produce highly realistic dermatological images, raising concerns about clinicians’ ability to distinguish authentic pathology from synthetic representations. To assess whether dermatological expertise influences the detection of AI-generated vitiligo images, and to evaluate the self-detection capabilities of the algorithm, we conducted a participant-blinded cross-sectional study in which 31 dermatologists, stratified by experience, classified one AI-generated vitiligo image alongside three real controls while blinded to the number and identity of the synthetic images. Interrater agreement was assessed using Fleiss’ kappa statistic, and the synthetic image was additionally evaluated using three large multimodal models. Residents detected the AI-generated image more frequently than senior dermatologists and key opinion leaders. After disclosure of the correct classifications, the experts identified specific biological inconsistencies, whereas residents relied primarily on intuitive impressions, and the performance of the AI models varied across the detection and post-disclosure artifact-recognition tasks. This study is limited by its evaluation of a single AI-generated image depicting a single disease (vitiligo), and the findings may therefore not be generalizable to other dermatological morphologies, image-generation prompts, or multi-image scenarios. In this exploratory study, greater clinical experience was associated with reduced detection of the evaluated synthetic image; whether this reflects a general effect of expertise requires further study. These findings highlight the emerging risks associated with medical AI and support the integration of AI-focused visual analysis into dermatology education.",
-      "summary_zh": "【金融经济学】摘要  \n生成式人工智能（AI）能够生成高度逼真的皮肤科图像，这引发了人们对临床医生区分真实病理情况与合成图像能力的担忧。为了评估皮肤科专业技能是否会影响AI生成的白癜风图像的识别能力，并检验该算法的自我识别能力，我们进行了一项参与者盲法横断面研究。研究中，31名皮肤科医生根据经验水平被分组，他们在不知合成图像数量和具体身份的情况下，将一张AI生成的白癜风图像与三张真实对照图像进行分类。评估者间的一致性通过Fleiss’ kappa统计量进行衡量；同时，这些合成图像还接受了三种大型多模态模型的分析。结果发现，住院医师比资深皮肤科医生和行业专家更频繁地识别出AI生成的图像。在得知正确分类结果后，专家们指出了图像中的生物学异常特征，而住院医师主要依赖直觉进行判断；此外，AI模型在图像识别任务和识别后的异常图像识别任务中的表现存在差异。本研究的局限性在于仅评估了单一疾病（白癜风）的AI生成图像，因此其结论可能不适用于其他皮肤科病变类型、图像生成方式或多张图像的场景。这项探索性研究表明，更丰富的临床经验与对合成图像的识别率降低有关；这一现象是否反映了专业技能的普遍影响，还需进一步研究。这...。研究方法：横截面分析。",
+      "abstract": "Penelitian ini bertujuan untuk mengetahui dan mensintesis pengaruh cash turnover, inventory turnover, dan total assets turnover (TATO) terhadap kinerja keuangan perusahaan yang terdaftar di Bursa Efek Indonesia, mengingat rasio aktivitas lazim diasumsikan berhubungan positif dengan kinerja keuangan tetapi bukti empiris di Indonesia tidak seragam. Penelitian ini menggunakan pendekatan kuantitatif berbasis studi literatur terhadap 15 publikasi periode 2021-2026 yang dicari melalui aplikasi Publish or Perish dan disitasi melalui Mendeley. Hasil review menunjukkan: 1) Cash turnover tidak pernah berpengaruh positif signifikan; empat dari tujuh studi menemukan pengaruh negatif signifikan dan tiga studi tidak signifikan. 2) Inventory turnover menunjukkan hasil yang berlawanan arah: satu studi positif signifikan, dua studi negatif signifikan, dan tiga studi tidak signifikan. 3) TATO cenderung positif signifikan (empat dari tujuh studi), meski belum seragam. 4) Pada beberapa studi, variabel tidak signifikan secara parsial tetapi signifikan secara simultan. Artikel ini memberikan peta komparatif per variabel dan lima proposisi yang dapat diuji pada penelitian empiris lanjutan.",
+      "summary_zh": "【金融经济学】本研究旨在探讨现金周转率（Cash Turnover）、存货周转率（Inventory Turnover）和总资产周转率（Total Assets Turnover, TATO）对在印度尼西亚证券交易所上市的公司财务绩效的影响。尽管通常认为这些运营比率与财务绩效呈正相关，但印度尼西亚的实证研究结果并不一致。本研究采用定量方法，基于2021至2026年期间的15篇文献进行数据分析，这些文献通过Publish or Perish平台检索，并通过Mendeley进行引用统计。研究结果如下：1) 现金周转率从未对财务绩效产生显著的正向影响；7项研究中有4项发现其具有显著的负面影响，3项研究未发现显著影响。2) 存货周转率的研究结果存在矛盾：1项研究显示显著正向影响，2项研究显示显著负面影响，3项研究未发现显著影响。3) 总资产周转率总体上呈现显著正向效应（7项研究中有4项），但效果仍不统一。4) 在部分研究中，某些变量在单独分析时无显著影响，但在综合分析时具有显著效应。本文为后续实证研究提供了各变量之间的对比分析，并提出了五个可供检验的假设。。",
       "topics": [
-        "Vitiligo",
-        "Exploratory research",
-        "Artificial intelligence",
-        "Psychology",
-        "Inter-rater reliability"
+        "Business administration",
+        "Business",
+        "Cash",
+        "Inventory turnover",
+        "Mathematics"
       ],
       "source": "openalex"
     },
     {
-      "title": "Designing Public Information for Strategic Advice",
+      "title": "FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance",
       "authors": [
-        "Vasudha Jain",
-        "Jaideep Roy"
+        "Yupeng Cao",
+        "Xueqing Peng",
+        "Lingfei Qian",
+        "Haohang Li",
+        "Yangyang Yu"
       ],
       "venue": "arXiv",
       "published_date": "2026-11-05",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.07744v1",
+      "openalex_url": "http://arxiv.org/abs/2611.07464v1",
       "cited_by_count": 0,
-      "abstract": "A principal chooses an action using advice from an expert who privately knows local conditions. Before receiving advice, she can commission a public study of an independent state, such as future demand, that changes the expected conflict between their preferred actions. We show that the communication protocol determines the optimal study. Under optimal mediation, the value of advice is convex in conflict, making full revelation optimal. Under commitment to an action rule, the principal may prefer no information, while informative optimal studies include a report certifying high conflict. Under unmediated cheap talk, changes in the number of equilibrium messages create upward kinks in the value of advice. Optimal studies avoid interior communication thresholds and can induce two distant communication regimes while skipping every regime in between, strictly outperforming both full revelation and no information. When the principal retains the raw data, selective public disclosure can improve advice without sacrificing forecasting precision. We discuss implications for fiscal forecasts and spending agencies.",
-      "summary_zh": "【金融经济学】一位负责人在专家的建议下做出决策，该专家私下了解当地实际情况。在收到建议之前，她可以委托对某个独立状态（如未来需求）进行公开研究，这种研究会改变她们所倾向的不同决策方案之间的预期冲突。我们发现，沟通机制决定了最佳的研究内容。在最佳中介机制下，建议的价值与冲突程度呈正相关，因此完全披露信息是最优选择。当负责人必须遵循某种行动规则时，她可能更倾向于不获取任何信息；而具有信息价值的研究则会出具证明冲突程度较高的报告。在缺乏中介机制且信息传播成本较低的情况下，均衡信息数量的变化会导致建议价值的非线性波动（即出现“向上突变”）。最佳的研究方案能够避免某些沟通障碍，从而实现两种截然不同的沟通模式，并且能够跳过所有中间模式，其效果明显优于完全披露信息或完全不披露信息的情况。当负责人保留原始数据时，选择性公开部分信息可以在不牺牲预测准确性的前提下提升建议的质量。我们还讨论了这一发现对财政预测和支出机构可能产生的影响。。研究方法：均衡模型。",
+      "abstract": "Language agents increasingly work for users on the open Web, and finance is where trusting them is hardest. The data must come from the Web, the strategy lives in the user's head, and correctness depends on time, so an agent can fail silently: a strategy the user never asked for, unverified data, or a backtest that uses the future yields a report as convincing as a correct one. Existing benchmarks close the world somewhere, fixing the task, the data, or the timeline, and thereby remove these failures instead of measuring them. We introduce FINCOSMOS, an open-world evaluation paradigm for agents doing financial work. A simulated user holds a hidden strategy sampled from a compositional grammar and reveals it only when asked. The agent receives no data, so it must acquire data from the Web, build its own backtest under a data cutoff, and deliver verifiable results. Grading needs no reference answer. Programs verify point-in-time correctness and recompute every reported metric, the delivered strategy is checked against the hidden specification, and a run is accepted only when the user is satisfied and none of 15 veto checks fails. Across four coding agents and a model without tools in 150 sessions, no session is accepted: every session that the simulated user signed off fails a program check, and agents raise only 54--64\\% of the details they were not told. Human experts attribute 88.33\\% of failures to the agents. With FINCOSMOS feedback, an agent with persistent memory learned all ten tasks.",
+      "summary_zh": "【金融经济学】语言代理越来越多地在开放网络上为用户提供服务，而在金融领域，对它们的信任度最为低下。所需数据必须来自网络，策略则存储在用户的头脑中，而结果的正确性会受到时间因素的影响，因此代理可能会出现“无声失败”：例如使用用户从未请求的策略、未经验证的数据，或者基于未来数据的回测得出的结果与正确结果一样具有说服力。现有的评估框架往往将问题局限于特定的环境、数据或时间线，从而掩盖了这些失败情况，而非真正对其进行测量。我们提出了FINCOSMOS——一种用于评估执行金融任务的代理的开放式评估框架。在该框架中，模拟用户会持有从组合语法中生成的隐藏策略，并仅在被询问时才将其暴露出来。代理无法直接获取数据，因此必须从网络中收集信息，在数据截止日期之前完成自己的回测，并提供可验证的结果。评分过程不需要参考答案；系统会实时验证结果的正确性，并重新计算所有报告的指标。最终，只有当用户满意且所有15项审核标准都通过时，该代理的运行才会被接受。在150次测试中，涉及四种编程代理以及一个未配备任何工具的模型，没有一次测试能够通过：所有模拟用户表示满意的测试都未能通过程序检查，而代理仅正确处理了54%到64%的未知细...。",
       "topics": [
         "Economics",
         "Finance"
@@ -221,20 +227,18 @@
       "source": "arxiv"
     },
     {
-      "title": "Stay, Reposition, or Recharge: Battery-Aware Operation of Robotaxi Fleets",
+      "title": "Information-Theoretic Model for the Growth Optimal Portfolio of Stocks",
       "authors": [
-        "Philipp Afèche",
-        "Saif Benjaafar",
-        " Jiayu",
-        " Zhao"
+        "Eckhard Platen",
+        "Kevin Fergusson"
       ],
       "venue": "arXiv",
       "published_date": "2026-11-05",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.07699v1",
+      "openalex_url": "http://arxiv.org/abs/2611.07457v1",
       "cited_by_count": 0,
-      "abstract": "Electric robotaxis are rapidly expanding from pilots to scaled commercial deployment; unlike traditional human-driven ride-hailing vehicles, they require centralized fleet control and careful management of vehicle state of charge (SoC). We study how a fleet manager should jointly make service, empty repositioning, idling, and charging decisions in such systems. We develop a continuous-time fluid model in which vehicles evolve across location-charge states, and identify two forms of charge-aware control that are absent from classic repositioning models: early return-to-depot (RTD) and charge-aware repositioning. In particular, the optimal solution admits simple threshold structures. Each location has a battery threshold such that vehicles should return to the depot to recharge when their SoC is below it and should not do so when their SoC is above it. Vehicles should not reposition below the same threshold either; above it, the choice of destination depends on whether a vehicle's SoC matches the destination's battery sensitivity, a notion we introduce in the paper. We then quantify the value of charge awareness by comparing fully charge-aware policies with charge-oblivious policies that ignore SoC in RTD and repositioning decisions. We show that the performance gap can be unbounded, driven by a dilemma between under-utilizing high-charge vehicles and over-sending low-charge vehicles to locations from which charging is costly. A numerical case study calibrated using 2025 NYC Taxi and Limousine Commission trip records illustrates these thresholds and shows that charge-aware control can generate substantial gains in a realistic urban network. Importantly, simple threshold-based heuristics recover most of the value of the fully charge-aware solution.",
-      "summary_zh": "【金融经济学】电动机器人出租车正从试点项目迅速发展为大规模的商业应用。与传统的人工驾驶网约车不同，这类车辆需要集中式的车队管理以及对车辆电池电量（SoC）的精细控制。我们研究了车队管理者应如何在这些系统中协同制定服务调度、空车回程调度、车辆怠速运行以及充电等决策。我们建立了一个连续时间流体模型，用于描述车辆在不同位置和电量状态下的动态变化，并发现了经典车辆调度模型中缺失的两种基于电量信息的控制策略：提前返回充电站（RTD）和基于电量信息的重新调度策略。特别地，最优解决方案采用了简单的阈值机制——当车辆电量低于某个阈值时，应返回充电站进行充电；当电量高于该阈值时，则无需返回。此外，车辆也不应在电量低于同一阈值的情况下进行重新调度；而在电量高于该阈值时，行驶目的地的选择取决于车辆的电量是否与目的地的电池电量需求相匹配（这一概念在论文中有所阐述）。我们通过比较完全基于电量信息的调度策略与忽略电量信息的调度策略（即在RTD和重新调度决策中不考虑电量因素的策略），量化了电量信息的重要性。研究发现，由于存在高电量车辆利用率不足以及低电量车辆被过度派遣到充电成本较高的地点之间的权衡，两者之间的性能差距可能非...。研究方法：模型校准。",
+      "abstract": "Drawing on information-theoretic principles and empirical evidence, a proxy for the growth-optimal portfolio of stocks (the benchmark) is constructed and modeled. The derivative of its activity time captures overreactions in trading behavior and follows a fast-moving, quasi-stationary scalar diffusion. The benchmark's log-returns are predicted to follow a Student t distribution with degrees of freedom slightly less than four, and this prediction is tested empirically. With the benchmark as numeraire, the derived model enables benchmark-neutral pricing and hedging.",
+      "summary_zh": "【金融经济学】本文基于信息论原理和实证证据，构建并建模了一个代表最优增长组合（即基准组合）的代理指标。该代理指标的活动时间变化率能够捕捉交易行为中的过度反应，其变化过程遵循一种快速移动的、准平稳的标量扩散过程。研究预测基准组合的对数收益率服从自由度略小于4的学生t分布，并通过实证方法对这一预测进行了验证。以基准组合作为计价单位，所建立的模型可以实现与基准组合无关的定价与对冲操作。。",
       "topics": [
         "Economics",
         "Finance"
@@ -242,17 +246,18 @@
       "source": "arxiv"
     },
     {
-      "title": "Willingness-to-pay space and preference space: a unified treatment of equivalence, heterogeneity and interpretation",
+      "title": "Robust prizes in all-pay contests with loss aversion",
       "authors": [
-        "Stephane Hess"
+        "Dmitry Ryvkin",
+        "Qin Wu"
       ],
       "venue": "arXiv",
       "published_date": "2026-11-05",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.07698v1",
+      "openalex_url": "http://arxiv.org/abs/2611.07419v1",
       "cited_by_count": 0,
-      "abstract": "A growing number of choice modelling studies estimate their models \"in willingness-to-pay (WTP) space\", yet often treat this as a different model that fits better (or worse) than \"preference space\", and misread what its parameters represent. This note brings together and makes precise insights that have mostly been stated only in scattered places, organising them around a single condition for two specifications to be the same model. WTP space is a reparameterisation, and with non-random coefficients the two spaces give identical likelihoods, WTP estimates and standard errors. With deterministic heterogeneity in cost sensitivity, or non-linearity, WTP must still be computed as a ratio of partial derivatives, although a simple normalisation recovers a directly estimated WTP at a reference point. With random heterogeneity, latent class models are equivalent in the two spaces, while other mixtures are equivalent only when the implied distributions match, as with full-covariance lognormals, and independence is not a neutral assumption.",
-      "summary_zh": "【金融经济学】越来越多的选择建模研究选择在“支付意愿（WTP）空间”中对模型进行估计，但这些研究往往将WTP空间视为与“偏好空间”不同的模型，并误读了其参数所代表的含义。本文汇总了这些研究中的观点，并对它们进行了系统的分析，主要基于一个关键条件：即两种模型规格必须相同。实际上，WTP空间只是对原始模型的重新参数化表达；当系数非随机时，这两种模型在似然值、WTP估计值及标准误差方面是完全一致的。在成本敏感性存在确定性异质性或非线性的情况下，WTP仍需通过偏导数的比值来计算；不过通过简单的标准化处理，仍可以在参考点处得到直接估计的WTP值。对于随机异质性情况，潜在类别模型在这两个空间中是等价的；而其他混合模型只有在其隐含分布相匹配时才具有等价性（例如全协方差对数正态分布模型）。此外，模型中的独立性并非一个中性的假设。。",
+      "abstract": "We study robust prize design in all-pay contests with loss-averse agents when the principal does not know the agents' convex cost of effort, subject to an aggregate productivity constraint. The robustly optimal prize structure awards equal prizes to all contestants except the one ranked last. The optimal bottom prize is zero under moderate loss aversion, but becomes positive and increases with loss aversion when loss aversion is sufficiently strong. Under strong loss aversion, the robust solution involves partial participation in the contest.",
+      "summary_zh": "【金融经济学】我们研究了在所有参赛者都需支付费用且存在损失厌恶型代理人的情况下，当委托人不知道代理人努力成本的凸性时，如何设计一个具有鲁棒性的奖励机制。该机制在满足总体生产率约束的前提下，为除排名最后一名外的所有参赛者提供相同的奖励。在损失厌恶程度适中时，最优的最低奖励为零；但随着损失厌恶程度的增加（尤其是当损失厌恶非常强烈时），最低奖励会变为正数并随之上升。在损失厌恶程度极高的情况下，鲁棒解决方案要求参赛者部分参与竞赛。。",
       "topics": [
         "Economics",
         "Finance"

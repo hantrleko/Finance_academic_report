@@ -1,0 +1,148 @@
+# 金融经济学每日文献速递（2026-11-08）
+
+共筛选到 **12** 篇文献。
+
+> 📢 **今日综述**
+>
+> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（8 篇）、国际贸易（2 篇）、风险管理与衍生品（1 篇）。方法上以实验方法、优化方法为主。来源分布：OpenAlex（5 篇）、arXiv（5 篇）、Semantic Scholar（2 篇）。其中 1 篇命中顶级期刊白名单。
+
+## 1. Mapping Future Energy Journeys Through Modeling the Global Transport of Synthetic Energy Carriers
+- 来源：openalex
+- 作者：Uwe Langenmayr, Julia Schuler, Viktor Slednev, Wolf Fïchtner
+- 期刊/来源：Nature Communications
+- 发表日期：2026-11-07
+- 引用数：0
+- 主题：Perspective (graphical), Energy transport, Energy carrier, Energy (signal processing), Business
+- 链接：[DOI](https://doi.org/10.1038/s41467-026-78710-7) [链接](https://openalex.org/W4403063794)
+
+**中文摘要（自动生成）**：【金融经济学】摘要  
+合成能源载体能够将富含可再生能源的潜在生产区域与遥远的需求中心连接起来，但贸易的实现取决于总供应成本。本文提出了一种空间分析方法，该方法综合考虑了氢气的生产成本、港口设施、输气管道、航运路线以及合成、裂解和重整等工艺过程，以确定关键的进口通道。在研究了10,883个生产地点和7种不同情景后，我们发现：即使可再生能源潜力较为有限，通过具备改造条件的输气管道与进口市场相连的地区仍具有竞争力。对于偏远地区的出口商而言，其竞争力则取决于港口的可用性以及通过输气管道网络实现的沿海通道。在短距离输气管道运输中，气体氢气更具优势；而在海上运输中，氨气是更优的选择；而在长距离的多模式运输链中，甲醇和甲烷则更具竞争力。此外，研究还表明，液态有机氢载体的竞争力需要依赖低成本的热能供应；同时，考虑传统能源产品的市场价值后，氨气和甲醇的贸易量会进一步增加。。
+
+## 2. Computational Compound Prioritization Strategy Incorporating Docking Variability and Interaction Energies Identifies Putative LRH-1 Binders
+- 来源：openalex
+- 作者：Ana Cristina Chang-Gonzalez, Alexis N. Campbell, Eric W. Bell, Raymond Blind, Jens Meiler
+- 期刊/来源：Journal of Chemical Information and Modeling
+- 发表日期：2026-11-07
+- 引用数：0
+- 主题：Virtual screening, Prioritization, Computer science, Machine learning, Artificial intelligence
+- 链接：[DOI](https://doi.org/10.1021/acs.jcim.6c02790) [链接](https://openalex.org/W7163826740)
+
+**中文摘要（自动生成）**：【风险管理与衍生品】摘要  
+在基于结构的计算机辅助药物发现过程中，化合物排名常常因采样误差和评分错误而产生大量高排名的假阳性结果。我们提出了一种化合物优先级评估策略，该方法结合了多种对接方法（包括基于物理原理的定向对接和基于生成模型的盲对接）所得到的目标蛋白多构象数据，用于训练两个多层感知器（MLP）模型。这些MLP模型能够预测核受体Liver Receptor Homologue-1（LRH-1, NR5A2）的配体结合位点上的结合剂或激活剂。我们的方法避免了仅依赖单一对接结果或单一评分指标来进行化合物排名的局限性。在测试集（包含训练集中不存在的化合物）中，MLP模型成功识别出与训练集化合物在化学结构上存在差异的化合物，并且对化合物骨架的微小修改具有敏感性，这表明它们具有潜在的先导化合物优化价值。我们将该模型应用于一项初步的药物发现研究，最终发现了四种可能的LRH-1结合剂。实验结果表明，结合多种评分和预测指标能够提高不同规模化合物库中候选化合物的筛选效率。总体而言，本研究提出了一种利用结构和实验数据来辅助针对复杂蛋白质靶点进行药物发现的方法。。研究方法：实验方法、优化方法。
+
+## 3. Cores of $3$-distant convex games
+- 来源：arxiv
+- 作者：Keisuke Bando, Toshiyuki Hirai, Kenzo Imamura, Ryuhei Mizutani
+- 期刊/来源：arXiv
+- 发表日期：2026-11-05
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.07572v1)
+
+**中文摘要（自动生成）**：📌 研究问题：凸合作博弈在局部摩擦下可能违反凸性，导致核心可能为空。本文旨在研究3- distant convex games的核心性质及其存在条件。
+
+🔬 研究方法：本文建立了核心非空性的简单必要且充分条件，并开发了一种强多项式时间的组合算法，用于在核心存在时寻找核心分配。
+
+📊 核心发现：3- distant convex games的核心可能为空，但存在明确的判别条件；同时，在核心存在的情况下，能够通过算法高效找到分配方案。
+
+💡 应用价值：该框架可应用于具有兼并协同效应的寡头竞争以及互补投入的联合生产利润分配问题。
+
+## 4. Transparency in Team Contracts
+- 来源：arxiv
+- 作者：Paul Dütting, Yingkai Li, Inbal Talgam-Cohen, Jinzhao Wu
+- 期刊/来源：arXiv
+- 发表日期：2026-11-05
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.07494v1)
+
+**中文摘要（自动生成）**：【金融经济学】在合同设计中，委托人通常比代理人更了解项目成功的可能性。为了激励代理人的努力，委托人主要有两种手段：首先，设计合同，将项目成功的一部分收益分配给代理人；其次，设计一种（贝叶斯）说服机制，有选择地向代理人透露信息。在这项研究中，我们关注这两种手段的最佳组合。我们从“简单性”与“最优性”的角度来探讨这个问题，并得出了一个鲜明的结论：当团队的生产函数是次模的（即满足某些数学性质）时，完全透明的信息披露机制能够实现信息披露与团队合同组合的最优解的紧密$4/3$近似。相反，当生产函数是超模的时，完全透明可能远远偏离最优解。我们开发的技术不仅用于量化次模函数情况下的差距，还提供了一种新的确定性多项式时间近似算法，用于纯多代理人合同设计，其近似比率显著提高至$2.311$；同时，我们也为联合信息与合同设计问题提供了一种$3.081$近似的算法。。研究方法：贝叶斯方法。
+
+## 5. The Impact of the Construction of Pilot Free Trade Zones on Reducing Carbon Emissions in Resource-based Cities
+- 来源：semantic_scholar
+- 作者：Zhi-Wei Hong, Jian-Yun Zeng
+- 期刊/来源：Journal of Economics and Public Finance
+- 发表日期：2026-11-01
+- 引用数：0
+- 主题：Environmental Science, Economics
+- 链接：[DOI](https://doi.org/10.22158/jepf.v12n3p192) [链接](https://api.semanticscholar.org/CorpusID:295488768)
+
+**中文摘要（自动生成）**：【国际贸易】随着全球对气候变化的应对措施不断加快，那些长期以来依赖资源开发的资源型城市在减少碳排放方面面临着尤为艰巨的挑战。本研究聚焦于中国的自由贸易试验区（FTZs），这一重要的制度创新举措，并深入探讨了它们对资源型城市环境的影响。通过使用差异-in-differences（DID）模型，研究分析了自由贸易试验区设立前后资源型城市碳排放的面板数据。研究结果表明，自由贸易试验区的设立显著降低了这些城市的碳排放。这种减排效应主要通过三个途径实现：降低能源消耗强度、吸引更多外国直接投资以及促进绿色技术创新。这种效应在中西部地区以及经济衰退的城市中更为显著。这些发现为推动区域协调发展及制定差异化政策提供了有益的启示，同时也凸显了制度创新在实现“双碳”目标中的关键作用。。研究方法：双重差分、面板数据。
+
+## 6. Unilateral Penalty or Mutual Disaster? Assessing the Asymmetric Reduction Effects of Sanctions on Aggregate and Segmented Trade
+- 来源：semantic_scholar
+- 作者：Hua Zhang, Liu-Guo Shao, T. Lan
+- 期刊/来源：International Journal of Finance & Economics
+- 发表日期：2026-11-01
+- 引用数：0
+- 主题：Economics, Political Science
+- 链接：[DOI](https://doi.org/10.1002/ijfe.70325) [链接](https://api.semanticscholar.org/CorpusID:295531223)
+
+**中文摘要（自动生成）**：【国际贸易】制裁对实施制裁国与受制裁国之间的双向贸易的影响是否是对称的？本文通过汇总贸易数据、细分贸易数据以及行业特定贸易数据，比较了制裁对这两类国家产生的不同影响。研究结果表明，制裁对两国都产生了负面影响，且这种影响具有普遍性和不对称性，其中受制裁国的受影响程度更为严重。具体而言，对于实施制裁的国家而言，制裁对中间产品贸易、在全球价值链中的前向参与度以及农业、林业、渔业、采矿和采石等行业产生了更为显著的负面影响；而对于受制裁的国家来说，制裁对最终产品贸易、在全球价值链中的后向参与度以及制造业产生了更大的影响。本文采用双向视角，并在细分贸易和行业特定层面进行分析，为研究制裁对国际贸易影响的文献做出了贡献。。
+
+## 7. MambaSleepCVD for prediction of long term cardiovascular outcomes from polysomnography
+- 来源：openalex
+- 作者：Alessia Calzoni, Andrew Dei Rossi, Giuliana Monachino, Beatrice Zanchi, Luigi Fiorillo
+- 期刊/来源：npj Digital Medicine
+- 发表日期：2026-11-07
+- 引用数：0
+- 主题：Polysomnography, Modalities, Medicine, Discriminative model, Confounding
+- 链接：[DOI](https://doi.org/10.1038/s41746-026-03450-3) [链接](https://openalex.org/W7212056391)
+
+**中文摘要（自动生成）**：【金融经济学】摘要  
+长期心血管疾病（CVD）的风险预测仍是全球临床研究的重点。本研究在严格控制人口统计学混杂因素后，探讨了整夜多导睡眠监测（PSG）所携带的预后信息量，以及将专门的单模态表示与连续融合机制相结合是否能够有效利用这些信息。我们采用基于Coupled Mamba的模块化框架，实现跨模态和时间上的同步融合，捕捉睡眠过程中不同生理指标之间的长期依赖关系和动态交互。通过这一技术，我们评估了来自特定任务的单模态编码器的专门化监督表示是否具有与任务无关的多模态自监督预训练相当的预后价值。在Sleep Heart Health Study（SHHS）数据集上的验证表明，我们的方法在数据充足、完全监督的条件下，其性能可与当前最先进的架构相媲美甚至更优，尽管心脏通道本身占据了大部分区分性信号。更重要的是，我们发现年龄这一因素在生存率排序中起着关键作用；当年龄作为显式输入时，它可能会掩盖PSG所获取的生理数据的实际贡献。总体而言，我们的研究结果表明，通过融合引擎整合的监督单模态模型为基于睡眠记录的预后风险排序提供了一种灵活的方法，而可靠的CVD筛查仍需要独立的外部数据集和严格的混杂因素控制。。
+
+## 8. Comparative Evaluation of Machine Learning Models for Credit Card Approval Prediction Using Class Imbalance Handling Methods in the PyCaret AutoML Framework
+- 来源：openalex
+- 作者：Mario Suryowisnu Wicaksono, Magdalena A. Ineke Pakereng
+- 期刊/来源：Jurnal JTIK (Jurnal Teknologi Informasi dan Komunikasi)
+- 发表日期：2026-11-07
+- 引用数：0
+- 主题：Undersampling, Machine learning, Credit card, Random forest, Artificial intelligence
+- 链接：[DOI](https://doi.org/10.35870/jtik.v11i1.7884) [链接](https://openalex.org/W7225393454)
+
+**中文摘要（自动生成）**：【银行与信贷】信用卡审批流程通常采用手动方式完成，这导致了效率低下、运营成本增加以及决策不一致的问题。本研究利用PyCaret AutoML框架，比较评估了多种机器学习模型在不同类别不平衡处理策略下的信用卡审批预测能力。实验在包含25,128份信用卡申请的数据集上进行了两次测试，分别采用了PyCaret内置的基于SMOTE的不平衡处理方法以及随机欠采样方法。在基于SMOTE的处理方法中，随机森林模型取得了较高的准确率，但其对少数类的召回率仅为36.11%；而随机欠采样方法则实现了更平衡的性能表现，其中梯度提升模型的少数类召回率达到了100%。研究结果表明，类别不平衡处理在信用卡审批预测中起着关键作用，并且对于所评估的数据集而言，随机欠采样方法在检测少数类数据方面比PyCaret内置的SMOTE方法更为可靠。。研究方法：机器学习、随机森林、梯度提升、实验方法。
+
+## 9. Studi Literatur : Pengaruh Cash Turnover, Inventory Turnover, dan Total Assets Turnover terhadap Kinerja Keuangan
+- 来源：openalex
+- 作者：Amanda Safrina
+- 期刊/来源：Jurnal Semesta Ilmu Manajemen dan Ekonomi
+- 发表日期：2026-11-07
+- 引用数：0
+- 主题：Business administration, Business, Cash, Inventory turnover, Mathematics
+- 链接：[DOI](https://doi.org/10.71417/j-sime.v3i2.2398) [链接](https://openalex.org/W7225399064)
+
+**中文摘要（自动生成）**：【金融经济学】本研究旨在探讨现金周转率（Cash Turnover）、存货周转率（Inventory Turnover）和总资产周转率（Total Assets Turnover, TATO）对在印度尼西亚证券交易所上市的公司财务绩效的影响。尽管通常认为这些运营比率与财务绩效呈正相关，但印度尼西亚的实证研究结果并不一致。本研究采用定量方法，基于2021至2026年期间的15篇文献进行数据分析，这些文献通过Publish or Perish平台检索，并通过Mendeley进行引用统计。研究结果如下：1) 现金周转率从未对财务绩效产生显著的正向影响；7项研究中有4项发现其具有显著的负面影响，3项研究未发现显著影响。2) 存货周转率的研究结果存在矛盾：1项研究显示显著正向影响，2项研究显示显著负面影响，3项研究未发现显著影响。3) 总资产周转率总体上呈现显著正向效应（7项研究中有4项），但效果仍不统一。4) 在部分研究中，某些变量在单独分析时无显著影响，但在综合分析时具有显著效应。本文为后续实证研究提供了各变量之间的对比分析，并提出了五个可供检验的假设。。
+
+## 10. FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance
+- 来源：arxiv
+- 作者：Yupeng Cao, Xueqing Peng, Lingfei Qian, Haohang Li, Yangyang Yu
+- 期刊/来源：arXiv
+- 发表日期：2026-11-05
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.07464v1)
+
+**中文摘要（自动生成）**：【金融经济学】语言代理越来越多地在开放网络上为用户提供服务，而在金融领域，对它们的信任度最为低下。所需数据必须来自网络，策略则存储在用户的头脑中，而结果的正确性会受到时间因素的影响，因此代理可能会出现“无声失败”：例如使用用户从未请求的策略、未经验证的数据，或者基于未来数据的回测得出的结果与正确结果一样具有说服力。现有的评估框架往往将问题局限于特定的环境、数据或时间线，从而掩盖了这些失败情况，而非真正对其进行测量。我们提出了FINCOSMOS——一种用于评估执行金融任务的代理的开放式评估框架。在该框架中，模拟用户会持有从组合语法中生成的隐藏策略，并仅在被询问时才将其暴露出来。代理无法直接获取数据，因此必须从网络中收集信息，在数据截止日期之前完成自己的回测，并提供可验证的结果。评分过程不需要参考答案；系统会实时验证结果的正确性，并重新计算所有报告的指标。最终，只有当用户满意且所有15项审核标准都通过时，该代理的运行才会被接受。在150次测试中，涉及四种编程代理以及一个未配备任何工具的模型，没有一次测试能够通过：所有模拟用户表示满意的测试都未能通过程序检查，而代理仅正确处理了54%到64%的未知细...。
+
+## 11. Information-Theoretic Model for the Growth Optimal Portfolio of Stocks
+- 来源：arxiv
+- 作者：Eckhard Platen, Kevin Fergusson
+- 期刊/来源：arXiv
+- 发表日期：2026-11-05
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.07457v1)
+
+**中文摘要（自动生成）**：【金融经济学】本文基于信息论原理和实证证据，构建并建模了一个代表最优增长组合（即基准组合）的代理指标。该代理指标的活动时间变化率能够捕捉交易行为中的过度反应，其变化过程遵循一种快速移动的、准平稳的标量扩散过程。研究预测基准组合的对数收益率服从自由度略小于4的学生t分布，并通过实证方法对这一预测进行了验证。以基准组合作为计价单位，所建立的模型可以实现与基准组合无关的定价与对冲操作。。
+
+## 12. Robust prizes in all-pay contests with loss aversion
+- 来源：arxiv
+- 作者：Dmitry Ryvkin, Qin Wu
+- 期刊/来源：arXiv
+- 发表日期：2026-11-05
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.07419v1)
+
+**中文摘要（自动生成）**：【金融经济学】我们研究了在所有参赛者都需支付费用且存在损失厌恶型代理人的情况下，当委托人不知道代理人努力成本的凸性时，如何设计一个具有鲁棒性的奖励机制。该机制在满足总体生产率约束的前提下，为除排名最后一名外的所有参赛者提供相同的奖励。在损失厌恶程度适中时，最优的最低奖励为零；但随着损失厌恶程度的增加（尤其是当损失厌恶非常强烈时），最低奖励会变为正数并随之上升。在损失厌恶程度极高的情况下，鲁棒解决方案要求参赛者部分参与竞赛。。
