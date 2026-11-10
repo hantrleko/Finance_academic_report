@@ -1,139 +1,156 @@
-# 金融经济学每日文献速递（2026-11-09）
+# 金融经济学每日文献速递（2026-11-10）
 
 共筛选到 **12** 篇文献。
 
 > 📢 **今日综述**
 >
-> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（6 篇）、资产定价（1 篇）、绿色金融与可持续发展（1 篇）。方法上以实验方法、回归分析为主。来源分布：OpenAlex（6 篇）、arXiv（2 篇）、Semantic Scholar（2 篇）。其中 2 篇命中顶级期刊白名单。
+> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、资产定价（2 篇）、金融科技（1 篇）。方法上以调查数据、横截面分析为主。来源分布：arXiv（6 篇）、OpenAlex（2 篇）、Semantic Scholar（2 篇）。其中 2 篇命中顶级期刊白名单。
 
-## 1. A Bioeconomic Prey-Predator Model with a Water-Pollution Modification Parameter and Stability Analysis
+## 1. Community benchmarking of generative models for privacy-preserving synthetic bulk RNA-seq data generation
 - 来源：openalex
-- 作者：AHMED UMAR, Beatrice Fatse Joseph, Azi Ahmed Danhausa
-- 期刊/来源：African Multidisciplinary Journal of Sciences and Artificial Intelligence
-- 发表日期：2026-11-08
-- 引用数：0
-- 主题：Linearization, Population, Population dynamics of fisheries, Bioeconomics, Population model
-- 链接：[DOI](https://doi.org/10.58578/amjsai.v3i3.12596) [链接](https://openalex.org/W7225449693)
+- 作者：Hakime Öztürk, Tejumade Afonja, Joonas Jälkö, Rūta Binkytė, Pablo Rodríguez-Mier
+- 期刊/来源：Genome biology
+- 发表日期：2026-11-09
+- 引用数：3
+- 主题：Differential privacy, Computer science, Inference, Benchmarking, Generative model
+- 链接：[DOI](https://doi.org/10.1186/s13059-026-04326-1) [链接](https://openalex.org/W7133523950)
 
-**中文摘要（自动生成）**：【金融经济学】管理相互作用的鱼类种群需要考虑保护区与非保护区内的生态过程及人类活动的影响。本研究建立并分析了一个针对三种相互作用的鱼类种群（丽鱼、罗非鱼和尼罗河鲈鱼）的生物经济捕食者-猎物模型。该模型涵盖了水污染、捕捞、迁徙及捕食行为在两个区域内的影响。通过推导得出平衡点及其存在条件，并利用雅可比线性化方法和劳斯-赫维茨准则评估了选定平衡点的局部稳定性。数值模拟研究了污染控制、捕食控制以及结合水质改善与迁徙策略的综合效果。结果表明，加强污染控制有助于提高非保护区内的鱼类种群持续性；综合策略比单一干预措施更具成效，同时捕食者-猎物之间的相互作用在所建立的生态系统中仍起着关键作用。这些发现强调了协调水质改善与迁徙管理以支持鱼类种群持续存在的潜在益处。该模型为评估考虑污染、捕捞及生态相互作用的管理策略提供了分析框架，适用于包含保护区和非保护区的水生系统。。研究方法：数值模拟、均衡模型。
+**中文摘要（自动生成）**：【金融经济学】**摘要**
 
-## 2. COVID-19 diagnosis using a decision tree algorithm
+**背景**  
+从真实世界队列中合成匿名数据是一种具有前景的策略，有助于实现符合监管要求的同时保护隐私的生物数据共享，从而可能促进模型开发并提升预测性能。然而，生成模型在高维组学背景下在保留生物信号的同时抵御对抗性隐私攻击的能力仍需进一步研究。为填补这一空白，CAMDA 2025健康隐私挑战赛发起了一项社区驱动的项目，旨在评估用于大规模RNA-seq队列的合成数据生成及隐私保护技术。
+
+**结果**  
+基于这一倡议，我们系统地对比了11种生成方法在两个癌症队列（约1,000名患者和约5,000名患者）中对978个关键基因的处理效果。评估指标包括数据分布的真实性、下游应用的实用性、生物学合理性以及隐私风险，重点关注模型对成员身份推断攻击的脆弱性与其他评估维度之间的权衡。表现优异的深度生成模型在预测能力和差异表达恢复方面表现出色，但在所评估的威胁模型下往往更容易受到攻击。具有差分隐私保护功能的模型虽然能增强抗攻击能力，但会牺牲一定的实用性；而较为简单的统计方法则在隐私风险可控的情况下提供了良好的实用性，并且训练速度较快。
+
+**结论**  
+合成RNA-seq数据...。
+
+## 2. Learning to remember: advances in memory mechanisms for large language models
 - 来源：openalex
-- 作者：Zahoor M.Aydam, Tasadi M. Hanoon, Ghosoon K. Munahy
-- 期刊/来源：Future Technology
-- 发表日期：2026-11-08
+- 作者：Chenye Han, Hongche Yu, Mengyue Wu, Dell Zhang, Jixiang Luo
+- 期刊/来源：Vicinagearth.
+- 发表日期：2026-11-09
 - 引用数：0
-- 主题：Decision tree, Cohort, Artificial intelligence, Confusion, Medicine
-- 链接：[DOI](https://doi.org/10.55670/fpll.futech.5.4.17) [链接](https://openalex.org/W7225450670)
+- 主题：Computer science, Memory model, Stateless protocol, Reinforcement learning, Context (archaeology)
+- 链接：[DOI](https://doi.org/10.1007/s44336-026-00044-1) [链接](https://openalex.org/W7223835807)
 
-**中文摘要（自动生成）**：【金融经济学】2019冠状病毒病（COVID-19）是一种呼吸道感染疾病，胸部X光（CXR）成像可作为一种便捷的筛查手段。本研究开发了一种可解释的计算机辅助筛查流程，用于区分COVID-19阳性病例与正常胸部X光图像。研究方法包括：基于Otsu算法的肺部分割技术、形态学处理、七种Hu不变形状矩、训练数据集的z分数标准化处理，以及基于类别权重的决策树模型。研究使用了包含2,600张胸部X光图像（1,000张COVID-19阳性图像和1,600张正常图像）的队列数据，通过分层五折交叉验证进行评估。实验结果显示：该系统的准确率为98.6%，精确率为97.8%，召回率为98.6%，F1分数为98.2%。综合混淆矩阵数据显示，真正例（TP）为986例，假正例（FP）为22例，假负例（FN）为14例，真正例（TN）为1,578例，相应准确率为98.6%，精确率为97.8%。在图像级评估协议下，ROC/AUC分析得出的AUC值为0.987 ± 0.004。研究结论表明：在当前的内部图像级评估框架下，一种低维的基于形状的特征描述方法结合可解释的决策树模型能够有效区分COVID-19阳性病例与正常胸部X光图像。...。研究方法：实验方法。
+**中文摘要（自动生成）**：【金融经济学】摘要  
+记忆已成为扩展大型语言模型（LLMs）功能的关键机制，使其能够超越固定的上下文窗口、无状态的交互方式以及静态的参数化知识限制。本综述从三个互补的维度对相关文献进行了整理：记忆的生命周期、存储介质，以及记忆在基于LLM的智能体中所扮演的系统角色。在阐述这些内容时，我们借鉴了认知科学中的记忆概念作为理论基础，而非将其视为独立的技术贡献或实现方式。根据这些维度，我们将记忆机制分为三类：  
+1. **非参数记忆**：信息以文本、图谱、多模态数据或类似数据库的结构形式存储在模型参数之外；  
+2. **参数记忆**：信息通过激活机制、键值缓存、学习模块、基于适配器的参数化方式或模型权重进行存储与检索；  
+3. **用于智能体演化的记忆**：存储的经验数据支持强化学习、持续学习、过程重用、上下文构建以及智能体的功能优化。  
+评估过程被视为一个贯穿始终的独立环节，而非单纯的记忆机制组成部分。  
+与那些主要关注检索增强生成或长上下文建模的综述不同，本文重点关注记忆的完整生命周期，包括构建、维护、检索、巩固、遗忘、管理及评估等环节。通过整合概念基础、计算机制、评估标准及部署实践，...。研究方法：大语言模型、调查数据。
 
-## 3. The Logic of Factor Portfolios: Boolean Rules, Interactions, and Trading Costs
+## 3. Average versus expected causal effects under interference: Modeling assumptions and estimation bottlenecks
 - 来源：arxiv
-- 作者：Ziyao Wang, Svetlozar T. Rachev, Frank J. Fabozzi
+- 作者：Vishesh Karwa, Edoardo M. Airoldi, Donald B. Rubin
 - 期刊/来源：arXiv
-- 发表日期：2026-11-06
+- 发表日期：2026-11-09
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.09834v1)
+- 链接：[链接](http://arxiv.org/abs/2611.12690v1)
 
-**中文摘要（自动生成）**：【资产定价】投资者通过特定的决策规则将市场信号转化为实际投资行为：买入表现最佳的股票（即排名前十的股票），持有具有高动量和低波动性的股票，同时剔除不符合筛选条件的股票。许多此类决策规则本质上是对股票信号排名信息的布尔函数表达式；以这种形式表述规则不仅能够清晰地展示其投资逻辑，还能反映其交易频率。Walsh分解技术可用于分析这些规则对各个股票信号及其相互作用的影响——例如，两个相同筛选条件的组合在信号相互作用方面的影响可能是相反的。相同的系数以及基础判断语句的持久性共同决定了投资组合的换手率。由于信号之间的相互作用往往不如单个信号本身持久，因此那些侧重于高阶信号相互作用的规则交易频率更高；而设定严格阈值的做法会忽略部分信息，因此在风险相同的情况下，基于阈值制定的交易策略比基于平滑信号处理的策略交易更频繁。在1973年至2024年间美国股市的实证研究中，这些预测结果与实际情况高度吻合：预测的信号持久性与实际观测结果之间的相关性至少达到0.999，预测的换手率与实际换手率之间的吻合度很高（斜率为1.02），且相同信号之间的相互作用比单纯的阈值判断规则更具持久性。交易成本会随着交易规模的增加而上升，...。研究方法：因子模型。
+**中文摘要（自动生成）**：【金融经济学】在存在治疗干扰的情况下进行因果推断时，需要一些假设来减少潜在结果数量呈指数级增长的问题。我们通过将这些假设分为三个层次（干扰邻域、暴露映射和结果模型），开发了用于处理潜在结果的层次化有限人口模型。在给定干扰邻域和暴露映射的情况下，我们证明了潜在结果可以分解为直接效应、溢出效应以及治疗与溢出效应之间的交互作用三个部分。这种分解为有限人口潜在结果的非参数模型、半参数模型和参数模型提供了一个统一的坐标系统。对于特定的潜在结果模型，我们定义了两类估计量：平均因果效应（ACEs），例如直接效应和总治疗效应，用于比较在固定治疗-暴露条件下的潜在结果；预期因果效应（ECEs），例如预期的直接效应和间接效应，用于比较在特定分配政策下的潜在结果。对于这两类估计量，我们用三个项来限定经典的Horvitz-Thompson估计量的方差：一个对角权重项、一个来自重叠干扰邻域的项，以及一个与设计相关的残差项。我们的上下界表明，在不了解图结构的设计中，非参数无偏估计ACEs可能需要样本量随干扰程度的增加而呈指数级增长，而对于与设计对齐的ECEs，多项式增长就足够了。在存在邻域干扰的情况下，我们构建了能够识别...。研究方法：因果推断。
 
-## 4. Knowing When to Intervene: Causal Evaluation of AI Agents
+## 4. That Time of the Year Again: Government Pay Revisions in the Aggregate Economy
 - 来源：arxiv
-- 作者：Ayush Sawarni, Wenqian Xing, Tijana Zrnic, Ramesh Johari, Vasilis Syrgkanis
+- 作者：Faisal Quaiyyum
 - 期刊/来源：arXiv
-- 发表日期：2026-11-06
+- 发表日期：2026-11-09
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.09792v1)
+- 链接：[链接](http://arxiv.org/abs/2611.12565v1)
 
-**中文摘要（自动生成）**：【金融经济学】当前对智能代理（agent AI）系统的评估主要依赖于基准测试（benchmarks）。然而，基准测试的静态特性使得它们无法有效反映在系统部署时进行审计干预的价值。为了确保系统的可靠部署，我们通常需要在代理的运行过程中判断是否需要实施干预措施——例如，通过人工审核、使用更复杂的模型或耗时的监督机制来验证代理的当前行为或引导其采取不同的行动。这类干预措施的价值本质上是一个因果推断问题，即需要判断干预是否会对最终结果产生积极影响。由于问题的动态性（干预效果取决于当前环境以及代理的未来行为），估计这种因果效应极具挑战性。我们首次提出了一个方法论上严谨的框架，用于评估代理运行过程中随机干预措施的因果效应。通过利用在随机干预（如验证或筛选）下收集的相对较少的数据集，我们能够估计各类（基于情境的）干预策略的动态因果效应。所估计的结构参数还可用于构建安全排行榜，以评估各种代理行为的风险，这些排行榜可为实践者提供审计优先级的参考。将我们的方法应用于tau-bench Retail、ToolSandbox和ImpossibleBench等测试平台后，我们发现干预效果因代理行为和状态的不同而存在显著...。研究方法：因果推断、随机实验。
+**中文摘要（自动生成）**：【金融经济学】公共薪酬的法定数额是以名义价值设定的，因此在政府重新调整之前，通货膨胀会不断侵蚀其实际价值。我将每次薪酬调整视为政府基于两种相互冲突的考量因素所做出的决策。一种固定成本使得调整幅度较大且频率较低；而一次性融资增加薪酬所带来的凸形成本则导致调整幅度较小但频率较高。通过预算机制，每次调整还会影响债务水平以及下一次调整所面临的财政压力。通过对11个国家已公开的薪酬决策进行分析发现，随意设定的薪酬会随着物价和私人收入的上涨而贬值，并通过分阶段的方式逐步进行调整。所有削减措施都是在市场动荡或经济调整期间作出的；法院的裁决往往导致法定削减幅度、实际执行的削减幅度以及最终实际生效的削减幅度之间存在差异。根据法律条文对模型进行估算后，当数据和模拟方法一致时，该模型能够再现大多数国家的薪酬调整趋势。在葡萄牙的模拟案例中，国债利率上升迫使政府实施削减措施；危机过后，沉重的债务负担抑制了薪酬增长；而法院在削减措施生效后再进行进一步削减，反而可能引发更多的削减行为。如果在削减措施生效前对其进行审查，本可以降低葡萄牙危机的社会成本；在孟加拉国，如果自动薪酬调整的融资成本不高，部分指数化机制或许能够有效缓解...。研究方法：数值模拟。
 
-## 5. Green finance market development and carbon emissions trading: evidence on corporate environmental responsibility in China
+## 5. DIGITAL TECHNOLOGIES IN PUBLIC FINANCE MANAGEMENT: GLOBAL TRENDS AND UKRAINIAN REALITIES
 - 来源：semantic_scholar
-- 作者：Wei-Guo Chen, Tian-Qi Wang, Yu-Fan Chen, Bo Wang
-- 期刊/来源：Frontiers in Environmental Economics
-- 发表日期：2026-11-04
-- 引用数：0
-- 主题：Environmental Science, Economics, Business
-- 链接：[DOI](https://doi.org/10.3389/frevc.2026.1954085) [链接](https://api.semanticscholar.org/CorpusID:295622012)
-
-**中文摘要（自动生成）**：【绿色金融与可持续发展】从制度与金融协同作用的角度出发，本文将环境规制理论与金融发展理论相结合，构建了一个理论框架，用以分析碳排放交易（CET）与绿色金融市场发展（GF）对企业环境责任（CER）的影响。基于2010至2025年间中国沪深A股市场高碳行业上市公司的面板数据，我们运用交错差分法（DID）、调节效应模型、中介效应模型以及调节性序列中介模型来研究二者之间的互动关系及其潜在传导渠道。研究结果如下：首先，在地方碳市场试点阶段，受政策影响的企业的环境责任平均提升了0.0214，相当于样本均值的5.43%；当政策推广至2021年以后，全国碳市场的效应仍表现为正向治理效应。其次，区域绿色金融市场的发展与企业环境责任显著正相关，且碳排放交易与绿色金融市场的交互作用也呈显著正向，这符合两者之间的协同互补关系。条件边际效应表明，在绿色金融支持较高的情况下，碳排放交易的正面效应更为显著。第三，融资约束、环境信息披露以及绿色技术创新的间接效应均具有统计学意义，暗示了三种可能的中介机制。最后，国有企业、高排放行业、东部地区以及高管环境意识较强的企业中，碳排放交易与绿色金融市场的正向交互作用更为显著。本研究为优化碳交易...。研究方法：双重差分、面板数据。
-
-## 6. Digital Literacy Education Through the Use of the Byond By BSI Application to Improve Understanding of Sharia Finance among the Sukabumi City Community
-- 来源：semantic_scholar
-- 作者：Wiranti Setia Rahmawati, Wahyu Hamijaya
-- 期刊/来源：Economics & business journal :
+- 作者：Iryna Honcharenko
+- 期刊/来源：State and regions Series Economics and Business
 - 发表日期：2026-11-03
 - 引用数：0
-- 主题：Education, Economics, Business, Computer Science
-- 链接：[DOI](https://doi.org/10.61536/escalate.v4i4.835) [链接](https://api.semanticscholar.org/CorpusID:295574289)
+- 主题：Economics, Computer Science, Political Science, Business
+- 链接：[DOI](https://doi.org/10.32782/1814-1161/2026-3-6) [链接](https://api.semanticscholar.org/CorpusID:295571315)
 
-**中文摘要（自动生成）**：【金融科技】在印度尼西亚，较低的伊斯兰金融知识水平仍然成为优化数字银行服务的一大挑战。这一状况阻碍了公众充分利用伊斯兰数字银行服务，包括BSI公司的BYOND应用程序。本次社区服务活动旨在通过数字教育及帮助用户使用BSI公司的BYOND应用程序，提升苏卡布米市居民的伊斯兰金融知识水平。目标群体包括医疗工作者以及微型、小型和中型企业（MSMEs）。活动实施方法包括需求评估、咨询、应用程序功能演示、实际操作指导，以及通过讨论和观察参与者对知识的掌握情况来进行评估。活动结果显示，参与者对伊斯兰金融的基本原则有了更深入的理解，能够区分伊斯兰金融产品与传统金融产品，掌握了BYOND应用程序的主要功能，并更加重视数字交易中的安全问题。这种结合理论教学与实践操作的教育方式被证明能有效提升社区的伊斯兰金融知识水平，从而促进伊斯兰数字银行服务的更优化使用。。研究方法：优化方法。
+**中文摘要（自动生成）**：【金融科技】公共财务管理的数字化转型已成为现代化公共部门及提升国家机构能力的关键因素。在当前乌克兰全面战争背景下，这一进程尤为重要，因为它关系到确保国际金融援助使用的透明度和问责性、推动欧洲一体化进程以及为战后经济复苏做好准备。本文旨在总结全球公共财务管理数字化的总体趋势，并基于统一信息环境、系统互操作性、单一数据来源、数据驱动的决策机制、数字化设计理念、网络安全保障以及人工智能的负责任应用等原则，构建乌克兰公共财务管理的综合数字化模型。研究系统梳理了当代公共财务管理数字化的实践方法，分析了各国在运用财务管理信息系统、大数据、云计算技术、人工智能、数字身份识别及集成平台方面的国际经验。研究表明，数字化转型已从单纯自动化单个财务操作发展为公共财务流程与信息系统的全面整合。通过对比国际实践与乌克兰的实际情况，本文强调了将预算、国库、税收、海关、采购、会计及财务控制系统整合到统一数字化环境中的必要性。所提出的乌克兰公共财务管理综合数字化模型包含六个相互关联的功能模块：数字化预算编制、电子国库服务、数字化会计与报告、电子化公共采购、开放财务数据与分析工具，以及数字化财务监控与风险管理。该模型以统一的...。
 
-## 7. Target What? The Foundations of Poverty Targeting
+## 6. From Necessity to Opportunity: Funding Access and Sustainability of Graduate-Led Enterprises in the Niger Delta, Nigeria
+- 来源：semantic_scholar
+- 作者：Ibim Yarwamara Ebuete
+- 期刊/来源：IIARD International Journal of Economics and Business Management
+- 发表日期：2026-11-03
+- 引用数：0
+- 主题：Economics, Business
+- 链接：[DOI](https://doi.org/10.56201/ijebm.vol.12.no10.2026.pg105.113) [链接](https://api.semanticscholar.org/CorpusID:295574617)
+
+**中文摘要（自动生成）**：【绿色金融与可持续发展】本研究探讨了尼日尔三角洲地区由毕业生主导的企业在正规金融体系受限的条件下，如何从出于生存需要的经营活动转向经济机会的创造。研究采用了一种以经济生存为视角的分析方法，将企业活动视为个体在正规就业和制度支持有限的情况下获取收入、维持生计以及保持经济持续性的手段。研究采用了横断面调查设计，样本包括5,000名毕业生及新兴的创业毕业生，其中371名受访者是根据Taro Yamane的有限样本公式，在5%的精确度水平下选取的。数据分析采用了频数统计、百分比分析以及卡方拟合优度检验等方法。研究结果表明，创业是受访者中最主要的职业选择（41.8%），另有32.3%的受访者对此持矛盾态度。家庭和朋友是受访者最期望的创业资金来源（60.1%），其次是个人储蓄（24.0%），商业银行提供的资金占比为15.9%。大多数受访者预计创业所需的资金低于50万奈拉（54.0%）。在销售策略方面，折现是最主要的生存手段（59.6%），其次是创新（22.9%）和广告（17.5%）。研究结果表明，这些毕业生主导的企业主要依靠非正规网络获取资金，并在初期采取以生存为导向的低成本策略。研究认为，非正规金融不应仅仅被视为...。研究方法：横截面分析、调查数据。
+
+## 7. Debiasing Law Enforcement Officers: Evidence from an Expressive Arts Intervention in India
 - 来源：nber
-- 作者：Rema Hanna, Emily Breza, Benjamin A. Olken, Abhijit Banerjee, Arun G. Chandrasekhar, Gideon Moore
+- 作者：Sofia Amaral, Girija Borker, Nishith Prakash, María Micaela Sviatschi
 - 期刊/来源：NBER Working Papers
 - 发表日期：
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](https://www.nber.org/papers/w35984#fromrss)
+- 链接：[链接](https://www.nber.org/papers/w35986#fromrss)
 
-**中文摘要（自动生成）**：【收入分配与福利】大多数政府转移支付计划都旨在帮助贫困人口。这种做法隐含着一个假设：即消费水平最低的家庭具有最高的边际社会价值，也就是说，他们从额外的一美元收入中获得的福利最大。但实际上情况未必如此。在印度尼西亚的600个村庄中，我们让5500多名村民对其他村民的富裕程度进行排序，并评估一笔适度的现金转移对他们有多大帮助；随后将这些排序结果与他们的实际消费水平及自我评估的福利状况进行对比。结果显示：如果以消费水平为依据进行转移支付，会遗漏77%具有最高边际社会价值的家庭；如果以自我评估的福利状况为依据，则会遗漏57%的这类家庭；即使以社区认为最贫困的家庭为转移支付对象，也只能遗漏25%的这类家庭。不同贫困认知方式之间的差异在统计上是可预测的。在一项随机对照试验中，基于代理指标的分配方法最能准确反映消费者的实际需求；以个人自我评估的福利状况为依据的分配方式能够较好地捕捉到人们的真实福利水平；而以社区整体贫困状况为依据的分配方式则最接近于衡量边际社会价值的真实标准。然而，任何转移支付策略都不可避免地带有某种规范性的价值取向（即判断标准）。。研究方法：随机实验。
+**中文摘要（自动生成）**：【行为金融】一线国家工作人员在公民获取公共服务方面拥有较大的自由裁量权，然而关于如何改变现有官僚在这些决策中的态度和信念，目前知之甚少。我们与比哈尔邦警察（印度面积最大的邦之一，其警务资源相对紧张）合作，在417个警察局和约2500名在职高级警务人员中开展了一项集群随机对照试验，评估了一项基于“受压迫者戏剧”（Theatre of the Oppressed）理念的为期三天的艺术表达干预措施，该措施旨在改变警察对基于性别的暴力（GBV）的反应。在基线调查后的约7个月时间里，接受干预的警务人员对基于性别的暴力表现出更积极的态度、更强的同理心以及更扎实的法律知识。这些变化体现在实际的警务行为中：一年后进行的标准化受害者评估显示，接受干预的警察站点的警务人员更少指责受害者、更少驳回投诉、并提供更多转介服务；行政记录显示，案件登记延迟减少了41%；从更长期的角度来看，公民报告的基于性别的暴力事件也有所增加。通过分析警务人员调动带来的差异，我们发现这些积极效应在受干预的警务人员调往其他站点后仍然存在，并对其同事产生了影响。这些效应还扩展到了工作场所：与接受干预的高级警务人员共事的初级女性警务人员报告的...。研究方法：随机实验。
 
-## 8. Unconventional Monetary Policy and Deposit Retention
+## 8. TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale
 - 来源：nber
-- 作者：Philip Strahan, Tuo Yang
+- 作者：Jennifer Wang, Andreas Haupt, Isaac Robinson, Phil Lewis, Erik Brynjolfsson, Diyi Yang
 - 期刊/来源：NBER Working Papers
 - 发表日期：
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](https://www.nber.org/papers/w35985#fromrss)
+- 链接：[链接](https://www.nber.org/papers/w35987#fromrss)
 
-**中文摘要（自动生成）**：【货币政策与宏观经济】非常规货币政策的两个主要维度——将短期利率维持在零下限（ZLB）以及实施量化宽松（QE）——促使存款结构向对利率更敏感的客户群体倾斜。零下限政策通过压缩利率空间，限制了客户寻找高收益流动性来源的收益空间，从而吸引了这些客户；量化宽松政策则通过美联储从非银行机构购买债券的行为，进一步吸引了那些对利率敏感的大型存款者。当货币政策恢复正常后，存款的流动性敏感度以及存款与利率变化的关联程度（即存款的“beta系数”）均随着量化宽松和零下限政策的实施而上升。我们得出结论：非常规货币政策增加了银行保留存款的成本，并提升了银行所面临的风险。。
+**中文摘要（自动生成）**：【金融经济学】要理解人工智能（AI）如何重塑工作方式，就必须准确描述工人们所执行的任务。工人们往往是最早察觉到自身工作发生变化的人，因为新的职责和工具往往在正式的描述出现之前就已经融入了日常工作中。通过与工人的访谈，我们可以捕捉到这些工作任务的新兴变化。然而，现有的方法主要采用标准化的评估方式来对所有工人的工作进行评价，而与工人进行的开放式对话在收集和整理数据方面成本较高且效率低下。我们提出了斯坦福任务网络（Stanford Task Network，简称TaskNet），这是一种直接基于工人对日常工作的描述构建的职业分类体系。
 
-## 9. AI-driven liability assessment framework for autonomous systems integrating machine learning with EU and Indian regulatory models
-- 来源：openalex
-- 作者：Rishi Srivastava, Sadaf Fahim, Garima Singh, Koyel Roy, Arunanshu Dubey
-- 期刊/来源：Future Technology
-- 发表日期：2026-11-08
+为了构建TaskNet，我们开发了一个混合驱动的系统，该系统能够直接从工人那里收集任务信息。该系统通过访谈获取数据，将报告标准化为具体的任务列表，并将这些列表汇总成职业任务清单。我们对六个不同教育背景和AI应用程度的职业进行了研究，共访谈了132名工人，从他们提交的2726份报告中整理出了202条任务描述。所有这些描述都得到了O*NET中心分析师的认可。相比之下，通过O*NET现有的数据收集方式仅收集到了大约65%的工人提出的任务建议。每条任务描述都经过了7923名...。
+
+## 9. A Game-Theoretic Framework for Resource Allocation under Institutional Asymmetry
+- 来源：arxiv
+- 作者：Jorge David Castaño-Yepes, Marcela Herrera, Javier Parra-Domínguez
+- 期刊/来源：arXiv
+- 发表日期：2026-11-09
 - 引用数：0
-- 主题：Artificial intelligence, Liability, Jurisdiction, Machine learning, Support vector machine
-- 链接：[DOI](https://doi.org/10.55670/fpll.futech.5.4.3) [链接](https://openalex.org/W7225453718)
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.12534v1)
 
-**中文摘要（自动生成）**：【金融经济学】当自动化决策导致损害、故障或违反法规时，自主系统会引发责任问题。目前关于法律人工智能的研究主要集中在分类、信息检索、问答和司法预测领域，而在将法律和法规文本转化为能够传递责任相关信息的结构化数据方面，相关研究还非常有限。本文提出了一种决策支持模型，用于根据欧盟和印度法律对责任相关线索进行分类。研究使用的原始数据集为MultiEURLEX和IndicLegalQA，通过基于规则的代理映射方法为这些线索分配了五个标签：损害（damage）、缺陷（defect）、责任（liability）、法规（regulation）和风险（risk）。该模型结合了词级和字符级的TF-IDF权重、管辖权编码以及一种“一对余”（One-vs-Rest）线性支持向量机（Linear Support Vector Machine）算法来实现多标签分类。最终确定的最佳配置方案在整体准确率、Micro-F1分数、Macro-F1分数以及汉明损失（Hamming Loss）方面均表现出色，其各项指标分别达到了91.33%、96.08%、87.81%和0.0201，优于逻辑回归（Logistic regressio...。研究方法：回归分析。
+**中文摘要（自动生成）**：【金融经济学】我们构建了一个两人背包博弈模型，用以研究在个体能力限制、对共享资源的竞争以及制度不对称性条件下的资源分配问题。玩家需要选择可行的资源子集，他们的收益取决于竞争结果、分配规则以及制度带来的不对称性收益和成本。我们推导出了总体福利函数，并发现分配系数可以在不直接影响总福利的情况下重新分配收益；而制度参数则通过其对福利的净贡献来影响总体福利。因此，即使具有相同福利效应的制度安排也可能引发不同的战略激励和纳什均衡结果。我们分析了能力限制和制度优先级如何塑造均衡配置及其福利特性。一个核心研究结果在于探讨共享资源的社会效率与战略稳定性之间的区别。我们得出了在某些条件下，共享资源虽然在社会上更优，但由于非优先方可以通过放弃资源来增加自身收益，从而在战略上变得不稳定；相反，即使在独家分配能够带来更高总体福利的情况下，共享资源也可能在战略上保持稳定。这些发现表明，在制度不对称的情况下，社会效率与战略稳定性并不一定一致。。研究方法：均衡模型。
 
-## 10. A TF-IDF and logistic regression baseline for binary sentiment classification of short texts
-- 来源：openalex
-- 作者：Mustafa Ali Mohsin, Salam Abdulkhaleq Noaman
-- 期刊/来源：Future Technology
-- 发表日期：2026-11-08
+## 10. Fiscal Commitment and the Additionality of Philanthropy: Heterogeneous Donor Purposes in a Shared Public Budget
+- 来源：arxiv
+- 作者：Christian Jaag
+- 期刊/来源：arXiv
+- 发表日期：2026-11-09
 - 引用数：0
-- 主题：Artificial intelligence, Logistic regression, Computer science, Sarcasm, Classifier (UML)
-- 链接：[DOI](https://doi.org/10.55670/fpll.futech.5.4.13) [链接](https://openalex.org/W7225454607)
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.12459v1)
 
-**中文摘要（自动生成）**：【行为金融】社交媒体的迅速发展产生了大量短文本数据，这些数据表达了人们对各种主题的感受和观点；因此，情感分类成为一个备受关注的研究问题。本文重点探讨了使用包含160万条标注推文的Sentiment 140数据集进行二元情感分类的方法。对原始数据集应用了一套预处理流程，包括文本规范化、URL去除和噪声清理。文本表示采用n-gram模型的词频-逆文档频率（TF-IDF）方法。分类任务采用逻辑回归（Logistic Regression）算法完成。实验评估采用了常见的指标，如准确率（accuracy）、精确度（precision）、召回率（recall）、F1分数（F1-score）、ROC-AUC曲线、混淆矩阵（confusion matrix）以及精确度-召回率图（precision-recall graph）。结果表明，TF-IDF特征提取与逻辑回归分类器的结合取得了稳定的分类效果，构建了一个计算成本较低的分类器，在Sentiment140的二元情感分类任务中实现了85.2%的准确率、0.852的F1分数和0.93的ROC-AUC值。这些结果强烈表明，传统的机器学习算法仍然能够为这类大规模分...。研究方法：回归分析、机器学习、深度学习、Transformer 模型、实验方法。
+**中文摘要（自动生成）**：【金融经济学】慈善捐赠者往往对不同的公共服务有不同的偏好，而预算机构则需要在一系列公共服务项目中分配公共支出。政策框架通常旨在确保私人资金能够补充而非替代公共资金。我们区分了“基线附加性”（即在捐赠发生前公共资金仍得以维持）与“项目组合保护性”（即在所有捐赠资金汇集后公共服务仍能按原有计划提供）。对某一服务的较大额捐赠会增加所有服务的资金投入，但同时会减少其他服务的资金保障水平。这种跨捐赠者的财政外部性带来了一个明确的可行性结论：如果某项服务的最低保障水平低于捐赠后的资金投入水平，那么任何旨在提高该服务保障水平的改革都会使其相对于整个项目组合的整体保障水平下降（包括其自身的资金保障）。相反，当所有受捐赠服务的最低保障水平都达到预设标准时，才会出现既能扩大至少一项受捐赠服务又能维持其他服务保障水平的改革。本文详细描述了所有可能的保障方案及其在福利最大化方面的表现。在对数偏好假设下，捐赠比例决定了服务的保障程度，而不同捐赠者的价值偏好则决定了福利分配的结果。因此，即使某项服务因其他捐赠而失去部分财政支持，基线附加性原则仍可能成立。。
 
-## 11. A hybrid heuristic–reinforcement learning method for multi-table join optimization in cloud-native databases
-- 来源：openalex
-- 作者：Huichen Ma, S. Liu
-- 期刊/来源：Future Technology
-- 发表日期：2026-11-08
+## 11. Diversification Across Predictors: Heterogeneous Ensemble Learning for Cross-Sectional Return Prediction
+- 来源：arxiv
+- 作者：Danning Li
+- 期刊/来源：arXiv
+- 发表日期：2026-11-09
 - 引用数：0
-- 主题：Computer science, USable, Speedup, Heuristic, Overhead (engineering)
-- 链接：[DOI](https://doi.org/10.55670/fpll.futech.5.4.10) [链接](https://openalex.org/W7225454979)
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.12389v1)
 
-**中文摘要（自动生成）**：【金融经济学】在云原生数据库中，多表连接优化面临着存储与计算分离、资源弹性以及运行时成本波动等挑战，这些挑战是传统优化器无法解决的。因此，需要开发能够根据底层云基础设施的运行时行为调整决策边界的方法。本文提出的混合架构将IKKBZ-GOO启发式种子计划中的稳定子组件冻结为结构化冻结掩码（structural freeze mask），在整个训练过程中对学习算法进行约束，而非在单次热启动迭代后将其丢弃。该冻结掩码与一个具有状态感知功能的成本函数协同工作，该函数的单个状态依赖参数可在线更新。此外，该架构还包括两个其他组件：一个基于生产环境数据的逻辑门（logistic gate），以及一个回归控制策略（regression containment strategy），当学习到的连接计划表现不佳时，该策略会回退到启发式计划。在未使用GPU加速的情况下，该算法在一个16核CPU的计算节点上仅需6.4小时即可完成训练。该方法在Join Order Benchmark、TPC-H和TPC-DS基准测试中进行了验证，测试环境为运行在基于对象存储的共享存储系统上的PostgreSQL数据库，部署在包含8个节点...。研究方法：回归分析、优化方法。
+**中文摘要（自动生成）**：【资产定价】横截面股票回报预测仍然具有挑战性，主要原因在于信噪比极低、因子空间维度过高以及预测模型的非平稳特性。在这一领域，不同类型的模型存在互补的缺陷：神经网络由于方差较大而容易过度拟合噪声；线性模型则由于偏差较大而无法有效捕捉非线性特征。我们提出了一种异构集成框架，将金融领域的多元化原则应用于预测模型层面。该框架通过结合线性预测器与非线性预测器的集成方法（即“装袋”技术），使每个模型都能发挥其独特的作用，其预测误差之间的交叉协方差较低，从而在集成后实现误差的相互抵消。我们利用偏差-方差-协方差分解理论对这一机制进行了形式化阐述，明确了投资组合多元化与预测模型集成之间的精确数学关系。在CSI300指数日频Alpha158因子数据集上的测试结果表明，所提出的集成模型在预测准确性及基于投资组合的评估指标方面，相较于单独使用的神经网络提升了超过13%的排名（Rank IC）。其性能甚至超过了包括XGBoost和Double Ensemble在内的现有树基预测方法。。研究方法：横截面分析、神经网络、XGBoost。
 
-## 12. Deep transfer learning and radiomics synergy for enhanced lung cancer classification on CT scans
-- 来源：openalex
-- 作者：Mohammed Sabbih Hamoud Al-Tamimi, Amenah H. H. Abdulateef, Isra H. Abdulateef
-- 期刊/来源：Future Technology
-- 发表日期：2026-11-08
+## 12. Bayesian precision factor models for high-dimensional macroeconomic time series
+- 来源：arxiv
+- 作者：Peter Dunson
+- 期刊/来源：arXiv
+- 发表日期：2026-11-09
 - 引用数：0
-- 主题：Radiomics, Discriminative model, Artificial intelligence, Deep learning, Lung cancer
-- 链接：[DOI](https://doi.org/10.55670/fpll.futech.5.4.24) [链接](https://openalex.org/W7225455554)
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.12368v1)
 
-**中文摘要（自动生成）**：【金融经济学】肺癌仍然是全球癌症相关死亡的主要原因之一，因此准确及时的检测对于改善患者预后至关重要。计算机断层扫描（CT）被广泛用于肺部疾病的评估；然而，人工解读结果可能会受到观察者间差异以及影像特征细微差异的影响。本研究提出了一种自动化的三类肺部CT分类框架，该框架结合了深度迁移学习与定量肺部区域特征分析方法。采用预训练于ImageNet的EfficientNet-B7模型从CT图像中提取高层次的深度特征表示。同时，系统自动分割出肺部感兴趣区域（ROIs），并从中提取了四个定量指标：偏度（Skewness）、峰度（Kurtosis）、GLCM对比度（GLCM Contrast）和GLCM均匀性（GLCM Homogeneity）。这些标准化的肺部ROI特征通过特征级融合策略与EfficientNet-B7的深度特征表示相结合，最终将图像分类为正常（Normal）、良性（Benign）和恶性（Malignant）三类。在独立测试集上的实验评估显示，该分类方法的总体准确率为96.36%，正确识别了110张CT图像中的106张。所提出的融合框架在宏观平均精度（Precision）、召回率（Reca...。研究方法：实验方法。
+**中文摘要（自动生成）**：【资产定价】在宏观经济面板数据中，各个序列之间几乎都存在相关性，这使得相关性难以作为判断哪些序列之间存在直接联系的有效依据。例如，不同到期日的国债收益率彼此之间高度相关，但短期利率与长期利率之间的关联可能仅通过它们之间的中间到期日收益率来实现；同样，经济中的各个领域（如产出、就业、价格和利率）之间可能存在直接联系，也可能仅通过其他序列之间的关联来体现。这些问题的本质都与逆协方差矩阵有关。然而，从季度数据中提取逆协方差矩阵非常困难：序列之间的同时依赖性与时间动态相互交织，一旦剔除时间动态因素，序列的创新成分仍然存在密切的关联性；此外，序列的数量与观测到的季度数相当。我们提出了VAPOR（向量自回归精度因子模型，Vector Autoregressive Precision Factor）这一贝叶斯方法，该方法能够同时估计向量自回归动态和具有因子结构的创新精度矩阵，直接从拟合得到的精度矩阵中推断出序列之间的部分相关性，而非强行设定所有相关性为零。将该模型应用于100个FRED-QD季度序列后，VAPOR发现每个国债收益率仅与相邻到期日的收益率存在直接关联，并将所有26个显著的序列关系归入同一个F...。研究方法：贝叶斯方法。
