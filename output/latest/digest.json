@@ -1,67 +1,46 @@
 {
-  "date": "2026-11-11",
-  "count": 12,
+  "date": "2026-11-12",
+  "count": 11,
   "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
   "latest_updated": true,
-  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、国际贸易（2 篇）、金融科技（1 篇）。方法上以横截面分析、随机森林为主。来源分布：arXiv（6 篇）、OpenAlex（3 篇）、Semantic Scholar（2 篇）。其中 1 篇命中顶级期刊白名单。",
+  "overview": "本期共收录 11 篇论文。研究方向主要集中在金融经济学（7 篇）、金融科技（2 篇）、行为金融（1 篇）。方法上以均衡模型、回归分析为主。来源分布：arXiv（9 篇）、OpenAlex（1 篇）、Semantic Scholar（1 篇）。",
   "insights": {},
   "papers": [
     {
-      "title": "Tree-Based Classification of Functional Groups from IR Spectra: Feature Importance Corroborates Quantum-Chemical Fragment Frequencies",
+      "title": "Prospective evaluation of automated KU F40 fecal analysis versus microscopy for intestinal protozoa and illustrative labor costs",
       "authors": [
-        "Muhammad Khari Secario",
-        "Shingjiang Jessie Lue"
+        "Varol Tunalı",
+        "Nevın Turgay"
       ],
-      "venue": "ACS Omega",
-      "published_date": "2026-11-10",
-      "doi_url": "https://doi.org/10.1021/acsomega.6c11174",
-      "openalex_url": "https://openalex.org/W7213301609",
+      "venue": "Scientific Reports",
+      "published_date": "2026-11-11",
+      "doi_url": "https://doi.org/10.1038/s41598-026-79234-2",
+      "openalex_url": "https://openalex.org/W7169732355",
       "cited_by_count": 0,
-      "abstract": "Abstract\n                  Fourier-transform infrared (FTIR) spectroscopy is a widely used analytical technique for identifying functional groups (FGs) in chemical compounds, but its interpretation remains labor-intensive and reliant on expert knowledge, especially for complex or multicomponent samples. This study presents a tree-based random forest (RF) machine-learning framework, successfully developed to predict the presence of specific FG from an infrared spectra database. Stratification was employed to address positive class imbalance, maintaining the F1-score drop under 12% across models. All models achieved strong overall performance, with accuracy, F1-score, ROC-AUC, and out-of-bag (OOB) scores exceeding 0.8. Of the 46 FGs modeled, 43 demonstrated acceptable performance, while only three underperformed, as categorized by their Matthews correlation coefficient (MCC) and precision-recall area under the curve (PR-AUC) scores. Threshold tuning further improved model performance, yielding up to a 9% increase in MCC score. Finally, feature importance extracted from the trained models exhibited strong interpretability, correlating with theoretically predicted IR spectra and bridging experimental data with theoretical chemical significance. These results establish a robust, interpretable framework with potential for integration into intelligent monitoring and process optimization systems.",
-      "summary_zh": "【国际贸易】摘要  \n傅里叶变换红外（FTIR）光谱技术是一种广泛用于识别化学化合物中官能团（FGs）的分析方法，但其解释过程仍较为繁琐，且依赖于专家知识，尤其是对于复杂或多组分样品而言。本研究提出了一种基于树的随机森林（RF）机器学习框架，该框架能够从红外光谱数据库中准确预测特定官能团的存在。为解决正类样本不平衡问题，采用了分层采样策略，使得所有模型的F1分数下降幅度控制在12%以内。所有模型的整体性能均表现出色，其准确率、F1分数、ROC-AUC值以及留一法（OOB）评估结果均超过0.8。在所建模的46个官能团中，有43个官能团的预测效果令人满意，仅有3个官能团的预测性能不佳（根据马修斯相关系数（MCC）和精确度-召回率曲线下面积（PR-AUC）进行评估）。通过调整阈值，模型性能进一步提升，MCC分数最高提升了9%。从训练模型中提取的特征重要性具有很强的可解释性，这些特征与理论预测的红外光谱结果高度吻合，有助于将实验数据与理论化学意义联系起来。这些研究结果表明，所提出的框架具有较高的稳健性和可解释性，有望应用于智能监测和过程优化系统。。研究方法：随机森林、实验方法、优化方法。",
+      "abstract": "Abstract\n                  \n                    Stool ova-and-parasite (O&amp;P) microscopy remains widely used but is labor-intensive and constrained by expert availability. AI-assisted automated fecal analyzers can digitize stool microscopy workflows and generate images that may support remote expert review; however, evaluations should distinguish algorithm-only output from clinically deployable workflows that incorporate human verification. In a prospective diagnostic study at a tertiary-care parasitology laboratory in Izmir, Türkiye (November 2024–October 2025), 1000 consecutive, unselected adult human stool specimens submitted for routine testing were assessed in parallel by routine microscopy and the KU-F40 automated fecal analyzer. All 1,000 specimens contributed paired entries to the analysis tables. KU-F40 was evaluated as automated diagnosis (AD; algorithm call before human review) and AD plus expert user verification (AD + UV; expert review of KU-F40-generated images). The diagnostic AD + UV analysis was kept distinct from the labor-cost model, which evaluated illustrative 30%-verification and universal-verification scenarios. Relative to routine microscopy, KU-F40 AD showed positive/negative percent agreement (PPA/NPA) of 100%/99.8% for\n                    Entamoeba histolytica/dispar\n                    , 100%/98.6% for\n                    Giardia spp\n                    ., and 67.3%/97.7% for\n                    Blastocystis\n                    spp. Expert verification removed the 14 microscopy-negative\n                    Giardia\n                    AD calls and reduced microscopy-negative\n                    Blastocystis\n                    calls from 22 to 12; the two microscopy-negative E. histolytica/dispar calls remained UV-supported but were not independently adjudicated. Coccidia (\n                    Cryptosporidium\n                    spp.,\n                    Cyclospora cayetanensis\n                    ) fell outside the KU-F40 classifier panel and were identified only by conventional microscopy. The illustrative labor model assumed 35 min/specimen for microscopy and 2 min/specimen for AD, with 10 min of specialist time per verified specimen; no formal time-and-motion study was performed. The resulting modeled direct labor costs (USD/specimen) for microscopy, AD and illustrative 30%-verification AD + UV were Türkiye 4.56/0.20/0.72, Germany 21.87/0.91/3.46 and UK 27.21/0.79/4.66. KU-F40 provided a digitized screening workflow. Under the specified assumptions, the illustrative labor model yielded lower estimated hands-on labor inputs and direct labor costs than conventional microscopy; these were model outputs, not observed operational performance. Expert verification improved agreement for selected organisms, but UV-supported discordant calls were not an independent confirmation of infection. KU-F40 did not cover Cryptosporidium or Cyclospora in this evaluation; conventional and dedicated methods therefore remain necessary whenever these organisms fall within the requested diagnostic scope. Multi-site studies with measured workflow times and independent discordance adjudication are required before implementation or cost-effectiveness claims.",
+      "summary_zh": "【行为金融】摘要\n\n粪便卵和寄生虫（O&P）显微镜检查仍被广泛使用，但该过程劳动强度较高，且受限于专业人员的可用性。基于人工智能的自动化粪便分析仪能够实现粪便显微镜检查工作的数字化，并生成可用于远程专家审核的图像；然而，在进行评估时，需要区分仅由算法生成的结果与结合了人工验证的临床可用流程。在土耳其伊兹密尔的一家三级护理寄生虫学实验室进行的一项前瞻性诊断研究中（2024年11月至2025年10月），共对1000份连续提交的成人粪便样本进行了常规显微镜检查和KU-F40自动化粪便分析仪的并行检测。所有样本均被纳入分析数据表中。KU-F40的分析模式包括两种：仅依赖算法的自动化诊断（AD，即算法生成结果后无需人工审核）以及结合专家审核的自动化诊断（AD+UV，即专家对KU-F40生成的图像进行审核）。本研究将AD+UV模式与劳动成本模型进行了区分，后者评估了30%验证率和100%验证率两种情况。与常规显微镜检查相比，KU-F40在以下病原体的检测中显示出较高的阳性/阴性一致率：溶组织内阿米巴（Entamoeba histolytica）/迪斯帕内阿米巴（Dispar）为100%/99.8%，贾第...。",
       "topics": [
-        "Pattern recognition (psychology)",
-        "Artificial intelligence",
-        "Random forest",
-        "Computer science",
-        "Feature (linguistics)"
+        "Medicine",
+        "Spectrum analyzer",
+        "Medical physics",
+        "Radiology",
+        "Nuclear medicine"
       ],
       "source": "openalex"
     },
     {
-      "title": "Integrating AI General Education with Digital Literacy Cultivation and Cognitive Construction in Industry-Specific Universities",
+      "title": "Deceleration without identification: testing a power-law trend in Bitcoin prices under persistent noise",
       "authors": [
-        "Yuzhi Hu"
-      ],
-      "venue": "Communications in Humanities Research",
-      "published_date": "2026-11-10",
-      "doi_url": "https://doi.org/10.54254/2753-7064/2026.38801",
-      "openalex_url": "https://openalex.org/W7225612962",
-      "cited_by_count": 0,
-      "abstract": "Artificial intelligence has evolved into a general-purpose technology that permeates nearly every corner of knowledge production and social governance. This transformation is pushing college students' digital literacy far beyond the traditional \"digitization\" benchmark toward what this paper terms \"intelligent-digital\" literacy. For industry-specific universities—institutions committed to serving specific industries and cultivating application-oriented talents—the significance of AI general education is perhaps even greater than for other types of universities, because their graduates directly enter the industrial chain. Taking the practice of Moutai Institute as a concrete case, this paper elaborates on the internal logic, practical challenges, and feasible pathways for integrating AI general education into students' digital literacy cultivation and cognitive construction. The core argument of this paper is that such education should be anchored in industrial scenarios rather than abstract theory, and that cultivating compound talents equipped with digital literacy, industrial awareness, and social responsibility requires simultaneously grasping three main threads: technological empowerment, value guidance, and cognitive construction. On this basis, this paper proposes a trinity integration framework and offers actionable strategies from four dimensions: curriculum system, teaching model, faculty development, and evaluation mechanism. This paper aims to provide theoretical reference and practical insights for general education reform in industry-specific universities.",
-      "summary_zh": "【金融科技】人工智能已发展成为一种通用技术，几乎渗透到知识生产和社会治理的每一个领域。这一变革正在将大学生的数字素养提升至传统“数字化”标准之上，本文将其称为“智能数字化”素养。对于那些专注于服务特定行业并培养应用型人才的行业型大学而言，人工智能通识教育的重要性可能更为突出，因为这些大学的毕业生将直接进入产业链。以茅台学院的实际案例为例，本文详细阐述了将人工智能通识教育融入学生数字素养培养和认知构建过程中的内在逻辑、实际挑战及可行路径。本文的核心观点是，此类教育应基于行业场景而非抽象理论展开；要培养具备数字素养、行业意识和社会责任的复合型人才，需要同时把握三个关键方面：技术赋能、价值引导和认知构建。在此基础上，本文提出了一个三位一体整合框架，并从课程体系、教学模式、师资发展及评估机制四个维度提出了可操作的策略。本文旨在为行业型大学的通识教育改革提供理论参考与实践启示。。",
-      "topics": [
-        "Curriculum",
-        "Digital literacy",
-        "Argument (complex analysis)",
-        "Literacy",
-        "Cognition"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Hedging out the HEDGE Bias: Identifying Dynamic Partial-Equilibrium Effects with Panel LP-IV",
-      "authors": [
-        "Endong Wang",
-        "Ren Zhang"
+        "Carlos Baquero",
+        "Raquel Menezes"
       ],
       "venue": "arXiv",
       "published_date": "2026-11-10",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.14434v1",
+      "openalex_url": "http://arxiv.org/abs/2611.13962v1",
       "cited_by_count": 0,
-      "abstract": "Cross-sectional designs are widely used to estimate dynamic partial-equilibrium effects of an aggregate treatment. We show analytically that these estimates are biased when exposures to the treatment and to aggregate confounders are correlated or the confounders feed back into the treatment. This paper develops the heterogeneous-exposure local-projection instrumental variables (HELP-IV) framework, which compares units while holding the confounder path fixed by instrumenting the treatment and this path with exposure-weighted shock proxies. We prove that HELP-IV identifies the partial-equilibrium effect. We further extend the framework, with the corresponding inference, to multiple exposure margins and confounders, forward-looking outcomes, and cumulative multipliers. Finally, we apply HELP-IV to state fiscal multipliers and regional stock-wealth effects, where it yields partial-equilibrium effects that are smaller than conventional estimates and deliver different implications when ported to macroeconomic models.",
-      "summary_zh": "【风险管理与衍生品】横截面设计被广泛用于估计某种总体性政策干预的动态局部均衡效应。我们从理论上证明了：当政策干预与总体性混杂因素之间存在相关性，或者这些混杂因素反过来影响政策干预效果时，此类估计结果会出现偏差。本文提出了异质性暴露局部投影工具变量（HELP-IV）框架，该框架通过为政策干预和暴露加权冲击代理变量设置工具变量，从而在固定混杂因素影响路径的前提下对不同个体进行比较。我们证明了HELP-IV方法能够有效识别局部均衡效应。此外，我们还将该框架扩展到多重暴露因素、前瞻性结果以及累积乘数的分析中，并对相应的推断方法进行了改进。最后，我们将HELP-IV方法应用于州级财政政策效应和区域财富变动的研究，发现其得出的局部均衡效应低于传统估计值，并且在应用于宏观经济模型时会产生不同的政策含义。。研究方法：工具变量、横截面分析、均衡模型。",
+      "abstract": "Plotted against time since its first block on logarithmic axes, the price of Bitcoin lies close to a straight line, and a power law in time has been proposed as its long-run trend. A good fit is weak evidence: when deviations from a trend are as persistent as a random walk, regressions on time find trends and high $R^2$ where none exist. We first bound what fifteen years of weekly prices can reveal, then test only what is answerable. Using a few low-frequency averages, invariant to the noise scale and calibrated over a declared family of persistent deviations with a four-year cycle and declining volatility, we test constant drift in expected log price against an added log-age term. The procedure was fixed, validated and publicly hashed before it was applied once. Constant drift is rejected under this family at nominal 5%, and a log-age coefficient of 5.7, close to the published exponent, is not rejected. The rejection does not survive allowing persistence beyond a random walk, and a Gompertz curve with a ceiling fits about as well as the power law. Whether deviations revert to the trend cannot be decided. Registered forecasts for 2027-2030 will be scored by future prices.",
+      "summary_zh": "【金融经济学】将比特币价格随时间的变化情况在对数坐标轴上绘制出来后，其走势接近一条直线；因此有研究提出比特币价格在长期内遵循幂律分布。然而，这种拟合结果并不十分可靠：当价格偏离趋势的情况与随机游走现象一样持续时，基于时间的回归分析往往会“发现”趋势，并得出较高的$R^2$值（即拟合优度），但实际上这些趋势并不存在。首先，我们分析了十五年来的每周价格数据所能揭示的信息；随后，我们仅验证那些能够通过合理解释的结论。通过使用一些对噪声尺度具有不变性的低频平均值，并根据一组具有四年周期和逐渐下降波动性的持续价格偏差数据进行校准，我们对比了“预期对数价格存在恒定漂移”与“对数价格随时间增长”这两种模型。该分析方法在应用前已经经过固定、验证并公开发布。在该数据集下，恒定漂移假设在5%的显著性水平上被拒绝；而一个对数年龄系数为5.7的模型（接近已公布的幂律指数）并未被拒绝。不过，如果允许价格偏离趋势的情况超过随机游走的范畴，这种拟合结果就不成立；此时，Gompertz曲线（具有上限约束）的拟合效果与幂律模型相当。目前尚无法确定价格偏差是否会最终回归到长期趋势。关于2027至2030年的预测结果，将需要通过未...。研究方法：回归分析、模型校准。",
       "topics": [
         "Economics",
         "Finance"
@@ -69,19 +48,19 @@
       "source": "arxiv"
     },
     {
-      "title": "Semiparametric Inference in Panel Data with Interactive and High-dimensional Confounding",
+      "title": "Backtesting High-Dimensional Expected Shortfall",
       "authors": [
-        "Bin Chen",
-        "Yukun Ma",
-        "Qiyang Yu"
+        "Zaichao Du",
+        "Juan Carlos Escanciano",
+        "Pei Pei"
       ],
       "venue": "arXiv",
       "published_date": "2026-11-10",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.14385v1",
+      "openalex_url": "http://arxiv.org/abs/2611.13882v1",
       "cited_by_count": 0,
-      "abstract": "This paper develops inference for a low-dimensional treatment coefficient in partially linear panel models with high-dimensional observed covariates and latent interactive confounding. Flexible adjustment for observed covariates can leave correlated factor components in treatment and outcome residuals, invalidating standard double/debiased machine learning (DML). We propose Factor-Augmented DML (FA-DML), which estimates treatment-side and reduced-form factor spaces from first-stage residuals. The estimator combines a feasible double projection with three-fold, unit-level cross-fitting. The double projection controls interactions between the two estimated factor spaces. The separate folds eliminate same-training-unit pairings in the leading disturbance components of the factor-estimation errors. Under fixed factor ranks, pervasive factor signals, strict exogeneity, and joint asymptotics in the number of units N and periods T , FA-DML is first-order equivalent to an infeasible oracle, is asymptotically normal, and admits consistent variance estimation. In the baseline simulation design with strong interactive confounding, FA-DML confidence intervals have coverage close to the nominal level. Standard DML and a two-fold variant that estimates both factor spaces on the same units substantially undercover. In an application to U.S. states, FA-DML finds that a 10% increase in the real minimum wage is associated with a roughly 1.1% lower 50/10 wage ratio. The estimate is stable across control sets and first-stage learners.",
-      "summary_zh": "【金融经济学】本文针对部分线性面板模型中低维处理效应系数进行了推断分析，这些模型具有高维观测协变量和潜在的交互性混杂因素。由于对观测协变量的灵活调整，处理组和结果组残差中可能存在相关的因子成分，这使得传统的双重/无偏机器学习（DML）方法失效。我们提出了因子增强型DML（FA-DML）方法，该方法通过第一阶段残差来估计处理组相关的因子空间及简化形式的因子结构。该估计器结合了可行的双重投影技术与三重、单元级别的交叉验证方法，双重投影用于控制两个因子空间之间的交互作用；交叉验证则避免了同一训练单元在因子估计误差中的配对效应。在因子排名固定、因子信号普遍存在、外生性严格以及样本数量N和时期T共同增长的情况下，FA-DML方法在统计性质上等价于一个“不可实现的理想模型”，其估计结果具有渐近正态性，并能实现一致的方差估计。在存在强交互性混杂的基准模拟设计中，FA-DML方法的置信区间覆盖率接近名义水平；而传统的DML方法及其在同一单元上同时估计两个因子空间的变体方法则表现较差。在美国各州的应用研究中，FA-DML发现实际最低工资每增加10%，50%与10%工资比率会下降约1.1%。该估计结果在不同对照组...。研究方法：数值模拟、机器学习。",
+      "abstract": "Forecast evaluation increasingly uses high-dimensional predictors, but estimation and regularization of large predictive models can distort conventional backtests. This issue is particularly important for forecasting downside risk, where the signal-to-noise ratio is low. We develop out-of-sample Expected Shortfall (ES) backtests that remove the large first-order bias effects of estimating high-dimensional Value-at-Risk, ES, and the evaluation instrument. In a linear ES specification, the proposed methods are easily implemented as Double Lasso with a tail-size-adjusted score as a generated dependent variable. More generally, we characterize orthogonal ES backtesting moments, and establish oracle equivalence and valid inference under time-series dependence and repeated estimation with overlapping and expanding training windows. Simulations show that conventional backtests can severely overreject ES optimal forecasts, whereas orthogonalization improves size control. An application to downside-growth forecasting for G7 economies finds evidence against a US growth-only ES specification, even though forecast-oriented regularization selects no additional financial predictors. The application also shows that accounting for estimation can change rejection decisions in either direction. These findings highlight the distinct roles of predictive variable selection and backtesting in the evaluation of high-dimensional tail-risk models.",
+      "summary_zh": "【金融经济学】预测评估越来越多地使用高维预测变量，但大型预测模型的估计和正则化过程可能会扭曲传统的回测结果。这一问题在预测下行风险时尤为突出，因为这种情况下的信噪比较低。我们提出了一种基于样本外数据的预期亏损（Expected Shortfall, ES）回测方法，该方法能够消除在估计高维风险价值（Value-at-Risk, VaR）及评估指标时产生的较大的一阶偏差效应。在线性ES模型框架下，所提出的方法可以通过使用调整尾部大小的得分作为生成因变量来轻松实现（即通过双Lasso算法）。更一般地，我们研究了正交化ES回测的统计特性，并在存在时间序列依赖性以及训练窗口重叠或扩展的情况下，证明了模型的“神谕等价性”（oracle equivalence）和有效推断性。模拟结果表明，传统回测方法可能会严重误判最优预测结果，而正交化技术能够有效改善统计量的显著性控制。通过对G7经济体的下行增长预测进行应用，我们发现即使在不添加额外金融预测变量的情况下，基于美国经济增长的ES模型也无法准确解释实际数据；同时，正交化处理还可能改变模型的拒绝决策方向。这些发现强调了预测变量选择与回测方法在评估高维尾部风险模...。研究方法：数值模拟、LASSO 正则化。",
       "topics": [
         "Economics",
         "Finance"
@@ -89,96 +68,42 @@
       "source": "arxiv"
     },
     {
-      "title": "Beyond Export Dominance: Structural Transformation, Smallholder Welfare and Sustainability Trade-Offs in Indonesia’s Plantation Economy",
+      "title": "How Does Digital Industry Agglomeration Drive High-Quality Urban Development? An Analysis from Both Geographic and Virtual Perspectives",
       "authors": [
-        "Loso Judijanto"
+        "Xin Du",
+        "Yuan-Yuan Gou",
+        "Hong Qiu"
       ],
-      "venue": "Journal of Global Economics and Finance Studies",
-      "published_date": "2026-11-10",
-      "doi_url": "https://doi.org/10.67927/jglobaleconfin/2026(1)106",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:295608666",
+      "venue": "Journal of Economics and Public Finance",
+      "published_date": "2026-11-09",
+      "doi_url": "https://doi.org/10.22158/jepf.v12n4p1",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295747122",
       "cited_by_count": 0,
-      "abstract": "Indonesia’s plantation subsector has emerged as the principal contributor to agricultural export earnings, yet aggregate trade success does not establish equitable rural welfare or ecological sustainability. Drawing on a qualitative literature review of peer reviewed research published between 2020 and 2026 and the official performance indicators reported through October 2026, this article synthesizes macroeconomic, commodity-chain, household, industrial, and environmental evidence. The review identifies five linked tensions: export concentration versus resilience; output and trade performance versus distributional welfare; down streaming versus opportunity cost; certification compliance versus smallholder inclusion; and production intensification versus environmental additionality. Reported January–August 2026 plantation exports reached IDR 503.3 trillion, with oil palm accounting for approximately 70.6% of that total. These figures demonstrate structural importance but cannot independently identify causal household benefits. Evidence suggests that plantation development can reduce poverty and improve human capital under favorable conditions, while insecure land rights, replanting barriers, uneven access to certification, and environmental externalities constrain those gains. The article advances a multilevel framework linking external markets, national institutions, value-chain governance, and household–landscape outcomes. It recommends multidimensional performance reporting, inclusive producer finance, selective downstreaming, commodity diversification, and independently verified conservation outcomes. The resulting framework supports a more balanced interpretation of plantation-sector success and an actionable agenda for resilient rural transformation.",
-      "summary_zh": "【国际贸易】印度尼西亚的种植园产业已成为农业出口收入的主要来源，然而总体贸易成就并未带来公平的农村福利或生态可持续性。本文基于2020年至2026年间发表的同行评审研究以及截至2026年10月的官方绩效指标，综合了宏观经济、商品链、家庭、产业和环境方面的证据。研究指出了五个相互关联的矛盾现象：出口集中度与产业韧性之间的矛盾；产出和贸易表现与分配福利之间的矛盾；产业链下游延伸与机会成本之间的矛盾；认证合规性与小农户参与度之间的矛盾；以及生产集约化与环境效益之间的矛盾。2026年1月至8月期间，印度尼西亚的种植园出口总额达到503.3万亿印尼盾，其中油棕产业占比约为70.6%。这些数据凸显了该产业的重要地位，但无法单独说明其对家庭福祉的因果作用。研究表明，在有利条件下，种植园发展有助于减少贫困并提升人力资本水平；然而，不稳定的土地权利、重新种植的障碍、认证渠道的不平等以及环境外部性等因素会限制这些积极效应的发挥。本文提出了一种多层次分析框架，将外部市场、国家制度、价值链治理以及家庭与生态环境的相互关系纳入考量。建议采用多维度绩效评估机制、提供包容性的生产融资支持、实施有针对性的产业链延伸策略、推...。",
+      "abstract": "In the digital economy era, the spatial organization of digital industry is evolving from geographic agglomeration to virtual-real integration, becoming a key driver of high-quality urban development. Using panel data from 30 provincial capital cities in China from 2013 to 2023, this paper examines the impact of digital industrial agglomeration on high-quality urban development from the dual perspectives of geographic agglomeration and virtual agglomeration. The results show that: (1) Both digital industry geographic agglomeration and virtual agglomeration significantly promote high-quality urban development, and geographic agglomeration presents an inverted-U relationship, first promoting and then inhibiting. (2) The impact of the two types of agglomeration has significant regional heterogeneity and agglomeration-level heterogeneity. Both types of agglomeration have their strongest promoting effect in the eastern region. Cities with low agglomeration levels mainly rely on scale expansion and digital capacity to accumulate and release potential. In contrast, cities with high agglomeration levels rely more on deepening innovation and optimizing spatial structure. (3) Both types of agglomeration have significant positive spatial spillover effects, which can promote the high-quality development of surrounding cities; however, when geographic agglomeration crosses the threshold, its spillover will be weakened. The conclusions of this paper provide policy implications for optimizing the spatial layout of the digital industry and promoting regional coordinated development.",
+      "summary_zh": "【金融科技】在数字经济时代，数字产业的空间组织模式正从地理集聚向虚实融合转变，成为推动高质量城市发展的关键因素。本文利用2013至2023年中国30个省会城市的面板数据，从地理集聚和虚拟集聚两个维度探讨了数字产业集聚对高质量城市发展的影响。研究结果表明：（1）数字产业的地理集聚和虚拟集聚均显著促进了高质量城市发展，其中地理集聚呈现出“倒U”关系，即初期具有促进作用，后期则产生抑制效应；（2）这两种集聚方式的影响存在显著的区域差异和集聚水平差异，东部地区的促进效应最为显著。集聚水平较低的城市主要依靠规模扩张和数字能力来释放发展潜力，而集聚水平较高的城市则更注重深化创新和优化空间结构；（3）这两种集聚方式均具有显著的正空间溢出效应，能够带动周边城市的高质量发展，但当地理集聚达到一定阈值后，其溢出效应会减弱。本文的结论为优化数字产业的空间布局和促进区域协调发展提供了政策启示。。研究方法：面板数据。",
       "topics": [
         "Economics",
-        "Environmental Science"
+        "Geography",
+        "Computer Science"
       ],
       "source": "semantic_scholar"
     },
     {
-      "title": "Beyond the Five-Percent Growth Paradox: Economic Fragility, Policy Credibility and Investor Confidence in Indonesia",
+      "title": "Economic Benefits of Cross-Border Electricity Trade and Domestic Electricity Production in Switzerland",
       "authors": [
-        "L. Judijanto"
-      ],
-      "venue": "Journal of Global Economics and Finance Studies",
-      "published_date": "2026-11-10",
-      "doi_url": "https://doi.org/10.67927/jglobaleconfin/2026(1)107",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:295604101",
-      "cited_by_count": 0,
-      "abstract": "Indonesia's persistent growth near five percent presents a developmental paradox: macroeconomic stability can coexist with insecure employment, a vulnerable middle class, weak productive credit allocation, and fragile investor confidence. The 2026 sequence of capital-market scrutiny, a severe October equity correction, negative sovereign-rating outlooks, and currency depreciation intensifies the need to separate immediate triggers from structural causes. This qualitative literature review synthesizes 53 peer reviewed articles published between 2020 and 2026, supported by dated institutional releases. A purposive, theory-informed and critically interpretive synthesis—not a systematic review—identifies six linked themes: job-quality divergence, household vulnerability, regulatory uncertainty, credit-allocation inefficiency, market-integrity concerns, and fiscal tradeoffs. The paper proposes an integrated mechanism through which unpredictable policy commitments may discourage irreversible investment while external portfolio shocks magnify financing pressures. Its findings do not demonstrate that domestic policy alone caused the 2026 market disruptions or that an undrawn loan commitment represents idle investable cash. The review also treats school feeding as a potentially valuable human-capital investment whose results and opportunity costs require independent evaluation. It recommends transparent beneficial-ownership disclosure, credible and coordinated regulation, outcome-based fiscal governance, employment-centered productivity reform, and improved small-business credit pathways. A sequenced institutional framework and research agenda specify measurable tests for these propositions. The central implication is that Indonesia's economic resilience depends on both credible financial institutions and the capacity to transform growth into widely shared, secure livelihoods.",
-      "summary_zh": "【金融经济学】印度尼西亚持续保持近5%的增长率，这一现象揭示了一个发展悖论：宏观经济稳定与就业不稳定性、中产阶级脆弱性、生产性信贷分配不足以及投资者信心低迷并存。2026年资本市场的持续动荡（包括10月份的严重股市调整）、负面的主权评级前景以及货币贬值，进一步凸显了区分短期诱因与结构性问题的必要性。本研究通过定性文献综述整合了2020年至2026年间发表的53篇经过同行评审的文章，并参考了相关机构发布的最新数据。作为一种基于理论且具有批判性解读的综合性分析（而非系统性综述），研究发现了六个相互关联的主题：就业质量差异、家庭脆弱性、监管不确定性、信贷分配效率低下、市场诚信问题以及财政政策之间的权衡。文章提出了一种综合机制，认为不可预测的政策承诺可能抑制投资活动，而外部市场冲击则会加剧融资压力。研究结果并未表明2026年的市场动荡完全由国内政策引发，也未表明未使用的贷款承诺意味着资金闲置。此外，研究还将学校供餐视为一项具有潜在价值的人力资本投资，其效果和机会成本需要单独评估。研究建议加强透明度的有益所有权信息披露机制、制定可信且协调一致的监管政策、推行以就业为导向的生产力改革，并改善小型企业的信贷...。",
-      "topics": [
-        "Economics",
-        "Political Science"
-      ],
-      "source": "semantic_scholar"
-    },
-    {
-      "title": "The Hidden Sharpe Ratio",
-      "authors": [
-        "Mikhail Chernov",
-        "Bryan T. Kelly",
-        "Semyon Malamud",
-        "Johannes Schwab"
-      ],
-      "venue": "NBER Working Papers",
-      "published_date": "",
-      "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w35988#fromrss",
-      "cited_by_count": 0,
-      "abstract": "We estimate the maximal Sharpe ratio in large cross-sections of assets directly, without constructing the efficient portfolio. Covariance estimation in this setting requires regularization, which suppresses the contribution of small-eigenvalue directions. Our estimator progressively recovers this contribution, yielding tight upper and lower bounds with asymptotic confidence intervals. We further show that ridge-regularized Markowitz portfolios, the construction underlying many existing high-Sharpe benchmarks, deliver out-of-sample Sharpe ratios that fall short of the true maximum by an explicit, non-vanishing multiplicative factor. Applied to U.S. equities, the method delivers an estimated maximal annualized Sharpe ratio of approximately 7.4, or 5.0 once micro-cap stocks are excluded, substantially exceeding existing portfolio-based benchmarks of 1.0–4.0. Adding corporate bonds raises the maximum, though not by a statistically significant margin. Nonlinear portfolio weights dominate linear ones, and characteristics introduced after 2004 contribute little additional Sharpe ratio.",
-      "summary_zh": "【金融经济学】我们直接估计了大量资产组合中的最大夏普比率，而无需构建有效投资组合。在这种设定下，协方差估计需要采用正则化方法，以抑制小特征值方向对结果的影响。我们的估计器能够逐步恢复这部分影响，从而得到具有渐近置信区间的严格上下界。进一步研究表明，基于岭回归正则化的马科维茨投资组合（许多现有高夏普比率基准的构建方法）所计算出的样本外夏普比率，实际上比真实最大值低一个非零的乘数。将该方法应用于美国股票市场，估计得到的年化最大夏普比率约为7.4；若排除微型股，则为5.0，远高于现有的基于投资组合的基准值（1.0–4.0）。加入企业债券虽然能提高最大夏普比率，但提升幅度并不具有统计学意义。非线性投资组合权重相较于线性权重更具优势；此外，2004年之后引入的某些投资特征对夏普比率的提升作用有限。。研究方法：横截面分析。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "nber"
-    },
-    {
-      "title": "Artificial Intelligence dalam Manajemen Krisis: Pengembangan Dashboard Adaptif untuk Mendukung Pengambilan Keputusan",
-      "authors": [
-        "Cantika Nur Previana",
-        "Rahmania Rahmania"
-      ],
-      "venue": "INFOMATEK",
-      "published_date": "2026-11-10",
-      "doi_url": "https://doi.org/10.23969/infomatek.v28i2.68113",
-      "openalex_url": "https://openalex.org/W7225615208",
-      "cited_by_count": 0,
-      "abstract": "Pemanfaatan Artificial Intelligence (AI) dalam manajemen krisis memiliki potensi untuk mendukung pengolahan informasi dan pengambilan keputusan pada situasi yang dinamis dan penuh ketidakpastian. Penelitian ini bertujuan menghasilkan prototipe dashboard manajemen krisis adaptif berbasis AI yang mengintegrasikan analisis informasi krisis, simulasi skenario, dan rekomendasi pendukung keputusan dengan mekanisme human-in-the-loop. Penelitian dilakukan melalui empat tahap, yaitu kajian literatur dan analisis kebutuhan, perancangan arsitektur sistem, pengembangan prototipe dashboard, serta demonstrasi dan evaluasi fungsional berbasis skenario. Hasil penelitian menghasilkan prototipe AI Crisis Management Dashboard yang merepresentasikan berbagai sumber informasi krisis, pemrosesan data berlapis, serta rancangan fungsi analitik untuk analisis kerusakan, prediksi kondisi, analisis komunikasi, dan rekomendasi alokasi sumber daya. Sistem juga menyediakan mekanisme konfirmasi dan penolakan rekomendasi AI sehingga keputusan akhir tetap melibatkan operator. Penelitian ini menyimpulkan bahwa prototipe yang dikembangkan mampu mengintegrasikan fungsi analitik AI, tata kelola, dan keterlibatan manusia dalam satu lingkungan pendukung keputusan. Validasi menggunakan data aktual dan pengujian pengguna diperlukan untuk mengevaluasi efektivitas sistem pada kondisi operasional.",
-      "summary_zh": "【金融经济学】人工智能（AI）在危机管理中的应用具有潜力，能够在动态且充满不确定性的环境中支持信息处理和决策制定。本研究旨在开发一种基于AI的适应性危机管理仪表板原型，该原型整合了危机信息分析、场景模拟以及决策支持功能，并采用了“人机交互”（human-in-the-loop）机制。研究过程分为四个阶段：文献调研与需求分析、系统架构设计、仪表板原型开发，以及基于场景的功能演示与评估。最终开发出的AI危机管理仪表板原型能够整合多种危机信息来源，实现多层次的数据处理，并包含用于损害分析、状况预测、沟通分析及资源分配建议的功能模块。该系统还配备了AI建议的确认与拒绝机制，以确保最终决策仍由操作人员主导。研究结果表明，所开发的原型成功地将AI分析功能、系统管理机制与人类参与度整合到了一个统一的决策支持框架中。为评估系统在实际操作环境中的有效性，还需通过真实数据验证及用户测试来进行进一步验证。。",
-      "topics": [
-        "Computer science",
-        "Dashboard",
-        "Operating system",
-        "Database",
-        "Artificial intelligence"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Point-in-Time Encoders for Earnings Calls",
-      "authors": [
-        "Alessio Brini"
+        "Benjamin Lietti",
+        "Ambra Van Liedekerke",
+        "Marino Bucher",
+        "Michael Beer",
+        "Nicolas Eschenbaum"
       ],
       "venue": "arXiv",
       "published_date": "2026-11-10",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.14325v1",
+      "openalex_url": "http://arxiv.org/abs/2611.13866v1",
       "cited_by_count": 0,
-      "abstract": "Text encoders turn earnings calls into vectors for search, for language models that answer from retrieved passages, and for forecasting models. A live retriever can use an encoder trained once on all available text, as finance retrievers are, but a backtest needs an encoder that read no text written after the date of each vector. To address this look-ahead bias, from 412,248 calls we train vintages under four pretraining recipes, with yearly cutoffs from 2010 to 2024, and each vintage reads only text dated on or before its cutoff. We then fine-tune each vintage on the question-answer pairs of the calls themselves. The vintages we train on calls alone, with 33.8M parameters, retrieve answers on held-out calls better than the general retrievers we tested in every test quarter. Their vectors also raise by about half the rank correlation between next-day returns and forecasts built from past returns and firm size. When each vintage continues the previous one, a later vintage retrieves better on earlier quarters than the vintage available at the time, and a point-in-time language model that answers from the passages the later vintage retrieves inherits the gain. The 2024 vintage of our families also forecasts earnings surprises better, although the interval of this gain includes zero on calls that no vintage read. It forecasts returns no better, so point-in-time vintages matter most for retrieval and little for forecasts of returns.",
-      "summary_zh": "【金融经济学】文本编码器将财报电话会议内容转换为向量，用于语言模型的搜索、以及预测模型的输入数据。实时检索系统可以使用一次训练完成的编码器（例如金融领域的检索系统所使用的编码器），但回测则需要使用一种不会读取任何在向量生成日期之后发布的文本的编码器。为了解决这种“前瞻性偏差”问题，我们从412,248份财报电话会议记录中，按照四种不同的预训练方法分别训练了多个版本的编码器，这些版本的训练时间跨度从2010年到2024年，每个版本仅处理在其训练截止日期之前发布的文本。随后，我们利用这些编码器本身包含的问题-答案数据对对它们进行微调。仅使用这些编码器训练得到的模型（拥有3380万个参数）在每个测试季度中，其检索结果均优于我们测试过的其他通用检索系统。这些编码器生成的向量显著提升了次日股价回报与基于历史回报及公司规模构建的预测结果之间的相关性（相关性提高了约50%）。当一个版本的编码器在另一个版本的基础上进行进一步训练时，后续版本在处理早期季度的数据时表现更优；同时，基于后续版本生成的文本进行回答的即时语言模型也能继承这种改进效果。我们训练的2024年版本的编码器在预测财报惊喜（即实际收益与预期收益...。",
+      "abstract": "This paper assesses the economic benefits of cross-border electricity trade in the context of rising energy prices and geopolitical uncertainty. Switzerland provides a particularly compelling case because of its geographical location and limited integration into the EU electricity market. We first use the Nexus-e framework to simulate the generation capacity and transmission grid expansion required under autarky and free-trade scenarios. Based on these capacity configurations, a fundamental power market model simulates wholesale market outcomes under projected demand and generation conditions for 2040. By jointly accounting for consumer and producer surplus, as well as investments in generation capacity and grid infrastructure, we provide a comprehensive assessment of the welfare effects of cross-border electricity trade, leading to an estimated EUR 1.5 billion gain. More specifically, open access to cross-border electricity trade implies a EUR 1.8 billion transfer from largely publicly owned producers to consumers. Finally, we provide an illustrative, non-causal mapping of broader macroeconomic effects. Under a price-convergence assumption, the implied demand adjustment corresponds to a GDP-equivalent effect of approximately EUR 7 billion.",
+      "summary_zh": "【国际贸易】本文在能源价格上涨和地缘政治不确定性加剧的背景下，评估了跨境电力贸易的经济效益。瑞士因其地理位置以及与欧盟电力市场的有限融合程度，成为一个尤为具有代表性的案例。我们首先利用Nexus-e框架模拟了在自给自足和自由贸易两种情景下所需的发电能力和输电网扩建情况。基于这些容量配置，一个基础性的电力市场模型模拟了2040年在预期需求和发电条件下的批发市场结果。通过综合考虑消费者和生产者的剩余收益，以及发电能力和电网基础设施的投资，我们对跨境电力贸易的福利效应进行了全面评估，估计其带来的收益为15亿欧元。更具体地说，开放跨境电力贸易意味着从主要由公有制企业主导的生产者向消费者转移了18亿欧元的利益。最后，我们提供了一个说明性的、非因果关系的宏观经济效应分析框架。在价格趋同的假设下，由此引发的需求调整相当于约70亿欧元的GDP增长效应。。",
       "topics": [
         "Economics",
         "Finance"
@@ -186,20 +111,18 @@
       "source": "arxiv"
     },
     {
-      "title": "Deep Learning for Operator Maps in Optimal Liquidation",
+      "title": "Nonzero-Sum Stochastic Exit Games with Singular Belief Dynamics",
       "authors": [
-        "Ryan Donnelly",
-        "Luca Galimberti",
-        "Brian Healy",
-        "Siqi Zhang"
+        "Yukun Cao",
+        "Jan Palczewski"
       ],
       "venue": "arXiv",
       "published_date": "2026-11-10",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.14245v1",
+      "openalex_url": "http://arxiv.org/abs/2611.13841v1",
       "cited_by_count": 0,
-      "abstract": "We analyze the solution map of a optimal execution problem in which price dynamics are subject to a general transient impact kernel. Given the structure of the optimal trading strategy derived by Abi Jaber and Neuman in \\cite{https://doi.org/10.1111/mafi.12465}, we show that the strategy is locally Lipschitz continuous with respect to the underlying model parameters governing temporary and transient price impact as well as the fundamental price process. Continuity of this map justifies the application of neural-net based approximations which take model parameters as inputs. We propose a method generating samples of the transient price impact kernel for the purposes of creating training data, and a method of projecting the kernel to a finite dimensional representation appropriate for input to a neural net, and a dimensional reduction based on the relationship between inventory and trade signal. We demonstrate the effectiveness of the trained neural net and use it to quantify the potential financial costs associated with misspecifying the transient impact kernel.",
-      "summary_zh": "【金融经济学】我们分析了一个最优执行问题的解映射，其中价格动态受到一般性瞬态影响核的制约。基于Abi Jaber和Neuman在\\cite{https://doi.org/10.1111/mafi.12465}中推导出的最优交易策略结构，我们证明了该策略对于控制临时性和瞬态价格影响的模型参数以及基础价格过程是局部利普希茨连续的。这种映射的连续性为使用以模型参数为输入的神经网络近似方法提供了理论依据。我们提出了一种生成瞬态价格影响核样本的方法，用于创建训练数据；同时提出了一种将该核投影到适合神经网络输入的有限维表示的方法，以及一种基于库存与交易信号之间关系的降维方法。我们验证了训练有素的神经网络的有效性，并利用它来量化因错误指定瞬态影响核而可能产生的潜在财务成本。。",
+      "abstract": "We study a two-player nonzero-sum stochastic exit game with asymmetric information. Each firm chooses the time to exit a duopoly and, conditional on remaining active, when to exit a monopoly. The asymmetry stems from privately observed exit values, while profit flows are driven by a general one-dimensional diffusion. Allowing for exit from monopoly induces singular dynamics of the associated belief process, so we construct it as a limit of regular approximations. The underlying dynamics are not described by a system of SDEs, which requires a new mathematical approach. We construct a symmetric Nash equilibrium in which the duopoly exit is a hitting time of the belief process while the monopoly exit is described through the underlying diffusion. Our equilibrium exhibits novel phenomena: the market may be abandoned by both firms in finite time (market collapse), and firms with heterogeneous exit values may optimally exit simultaneously (clustering). These features are absent when monopoly is always preferred to exit.",
+      "summary_zh": "【金融经济学】我们研究了一个具有非对称信息的双玩家非零和随机退出博弈。每家公司都选择退出双头垄断的时间，并在继续参与竞争的条件下，决定何时退出垄断市场。信息不对称性源于各公司能够私下观察到自己的退出价值，而利润流则受到一维扩散过程的影响。允许退出垄断市场会导致相关信念过程出现特殊动态，因此我们通过常规逼近方法来构建这一过程。该过程的本质特征无法用随机微分方程（SDEs）来描述，这需要采用新的数学方法。我们构建了一个对称的纳什均衡：在均衡状态下，双头垄断的退出时刻是信念过程的一个到达时刻，而垄断市场的退出则由潜在的扩散过程来决定。我们的均衡模型揭示了一些新颖现象：两家公司可能在有限时间内同时退出市场（市场崩溃）；或者具有不同退出价值的公司可能会选择同时退出（市场聚集）。当垄断市场始终是更优的退出选择时，这些现象不会出现。。研究方法：随机过程、均衡模型。",
       "topics": [
         "Economics",
         "Finance"
@@ -207,18 +130,17 @@
       "source": "arxiv"
     },
     {
-      "title": "Estimating multidimensional poverty under incomplete data in North Macedonia",
+      "title": "Optimal Regulation and Information Institutions with Hidden Network Equilibria",
       "authors": [
-        "Maja Gerovska Mitev",
-        "Viktor Stojkoski"
+        "Christian Jaag"
       ],
       "venue": "arXiv",
       "published_date": "2026-11-10",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.14146v1",
+      "openalex_url": "http://arxiv.org/abs/2611.13715v1",
       "cited_by_count": 0,
-      "abstract": "Multidimensional Poverty Indices (MPIs) are available for more than 100 countries, but rarely below the national or regional level. Local estimates require knowing how deprivations overlap within households, yet the sources that cover every locality, such as censuses and geospatial data, cannot be linked at the household level. We show how to measure local multidimensional poverty under such incomplete data, using North Macedonia as a case study. Combining settlement-level access to services with municipal census data, we pair an independence-based point estimate with sharp bounds over all joint distributions consistent with the data. We find that, nationally, 5.01 percent of households are multidimensionally poor, with bounds of 2.01 to 17.44 percent. Also, poverty is concentrated in small rural municipalities, which are poorer than nearly all municipalities of the capital city under any dependence structure. Validating our index against official statistics, the Global MPI, and a fieldwork deprivation index indicates that the socio-economic part of the index is consistent with external measures of deprivation, while the geographic part captures a distinct dimension of remoteness. Our approach thus presents a promising way to measure multidimensional poverty at the local level in countries where linked household data are unavailable.",
-      "summary_zh": "【收入分配与福利】多维贫困指数（MPIs）已为100多个国家提供，但通常仅在国家或地区层面进行应用。要获得更详细的本地贫困数据，需要了解家庭内部各种贫困状况的相互关联程度，然而涵盖所有地区的统计资料（如人口普查数据和地理空间数据）无法在家庭层面进行关联。本文以北马其顿为例，探讨了如何在数据不完整的情况下测量本地多维贫困。通过结合居民点层面的服务获取情况与市级人口普查数据，我们采用基于独立性的点估计方法，并为所有与数据相符的联合分布设定明确的界限。研究发现，全国范围内有5.01%的家庭处于多维贫困状态，这一比例的上下限分别为2.01%至17.44%。此外，贫困现象主要集中在小型农村市镇，这些市镇的贫困程度几乎超过了所有首都所在市镇。将我们的指数与官方统计数据（全球多维贫困指数）及实地调查得出的贫困指标进行比对后发现，该指数的社会经济部分与外部贫困衡量标准一致，而地理部分则有效反映了地区的偏远程度。因此，这种方法为那些缺乏家庭数据关联性的国家提供了一种可行的方式，用于在本地层面测量多维贫困状况。。",
+      "abstract": "Aggregate outcomes can conceal network configurations that expose households to uninsurable risk and require different public services. We study a regulator's joint choice of a corrective activity charge and an information institution in a two-population network game. Although aggregate behavior follows an exact stable law, distinct specialization equilibria require different targeted interventions. With purchased Gaussian monitoring, primitive conditions imply a discontinuous switch between strong regulation without purchased information and informed specialization. The regulator may alternatively obtain signed certification or elicit a privately known state through a report backed by committed random audits. We characterize the three institutions' optimized values and the cost thresholds at which credible disclosure replaces government monitoring. The institutional choice also changes optimal regulation: even when certification and truthful reporting reveal the same state, costly audits favor less specialization and a higher corrective charge. This ordering and monotonicity in audit costs hold under an explicit interiority condition without global concavity of the audit problem. The institutional comparison is solved in the benchmark without feedback from anticipated policy, while the policy switch and strict institutional rankings admit local persistence under additional regularity conditions. Results depend on enforceable verification, restrictions on data access, and an explicitly limited institutional menu.",
+      "summary_zh": "【金融经济学】总体结果可能会掩盖某些网络配置，这些配置使家庭面临无法通过保险覆盖的风险，并需要不同的公共服务。我们研究了一个监管机构在包含两个群体的网络博弈中，如何同时选择纠正性措施的费用和信息提供机制。尽管总体行为遵循一个精确的稳定法则，但不同的专业化均衡需要不同的针对性干预措施。在购买高斯监控服务的情况下，基本条件表明：在没有购买信息的情况下，会从严格的监管转向有针对性的专业化；而在购买了信息后，则会从有针对性的专业化转向更严格的监管。监管机构还可以通过要求提供有签名的认证文件，或者通过承诺进行随机审计来获取私人掌握的信息。我们分析了这三种机制的最优价值，以及可信信息披露能够替代政府监管的成本阈值。制度选择也会影响最优监管措施：即使认证和真实报告揭示的是相同的信息，高昂的审计成本也会导致更低的专业化程度和更高的纠正性费用。这种排序关系以及审计成本的单调性，在审计问题不存在全局凹性的情况下依然成立（即在不依赖内部性条件的情况下）。在没有预期政策反馈的基准模型中，我们可以解决这些制度间的比较问题；而在存在额外规则性条件的情况下，政策转变和严格的制度排名则可能导致局部持续性。研究结果还受到可执行...。",
       "topics": [
         "Economics",
         "Finance"
@@ -226,17 +148,75 @@
       "source": "arxiv"
     },
     {
-      "title": "Fine-Tuning an Order-Flow Foundation Model for Sub-Second Forecasting",
+      "title": "Herding with Multiple States: When the Prior Matters",
       "authors": [
-        "Fedor Shabashev"
+        "Xiaoyu Chen"
       ],
       "venue": "arXiv",
       "published_date": "2026-11-10",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.14117v1",
+      "openalex_url": "http://arxiv.org/abs/2611.13632v1",
       "cited_by_count": 0,
-      "abstract": "Generative models have become the standard approach in language and vision. These models are typically pretrained first and then fine-tuned. Recent work demonstrates how to pretrain an autoregressive generative model on Level-3 order-flow data. However, to our knowledge, no one has fine-tuned such a model yet for downstream tasks.   Here we first pretrain a 300M-parameter generative model on Level-3 order-flow data collected from two crypto exchanges, Bitstamp and Bitfinex. Then we fine-tune the pretrained model to predict the microprice return and its realized volatility. We show that our fine-tuned model outperforms classical baselines, such as gradient boosting on handcrafted features, in predicting microprice returns over sub-second horizons. Furthermore, the predictive ability of the model transfers zero-shot to assets it was never fine-tuned on. Due to the short-term nature of these forecasts, the predicted microprice moves are smaller than the bid-ask spread plus fees, so the natural applications are in execution and market making.   These results indicate that a pretrained generative model can be turned into a competitive short-horizon price forecaster via fine-tuning.",
-      "summary_zh": "【金融经济学】生成模型已成为语言和视觉领域的研究标准方法。这类模型通常先进行预训练，然后再进行微调。近期的一些研究展示了如何使用自回归生成模型对三级订单流数据（Level-3 order-flow data）进行预训练。然而，据我们所知，目前尚未有人将此类模型用于下游任务的微调。在本研究中，我们首先使用从Bitstamp和Bitfinex两家加密货币交易所收集的三级订单流数据，对一个包含3亿参数的生成模型进行预训练。随后，我们对该预训练模型进行微调，以预测微价格回报（microprice return）及其实际波动率（realized volatility）。实验结果表明，经过微调的模型在预测亚秒级时间范围内的微价格回报方面，优于传统的基线方法（例如基于手工特征构建的梯度提升模型）。此外，该模型的预测能力可以“零样本迁移”（zero-shot transfer）到从未进行过微调的其他资产上。由于这些预测的周期较短，预测出的微价格变动幅度通常小于买卖价差加上手续费，因此该模型在交易执行（execution）和市场做市（market making）领域具有实际应用价值。这些研究结果表明，通过微调，...。研究方法：梯度提升。",
+      "abstract": "In sequential observational learning with more than two states, the same information structure and preferences can yield learning for some full-support priors and herding for others. This disproves a conjecture of Kartik, Lee, Liu, and Rappoport (2024, working-paper version). In the counterexample, the cascade region has nonempty interior, yet learning occurs for generic full-support priors outside it. Focusing on information and preferences, we introduce two necessary conditions for learning. Escapability requires that signals can provide arbitrarily strong evidence that any given action is ex post suboptimal; pairwise escapability is its pairwise variant. If escapability fails, herding occurs for some initial prior; if pairwise escapability fails, it occurs for every full-support prior. For a class of environments with interval optimality and monotone likelihood ratios, escapability completely characterizes learning and herding independently of the full-support initial prior. With location-shift signals, this characterization reduces to pairwise distinguishability, a generalization of unbounded beliefs (Smith and Sørensen, 2000).",
+      "summary_zh": "【金融经济学】在具有两个以上状态的顺序观察学习中，相同的 정보 구조와 선호도가 일부 경우에는 학습을 유도하고, 다른 경우에는 군집 행동을 유발할 수 있다. 이는 Kartik, Lee, Liu, Rappoport (2024, 워킹페이퍼 버전)의 추측을 반박하는 결과이다. 반례에서는 캐스케이드 영역의 내부가 비어 있음에도 불구하고, 그 외부에 위치한 일반적인 전체 지지 초기 확률 분포에서도 학습이 발생한다. 정보와 선호도에 초점을 맞추어, 우리는 학습이 일어나기 위한 두 가지 필수 조건을 제시한다. “탈출 가능성(escapability)”이란 신호들이 특정 행동이 사후적으로 최적이 아님을 임의로 강력하게 증명할 수 있어야 함을 의미하며, “쌍별 탈출 가능성(pairwise escapability)”은 이러한 탈출 가능성의 쌍별 형태이다. 탈출 가능성이 만족되지 않으면 일부 초기 확률 분포에서 군집 행동이 발생하며, 쌍별 탈출 가능성도 만족되지 않으면 모든 전체 지지 초기 확률 분포에서 군집 행동이 ...。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Optimal Trading Speed on Blockchain",
+      "authors": [
+        "Ruizhe Jia",
+        "Shihao Yu"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-10",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.13616v1",
+      "cited_by_count": 0,
+      "abstract": "On blockchain-based exchanges, faster blocks weaken the priority-fee competition among arbitrageurs and shift rents from the block producer to them. Equilibrium liquidity peaks at an interior block speed; beyond a threshold, an active liquidity provider cream-skims and passive capital shrinks. Evidence from the Base Flashblocks upgrade, a tenfold block-speed increase, confirms the predictions. Priority-fee bids decrease sharply and arbitrageurs' net profit rises. The active liquidity provider rebalances faster, avoids toxic flow, and earns a higher profit. Pool depth falls and effective spreads widen despite closer tracking of external prices.",
+      "summary_zh": "【金融科技】在基于区块链的交易所中，更快的区块生成速度削弱了套利者之间的优先费竞争机制，使得租金从区块生产者手中转移到了套利者手中。当区块生成速度达到某一临界值时，市场流动性达到峰值；超过这一阈值后，活跃的流动性提供者会获取大部分收益，而被动资本则会减少。Base Flashblocks升级（区块生成速度提升了十倍）的相关数据证实了这些预测：优先费出价大幅下降，套利者的净利润上升。活跃的流动性提供者能够更快地调整策略，避免不良交易流动，并获得更高的利润。尽管对外部价格的跟踪更加紧密，但交易池的深度仍然下降，有效价差也随之扩大。。研究方法：均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Tabular Foundation Models in Financial Predictions",
+      "authors": [
+        "Ed deHaan",
+        "Allen H. Huang"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-10",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.13550v1",
+      "cited_by_count": 0,
+      "abstract": "This technical note introduces tabular foundation models (TFMs) to accounting research and evaluates their performance in one common benchmark task: predicting firms' next-year earnings changes. TFMs produce numeric predictions and learn in context, without post-release training or tuning, making them natural and easy to use for forecasting. The TFMs we study are pretrained on synthetic tabular data, so they avoid look-ahead bias from memorizing firms' outcomes. We compare Google Research's TabFM with a fine-tuned open-weight large language model developed in recent accounting research and with several tree-based models. TabFM is more accurate than all comparison models. It is also faster and less computationally intensive than the large language model. Several tree-based specifications produce predictions more quickly than TabFM, so choosing between them involves a trade-off between accuracy and speed. We conclude that TFMs have promise as a new tool for forecasting in accounting and finance. However, our evaluation is based on a single benchmark task, and no class of models is likely to dominate in all settings.",
+      "summary_zh": "【金融经济学】本技术报告将表格基础模型（Tabular Foundation Models, TFMs）引入会计研究，并评估了它们在一种常见基准任务中的表现：预测企业下一年的收益变化。表格基础模型能够生成数值预测结果，并在无需后续训练或调整的情况下进行学习，这使得它们在预测应用中具有天然的优势且易于使用。我们研究的表格基础模型是在合成表格数据上预训练的，因此能够避免因记忆企业过往业绩而产生的“前瞻性偏差”（look-ahead bias）。我们将Google Research开发的TabFM与近期会计研究中提出的经过微调的开权重大型语言模型（open-weight large language model）以及几种基于树的模型进行了比较。结果表明，TabFM的预测准确性优于所有对比模型；同时，其运行速度更快，计算资源消耗也更少。尽管某些基于树的模型在预测速度上优于TabFM，但在选择这些模型时需要在准确性与速度之间做出权衡。我们认为，表格基础模型作为会计和金融领域的新预测工具具有广阔的应用前景。然而，我们的评估仅基于单一基准任务，因此没有一种模型能够在所有场景中都占据主导地位。。研究方法：大语言模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Obvious Group Manipulations and Top Trading Cycles",
+      "authors": [
+        "Ryoga Doi",
+        "Kazumasa Ikeda",
+        "Kensei Nakamura"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-10",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.13469v1",
+      "cited_by_count": 0,
+      "abstract": "We introduce a group version of non-obvious manipulability, which is stronger than the original definition by Troyan and Morrill (2020) and weaker than group strategy-proofness, and study its implications in Shapley-Scarf housing markets. We provide several characterizations of the Top Trading Cycles mechanism using the new condition.",
+      "summary_zh": "【金融经济学】我们提出了一种群体层面的“非显而易见的可操作性”（non-obvious manipulability）概念，该概念比Troyan和Morrill（2020年）提出的原始定义更为严格，但比“群体策略安全性”（group strategy-proofness）的要求要宽松。我们研究了这种可操作性在Shapley-Scarf住房市场中的影响，并利用这一新定义对“顶级交易循环机制”（Top Trading Cycles mechanism）进行了多种分析。。",
       "topics": [
         "Economics",
         "Finance"
