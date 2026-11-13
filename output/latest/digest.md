@@ -1,130 +1,142 @@
-# 金融经济学每日文献速递（2026-11-12）
+# 金融经济学每日文献速递（2026-11-13）
 
-共筛选到 **11** 篇文献。
+共筛选到 **12** 篇文献。
 
 > 📢 **今日综述**
 >
-> 本期共收录 11 篇论文。研究方向主要集中在金融经济学（7 篇）、金融科技（2 篇）、行为金融（1 篇）。方法上以均衡模型、回归分析为主。来源分布：arXiv（9 篇）、OpenAlex（1 篇）、Semantic Scholar（1 篇）。
+> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（9 篇）、绿色金融与可持续发展（1 篇）、风险管理与衍生品（1 篇）。方法上以模型校准、神经网络为主。来源分布：OpenAlex（5 篇）、arXiv（5 篇）、Semantic Scholar（2 篇）。
 
-## 1. Prospective evaluation of automated KU F40 fecal analysis versus microscopy for intestinal protozoa and illustrative labor costs
+## 1. Adaptive structural fusion for dielectric constant prediction using physics-guided graph neural networks
 - 来源：openalex
-- 作者：Varol Tunalı, Nevın Turgay
+- 作者：Jyoti Shetty, Rajashree Krishna, Shobha R. Prabhu
 - 期刊/来源：Scientific Reports
-- 发表日期：2026-11-11
+- 发表日期：2026-11-12
 - 引用数：0
-- 主题：Medicine, Spectrum analyzer, Medical physics, Radiology, Nuclear medicine
-- 链接：[DOI](https://doi.org/10.1038/s41598-026-79234-2) [链接](https://openalex.org/W7169732355)
+- 主题：Dielectric, Mean squared error, Graph, Computer science, Artificial neural network
+- 链接：[DOI](https://doi.org/10.1038/s41598-026-78263-1) [链接](https://openalex.org/W7225772093)
 
-**中文摘要（自动生成）**：【行为金融】摘要
+**中文摘要（自动生成）**：【金融经济学】摘要  
+准确预测介电响应对于发现适用于电子、储能、射频、传感和光电子应用的材料至关重要。然而，现有的介电数据集主要由介电响应较低或中等的材料构成，而高介电材料则严重不足，这使得在整个介电性能范围内进行可靠预测变得十分困难。本研究提出了一种基于物理原理的改进方法，通过自适应结构融合（ASF）技术对晶体图卷积神经网络（CGCNN）进行扩展，以实现对总介电常数的预测。该方法利用五种具有物理意义的局部描述符（配位数、平均键长、键角变化、局部电负性差异以及原子极化率）来优化学习得到的原子表示。随后，评估了基于上下文的知识引导图聚合（KGGA）模块，探讨其是否依赖于底层节点表示的质量。在包含5,874种无机晶体材料的标准化基准数据集上，对比了四种不同架构：基础CGCNN、结合KGGA的CGCNN、结合ASF的CGCNN以及同时结合ASF和KGGA的改进模型。与基础CGCNN相比，改进模型将平均绝对误差（MAE）从11.139降低到8.828，均方根误差（RMSE）从53.315降低到42.275，决定系数（R²）从0.214提升到0.506，MAE和RMSE分别降低了约21%。进一步的对成...。研究方法：神经网络。
 
-粪便卵和寄生虫（O&P）显微镜检查仍被广泛使用，但该过程劳动强度较高，且受限于专业人员的可用性。基于人工智能的自动化粪便分析仪能够实现粪便显微镜检查工作的数字化，并生成可用于远程专家审核的图像；然而，在进行评估时，需要区分仅由算法生成的结果与结合了人工验证的临床可用流程。在土耳其伊兹密尔的一家三级护理寄生虫学实验室进行的一项前瞻性诊断研究中（2024年11月至2025年10月），共对1000份连续提交的成人粪便样本进行了常规显微镜检查和KU-F40自动化粪便分析仪的并行检测。所有样本均被纳入分析数据表中。KU-F40的分析模式包括两种：仅依赖算法的自动化诊断（AD，即算法生成结果后无需人工审核）以及结合专家审核的自动化诊断（AD+UV，即专家对KU-F40生成的图像进行审核）。本研究将AD+UV模式与劳动成本模型进行了区分，后者评估了30%验证率和100%验证率两种情况。与常规显微镜检查相比，KU-F40在以下病原体的检测中显示出较高的阳性/阴性一致率：溶组织内阿米巴（Entamoeba histolytica）/迪斯帕内阿米巴（Dispar）为100%/99.8%，贾第...。
+## 2. Design of an analysis application for predict demand forecasting in inventory system
+- 来源：openalex
+- 作者：Mangapul Siahaan, Hansen Jonatan, Herman
+- 期刊/来源：TEKNOSAINS Jurnal Sains Teknologi dan Informatika
+- 发表日期：2026-11-12
+- 引用数：0
+- 主题：Computer science, Demand forecasting, Deep learning, Product (mathematics), Stock (firearms)
+- 链接：[DOI](https://doi.org/10.37373/tekno.v14i1.2531) [链接](https://openalex.org/W7225774670)
 
-## 2. Deceleration without identification: testing a power-law trend in Bitcoin prices under persistent noise
+**中文摘要（自动生成）**：【金融经济学】贸易公司在管理库存系统方面常常面临挑战，难以使库存水平与消费者日益增长的需求相匹配。本文试图构建一个能够预测客户可能需求的系统，并评估不同深度学习方法的性能。作者采用了实验方法和应用方法来测试各种深度学习算法的效果。所测试的算法包括CNN-LSTM、LSTM、GRU、BiLSTM和Transformer。作者使用了Kaggle上的数据，这些数据涵盖了2022年至2024年的76,000条销售记录，涉及服装、家具、电子产品、玩具和食品杂货等不同产品类别。数据经过清洗后被分为训练集和测试集。通过测试多种深度学习算法，作者得出了相应的结果。表现最佳的算法是CNN-LSTM，其平均绝对误差（MAE）为28.2136，均方根误差（RMSE）为36.6037，R²值为0.3106。尽管R²值表明该模型的预测能力尚不强，但它仍是本研究中最优的算法。将系统的性能与标准操作水平进行比较后发现，该系统能够适应需求的变化，这有助于贸易公司更好地管理库存，并加深对深度学习模型工作原理的理解。。研究方法：深度学习、Transformer 模型、实验方法。
+
+## 3. Price-impact Martingale optimal transport
 - 来源：arxiv
-- 作者：Carlos Baquero, Raquel Menezes
+- 作者：Erhan Bayraktar, Shuoqing Deng, Daxin Huang, Dominykas Norgilas
 - 期刊/来源：arXiv
-- 发表日期：2026-11-10
+- 发表日期：2026-11-12
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.13962v1)
+- 链接：[链接](http://arxiv.org/abs/2611.17247v1)
 
-**中文摘要（自动生成）**：【金融经济学】将比特币价格随时间的变化情况在对数坐标轴上绘制出来后，其走势接近一条直线；因此有研究提出比特币价格在长期内遵循幂律分布。然而，这种拟合结果并不十分可靠：当价格偏离趋势的情况与随机游走现象一样持续时，基于时间的回归分析往往会“发现”趋势，并得出较高的$R^2$值（即拟合优度），但实际上这些趋势并不存在。首先，我们分析了十五年来的每周价格数据所能揭示的信息；随后，我们仅验证那些能够通过合理解释的结论。通过使用一些对噪声尺度具有不变性的低频平均值，并根据一组具有四年周期和逐渐下降波动性的持续价格偏差数据进行校准，我们对比了“预期对数价格存在恒定漂移”与“对数价格随时间增长”这两种模型。该分析方法在应用前已经经过固定、验证并公开发布。在该数据集下，恒定漂移假设在5%的显著性水平上被拒绝；而一个对数年龄系数为5.7的模型（接近已公布的幂律指数）并未被拒绝。不过，如果允许价格偏离趋势的情况超过随机游走的范畴，这种拟合结果就不成立；此时，Gompertz曲线（具有上限约束）的拟合效果与幂律模型相当。目前尚无法确定价格偏差是否会最终回归到长期趋势。关于2027至2030年的预测结果，将需要通过未...。研究方法：回归分析、模型校准。
+**中文摘要（自动生成）**：【金融经济学】鞅最优运输（Martingale Optimal Transport, MOT）为期权价格提供了与模型无关的界限，这些界限是基于标准期权（vanilla options）校准的，并假设标的资产交易过程中不存在摩擦。在本研究中，我们考虑了动态交易会导致二次性临时价格影响的情况。首先，我们证明了超额对冲价格（superhedging price）的对偶性结果；具体而言，对偶问题的原始形式通过惩罚偏离特定鞅的行为，放宽了严格的鞅约束。其次，对于单一资产和单一交易周期，我们将这种受价格影响约束的鞅最优运输问题（Price-Impact Martingale Optimal Transport, PIMOT）视为一个弱最优运输（Weak Optimal Transport, WOT）问题，并从Wasserstein投影的角度对其特性进行了分析。最后，我们证明了PIMOT实际上是MOT与经典最优运输（Optimal Transport, OT）之间的一个插值形式，并推导出了两者之间的收敛速率。利用SPX期权数据的数值示例，我们展示了每笔索赔的价格界限如何依赖于交易订单的大小。。研究方法：模型校准。
 
-## 3. Backtesting High-Dimensional Expected Shortfall
+## 4. Improving Algorithmic Trading for BESS on Intraday Electricity Markets through Distributional Price Forecasts
 - 来源：arxiv
-- 作者：Zaichao Du, Juan Carlos Escanciano, Pei Pei
+- 作者：Simon Hirsch, David Schaurecker, David Wozabal
 - 期刊/来源：arXiv
-- 发表日期：2026-11-10
+- 发表日期：2026-11-12
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.13882v1)
+- 链接：[链接](http://arxiv.org/abs/2611.17170v1)
 
-**中文摘要（自动生成）**：【金融经济学】预测评估越来越多地使用高维预测变量，但大型预测模型的估计和正则化过程可能会扭曲传统的回测结果。这一问题在预测下行风险时尤为突出，因为这种情况下的信噪比较低。我们提出了一种基于样本外数据的预期亏损（Expected Shortfall, ES）回测方法，该方法能够消除在估计高维风险价值（Value-at-Risk, VaR）及评估指标时产生的较大的一阶偏差效应。在线性ES模型框架下，所提出的方法可以通过使用调整尾部大小的得分作为生成因变量来轻松实现（即通过双Lasso算法）。更一般地，我们研究了正交化ES回测的统计特性，并在存在时间序列依赖性以及训练窗口重叠或扩展的情况下，证明了模型的“神谕等价性”（oracle equivalence）和有效推断性。模拟结果表明，传统回测方法可能会严重误判最优预测结果，而正交化技术能够有效改善统计量的显著性控制。通过对G7经济体的下行增长预测进行应用，我们发现即使在不添加额外金融预测变量的情况下，基于美国经济增长的ES模型也无法准确解释实际数据；同时，正交化处理还可能改变模型的拒绝决策方向。这些发现强调了预测变量选择与回测方法在评估高维尾部风险模...。研究方法：数值模拟、LASSO 正则化。
+**中文摘要（自动生成）**：【金融经济学】网格级电池储能系统（BESS）在短期能源市场中发挥着越来越重要的作用，它们有助于平衡可变可再生能源发电的波动。在许多国家，连续的日内市场是BESS实现其灵活性价值的最重要批发市场。在本文中，我们提出了一种对传统“短视滚动内在政策”（myopic rolling intrinsic policy）的改进方法，该方法结合了专门针对BESS交易问题定制的日内价格预测。尽管已有大量文献研究日内价格预测，但现有研究大多关注交易最后几个小时的成交量加权价格，因此未能捕捉到与BESS交易最相关的特征。我们的方法通过引入一个源自限价单簿及其动态的新目标变量来弥补这一不足。所生成的预测结果旨在为优化决策提供有关未来盈利机会的信息，同时保持计算效率并避免进行完全随机优化的负担。在涵盖2023年和2024年的真实高频模拟环境中，我们的方法将利润提高了多达42%，相较于传统的滚动内在政策模型有了显著提升。我们进一步分析了预测准确性、稳定性与财务表现之间的关系，发现准确性与稳定性之间存在明确的反比关系。最后，我们发现BESS的规模和持续时间共同影响着整体盈利能力以及引入预测所带来的边际效益。。研究方法：数值模拟、随机过程、优化方法。
 
-## 4. How Does Digital Industry Agglomeration Drive High-Quality Urban Development? An Analysis from Both Geographic and Virtual Perspectives
+## 5. CONCEPTUAL IMPROVEMENTS TO INVESTMENT POLICY IN THE GREEN AGRO-INDUSTRIAL SECTOR OF ARMENIA
 - 来源：semantic_scholar
-- 作者：Xin Du, Yuan-Yuan Gou, Hong Qiu
-- 期刊/来源：Journal of Economics and Public Finance
-- 发表日期：2026-11-09
-- 引用数：0
-- 主题：Economics, Geography, Computer Science
-- 链接：[DOI](https://doi.org/10.22158/jepf.v12n4p1) [链接](https://api.semanticscholar.org/CorpusID:295747122)
-
-**中文摘要（自动生成）**：【金融科技】在数字经济时代，数字产业的空间组织模式正从地理集聚向虚实融合转变，成为推动高质量城市发展的关键因素。本文利用2013至2023年中国30个省会城市的面板数据，从地理集聚和虚拟集聚两个维度探讨了数字产业集聚对高质量城市发展的影响。研究结果表明：（1）数字产业的地理集聚和虚拟集聚均显著促进了高质量城市发展，其中地理集聚呈现出“倒U”关系，即初期具有促进作用，后期则产生抑制效应；（2）这两种集聚方式的影响存在显著的区域差异和集聚水平差异，东部地区的促进效应最为显著。集聚水平较低的城市主要依靠规模扩张和数字能力来释放发展潜力，而集聚水平较高的城市则更注重深化创新和优化空间结构；（3）这两种集聚方式均具有显著的正空间溢出效应，能够带动周边城市的高质量发展，但当地理集聚达到一定阈值后，其溢出效应会减弱。本文的结论为优化数字产业的空间布局和促进区域协调发展提供了政策启示。。研究方法：面板数据。
-
-## 5. Economic Benefits of Cross-Border Electricity Trade and Domestic Electricity Production in Switzerland
-- 来源：arxiv
-- 作者：Benjamin Lietti, Ambra Van Liedekerke, Marino Bucher, Michael Beer, Nicolas Eschenbaum
-- 期刊/来源：arXiv
+- 作者：M. Melkumyan, Hayk Melkumyan
+- 期刊/来源：Economics, Finance and Accounting
 - 发表日期：2026-11-10
 - 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.13866v1)
+- 主题：Agricultural and Food Sciences, Environmental Science, Economics
+- 链接：[DOI](https://doi.org/10.59503/29538009-2026.3.19-174) [链接](https://api.semanticscholar.org/CorpusID:295793378)
 
-**中文摘要（自动生成）**：【国际贸易】本文在能源价格上涨和地缘政治不确定性加剧的背景下，评估了跨境电力贸易的经济效益。瑞士因其地理位置以及与欧盟电力市场的有限融合程度，成为一个尤为具有代表性的案例。我们首先利用Nexus-e框架模拟了在自给自足和自由贸易两种情景下所需的发电能力和输电网扩建情况。基于这些容量配置，一个基础性的电力市场模型模拟了2040年在预期需求和发电条件下的批发市场结果。通过综合考虑消费者和生产者的剩余收益，以及发电能力和电网基础设施的投资，我们对跨境电力贸易的福利效应进行了全面评估，估计其带来的收益为15亿欧元。更具体地说，开放跨境电力贸易意味着从主要由公有制企业主导的生产者向消费者转移了18亿欧元的利益。最后，我们提供了一个说明性的、非因果关系的宏观经济效应分析框架。在价格趋同的假设下，由此引发的需求调整相当于约70亿欧元的GDP增长效应。。
+**中文摘要（自动生成）**：【绿色金融与可持续发展】制定绿色投资的理念是确保可持续发展的优先事项。这一问题在绿色农业工业领域仍需得到解决，该领域涵盖了“农业－食品加工－分销”的价值链。目前，至关重要的是要明确如何在该价值链的每个阶段以及整个绿色农业工业体系中制定和实施有效的投资政策。本研究分析了绿色农业工业领域投资政策中存在的当前挑战，并以亚美尼亚共和国为案例，提出了评估绿色投资有效性的机制。。
 
-## 6. Nonzero-Sum Stochastic Exit Games with Singular Belief Dynamics
+## 6. Influence of Social Comparison Bias, Peer Pressure and Financial Anxiety on Excessive Investment Risk-Taking Among Individual Investors in Bengaluru
+- 来源：semantic_scholar
+- 作者：Bharath Kumar R, Somya Agarwal
+- 期刊/来源：Trends in Finance and Economics
+- 发表日期：2026-11-06
+- 引用数：0
+- 主题：Economics, Business
+- 链接：[DOI](https://doi.org/10.46632/tfe/4/4/7) [链接](https://api.semanticscholar.org/CorpusID:295799819)
+
+**中文摘要（自动生成）**：【风险管理与衍生品】大多数进行投资的人希望自己的决策是基于充分的研究和明确的策略做出的。然而在现实中，许多投资行为都是通过手机、群聊、短视频以及交易应用程序完成的，在这些环境中，他人的投资收益只需轻轻一滑屏幕就能看到。本研究探讨了这种环境是否会导致个人投资者承担超出其承受能力的风险。我们利用班加罗尔地区投资者的调查数据（共351条有效样本，目标样本量为385条），分析了社会比较偏见、同伴压力和财务焦虑是否与过度投资风险行为有关，以及“害怕错过机会”（FOMO）在这一过程中是否起到了一定作用，同时考察了金融知识是否能够缓解这种影响。研究采用SmartPLS 4软件中的PLS-SEM方法进行模型估计。结果显示：同伴压力（β = 0.199，p = 0.005）、财务焦虑（β = 0.227，p = 0.024）和FOMO（β = 0.346，p < 0.001）都会增加投资者的风险承担意愿，而社会比较偏见则没有这种效应（β = 0.029，p = 0.591）。FOMO在一定程度上放大了同伴压力（间接效应β = 0.094，p = 0.003）和财务焦虑（间接效应β = 0.193，p = 0.002）...。
+
+## 7. Deep phenotyping in medical genetics and genomics: a comprehensive overview
+- 来源：openalex
+- 作者：Guozhuang Li, Jihao Cai, Zefu Chen, Kexin Xu, Qing Li
+- 期刊/来源：Orphanet Journal of Rare Diseases
+- 发表日期：2026-11-12
+- 引用数：0
+- 主题：Precision medicine, Data science, Medical genetics, Personalized medicine, Genomics
+- 链接：[DOI](https://doi.org/10.1186/s13023-026-04608-8) [链接](https://openalex.org/W7225780495)
+
+**中文摘要（自动生成）**：【金融经济学】摘要  
+深度表型分析（即对宏观和微观表型进行系统、定量的评估）是精准医学的核心。尽管基因组学取得了快速进展，但表型数据的不完整性仍限制了医学研究和临床理解。本文回顾了深度表型分析的发展历程，重点介绍了标准化术语（如HPO）、先进技术（如可穿戴传感器、成像技术、PheWAS、人工智能辅助方法）、研究流程框架以及大规模数据库的应用。通过整合这些资源，深度表型分析有助于揭示疾病的异质性、优化基因型与表型之间的关联，并发现新的生物标志物，从而通过表型驱动的方法提升诊断准确性。此外，深度表型分析为精准医学提供了重要支持，实现了疾病的精准分层、个性化临床护理以及基于生物标志物的临床试验。它还促进了疾病预防、改善预后预测，并为从妊娠到衰老的生命阶段策略提供了依据。异种移植等新兴领域也展示了深度表型分析在实现精准医学方面的潜力。本文还探讨了在多种环境下实施深度表型分析的全球趋势，强调了其适应性和临床价值。最后，我们提出了一种灵活的三模块策略，涵盖研究范围、数据采集和分析方法，以指导未来的深度表型分析研究。该综述强调了深度表型分析在提升诊断水平、指导靶向治疗和优化患者预后方面的变革潜力，预示着医...。
+
+## 8. Large-Area Marine Surface Current Measurement Using Unmanned Aerial Vehicle-Based Optical Flow Mosaicking Without Ground Control Points
+- 来源：openalex
+- 作者：Yizhang Yan, Min Bao, Zhuohong Jiang, Zhenyi Cao, Yang Ding
+- 期刊/来源：Journal of Ocean University of China
+- 发表日期：2026-11-12
+- 引用数：0
+- 主题：Remote sensing, Thresholding, Velocimetry, Computer science, Particle image velocimetry
+- 链接：[DOI](https://doi.org/10.1007/s11802-026-6597-9) [链接](https://openalex.org/W7225783211)
+
+**中文摘要（自动生成）**：【金融经济学】摘要  
+近岸海洋流具有复杂的结构特征和空间异质性。传统的测量方法要么效率低下，要么空间分辨率较低；而图像测速技术（一种低成本、高分辨率的方法）在海洋应用中受到限制，主要是因为在大范围覆盖和高分辨率之间的权衡，以及缺乏用于校准的地面控制点。为了解决这些问题，本研究提出了一种流场拼接方法。通过保持相机以恒定速度运动，利用帧间时间间隔和图像分辨率将连续图像帧之间的距离差异转换为行偏移量，从而通过拼接技术扩展测速观测范围。此外，还开发了一种结合太阳反射光识别和裁剪的自适应阈值处理方法。实验结果表明，图像观测范围从60米扩大到了350米，实现了大范围的光流测速；同时，太阳反射光去除技术有效减少了干扰，且不会导致图像质量下降或产生虚假信号。该方法突破了图像测速技术在大型海洋环境中的关键限制。。研究方法：模型校准。
+
+## 9. Cobertura efectiva de la titulación acreditada en la educación superior privada costarricense (2021-2025)
+- 来源：openalex
+- 作者：William Solís Brenes
+- 期刊/来源：Revista Latinoamericana de Calidad Educativa.
+- 发表日期：2026-11-12
+- 引用数：0
+- 主题：Humanities, Political science, Business, Welfare economics, Private sector
+- 链接：[DOI](https://doi.org/10.70625/rlce/1063) [链接](https://openalex.org/W7225783555)
+
+**中文摘要（自动生成）**：【银行与信贷】在哥斯达黎加，私立大学专业的审批过程仅对课程设置进行审核，而不要求或评估任何质量管理体系。因此，国家认证体系的自愿认证成为唯一能够反映这些私立专业质量的外部、官方评估机制。本文通过对比2021-2025年的全国文凭数据库与官方的专业、学位及办学地点认证名单，评估了这一认证机制的实际覆盖范围（即毕业年份内获得认证专业文凭的比例）。结果显示：22.2%至24.8%的私立大学文凭来自经过认证的专业，而公立大学这一比例为47.4%至50.5%；在教育领域，私立大学的认证覆盖率为5.5%至6.7%，而私立研究生教育则完全没有认证机制。进一步分析发现，这种行业间的差距主要源于同一专业和学位类别内部的质量差异。研究结论指出，大多数私立教育机构的教学质量缺乏公开可查的证明；尤其在医学领域，尽管专业认证几乎全覆盖，但入学考试通过率却存在显著差异，这引发了人们对认证体系所保障的质量的质疑。。
+
+## 10. Learning Dynamics of the Influencer's Game in Resource Landscapes
 - 来源：arxiv
-- 作者：Yukun Cao, Jan Palczewski
+- 作者：Mark Lovett Feng Fu
 - 期刊/来源：arXiv
-- 发表日期：2026-11-10
+- 发表日期：2026-11-12
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.13841v1)
+- 链接：[链接](http://arxiv.org/abs/2611.17148v1)
 
-**中文摘要（自动生成）**：【金融经济学】我们研究了一个具有非对称信息的双玩家非零和随机退出博弈。每家公司都选择退出双头垄断的时间，并在继续参与竞争的条件下，决定何时退出垄断市场。信息不对称性源于各公司能够私下观察到自己的退出价值，而利润流则受到一维扩散过程的影响。允许退出垄断市场会导致相关信念过程出现特殊动态，因此我们通过常规逼近方法来构建这一过程。该过程的本质特征无法用随机微分方程（SDEs）来描述，这需要采用新的数学方法。我们构建了一个对称的纳什均衡：在均衡状态下，双头垄断的退出时刻是信念过程的一个到达时刻，而垄断市场的退出则由潜在的扩散过程来决定。我们的均衡模型揭示了一些新颖现象：两家公司可能在有限时间内同时退出市场（市场崩溃）；或者具有不同退出价值的公司可能会选择同时退出（市场聚集）。当垄断市场始终是更优的退出选择时，这些现象不会出现。。研究方法：随机过程、均衡模型。
+**中文摘要（自动生成）**：【金融经济学】在生态学、经济学以及在线平台等多个领域中，个体总是被激励去占据资源丰富的战略位置。在这项研究中，我们提出了一个名为“影响者游戏”（Influencer’s Game）的新空间博弈框架。在该框架下，玩家的策略被表示为特征空间（trait space）中的某个位置。玩家根据其在该资源相关特征上的影响力大小，获得相应份额的资源。我们证明了，在影响核函数（influence kernel）具有严格的对数凹性（log-concavity）条件下，该博弈存在一个唯一的对称纳什均衡（symmetric Nash equilibrium）。通过这个唯一均衡，我们发现系统的稳定性取决于影响核函数的参数、玩家数量以及资源分配的形态。对于任意维度情况，我们都找到了一个稳定性阈值，该阈值同时受到玩家分布的离散程度和分布曲率的影响。当超过这一阈值时，对称均衡会变得不稳定，并引发多种分岔现象，包括形成专业化的玩家群体、极限环（limit cycles），以及能够再现整个博弈结构的子博弈（sub-games）。我们利用现实世界中的资源数据来验证这一博弈模型的应用可行性。最后，我们将该博弈模型扩展到多智能体强化...。研究方法：均衡模型。
 
-## 7. Optimal Regulation and Information Institutions with Hidden Network Equilibria
+## 11. Contractual Structure and Obvious Manipulation in Many-to-Many Matching
 - 来源：arxiv
-- 作者：Christian Jaag
+- 作者：R. Pablo Arribillaga, Beatriz Millan, Eliana Pepa Risma
 - 期刊/来源：arXiv
-- 发表日期：2026-11-10
+- 发表日期：2026-11-12
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.13715v1)
+- 链接：[链接](http://arxiv.org/abs/2611.17029v1)
 
-**中文摘要（自动生成）**：【金融经济学】总体结果可能会掩盖某些网络配置，这些配置使家庭面临无法通过保险覆盖的风险，并需要不同的公共服务。我们研究了一个监管机构在包含两个群体的网络博弈中，如何同时选择纠正性措施的费用和信息提供机制。尽管总体行为遵循一个精确的稳定法则，但不同的专业化均衡需要不同的针对性干预措施。在购买高斯监控服务的情况下，基本条件表明：在没有购买信息的情况下，会从严格的监管转向有针对性的专业化；而在购买了信息后，则会从有针对性的专业化转向更严格的监管。监管机构还可以通过要求提供有签名的认证文件，或者通过承诺进行随机审计来获取私人掌握的信息。我们分析了这三种机制的最优价值，以及可信信息披露能够替代政府监管的成本阈值。制度选择也会影响最优监管措施：即使认证和真实报告揭示的是相同的信息，高昂的审计成本也会导致更低的专业化程度和更高的纠正性费用。这种排序关系以及审计成本的单调性，在审计问题不存在全局凹性的情况下依然成立（即在不依赖内部性条件的情况下）。在没有预期政策反馈的基准模型中，我们可以解决这些制度间的比较问题；而在存在额外规则性条件的情况下，政策转变和严格的制度排名则可能导致局部持续性。研究结果还受到可执行...。
+**中文摘要（自动生成）**：【金融经济学】我们研究了合同结构如何影响在具有可替代偏好的多对多匹配场景中的最坏情况和最佳情况下的明显操纵行为。在完全可替代偏好范围以及单一偏好范围内，高效的、基于个体理性设计的机制均能够排除最佳情况下的明显操纵行为。在关于医院选择的一些简单且符合经济规律的假设条件下，所有在完全可替代偏好范围内成立的稳定机制都会导致两种情况下的明显操纵行为；即使医生具有单一偏好，医院提出延迟接受机制也同样可能引发这两种类型的操纵行为。另一个充分条件表明，在最坏情况下，高效的、具有稳定支配性的机制也容易被操纵。在单一偏好范围内，医生提出延迟接受机制则不会被明显操纵。如果每对医生-医院组合最多只有一份可行的合同，那么这一积极结论同样适用于所有具有稳定支配性的机制。。
 
-## 8. Herding with Multiple States: When the Prior Matters
+## 12. Media Trading with Censored Auction Prices: A Stochastic Control and Reinforcement Learning Approach
 - 来源：arxiv
-- 作者：Xiaoyu Chen
+- 作者：Yun-Ithry Gamrani, Huyên Pham
 - 期刊/来源：arXiv
-- 发表日期：2026-11-10
+- 发表日期：2026-11-12
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.13632v1)
+- 链接：[链接](http://arxiv.org/abs/2611.16992v1)
 
-**中文摘要（自动生成）**：【金融经济学】在具有两个以上状态的顺序观察学习中，相同的 정보 구조와 선호도가 일부 경우에는 학습을 유도하고, 다른 경우에는 군집 행동을 유발할 수 있다. 이는 Kartik, Lee, Liu, Rappoport (2024, 워킹페이퍼 버전)의 추측을 반박하는 결과이다. 반례에서는 캐스케이드 영역의 내부가 비어 있음에도 불구하고, 그 외부에 위치한 일반적인 전체 지지 초기 확률 분포에서도 학습이 발생한다. 정보와 선호도에 초점을 맞추어, 우리는 학습이 일어나기 위한 두 가지 필수 조건을 제시한다. “탈출 가능성(escapability)”이란 신호들이 특정 행동이 사후적으로 최적이 아님을 임의로 강력하게 증명할 수 있어야 함을 의미하며, “쌍별 탈출 가능성(pairwise escapability)”은 이러한 탈출 가능성의 쌍별 형태이다. 탈출 가능성이 만족되지 않으면 일부 초기 확률 분포에서 군집 행동이 발생하며, 쌍별 탈출 가능성도 만족되지 않으면 모든 전체 지지 초기 확률 분포에서 군집 행동이 ...。
-
-## 9. Optimal Trading Speed on Blockchain
-- 来源：arxiv
-- 作者：Ruizhe Jia, Shihao Yu
-- 期刊/来源：arXiv
-- 发表日期：2026-11-10
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.13616v1)
-
-**中文摘要（自动生成）**：【金融科技】在基于区块链的交易所中，更快的区块生成速度削弱了套利者之间的优先费竞争机制，使得租金从区块生产者手中转移到了套利者手中。当区块生成速度达到某一临界值时，市场流动性达到峰值；超过这一阈值后，活跃的流动性提供者会获取大部分收益，而被动资本则会减少。Base Flashblocks升级（区块生成速度提升了十倍）的相关数据证实了这些预测：优先费出价大幅下降，套利者的净利润上升。活跃的流动性提供者能够更快地调整策略，避免不良交易流动，并获得更高的利润。尽管对外部价格的跟踪更加紧密，但交易池的深度仍然下降，有效价差也随之扩大。。研究方法：均衡模型。
-
-## 10. Tabular Foundation Models in Financial Predictions
-- 来源：arxiv
-- 作者：Ed deHaan, Allen H. Huang
-- 期刊/来源：arXiv
-- 发表日期：2026-11-10
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.13550v1)
-
-**中文摘要（自动生成）**：【金融经济学】本技术报告将表格基础模型（Tabular Foundation Models, TFMs）引入会计研究，并评估了它们在一种常见基准任务中的表现：预测企业下一年的收益变化。表格基础模型能够生成数值预测结果，并在无需后续训练或调整的情况下进行学习，这使得它们在预测应用中具有天然的优势且易于使用。我们研究的表格基础模型是在合成表格数据上预训练的，因此能够避免因记忆企业过往业绩而产生的“前瞻性偏差”（look-ahead bias）。我们将Google Research开发的TabFM与近期会计研究中提出的经过微调的开权重大型语言模型（open-weight large language model）以及几种基于树的模型进行了比较。结果表明，TabFM的预测准确性优于所有对比模型；同时，其运行速度更快，计算资源消耗也更少。尽管某些基于树的模型在预测速度上优于TabFM，但在选择这些模型时需要在准确性与速度之间做出权衡。我们认为，表格基础模型作为会计和金融领域的新预测工具具有广阔的应用前景。然而，我们的评估仅基于单一基准任务，因此没有一种模型能够在所有场景中都占据主导地位。。研究方法：大语言模型。
-
-## 11. Obvious Group Manipulations and Top Trading Cycles
-- 来源：arxiv
-- 作者：Ryoga Doi, Kazumasa Ikeda, Kensei Nakamura
-- 期刊/来源：arXiv
-- 发表日期：2026-11-10
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.13469v1)
-
-**中文摘要（自动生成）**：【金融经济学】我们提出了一种群体层面的“非显而易见的可操作性”（non-obvious manipulability）概念，该概念比Troyan和Morrill（2020年）提出的原始定义更为严格，但比“群体策略安全性”（group strategy-proofness）的要求要宽松。我们研究了这种可操作性在Shapley-Scarf住房市场中的影响，并利用这一新定义对“顶级交易循环机制”（Top Trading Cycles mechanism）进行了多种分析。。
+**中文摘要（自动生成）**：【金融经济学】在实时竞价环境中，营销机构必须平衡广告活动的效果、交易利润以及有限的广告预算使用情况。一个关键难点在于：市场清算价格通常只有在出价成功时才能被观察到，因此后续决策所需的信息取决于所采用的竞价策略。我们利用带有潜在价格过程的连续时间随机控制模型来描述这一问题。为了构建价格信号，我们设计了多个并行进行的探索性子广告活动，在这些活动中出价是随机生成的，并受到上限的限制。在一种简化的横截面抽样模型下，所获得的价格估计量具有稳定性，并且其均方误差满足 $N^{-1}$ 的阶数限制（其中 $N$ 代表探索性观测的次数）。随后，我们提出了一种基于模型的方法，该方法结合了前向方程校准、Hamilton-Jacobi-Bellman 策略迭代以及物理信息驱动的神经网络；同时，我们还提出了一种基于无模型环境中可观测信息的熵正则化演员-评论家（actor-critic）算法。通过合成实验验证了这些估计方法和计算流程的有效性。该框架明确了营销机构在决策过程中所面临的权衡，同时区分了基于完整信息的基准策略、基于估计价格的策略，以及那些仅能部分观察到市场信息的控制策略。。研究方法：横截面分析、模型校准、神经网络、随机实验、实验方法、随机过程。

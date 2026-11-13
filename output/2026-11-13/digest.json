@@ -1,0 +1,264 @@
+{
+  "date": "2026-11-13",
+  "count": 12,
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "latest_updated": true,
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（9 篇）、绿色金融与可持续发展（1 篇）、风险管理与衍生品（1 篇）。方法上以模型校准、神经网络为主。来源分布：OpenAlex（5 篇）、arXiv（5 篇）、Semantic Scholar（2 篇）。",
+  "insights": {},
+  "papers": [
+    {
+      "title": "Adaptive structural fusion for dielectric constant prediction using physics-guided graph neural networks",
+      "authors": [
+        "Jyoti Shetty",
+        "Rajashree Krishna",
+        "Shobha R. Prabhu"
+      ],
+      "venue": "Scientific Reports",
+      "published_date": "2026-11-12",
+      "doi_url": "https://doi.org/10.1038/s41598-026-78263-1",
+      "openalex_url": "https://openalex.org/W7225772093",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  Accurate prediction of dielectric response is essential for improving the discovery of materials for electronic, energy-storage, radio-frequency, sensing, and optoelectronic applications. However, dielectric datasets are typically dominated by materials with low to moderate dielectric response, while high-dielectric materials are severely under-represented, making reliable prediction across the full property range challenging. This work proposes a physics-guided extension of the Crystal Graph Convolutional Neural Network (CGCNN) for total dielectric constant prediction through Adaptive Structural Fusion (ASF). This refines learned atomic representations using five physically motivated local descriptors: coordination number, mean bond length, bond-angle variation, local electronegativity difference, and atomic polarizability. A context-dependent Knowledge-Guided Graph Aggregation (KGGA) module is subsequently evaluated both independently and in combination with ASF to investigate whether adaptive graph aggregation depends on the quality of the underlying node representations. Four controlled architectures -the baseline CGCNN, CGCNN with KGGA, CGCNN with ASF, and the proposed model CGCNN with both ASF and KGGA- were evaluated on an identical frozen split of a curated benchmark containing 5,874 inorganic crystalline materials. Relative to the baseline CGCNN, the proposed framework – CGCNN with both ASF and KGGA- reduced the mean absolute error (MAE) from 11.139 to 8.828, decreased the root mean square error (RMSE) from 53.315 to 42.275, and increased the coefficient of determination (R²) from 0.214 to 0.506, corresponding to approximately 21% reductions in MAE and RMSE. Paired material-level statistical analysis further demonstrated a mean absolute-error reduction of 2.311 (95% bootstrap confidence interval: 0.960–3.736) and lower prediction error for 68.4% of the 588 held-out test materials. Regime-wise evaluation showed that the proposed model achieved the lowest MAE in five of six predefined dielectric regimes, a descriptive observation that should be interpreted cautiously given the sparse high-dielectric test samples. Representative material analysis further illustrated substantial error reductions for selected chemically and structurally diverse inorganic compounds. These results indicate that physics-guided representation refinement and adaptive graph aggregation are complementary strategies for improving dielectric property prediction while highlighting the importance of regime-aware evaluation for long-tailed materials datasets.",
+      "summary_zh": "【金融经济学】摘要  \n准确预测介电响应对于发现适用于电子、储能、射频、传感和光电子应用的材料至关重要。然而，现有的介电数据集主要由介电响应较低或中等的材料构成，而高介电材料则严重不足，这使得在整个介电性能范围内进行可靠预测变得十分困难。本研究提出了一种基于物理原理的改进方法，通过自适应结构融合（ASF）技术对晶体图卷积神经网络（CGCNN）进行扩展，以实现对总介电常数的预测。该方法利用五种具有物理意义的局部描述符（配位数、平均键长、键角变化、局部电负性差异以及原子极化率）来优化学习得到的原子表示。随后，评估了基于上下文的知识引导图聚合（KGGA）模块，探讨其是否依赖于底层节点表示的质量。在包含5,874种无机晶体材料的标准化基准数据集上，对比了四种不同架构：基础CGCNN、结合KGGA的CGCNN、结合ASF的CGCNN以及同时结合ASF和KGGA的改进模型。与基础CGCNN相比，改进模型将平均绝对误差（MAE）从11.139降低到8.828，均方根误差（RMSE）从53.315降低到42.275，决定系数（R²）从0.214提升到0.506，MAE和RMSE分别降低了约21%。进一步的对成...。研究方法：神经网络。",
+      "topics": [
+        "Dielectric",
+        "Mean squared error",
+        "Graph",
+        "Computer science",
+        "Artificial neural network"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Design of an analysis application for predict demand forecasting in inventory system",
+      "authors": [
+        "Mangapul Siahaan",
+        "Hansen Jonatan",
+        "Herman"
+      ],
+      "venue": "TEKNOSAINS Jurnal Sains Teknologi dan Informatika",
+      "published_date": "2026-11-12",
+      "doi_url": "https://doi.org/10.37373/tekno.v14i1.2531",
+      "openalex_url": "https://openalex.org/W7225774670",
+      "cited_by_count": 0,
+      "abstract": "Trading companies often face challenges in managing their inventory systems and finding it hard to match inventory levels with the increasing demand from consumers. This paper tries to create a system that can forecast how much of a product customers might want and also check how well different deep learning methods work. In this paper, the author uses both experimental and applied methods to check how well each deep learning algorithm works.The algorithms tested are CNN-LSTM, LSTM, GRU, BiLSTM, and Transformer. The author used data from Kaggle that includes 76,000 sales records from 2022 up to 2024, covering different product categories such as clothing, furniture, electronics, toys, and groceries. The data was then cleaned and split into groups for training and testing. The author found the results by testing various deep learning algorithms. The top performing algorithm is CNN-LSTM, which has MAE of 28.2136, RMSE of 36.6037, and R² of 0.3106. Even though the R2 value shows the model doesn't have strong predictive power yet, it is still the best performing model out of all the ones studied in this research. By comparing the system's performance to standard operating levels, it was found that the system can adjust to changes in demand.This suggests it could help trading companies better manage their stock and offer more understanding of how deep learning models work.",
+      "summary_zh": "【金融经济学】贸易公司在管理库存系统方面常常面临挑战，难以使库存水平与消费者日益增长的需求相匹配。本文试图构建一个能够预测客户可能需求的系统，并评估不同深度学习方法的性能。作者采用了实验方法和应用方法来测试各种深度学习算法的效果。所测试的算法包括CNN-LSTM、LSTM、GRU、BiLSTM和Transformer。作者使用了Kaggle上的数据，这些数据涵盖了2022年至2024年的76,000条销售记录，涉及服装、家具、电子产品、玩具和食品杂货等不同产品类别。数据经过清洗后被分为训练集和测试集。通过测试多种深度学习算法，作者得出了相应的结果。表现最佳的算法是CNN-LSTM，其平均绝对误差（MAE）为28.2136，均方根误差（RMSE）为36.6037，R²值为0.3106。尽管R²值表明该模型的预测能力尚不强，但它仍是本研究中最优的算法。将系统的性能与标准操作水平进行比较后发现，该系统能够适应需求的变化，这有助于贸易公司更好地管理库存，并加深对深度学习模型工作原理的理解。。研究方法：深度学习、Transformer 模型、实验方法。",
+      "topics": [
+        "Computer science",
+        "Demand forecasting",
+        "Deep learning",
+        "Product (mathematics)",
+        "Stock (firearms)"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Price-impact Martingale optimal transport",
+      "authors": [
+        "Erhan Bayraktar",
+        "Shuoqing Deng",
+        "Daxin Huang",
+        "Dominykas Norgilas"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-12",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.17247v1",
+      "cited_by_count": 0,
+      "abstract": "Martingale optimal transport (MOT) provides model-independent bounds for option prices calibrated to vanilla options, assuming frictionless trading in the underlying. In this work, we consider the case where dynamic trading incurs quadratic temporary price impact. First, we prove a duality result for the superhedging price. In particular, the primal of the duality relaxes the strict martingale constraint by penalizing the deviation from a specific martingale. Second, for one asset and one trading period, we interpret this price-impact martingale optimal transport (PIMOT) as a weak optimal transport (WOT) problem, and provide a characterization in the spirit of Wasserstein projection. Finally, we justify that PIMOT is an interpolation between MOT and classical optimal transport (OT), and derive the convergence rate to both sides. Numerical examples with SPX option data show how the price bounds per claim depend on the order size.",
+      "summary_zh": "【金融经济学】鞅最优运输（Martingale Optimal Transport, MOT）为期权价格提供了与模型无关的界限，这些界限是基于标准期权（vanilla options）校准的，并假设标的资产交易过程中不存在摩擦。在本研究中，我们考虑了动态交易会导致二次性临时价格影响的情况。首先，我们证明了超额对冲价格（superhedging price）的对偶性结果；具体而言，对偶问题的原始形式通过惩罚偏离特定鞅的行为，放宽了严格的鞅约束。其次，对于单一资产和单一交易周期，我们将这种受价格影响约束的鞅最优运输问题（Price-Impact Martingale Optimal Transport, PIMOT）视为一个弱最优运输（Weak Optimal Transport, WOT）问题，并从Wasserstein投影的角度对其特性进行了分析。最后，我们证明了PIMOT实际上是MOT与经典最优运输（Optimal Transport, OT）之间的一个插值形式，并推导出了两者之间的收敛速率。利用SPX期权数据的数值示例，我们展示了每笔索赔的价格界限如何依赖于交易订单的大小。。研究方法：模型校准。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Improving Algorithmic Trading for BESS on Intraday Electricity Markets through Distributional Price Forecasts",
+      "authors": [
+        "Simon Hirsch",
+        "David Schaurecker",
+        "David Wozabal"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-12",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.17170v1",
+      "cited_by_count": 0,
+      "abstract": "Grid-scale battery energy storage systems (BESS) are becoming increasingly important in short-term energy markets, where they help balance fluctuations in variable renewable generation. In many countries, the continuous intraday market is the most important wholesale market for BESS to monetize their flexibility. In this paper, we propose an extension to the myopic rolling intrinsic policy that incorporates intraday price forecasts tailored specifically to the BESS trading problem. While a large literature addresses intraday price forecasting, most existing work focuses on volume-weighted prices during the last hours of trading and consequently fails to capture the features most relevant to BESS trading. Our approach addresses this gap by introducing a novel target variable derived from the limit order book and its dynamics. The resulting forecasts are designed to inform the optimization about future profit opportunities while preserving computational efficiency and avoiding the burden of full stochastic optimization. In a realistic high-frequency simulation setting covering 2023 and 2024, our method improves profits by up to 42% over the naive rolling intrinsic formulation. We further analyze the relationship between forecast accuracy, stability, and financial performance, establishing a clear inverse relationship between accuracy and stability. Finally, we find evidence that BESS size and duration jointly influence both overall profitability and the marginal benefit of incorporating forecasts.",
+      "summary_zh": "【金融经济学】网格级电池储能系统（BESS）在短期能源市场中发挥着越来越重要的作用，它们有助于平衡可变可再生能源发电的波动。在许多国家，连续的日内市场是BESS实现其灵活性价值的最重要批发市场。在本文中，我们提出了一种对传统“短视滚动内在政策”（myopic rolling intrinsic policy）的改进方法，该方法结合了专门针对BESS交易问题定制的日内价格预测。尽管已有大量文献研究日内价格预测，但现有研究大多关注交易最后几个小时的成交量加权价格，因此未能捕捉到与BESS交易最相关的特征。我们的方法通过引入一个源自限价单簿及其动态的新目标变量来弥补这一不足。所生成的预测结果旨在为优化决策提供有关未来盈利机会的信息，同时保持计算效率并避免进行完全随机优化的负担。在涵盖2023年和2024年的真实高频模拟环境中，我们的方法将利润提高了多达42%，相较于传统的滚动内在政策模型有了显著提升。我们进一步分析了预测准确性、稳定性与财务表现之间的关系，发现准确性与稳定性之间存在明确的反比关系。最后，我们发现BESS的规模和持续时间共同影响着整体盈利能力以及引入预测所带来的边际效益。。研究方法：数值模拟、随机过程、优化方法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "CONCEPTUAL IMPROVEMENTS TO INVESTMENT POLICY IN THE GREEN AGRO-INDUSTRIAL SECTOR OF ARMENIA",
+      "authors": [
+        "M. Melkumyan",
+        "Hayk Melkumyan"
+      ],
+      "venue": "Economics, Finance and Accounting",
+      "published_date": "2026-11-10",
+      "doi_url": "https://doi.org/10.59503/29538009-2026.3.19-174",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295793378",
+      "cited_by_count": 0,
+      "abstract": "The formulation of a concept for green investments is a priority for ensuring sustainable development. This issue remains to be addressed within the green agro-industrial sector, which encompasses the \"agriculture – food processing – distribution\" value chain. Currently, it is crucial to determine how an effective investment policy should be developed and implemented at each stage of this value chain, as well as within the green agro-industrial system as a whole. The study analyzes current challenges in investment policy within the green agro-industrial sector and proposes mechanisms for evaluating the effectiveness of green investments, using the Republic of Armenia as a case study.",
+      "summary_zh": "【绿色金融与可持续发展】制定绿色投资的理念是确保可持续发展的优先事项。这一问题在绿色农业工业领域仍需得到解决，该领域涵盖了“农业－食品加工－分销”的价值链。目前，至关重要的是要明确如何在该价值链的每个阶段以及整个绿色农业工业体系中制定和实施有效的投资政策。本研究分析了绿色农业工业领域投资政策中存在的当前挑战，并以亚美尼亚共和国为案例，提出了评估绿色投资有效性的机制。。",
+      "topics": [
+        "Agricultural and Food Sciences",
+        "Environmental Science",
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Influence of Social Comparison Bias, Peer Pressure and Financial Anxiety on Excessive Investment Risk-Taking Among Individual Investors in Bengaluru",
+      "authors": [
+        "Bharath Kumar R",
+        "Somya Agarwal"
+      ],
+      "venue": "Trends in Finance and Economics",
+      "published_date": "2026-11-06",
+      "doi_url": "https://doi.org/10.46632/tfe/4/4/7",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295799819",
+      "cited_by_count": 0,
+      "abstract": "Most individuals who invest like to feel that their choices are made based on research and a planned strategy. In practice, a lot of investing takes place on a phone, between group chats, reels and trading apps, where others’ gains are a thumb swipe away. This study asks whether this environment influences individual investors to take more risks than they can reasonably carry. Using the responses from individual investors in Bengaluru (351 observations used in estimation, against a target of 385), we test whether Social Comparison Bias, Peer Pressure and Financial Anxiety relate to Excessive Investment Risk-Taking, whether Fear of Missing Out (FOMO) carries part of that influence, and whether Financial Literacy softens it. The model was estimated using PLS-SEM in SmartPLS 4. Peer Pressure (𝛽 = 0.199, 𝑝 = 0.005), Financial Anxiety (𝛽 = 0.227, 𝑝 = 0.024) and FOMO (𝛽 = 0.346, 𝑝 < 0.001) increased risk-taking, while Social Comparison Bias did not (𝛽 = 0.029, 𝑝 = 0.591). FOMO partly transmitted the effects of Peer Pressure (indirect 𝛽 = 0.094, 𝑝 = 0.003) and Financial Anxiety (indirect 𝛽 = 0.193, 𝑝 = 0.002). Financial Literacy did not moderate any relationship (𝑝 = 0.577 to 0.821). The model explained 60.0% of the variance in FOMO and 55.0% in risk-taking. In short, it is the pressure to act, not the act of comparing, that appears to matter, and knowing more about finance did not by itself protect investors from it.",
+      "summary_zh": "【风险管理与衍生品】大多数进行投资的人希望自己的决策是基于充分的研究和明确的策略做出的。然而在现实中，许多投资行为都是通过手机、群聊、短视频以及交易应用程序完成的，在这些环境中，他人的投资收益只需轻轻一滑屏幕就能看到。本研究探讨了这种环境是否会导致个人投资者承担超出其承受能力的风险。我们利用班加罗尔地区投资者的调查数据（共351条有效样本，目标样本量为385条），分析了社会比较偏见、同伴压力和财务焦虑是否与过度投资风险行为有关，以及“害怕错过机会”（FOMO）在这一过程中是否起到了一定作用，同时考察了金融知识是否能够缓解这种影响。研究采用SmartPLS 4软件中的PLS-SEM方法进行模型估计。结果显示：同伴压力（β = 0.199，p = 0.005）、财务焦虑（β = 0.227，p = 0.024）和FOMO（β = 0.346，p < 0.001）都会增加投资者的风险承担意愿，而社会比较偏见则没有这种效应（β = 0.029，p = 0.591）。FOMO在一定程度上放大了同伴压力（间接效应β = 0.094，p = 0.003）和财务焦虑（间接效应β = 0.193，p = 0.002）...。",
+      "topics": [
+        "Economics",
+        "Business"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Deep phenotyping in medical genetics and genomics: a comprehensive overview",
+      "authors": [
+        "Guozhuang Li",
+        "Jihao Cai",
+        "Zefu Chen",
+        "Kexin Xu",
+        "Qing Li"
+      ],
+      "venue": "Orphanet Journal of Rare Diseases",
+      "published_date": "2026-11-12",
+      "doi_url": "https://doi.org/10.1186/s13023-026-04608-8",
+      "openalex_url": "https://openalex.org/W7225780495",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  Deep phenotyping, the systematic, quantitative assessment of macro- and micro-level phenotypes, is pivotal to precision medicine. Although genomics has advanced rapidly, incomplete phenotypic data limit medical insights and research. This review starts from tracing the evolution of deep phenotyping, highlighting standardized terminologies (HPO), advanced technologies (wearable sensors, imaging, PheWAS, AI-assisted methods), procedural frameworks, and large-scale databases. By integrating these resources, deep phenotyping clarifies disease heterogeneity, refines genotype–phenotype correlations, and identifies novel biomarkers—enhancing diagnostic accuracy via phenotype-driven approaches and reanalysis. Moreover, deep phenotyping underpins precision medicine by enabling robust disease stratification, personalized clinical care, and biomarker-driven trials. Besides these, it aids disease prevention, refines prognostic prediction, and supports lifespan-based strategies from pregnancy to aging. Emerging fields such as xenotransplantation illustrate its capacity to achieve precision medicine. We also introduce global perspectives on implementing deep phenotyping across diverse settings, illustrating its adaptability and clinical impact. Finally, we propose a flexible, three-module strategy integrating study scope, data acquisition, and analytic methods to guide future research of deep phenotyping. This review underscores deep phenotyping’s transformative potential to elevate diagnostics, inform targeted therapies, and optimize patient outcomes, heralding a new era in medical genetics and genomics.",
+      "summary_zh": "【金融经济学】摘要  \n深度表型分析（即对宏观和微观表型进行系统、定量的评估）是精准医学的核心。尽管基因组学取得了快速进展，但表型数据的不完整性仍限制了医学研究和临床理解。本文回顾了深度表型分析的发展历程，重点介绍了标准化术语（如HPO）、先进技术（如可穿戴传感器、成像技术、PheWAS、人工智能辅助方法）、研究流程框架以及大规模数据库的应用。通过整合这些资源，深度表型分析有助于揭示疾病的异质性、优化基因型与表型之间的关联，并发现新的生物标志物，从而通过表型驱动的方法提升诊断准确性。此外，深度表型分析为精准医学提供了重要支持，实现了疾病的精准分层、个性化临床护理以及基于生物标志物的临床试验。它还促进了疾病预防、改善预后预测，并为从妊娠到衰老的生命阶段策略提供了依据。异种移植等新兴领域也展示了深度表型分析在实现精准医学方面的潜力。本文还探讨了在多种环境下实施深度表型分析的全球趋势，强调了其适应性和临床价值。最后，我们提出了一种灵活的三模块策略，涵盖研究范围、数据采集和分析方法，以指导未来的深度表型分析研究。该综述强调了深度表型分析在提升诊断水平、指导靶向治疗和优化患者预后方面的变革潜力，预示着医...。",
+      "topics": [
+        "Precision medicine",
+        "Data science",
+        "Medical genetics",
+        "Personalized medicine",
+        "Genomics"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Large-Area Marine Surface Current Measurement Using Unmanned Aerial Vehicle-Based Optical Flow Mosaicking Without Ground Control Points",
+      "authors": [
+        "Yizhang Yan",
+        "Min Bao",
+        "Zhuohong Jiang",
+        "Zhenyi Cao",
+        "Yang Ding"
+      ],
+      "venue": "Journal of Ocean University of China",
+      "published_date": "2026-11-12",
+      "doi_url": "https://doi.org/10.1007/s11802-026-6597-9",
+      "openalex_url": "https://openalex.org/W7225783211",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  Nearshore ocean currents are characterized by complex structures and spatial heterogeneity. Conventional measurement techniques are either inefficient or offer low spatial resolution, while image velocimetry (a low-cost, high-resolution method) is limited in marine applications due to the trade-off between large-area coverage and high resolution, as well as the lack of ground control points for calibration. To address these issues, this study proposes a current field mosaicking method. By maintaining the camera in constant-speed motion, the distance differences between consecutive image frames are converted into row offsets using the interframe time interval and image resolution, thereby expanding the velocimetry observation range through stitching. An adaptive thresholding method combining sun-glint identification and cropping is also developed. Results show that the picture range increases from 60 to 350 m, enabling large-area optical-flow velocimetry, and that the sun glint removal technique effectively reduces interference without additional quality degradation or artificial signals. This approach solves key constraints of image velocimetry in large-scale marine environments.",
+      "summary_zh": "【金融经济学】摘要  \n近岸海洋流具有复杂的结构特征和空间异质性。传统的测量方法要么效率低下，要么空间分辨率较低；而图像测速技术（一种低成本、高分辨率的方法）在海洋应用中受到限制，主要是因为在大范围覆盖和高分辨率之间的权衡，以及缺乏用于校准的地面控制点。为了解决这些问题，本研究提出了一种流场拼接方法。通过保持相机以恒定速度运动，利用帧间时间间隔和图像分辨率将连续图像帧之间的距离差异转换为行偏移量，从而通过拼接技术扩展测速观测范围。此外，还开发了一种结合太阳反射光识别和裁剪的自适应阈值处理方法。实验结果表明，图像观测范围从60米扩大到了350米，实现了大范围的光流测速；同时，太阳反射光去除技术有效减少了干扰，且不会导致图像质量下降或产生虚假信号。该方法突破了图像测速技术在大型海洋环境中的关键限制。。研究方法：模型校准。",
+      "topics": [
+        "Remote sensing",
+        "Thresholding",
+        "Velocimetry",
+        "Computer science",
+        "Particle image velocimetry"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Cobertura efectiva de la titulación acreditada en la educación superior privada costarricense (2021-2025)",
+      "authors": [
+        "William Solís Brenes"
+      ],
+      "venue": "Revista Latinoamericana de Calidad Educativa.",
+      "published_date": "2026-11-12",
+      "doi_url": "https://doi.org/10.70625/rlce/1063",
+      "openalex_url": "https://openalex.org/W7225783555",
+      "cited_by_count": 0,
+      "abstract": "La aprobación de carreras universitarias privadas en Costa Rica verifica componentes curriculares sin exigir ni evaluar un modelo de gestión de la calidad, por lo que la acreditación voluntaria del sistema nacional de acreditación es el único mecanismo externo y oficial que informa sobre su calidad. El artículo estima la cobertura efectiva de ese mecanismo, entendida como la proporción de diplomas otorgados en carreras acreditadas en el año de graduación, mediante el cruce de la base nacional de diplomas 2021-2025 con la lista oficial de acreditaciones por carrera, grado y sede. Entre el 22,2 % y el 24,8 % de los diplomas privados provino de carreras acreditadas, frente a 47,4 % a 50,5 % en el sector estatal; en Educación la cobertura privada fue de 5,5 % a 6,7 % y el posgrado privado carece de ella. Una descomposición de la brecha entre sectores muestra que esta se origina dentro de las mismas áreas y grados. Se concluye que la mayor parte de la titulación privada carece de evidencia pública sobre su calidad y que, en Medicina, la coexistencia de acreditación casi total y tasas dispares de aprobación del examen de incorporación profesional interroga la calidad que el modelo certifica.",
+      "summary_zh": "【银行与信贷】在哥斯达黎加，私立大学专业的审批过程仅对课程设置进行审核，而不要求或评估任何质量管理体系。因此，国家认证体系的自愿认证成为唯一能够反映这些私立专业质量的外部、官方评估机制。本文通过对比2021-2025年的全国文凭数据库与官方的专业、学位及办学地点认证名单，评估了这一认证机制的实际覆盖范围（即毕业年份内获得认证专业文凭的比例）。结果显示：22.2%至24.8%的私立大学文凭来自经过认证的专业，而公立大学这一比例为47.4%至50.5%；在教育领域，私立大学的认证覆盖率为5.5%至6.7%，而私立研究生教育则完全没有认证机制。进一步分析发现，这种行业间的差距主要源于同一专业和学位类别内部的质量差异。研究结论指出，大多数私立教育机构的教学质量缺乏公开可查的证明；尤其在医学领域，尽管专业认证几乎全覆盖，但入学考试通过率却存在显著差异，这引发了人们对认证体系所保障的质量的质疑。。",
+      "topics": [
+        "Humanities",
+        "Political science",
+        "Business",
+        "Welfare economics",
+        "Private sector"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Learning Dynamics of the Influencer's Game in Resource Landscapes",
+      "authors": [
+        "Mark Lovett Feng Fu"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-12",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.17148v1",
+      "cited_by_count": 0,
+      "abstract": "Across domains as varied as ecology, economics, and online platforms, individuals are incentivized to position themselves within resource-rich strategy spaces. In this work we introduce a new spatial game framework called the influencer's game. Within this new framework players' strategies are represented as positions within a trait space. Players then receive a share of a portion of a resource based on their relative influence at that resource's points traits. For the influencer's game, we show that there is a unique symmetric Nash equilibrium that exists under strict log-concavity of the influence kernel. Using the unique equilibrium we show that the stability of the system depends on the influence kernel's parameters, number of players, and the resource distribution shape. For any dimension we demonstrate a stability threshold that depends on both the scatter and curvature of the players. When this threshold is crossed, the symmetric equilibrium destabilizes and gives way to a variety of bifurcation types; including, specialist clusters, limit cycles, and sub-games that reproduce the larger game's structure. We ground these results using real-world data for resources as a demonstration of the game's application. Finally we extend the game dynamics to use multi-agent reinforcement learning and further show that the predicted bifurcation structure persists under partial observability and discretized strategy spaces. In all, the influencer's game provides a novel framework for predicting when competitive pressure drives convergence versus fragmentation with possible applications across domains.",
+      "summary_zh": "【金融经济学】在生态学、经济学以及在线平台等多个领域中，个体总是被激励去占据资源丰富的战略位置。在这项研究中，我们提出了一个名为“影响者游戏”（Influencer’s Game）的新空间博弈框架。在该框架下，玩家的策略被表示为特征空间（trait space）中的某个位置。玩家根据其在该资源相关特征上的影响力大小，获得相应份额的资源。我们证明了，在影响核函数（influence kernel）具有严格的对数凹性（log-concavity）条件下，该博弈存在一个唯一的对称纳什均衡（symmetric Nash equilibrium）。通过这个唯一均衡，我们发现系统的稳定性取决于影响核函数的参数、玩家数量以及资源分配的形态。对于任意维度情况，我们都找到了一个稳定性阈值，该阈值同时受到玩家分布的离散程度和分布曲率的影响。当超过这一阈值时，对称均衡会变得不稳定，并引发多种分岔现象，包括形成专业化的玩家群体、极限环（limit cycles），以及能够再现整个博弈结构的子博弈（sub-games）。我们利用现实世界中的资源数据来验证这一博弈模型的应用可行性。最后，我们将该博弈模型扩展到多智能体强化...。研究方法：均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Contractual Structure and Obvious Manipulation in Many-to-Many Matching",
+      "authors": [
+        "R. Pablo Arribillaga",
+        "Beatriz Millan",
+        "Eliana Pepa Risma"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-12",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.17029v1",
+      "cited_by_count": 0,
+      "abstract": "We study how contractual structure affects worst-case and best-case obvious manipulation in many-to-many matching with substitutable preferences. Efficient individually rational mechanisms rule out best-case obvious manipulations on both the full substitutable domain and the unitary domain. Under simple and economically natural conditions on hospitals' choices, every stable mechanism on the full domain admits obvious manipulations in both cases; hospital-proposing deferred acceptance can admit both types even under unitary doctors' preferences. A further sufficient condition makes efficient stable-dominating mechanisms obviously manipulable in the worst case. On the unitary domain, doctor-proposing deferred acceptance is not obviously manipulable. If each doctor--hospital pair has at most one feasible contract, this positive conclusion extends to every stable-dominating mechanism.",
+      "summary_zh": "【金融经济学】我们研究了合同结构如何影响在具有可替代偏好的多对多匹配场景中的最坏情况和最佳情况下的明显操纵行为。在完全可替代偏好范围以及单一偏好范围内，高效的、基于个体理性设计的机制均能够排除最佳情况下的明显操纵行为。在关于医院选择的一些简单且符合经济规律的假设条件下，所有在完全可替代偏好范围内成立的稳定机制都会导致两种情况下的明显操纵行为；即使医生具有单一偏好，医院提出延迟接受机制也同样可能引发这两种类型的操纵行为。另一个充分条件表明，在最坏情况下，高效的、具有稳定支配性的机制也容易被操纵。在单一偏好范围内，医生提出延迟接受机制则不会被明显操纵。如果每对医生-医院组合最多只有一份可行的合同，那么这一积极结论同样适用于所有具有稳定支配性的机制。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Media Trading with Censored Auction Prices: A Stochastic Control and Reinforcement Learning Approach",
+      "authors": [
+        "Yun-Ithry Gamrani",
+        "Huyên Pham"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-12",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.16992v1",
+      "cited_by_count": 0,
+      "abstract": "In real-time bidding, marketing agencies must balance campaign performance, transaction margins and the use of a finite advertising budget. A key difficulty is that market-clearing prices are typically observed only when bids are successful, so the information available for subsequent decisions depends on the bidding policy. We formulate this problem using a continuous-time stochastic control model with a latent price process. To construct a price signal, we consider parallel exploratory subcampaigns in which bids are randomized subject to an upper bound. Under a stylized cross-sectional sampling model, the resulting price estimator is consistent and satisfies a mean-square error bound of order $N^{-1}$, where $N$ is the number of exploratory observations. We then describe a model-based approach combining forward-equation calibration with Hamilton-Jacobi-Bellman policy iteration and a physics-informed neural network, alongside an entropy-regularized actor-critic approach based on observable information in a model-free setting. Synthetic experiments illustrate the estimator and the computational procedures. The framework clarifies the decision and information trade-offs faced by the agency, while distinguishing full-information benchmarks and estimated-price policies from the genuinely partially observed control problem.",
+      "summary_zh": "【金融经济学】在实时竞价环境中，营销机构必须平衡广告活动的效果、交易利润以及有限的广告预算使用情况。一个关键难点在于：市场清算价格通常只有在出价成功时才能被观察到，因此后续决策所需的信息取决于所采用的竞价策略。我们利用带有潜在价格过程的连续时间随机控制模型来描述这一问题。为了构建价格信号，我们设计了多个并行进行的探索性子广告活动，在这些活动中出价是随机生成的，并受到上限的限制。在一种简化的横截面抽样模型下，所获得的价格估计量具有稳定性，并且其均方误差满足 $N^{-1}$ 的阶数限制（其中 $N$ 代表探索性观测的次数）。随后，我们提出了一种基于模型的方法，该方法结合了前向方程校准、Hamilton-Jacobi-Bellman 策略迭代以及物理信息驱动的神经网络；同时，我们还提出了一种基于无模型环境中可观测信息的熵正则化演员-评论家（actor-critic）算法。通过合成实验验证了这些估计方法和计算流程的有效性。该框架明确了营销机构在决策过程中所面临的权衡，同时区分了基于完整信息的基准策略、基于估计价格的策略，以及那些仅能部分观察到市场信息的控制策略。。研究方法：横截面分析、模型校准、神经网络、随机实验、实验方法、随机过程。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    }
+  ]
+}
