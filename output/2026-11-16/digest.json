@@ -1,0 +1,248 @@
+{
+  "date": "2026-11-16",
+  "count": 12,
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "latest_updated": true,
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（8 篇）、国际贸易（1 篇）、金融科技（1 篇）。方法上以实验方法、随机实验为主。来源分布：arXiv（7 篇）、NBER（3 篇）、OpenAlex（1 篇）。其中 3 篇命中顶级期刊白名单。",
+  "insights": {},
+  "papers": [
+    {
+      "title": "The impact of agricultural pesticides on cancer prevalence in Midwest, United States",
+      "authors": [
+        "Benjamin Cox",
+        "Brandon M. Varilek",
+        "Sushant Mehan",
+        "Hossein Moradi Rekabdarkolaee"
+      ],
+      "venue": "Discover Public Health",
+      "published_date": "2026-11-15",
+      "doi_url": "https://doi.org/10.1186/s12982-026-03154-9",
+      "openalex_url": "https://openalex.org/W4411991940",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  \n                    Purpose\n                    This study investigates the association between pesticide exposure and cancer prevalence rates in the Midwestern United States, accounting for key demographic and behavioral risk factors.\n                  \n                  \n                    Methods\n                    Bayesian linear and generalized linear models are employed to examines the relationship between county-level aggregate pesticide application volume (kg), used as a proxy for population-level exposure, and cancer prevalence rates in the Midwest United States. The analysis is based on pesticide usage data from 1992 to 2002 and cancer prevalence rates from 2017 to 2022 and demographic covariates including smoking prevalence, binge drinking rates, and obesity. Model selection procedures identified the best-fitting distribution for the outcome variable, and posterior inference was used to evaluate pesticide-specific effects on cancer rates.\n                  \n                  \n                    Results\n                    Glyphosate exposure showed no statistically confident association with cancer prevalence. Atrazine results exhibited substantial uncertainty, precluding definitive conclusions. However, exposure to Ethalfluralin, 2,4-D, Malathion, and MCPA demonstrated positive associations with elevated overall cancer rates.\n                  \n                  \n                    Conclusion\n                    These findings suggest that certain pesticide compounds may be associated with increased cancer risk in the Midwest population. The results underscore the importance of continued epidemiological research to elucidate the potential carcinogenic mechanisms of specific pesticides and inform public health policy.",
+      "summary_zh": "【金融经济学】摘要\n\n**研究目的**  \n本研究探讨了美国中西部地区农药暴露与癌症发病率之间的关系，并考虑了关键的人口统计和行为风险因素。\n\n**研究方法**  \n采用贝叶斯线性模型和广义线性模型来分析县级农药施用量（以千克为单位，作为人群暴露水平的代理指标）与美国中西部地区癌症发病率之间的关系。数据分析基于1992年至2002年的农药使用数据以及2017年至2022年的癌症发病率数据，同时还考虑了吸烟率、酗酒率和肥胖率等人口统计协变量。通过模型选择程序确定了最适合结果变量的分布类型，并利用后验推断方法评估了特定农药对癌症发病率的影响。\n\n**研究结果**  \n草甘膦暴露与癌症发病率之间未发现具有统计学意义的关联。阿特拉津的暴露情况存在较大不确定性，因此无法得出明确结论。然而，乙氟呋喃、2,4-D、马拉硫磷和MCPA的暴露与癌症发病率的升高存在正相关关系。\n\n**研究结论**  \n这些研究结果表明，某些农药化合物可能与美国中西部地区癌症发病率的增加有关。研究结果强调了继续开展流行病学研究的重要性，以阐明特定农药的潜在致癌机制，并为公共卫生政策提供依据。。研究方法：贝叶斯方法。",
+      "topics": [
+        "Pesticide",
+        "Agriculture",
+        "Incidence (geometry)",
+        "Cancer incidence",
+        "Agricultural economics"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Alignment by Socialization: Learning Tradeoffs Under Selection",
+      "authors": [
+        "Thomas Brennan",
+        "Andrew W. Lo",
+        "Chaoyi Zhao"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-13",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.18531v1",
+      "cited_by_count": 0,
+      "abstract": "Artificial intelligence (AI) agents are expected to complete tasks while following rules of conduct, but these objectives can conflict. We study how evolutionary selection shapes an agent's choices between them, and whether experience can make those choices reflect human judgments and withstand subsequent pressures. In our model, copies of an agent face a common uncertain reward state, and only those taking the rewarded action reproduce. We show that long-run growth is maximized when each action is taken as often as the environment rewards it. We compare three policies. A task-only policy thrives in a sandbox rewarding completion alone but fails when conduct matters. A fixed linear policy increasingly favors task completion as its stakes rise, even where humans never reward it. A learned policy instead converges to the tradeoffs rewarded by its environment; when humans supply the rewards, we call this socialization. Accumulated experience makes socialization harder to reverse under subsequent task-only training, although violations can arise before the prevailing disposition changes, and finite memory weakens this protection. When a single violation can end a deployment, a hard prohibition can prevent it, but a mistaken prohibition can also be costly. Experiments with small neural networks illustrate how training targets and memory shape these outcomes. Our results suggest that alignment depends not only on the objectives assigned to agents, but also on the environments that shape and sustain their behavior.",
+      "summary_zh": "【国际贸易】人工智能（AI）代理在执行任务时需要遵循一定的行为准则，但这些准则之间可能存在冲突。我们研究了进化选择如何影响代理在这些准则之间的选择，以及经验是否能够使这些选择体现人类的判断力，并在后续的压力下保持稳定。在我们的模型中，代理的多个副本面临一个共同的、具有不确定性的奖励状态，只有采取被奖励行为的副本才能存活下来。我们发现，当某个行为被环境频繁奖励时，代理的长期发展才能达到最大化。我们比较了三种策略：  \n1. **仅关注任务的策略**：在仅奖励任务完成的简单环境中表现良好，但在需要遵守行为准则的情况下会失败；  \n2. **固定线性策略**：随着任务风险的增加，该策略越来越倾向于完成任务，即使人类从不给予奖励；  \n3. **学习型策略**：该策略会逐渐适应环境所认可的权衡方案；当人类提供奖励时，这一过程被称为“社会化”。  \n积累的经验使得在后续仅关注任务的训练中难以逆转这种“社会化”倾向，尽管在主导行为发生变化之前仍可能出现违规行为，而且有限的记忆容量会削弱这种保护作用。  \n当一次违规行为就可能导致整个系统的失败时，严格的禁令可以有效防止这种情况；然而，错误的禁令也可能带来...。研究方法：神经网络、实验方法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Estimating a Rational Inattention Discrete Choice Model: A Semiparametric Approach",
+      "authors": [
+        "Hanqi Wang"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-13",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.18479v1",
+      "cited_by_count": 0,
+      "abstract": "People's choices depend on both the payoffs of the available options and what they learn about those payoffs before deciding. This paper shows how choice data identify both unobserved payoff heterogeneity and the cost of information acquisition in a rational inattention discrete-choice model. I establish conditions for semiparametric point identification using exogenous payoff and information-cost shifters, without imposing parametric forms on the taste-shock distribution or on how the unit cost of information varies with observed characteristics. In the model with binary choice, I construct an unobserved choice threshold whose cumulative distribution function is the choice probability as a function of the payoff shifter. Moments of this threshold identify the payoff coefficients and the unit cost of information at each value of the information-cost shifter. A deconvolution argument then identifies the taste-shock distribution. I then extend identification to the model with multinomial choice. To estimate the model, I propose a sieve minimum-distance estimator based on observed market shares and establish its consistency. For inference, I construct confidence regions by test inversion because binding parameter constraints can make the estimator's limiting distribution nonnormal. In an application to Amazon Mechanical Turk, model counterfactuals show that lower unit costs of information raise the average task-taking probability and reduce wage elasticity.",
+      "summary_zh": "【金融经济学】人们的选择既取决于可用选项的收益，也取决于他们在做出决策之前对这些收益的了解。本文展示了如何在理性忽视（rational inattention）的离散选择模型中，通过选择数据来识别未观测到的收益异质性以及信息获取的成本。我提出了在使用外生收益和信息成本变量进行半参数点识别的条件，同时不对偏好冲击分布（taste-shock distribution）或信息单位成本随观测特征变化的方式施加参数化限制。在二元选择模型中，我构建了一个未观测到的选择阈值，其累积分布函数即为选择概率与收益变量之间的关系函数；该阈值的矩估计可以确定每个信息成本水平下的收益系数和信息单位成本。随后通过反卷积（deconvolution）方法可以确定偏好冲击分布。接着，我将这种识别方法扩展到多项选择模型。为了估计模型，我提出了一种基于观测市场份额的筛选最小距离（sieve minimum-distance）估计器，并证明了其一致性。在推断过程中，由于参数约束可能导致估计量的极限分布非正态，我采用测试反演（test inversion）方法构建置信区间。在应用于亚马逊机械土耳其（Amazon Mechanica...。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Research on the Impact of the Digital Economy on Residents' Consumption Potential",
+      "authors": [
+        "Wen-Hui Zhao"
+      ],
+      "venue": "Journal of Economics and Public Finance",
+      "published_date": "2026-11-11",
+      "doi_url": "https://doi.org/10.22158/jepf.v12n4p25",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295894271",
+      "cited_by_count": 0,
+      "abstract": "In the context of the rapid development of the digital economy and the deepening implementation of the strategy of expanding domestic demand, exploring the impact of the digital economy on residents' consumption potential holds significant practical importance. Based on the panel data of 31 provinces in China from 2011 to 2024, this paper constructs an evaluation index system for the digital economy and residents' consumption potential, and uses the two-way fixed effects model to empirically test the impact of the digital economy on residents' consumption potential. It further examines the mediating role of market activity and the moderating role of the level of population aging. The research results show that the digital economy can significantly enhance residents' consumption potential; market activity plays a partial mediating role in the process of the digital economy influencing residents' consumption potential, that is, the digital economy further releases residents' consumption potential by improving market activity; the level of population aging has a positive moderating effect, which can strengthen the promoting effect of the digital economy on residents' consumption potential. Heterogeneity analysis reveals that the promoting effect of the digital economy on residents' consumption potential is more obvious during the period of deepening digital economy development and in regions with a low consumption environment.",
+      "summary_zh": "📌 研究问题：数字经济的发展如何影响居民消费潜力，以及市场活动和人口老龄化水平在其中扮演何种角色。\n\n🔬 研究方法：基于2011至2024年中国31个省份的面板数据，构建评价指标体系，并采用双向固定效应模型实证检验数字经济对消费潜力的影响，同时考察市场活动的中介作用及人口老龄化的调节作用。\n\n📊 核心发现：数字经济显著提升了居民消费潜力，市场活动在其中起部分中介作用，而人口老龄化水平具有正向调节效应；此外，在数字经济深化期及消费环境较差的地区，这种促进作用更为明显。\n\n💡 应用价值：为深化数字经济发展、优化消费环境及制定应对人口老龄化的消费政策提供了实证依据。",
+      "topics": [
+        "Economics",
+        "Computer Science"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "How Will the 340B Rebate Model Pilot Affect Covered Entity Finances?",
+      "authors": [
+        "Charles J. Courtemanche"
+      ],
+      "venue": "NBER Working Papers",
+      "published_date": "",
+      "doi_url": "",
+      "openalex_url": "https://www.nber.org/papers/w36006#fromrss",
+      "cited_by_count": 0,
+      "abstract": "The Health Resources and Services Administration (HRSA) plans to implement a pilot switching 340B from an upfront discount model to a rebate model for drugs in the Medicare Drug Price Negotiation Program (MDPNP). This study uses calibration methods to predict the impact of the rebate model pilot (RMP) on covered entities’ net revenues from the 340B program. I examine possible losses from averted duplicate discounts; denial of valid claims; manufacturers using data to exert influence; liquidity-related expenses; and administrative and staffing costs. I also project the effects of switching the entire 340B program to a rebate model. I project net revenue losses from the RMP of $1.5 billion. Expansion to all of 340B would increase the predicted losses to $22.8 billion, cutting net revenues from the program by 32%. The majority of losses will come from administrative and staffing costs, which do not benefit manufacturers, implying a net negative effect of switching to a rebate model. Covered entity losses from the RMP will be limited by the pilot only applying to a small percentage of 340B sales as well as restrictions HRSA’s guidance places on manufacturers. If the rebate model expands to all of 340B or if the restrictions are inadequately enforced, the losses will grow substantially.",
+      "summary_zh": "【金融经济学】美国卫生资源与服务管理局（HRSA）计划将医疗保险药品价格谈判计划（MDPNP）中的340B项目从预先折扣模式转变为返利模式。本研究采用校准方法来预测返利模式试点（RMP）对相关实体从340B项目中获得的净收入的影响。我分析了可能导致的损失，包括：避免重复折扣所带来的收益减少、有效索赔被拒付、制造商利用数据施加影响、与流动性相关的费用，以及行政和人员成本。同时，我还预测了将整个340B项目转变为返利模式后的影响。根据预测，RMP将导致净收入损失15亿美元；如果这一变革扩展到整个340B项目，预计损失将增至228亿美元，使该项目的净收入减少32%。其中大部分损失将来自行政和人员成本，而这些成本并不会使制造商受益，因此转向返利模式总体上会产生负面影响。由于返利模式仅适用于340B销售额的一小部分，且HRSA的指导方针对制造商有一定的限制，相关实体的损失也会受到一定程度的限制。但如果返利模式覆盖整个340B项目，或者相关限制未能得到有效执行，损失将会大幅增加。。研究方法：模型校准。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "nber"
+    },
+    {
+      "title": "Horizontal Equity of Taxation: Citizen Beliefs and Policy Preferences",
+      "authors": [
+        "Pierre Bachas",
+        "Christopher A. Hoy",
+        "Anders Jensen",
+        "Mahvish Shaukat"
+      ],
+      "venue": "NBER Working Papers",
+      "published_date": "",
+      "doi_url": "",
+      "openalex_url": "https://www.nber.org/papers/w36007#fromrss",
+      "cited_by_count": 0,
+      "abstract": "Taxes are harder to enforce on the self-employed than on wage earners, creating horizontal inequities among taxpayers with similar incomes. Using tax microsimulation and household survey data from 29 developing countries, we show that horizontal inequities in actual tax systems are comparable in magnitude to vertical equity and are exacerbated by progressive reforms that fall disproportionately on wage earners. We then conduct surveys and randomized information experiments in Pakistan to study public perceptions of these inequities. Although providing information raises fairness concerns, it does not increase support for reforms reducing it, revealing an important political constraint to improving tax equity.",
+      "summary_zh": "【金融经济学】对于个体经营者而言，征税比对于工资收入者而言更为困难，这导致了收入水平相似的纳税人之间的横向不平等。通过利用29个发展中国家的税收微观模拟数据及家庭调查数据，我们发现实际税收体系中的横向不平等程度与纵向不平等相当，并且这种不平等因那些对工资收入者影响较大的累进式税收改革而进一步加剧。随后，我们在巴基斯坦进行了调查和随机信息实验，以研究公众对这些不平等现象的看法。尽管提供相关信息会引发人们对公平性的担忧，但这并未增加人们对减少这种不平等的税收改革的支持，这揭示了在改善税收公平性方面存在重要的政治障碍。。研究方法：数值模拟、随机实验、实验方法、调查数据。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "nber"
+    },
+    {
+      "title": "Disenfranchisement in Spatial Voting Games",
+      "authors": [
+        "Vincent Lageschulte",
+        "Joel Nishimura"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-13",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.18468v1",
+      "cited_by_count": 0,
+      "abstract": "The questions of voting rights, group membership, and the boundaries of acceptable discourse all involve a recursive, self-stability issue, wherein the voters, group members, and acceptable commentators are often the ultimate arbiters of their own rules for inclusion and exclusion. In order to understand how ideological or issue diversity may impact the stability of such inclusion and exclusion, we introduce franchise elections, where voting members of a group vote to change the electorate. In particular, when agents are positioned inside an ideological or issue space, a social choice function that aggregates agent viewpoints induces a preference for agents over group composition, where agents prefer groups that improve the social choice function outcome for them. We demonstrate that when ideological space is two-dimensional, these franchise elections can generate complex behavior and that this complexity exists for any social choice function. Using the Yolk social choice function from voting theory, we illustrate that franchise elections can predict that agents attempting to introduce a new ideological axis perpendicular to an existing left-right spectrum risk disenfranchisement unless they ally with either side of the spectrum, and that franchise elections can cycle with any period.",
+      "summary_zh": "【金融经济学】关于投票权、群体成员资格以及可接受言论的界限等问题，都涉及一个递归的、自我稳定的机制：选民、群体成员以及可接受的评论者往往本身就是决定自身包容与排斥规则的最终裁决者。为了理解意识形态或议题多样性如何影响这种包容与排斥机制的稳定性，我们引入了“选举权选举”这一概念，即群体中的投票成员通过投票来改变选民构成。具体而言，当个体处于某种意识形态或议题框架内时，一种汇总个体观点的社会选择函数会促使个体更倾向于那些能够改善自身社会选择结果的群体构成。我们证明了：当意识形态空间为二维时，这种选举权选举能够产生复杂的行为模式，并且这种复杂性适用于任何类型的社会选择函数。以投票理论中的“Yolk社会选择函数”为例，我们发现：试图引入与现有左右翼谱系垂直的新意识形态轴的个体，除非与谱系中的某一方结盟，否则可能会面临被剥夺选举权的风险；此外，选举权选举的周期可以是任意的。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Constrained Stochastic Policy Targeting under Heterogeneous Partial Interference",
+      "authors": [
+        "Elena Dal Torrione",
+        "Chan Park",
+        "Laura Forastiere"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-13",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.18444v1",
+      "cited_by_count": 0,
+      "abstract": "Under heterogeneous interference, treating individuals with particular characteristics affects the population average outcome through their heterogeneous direct response to treatment and indirect effect on others, creating opportunities for efficient policy design. For instance, policymakers may minimize resource use by vaccinating individuals identified as superspreaders to achieve a target reduction in disease incidence. In such setting, we first study the problem of learning individualized stochastic treatment policies that minimize population average treatment probability subject to a prespecified outcome target. We propose an estimation approach based on a smooth surrogate for constraint violations and interference-aware inverse-probability-weighting or self-normalized estimators of the population average outcome, and establish finite-sample regret guarantees for both estimators. We also consider the complementary problem of maximizing the population average outcome subject to a constraint on average treatment probability. We apply the proposed methodology to a Colombian conditional cash transfer program aimed at improving school attendance. The application demonstrates that accounting for interference and individualizing treatment probabilities can reduce resource use relative to policies that ignore interference or impose homogeneous treatment probabilities.",
+      "summary_zh": "【金融经济学】在异质性干扰环境下，针对具有特定特征的个体实施治疗会通过其对治疗的直接响应以及对其他个体的间接影响，从而影响整个群体的平均结果，这为制定高效的政策提供了可能性。例如，政策制定者可以通过为被识别为超级传播者的个体接种疫苗来最小化资源使用，以实现疾病发病率的目标降低。在此背景下，我们首先研究了如何在预先设定的结果目标约束下，学习能够最小化群体平均治疗概率的个性化随机治疗策略。我们提出了一种基于平滑替代变量来处理违规情况的方法，并采用考虑干扰因素的逆概率加权或自标准化估计方法来估计群体平均结果，并为这两种估计方法提供了有限样本下的遗憾值保证（即估计结果的准确性）。同时，我们还考虑了在平均治疗概率受限条件下最大化群体平均结果这一互补问题。我们将所提出的方法应用于哥伦比亚的一项旨在提高入学率的现金转移计划中。实践表明，与忽视干扰因素或采用统一治疗概率的政策相比，考虑干扰因素并个性化治疗概率能够更有效地利用资源。。研究方法：随机过程。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Making Experiment Results Comparable through Sitewide Impact Estimation",
+      "authors": [
+        "Xiaochen Zhang",
+        "Wenjing Zheng",
+        "Xingye Kang",
+        "Vamsi Manthena"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-13",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.18411v1",
+      "cited_by_count": 0,
+      "abstract": "Roblox spans many product surfaces-discovery, the virtual economy, creator tools-that differ sharply in reach and in how much the affected population contributes to any sitewide metric. A randomized experiment shows whether a treatment works for the users in its sample, but this experiment lift is not comparable across surfaces, because surfaces differ in reach and in their contribution to sitewide metrics. The quantity a strategic decision needs is a counterfactual-how much an aggregated sitewide metric (e.g., total platform play time) would move if the treatment reached 100% of its target population, which may be only part of the sitewide population, during the measurement period. We call this sitewide impact. Its scaling factor, which we call the coverage factor, combines the reach and the target population's contribution to the sitewide metric under no treatment. Hence a low-reach surface whose users carry much of the metric could outrank a high-reach surface whose users carry little. We develop two estimators under this framing: one for difference-in-means metrics and one for variant-level ratio metrics (a metric defined as a ratio of two population aggregates). Empirically, experiment lift is a poor proxy for sitewide impact-across 139 experiments that are statistically significant on time spent, the Spearman rank correlation between the two is 0.20, and 5 of the 10 largest experiment lifts are among the 10 largest sitewide impacts. We validate the estimator with A/A tests and against a long-term holdout, and apply it to cross-domain prioritization and attributing year-over-year growth to shipped innovations.",
+      "summary_zh": "📌 研究问题：如何在不同产品界面（如发现、虚拟经济）之间比较随机对照试验（RCT）的效果，因为界面在触达用户和贡献全站指标上存在差异。\n\n🔬 研究方法：提出了“全站影响”概念及其“覆盖率因子”，并开发了两种估计器，分别用于差分均值指标和变体比率指标。\n\n📊 核心发现：实验提升是全站影响的较差代理，两者之间的Spearman秩相关系数仅为0.20，且最大的实验提升往往不对应最大的全站影响。\n\n💡 应用价值：该方法可用于跨域优先级排序，并将年度同比增长归",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "DECODE: Decomposable Environments for COntrolled Sequential-Decision Evaluation",
+      "authors": [
+        "Diego Silva Prado",
+        "Bruno Caldas de Souza",
+        "Tiago Amaral Penteado de Jesus",
+        "Ricardo Guimarães Herrmann",
+        "Cristiano Breuel"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-13",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.18367v1",
+      "cited_by_count": 0,
+      "abstract": "When a sequential decision system falls short of an optimum, its score does not reveal which modifications would improve its decisions. DECODE is a benchmark for testing such modifications through controlled experiments on planning and available information. Its consumer-credit collections generator provides five partially observed environments that share known dynamics matrices and vary a memory parameter and process noise. The experiments change selected inputs or planning rules while keeping the rest of the solver fixed. Each comparison specifies the solver's state inputs, response inputs and planning horizon. On the deterministic base environment, which was selected for a large gap between six-month and one-month planning with the hidden state, extending planning from one to six months increases the scores of two gradient-boosted solvers by 15 to 17 percentage points of the exact optimum, computed with the hidden state and borrower traits. Even at this horizon, the best graded solver, whose repayment response is fitted on logs, remains 15.6 points below that optimum. In a specified intervention sequence, three changes to its state inputs and their evaluation during search lower its score by 6.3 points, and replacing its fitted repayment model with the true response, evaluated with hidden borrower traits, then raises it by 15.6, a net recovery of nine of those points. Because the intermediate effects are conditional on the repayment model and the order of the changes, they do not uniquely assign the gap to separate causes. Within these limits, DECODE makes hypotheses about solver performance testable through specified interventions under known dynamics and explicit information conditions.",
+      "summary_zh": "【金融经济学】当一个序列决策系统未能达到最优解时，其评估结果无法揭示哪些修改措施能够改善其决策效果。DECODE是一个用于通过受控实验来测试这些修改措施的基准工具，这些实验针对规划过程和可用信息展开。该工具的消费者信贷回收模拟器提供了五个部分观测到的环境实例，这些环境实例具有相同的动态矩阵，但内存参数和处理噪声有所不同。实验中会改变某些输入参数或规划规则，而保持其他部分不变。每次实验都会明确指定求解器的状态输入、响应输入以及规划范围。在确定性基础环境中（该环境的特点是六个月规划和一个月规划之间存在较大差异，且状态信息是隐藏的），将规划时间从一个月延长到六个月后，两种基于梯度提升算法的求解器的得分相对于基于隐藏状态和借款人特征计算出的最优解提高了15%至17%。即便在这种规划范围内，表现最佳的求解器（其还款响应是基于对数数据进行拟合的）的得分仍比最优解低15.6个百分点。在特定的干预序列中，对求解器的状态输入进行三项修改并评估其效果后，其得分下降了6.3个百分点；随后将拟合的还款模型替换为基于隐藏借款人特征的真实还款数据，其得分又上升了15.6个百分点，从而实现了9个百分点的净提升。由于这些中间...。研究方法：实验方法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Exploitation, class income and welfare in a Sraffian economy with consumption preferences",
+      "authors": [
+        "Gabriel Montes-Rojas"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-13",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.18345v1",
+      "cited_by_count": 0,
+      "abstract": "This paper develops a Sraffian model of simple reproduction in which production prices and functional income distribution remain classically determined, while class consumption is chosen optimally at those prices and incomes. it then shows that once workers and capitalists choose consumption bundles according to class-specific preferences, rather than consuming fixed baskets, surplus value, exploitation rates, total profits, and capitalist welfare need not rise monotonically with the profit rate. The framework defines distributive Engel curves, tracing how consumption, profits, labor exploitation, and welfare vary along the wage-profit frontier. Higher profitability may expand capitalists' nominal claim on surplus, yet alter relative prices in ways that reduce their real consumption and welfare. The result qualifies standard Marxian and Sraffian accounts of net product distribution based on the wage-profit curve.",
+      "summary_zh": "【收入分配与福利】本文构建了一个基于斯拉夫模型的简单再生产模型，在该模型中，生产价格和功能性收入分配仍遵循传统经济学中的决定机制；而阶级消费则是在这些价格和收入水平下根据特定阶级偏好进行最优选择的。研究进一步表明，当工人和资本家根据自身阶级特征选择消费组合（而非固定消费组合）时，剩余价值、剥削率、总利润以及资本家的福利水平并不一定随着利润率的增长而单调上升。该模型还定义了“分配恩格尔曲线”，用以描述消费、利润、劳动剥削程度及福利水平在工资-利润前沿上的变化趋势。较高的盈利能力虽然可能增加资本家对剩余价值的名义索取权，但同时也可能通过改变相对价格来降低他们的实际消费水平和福利水平。这一研究结果对基于工资-利润曲线的传统马克思主义及斯拉夫学派关于净产品分配的理论提出了质疑。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Monetary policy in a Phelps–Winter Economy",
+      "authors": [
+        "Bruce C. Greenwald",
+        "Joseph E. Stiglitz"
+      ],
+      "venue": "NBER Working Papers",
+      "published_date": "",
+      "doi_url": "",
+      "openalex_url": "https://www.nber.org/papers/w36008#fromrss",
+      "cited_by_count": 0,
+      "abstract": "We use the Phelps-Winter customer market—providing a better theory of price determination for large parts of the economy than the standard model—to show that raising interest rates induces higher prices, as firms value current profits more, and are more willing to lose customers for short-term gains. These inflationary effects can be significant in relevant ranges of interest rates; they exist in the short run even when interest rate hikes succeed in cutting aggregate demand; and that they are amplified by policy uncertainty and the uncertainty about the effects of interest rate changes, both of which have increased as conventional policy has demonstrably failed badly to keep inflation at the 2% target. Empirical studies confirm this low level of ineffectiveness of raising interest rates in reducing inflation.  The weakening effectiveness of monetary policy was predicted by our earlier work on banks and the supply of credit, as a result of the elimination of interest prohibition on deposits; and further suggested by work on the structural transformation of the economy, as customer markets become more important.",
+      "summary_zh": "【货币政策与宏观经济】我们采用了Phelps-Winter客户市场模型——该模型相较于标准模型能够更准确地解释经济中大部分领域的价格形成机制——来说明：提高利率会导致价格上涨，因为企业更加重视当前利润，且更愿意为短期收益而失去客户。在某些利率范围内，这种通货膨胀效应可能十分显著；即使加息成功抑制了总需求，这种效应在短期内依然存在；同时，政策不确定性以及人们对利率变化影响的不确定性会进一步放大这些效应，而这两种不确定性在过去由于传统货币政策在将通胀率控制在2%目标上表现糟糕而显著增加。实证研究也证实了加息在降低通胀方面的效果极为有限。我们之前关于银行和信贷供应的研究已经预测到货币政策的效力会减弱，这一现象是由于存款利率管制被取消所致；此外，随着客户市场在经济结构中的重要性不断提升，相关研究也进一步支持了这一观点。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "nber"
+    }
+  ]
+}
