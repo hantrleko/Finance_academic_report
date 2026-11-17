@@ -1,49 +1,71 @@
 {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "count": 12,
-  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)",
   "latest_updated": true,
-  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（8 篇）、国际贸易（1 篇）、金融科技（1 篇）。方法上以实验方法、随机实验为主。来源分布：arXiv（7 篇）、NBER（3 篇）、OpenAlex（1 篇）。其中 3 篇命中顶级期刊白名单。",
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（5 篇）、国际贸易（2 篇）、风险管理与衍生品（2 篇）。方法上以数值模拟、模型校准为主。来源分布：OpenAlex（7 篇）、arXiv（5 篇）。",
   "insights": {},
   "papers": [
     {
-      "title": "The impact of agricultural pesticides on cancer prevalence in Midwest, United States",
+      "title": "Foreign Loan Financing for Indonesia’s Defense Modernization: Fiscal and Strategic Risks, Procurement Governance, and Industrial Self-Reliance",
       "authors": [
-        "Benjamin Cox",
-        "Brandon M. Varilek",
-        "Sushant Mehan",
-        "Hossein Moradi Rekabdarkolaee"
+        "Okky Anugerah Sakti",
+        "Guntur Eko Saputro",
+        "Muliahadi Tumanggor"
       ],
-      "venue": "Discover Public Health",
-      "published_date": "2026-11-15",
-      "doi_url": "https://doi.org/10.1186/s12982-026-03154-9",
-      "openalex_url": "https://openalex.org/W4411991940",
+      "venue": "Journal of Maritime Policy Science.",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.31629/jmps.v3i3.8775",
+      "openalex_url": "https://openalex.org/W7225859695",
       "cited_by_count": 0,
-      "abstract": "Abstract\n                  \n                    Purpose\n                    This study investigates the association between pesticide exposure and cancer prevalence rates in the Midwestern United States, accounting for key demographic and behavioral risk factors.\n                  \n                  \n                    Methods\n                    Bayesian linear and generalized linear models are employed to examines the relationship between county-level aggregate pesticide application volume (kg), used as a proxy for population-level exposure, and cancer prevalence rates in the Midwest United States. The analysis is based on pesticide usage data from 1992 to 2002 and cancer prevalence rates from 2017 to 2022 and demographic covariates including smoking prevalence, binge drinking rates, and obesity. Model selection procedures identified the best-fitting distribution for the outcome variable, and posterior inference was used to evaluate pesticide-specific effects on cancer rates.\n                  \n                  \n                    Results\n                    Glyphosate exposure showed no statistically confident association with cancer prevalence. Atrazine results exhibited substantial uncertainty, precluding definitive conclusions. However, exposure to Ethalfluralin, 2,4-D, Malathion, and MCPA demonstrated positive associations with elevated overall cancer rates.\n                  \n                  \n                    Conclusion\n                    These findings suggest that certain pesticide compounds may be associated with increased cancer risk in the Midwest population. The results underscore the importance of continued epidemiological research to elucidate the potential carcinogenic mechanisms of specific pesticides and inform public health policy.",
-      "summary_zh": "【金融经济学】摘要\n\n**研究目的**  \n本研究探讨了美国中西部地区农药暴露与癌症发病率之间的关系，并考虑了关键的人口统计和行为风险因素。\n\n**研究方法**  \n采用贝叶斯线性模型和广义线性模型来分析县级农药施用量（以千克为单位，作为人群暴露水平的代理指标）与美国中西部地区癌症发病率之间的关系。数据分析基于1992年至2002年的农药使用数据以及2017年至2022年的癌症发病率数据，同时还考虑了吸烟率、酗酒率和肥胖率等人口统计协变量。通过模型选择程序确定了最适合结果变量的分布类型，并利用后验推断方法评估了特定农药对癌症发病率的影响。\n\n**研究结果**  \n草甘膦暴露与癌症发病率之间未发现具有统计学意义的关联。阿特拉津的暴露情况存在较大不确定性，因此无法得出明确结论。然而，乙氟呋喃、2,4-D、马拉硫磷和MCPA的暴露与癌症发病率的升高存在正相关关系。\n\n**研究结论**  \n这些研究结果表明，某些农药化合物可能与美国中西部地区癌症发病率的增加有关。研究结果强调了继续开展流行病学研究的重要性，以阐明特定农药的潜在致癌机制，并为公共卫生政策提供依据。。研究方法：贝叶斯方法。",
+      "abstract": "Indonesia’s defense modernization requires substantial and sustained financing, yet fiscal constraints limit the government’s capacity to fund large-scale major weapons systems (MWS) procurement through annual budget allocations alone. This study examines the opportunities, risks, and policy implications of foreign loan financing for defense modernization and the strengthening of national defense-industrial self-reliance. Using a qualitative literature-review approach, the study applies content analysis to academic publications, regulations, policy documents, official institutional data, and selected international experiences. The findings show that foreign loans can improve financing certainty for long-term defense acquisitions and create opportunities to support technology transfer, offsets, domestic content requirements (TKDN), and the development of national industrial capabilities. However, these benefits are accompanied by significant risks, including debt-sustainability pressures, exchange-rate exposure, long-term fiscal commitments, supplier dependence, and potential technological reliance on foreign partners. The analysis further indicates that the effectiveness of foreign financing depends on procurement design, bargaining capacity, institutional coordination, contractual enforcement, and domestic absorptive capacity. Accordingly, this study proposes an integrated policy framework built on four interrelated pillars: fiscal sustainability, institutional strengthening, optimization of TKDN and offset mechanisms, and comprehensive debt-risk management. Foreign loans should therefore be treated not merely as financing instruments, but as strategic defense-economic policy tools capable of simultaneously supporting military modernization and strengthening Indonesia’s defense-industrial independence. The evidence base combines peer-reviewed scholarship with official Indonesian budget, planning, regulatory, and procurement documents available through September 2026.",
+      "summary_zh": "📌 研究问题：印尼在财政约束下如何利用外债融资支持国防现代化并增强工业自主？外债融资在支持国防采购的同时，面临哪些财政与战略风险？\n\n🔬 研究方法：采用定性文献综述和内容分析方法，对学术出版物、法规、政策文件、官方机构数据及国际经验进行分析。\n\n📊 核心发现：外债融资虽能提升长期采购的融资确定性并促进技术转让与工业能力建设，但也伴随债务可持续性压力、汇率风险及供应商依赖等挑战，其有效性取决于采购设计、议价能力及国内吸收能力。\n\n💡 应用价值：提出了基于财政可持续性、机构加强、TKDN优化及债务风险管理的综合",
       "topics": [
-        "Pesticide",
-        "Agriculture",
-        "Incidence (geometry)",
-        "Cancer incidence",
-        "Agricultural economics"
+        "Procurement",
+        "Modernization theory",
+        "Finance",
+        "Business",
+        "Loan"
       ],
       "source": "openalex"
     },
     {
-      "title": "Alignment by Socialization: Learning Tradeoffs Under Selection",
+      "title": "Russia's Maritime Defense Strategy in the Arctic: The Northern Sea Route and Strategic Deterrence",
       "authors": [
-        "Thomas Brennan",
-        "Andrew W. Lo",
-        "Chaoyi Zhao"
+        "Dwi Yolanda Nusantari Situmorang",
+        "Agus Adriyanto",
+        "Harjo Susmoro",
+        "Rudi  Hartono"
+      ],
+      "venue": "Journal of Maritime Policy Science.",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.31629/jmps.v3i3.8805",
+      "openalex_url": "https://openalex.org/W7225871982",
+      "cited_by_count": 0,
+      "abstract": "Russia's Arctic maritime strategy links the Northern Sea Route (NSR), a resource-oriented shipping corridor, with the Northern Fleet's strategic deterrence mission in the Kola–Barents region. This study examines how economic and defense objectives depend on partially overlapping maritime capabilities while remaining governed by different strategic requirements. A qualitative documentary analysis applies the Ends–Ways–Means framework to Russian policy documents, Rosatom operational reports, NATO statements, and peer-reviewed scholarship, distinguishing documented functions from analytical inference. Rosatom reported 37.89 million tonnes of NSR cargo in 2024, including 3.089 million tonnes of transit cargo, indicating that the corridor primarily supports resource-linked transportation rather than intercontinental transit. Meanwhile, the Kola–Barents operating environment supports the protection of ballistic-missile submarines and the credibility of nuclear second-strike deterrence. Ports, icebreakers, communications, and rescue services provide access and sustainment, but civilian functionality alone does not establish military assignment. The analysis identifies a conditional relationship described as shared means, unequal priorities: during heightened security pressure, protecting strategic deterrence may constrain competing uses of enabling infrastructure. Open sources, however, cannot verify specific military allocations or a universal hierarchy of priorities. The study contributes an evidence-bounded strategic explanation that differentiates economic logistics, potential cross-sector functions, and confirmed military capabilities while identifying sanctions, institutional arrangements, and industrial capacity as alternative explanations for observed investments.  This distinction clarifies how Arctic policy balances development and security.",
+      "summary_zh": "【国际贸易】俄罗斯的北极海上战略将北方海路（NSR）这一以资源运输为主的海上通道，与北方舰队在科拉-巴伦支海地区的战略威慑任务紧密联系在一起。本研究探讨了经济目标与国防目标如何依赖于部分重叠的海上运输能力，同时这些目标又受到不同战略需求的制约。通过定性文献分析方法，研究者运用“目的-手段-途径”（Ends-Ways-Means）框架，对俄罗斯的政策文件、俄罗斯原子能公司（Rosatom）的运营报告、北约的声明以及经过同行评审的学术研究成果进行了分析，区分了文件中明确记载的功能与基于分析得出的推论。根据俄罗斯原子能公司的数据，2024年北方海路的货物运输量达到了3789万吨，其中过境货物为308.9万吨，这表明该通道主要服务于资源运输，而非洲际货物运输。科拉-巴伦支海地区的海上环境则为弹道导弹潜艇的防护以及核威慑能力的展示提供了支持。港口、破冰船、通信设施和救援服务为相关军事行动提供了保障，但仅从民用功能的角度来看，并不足以确定这些设施的军事用途。研究指出，在安全压力加剧的情况下，保护战略威慑能力可能会限制这些基础设施的其他用途。然而，公开资料无法核实具体的军事部署情况或各项目标的优先级顺序。...。",
+      "topics": [
+        "Deterrence theory",
+        "Credibility",
+        "Arctic",
+        "Business",
+        "International trade"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "The Geoengineering Put: Ecological Debt, Termination Risk, and Asset Prices",
+      "authors": [
+        "Samuel Hartzmark",
+        "Kelly Shue"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-13",
+      "published_date": "2026-11-16",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.18531v1",
+      "openalex_url": "http://arxiv.org/abs/2611.21568v1",
       "cited_by_count": 0,
-      "abstract": "Artificial intelligence (AI) agents are expected to complete tasks while following rules of conduct, but these objectives can conflict. We study how evolutionary selection shapes an agent's choices between them, and whether experience can make those choices reflect human judgments and withstand subsequent pressures. In our model, copies of an agent face a common uncertain reward state, and only those taking the rewarded action reproduce. We show that long-run growth is maximized when each action is taken as often as the environment rewards it. We compare three policies. A task-only policy thrives in a sandbox rewarding completion alone but fails when conduct matters. A fixed linear policy increasingly favors task completion as its stakes rise, even where humans never reward it. A learned policy instead converges to the tradeoffs rewarded by its environment; when humans supply the rewards, we call this socialization. Accumulated experience makes socialization harder to reverse under subsequent task-only training, although violations can arise before the prevailing disposition changes, and finite memory weakens this protection. When a single violation can end a deployment, a hard prohibition can prevent it, but a mistaken prohibition can also be costly. Experiments with small neural networks illustrate how training targets and memory shape these outcomes. Our results suggest that alignment depends not only on the objectives assigned to agents, but also on the environments that shape and sustain their behavior.",
-      "summary_zh": "【国际贸易】人工智能（AI）代理在执行任务时需要遵循一定的行为准则，但这些准则之间可能存在冲突。我们研究了进化选择如何影响代理在这些准则之间的选择，以及经验是否能够使这些选择体现人类的判断力，并在后续的压力下保持稳定。在我们的模型中，代理的多个副本面临一个共同的、具有不确定性的奖励状态，只有采取被奖励行为的副本才能存活下来。我们发现，当某个行为被环境频繁奖励时，代理的长期发展才能达到最大化。我们比较了三种策略：  \n1. **仅关注任务的策略**：在仅奖励任务完成的简单环境中表现良好，但在需要遵守行为准则的情况下会失败；  \n2. **固定线性策略**：随着任务风险的增加，该策略越来越倾向于完成任务，即使人类从不给予奖励；  \n3. **学习型策略**：该策略会逐渐适应环境所认可的权衡方案；当人类提供奖励时，这一过程被称为“社会化”。  \n积累的经验使得在后续仅关注任务的训练中难以逆转这种“社会化”倾向，尽管在主导行为发生变化之前仍可能出现违规行为，而且有限的记忆容量会削弱这种保护作用。  \n当一次违规行为就可能导致整个系统的失败时，严格的禁令可以有效防止这种情况；然而，错误的禁令也可能带来...。研究方法：神经网络、实验方法。",
+      "abstract": "Solar geoengineering offers an inexpensive and fast-acting way to lower global temperatures without removing carbon from the atmosphere. As warming intensifies, climate-vulnerable countries face growing incentives to deploy geoengineering unilaterally. The economic and financial consequences of this prospect remain largely overlooked. We develop a general equilibrium macro-finance framework in which geoengineering acts as a put option on climate damages, funded by the \"ecological debt\" of masked warming. If deployment stops, temperatures snap back in a catastrophic termination shock. Anticipation of geoengineering raises current brown firm valuations and lowers the optimal carbon tax, helping explain two puzzles in the existing literature: high brown-firm valuations and low carbon taxes. As ecological debt grows, however, termination risk transforms brown firms into toxic assets. Geoengineering also reshapes green innovation: it buys time for a breakthrough, but can weaken innovation incentives by lowering energy and carbon prices. Termination risk partly restores research incentives and directs them toward carbon removal, which can retire ecological debt. Our calibrations show that the geoengineering put can raise welfare across a range of parameter assumptions. Our framework clarifies how this conclusion depends on uncertain parameters and where further research is most needed.",
+      "summary_zh": "【风险管理与衍生品】太阳地球工程提供了一种成本低廉且见效迅速的方法，能够在不从大气中去除碳的情况下降低全球温度。随着气候变暖加剧，那些容易受到气候变化影响的国家越来越有动力单方面实施地球工程。然而，这一做法所带来的经济和金融后果在很大程度上被忽视了。我们构建了一个一般均衡宏观金融框架，在该框架中，地球工程被视为一种针对气候损害的“看跌期权”，其资金来源于因温室气体排放而累积的“生态债务”。如果停止实施地球工程，全球气温将迅速回升，导致灾难性的后果。人们对地球工程的预期会抬高那些高污染企业的估值，并降低最优碳税水平，这有助于解释现有研究中的两个谜题：高污染企业估值偏高以及碳税水平偏低的现象。然而，随着生态债务的不断增加，终止地球工程的风险会使得这些高污染企业变成“有毒资产”。地球工程还会重塑绿色创新的发展路径：它为技术突破赢得了时间，但可能会通过降低能源和碳价格而削弱创新动力。终止风险在一定程度上能够恢复创新动力，并引导创新活动朝着碳减排的方向发展，从而逐步偿还生态债务。我们的模型校准结果表明，在各种参数假设下，地球工程这一“看跌期权”都有助于提升整体福利水平。我们的框架明确了这一结论如何受到不确定参...。研究方法：模型校准、均衡模型。",
       "topics": [
         "Economics",
         "Finance"
@@ -51,17 +73,19 @@
       "source": "arxiv"
     },
     {
-      "title": "Estimating a Rational Inattention Discrete Choice Model: A Semiparametric Approach",
+      "title": "Never too LATE: Exploiting restrictions for inference on the Local Average Treatment Effect",
       "authors": [
-        "Hanqi Wang"
+        "Xavier D'Haultfœuille",
+        "Yagan Hazard",
+        "Philipp Ketz"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-13",
+      "published_date": "2026-11-16",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.18479v1",
+      "openalex_url": "http://arxiv.org/abs/2611.21496v1",
       "cited_by_count": 0,
-      "abstract": "People's choices depend on both the payoffs of the available options and what they learn about those payoffs before deciding. This paper shows how choice data identify both unobserved payoff heterogeneity and the cost of information acquisition in a rational inattention discrete-choice model. I establish conditions for semiparametric point identification using exogenous payoff and information-cost shifters, without imposing parametric forms on the taste-shock distribution or on how the unit cost of information varies with observed characteristics. In the model with binary choice, I construct an unobserved choice threshold whose cumulative distribution function is the choice probability as a function of the payoff shifter. Moments of this threshold identify the payoff coefficients and the unit cost of information at each value of the information-cost shifter. A deconvolution argument then identifies the taste-shock distribution. I then extend identification to the model with multinomial choice. To estimate the model, I propose a sieve minimum-distance estimator based on observed market shares and establish its consistency. For inference, I construct confidence regions by test inversion because binding parameter constraints can make the estimator's limiting distribution nonnormal. In an application to Amazon Mechanical Turk, model counterfactuals show that lower unit costs of information raise the average task-taking probability and reduce wage elasticity.",
-      "summary_zh": "【金融经济学】人们的选择既取决于可用选项的收益，也取决于他们在做出决策之前对这些收益的了解。本文展示了如何在理性忽视（rational inattention）的离散选择模型中，通过选择数据来识别未观测到的收益异质性以及信息获取的成本。我提出了在使用外生收益和信息成本变量进行半参数点识别的条件，同时不对偏好冲击分布（taste-shock distribution）或信息单位成本随观测特征变化的方式施加参数化限制。在二元选择模型中，我构建了一个未观测到的选择阈值，其累积分布函数即为选择概率与收益变量之间的关系函数；该阈值的矩估计可以确定每个信息成本水平下的收益系数和信息单位成本。随后通过反卷积（deconvolution）方法可以确定偏好冲击分布。接着，我将这种识别方法扩展到多项选择模型。为了估计模型，我提出了一种基于观测市场份额的筛选最小距离（sieve minimum-distance）估计器，并证明了其一致性。在推断过程中，由于参数约束可能导致估计量的极限分布非正态，我采用测试反演（test inversion）方法构建置信区间。在应用于亚马逊机械土耳其（Amazon Mechanica...。",
+      "abstract": "Under the exclusion restriction, independence, and monotonicity assumptions, Imbens and Angrist (1994) show that the Wald estimand is equal to the local average treatment effect (LATE). However, these assumptions entail additional restrictions, which we exploit for inference on the LATE. Specifically, we propose a conditional likelihood ratio test that we show controls asymptotic size uniformly over a large class of data-generating processes. The test has very low computational cost: it requires no simulation and involves solving at most four quadratic programming problems. Monte Carlo simulations show that our test can offer substantial power gains over the Wald and Anderson-Rubin tests, including when the instrument is weak.",
+      "summary_zh": "📌 研究问题：如何利用排除限制、独立性和单调性等假设带来的额外限制，对局部平均处理效应（LATE）进行推断？\n\n🔬 研究方法：提出了一种条件似然比检验，该检验在控制渐近大小的同时，计算成本极低，无需模拟且最多只需解决四个二次规划问题。\n\n📊 核心发现：蒙特卡洛模拟表明，该检验相比 Wald 检验和 Anderson-Rubin 检验具有显著的功率增益，特别是在工具变量较弱的情况下。\n\n💡 应用价值：为金融经济学中的因果推断提供了一种高效且",
       "topics": [
         "Economics",
         "Finance"
@@ -69,75 +93,134 @@
       "source": "arxiv"
     },
     {
-      "title": "Research on the Impact of the Digital Economy on Residents' Consumption Potential",
+      "title": "Economic Resilience as a Non-Military Deterrence Strategy for Universal People’s Defense and Security System",
       "authors": [
-        "Wen-Hui Zhao"
+        "Maheswari Candraningtyas",
+        "Guntur Eko Saputro",
+        "Suwito Suwito"
       ],
-      "venue": "Journal of Economics and Public Finance",
-      "published_date": "2026-11-11",
-      "doi_url": "https://doi.org/10.22158/jepf.v12n4p25",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:295894271",
+      "venue": "Journal of Maritime Policy Science.",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.31629/jmps.v3i3.8792",
+      "openalex_url": "https://openalex.org/W7225897310",
       "cited_by_count": 0,
-      "abstract": "In the context of the rapid development of the digital economy and the deepening implementation of the strategy of expanding domestic demand, exploring the impact of the digital economy on residents' consumption potential holds significant practical importance. Based on the panel data of 31 provinces in China from 2011 to 2024, this paper constructs an evaluation index system for the digital economy and residents' consumption potential, and uses the two-way fixed effects model to empirically test the impact of the digital economy on residents' consumption potential. It further examines the mediating role of market activity and the moderating role of the level of population aging. The research results show that the digital economy can significantly enhance residents' consumption potential; market activity plays a partial mediating role in the process of the digital economy influencing residents' consumption potential, that is, the digital economy further releases residents' consumption potential by improving market activity; the level of population aging has a positive moderating effect, which can strengthen the promoting effect of the digital economy on residents' consumption potential. Heterogeneity analysis reveals that the promoting effect of the digital economy on residents' consumption potential is more obvious during the period of deepening digital economy development and in regions with a low consumption environment.",
-      "summary_zh": "📌 研究问题：数字经济的发展如何影响居民消费潜力，以及市场活动和人口老龄化水平在其中扮演何种角色。\n\n🔬 研究方法：基于2011至2024年中国31个省份的面板数据，构建评价指标体系，并采用双向固定效应模型实证检验数字经济对消费潜力的影响，同时考察市场活动的中介作用及人口老龄化的调节作用。\n\n📊 核心发现：数字经济显著提升了居民消费潜力，市场活动在其中起部分中介作用，而人口老龄化水平具有正向调节效应；此外，在数字经济深化期及消费环境较差的地区，这种促进作用更为明显。\n\n💡 应用价值：为深化数字经济发展、优化消费环境及制定应对人口老龄化的消费政策提供了实证依据。",
+      "abstract": "Economic resilience is increasingly important to national defense because strategic dependencies, supply chain disruptions, and geoeconomic pressures can undermine essential state functions without direct military confrontation. This study examines the role of economic resilience as a non-military deterrence strategy within Indonesia’s Universal People’s Defense and Security System (SISHANKAMRATA). Employing a descriptive qualitative approach, the research reviews international scholarly publications and strategic literature addressing economic resilience, supply chain security, deterrence by denial, total defense, social legitimacy, and defense industrial self-reliance. The analysis compares theoretical arguments and synthesizes relationships among productive capacity, external dependencies, strategic vulnerability, and national defense preparedness. The findings suggest that economic resilience contributes to deterrence by reducing critical dependencies, diversifying supply sources, strengthening domestic production and defense industries, maintaining strategic reserves, and improving coordination among civilian and defense institutions. Public trust and social participation further support the continuity of collective defense functions during crises. Economic resilience, however, does not require complete self-sufficiency; it depends on maintaining adequate national capabilities and viable strategic alternatives while sustaining international cooperation. Within SISHANKAMRATA, these interconnected capabilities can increase Indonesia’s capacity to withstand external economic pressure, protect essential supply chains, and preserve societal and defense functions during prolonged disruption. The study conceptualizes economic resilience as a structural component of non-military deterrence supported by institutional coordination and societal legitimacy within Indonesia’s national defense framework.",
+      "summary_zh": "【金融经济学】经济韧性对国防日益重要，因为战略依赖性、供应链中断以及地缘经济压力可能在不发生直接军事冲突的情况下削弱国家的关键职能。本研究探讨了经济韧性作为非军事威慑策略在印度尼西亚“全民防御与安全体系”（SISHANKAMRATA）中的作用。采用描述性定性研究方法，该研究回顾了国际学术文献和战略文献中关于经济韧性、供应链安全、通过剥夺手段实施威慑、全面防御、社会合法性以及国防工业自给自足等方面的内容。分析比较了各种理论观点，并梳理了生产能力、外部依赖性、战略脆弱性以及国防准备状态之间的关系。研究结果表明，经济韧性通过减少关键依赖性、多元化供应来源、加强国内生产和国防产业、维持战略储备以及提升军民机构间的协调性来发挥威慑作用。公众信任和社会参与进一步保障了危机期间集体防御功能的连续性。然而，经济韧性并不要求实现完全的自给自足，而是需要在保持国际合作的同时，维持足够的国家能力和可行的战略选择。在“全民防御与安全体系”框架内，这些相互关联的能力能够提升印度尼西亚抵御外部经济压力的能力，保护关键供应链，并在长期中断情况下维护社会与国防职能的正常运转。本研究将经济韧性视为印度尼西亚国防体系中由制度协调...。",
       "topics": [
-        "Economics",
-        "Computer Science"
+        "Deterrence theory",
+        "Resilience (materials science)",
+        "National security",
+        "Business",
+        "Legitimacy"
       ],
-      "source": "semantic_scholar"
+      "source": "openalex"
     },
     {
-      "title": "How Will the 340B Rebate Model Pilot Affect Covered Entity Finances?",
+      "title": "Defense Spending and Indonesia's Economic Growth: Revisiting the Link Between Security Maritime and Development",
       "authors": [
-        "Charles J. Courtemanche"
+        "Windy Widya Putri",
+        "Sri Murtiana",
+        "Endang Purwaningsih"
       ],
-      "venue": "NBER Working Papers",
-      "published_date": "",
-      "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w36006#fromrss",
+      "venue": "Journal of Maritime Policy Science.",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.31629/jmps.v3i3.8871",
+      "openalex_url": "https://openalex.org/W7225906604",
       "cited_by_count": 0,
-      "abstract": "The Health Resources and Services Administration (HRSA) plans to implement a pilot switching 340B from an upfront discount model to a rebate model for drugs in the Medicare Drug Price Negotiation Program (MDPNP). This study uses calibration methods to predict the impact of the rebate model pilot (RMP) on covered entities’ net revenues from the 340B program. I examine possible losses from averted duplicate discounts; denial of valid claims; manufacturers using data to exert influence; liquidity-related expenses; and administrative and staffing costs. I also project the effects of switching the entire 340B program to a rebate model. I project net revenue losses from the RMP of $1.5 billion. Expansion to all of 340B would increase the predicted losses to $22.8 billion, cutting net revenues from the program by 32%. The majority of losses will come from administrative and staffing costs, which do not benefit manufacturers, implying a net negative effect of switching to a rebate model. Covered entity losses from the RMP will be limited by the pilot only applying to a small percentage of 340B sales as well as restrictions HRSA’s guidance places on manufacturers. If the rebate model expands to all of 340B or if the restrictions are inadequately enforced, the losses will grow substantially.",
-      "summary_zh": "【金融经济学】美国卫生资源与服务管理局（HRSA）计划将医疗保险药品价格谈判计划（MDPNP）中的340B项目从预先折扣模式转变为返利模式。本研究采用校准方法来预测返利模式试点（RMP）对相关实体从340B项目中获得的净收入的影响。我分析了可能导致的损失，包括：避免重复折扣所带来的收益减少、有效索赔被拒付、制造商利用数据施加影响、与流动性相关的费用，以及行政和人员成本。同时，我还预测了将整个340B项目转变为返利模式后的影响。根据预测，RMP将导致净收入损失15亿美元；如果这一变革扩展到整个340B项目，预计损失将增至228亿美元，使该项目的净收入减少32%。其中大部分损失将来自行政和人员成本，而这些成本并不会使制造商受益，因此转向返利模式总体上会产生负面影响。由于返利模式仅适用于340B销售额的一小部分，且HRSA的指导方针对制造商有一定的限制，相关实体的损失也会受到一定程度的限制。但如果返利模式覆盖整个340B项目，或者相关限制未能得到有效执行，损失将会大幅增加。。研究方法：模型校准。",
+      "abstract": "The relationship between defense expenditure and economic growth remains unsettled because strategic security, domestic production, technological learning, and fiscal opportunity costs operate through channels. This article reexamines Indonesian military spending during 2021–2025 using exploratory secondary data and a structured, non-systematic narrative synthesis of ten comparative empirical studies. Evidence comes from SIPRI, Indonesian budget documentation, official economic statistics, and published research available through November 2026. Internationally defined Indonesian military expenditure reached approximately US$15.03 billion, or 1.04% of gross domestic product, in 2025. Real economic growth was 5.11% that year, although their simultaneous movement does not demonstrate causation. The analysis separates operational security benefits from possible domestic industrial effects and alternative public spending forgone. A Schumpeterian perspective identifies conditional innovation pathways involving research, supplier learning, technology transfer, and civilian applications, without presuming that these outcomes occurred. Available public data cannot reliably quantify Indonesian defense research spillovers, domestic procurement value added, or sector-specific expenditure displacement. An illustrative allocation equivalent to 1.5% of unchanged 2025 GDP would imply roughly US$21.7 billion, but this calculation is neither a verified government target nor a forecast. Comparative studies report heterogeneous associations across countries, periods, and empirical methods. The study therefore offers an evidence-bounded interpretation rather than an estimated national growth multiplier. It recommends consistent expenditure classifications, transparent procurement evaluation, measurable maritime capability outputs, and explicit assessment of long-term financing and fiscal trade-offs for policy deliberation in Indonesia.",
+      "summary_zh": "【金融经济学】国防支出与经济增长之间的关系尚未明确，因为战略安全、国内生产、技术学习以及财政机会成本等因素通过多种渠道产生影响。本文利用探索性二手数据以及对十项比较实证研究的系统性、非系统性分析，重新审视了2021至2025年间印度尼西亚的军事支出情况。数据来源包括国际防务研究机构（SIPRI）的资料、印度尼西亚预算文件、官方经济统计数据以及截至2026年11月发布的学术研究成果。根据国际标准，2025年印度尼西亚的军事支出约为150.3亿美元，占国内生产总值（GDP）的1.04%。当年实际经济增长率为5.11%，但两者之间的同步变化并不能证明存在因果关系。分析中区分了军事支出带来的安全效益与可能对国内产业产生的影响，以及由此导致的其他公共支出减少。从熊彼特的理论视角出发，本文探讨了涉及研究开发、供应商学习、技术转移和民用应用等方面的创新路径，但并未假设这些结果必然会发生。现有的公共数据无法可靠地量化印度尼西亚国防支出的溢出效应、国内采购所带来的附加值，或特定领域的支出替代效应。如果将国防支出维持在2025年GDP水平的1.5%，则总支出约为217亿美元；不过这一计算既不是政府官方设定的目标，...。",
       "topics": [
         "Economics",
-        "Finance"
+        "Procurement",
+        "Government spending",
+        "Public economics",
+        "Public expenditure"
       ],
-      "source": "nber"
+      "source": "openalex"
     },
     {
-      "title": "Horizontal Equity of Taxation: Citizen Beliefs and Policy Preferences",
+      "title": "Penguatan Kemandirian Usaha melalui Manajemen Keuangan dan Pembukuan Terpadu bagi KWT Berkah Makmur, Desa Pucungbedug, Kabupaten Banjarnegara",
       "authors": [
-        "Pierre Bachas",
-        "Christopher A. Hoy",
-        "Anders Jensen",
-        "Mahvish Shaukat"
+        "Altri Mulyani",
+        "Alpha Nadeira Mandamdari",
+        "Dwi Putriana Nuramanah Kinding",
+        "Anggi Fitria Cahyaningsih",
+        "Ernes Septina Azizi"
       ],
-      "venue": "NBER Working Papers",
-      "published_date": "",
-      "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w36007#fromrss",
+      "venue": "NUSANTARA Jurnal Pengabdian Kepada Masyarakat",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.55606/nusantara.v6i4.10689",
+      "openalex_url": "https://openalex.org/W7233541255",
       "cited_by_count": 0,
-      "abstract": "Taxes are harder to enforce on the self-employed than on wage earners, creating horizontal inequities among taxpayers with similar incomes. Using tax microsimulation and household survey data from 29 developing countries, we show that horizontal inequities in actual tax systems are comparable in magnitude to vertical equity and are exacerbated by progressive reforms that fall disproportionately on wage earners. We then conduct surveys and randomized information experiments in Pakistan to study public perceptions of these inequities. Although providing information raises fairness concerns, it does not increase support for reforms reducing it, revealing an important political constraint to improving tax equity.",
-      "summary_zh": "【金融经济学】对于个体经营者而言，征税比对于工资收入者而言更为困难，这导致了收入水平相似的纳税人之间的横向不平等。通过利用29个发展中国家的税收微观模拟数据及家庭调查数据，我们发现实际税收体系中的横向不平等程度与纵向不平等相当，并且这种不平等因那些对工资收入者影响较大的累进式税收改革而进一步加剧。随后，我们在巴基斯坦进行了调查和随机信息实验，以研究公众对这些不平等现象的看法。尽管提供相关信息会引发人们对公平性的担忧，但这并未增加人们对减少这种不平等的税收改革的支持，这揭示了在改善税收公平性方面存在重要的政治障碍。。研究方法：数值模拟、随机实验、实验方法、调查数据。",
+      "abstract": "The Berkah Makmur Women Farmers’ Group (KWT) in Pucungbedug Village relies on the potential of corn and cassava grown on dryland to produce gluten-free functional foods, namely instant corn rice and cassava rice, as well as processed products such as corn sticks and corn “dawet”. Despite having broad market prospects, the group’s business development is hampered by weak managerial governance, financial records that are intermingled with household affairs, and low financial literacy. This research-based Community Service Program aims to improve the KWT members’ capacity in financial management and integrated bookkeeping. The implementation method uses a participatory approach involving 11 active members of the Berkah Makmur Women’s Group through training sessions, simulations on maintaining a daily cash journal, calculating the Cost of Goods Sold (COGS), and managing profit and loss. The evaluation, which used pre-tests and post-tests, was conducted through the completion of questionnaires, with the results showing substantial descriptive improvement across all indicators, with the proportion of participants in the “Strongly Understand” category increasing for all indicators (even the indicator for understanding financial separation increased by 46%), while the “Somewhat Understand” and “Do Not Understand” categories were completely eliminated (0%). These results demonstrate that structured training can transform the group’s mindset from conventional production to a transparent and accountable business orientation, thereby supporting the Women Farmers’ Group (KWT) 's business independence.",
+      "summary_zh": "【金融经济学】位于普琼贝杜格村（Pucungbedug Village）的Berkah Makmur妇女农民小组（KWT）充分利用旱地种植的玉米和木薯资源，生产无麸质的功能性食品，主要包括即食玉米米和木薯米，以及玉米棒和玉米“dawet”等加工产品。尽管这些产品具有广阔的市场前景，但该小组的事业发展仍受到管理不善、财务记录与家庭事务混杂以及财务知识匮乏等因素的制约。本研究基于社区服务计划（Community Service Program），旨在提升KWT成员的财务管理能力和综合记账水平。实施方法采用参与式教学方式，邀请11名活跃的小组成员参与培训，内容包括日常现金日记的记录方法、销售成本（COGS）的计算方法以及利润与亏损的管理。评估通过前后测试进行，通过问卷调查收集数据。结果显示，所有指标均取得了显著进步：在“完全理解”类别中的参与者比例显著增加（尤其是对财务分离概念的理解提高了46%），而“部分理解”和“完全不理解”类别的参与者比例降为零（0%）。这些结果表明，结构化的培训能够帮助小组转变传统的生产思维模式，树立透明、负责任的经营理念，从而支持KWT妇女农民小组实现业务独立。。研究方法：数值模拟。",
       "topics": [
-        "Economics",
-        "Finance"
+        "Mindset",
+        "Business",
+        "Profit (economics)",
+        "Agricultural science",
+        "Cash"
       ],
-      "source": "nber"
+      "source": "openalex"
     },
     {
-      "title": "Disenfranchisement in Spatial Voting Games",
+      "title": "Government-Directed Lng Export Cargo Diversion, Joint Lifting, And Contractor Entitlement Under Indonesian Production Sharing Contracts",
       "authors": [
-        "Vincent Lageschulte",
-        "Joel Nishimura"
+        "Rakhmad Dewanto"
+      ],
+      "venue": "Advances In Social Humanities Research",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.46799/adv.v4i11.739",
+      "openalex_url": "https://openalex.org/W7233541803",
+      "cited_by_count": 0,
+      "abstract": "Indonesia's dual role as an LNG exporter with long-term contractual commitments and a country experiencing increasing domestic natural gas demand creates legal tensions when the government requires previously scheduled export cargoes to be canceled, postponed, or diverted to domestic consumers. This study aims to develop a structured legal framework for examining government-directed liquefied natural gas (LNG) cargo diversion under Indonesian Production Sharing Contracts (PSCs), particularly in circumstances where joint lifting consolidates government and contractor entitlements into shared cargoes. Employing a normative juridical approach, the study conducts a doctrinal analysis of legislation, regulatory frameworks, and international arbitral jurisprudence, including Union Fenosa Gas v. Egypt, Karaha Bodas v. Pertamina, and Vivendi. The analysis distinguishes five frequently conflated legal dimensions: public law authority, PSC allocation and Domestic Market Obligation (DMO), joint lifting and accounting mechanisms, LNG Sale and Purchase Agreement (SPA) obligations and consequences, and international investment law. The findings indicate that although Indonesian law establishes a strong constitutional and statutory foundation for ensuring domestic energy security, governmental authority does not automatically extinguish contractors' contractual entitlements or obligations arising from existing SPAs. Joint lifting is characterized as a commercialization and accounting mechanism rather than an independent source of substantive ownership rights. Consequently, diverted LNG volumes exceeding DMO requirements necessitate transparent reconciliation through replacement lifting, appropriate valuation, or compensation arrangements. The study concludes that Indonesia's LNG cargo diversion policy should incorporate seven essential elements: a clear legal basis, well-defined triggering conditions, explicit treatment of DMO requirements, identification of economic entitlements, transparent lifting reconciliation procedures, provisions governing existing SPAs, and appropriate compensation mechanisms. These elements are essential for balancing national energy security objectives with investment credibility, contractual stability, and legal certainty.",
+      "summary_zh": "【国际贸易】印度尼西亚同时扮演着液化天然气（LNG）出口国的角色，并承担着长期合同义务；另一方面，该国国内对天然气的需求也在不断增加。当政府要求取消、推迟或将原本计划出口的LNG货物转供给国内消费者时，这便引发了法律上的矛盾。本研究旨在建立一个系统的法律框架，以分析在印度尼西亚生产分成合同（Production Sharing Contracts, PSCs）框架下，政府指令下的LNG货物转移行为，尤其是在“联合开采”（joint lifting）模式下，政府与承包商的权利如何合并为共享货物的情况。通过采用规范法学的方法，本研究对相关立法、监管框架以及国际仲裁判例（包括Union Fenosa Gas v. Egypt、Karaha Bodas v. Pertamina和Vivendi案）进行了理论分析。研究区分了五个经常被混淆的法律维度：公法权威、生产分成合同中的分配规定与国内市场义务（Domestic Market Obligation, DMO）、联合开采与会计机制、LNG销售与购买协议（LNG Sale and Purchase Agreement, SPA）中的义务与后果，以及国际...。",
+      "topics": [
+        "Business",
+        "Statutory law",
+        "Government (linguistics)",
+        "Liquefied natural gas",
+        "Entitlement (fair division)"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "The Effect of Dividend Policy, Earnings per Share, and Capital Structure on the Stock Prices of Technology Companies",
+      "authors": [
+        "Alija Ahmad Zaki",
+        "Hendrato Setiabudi Nugroho"
+      ],
+      "venue": "Journal of Multidisciplinary Science MIKAILALSYS",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.58578/mikailalsys.v4i3.12660",
+      "openalex_url": "https://openalex.org/W7233543435",
+      "cited_by_count": 0,
+      "abstract": "Technology-sector stock prices fluctuate, while previous studies report inconsistent findings on their determinants. This study examines the partial and simultaneous effects of dividend policy, Earnings Per Share (EPS), and capital structure on stock prices. A quantitative approach and explanatory design were employed. Through purposive sampling, six technology-sector companies listed on the Indonesia Stock Exchange during 2023–2025 were selected, yielding 18 observations. Secondary data from financial reports and stock price records were analyzed using multiple linear regression with SPSS. The results indicate that dividend policy has a negative and significant effect on stock prices, EPS has a positive and significant effect, whereas capital structure has no significant partial effect. Together, the three variables significantly affect stock prices. These findings highlight the relevance of earnings per share and dividend decisions in stock valuation. Technology companies should balance dividend distributions with financing needs, while investors may also consider EPS when evaluating investment decisions.",
+      "summary_zh": "【公司金融】科技行业股票价格波动较大，而以往的研究对其决定因素得出的结论并不一致。本研究探讨了股息政策、每股收益（EPS）和资本结构对股票价格的单独影响及综合效应。研究采用了定量分析方法和解释性研究设计。通过目的性抽样，选取了2023至2025年间在印度尼西亚证券交易所上市的六家科技行业公司，共获得18个观测样本。利用SPSS软件对财务报告和股价记录中的二手数据进行了多元线性回归分析。结果表明，股息政策对股票价格具有显著的负面影响；每股收益对股票价格具有显著的正面影响；而资本结构对股票价格没有显著的单独影响。这三个变量共同对股票价格产生了显著影响。这些发现凸显了每股收益和股息决策在股票估值中的重要性。科技公司应在股息分配与融资需求之间取得平衡，投资者在评估投资决策时也应考虑每股收益因素。。研究方法：回归分析。",
+      "topics": [
+        "Stock exchange",
+        "Dividend",
+        "Stock (firearms)",
+        "Earnings per share",
+        "Dividend policy"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Sharp High-Dimensional Gaussian Approximations over Rectangles without Covariance Restrictions",
+      "authors": [
+        "Victor Chernozhukov",
+        "Denis Chetverikov",
+        "Kengo Kato",
+        "Yuta Koike"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-13",
+      "published_date": "2026-11-16",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.18468v1",
+      "openalex_url": "http://arxiv.org/abs/2611.21474v1",
       "cited_by_count": 0,
-      "abstract": "The questions of voting rights, group membership, and the boundaries of acceptable discourse all involve a recursive, self-stability issue, wherein the voters, group members, and acceptable commentators are often the ultimate arbiters of their own rules for inclusion and exclusion. In order to understand how ideological or issue diversity may impact the stability of such inclusion and exclusion, we introduce franchise elections, where voting members of a group vote to change the electorate. In particular, when agents are positioned inside an ideological or issue space, a social choice function that aggregates agent viewpoints induces a preference for agents over group composition, where agents prefer groups that improve the social choice function outcome for them. We demonstrate that when ideological space is two-dimensional, these franchise elections can generate complex behavior and that this complexity exists for any social choice function. Using the Yolk social choice function from voting theory, we illustrate that franchise elections can predict that agents attempting to introduce a new ideological axis perpendicular to an existing left-right spectrum risk disenfranchisement unless they ally with either side of the spectrum, and that franchise elections can cycle with any period.",
-      "summary_zh": "【金融经济学】关于投票权、群体成员资格以及可接受言论的界限等问题，都涉及一个递归的、自我稳定的机制：选民、群体成员以及可接受的评论者往往本身就是决定自身包容与排斥规则的最终裁决者。为了理解意识形态或议题多样性如何影响这种包容与排斥机制的稳定性，我们引入了“选举权选举”这一概念，即群体中的投票成员通过投票来改变选民构成。具体而言，当个体处于某种意识形态或议题框架内时，一种汇总个体观点的社会选择函数会促使个体更倾向于那些能够改善自身社会选择结果的群体构成。我们证明了：当意识形态空间为二维时，这种选举权选举能够产生复杂的行为模式，并且这种复杂性适用于任何类型的社会选择函数。以投票理论中的“Yolk社会选择函数”为例，我们发现：试图引入与现有左右翼谱系垂直的新意识形态轴的个体，除非与谱系中的某一方结盟，否则可能会面临被剥夺选举权的风险；此外，选举权选举的周期可以是任意的。。",
+      "abstract": "We study how well a sum of $n$ independent random vectors with $p$ coordinates can be approximated by a Gaussian vector with the same mean and covariance. We measure the error over rectangles, so the bounds apply to maxima and simultaneous confidence regions. The coordinates may be arbitrarily dependent, even exactly linearly dependent, and the bounds do not deteriorate as the covariance matrix becomes singular. After standardizing the coordinate variances, bounded or sub-exponential coordinates give the $n^{-1/2}$ sample-size rate up to logarithmic factors, with the size or tail bounds held fixed. The main upper bounds retain the Gaussian expected maximum, improving the rates when the coordinates are strongly dependent. Fourth-moment refinements give further improvements when large observations contribute little to individual coordinate variances. If we instead impose a fixed moment bound of order $q>4$ on the largest absolute coordinate, together with a coordinate fourth-moment bound, the rate becomes $n^{-1/2+1/q}$ up to logarithmic factors. At $q=4$, the slower $n^{-1/4}$ rate is unavoidable, confirming our earlier conjecture. We also allow the bounds on observation size to grow with $n$. Lower-bound examples show that the dependence on sample size, observation size, and Gaussian width is sharp up to logarithmic factors in the regimes studied, and in several regimes the upper and lower bounds match including the logarithmic terms.",
+      "summary_zh": "【风险管理与衍生品】我们研究了由$n$个具有$p$个坐标的独立随机向量组成的向量集合，能够被一个具有相同均值和协方差的高斯向量多好地近似。我们通过矩形区域来衡量误差，因此这些界限也适用于最大值和同时置信区域。这些坐标的依赖性可以是任意的，甚至是完全线性的，而且当协方差矩阵变得奇异时，这些界限也不会恶化。在对坐标方差进行标准化处理后，有界的或亚指数分布的坐标情况下，样本量增长率可以达到$n^{-1/2}$（在对数因子范围内），此时样本大小或尾部界限保持不变。主要的 upper bound 仍然基于高斯分布的期望最大值，当坐标之间存在强依赖性时，这一增长率会得到进一步提升。当大量观测值对单个坐标方差的贡献较小时，第四矩的细化处理可以进一步提高近似精度。如果我们同时对最大绝对坐标施加一个大于4的矩界限，并结合坐标的第四矩界限，那么样本量增长率可以达到$n^{-1/2+1/q}$（在对数因子范围内）。当$q=4$时，较慢的$n^{-1/4}$增长率是不可避免的，这验证了我们之前的猜想。我们还允许观测值的界限随$n$的增加而增长。下界示例表明，在所研究的范围内，样本量、观测值大小以及高斯分布宽度的依赖性在对数...。",
       "topics": [
         "Economics",
         "Finance"
@@ -145,19 +228,18 @@
       "source": "arxiv"
     },
     {
-      "title": "Constrained Stochastic Policy Targeting under Heterogeneous Partial Interference",
+      "title": "A Game of Throngs: How Spotlight Tourism Reshapes Local Economies",
       "authors": [
-        "Elena Dal Torrione",
-        "Chan Park",
-        "Laura Forastiere"
+        "Mafalda Batalha",
+        "Javier Viviens"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-13",
+      "published_date": "2026-11-16",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.18444v1",
+      "openalex_url": "http://arxiv.org/abs/2611.21364v1",
       "cited_by_count": 0,
-      "abstract": "Under heterogeneous interference, treating individuals with particular characteristics affects the population average outcome through their heterogeneous direct response to treatment and indirect effect on others, creating opportunities for efficient policy design. For instance, policymakers may minimize resource use by vaccinating individuals identified as superspreaders to achieve a target reduction in disease incidence. In such setting, we first study the problem of learning individualized stochastic treatment policies that minimize population average treatment probability subject to a prespecified outcome target. We propose an estimation approach based on a smooth surrogate for constraint violations and interference-aware inverse-probability-weighting or self-normalized estimators of the population average outcome, and establish finite-sample regret guarantees for both estimators. We also consider the complementary problem of maximizing the population average outcome subject to a constraint on average treatment probability. We apply the proposed methodology to a Colombian conditional cash transfer program aimed at improving school attendance. The application demonstrates that accounting for interference and individualizing treatment probabilities can reduce resource use relative to policies that ignore interference or impose homogeneous treatment probabilities.",
-      "summary_zh": "【金融经济学】在异质性干扰环境下，针对具有特定特征的个体实施治疗会通过其对治疗的直接响应以及对其他个体的间接影响，从而影响整个群体的平均结果，这为制定高效的政策提供了可能性。例如，政策制定者可以通过为被识别为超级传播者的个体接种疫苗来最小化资源使用，以实现疾病发病率的目标降低。在此背景下，我们首先研究了如何在预先设定的结果目标约束下，学习能够最小化群体平均治疗概率的个性化随机治疗策略。我们提出了一种基于平滑替代变量来处理违规情况的方法，并采用考虑干扰因素的逆概率加权或自标准化估计方法来估计群体平均结果，并为这两种估计方法提供了有限样本下的遗憾值保证（即估计结果的准确性）。同时，我们还考虑了在平均治疗概率受限条件下最大化群体平均结果这一互补问题。我们将所提出的方法应用于哥伦比亚的一项旨在提高入学率的现金转移计划中。实践表明，与忽视干扰因素或采用统一治疗概率的政策相比，考虑干扰因素并个性化治疗概率能够更有效地利用资源。。研究方法：随机过程。",
+      "abstract": "In July 2017, San Juan de Gaztelugatxe, a modest chapel in the Basque Country, appeared as \"Dragonstone\" in Game of Thrones, transforming a locally known site with limited tourism activity into a global tourist destination overnight. We exploit this exogenous spotlight shock to estimate its causal effects on the local economy using a novel administrative dataset and a Synthetic Control approach. We find an abrupt increase in tourism activity, far exceeding the effects documented in the literature. Despite this surge, employment gains in tourism-related sectors were largely offset by losses elsewhere, resulting in no net effect on total employment. We also document signs of housing-market overheating, with increases in both property transactions and prices. We find no evidence that the shock displaced the local population. Instead, it led to a roughly twofold increase in arrivals from abroad. Taken together, these findings suggest that a substantial increase in tourism activity does not necessarily translate into broad-based local economic gains. Instead, tourism-led growth may entail significant sectoral reallocation and housing-market pressures, underscoring the importance of looking beyond tourism activity alone when assessing its wider economic effects.",
+      "summary_zh": "【金融经济学】2017年7月，位于巴斯克地区的圣胡安-德加斯特尔卢加特谢（San Juan de Gaztelugatxe）这座普通的教堂在电视剧《权力的游戏》中以“龙石岛”（Dragonstone）的形象出现，这一事件使这个原本旅游活动有限的当地景点一夜之间变成了全球知名的旅游目的地。我们利用这一突如其来的关注度提升，结合新颖的行政数据集和合成控制（Synthetic Control）方法，对其对当地经济的因果效应进行了分析。研究发现，旅游活动出现了急剧增长，其规模远超现有文献中的记录。然而，尽管旅游相关行业的就业人数有所增加，但其他行业的就业损失抵消了这一增长，导致总体就业水平并未发生变化。此外，我们还观察到房地产市场出现过热迹象，表现为房产交易量和房价双双上升。研究并未发现该事件导致当地人口流失；相反，外国游客到访人数增加了近一倍。综上所述，这些结果表明，旅游活动的显著增长并不一定能够带来广泛的本地经济收益。实际上，以旅游业为主导的增长可能会引发行业结构的重大调整以及房地产市场的压力，这凸显了在评估旅游业的整体经济影响时，不能仅关注其本身的重要性。。研究方法：合成控制法。",
       "topics": [
         "Economics",
         "Finance"
@@ -165,84 +247,22 @@
       "source": "arxiv"
     },
     {
-      "title": "Making Experiment Results Comparable through Sitewide Impact Estimation",
+      "title": "Neural Marked Point Processes for Health Insurance Claims",
       "authors": [
-        "Xiaochen Zhang",
-        "Wenjing Zheng",
-        "Xingye Kang",
-        "Vamsi Manthena"
+        "Eva Flonner"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-13",
+      "published_date": "2026-11-16",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.18411v1",
+      "openalex_url": "http://arxiv.org/abs/2611.21326v1",
       "cited_by_count": 0,
-      "abstract": "Roblox spans many product surfaces-discovery, the virtual economy, creator tools-that differ sharply in reach and in how much the affected population contributes to any sitewide metric. A randomized experiment shows whether a treatment works for the users in its sample, but this experiment lift is not comparable across surfaces, because surfaces differ in reach and in their contribution to sitewide metrics. The quantity a strategic decision needs is a counterfactual-how much an aggregated sitewide metric (e.g., total platform play time) would move if the treatment reached 100% of its target population, which may be only part of the sitewide population, during the measurement period. We call this sitewide impact. Its scaling factor, which we call the coverage factor, combines the reach and the target population's contribution to the sitewide metric under no treatment. Hence a low-reach surface whose users carry much of the metric could outrank a high-reach surface whose users carry little. We develop two estimators under this framing: one for difference-in-means metrics and one for variant-level ratio metrics (a metric defined as a ratio of two population aggregates). Empirically, experiment lift is a poor proxy for sitewide impact-across 139 experiments that are statistically significant on time spent, the Spearman rank correlation between the two is 0.20, and 5 of the 10 largest experiment lifts are among the 10 largest sitewide impacts. We validate the estimator with A/A tests and against a long-term holdout, and apply it to cross-domain prioritization and attributing year-over-year growth to shipped innovations.",
-      "summary_zh": "📌 研究问题：如何在不同产品界面（如发现、虚拟经济）之间比较随机对照试验（RCT）的效果，因为界面在触达用户和贡献全站指标上存在差异。\n\n🔬 研究方法：提出了“全站影响”概念及其“覆盖率因子”，并开发了两种估计器，分别用于差分均值指标和变体比率指标。\n\n📊 核心发现：实验提升是全站影响的较差代理，两者之间的Spearman秩相关系数仅为0.20，且最大的实验提升往往不对应最大的全站影响。\n\n💡 应用价值：该方法可用于跨域优先级排序，并将年度同比增长归",
+      "abstract": "Health insurance claims exhibit temporal dependence, as previous claims may provide information about the timing, type and amount of subsequent claims. Such dependencies are difficult to capture with traditional actuarial models based on aggregated claim counts. We investigate a neural marked point process in which a causal Transformer represents individual claim histories and determines type-specific conditional intensities, allowing for self-excitation and interactions between claim types. The framework also incorporates conditional severity distributions, reporting delays and stochastic medical-cost inflation. We develop a likelihood-based calibration procedure that accounts for incomplete claim reporting and evaluate the model using both simulated and empirical data. A simulation study with 10,000 insurance contracts examines the recovery of known claim dynamics, while an application to MEPS-derived medical-event data assesses predictive performance. The fitted model reproduces the main patterns in claim frequencies and severities, although some discrepancies remain in the tails of the distributions. On the MEPS data, the neural model achieves better predictive performance than two generalized linear model benchmarks in terms of claim-count deviance and expenditure discrimination.",
+      "summary_zh": "【保险与养老】健康保险理赔具有时间依赖性，因为之前的理赔记录可以提供关于后续理赔的时间、类型和金额的信息。这种依赖性难以用基于汇总理赔次数的传统精算模型来捕捉。我们研究了一种基于神经网络的标记点过程（Neural Marked Point Process），在该过程中，一个因果Transformer用于表示个体理赔历史，并确定不同类型的理赔条件强度，从而允许理赔类型之间的自我激发和相互作用。该框架还纳入了条件严重程度分布、理赔报告延迟以及随机医疗费用通胀等因素。我们开发了一种基于似然的校准程序，以考虑理赔报告的不完整性，并使用模拟数据和实证数据对模型进行了评估。一项包含10,000份保险合同的模拟研究考察了已知理赔动态的再现情况；而将模型应用于MEPS（Medical Event Reporting System）生成的医疗事件数据后，评估了其预测性能。尽管在分布的尾部仍存在一些差异，但拟合模型能够再现理赔频率和严重程度的主要模式。在MEPS数据上，神经网络模型在理赔次数偏差和支出区分能力方面优于两种广义线性模型基准。。研究方法：数值模拟、模型校准、Transformer 模型、随机过程。",
       "topics": [
         "Economics",
         "Finance"
       ],
       "source": "arxiv"
-    },
-    {
-      "title": "DECODE: Decomposable Environments for COntrolled Sequential-Decision Evaluation",
-      "authors": [
-        "Diego Silva Prado",
-        "Bruno Caldas de Souza",
-        "Tiago Amaral Penteado de Jesus",
-        "Ricardo Guimarães Herrmann",
-        "Cristiano Breuel"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-11-13",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.18367v1",
-      "cited_by_count": 0,
-      "abstract": "When a sequential decision system falls short of an optimum, its score does not reveal which modifications would improve its decisions. DECODE is a benchmark for testing such modifications through controlled experiments on planning and available information. Its consumer-credit collections generator provides five partially observed environments that share known dynamics matrices and vary a memory parameter and process noise. The experiments change selected inputs or planning rules while keeping the rest of the solver fixed. Each comparison specifies the solver's state inputs, response inputs and planning horizon. On the deterministic base environment, which was selected for a large gap between six-month and one-month planning with the hidden state, extending planning from one to six months increases the scores of two gradient-boosted solvers by 15 to 17 percentage points of the exact optimum, computed with the hidden state and borrower traits. Even at this horizon, the best graded solver, whose repayment response is fitted on logs, remains 15.6 points below that optimum. In a specified intervention sequence, three changes to its state inputs and their evaluation during search lower its score by 6.3 points, and replacing its fitted repayment model with the true response, evaluated with hidden borrower traits, then raises it by 15.6, a net recovery of nine of those points. Because the intermediate effects are conditional on the repayment model and the order of the changes, they do not uniquely assign the gap to separate causes. Within these limits, DECODE makes hypotheses about solver performance testable through specified interventions under known dynamics and explicit information conditions.",
-      "summary_zh": "【金融经济学】当一个序列决策系统未能达到最优解时，其评估结果无法揭示哪些修改措施能够改善其决策效果。DECODE是一个用于通过受控实验来测试这些修改措施的基准工具，这些实验针对规划过程和可用信息展开。该工具的消费者信贷回收模拟器提供了五个部分观测到的环境实例，这些环境实例具有相同的动态矩阵，但内存参数和处理噪声有所不同。实验中会改变某些输入参数或规划规则，而保持其他部分不变。每次实验都会明确指定求解器的状态输入、响应输入以及规划范围。在确定性基础环境中（该环境的特点是六个月规划和一个月规划之间存在较大差异，且状态信息是隐藏的），将规划时间从一个月延长到六个月后，两种基于梯度提升算法的求解器的得分相对于基于隐藏状态和借款人特征计算出的最优解提高了15%至17%。即便在这种规划范围内，表现最佳的求解器（其还款响应是基于对数数据进行拟合的）的得分仍比最优解低15.6个百分点。在特定的干预序列中，对求解器的状态输入进行三项修改并评估其效果后，其得分下降了6.3个百分点；随后将拟合的还款模型替换为基于隐藏借款人特征的真实还款数据，其得分又上升了15.6个百分点，从而实现了9个百分点的净提升。由于这些中间...。研究方法：实验方法。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Exploitation, class income and welfare in a Sraffian economy with consumption preferences",
-      "authors": [
-        "Gabriel Montes-Rojas"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-11-13",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.18345v1",
-      "cited_by_count": 0,
-      "abstract": "This paper develops a Sraffian model of simple reproduction in which production prices and functional income distribution remain classically determined, while class consumption is chosen optimally at those prices and incomes. it then shows that once workers and capitalists choose consumption bundles according to class-specific preferences, rather than consuming fixed baskets, surplus value, exploitation rates, total profits, and capitalist welfare need not rise monotonically with the profit rate. The framework defines distributive Engel curves, tracing how consumption, profits, labor exploitation, and welfare vary along the wage-profit frontier. Higher profitability may expand capitalists' nominal claim on surplus, yet alter relative prices in ways that reduce their real consumption and welfare. The result qualifies standard Marxian and Sraffian accounts of net product distribution based on the wage-profit curve.",
-      "summary_zh": "【收入分配与福利】本文构建了一个基于斯拉夫模型的简单再生产模型，在该模型中，生产价格和功能性收入分配仍遵循传统经济学中的决定机制；而阶级消费则是在这些价格和收入水平下根据特定阶级偏好进行最优选择的。研究进一步表明，当工人和资本家根据自身阶级特征选择消费组合（而非固定消费组合）时，剩余价值、剥削率、总利润以及资本家的福利水平并不一定随着利润率的增长而单调上升。该模型还定义了“分配恩格尔曲线”，用以描述消费、利润、劳动剥削程度及福利水平在工资-利润前沿上的变化趋势。较高的盈利能力虽然可能增加资本家对剩余价值的名义索取权，但同时也可能通过改变相对价格来降低他们的实际消费水平和福利水平。这一研究结果对基于工资-利润曲线的传统马克思主义及斯拉夫学派关于净产品分配的理论提出了质疑。。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Monetary policy in a Phelps–Winter Economy",
-      "authors": [
-        "Bruce C. Greenwald",
-        "Joseph E. Stiglitz"
-      ],
-      "venue": "NBER Working Papers",
-      "published_date": "",
-      "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w36008#fromrss",
-      "cited_by_count": 0,
-      "abstract": "We use the Phelps-Winter customer market—providing a better theory of price determination for large parts of the economy than the standard model—to show that raising interest rates induces higher prices, as firms value current profits more, and are more willing to lose customers for short-term gains. These inflationary effects can be significant in relevant ranges of interest rates; they exist in the short run even when interest rate hikes succeed in cutting aggregate demand; and that they are amplified by policy uncertainty and the uncertainty about the effects of interest rate changes, both of which have increased as conventional policy has demonstrably failed badly to keep inflation at the 2% target. Empirical studies confirm this low level of ineffectiveness of raising interest rates in reducing inflation.  The weakening effectiveness of monetary policy was predicted by our earlier work on banks and the supply of credit, as a result of the elimination of interest prohibition on deposits; and further suggested by work on the structural transformation of the economy, as customer markets become more important.",
-      "summary_zh": "【货币政策与宏观经济】我们采用了Phelps-Winter客户市场模型——该模型相较于标准模型能够更准确地解释经济中大部分领域的价格形成机制——来说明：提高利率会导致价格上涨，因为企业更加重视当前利润，且更愿意为短期收益而失去客户。在某些利率范围内，这种通货膨胀效应可能十分显著；即使加息成功抑制了总需求，这种效应在短期内依然存在；同时，政策不确定性以及人们对利率变化影响的不确定性会进一步放大这些效应，而这两种不确定性在过去由于传统货币政策在将通胀率控制在2%目标上表现糟糕而显著增加。实证研究也证实了加息在降低通胀方面的效果极为有限。我们之前关于银行和信贷供应的研究已经预测到货币政策的效力会减弱，这一现象是由于存款利率管制被取消所致；此外，随着客户市场在经济结构中的重要性不断提升，相关研究也进一步支持了这一观点。。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "nber"
     }
   ]
 }

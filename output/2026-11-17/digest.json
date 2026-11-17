@@ -1,0 +1,268 @@
+{
+  "date": "2026-11-17",
+  "count": 12,
+  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)",
+  "latest_updated": true,
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（5 篇）、国际贸易（2 篇）、风险管理与衍生品（2 篇）。方法上以数值模拟、模型校准为主。来源分布：OpenAlex（7 篇）、arXiv（5 篇）。",
+  "insights": {},
+  "papers": [
+    {
+      "title": "Foreign Loan Financing for Indonesia’s Defense Modernization: Fiscal and Strategic Risks, Procurement Governance, and Industrial Self-Reliance",
+      "authors": [
+        "Okky Anugerah Sakti",
+        "Guntur Eko Saputro",
+        "Muliahadi Tumanggor"
+      ],
+      "venue": "Journal of Maritime Policy Science.",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.31629/jmps.v3i3.8775",
+      "openalex_url": "https://openalex.org/W7225859695",
+      "cited_by_count": 0,
+      "abstract": "Indonesia’s defense modernization requires substantial and sustained financing, yet fiscal constraints limit the government’s capacity to fund large-scale major weapons systems (MWS) procurement through annual budget allocations alone. This study examines the opportunities, risks, and policy implications of foreign loan financing for defense modernization and the strengthening of national defense-industrial self-reliance. Using a qualitative literature-review approach, the study applies content analysis to academic publications, regulations, policy documents, official institutional data, and selected international experiences. The findings show that foreign loans can improve financing certainty for long-term defense acquisitions and create opportunities to support technology transfer, offsets, domestic content requirements (TKDN), and the development of national industrial capabilities. However, these benefits are accompanied by significant risks, including debt-sustainability pressures, exchange-rate exposure, long-term fiscal commitments, supplier dependence, and potential technological reliance on foreign partners. The analysis further indicates that the effectiveness of foreign financing depends on procurement design, bargaining capacity, institutional coordination, contractual enforcement, and domestic absorptive capacity. Accordingly, this study proposes an integrated policy framework built on four interrelated pillars: fiscal sustainability, institutional strengthening, optimization of TKDN and offset mechanisms, and comprehensive debt-risk management. Foreign loans should therefore be treated not merely as financing instruments, but as strategic defense-economic policy tools capable of simultaneously supporting military modernization and strengthening Indonesia’s defense-industrial independence. The evidence base combines peer-reviewed scholarship with official Indonesian budget, planning, regulatory, and procurement documents available through September 2026.",
+      "summary_zh": "📌 研究问题：印尼在财政约束下如何利用外债融资支持国防现代化并增强工业自主？外债融资在支持国防采购的同时，面临哪些财政与战略风险？\n\n🔬 研究方法：采用定性文献综述和内容分析方法，对学术出版物、法规、政策文件、官方机构数据及国际经验进行分析。\n\n📊 核心发现：外债融资虽能提升长期采购的融资确定性并促进技术转让与工业能力建设，但也伴随债务可持续性压力、汇率风险及供应商依赖等挑战，其有效性取决于采购设计、议价能力及国内吸收能力。\n\n💡 应用价值：提出了基于财政可持续性、机构加强、TKDN优化及债务风险管理的综合",
+      "topics": [
+        "Procurement",
+        "Modernization theory",
+        "Finance",
+        "Business",
+        "Loan"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Russia's Maritime Defense Strategy in the Arctic: The Northern Sea Route and Strategic Deterrence",
+      "authors": [
+        "Dwi Yolanda Nusantari Situmorang",
+        "Agus Adriyanto",
+        "Harjo Susmoro",
+        "Rudi  Hartono"
+      ],
+      "venue": "Journal of Maritime Policy Science.",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.31629/jmps.v3i3.8805",
+      "openalex_url": "https://openalex.org/W7225871982",
+      "cited_by_count": 0,
+      "abstract": "Russia's Arctic maritime strategy links the Northern Sea Route (NSR), a resource-oriented shipping corridor, with the Northern Fleet's strategic deterrence mission in the Kola–Barents region. This study examines how economic and defense objectives depend on partially overlapping maritime capabilities while remaining governed by different strategic requirements. A qualitative documentary analysis applies the Ends–Ways–Means framework to Russian policy documents, Rosatom operational reports, NATO statements, and peer-reviewed scholarship, distinguishing documented functions from analytical inference. Rosatom reported 37.89 million tonnes of NSR cargo in 2024, including 3.089 million tonnes of transit cargo, indicating that the corridor primarily supports resource-linked transportation rather than intercontinental transit. Meanwhile, the Kola–Barents operating environment supports the protection of ballistic-missile submarines and the credibility of nuclear second-strike deterrence. Ports, icebreakers, communications, and rescue services provide access and sustainment, but civilian functionality alone does not establish military assignment. The analysis identifies a conditional relationship described as shared means, unequal priorities: during heightened security pressure, protecting strategic deterrence may constrain competing uses of enabling infrastructure. Open sources, however, cannot verify specific military allocations or a universal hierarchy of priorities. The study contributes an evidence-bounded strategic explanation that differentiates economic logistics, potential cross-sector functions, and confirmed military capabilities while identifying sanctions, institutional arrangements, and industrial capacity as alternative explanations for observed investments.  This distinction clarifies how Arctic policy balances development and security.",
+      "summary_zh": "【国际贸易】俄罗斯的北极海上战略将北方海路（NSR）这一以资源运输为主的海上通道，与北方舰队在科拉-巴伦支海地区的战略威慑任务紧密联系在一起。本研究探讨了经济目标与国防目标如何依赖于部分重叠的海上运输能力，同时这些目标又受到不同战略需求的制约。通过定性文献分析方法，研究者运用“目的-手段-途径”（Ends-Ways-Means）框架，对俄罗斯的政策文件、俄罗斯原子能公司（Rosatom）的运营报告、北约的声明以及经过同行评审的学术研究成果进行了分析，区分了文件中明确记载的功能与基于分析得出的推论。根据俄罗斯原子能公司的数据，2024年北方海路的货物运输量达到了3789万吨，其中过境货物为308.9万吨，这表明该通道主要服务于资源运输，而非洲际货物运输。科拉-巴伦支海地区的海上环境则为弹道导弹潜艇的防护以及核威慑能力的展示提供了支持。港口、破冰船、通信设施和救援服务为相关军事行动提供了保障，但仅从民用功能的角度来看，并不足以确定这些设施的军事用途。研究指出，在安全压力加剧的情况下，保护战略威慑能力可能会限制这些基础设施的其他用途。然而，公开资料无法核实具体的军事部署情况或各项目标的优先级顺序。...。",
+      "topics": [
+        "Deterrence theory",
+        "Credibility",
+        "Arctic",
+        "Business",
+        "International trade"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "The Geoengineering Put: Ecological Debt, Termination Risk, and Asset Prices",
+      "authors": [
+        "Samuel Hartzmark",
+        "Kelly Shue"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-16",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.21568v1",
+      "cited_by_count": 0,
+      "abstract": "Solar geoengineering offers an inexpensive and fast-acting way to lower global temperatures without removing carbon from the atmosphere. As warming intensifies, climate-vulnerable countries face growing incentives to deploy geoengineering unilaterally. The economic and financial consequences of this prospect remain largely overlooked. We develop a general equilibrium macro-finance framework in which geoengineering acts as a put option on climate damages, funded by the \"ecological debt\" of masked warming. If deployment stops, temperatures snap back in a catastrophic termination shock. Anticipation of geoengineering raises current brown firm valuations and lowers the optimal carbon tax, helping explain two puzzles in the existing literature: high brown-firm valuations and low carbon taxes. As ecological debt grows, however, termination risk transforms brown firms into toxic assets. Geoengineering also reshapes green innovation: it buys time for a breakthrough, but can weaken innovation incentives by lowering energy and carbon prices. Termination risk partly restores research incentives and directs them toward carbon removal, which can retire ecological debt. Our calibrations show that the geoengineering put can raise welfare across a range of parameter assumptions. Our framework clarifies how this conclusion depends on uncertain parameters and where further research is most needed.",
+      "summary_zh": "【风险管理与衍生品】太阳地球工程提供了一种成本低廉且见效迅速的方法，能够在不从大气中去除碳的情况下降低全球温度。随着气候变暖加剧，那些容易受到气候变化影响的国家越来越有动力单方面实施地球工程。然而，这一做法所带来的经济和金融后果在很大程度上被忽视了。我们构建了一个一般均衡宏观金融框架，在该框架中，地球工程被视为一种针对气候损害的“看跌期权”，其资金来源于因温室气体排放而累积的“生态债务”。如果停止实施地球工程，全球气温将迅速回升，导致灾难性的后果。人们对地球工程的预期会抬高那些高污染企业的估值，并降低最优碳税水平，这有助于解释现有研究中的两个谜题：高污染企业估值偏高以及碳税水平偏低的现象。然而，随着生态债务的不断增加，终止地球工程的风险会使得这些高污染企业变成“有毒资产”。地球工程还会重塑绿色创新的发展路径：它为技术突破赢得了时间，但可能会通过降低能源和碳价格而削弱创新动力。终止风险在一定程度上能够恢复创新动力，并引导创新活动朝着碳减排的方向发展，从而逐步偿还生态债务。我们的模型校准结果表明，在各种参数假设下，地球工程这一“看跌期权”都有助于提升整体福利水平。我们的框架明确了这一结论如何受到不确定参...。研究方法：模型校准、均衡模型。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Never too LATE: Exploiting restrictions for inference on the Local Average Treatment Effect",
+      "authors": [
+        "Xavier D'Haultfœuille",
+        "Yagan Hazard",
+        "Philipp Ketz"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-16",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.21496v1",
+      "cited_by_count": 0,
+      "abstract": "Under the exclusion restriction, independence, and monotonicity assumptions, Imbens and Angrist (1994) show that the Wald estimand is equal to the local average treatment effect (LATE). However, these assumptions entail additional restrictions, which we exploit for inference on the LATE. Specifically, we propose a conditional likelihood ratio test that we show controls asymptotic size uniformly over a large class of data-generating processes. The test has very low computational cost: it requires no simulation and involves solving at most four quadratic programming problems. Monte Carlo simulations show that our test can offer substantial power gains over the Wald and Anderson-Rubin tests, including when the instrument is weak.",
+      "summary_zh": "📌 研究问题：如何利用排除限制、独立性和单调性等假设带来的额外限制，对局部平均处理效应（LATE）进行推断？\n\n🔬 研究方法：提出了一种条件似然比检验，该检验在控制渐近大小的同时，计算成本极低，无需模拟且最多只需解决四个二次规划问题。\n\n📊 核心发现：蒙特卡洛模拟表明，该检验相比 Wald 检验和 Anderson-Rubin 检验具有显著的功率增益，特别是在工具变量较弱的情况下。\n\n💡 应用价值：为金融经济学中的因果推断提供了一种高效且",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Economic Resilience as a Non-Military Deterrence Strategy for Universal People’s Defense and Security System",
+      "authors": [
+        "Maheswari Candraningtyas",
+        "Guntur Eko Saputro",
+        "Suwito Suwito"
+      ],
+      "venue": "Journal of Maritime Policy Science.",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.31629/jmps.v3i3.8792",
+      "openalex_url": "https://openalex.org/W7225897310",
+      "cited_by_count": 0,
+      "abstract": "Economic resilience is increasingly important to national defense because strategic dependencies, supply chain disruptions, and geoeconomic pressures can undermine essential state functions without direct military confrontation. This study examines the role of economic resilience as a non-military deterrence strategy within Indonesia’s Universal People’s Defense and Security System (SISHANKAMRATA). Employing a descriptive qualitative approach, the research reviews international scholarly publications and strategic literature addressing economic resilience, supply chain security, deterrence by denial, total defense, social legitimacy, and defense industrial self-reliance. The analysis compares theoretical arguments and synthesizes relationships among productive capacity, external dependencies, strategic vulnerability, and national defense preparedness. The findings suggest that economic resilience contributes to deterrence by reducing critical dependencies, diversifying supply sources, strengthening domestic production and defense industries, maintaining strategic reserves, and improving coordination among civilian and defense institutions. Public trust and social participation further support the continuity of collective defense functions during crises. Economic resilience, however, does not require complete self-sufficiency; it depends on maintaining adequate national capabilities and viable strategic alternatives while sustaining international cooperation. Within SISHANKAMRATA, these interconnected capabilities can increase Indonesia’s capacity to withstand external economic pressure, protect essential supply chains, and preserve societal and defense functions during prolonged disruption. The study conceptualizes economic resilience as a structural component of non-military deterrence supported by institutional coordination and societal legitimacy within Indonesia’s national defense framework.",
+      "summary_zh": "【金融经济学】经济韧性对国防日益重要，因为战略依赖性、供应链中断以及地缘经济压力可能在不发生直接军事冲突的情况下削弱国家的关键职能。本研究探讨了经济韧性作为非军事威慑策略在印度尼西亚“全民防御与安全体系”（SISHANKAMRATA）中的作用。采用描述性定性研究方法，该研究回顾了国际学术文献和战略文献中关于经济韧性、供应链安全、通过剥夺手段实施威慑、全面防御、社会合法性以及国防工业自给自足等方面的内容。分析比较了各种理论观点，并梳理了生产能力、外部依赖性、战略脆弱性以及国防准备状态之间的关系。研究结果表明，经济韧性通过减少关键依赖性、多元化供应来源、加强国内生产和国防产业、维持战略储备以及提升军民机构间的协调性来发挥威慑作用。公众信任和社会参与进一步保障了危机期间集体防御功能的连续性。然而，经济韧性并不要求实现完全的自给自足，而是需要在保持国际合作的同时，维持足够的国家能力和可行的战略选择。在“全民防御与安全体系”框架内，这些相互关联的能力能够提升印度尼西亚抵御外部经济压力的能力，保护关键供应链，并在长期中断情况下维护社会与国防职能的正常运转。本研究将经济韧性视为印度尼西亚国防体系中由制度协调...。",
+      "topics": [
+        "Deterrence theory",
+        "Resilience (materials science)",
+        "National security",
+        "Business",
+        "Legitimacy"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Defense Spending and Indonesia's Economic Growth: Revisiting the Link Between Security Maritime and Development",
+      "authors": [
+        "Windy Widya Putri",
+        "Sri Murtiana",
+        "Endang Purwaningsih"
+      ],
+      "venue": "Journal of Maritime Policy Science.",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.31629/jmps.v3i3.8871",
+      "openalex_url": "https://openalex.org/W7225906604",
+      "cited_by_count": 0,
+      "abstract": "The relationship between defense expenditure and economic growth remains unsettled because strategic security, domestic production, technological learning, and fiscal opportunity costs operate through channels. This article reexamines Indonesian military spending during 2021–2025 using exploratory secondary data and a structured, non-systematic narrative synthesis of ten comparative empirical studies. Evidence comes from SIPRI, Indonesian budget documentation, official economic statistics, and published research available through November 2026. Internationally defined Indonesian military expenditure reached approximately US$15.03 billion, or 1.04% of gross domestic product, in 2025. Real economic growth was 5.11% that year, although their simultaneous movement does not demonstrate causation. The analysis separates operational security benefits from possible domestic industrial effects and alternative public spending forgone. A Schumpeterian perspective identifies conditional innovation pathways involving research, supplier learning, technology transfer, and civilian applications, without presuming that these outcomes occurred. Available public data cannot reliably quantify Indonesian defense research spillovers, domestic procurement value added, or sector-specific expenditure displacement. An illustrative allocation equivalent to 1.5% of unchanged 2025 GDP would imply roughly US$21.7 billion, but this calculation is neither a verified government target nor a forecast. Comparative studies report heterogeneous associations across countries, periods, and empirical methods. The study therefore offers an evidence-bounded interpretation rather than an estimated national growth multiplier. It recommends consistent expenditure classifications, transparent procurement evaluation, measurable maritime capability outputs, and explicit assessment of long-term financing and fiscal trade-offs for policy deliberation in Indonesia.",
+      "summary_zh": "【金融经济学】国防支出与经济增长之间的关系尚未明确，因为战略安全、国内生产、技术学习以及财政机会成本等因素通过多种渠道产生影响。本文利用探索性二手数据以及对十项比较实证研究的系统性、非系统性分析，重新审视了2021至2025年间印度尼西亚的军事支出情况。数据来源包括国际防务研究机构（SIPRI）的资料、印度尼西亚预算文件、官方经济统计数据以及截至2026年11月发布的学术研究成果。根据国际标准，2025年印度尼西亚的军事支出约为150.3亿美元，占国内生产总值（GDP）的1.04%。当年实际经济增长率为5.11%，但两者之间的同步变化并不能证明存在因果关系。分析中区分了军事支出带来的安全效益与可能对国内产业产生的影响，以及由此导致的其他公共支出减少。从熊彼特的理论视角出发，本文探讨了涉及研究开发、供应商学习、技术转移和民用应用等方面的创新路径，但并未假设这些结果必然会发生。现有的公共数据无法可靠地量化印度尼西亚国防支出的溢出效应、国内采购所带来的附加值，或特定领域的支出替代效应。如果将国防支出维持在2025年GDP水平的1.5%，则总支出约为217亿美元；不过这一计算既不是政府官方设定的目标，...。",
+      "topics": [
+        "Economics",
+        "Procurement",
+        "Government spending",
+        "Public economics",
+        "Public expenditure"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Penguatan Kemandirian Usaha melalui Manajemen Keuangan dan Pembukuan Terpadu bagi KWT Berkah Makmur, Desa Pucungbedug, Kabupaten Banjarnegara",
+      "authors": [
+        "Altri Mulyani",
+        "Alpha Nadeira Mandamdari",
+        "Dwi Putriana Nuramanah Kinding",
+        "Anggi Fitria Cahyaningsih",
+        "Ernes Septina Azizi"
+      ],
+      "venue": "NUSANTARA Jurnal Pengabdian Kepada Masyarakat",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.55606/nusantara.v6i4.10689",
+      "openalex_url": "https://openalex.org/W7233541255",
+      "cited_by_count": 0,
+      "abstract": "The Berkah Makmur Women Farmers’ Group (KWT) in Pucungbedug Village relies on the potential of corn and cassava grown on dryland to produce gluten-free functional foods, namely instant corn rice and cassava rice, as well as processed products such as corn sticks and corn “dawet”. Despite having broad market prospects, the group’s business development is hampered by weak managerial governance, financial records that are intermingled with household affairs, and low financial literacy. This research-based Community Service Program aims to improve the KWT members’ capacity in financial management and integrated bookkeeping. The implementation method uses a participatory approach involving 11 active members of the Berkah Makmur Women’s Group through training sessions, simulations on maintaining a daily cash journal, calculating the Cost of Goods Sold (COGS), and managing profit and loss. The evaluation, which used pre-tests and post-tests, was conducted through the completion of questionnaires, with the results showing substantial descriptive improvement across all indicators, with the proportion of participants in the “Strongly Understand” category increasing for all indicators (even the indicator for understanding financial separation increased by 46%), while the “Somewhat Understand” and “Do Not Understand” categories were completely eliminated (0%). These results demonstrate that structured training can transform the group’s mindset from conventional production to a transparent and accountable business orientation, thereby supporting the Women Farmers’ Group (KWT) 's business independence.",
+      "summary_zh": "【金融经济学】位于普琼贝杜格村（Pucungbedug Village）的Berkah Makmur妇女农民小组（KWT）充分利用旱地种植的玉米和木薯资源，生产无麸质的功能性食品，主要包括即食玉米米和木薯米，以及玉米棒和玉米“dawet”等加工产品。尽管这些产品具有广阔的市场前景，但该小组的事业发展仍受到管理不善、财务记录与家庭事务混杂以及财务知识匮乏等因素的制约。本研究基于社区服务计划（Community Service Program），旨在提升KWT成员的财务管理能力和综合记账水平。实施方法采用参与式教学方式，邀请11名活跃的小组成员参与培训，内容包括日常现金日记的记录方法、销售成本（COGS）的计算方法以及利润与亏损的管理。评估通过前后测试进行，通过问卷调查收集数据。结果显示，所有指标均取得了显著进步：在“完全理解”类别中的参与者比例显著增加（尤其是对财务分离概念的理解提高了46%），而“部分理解”和“完全不理解”类别的参与者比例降为零（0%）。这些结果表明，结构化的培训能够帮助小组转变传统的生产思维模式，树立透明、负责任的经营理念，从而支持KWT妇女农民小组实现业务独立。。研究方法：数值模拟。",
+      "topics": [
+        "Mindset",
+        "Business",
+        "Profit (economics)",
+        "Agricultural science",
+        "Cash"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Government-Directed Lng Export Cargo Diversion, Joint Lifting, And Contractor Entitlement Under Indonesian Production Sharing Contracts",
+      "authors": [
+        "Rakhmad Dewanto"
+      ],
+      "venue": "Advances In Social Humanities Research",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.46799/adv.v4i11.739",
+      "openalex_url": "https://openalex.org/W7233541803",
+      "cited_by_count": 0,
+      "abstract": "Indonesia's dual role as an LNG exporter with long-term contractual commitments and a country experiencing increasing domestic natural gas demand creates legal tensions when the government requires previously scheduled export cargoes to be canceled, postponed, or diverted to domestic consumers. This study aims to develop a structured legal framework for examining government-directed liquefied natural gas (LNG) cargo diversion under Indonesian Production Sharing Contracts (PSCs), particularly in circumstances where joint lifting consolidates government and contractor entitlements into shared cargoes. Employing a normative juridical approach, the study conducts a doctrinal analysis of legislation, regulatory frameworks, and international arbitral jurisprudence, including Union Fenosa Gas v. Egypt, Karaha Bodas v. Pertamina, and Vivendi. The analysis distinguishes five frequently conflated legal dimensions: public law authority, PSC allocation and Domestic Market Obligation (DMO), joint lifting and accounting mechanisms, LNG Sale and Purchase Agreement (SPA) obligations and consequences, and international investment law. The findings indicate that although Indonesian law establishes a strong constitutional and statutory foundation for ensuring domestic energy security, governmental authority does not automatically extinguish contractors' contractual entitlements or obligations arising from existing SPAs. Joint lifting is characterized as a commercialization and accounting mechanism rather than an independent source of substantive ownership rights. Consequently, diverted LNG volumes exceeding DMO requirements necessitate transparent reconciliation through replacement lifting, appropriate valuation, or compensation arrangements. The study concludes that Indonesia's LNG cargo diversion policy should incorporate seven essential elements: a clear legal basis, well-defined triggering conditions, explicit treatment of DMO requirements, identification of economic entitlements, transparent lifting reconciliation procedures, provisions governing existing SPAs, and appropriate compensation mechanisms. These elements are essential for balancing national energy security objectives with investment credibility, contractual stability, and legal certainty.",
+      "summary_zh": "【国际贸易】印度尼西亚同时扮演着液化天然气（LNG）出口国的角色，并承担着长期合同义务；另一方面，该国国内对天然气的需求也在不断增加。当政府要求取消、推迟或将原本计划出口的LNG货物转供给国内消费者时，这便引发了法律上的矛盾。本研究旨在建立一个系统的法律框架，以分析在印度尼西亚生产分成合同（Production Sharing Contracts, PSCs）框架下，政府指令下的LNG货物转移行为，尤其是在“联合开采”（joint lifting）模式下，政府与承包商的权利如何合并为共享货物的情况。通过采用规范法学的方法，本研究对相关立法、监管框架以及国际仲裁判例（包括Union Fenosa Gas v. Egypt、Karaha Bodas v. Pertamina和Vivendi案）进行了理论分析。研究区分了五个经常被混淆的法律维度：公法权威、生产分成合同中的分配规定与国内市场义务（Domestic Market Obligation, DMO）、联合开采与会计机制、LNG销售与购买协议（LNG Sale and Purchase Agreement, SPA）中的义务与后果，以及国际...。",
+      "topics": [
+        "Business",
+        "Statutory law",
+        "Government (linguistics)",
+        "Liquefied natural gas",
+        "Entitlement (fair division)"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "The Effect of Dividend Policy, Earnings per Share, and Capital Structure on the Stock Prices of Technology Companies",
+      "authors": [
+        "Alija Ahmad Zaki",
+        "Hendrato Setiabudi Nugroho"
+      ],
+      "venue": "Journal of Multidisciplinary Science MIKAILALSYS",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.58578/mikailalsys.v4i3.12660",
+      "openalex_url": "https://openalex.org/W7233543435",
+      "cited_by_count": 0,
+      "abstract": "Technology-sector stock prices fluctuate, while previous studies report inconsistent findings on their determinants. This study examines the partial and simultaneous effects of dividend policy, Earnings Per Share (EPS), and capital structure on stock prices. A quantitative approach and explanatory design were employed. Through purposive sampling, six technology-sector companies listed on the Indonesia Stock Exchange during 2023–2025 were selected, yielding 18 observations. Secondary data from financial reports and stock price records were analyzed using multiple linear regression with SPSS. The results indicate that dividend policy has a negative and significant effect on stock prices, EPS has a positive and significant effect, whereas capital structure has no significant partial effect. Together, the three variables significantly affect stock prices. These findings highlight the relevance of earnings per share and dividend decisions in stock valuation. Technology companies should balance dividend distributions with financing needs, while investors may also consider EPS when evaluating investment decisions.",
+      "summary_zh": "【公司金融】科技行业股票价格波动较大，而以往的研究对其决定因素得出的结论并不一致。本研究探讨了股息政策、每股收益（EPS）和资本结构对股票价格的单独影响及综合效应。研究采用了定量分析方法和解释性研究设计。通过目的性抽样，选取了2023至2025年间在印度尼西亚证券交易所上市的六家科技行业公司，共获得18个观测样本。利用SPSS软件对财务报告和股价记录中的二手数据进行了多元线性回归分析。结果表明，股息政策对股票价格具有显著的负面影响；每股收益对股票价格具有显著的正面影响；而资本结构对股票价格没有显著的单独影响。这三个变量共同对股票价格产生了显著影响。这些发现凸显了每股收益和股息决策在股票估值中的重要性。科技公司应在股息分配与融资需求之间取得平衡，投资者在评估投资决策时也应考虑每股收益因素。。研究方法：回归分析。",
+      "topics": [
+        "Stock exchange",
+        "Dividend",
+        "Stock (firearms)",
+        "Earnings per share",
+        "Dividend policy"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Sharp High-Dimensional Gaussian Approximations over Rectangles without Covariance Restrictions",
+      "authors": [
+        "Victor Chernozhukov",
+        "Denis Chetverikov",
+        "Kengo Kato",
+        "Yuta Koike"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-16",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.21474v1",
+      "cited_by_count": 0,
+      "abstract": "We study how well a sum of $n$ independent random vectors with $p$ coordinates can be approximated by a Gaussian vector with the same mean and covariance. We measure the error over rectangles, so the bounds apply to maxima and simultaneous confidence regions. The coordinates may be arbitrarily dependent, even exactly linearly dependent, and the bounds do not deteriorate as the covariance matrix becomes singular. After standardizing the coordinate variances, bounded or sub-exponential coordinates give the $n^{-1/2}$ sample-size rate up to logarithmic factors, with the size or tail bounds held fixed. The main upper bounds retain the Gaussian expected maximum, improving the rates when the coordinates are strongly dependent. Fourth-moment refinements give further improvements when large observations contribute little to individual coordinate variances. If we instead impose a fixed moment bound of order $q>4$ on the largest absolute coordinate, together with a coordinate fourth-moment bound, the rate becomes $n^{-1/2+1/q}$ up to logarithmic factors. At $q=4$, the slower $n^{-1/4}$ rate is unavoidable, confirming our earlier conjecture. We also allow the bounds on observation size to grow with $n$. Lower-bound examples show that the dependence on sample size, observation size, and Gaussian width is sharp up to logarithmic factors in the regimes studied, and in several regimes the upper and lower bounds match including the logarithmic terms.",
+      "summary_zh": "【风险管理与衍生品】我们研究了由$n$个具有$p$个坐标的独立随机向量组成的向量集合，能够被一个具有相同均值和协方差的高斯向量多好地近似。我们通过矩形区域来衡量误差，因此这些界限也适用于最大值和同时置信区域。这些坐标的依赖性可以是任意的，甚至是完全线性的，而且当协方差矩阵变得奇异时，这些界限也不会恶化。在对坐标方差进行标准化处理后，有界的或亚指数分布的坐标情况下，样本量增长率可以达到$n^{-1/2}$（在对数因子范围内），此时样本大小或尾部界限保持不变。主要的 upper bound 仍然基于高斯分布的期望最大值，当坐标之间存在强依赖性时，这一增长率会得到进一步提升。当大量观测值对单个坐标方差的贡献较小时，第四矩的细化处理可以进一步提高近似精度。如果我们同时对最大绝对坐标施加一个大于4的矩界限，并结合坐标的第四矩界限，那么样本量增长率可以达到$n^{-1/2+1/q}$（在对数因子范围内）。当$q=4$时，较慢的$n^{-1/4}$增长率是不可避免的，这验证了我们之前的猜想。我们还允许观测值的界限随$n$的增加而增长。下界示例表明，在所研究的范围内，样本量、观测值大小以及高斯分布宽度的依赖性在对数...。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "A Game of Throngs: How Spotlight Tourism Reshapes Local Economies",
+      "authors": [
+        "Mafalda Batalha",
+        "Javier Viviens"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-16",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.21364v1",
+      "cited_by_count": 0,
+      "abstract": "In July 2017, San Juan de Gaztelugatxe, a modest chapel in the Basque Country, appeared as \"Dragonstone\" in Game of Thrones, transforming a locally known site with limited tourism activity into a global tourist destination overnight. We exploit this exogenous spotlight shock to estimate its causal effects on the local economy using a novel administrative dataset and a Synthetic Control approach. We find an abrupt increase in tourism activity, far exceeding the effects documented in the literature. Despite this surge, employment gains in tourism-related sectors were largely offset by losses elsewhere, resulting in no net effect on total employment. We also document signs of housing-market overheating, with increases in both property transactions and prices. We find no evidence that the shock displaced the local population. Instead, it led to a roughly twofold increase in arrivals from abroad. Taken together, these findings suggest that a substantial increase in tourism activity does not necessarily translate into broad-based local economic gains. Instead, tourism-led growth may entail significant sectoral reallocation and housing-market pressures, underscoring the importance of looking beyond tourism activity alone when assessing its wider economic effects.",
+      "summary_zh": "【金融经济学】2017年7月，位于巴斯克地区的圣胡安-德加斯特尔卢加特谢（San Juan de Gaztelugatxe）这座普通的教堂在电视剧《权力的游戏》中以“龙石岛”（Dragonstone）的形象出现，这一事件使这个原本旅游活动有限的当地景点一夜之间变成了全球知名的旅游目的地。我们利用这一突如其来的关注度提升，结合新颖的行政数据集和合成控制（Synthetic Control）方法，对其对当地经济的因果效应进行了分析。研究发现，旅游活动出现了急剧增长，其规模远超现有文献中的记录。然而，尽管旅游相关行业的就业人数有所增加，但其他行业的就业损失抵消了这一增长，导致总体就业水平并未发生变化。此外，我们还观察到房地产市场出现过热迹象，表现为房产交易量和房价双双上升。研究并未发现该事件导致当地人口流失；相反，外国游客到访人数增加了近一倍。综上所述，这些结果表明，旅游活动的显著增长并不一定能够带来广泛的本地经济收益。实际上，以旅游业为主导的增长可能会引发行业结构的重大调整以及房地产市场的压力，这凸显了在评估旅游业的整体经济影响时，不能仅关注其本身的重要性。。研究方法：合成控制法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Neural Marked Point Processes for Health Insurance Claims",
+      "authors": [
+        "Eva Flonner"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-16",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.21326v1",
+      "cited_by_count": 0,
+      "abstract": "Health insurance claims exhibit temporal dependence, as previous claims may provide information about the timing, type and amount of subsequent claims. Such dependencies are difficult to capture with traditional actuarial models based on aggregated claim counts. We investigate a neural marked point process in which a causal Transformer represents individual claim histories and determines type-specific conditional intensities, allowing for self-excitation and interactions between claim types. The framework also incorporates conditional severity distributions, reporting delays and stochastic medical-cost inflation. We develop a likelihood-based calibration procedure that accounts for incomplete claim reporting and evaluate the model using both simulated and empirical data. A simulation study with 10,000 insurance contracts examines the recovery of known claim dynamics, while an application to MEPS-derived medical-event data assesses predictive performance. The fitted model reproduces the main patterns in claim frequencies and severities, although some discrepancies remain in the tails of the distributions. On the MEPS data, the neural model achieves better predictive performance than two generalized linear model benchmarks in terms of claim-count deviance and expenditure discrimination.",
+      "summary_zh": "【保险与养老】健康保险理赔具有时间依赖性，因为之前的理赔记录可以提供关于后续理赔的时间、类型和金额的信息。这种依赖性难以用基于汇总理赔次数的传统精算模型来捕捉。我们研究了一种基于神经网络的标记点过程（Neural Marked Point Process），在该过程中，一个因果Transformer用于表示个体理赔历史，并确定不同类型的理赔条件强度，从而允许理赔类型之间的自我激发和相互作用。该框架还纳入了条件严重程度分布、理赔报告延迟以及随机医疗费用通胀等因素。我们开发了一种基于似然的校准程序，以考虑理赔报告的不完整性，并使用模拟数据和实证数据对模型进行了评估。一项包含10,000份保险合同的模拟研究考察了已知理赔动态的再现情况；而将模型应用于MEPS（Medical Event Reporting System）生成的医疗事件数据后，评估了其预测性能。尽管在分布的尾部仍存在一些差异，但拟合模型能够再现理赔频率和严重程度的主要模式。在MEPS数据上，神经网络模型在理赔次数偏差和支出区分能力方面优于两种广义线性模型基准。。研究方法：数值模拟、模型校准、Transformer 模型、随机过程。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    }
+  ]
+}
