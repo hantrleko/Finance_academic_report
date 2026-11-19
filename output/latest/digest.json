@@ -1,72 +1,47 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "count": 12,
   "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
   "latest_updated": true,
-  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（10 篇）、房地产金融（1 篇）、行为金融（1 篇）。方法上以实验方法、随机实验为主。来源分布：arXiv（6 篇）、OpenAlex（3 篇）、NBER（2 篇）。其中 2 篇命中顶级期刊白名单。",
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（9 篇）、绿色金融与可持续发展（1 篇）、收入分配与福利（1 篇）。方法上以均衡模型、实验方法为主。来源分布：arXiv（7 篇）、Semantic Scholar（4 篇）、OpenAlex（1 篇）。其中 1 篇命中顶级期刊白名单。",
   "insights": {},
   "papers": [
     {
-      "title": "Phase Transition in Binary Compressed Sensing via Annealing with Adaptive Regularization",
+      "title": "A Sociolegal Study of Marriage Registrars’ Implementation of The Circular on Remarriage During a Former Wife’s Iddah",
       "authors": [
-        "Xiaoxin Huang",
-        "Masayuki Ohzeki"
+        "Nurdin Hidayat",
+        "Sri Hartati Ekwan R",
+        "Daru Kartiko Novianto",
+        "Ridho Rokamah"
       ],
-      "venue": "Journal of the Physical Society of Japan",
-      "published_date": "2026-11-17",
-      "doi_url": "https://doi.org/10.7566/jpsj.95.124006",
-      "openalex_url": "https://openalex.org/W7127043528",
+      "venue": "Journal of Economics Law and Humanities",
+      "published_date": "2026-11-18",
+      "doi_url": "https://doi.org/10.21154/jelhum.v5i2.6899",
+      "openalex_url": "https://openalex.org/W7234755963",
       "cited_by_count": 0,
-      "abstract": "Regularization choice changes the recovery phase diagrams of annealing-based binary compressed sensing. We develop a regularization-selection method that combines systematic parameter search with random forest regression. Under noiseless Gaussian measurements with known sparsity, reference parameters are selected from a candidate grid by minimizing mean squared reconstruction error over repeated simulated annealing (SA) trials. The fitted model predicts these reference values from signal dimension, sampling ratio, and sparsity. With predicted regularization, the SA recovery transition broadly follows the asymptotic reference boundary for box-constrained [Formula: see text] recovery at the larger signal dimensions examined. Without retraining, the same predictor supplies identical regularization values to SA and a quantum–classical hybrid solver. On matched problem instances, the hybrid solver yields smaller mean squared reconstruction errors than SA in parts of the evaluated parameter space. The resulting rule reuses the searched information for subsequent reconstruction without repeating candidate searches at each setting. The results quantify empirical performance under the stated finite candidate grid and solver settings; they do not constitute a solver-independent recovery guarantee or a time-to-solution comparison.",
-      "summary_zh": "【金融经济学】正则化选择会改变基于退火算法的二元压缩感知的恢复相图。我们提出了一种正则化选择方法，该方法结合了系统化的参数搜索与随机森林回归技术。在噪声为零的高斯测量环境下，且已知数据具有稀疏性时，通过多次模拟退火（SA）试验，从候选参数网格中选取最优参考参数，这些参数是通过最小化均方重建误差来确定的。所建立的模型能够根据信号维度、采样比例和数据稀疏性预测这些参考值。在已知正则化参数的情况下，模拟退火算法的恢复过程在较大信号维度下大致遵循盒约束条件下的渐进参考边界。如果不进行重新训练，相同的预测器可以为模拟退火算法和量子-经典混合求解器提供相同的正则化参数。在匹配的问题实例中，混合求解器在评估的参数空间部分区域内能够实现比模拟退火算法更低的均方重建误差。该规则能够重用已搜索到的信息进行后续重建，而无需在每个设置下都重复进行参数搜索。研究结果量化了在特定有限候选参数网格和求解器设置下的实际性能表现，但这些结果并不构成对求解器独立性的保证，也不涉及求解时间上的比较。。研究方法：回归分析、随机森林。",
+      "abstract": "Background/Introduction: Administrative guidance on remarriage during a former wife’s iddah raises questions about legal interpretation and consistency in marriage registration. Research Objectives: This study examines registrars’ interpretations of the circular’s binding force, their reported handling considerations, and differences in application outcomes in Magetan Regency. Methodology: An exploratory qualitative study employed an empirical legal approach and a sociology-of-law perspective. Data comprised preliminary Google Forms responses from 18 registrars, supported by legal materials and scholarly literature. Analysis drew on Friedman’s legal system framework and Lipsky’s street-level bureaucracy perspective. Results: Eight KUA offices reported ten relevant applications during 2024–October 2026. Five reportedly resulted in postponement until iddah ended, while five proceeded before its reported completion. Registrars reported knowing the guidance and requesting postponement but expressed different interpretations of administrative authority and family circumstances. Case documents remain independently unverified, and attribution and chronological discrepancies limit interpretation. Unique Contribution: The study distinguishes reported policy knowledge, interpretive orientations, and application outcomes without assuming a direct causal relationship. Conclusion: Reported awareness of the circular did not always lead to postponement. However, the evidence does not establish the effectiveness of implementation or the legal validity of individual decisions. Recommendations: Authorities should clarify consultation procedures and strengthen decision documentation. Further research should verify case records and incorporate applicants’ and former spouses’ perspectives.",
+      "summary_zh": "【金融经济学】**背景/引言**：关于前妻“iddah”（守寡期）期间再婚的行政指导，引发了关于法律解释及婚姻登记一致性的疑问。  \n**研究目的**：本研究探讨了婚姻登记员对相关通知约束力的理解、他们在处理此类申请时的考量，以及马格坦县（Magetan Regency）在申请处理结果上的差异。  \n**研究方法**：采用探索性定性研究方法，结合实证法律分析与法律社会学视角。数据来源包括18名婚姻登记员的初步问卷调查结果（通过Google Forms收集），并辅以法律文献和学术资料。分析过程中参考了弗里德曼（Friedman）的法律体系框架及利普斯基（Lipsky）关于基层官僚制度的理论。  \n**研究结果**：2024年至2026年10月期间，共有8个婚姻登记办公室收到了10起相关申请。其中5例申请被推迟至“iddah”期结束，5例申请在“iddah”期结束前获得处理。登记员表示知晓相关指导规定并主动要求推迟处理，但对行政权力的理解及对家庭情况的判断存在差异。由于案例文件尚未经过独立核实，且相关信息的来源和时间顺序存在矛盾，因此难以对具体情况作出明确判断。  \n**研究的独特贡献**：本研究...。",
       "topics": [
-        "Binary number",
-        "Regularization (linguistics)",
-        "Algorithm",
-        "Computer science",
-        "Quadratic equation"
+        "Postponement",
+        "Bureaucracy",
+        "Interpretation (philosophy)",
+        "Remarriage",
+        "Consistency (knowledge bases)"
       ],
       "source": "openalex"
     },
     {
-      "title": "Improving FMQA via Initial Training Data Design Considering Marginal Bit Coverage in One-Hot Encoding",
+      "title": "Stock bubbles in limited participation models with power utilities",
       "authors": [
-        "Taiga Hayashi",
-        "Yuya Seki",
-        "Kotaro Terada",
-        "Yosuke Mukasa",
-        "Shuta Kikuchi"
-      ],
-      "venue": "Journal of the Physical Society of Japan",
-      "published_date": "2026-11-17",
-      "doi_url": "https://doi.org/10.7566/jpsj.95.124005",
-      "openalex_url": "https://openalex.org/W7160549366",
-      "cited_by_count": 1,
-      "abstract": "Factorization machine with quadratic-optimization annealing (FMQA) is a black-box optimization method that combines a factorization machine (FM) surrogate with search based on quadratic unconstrained binary optimization (QUBO) by an Ising machine. When FMQA is applied to integer or discretized continuous variables via one-hot encoding, uniform random initial sampling can leave many binary variables never active in the initial training data, and the corresponding FM parameters receive no direct gradient updates from the observed responses. We address this by designing the initial training data to achieve complete marginal bit coverage, namely, ensuring that every binary variable obtained by one-hot encoding takes the value one at least once. We use two space-filling sampling methods, Latin hypercube sampling (LHS) and the Sobol’ sequence, yielding LHS-FMQA and Sobol’-FMQA. On the human-powered aircraft wing-shape optimization benchmark with 17 and 32 design variables, both proposed methods achieved numerically higher mean final cruising speeds than the baseline FMQA, with the advantage more pronounced on the 32-variable problem.",
-      "summary_zh": "【金融经济学】基于二次优化退火（FMQA）的因子分解机是一种黑盒优化方法，它将因子分解机（FM）模型与基于二次无约束二进制优化（QUBO）的搜索算法相结合，其中QUBO部分通过伊辛机（Ising machine）来实现。当FMQA应用于通过独热编码（one-hot encoding）表示的整数或离散连续变量时，均匀随机初始采样可能导致许多二进制变量在训练数据中始终处于非激活状态，从而导致相应的FM参数无法从观测到的响应中获取到直接的梯度更新。为了解决这一问题，我们设计了初始训练数据，以确保所有通过独热编码生成的二进制变量至少出现过一次“1”的值，即实现完全的边际比特覆盖（complete marginal bit coverage）。我们采用了两种空间填充采样方法：拉丁超立方采样（Latin hypercube sampling，简称LHS）和Sobol序列（Sobol’ sequence），分别得到了LHS-FMQA和Sobol’-FMQA两种改进版本。在包含17个和32个设计变量的飞机机翼形状优化基准测试中，这两种改进方法均显著提高了最终巡航速度的平均数值，尤其在32变量问题上的优势更为明显。。研究方法：优化方法。",
-      "topics": [
-        "Latin hypercube sampling",
-        "Encoding (memory)",
-        "Computer science",
-        "Algorithm",
-        "Binary data"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Inference after coding agents",
-      "authors": [
-        "Florian Gunsilius",
-        "David Van Dijcke",
-        "Kaspar Wüthrich"
+        "Kasper Larsen"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-17",
+      "published_date": "2026-11-18",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.23174v1",
+      "openalex_url": "http://arxiv.org/abs/2611.24912v1",
       "cited_by_count": 0,
-      "abstract": "Empirical research is changing rapidly as AI coding agents are becoming increasingly proficient in every step of it, from writing code to manipulating data. We argue that while the potential of coding agents for science is vast, their use in hypothesis testing poses a substantial threat to classical inference, as these agents enable a supercharged form of selective inference. In particular, we argue that coding agents carrying out empirical research introduce a new type of post-selection inference that combines human-like, open-ended search over an implicit space of estimators with programmatic replayability of both the selection and the estimation process. Indeed, we find that on simulated data with zero effects, four frontier agents report significant p-values between 54% and 98% of the time when asked to produce a compelling finding. We propose a simple procedure for detecting and correcting these distortions. After an agent has completed its analysis, we reset and replay it on subsamples of the data to estimate the agent's relative probability of selecting that analysis when it looks statistically favorable. For agents with stable selection behavior, the resulting corrected test is asymptotically valid and consistent conditional on selection. Importantly, the correction is learned from the black-box agent's actual choices rather than a model of how it searches, so it remains valid even as AI technology continues to evolve rapidly. In simulations, the correction robustly lowers the high false rejection rates to near the nominal 5%. We illustrate the method on applications from two published papers.",
-      "summary_zh": "【金融经济学】随着人工智能编码代理在实证研究的各个环节（从编写代码到数据处理）中变得越来越熟练，实证研究正在迅速发生变化。我们认为，尽管编码代理在科学领域的应用潜力巨大，但它们在假设检验中的使用对传统推理方法构成了严重威胁，因为这些代理使得选择性推理的过程变得更加高效。具体而言，这些编码代理在进行实证研究时引入了一种新型的“后选择推理”机制：这种机制结合了人类式的开放式估计器搜索方式，以及选择和估计过程的程序化可重复性。在模拟数据中（即不存在实际效应的情况下），当要求这些代理得出具有说服力的研究结果时，有四种先进的编码代理在54%到98%的时间内报告了显著的p值。我们提出了一种简单的程序来检测和纠正这种偏差。在代理完成分析后，我们会重新设置数据并重新运行分析过程，以估计该代理在统计上“有利”的情况下选择该分析结果的概率。对于选择行为稳定的代理，经过校正后的检验在条件选择假设下是渐近有效的且具有一致性的。重要的是，这种校正方法是基于代理的实际选择行为进行学习的，而非基于对其搜索机制的建模；因此，即使人工智能技术持续快速发展，该方法依然有效。在模拟实验中，这种校正方法能够将较高的误拒绝率有效降低到...。研究方法：数值模拟。",
+      "abstract": "We prove that the equilibrium state-price deflated cum-dividend stock-price process in Guasoni, Larsen, and Leoni (2025) is a strict local martingale. Our result is based on proving that the unrestricted trader faces an endogenously complete model.",
+      "summary_zh": "【金融经济学】我们证明了Guasoni、Larsen和Leoni（2025）提出的均衡状态价格经通胀调整后的累积股息股票价格过程是一个严格局部鞅。我们的研究结果基于这样一个前提：不受限制的交易者面对的是一个内生完备的模型。。研究方法：均衡模型。",
       "topics": [
         "Economics",
         "Finance"
@@ -74,17 +49,19 @@
       "source": "arxiv"
     },
     {
-      "title": "Which Past Matters? Training History and Multi-Forecast Horizon in Equity Transformers",
+      "title": "Vibe-Trading: Towards Agent-Native Trading",
       "authors": [
-        "Chariton Chalvatzis"
+        "Haozhe Wu",
+        "Zhonghang Li",
+        "Chao Huang"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-17",
+      "published_date": "2026-11-18",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.23126v1",
+      "openalex_url": "http://arxiv.org/abs/2611.24845v1",
       "cited_by_count": 0,
-      "abstract": "More historical data can improve estimation while introducing relationships that transfer poorly to current market conditions. We therefore examine how training quantity and historical selection interact with forecast horizon in intraday equity prediction. We deploy twelve configurations which combine four sampling and validation policies with 6, 12 and 24 month training quantities under a fixed cross-sectional Transformer and feature set. A monthly walk-forward experiment produces 264 refits and eight cumulative return forecasts from 5 to 120 minutes. Evaluation covers January 2025 through 20 October 2026 and uses cross-sectional Spearman information coefficients against future five-factor residual returns. Six-month recency sampling leads individual models at 5-15 minutes, while multi recency configurations lead at 20-30 minutes and uniform configurations at 60-120 minutes. Increasing training quantity does not uniformly improve accuracy while an equal-weight ensemble of all twelve models exceeds every individual mean at 15, 20 and 25 minutes, but not at the remaining horizons. These findings support evaluating historical selection jointly with forecast horizon without identifying a universal policy or a causal benefit from recency.",
-      "summary_zh": "【金融经济学】更多的历史数据可以提高预测的准确性，但同时也会引入一些与当前市场状况关联较弱的因素。因此，我们研究了训练数据量与历史数据选择方式如何影响日内股票价格预测的预测范围（即预测时间跨度）。我们设计了十二种不同的模型配置，每种配置结合了四种采样和验证策略，并使用了6个月、12个月或24个月的训练数据量，这些模型均基于相同的横截面Transformer结构和特征集。通过每月进行一次滚动预测实验，我们获得了264次模型重新训练结果以及从5分钟到120分钟不等的累计收益预测数据。评估时间范围为2025年1月至2026年10月20日，评估方法采用了横截面Spearman信息系数来衡量模型对未来五因子残差收益的预测能力。结果显示：在5至15分钟的预测时间范围内，基于最近六个月数据的模型表现最佳；在20至30分钟的预测时间范围内，采用多种历史数据选择的模型表现更优；而在60至120分钟的预测时间范围内，均匀选择历史数据的模型表现最佳。虽然增加训练数据量并不能普遍提升预测准确性，但在15分钟、20分钟和25分钟的预测时间范围内，由所有十二个模型组成的加权集成模型的预测效果优于任何一个单独模型的预测结果...。研究方法：横截面分析、Transformer 模型、实验方法。",
+      "abstract": "Existing AI agents can retrieve information, call tools, run experiments, and produce multi-step outputs. Yet most are built around relatively static workflows and struggle to preserve reliable state as the environment changes. Financial trading makes this limitation especially consequential: prices, news, market conditions, portfolio positions, and available capital evolve continuously. A result is useful only when it remains tied to the correct time, data snapshot, and execution context. We present Vibe-Trading, a comprehensive agent-native trading framework and all-in-one workspace for building, evaluating, and evolving agents for financial trading. It unifies market research, financial data, strategy generation, backtesting, portfolio analysis, paper trading, multi-agent collaboration, and optional broker execution. Its central contribution is an architecture that keeps results, evidence, research history, and trading authority connected throughout the research-to-action process. Each result retains its source, temporal scope, configuration, and producing run. Shared evidence grounding enables verification, versioned research records support reproducible continuation, and an explicit authority gate separates strategy research from live execution. Together, these designs provide a practical foundation for trading agents whose results can be traced, reproduced, and acted on only under explicit authority.",
+      "summary_zh": "【金融经济学】现有的人工智能代理能够检索信息、调用工具、运行实验并生成多步骤的输出结果。然而，大多数这类代理都是基于相对静态的工作流程构建的，当环境发生变化时，它们难以保持状态的一致性。在金融交易领域，这一局限性尤为突出：价格、新闻、市场状况、投资组合持仓以及可用资本都在持续变化。只有当结果与正确的时间点、数据快照和执行环境相匹配时，它们才具有实际意义。我们提出了Vibe-Trading，这是一个专为金融交易设计的综合性代理框架及一体化工作环境，用于构建、评估和优化交易代理。该平台整合了市场研究、金融数据、策略生成、回测、投资组合分析、模拟交易、多代理协作以及可选的经纪商执行功能。其核心优势在于构建了一种架构，能够在整个从研究到执行的过程中保持结果、证据、研究历史和交易权限的紧密关联。每个结果都保留了其来源、时间范围、配置以及生成过程的相关信息。共享的证据机制支持验证，版本化的研究记录便于后续复现，而明确的权限控制机制则将策略研究与实际交易操作区分开来。这些设计共同为交易代理提供了实用的基础，确保其结果只有在经过明确授权的情况下才能被追踪、复现和执行。。研究方法：实验方法。",
       "topics": [
         "Economics",
         "Finance"
@@ -92,104 +69,59 @@
       "source": "arxiv"
     },
     {
-      "title": "FROM GENERATED INFORMATION TO INTERNATIONALIZATION KNOWLEDGE: GENERATIVE AI, ABSORPTIVE CAPACITY AND SMES’ MARKET ENTRY DECISIONS",
+      "title": "The current macroeconomic situation in Ireland",
       "authors": [
-        "A. Diachkova"
+        "J. Rosa"
       ],
-      "venue": "Journal of Trends in Finance and Economics",
-      "published_date": "2026-11-13",
-      "doi_url": "https://doi.org/10.61784/jtfe3087",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:295918014",
+      "venue": "Central European Review of Economics & Finance",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.24136/ceref.2026.013",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295958356",
       "cited_by_count": 0,
-      "abstract": "Generative artificial intelligence (GenAI) can reduce the cost of acquiring information about foreign markets and generating alternative strategies for small and medium-sized enterprises (SMEs). Greater information availability does not necessarily improve decision quality, however. This conceptual paper uses a narrative literature review and adopts absorptive capacity as its main theoretical perspective, alongside the Uppsala internationalization process model, to examine the role of experiential knowledge and business networks. The unit of analysis is a specific market entry decision involving a defined product, target market, and entry mode. The paper distinguishes information-processing efficiency, decision quality, and business performance. It proposes that generated content requires value recognition, evidence verification, and contextual integration to support a decision. Proportionate resource commitments and feedback from action may then support the development of reusable knowledge. These processes are connected through feedback rather than a fixed linear sequence. The strategic value of GenAI depends on the fit between the speed of information generation and organizational verification capacity, knowledge embedded in transaction relationships that is difficult to codify, and the incorporation of feedback into organizational routines. Three propositions address the review burden associated with information expansion, the need for direct market interaction, and the conditions under which retained records support organizational learning. The paper contributes to the discussion of AI-assisted internationalization by specifying mechanisms and observable processes for future empirical research. The propositions remain to be empirically tested.",
-      "summary_zh": "【金融经济学】生成式人工智能（GenAI）能够降低中小企业获取海外市场信息的相关成本，并为其制定替代性经营策略提供支持。然而，信息的丰富性并不必然提升决策质量。本文采用叙事性文献综述的方法，以吸收能力（absorptive capacity）作为主要理论视角，并结合乌普萨拉国际化过程模型（Uppsala Internationalization Process Model），探讨了经验知识与商业网络在国际化决策中的作用。研究的分析单元是指特定市场进入决策，这些决策涉及明确的产品、目标市场及进入模式。文章区分了信息处理效率、决策质量与企业绩效三个关键维度，指出生成的内容需要经过价值认定、证据验证及情境整合才能为决策提供有效支持。适当的资源投入及实践中的反馈有助于可复用知识的形成。这些过程是通过反馈机制相互关联的，而非遵循固定的线性顺序。GenAI的战略价值取决于信息生成速度与组织验证能力之间的匹配程度、难以编码的隐性知识在交易关系中的体现，以及反馈如何被纳入组织日常运作中。文章提出了三项研究命题，分别涉及信息扩展带来的研究负担、直接市场互动的必要性，以及保留记录对组织学习的支持条件。通过明确未来...。",
+      "abstract": "Ireland holds the Presidency of the Council of the European Union for the current six months. It is worth taking this opportunity to take a closer look at the state of its economy. The economic outlook for Ireland is optimistic. Assuming the end of the conflict in the Middle East, which is a bigger problem for the pro-export structure of Irish companies than the war in Ukraine, we can expect new FDI in sectors other than those exploited so far, e.g. AI computing centers, renewable energy (wind farms) or even the agri-food processing sector. Traditionally, Ireland will count on investors from the USA, as well as partial (e.g. in agriculture) financing from EU funds. The economic elites are counting on the success of Trump's policy of strengthening the role of the United States. The Irish government is aware of the importance of the presence of both American and other foreign companies for employment and budgetary policy, and will strive to promote Ireland as Europe's industrial hub in modern technologies of the 21st century. The rapid development of the US economy will generate demand for Irish products, especially in modern technologies (including space technologies – the development of the space conquest program by E. Musk in the next 20 years), and a possible drop in energy prices may reduce the operating costs of industry and transport in the near future. At that time, the political position of the Republic of Ireland in the perspective of 2030. will increase significantly, and the prospect of reunification with the poorer north of the island will be more realistic. After reunification, and assuming the current high immigration dynamics, with a demographic substitutability level of 1.15, there would be more than 8 million people living in a united Ireland – a return to the 1841 value of 8.2 million people.  Before we get into the main content, it is important to note a particularly positive feature of the political and economic system of Ireland, where there are no extreme political forces such as the extreme right or the extreme left. The Communist Party does not exist here, and the communist Sinn Fein is more of a nationalist party than a communist one, and being always in opposition to the 2 big centrist parties, Fianna Fail and Fine Gael, it does not pose a serious threat to economic development based on American capital and EU funds.",
+      "summary_zh": "【金融经济学】爱尔兰目前担任欧盟理事会主席国，任期为期六个月。借此机会，我们有必要更深入地了解其经济状况。爱尔兰的经济前景较为乐观。假设中东冲突能够结束（这一冲突对爱尔兰出口导向型企业的冲击比乌克兰战争更为严重），我们预计将有新的外国直接投资涌入那些尚未得到充分开发的领域，例如人工智能计算中心、可再生能源（风力发电场）以及农业食品加工产业。传统上，爱尔兰会依赖美国的投资者，并获得欧盟基金的部分资金支持（尤其是在农业领域）。爱尔兰的经济精英们对特朗普加强美国影响力的政策寄予厚望。爱尔兰政府深知美国及其他外国企业的存在对就业和财政政策的重要性，因此将努力推动爱尔兰成为欧洲在21世纪现代技术领域的产业中心。美国经济的快速发展将增加对爱尔兰产品的需求，尤其是在高科技领域（包括太空技术——埃隆·马斯克计划在未来20年内推进的太空探索项目）；同时，能源价格的下降可能降低工业和交通运输领域的运营成本。到2030年，爱尔兰在欧盟内的政治地位将显著提升，与岛上较贫困的北部地区实现统一的可能性也将变得更加现实。一旦统一，并考虑到当前较高的移民率（人口替代率为1.15），统一的爱尔兰将拥有超过800万居民，重回18...。",
       "topics": [
+        "Economics",
+        "Environmental Science"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Beyond Reported Emissions: Uncovering Hidden Corporate Carbon Footprints",
+      "authors": [
+        "Florian Pothin",
+        "F. Rondeau",
+        "T. Razafindrabe",
+        "Arthur Macherey"
+      ],
+      "venue": "International Journal of Finance & Economics",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.1002/ijfe.70330",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295975831",
+      "cited_by_count": 0,
+      "abstract": "Scope 3 emissions have become central to climate disclosure, but remain the least reliable component of firms' carbon footprints. This paper argues that the core measurement problem lies not only in the aggregate Scope 3 total, but in the heterogeneous quality of its underlying categories. Because some categories are far more difficult to observe, verify and compare than others, the aggregate figure embeds substantial noise—and, as we show, systematic omission. Using firm‐level disclosures from the CDP (Carbon Disclosure Project) database over 2013–2023, we implement a category‐level framework that first diagnoses, for each of the 15 GHG Protocol categories, whether a firm fully omits, partially under‐reports or soundly discloses it and then estimates the missing magnitude by machine learning. We find that hidden Scope 3 amounts to about 22% of reported emissions on a value‐weighted basis, while under‐reporting is near‐universal across firms—the median firm conceals 64% of its corrected footprint—but concentrated in tonnage among the largest emitters. Omission is not diffuse: it concentrates on use of sold products, the single category that most directly captures a firm's exposure to transition risk and that alone accounts for roughly two‐thirds of hidden emissions. Correcting these disclosures therefore reshapes firms' relative positions in the carbon distribution—44% of declarants change carbon‐intensity quintile—and selectively reveals the most financially material dimension of their carbon exposure. Reported Scope 3 carries a reliability ratio of at most 0.65 with respect to corrected exposure (0.62 within sectors), so carbon‐premium estimates built on it are attenuated by a third or more—distortions that affect ESG scoring, portfolio construction, transition‐risk assessment and the design of disclosure standards.",
+      "summary_zh": "【绿色金融与可持续发展】范围3排放已成为气候信息披露的核心内容，但仍然是企业碳足迹中最不可靠的部分。本文认为，问题的核心不仅在于范围3排放总量的统计方法，还在于其各分类数据的质量参差不齐。由于某些类别的数据更难以观测、验证和比较，因此汇总数据中存在大量误差，且存在系统性遗漏。我们利用2013至2023年间碳披露项目（CDP）数据库中的企业级数据，建立了一个分类级分析框架：首先针对《温室气体议定书》规定的15个排放类别，判断企业是完全遗漏相关数据、部分低估排放量，还是如实披露了相关信息；随后通过机器学习方法估算出这些遗漏的排放量。研究发现，按价值加权计算，隐藏的范围3排放量约占报告总排放量的22%；而企业普遍存在低估排放量的现象——中等规模企业隐藏了其实际碳足迹的64%——且这种低估主要集中在排放量最大的企业中。数据遗漏并非随机分布，而是集中在“销售产品”的类别上，这一类别最能直接反映企业面临的转型风险，且隐藏的排放量占全部隐藏排放量的约三分之二。纠正这些披露信息后，企业在全球碳排放排名中的相对位置会发生显著变化（44%的企业碳强度排名发生变化）；同时，也能更准确地揭示其碳暴露风险的财务影响。经校正后的范...。研究方法：机器学习。",
+      "topics": [
+        "Environmental Science",
         "Business",
-        "Computer Science",
         "Economics"
       ],
       "source": "semantic_scholar"
     },
     {
-      "title": "Measuring the Impact of Impact Measurement",
+      "title": "The Structural Number of Parties: An Electoral-Outcome-Independent Baseline for Comparing Party-System Scale",
       "authors": [
-        "Emanuele Colonnelli",
-        "Timothy McQuade",
-        "Natalia Rigol",
-        "Benjamin N. Roth"
-      ],
-      "venue": "NBER Working Papers",
-      "published_date": "",
-      "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w36009#fromrss",
-      "cited_by_count": 0,
-      "abstract": "Impact measurement is central to impact investing and social entrepreneurship, yet little is known about whether firms benefit privately from measuring impact. We conduct the first randomized controlled trial of an impact measurement intervention among high-growth social enterprises in India. Treated firms exhibit nearly twice as much revenue growth and raise nearly twice as much capital as control firms. In a companion experiment with early-stage investors, we find that investors respond strongly to quantified impact metrics but not to generic qualitative impact statements. Together, our results show that impact measurement can shape firm growth and capital allocation.",
-      "summary_zh": "📌 研究问题：影响测量在社会创业和影响力投资中占据核心地位，但企业是否真正从测量影响中获益尚不明确。\n\n🔬 研究方法：本研究在印度高增长社会企业中实施了首次随机对照试验（RCT），并在配套实验中测试了早期投资者对量化与定性影响陈述的反应。\n\n📊 核心发现：接受干预的企业其收入增长和融资额几乎是对照组的两倍；同时，早期投资者对量化的影响指标反应强烈，而对通用的定性影响陈述反应冷淡。\n\n💡 应用价值：研究结果表明，影响测量能够显著影响企业增长和资本配置。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "nber"
-    },
-    {
-      "title": "Gambling for Goals",
-      "authors": [
-        "Costas Arkolakis",
-        "Spencer Y. Kwon",
-        "Dominic Russel",
-        "Claire Shi",
-        "Hyunjoo Yang"
-      ],
-      "venue": "NBER Working Papers",
-      "published_date": "",
-      "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w36010#fromrss",
-      "cited_by_count": 0,
-      "abstract": "Young adults in advanced economies have grown more pessimistic about their economic prospects in recent years. At the same time, gambling-like financial activities have proliferated. We link these trends through a Friedman-Savage (1948) motive: when life goals such as homeownership or marriage seem out of reach, individuals turn to financial gambles. We test this theory using an original survey combined with millions of linked records from Korea’s leading credit bureau, telecom provider, and credit card issuer. Consistent with the theory, individuals who place greater importance on hard-to-reach goals take more risk, and the form of risk they take varies systematically with their distance from those goals. Within individuals, cryptocurrency app usage rises during unemployment and falls after winning the right to purchase price-regulated housing through a lottery. A calibration shows how hard-to-reach goals lead households to act more aggressively on their beliefs, amplifying the consequences of overoptimism.",
-      "summary_zh": "【金融经济学】近年来，发达经济体的年轻人对自身经济前景的悲观情绪日益加剧。与此同时，类似赌博的金融活动也呈激增趋势。我们通过弗里德曼-萨维奇（Friedman-Savage，1948）提出的动机理论来解释这两种现象：当购房或结婚等人生目标看似遥不可及时，人们便会转向金融投机行为。我们利用一项原创调查数据，结合韩国主要征信机构、电信公司和信用卡发行机构的海量关联记录，对这一理论进行了验证。研究结果与理论预测一致：那些更重视难以实现的目标的人更倾向于承担风险，且他们所承担的风险类型会随着其与目标之间的距离而系统性变化。在个体层面，失业期间加密货币应用程序的使用率会上升，而通过抽奖获得价格受监管的住房购买资格后，这一使用率又会下降。进一步的研究表明，难以实现的目标会促使人们更加坚信自己的判断，从而放大过度乐观所带来的负面后果。。研究方法：模型校准、调查数据。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "nber"
-    },
-    {
-      "title": "Firefly-Geni: Automated Iteration-Guided Generative Discovery of Thermally Activated Delayed Fluorescence Molecules",
-      "authors": [
-        "Boyuan Zhang",
-        "Xuerui Fang",
-        "De Yang",
-        "Yue Wang",
-        "Liu Y"
-      ],
-      "venue": "ACS Central Science",
-      "published_date": "2026-11-17",
-      "doi_url": "https://doi.org/10.1021/acscentsci.6c01736",
-      "openalex_url": "https://openalex.org/W7167016259",
-      "cited_by_count": 0,
-      "abstract": "Abstract\n                  The efficient discovery of thermally activated delayed fluorescence (TADF) molecules remains heavily dependent on expert-driven design rules, while the vast structure–property knowledge accumulated in the literature stays largely fragmented and underutilized. Here, we present Firefly-Geni, an automated and interpretable active-evolution framework that transforms dispersed literature knowledge into structurally novel TADF candidates through a closed-loop workflow. Firefly-Geni integrates large-language-model (LLM)-assisted data extraction, multitask property prediction, conditional molecular generation, and theoretical evaluation. Its data-mining module converts unstructured literature into a curated database of experimental property entries. A dual-molecular-graph multitask predictor and a conditional generator are integrated with quantum-chemical feedback, enabling iterative refinement toward structural novelty. From 100,000 molecules generated under target conditions of a singlet–triplet energy gap ΔEST = 0.05 eV and a synthetic accessibility (SA) score of 2.5, Firefly-Geni identifies 100 structurally novel candidates computationally predicted to support reverse intersystem crossing and to be synthetically tractable, spanning diverse emission wavelengths. One synthesized candidate exhibited an experimental ΔEST of 0.019 eV and a film photoluminescence quantum yield (PLQY) of 84% under nitrogen, broadly consistent with the predicted small gap and high PLQY. Interpretability analyses further reveal chemically meaningful structure–property relationships and generation preferences, confirming that the candidates encode physically relevant low-ΔEST design motifs. This work offers a closed-loop, explainable strategy for actively evolving TADF candidates from literature knowledge, providing a generalizable route for data-driven molecular discovery.",
-      "summary_zh": "【房地产金融】摘要  \n热激活延迟荧光（TADF）分子的高效发现仍主要依赖于专家制定的设计规则，而文献中积累的大量结构-性质知识大多分散且未得到充分利用。在此，我们提出了Firefly-Geni这一自动化且可解释的活性分子进化框架，该框架通过闭环工作流程将分散的文献知识转化为结构新颖的TADF候选分子。Firefly-Geni整合了大型语言模型（LLM）辅助的数据提取、多任务性质预测、条件分子生成和理论评估功能。其数据挖掘模块将非结构化的文献信息转化为经过整理的实验性质数据库。该系统结合了双分子图多任务预测器和条件生成器，并引入量子化学反馈机制，从而实现结构新颖性的迭代优化。在单重态-三重态能量差ΔEST为0.05 eV、合成可及性（SA）评分为2.5的目标条件下，Firefly-Geni从10万个候选分子中筛选出了100个结构新颖的分子，这些分子经计算预测具有反向体系间跃迁能力且易于合成，覆盖了多种发射波长。其中一个合成得到的候选分子在氮气氛围下的实验ΔEST为0.019 eV，薄膜光致发光量子产率（PLQY）达到84%，与预测结果高度一致。可解释性分析进一步揭示了具有化学意义的结构-性质关...。研究方法：实验方法。",
-      "topics": [
-        "Interpretability",
-        "Computer science",
-        "ENCODE",
-        "Property (philosophy)",
-        "Generative grammar"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Integrating market sentiments for stock price prediction: A comparative study of Bi-LSTM and multilayer perceptions",
-      "authors": [
-        "Ahmet Akusta"
+        "Adama Nouboukpo",
+        "Kodzo Michel Aladji",
+        "Bappa Muktar"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-17",
+      "published_date": "2026-11-18",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.23057v1",
+      "openalex_url": "http://arxiv.org/abs/2611.24714v1",
       "cited_by_count": 0,
-      "abstract": "This study investigates the integration of sentiment analysis with machine learning models to forecast stock price movements using the Nvidia Corporation as a case study. Sentiment scores were derived from Nvidia-related financial news headlines using two sentiment analysis tools: FinBERT, a domain-specific tool, and TextBlob, a general-purpose tool. These scores were integrated into predictive frameworks based on bidirectional long short-term memory (Bi-LSTM) networks and multilayer perceptrons (MLPs) developed alongside historical stock price data. This study assesses the predictive performance over the entire observation period and across distinct market phases: bullish, stagnation, and strong bullish conditions. The findings indicate that sentiment features enhance predictive accuracy in specific contexts, particularly during stagnation phases, with TextBlob demonstrating superior performance to FinBERT in specific scenarios. In addition, Bi-LSTM models exhibit consistently superior performance in capturing temporal dependencies compared to MLPs. However, the impact of sentiment features diminished during strongly directional trends, such as those observed in strong bullish markets. The combination of FinBERT and TextBlob in the same dataset allows for a dual-perspective approach to sentiment analysis, thereby providing new insights into the dynamic relationship between market sentiment and stock price behavior. This research contributes to the existing literature on applying sentiment analysis to financial forecasting by advancing the integration of complementary sentiment tools and phase-specific evaluations.",
-      "summary_zh": "【行为金融】本研究探讨了将情感分析技术与机器学习模型相结合，以预测股票价格走势的方法，并以Nvidia公司作为案例进行研究。情感评分是通过两种情感分析工具从与Nvidia相关的财经新闻标题中提取的：一种是专门针对金融领域的FinBERT工具，另一种是通用的情感分析工具TextBlob。这些评分被整合到基于双向长短期记忆网络（Bi-LSTM）和多层感知器（MLP）的预测框架中，同时结合了历史股票价格数据。研究评估了在整个观察期间以及不同市场阶段（牛市、市场停滞期和强劲牛市）中的预测性能。研究结果表明，在特定情境下，情感特征能够提升预测准确性，尤其是在市场停滞期，其中TextBlob在某些场景中的表现优于FinBERT。此外，与MLP相比，Bi-LSTM模型在捕捉时间序列依赖性方面表现出更强的能力。然而，在市场趋势明显的情况下（如强劲的牛市），情感特征的影响会减弱。在同一数据集中同时使用FinBERT和TextBlob能够从两个角度进行情感分析，从而为市场情绪与股票价格行为之间的动态关系提供新的见解。本研究通过推进互补情感分析工具的整合以及针对不同市场阶段的评估，为将情感分析应用于金融预测的现有...。研究方法：机器学习、情绪分析。",
+      "abstract": "How many parties can a country structurally sustain? Standard measures such as the effective number of parties (ENP) cannot answer this question. They are descriptive and post hoc: they summarize competition only after an election, and they depend on electoral returns that are often missing, interrupted, or unreliable in many developing democracies, particularly in Africa. They also offer no common scale for comparing the size of party registers with realized electoral fragmentation. We introduce the Structural Number of Parties (SNP), an outcome-independent baseline derived from two universally available quantities: population size and territorial area. Building on the logic of the seat product model and the cube-root law of assembly size, the SNP gives an ex ante benchmark that can be computed for any country and year, including where electoral data are absent. Applied to African states, the SNP enables a structural gap diagnosis that distinguishes under-fragmented systems, marked by hegemonic-party dominance, from over-fragmented ones, marked by excessive atomization. The framework thus provides a transparent and reproducible tool to inform institutional reform and the rationalization of party systems across the continent.",
+      "summary_zh": "【金融经济学】一个国家在结构上能够维持多少个政党？传统的衡量标准（如有效政党数量，Effective Number of Parties，ENP）无法回答这个问题。这些指标具有描述性，且属于事后分析：它们仅在选举结束后才对政党竞争情况进行总结，而且依赖于选举结果数据，而这些数据在许多发展中国家（尤其是非洲国家）往往缺失、不完整或不可靠。此外，这些指标也没有提供一个统一的尺度来比较政党登记册的规模与实际选举中的政党碎片化程度。我们提出了“结构政党数量”（Structural Number of Parties，SNP）这一概念，它是一个与选举结果无关的基准指标，基于两个普遍可获得的变量：人口规模和领土面积来计算。该指标借鉴了“席位乘积模型”（seat product model）和“议会规模立方根定律”（cube-root law of assembly size）的逻辑，能够为任何国家和地区（包括那些缺乏选举数据的地方）提供一个事前的评估基准。将SNP应用于非洲国家后，可以据此诊断出政党体系的结构性特征：那些以单一政党主导为特征的“低碎片化”体系，与那些政党过度分散、陷入过度碎片化的体系形成鲜...。",
       "topics": [
         "Economics",
         "Finance"
@@ -197,20 +129,21 @@
       "source": "arxiv"
     },
     {
-      "title": "Long-Term Quantile Treatment Effects with Combined Experimental and Observational Data",
+      "title": "ChainIT Transaction Truth: Stablecoins, Web3 Wallets, and Multi-Rail Commerce. A Zero-Trust Control Plane for Verified Identity, Organizational Authority, Runtime Compliance, Secure Wallet Execution, and Immutable Settlement Evidence",
       "authors": [
-        "Nan Liu",
-        "Yanbo Liu",
-        "Yuya Sasaki",
-        "Yichong Zhang"
+        "Eric Tacl",
+        "Matthew Koepp",
+        "Tim Hines",
+        "Russell Lessard",
+        "Jason Patrick"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-17",
+      "published_date": "2026-11-18",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.22984v1",
+      "openalex_url": "http://arxiv.org/abs/2611.24659v1",
       "cited_by_count": 0,
-      "abstract": "This paper studies the identification, estimation, and inference of long-term quantile treatment effects (LTQTEs) when short-term experimental data are supplemented with long-term observational data. Under a latent unconfoundedness framework, we establish identification of the LTQTE curve and derive the corresponding efficient influence functions. Building on these influence functions, we propose a semiparametrically efficient estimation procedure and develop a multiplier bootstrap method for uniform inference on the LTQTE curve, yielding valid simultaneous confidence bands over a continuum of quantile indices.",
-      "summary_zh": "【金融经济学】本文研究了在短期实验数据与长期观测数据相结合的情况下，长期分位数处理效应（LTQTEs）的识别、估计与推断问题。在潜在无混杂性的框架下，我们确立了LTQTE曲线的识别方法，并推导出了相应的有效影响函数。基于这些影响函数，我们提出了一种半参数高效估计程序，并开发了一种乘数自助法（multiplier bootstrap method），用于对LTQTE曲线进行统一推断，从而能够在连续的分位数指标范围内获得有效的同时置信区间。。研究方法：实验方法。",
+      "abstract": "Stablecoins can move value continuously across programmable networks, and Web3 wallets can authorize those transfers with cryptographic signatures, but neither capability, standing alone, establishes a complete commercial transaction. A blockchain may prove that a transaction satisfied protocol rules, and a wallet may prove that sufficient signing authority existed; neither proves who initiated the transaction, for which legal entity, under what current authority, against which current compliance evidence, on what exact instruction, or with what settlement and accounting outcome. We describe the ChainIT Transaction Truth Architecture, a zero-trust control, execution, and evidence architecture that places verified individual and organizational identity, the organizational authority record and authority policy of the ChainIT Authority Protocol, transaction-specific runtime compliance decisions, exact-digest approval, atomic capacity reservation, and a single-use Execution Authorization Credential in front of wallet execution, and that records settlement, reconciliation, and lifecycle evidence after the transaction. The architecture separates five boundaries: control of a key is not identity, identity is not organizational authority, authority is not compliance, compliance is not execution authority, and network confirmation is not complete commercial settlement. We describe wallet and custody profiles, including a multi-party computation (MPC) profile in which custody security is kept independent of business authority, stablecoin and Web3 evidence domains, layered finality, the U.S. stablecoin regulatory context as of September 2026, and a phased deployment in which pilot success requires that the control invariants hold under attack and failure.",
+      "summary_zh": "【金融经济学】稳定币能够在可编程网络中持续传输价值，而Web3钱包则可以通过加密签名来授权这些转账操作。然而，这两种技术单独来看都无法完成一个完整的商业交易。区块链可以证明某笔交易符合协议规则，钱包也可以证明交易方具备必要的签名权限；但它们都无法确定交易的发起者、所属的法律实体、执行的依据、当前的合规性情况、具体的交易指令，以及最终的结算和会计结果。我们提出了ChainIT交易真实性架构（ChainIT Transaction Truth Architecture），这是一种基于零信任原则的控制、执行和证据管理系统。该架构在钱包执行前验证个人和组织身份、ChainIT权限协议的权限记录与政策、交易特定的运行时合规性要求、精确的摘要验证机制以及一次性使用的执行授权凭证，并在交易完成后记录结算结果、对账信息及交易的全生命周期证据。该架构明确了五个关键界限：密钥的控制权并不等同于身份；身份并不代表组织权限；权限并不等同于合规性；合规性并不等同于执行权限；网络确认也不等同于完整的商业结算。我们还描述了钱包和托管服务的具体配置，包括一种多方计算（MPC）机制，该机制确保托管安全性与业务权限相互独立；同时...。",
       "topics": [
         "Economics",
         "Finance"
@@ -218,20 +151,17 @@
       "source": "arxiv"
     },
     {
-      "title": "Action-outcome coupling: a pre-investment feasibility audit for offline reinforcement learning in supply chain operations",
+      "title": "On the equilibrium lattice of supermodular games",
       "authors": [
-        "Tung Dang",
-        "The Hung Phung",
-        "Son Lam Nguyen",
-        "Tu Nguyen"
+        "Philip R. Neary"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-17",
+      "published_date": "2026-11-18",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.22921v1",
+      "openalex_url": "http://arxiv.org/abs/2611.24614v1",
       "cited_by_count": 0,
-      "abstract": "Prescriptive analytics initiatives in logistics, such as offline reinforcement learning and next-best-action systems, are often funded before anyone verifies that the available historical logs can support an improved decision policy. We formalise this pre-investment feasibility question via action-outcome coupling: a total-effect variance index measuring how much expected outcomes change with the logged action. Coupling provides an algorithm-independent upper bound on any policy's achievable value, expressed in monetary units per decision for both single-step and discounted sequential objectives. We also analyse the asymptotic false-licensing risk of an invalid workflow: fitting a value model and evaluating the model's greedy policy on the same data. The false-licence rate is driven mainly by the number of state cells over which selection is performed, rising from the nominal test level with one cell to near certainty with a few dozen, while overlap has a smaller effect. We then propose an audit that assigns logs to four tiers of decision support, separately for fixed and contextual policies, and returns an explicit stopping rationale. On a randomised e-commerce log, the audit endorses a fixed recommendation policy, certifying gains equal to 30 per cent of the theoretical ceiling; the remaining gap reflects bound looseness under an 80-action design. Two public logistics logs fail at different checkpoints: one because the target is an accounting identity of the action, and another because, with 27 clusters, estimated coupling stays below the design's detectability threshold even though a conservative offline learner certifies an improvement in 29 of 30 seeds.",
-      "summary_zh": "【金融经济学】在物流领域，诸如离线强化学习和次优行动系统之类的规范性分析项目往往在尚未有人验证现有历史数据是否足以支持改进决策策略之前就获得了资金支持。我们通过“行动-结果耦合”这一概念来形式化这种投资前的可行性问题：该指标用于衡量预期结果随记录的行动而发生的变化程度。这种耦合方法为任何策略的可实现价值提供了一个与算法无关的上限，该价值以每次决策的货币单位来表示，适用于单步决策和折现序列决策场景。我们还分析了无效工作流程所带来的渐进性“错误授权”风险，即在同一数据集上拟合价值模型并评估该模型所产生的“贪婪策略”。错误授权率主要受状态单元数量的影响：当状态单元数量从一个时，错误授权率处于较低水平；而当状态单元数量达到几十个时，错误授权率几乎可以确定为必然发生。随后，我们提出了一种审计机制，将历史数据分为四个决策支持层级，分别针对固定策略和上下文相关策略，并提供明确的停止决策的依据。在随机生成的电子商务数据集上，该审计机制推荐了一种固定策略，其带来的收益相当于理论上限的30%；剩余的收益差距反映了在包含80个行动的设计方案下评估结果的不确定性。有两个公共物流数据集在审计过程中未能通过验证：其中一个...。研究方法：随机实验。",
+      "abstract": "This paper shows how the meet and join of any pair of equilibria in a super- modular game can be constructed. The method relies on two one-directional best-response processes that I call contagion up and contagion down. Starting from any action profile, applying this pair of processes in opposite orders produces two equilibria that define its equilibrium envelope. The endpoints of the envelope are precisely the least and greatest equilibria reachable through arbitrary asynchronous best-response dynamics, and can only move closer together as players revise their actions. These and other results show how appending one-directional adjustment processes to the familiar equilibrium lattice structure allows us to explore the relationships between equilibria further.",
+      "summary_zh": "【金融经济学】本文阐述了如何在超模块化博弈中构建任意一对均衡点的“相遇”与“结合”过程。该方法依赖于两种单向的最佳响应机制，我将其分别称为“上升型传染”（contagion up）和“下降型传染”（contagion down）。从任意一个行动组合出发，按相反的顺序依次应用这两种机制，可以生成两个均衡点，这两个均衡点共同构成了该行动组合的均衡包络（equilibrium envelope）。该均衡包络的端点分别代表通过任意异步最佳响应动态所能达到的最小均衡点和最大均衡点；随着玩家不断调整自己的行动，这两个端点只会越来越接近。这些发现以及其他相关结果表明，在传统的均衡格结构中加入单向调整机制，能够帮助我们更深入地探究不同均衡点之间的相互关系。。研究方法：均衡模型。",
       "topics": [
         "Economics",
         "Finance"
@@ -239,23 +169,83 @@
       "source": "arxiv"
     },
     {
-      "title": "Weighted Proportional Toll Sharing on General Highway Networks",
+      "title": "Platform Recommendation and Competition in Search Markets",
       "authors": [
-        "Erfang Shan",
-        "Yan Chu"
+        "Sanxi Li",
+        "Jun Yu",
+        "Mingsheng Zhang"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-17",
+      "published_date": "2026-11-18",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.22892v1",
+      "openalex_url": "http://arxiv.org/abs/2611.24464v1",
       "cited_by_count": 0,
-      "abstract": "We extend the Segments Equal Sharing (SES) method of \\citet{wu2024} from line highways to general highway networks, including networks with cycles. The input is an exogenously specified profile of route flows. We introduce the Weighted Proportional Sharing (WPS) method, which distributes each route's mileage revenue in proportion to weighted segment lengths and its fixed-surcharge revenue in proportion to positive segment surcharges. Route SES is recovered under homogeneous weights within each revenue component. We show that WPS is the sum of two weighted Shapley allocations and that the underlying route games extend the dividend and Shapley representation of linear SES. Two axiomatic characterizations identify WPS. The first uses additivity and proportional treatment of segments used on every positive-revenue route. The second combines sub-highway efficiency and weighted average balanced contributions under a route cancellation rule. We also extend Segments Proportional Sharing to general networks, identify it with the $τ$ value of the corresponding route game, and characterize it axiomatically. For Segments Compensated Sharing we characterize a weighted average tree allocation by consistency across rooted branch settlements and averaging under a specified root lottery. A cyclic example shows that different route splits can change the allocation even when origin--destination volumes and aggregate toll revenue are held fixed.",
-      "summary_zh": "【金融经济学】我们将\\citet{wu2024}提出的“路段平等分配（SES）”方法从线性高速公路网络扩展到了包含循环路段的一般高速公路网络。输入数据为外生指定的路线流量分布情况。我们引入了“加权比例分配（WPS）”方法，该方法根据路段的权重长度来分配每条路线的里程收入，并根据路段的附加收费来分配其固定附加费收入。在每个收入组成部分内，采用相同的权重即可恢复路段SES分配结果。我们证明了WPS方法实际上是两种加权Shapley分配方式的叠加，并指出相应的路线博弈模型扩展了线性SES模型中的收益分配与Shapley值表示方法。通过两个公理化特征可以识别WPS方法：第一个特征基于对所有产生正收入的路段实施加法运算及比例分配原则；第二个特征则结合了子高速公路网络的效率评估以及路线取消规则下的加权平均平衡贡献原则。此外，我们还将“路段比例分配”方法扩展到了一般网络环境中，并将其与相应路线博弈的$τ$值等同起来，并通过公理化方法对其分配机制进行了描述。对于“路段补偿分配”模型，我们通过根节点结算处的一致性以及指定根节点随机分配机制下的平均分配规则来描述其分配过程。一个包含循环路段的实例表明，即使起点-终...。",
+      "abstract": "Recommendation rules affect both sellers' incentives and the alternatives consumers expect to find. We develop a framework for evaluating these rules with heterogeneous sellers, endogenous pricing and advertising, and costly consumer search. For a broad class of separable recommendation scores, we establish conditions under which a unique market equilibrium exists. Three applications illustrate the use of the framework. A stronger reward for low prices does not necessarily lower equilibrium prices and benefit consumers when products are sufficiently differentiated in qualities. Quality guidance can lower the price of each product and benefit consumers while raising the average transaction price. With heterogeneous match distributions, a reward for the best initial inspection can help consumers with advertising fixed and harm them when advertising adjusts. A two-type design extension shows that no finite optimum over implementable outcomes uses positive weights on both quality and low prices, even when the platform values consumer surplus.",
+      "summary_zh": "【金融经济学】推荐规则既影响卖方的激励机制，也影响消费者期望找到的替代产品。我们构建了一个框架，用于评估在卖方异质性、价格与广告行为内生化以及消费者搜索成本存在的情况下的这些规则。对于一类可分离的推荐评分，我们确定了市场存在唯一均衡的条件。通过三个具体案例展示了该框架的应用：当产品品质差异足够显著时，对低价商品给予更高奖励并不一定会降低均衡价格，反而可能使消费者受益；质量信息提示能够降低单个产品的价格并提升消费者的整体购买体验；在匹配机制存在差异的情况下，对初次评估表现最佳的卖家给予奖励有助于消费者（尤其是在广告固定不变的情况下），但当广告策略可调整时这种奖励反而可能对消费者产生不利影响。进一步的研究表明，即使平台重视消费者剩余，也不存在一个同时为产品质量和低价都赋予正权重的最优策略组合。。研究方法：均衡模型。",
       "topics": [
         "Economics",
         "Finance"
       ],
       "source": "arxiv"
+    },
+    {
+      "title": "Design-Based Inference for Fuzzy Difference-in-Differences",
+      "authors": [
+        "Pedro Picchetti"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-18",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.24402v1",
+      "cited_by_count": 0,
+      "abstract": "I study fuzzy difference-in-differences designs from a design-based perspective, in which potential outcomes and treatment decisions are fixed and only the assignment of a policy is random, with heterogeneous and possibly unknown assignment probabilities. The Wald-DiD design estimand equals an assignment-weighted complier effect plus contamination from switchers, from changes in always-takers' effects and from trends in untreated outcomes. I derive the conditions under which the estimand holds a clear causal interpretation. The conditions are weaker than parallel trends in both outcomes and treatments. We propose an Anderson--Rubin-type test with a conservative Neyman variance that remains valid under weak first stages, a sensitivity analysis for the complier effect, and estimators for designs with known assignment probabilities. An application to the Oregon Health Insurance Experiment illustrates the results.",
+      "summary_zh": "【金融经济学】我从基于设计的角度研究了模糊差异-in-differences（Fuzzy Difference-in-Differences, FDiD）方法。在这种方法中，潜在结果和治疗决策是固定的，只有政策的分配是随机的，且分配概率可能存在异质性且未知。Wald-DiD方法的估计量由分配权重加权的依从者效应（complier effect）以及来自转换者（switchers）、始终接受治疗者（always-takers）效应的变化以及未治疗结果趋势的干扰因素构成。我推导出了该估计量具有明确因果解释的条件。这些条件比要求结果和治疗之间存在平行趋势（parallel trends）的条件更为宽松。我们提出了一种Anderson-Rubin类型的检验方法，该方法具有保守的Neyman方差估计量，并且在处理第一阶段数据质量较差的情况时仍能保持有效性；同时，我们还对依从者效应进行了敏感性分析，并为已知分配概率的设计提供了相应的估计量。通过对俄勒冈州健康保险实验（Oregon Health Insurance Experiment）的应用，验证了这些研究结果的有效性。。研究方法：双重差分、实验方法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Development of Micro Enterprises Based on Local Potential in Improving the Economic Welfare of Vulnerable Communities: A Local Economic Development Approach",
+      "authors": [
+        "W. O. Diliana",
+        "Eve Ida Malau",
+        "I. Mutiara",
+        "Anindya Septisuwendani"
+      ],
+      "venue": "Dinasti International Journal of Economics, Finance & Accounting",
+      "published_date": "2026-11-16",
+      "doi_url": "https://doi.org/10.38035/dijefa.v7i5.7496",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295973422",
+      "cited_by_count": 0,
+      "abstract": "This study analyzes the utilization of local potential in micro business development by vulnerable communities in Ajaobaki Village, South Central Timor Regency (TTS), the application of the Local Economic Development (LED) approach, and the contribution of micro businesses to economic welfare. The research uses a descriptive qualitative method with in-depth interviews, observations, and documentation. The data was analyzed using the Miles and Huberman model with the help of NVivo. The results showed that the community developed five types of businesses, namely vegetables, coffee, livestock, weaving, and chips, but the utilization of potential was still extractive and hampered by limited capital, equipment, markets, and raw materials. The implementation of LED runs through business assistance of around IDR 30 million from the village government, annual training, business groups, and partnerships with foundations, cooperatives, PNM, Bank BRI, and Bank NTT. Before doing business, the community's income ranges from IDR 0 to IDR 500 thousand per month; after doing business, the average income is IDR 500 thousand to IDR 1 million per month, and some reach IDR 2 million. Micro businesses help vulnerable households meet their daily needs, but their income is not stable because they are affected by fuel prices and market changes. Strengthening supply and market partnerships is needed so that the contribution of micro businesses is more stable.",
+      "summary_zh": "【收入分配与福利】本研究分析了南中帝汶县（TTS）Ajaobaki村弱势群体在微型企业发展中如何利用当地资源，探讨了地方经济发展（Local Economic Development, LED）方法的应用，以及微型企业对经济福利的贡献。研究采用描述性定性方法，通过深入访谈、观察和文献资料收集数据，并运用Miles和Huberman模型结合NVivo软件对数据进行分析。研究结果表明，该村发展了五种类型的微型企业：蔬菜种植、咖啡生产、畜牧业、编织业和薯片加工。然而，资源利用仍以资源开采为主，受到资金、设备、市场及原材料限制的制约。地方经济发展计划的实施主要依赖于村政府提供的约3000万印尼盾的援助资金、年度培训活动，以及与各类基金会、合作社、PNM机构、BRI银行和NTT银行的合作。创业前，社区居民的月收入在0至50万印尼盾之间；创业后，平均月收入提升至50万至100万印尼盾，部分家庭的收入甚至达到200万印尼盾。微型企业帮助弱势家庭满足了基本生活需求，但由于受燃料价格和市场波动影响，其收入并不稳定。因此，需要加强供应链和市场合作，以提升微型企业的可持续发展能力。。",
+      "topics": [
+        "Economics",
+        "Business",
+        "Sociology"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Firm Behavior, Structure, and Constraints in Egyptian Manufacturing: Introducing the Egyptian Industrial Firm Behavior Survey Through an Adapted Structure–Conduct–Performance Framework",
+      "authors": [
+        "A. El-Haddad",
+        "Chahir Zaki"
+      ],
+      "venue": "Review of Middle East Economics and Finance",
+      "published_date": "2026-11-12",
+      "doi_url": "https://doi.org/10.1515/rmeef-2026-0032",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:295783679",
+      "cited_by_count": 0,
+      "abstract": "Abstract This paper introduces the Egyptian Industrial Firm Behavior Survey (EIFBS) 2020/21 and develops the conceptual framework guiding the accompanying special issue. Drawing on data covering 2,383 manufacturing firms, it adapts the Structure–Conduct–Performance framework to place firm behavior and institutions at the center of analysis and to allow for feedbacks between firm conduct and performance. It then provides a descriptive sectoral diagnostic of market concentration, employment generation, technological upgrading, firm-size transitions, and institutional constraints. The observed patterns suggest differences between concentrated, capital- and policy-intensive sectors, which exhibit greater technological upgrading but limited employment generation, and more competitive, labor-intensive sectors, which absorb more firms and workers but display lower upgrading and firm-size mobility. These patterns are descriptive and do not establish causal relationships. Together, the eight accompanying papers use the EIFBS to examine productivity, firm growth, digitalization and innovation, institutional constraints, exporting, spatial agglomeration, labor demand, and firms’ adjustment to COVID-19.",
+      "summary_zh": "【公司金融】摘要：本文介绍了2020/21年度的埃及工业企业行为调查（Egyptian Industrial Firm Behavior Survey, EIFBS），并构建了指导该专题研究的概念框架。基于涵盖2,383家制造业企业的数据，本文将“结构-行为-绩效”（Structure-Conduct-Performance, SCP）框架进行调整，将企业行为与制度因素置于分析的核心位置，同时探讨企业行为与绩效之间的相互作用。随后，本文对市场集中度、就业创造、技术升级、企业规模变化以及制度约束等领域进行了详细的行业分析。研究结果表明，资本密集型和政策依赖型行业在技术升级方面表现较好，但就业创造能力有限；而劳动密集型行业则更具竞争力，能够吸纳更多企业和劳动力，但在技术升级和企业规模变动方面表现较弱。这些观察结果仅揭示了行业间的差异，并未建立因果关系。八篇配套论文共同利用EIFBS数据，探讨了生产效率、企业增长、数字化与创新、制度约束、出口活动、空间集聚、劳动力需求以及企业对新冠疫情的应对策略。。研究方法：调查数据。",
+      "topics": [
+        "Economics",
+        "Business"
+      ],
+      "source": "semantic_scholar"
     }
   ]
 }
