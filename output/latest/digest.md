@@ -1,151 +1,174 @@
-# 金融经济学每日文献速递（2026-11-20）
+# 金融经济学每日文献速递（2026-11-21）
 
 共筛选到 **12** 篇文献。
 
 > 📢 **今日综述**
 >
-> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、绿色金融与可持续发展（2 篇）、风险管理与衍生品（1 篇）。方法上以模型校准、机器学习为主。来源分布：arXiv（7 篇）、OpenAlex（5 篇）。
+> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、银行与信贷（2 篇）、风险管理与衍生品（1 篇）。方法上以回归分析、实验方法为主。来源分布：OpenAlex（7 篇）、arXiv（3 篇）、Semantic Scholar（2 篇）。
 
-## 1. Voters uncovered: home insurance and the electoral effects of climate costs
+## 1. Stability for Hyperplane Covers
 - 来源：openalex
-- 作者：Preston R. Johnston
-- 期刊/来源：Journal of Political Institutions and Political Economy
+- 作者：Shagnik Das, Valjakas Djaljapayan, Yen-chi Roger Lin, Wei-Hsuan Yu
+- 期刊/来源：The Electronic Journal of Combinatorics
+- 发表日期：2026-11-20
+- 引用数：2
+- 主题：Hyperplane, Mathematics, Combinatorics, Cover (algebra), Hypercube
+- 链接：[DOI](https://doi.org/10.37236/12528) [链接](https://openalex.org/W4380714636)
+
+**中文摘要（自动生成）**：【金融经济学】超立方体 $Q^n = \{0,1\}^n$ 的一个“几乎 $k$-覆盖”是指这样一组超平面：它们避开原点，并且每个其他顶点至少被这些超平面覆盖 $k$ 次。当 $k$ 相对于维度 $n$ 而较大时，Clifton 和 Huang 通过数学推导得出了几乎 $k$-覆盖的最小可能大小。他们证明的核心是扩展了 LYM 不等式（LYM 不等式是关于超平面权重的一个数学定理）。在本文中，我们完整地描述了那些权重最大的超平面，证明了这样的超平面共有 $\binom{2n-1}{n}$ 个。此外，我们还分析了非最大权重超平面的权重分布，从而为这些超平面的权重提供了上限。这些结果使得在使用整数线性规划来构造小规模覆盖时能够有效地缩小搜索范围；因此，我们能够确定大多数 $k$ 值下 $Q^6$ 的几乎 $k$-覆盖的确切最小大小。进一步地，我们利用这一稳定性结果改进了 Clifton–Huang 提出的下界，使其适用于任意足够大的维度 $n$ 和无限多个 $k$ 的取值。。
+
+## 2. Independent associations of kinesiophobia and pain catastrophizing with self-reported and performance-based functional outcomes in male athletes with patellofemoral pain syndrome: a cross-sectional study
+- 来源：openalex
+- 作者：Nahid Pirayeh, Mostafa Talebi, Maryam Saadat, Sadegh Norouzi
+- 期刊/来源：BMC Sports Science Medicine and Rehabilitation
+- 发表日期：2026-11-20
+- 引用数：1
+- 主题：Pain catastrophizing, Patellofemoral pain syndrome, Physical therapy, Psychology, Athletes
+- 链接：[DOI](https://doi.org/10.1186/s13102-026-02280-w) [链接](https://openalex.org/W4390699651)
+
+**中文摘要（自动生成）**：【金融经济学】**摘要**
+
+**背景**  
+髌股疼痛综合征（Patellofemoral Pain Syndrome, PFPS）常伴随持续性的疼痛和功能受限。尽管运动恐惧症（kinesiophobia）与疼痛相关的残疾有关，但它们与自我报告的功能结果及基于表现的功能结果之间的具体关联仍不明确。
+
+**目的**  
+本研究旨在探讨运动恐惧症和疼痛灾难化（pain catastrophizing）与髌股疼痛综合征男性运动员的自我报告的膝关节功能及基于表现的功能结果之间的独立关联。
+
+**方法**  
+在这项横断面研究中，61名患有髌股疼痛综合征的男性运动员（年龄18–45岁）完成了坦帕运动恐惧症量表（Tampa Scale of Kinesiophobia）、疼痛灾难化量表（Pain Catastrophizing Scale）和库贾拉髌股疼痛量表（Kujala Patellofemoral Scale）的测试。基于表现的功能通过逐步下降深蹲（step-down squat）、双侧深蹲（bilateral squat）、单腿跳跃（single-leg hop）、侧向跳跃（side-hop）以...。研究方法：横截面分析、回归分析。
+
+## 3. An Enforcement Foundation for Constrained Equal Awards
+- 来源：arxiv
+- 作者：Sinan Ertemel
+- 期刊/来源：arXiv
+- 发表日期：2026-11-19
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.26247v1)
+
+**中文摘要（自动生成）**：【金融经济学】标准索赔问题将索赔视为既定事实。我们探讨当一个经过认证的索赔可以通过一个私人知晓但验证成本较高的附加信息来增强时，规则选择会如何发生变化。在二元环境下，对平等者的平等对待、索赔的合理性以及效率要求为夸大事实所带来的收益设定了一个严格的下限，因此，为了确保真实报告的可靠性，所需的审计工作量也相应减少。受限平等奖励（CEA）规则通过一种相关的审计政策，在每种报告情况下都能达到这一下限。相反，任何在每个具体情况下都能实现审计成本最小化的规则都属于CEA类型。这一逐点分析的结果还表明，在任何关于真实索赔的先验假设下，CEA都是唯一能够最小化预期验证成本的可行规则。。
+
+## 4. Obvious group manipulations in voting
+- 来源：arxiv
+- 作者：R. Pablo Arribillaga, Agustín G. Bonifacio, Federico Fioravanti
+- 期刊/来源：arXiv
+- 发表日期：2026-11-19
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.26224v1)
+
+**中文摘要（自动生成）**：【金融经济学】我们研究了投票中的明显群体操纵行为，并将其定义为仅通过联盟的选项集就能识别的操纵形式。我们的分析重点关注两类规则：仅允许选择最优选项的规则（tops-only rules）以及满足多数标准的规则（including all Condorcet-consistent rules）。在至少包含三个选项的通用情境下，一个仅允许选择最优选项的规则是否属于“不可被群体操纵的规则”（NOMG），取决于该规则是否具有独裁性质。对于满足多数标准的规则，当选民人数$n$和选项数量$m\geq3$时，NOMG是不可能实现的，除非存在四个选民和三个选项的情况。我们量化了在这些限制条件下联盟的规模，为高效运行的仅允许选择最优选项的规则提供了明确的界限，并为具有奇数选民数量的多数标准规则确定了精确的阈值。在特殊情况下，我们确定了一个包含Borda规则的NOMG评分规则区间（Borda规则同样满足Condorcet一致性）。此外，我们还研究了包含两个选项的NOMG规则，并将我们的分析方法应用于广义中位选民制度（generalized median voter schemes）和委员会投票机制（voting ...。
+
+## 5. From Clicks to Credit: AI-Measured Halal Product Awareness and Halal Financing Depth across OIC Countries
+- 来源：semantic_scholar
+- 作者：I. Muhammed, Maydelyn Ling
+- 期刊/来源：Journal of Islamic Monetary Economics and Finance
+- 发表日期：2026-11-18
+- 引用数：0
+- 主题：Economics, Business
+- 链接：[DOI](https://doi.org/10.21098/jimf.v12i4.3350) [链接](https://api.semanticscholar.org/CorpusID:296069242)
+
+**中文摘要（自动生成）**：【银行与信贷】本研究探讨了消费者对清真产品的认知与伊斯兰合作组织（OIC）部分成员国伊斯兰金融发展程度之间的关系。通过分析2014至2023年间16个OIC成员国的面板数据，研究考察了基于人工智能的清真产品认知（通过在线搜索频率来衡量）是否对伊斯兰金融总量及其主要组成部分（包括穆达拉巴（Mudarabah）、穆拉巴哈（Murabaha）、穆沙拉卡（Musharakah）和伊贾拉（Ijarah）等融资方式）产生影响。运用固定效应面板回归模型和偏差校正最小二乘虚拟变量（LSDVC）方法，研究发现清真产品认知对伊斯兰金融总量具有显著的正向促进作用，尤其是对操作更为简单、更以消费者需求为导向的穆拉巴哈和伊贾拉融资方式。而对于穆达拉巴和穆沙拉卡等参与式融资方式，其影响较为有限，这反映了相关金融产品存在结构性和信息方面的限制。研究结果支持了“需求驱动”假说，并为数字行为信号在制定伊斯兰金融策略中的作用提供了政策启示。本研究为伊斯兰金融、金融科技与行为经济学交叉领域的学术研究做出了贡献。。研究方法：面板数据、面板回归、固定效应、回归分析。
+
+## 6. Intention to Choose Islamic Banking in the Bangsamoro Region, Philippines: An Empirical Investigation
+- 来源：semantic_scholar
+- 作者：Hasna L. Lidasan, Sittie Farisha D. Magapisa, Moksing T. Pada, A. Hashim
+- 期刊/来源：Journal of Islamic Monetary Economics and Finance
+- 发表日期：2026-11-18
+- 引用数：0
+- 主题：Economics, Business
+- 链接：[DOI](https://doi.org/10.21098/jimf.v12i4.2873) [链接](https://api.semanticscholar.org/CorpusID:296058665)
+
+**中文摘要（自动生成）**：📌 研究问题：本研究旨在探讨影响棉兰老穆斯林自治区居民选择伊斯兰银行业意愿的关键因素。
+
+🔬 研究方法：研究者通过问卷调查收集数据，并采用偏最小二乘法结构方程模型（PLS-SEM）在SmartPLS 4.0软件中进行数据分析。
+
+📊 核心发现：研究发现宗教信仰、银行声誉、态度、政府支持和社会影响显著影响居民选择伊斯兰银行业的行为意愿。
+
+💡 应用价值：该结果为政策制定者和伊斯兰银行提供了制定策略的依据，有助于提高公众意识、建立信任并改善金融服务的可及性。
+
+## 7. The warning effect of regulatory texts: retail investors’ risk perception from the perspective of exchange inquiry letters
+- 来源：openalex
+- 作者：FANG LUO, CHAO LONG, YITING JI, Cheng Gong
+- 期刊/来源：Journal of Financial Regulation and Compliance
 - 发表日期：2026-11-20
 - 引用数：0
-- 主题：Leverage (statistics), Incentive, Context (archaeology), Business interruption insurance, Business
-- 链接：[DOI](https://doi.org/10.1108/jpipe-07-2026-0006) [链接](https://openalex.org/W7236126186)
+- 主题：Earnings, Pessimism, Perspective (graphical), Perception, Business
+- 链接：[DOI](https://doi.org/10.1108/jfrc-04-2026-0201) [链接](https://openalex.org/W7138048708)
 
-**中文摘要（自动生成）**：【绿色金融与可持续发展】选民如何应对气候变化的财务成本？我在美国日益严重的房屋保险危机的背景下研究了这一问题。利用县级和邮政编码级别的面板数据，我考察了2014年至2024年间房屋保险困境是否影响了选民的投票率和在州长选举及保险监管委员会选举中的投票选择。研究发现，房屋保险困境与较高的投票率以及保险监管委员会选举中较低的弃选率相关。相比之下，这种影响在不同职位上的表现各不相同，且并未显示出明显的党派倾向或反对现任者的趋势。我将这些结果解读为：房屋保险困境正在动员选民，但由于现任者尚未就相关问题形成明确的党派立场和宣传策略，因此尚未系统性地影响选民的投票选择。尽管如此，选民对保险困境的反应可能会促使现任者采取措施保护选民免受气候变化带来的财务影响，这既可能给私营保险公司带来政治风险，也可能为他们提供谈判筹码。。研究方法：面板数据。
-
-## 2. Evaluation of marginal and average sectorial GHGs emissions abatement costs using an open-source energy system optimization model: the Italian case study
-- 来源：openalex
-- 作者：Matteo Nicoli, Gianvito Colucci, Victor Faria, Daniele Lerede, Anderson Rodrigo de Queiroz
-- 期刊/来源：Mitigation and Adaptation Strategies for Global Change
-- 发表日期：2026-11-19
-- 引用数：2
-- 主题：Greenhouse gas, Marginal abatement cost, Energy (signal processing), Environmental science, Environmental economics
-- 链接：[DOI](https://doi.org/10.1007/s11027-026-10368-4) [链接](https://openalex.org/W4399659423)
-
-**中文摘要（自动生成）**：【绿色金融与可持续发展】摘要  
-为实现2050年欧洲的碳中和目标，减排工作需要借助能够捕捉各部门和技术之间相互作用的定量工具来加以支持。本文提出了一种评估方法，该方法利用多部门能源系统优化模型来计算系统层面的边际减排成本以及各部门和子部门的平均减排成本。该方法通过对比在逐步严格的排放约束下进行的一系列系统优化方案的总系统成本和排放量来进行分析，这些约束贯穿整个脱碳进程，而不仅仅针对某一特定目标年份。计算出的边际成本随后被分配给实现每一步减排目标的各部门和技术。由于曲线上的每个点都对应着一种稳定的系统配置，因此技术间的相互作用和部门间的耦合关系得以保持，且每个成本水平都可以追溯到驱动其变化的技术转型和输入假设。该方法以开源的TEMOA-Italy模型为案例，在意大利能源系统上进行了验证，该模型设定了到2050年减排90%的目标。研究结果表明，随着减排目标的提高，边际减排成本急剧上升，且不同部门的减排成本存在显著差异：电力部门由于拥有成熟的可再生能源技术，其脱碳成本最低；交通运输部门的成本处于中等水平，但其内部各子部门的成本差异较大；工业和住宅部门的成本最高，且在最雄心勃勃的减排目标下贡献最大。这一开源框...。研究方法：优化方法。
-
-## 3. Path-Independent Deleveraging Rules
-- 来源：arxiv
-- 作者：Christoph Schlegel, Akaki Mamageishvili
-- 期刊/来源：arXiv
-- 发表日期：2026-11-19
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.26623v1)
-
-**中文摘要（自动生成）**：【金融经济学】我们将路径无关的自动去杠杆化（ADL）规则描述为一个扩展的对数-指数族。这些规则对账户分割、合并和重新开放具有免疫力，这进一步限制了该规则类的范围。规则的同质性基本上将其限制为一个由公平性和平台风险共同决定的单参数族。该族中的规则能够在按比例分配和“水填充”（即平均分配）两种方式之间进行连续过渡。在这些规则中，减小参数值可以在降低风险的同时增加账户处理方式的不平等程度。因此，建议通过预先根据历史数据的风险上限进行校准来选择参数值，从而在满足风险上限的前提下实现最公平的分配规则。通过对2025年10月10日Hyperliquid平台ADL事件的反事实模拟发现，使用一系列中间参数值可以在负担分配和后续风险统计指标方面显著改善实际观察到的分配结果。。研究方法：模型校准。
-
-## 4. Optimal Control in Pairs Trading with Negative-Power Utility
-- 来源：arxiv
-- 作者：Aleksei Kozhevnikov
-- 期刊/来源：arXiv
-- 发表日期：2026-11-19
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.26568v1)
-
-**中文摘要（自动生成）**：【金融经济学】我们研究了一个有限视界下的消费与投资问题，该问题发生在具有Ornstein-Uhlenbeck扩散机制的对冲交易模型中，效用函数为$U(x)=-x^{-γ}$（其中$γ>0$）。通过对Hamilton-Jacobi-Bellman方程进行线性化处理，我们可以得到价值函数和最优反馈控制的显式表达式。预算不等式以及效用函数的凹性特性确保了在所有允许的策略下，只要初始财富非负，无论在哪个有限视界内都能实现最优解，且无需满足Novikov条件。在最优反馈控制下，当利率$r$不超过均值回归率$\κ$时，财富和消费水平都存在确定的 upper bound（上限）。如果$r>κ$，则从开始后的任何时刻起，这两者都有正概率超过任意预设的水平。当$r>\sqrt{2+γ}κ$时，存在一个临界视界：在该临界视界及以后，预期终值财富为无穷大，而最优预期效用则为有限值。如果临界时刻早于到期时间，那么当初始扩散率为零时，该时刻的预期财富也为有限值。此外，我们还证明了在每个有限视界内，最优财富和消费的负幂次的最大值对于$0<m\le 1+γ$的所有阶数都是可积的。。
-
-## 5. DeepChem-DEL: An Open-Source Framework for Reproducible DEL Modeling and Benchmarking
-- 来源：openalex
-- 作者：Aryan Amit Barsainyan, Riya Singh, Abhiraj Pravin Mengade, Rida Irfan, Bharath Ramsundar
-- 期刊/来源：Journal of Chemical Information and Modeling
-- 发表日期：2026-11-19
-- 引用数：1
-- 主题：Computer science, Workflow, Benchmarking, Pipeline (software), Scalability
-- 链接：[DOI](https://doi.org/10.1021/acs.jcim.6c02673) [链接](https://openalex.org/W4415230279)
-
-**中文摘要（自动生成）**：【金融经济学】摘要  
-DNA编码库（DELs）通过为化合物添加DNA条形码，实现了对庞大化学空间的高效筛选。机器学习（ML）技术能够帮助从嘈杂的、针对特定目标的DEL结合数据中提取有意义的化学模式。然而，现有的DEL机器学习工具仍然存在碎片化问题，这限制了建模流程的系统性构建和可重复性。此外，这种碎片化还阻碍了新型模型（如化学基础模型）与经典方法在DEL工作流程中的整合。为了解决DEL建模中的这些问题，我们推出了DeepChem-DEL——这是一个基于DeepChem生态系统的开源ML工作流程套件，用于DEL建模。DeepChem-DEL整合了：（1）一个可配置的去噪流程；（2）模块化的DeepChem工作流程，用于富集预测、命中化合物识别以及跨不同模型类别的基准测试（包括通过扩展开源ChemBERTa-3框架实现的化学基础模型）。我们在KinDEL和BELKA数据集上对DeepChem-DEL进行了评估，结果验证了其性能，并实现了模型类别间的直接比较。实验表明，利用化学基础模型所获得的性能与以往研究的方法（如图卷积网络和随机森林模型）相当，在某些情况下甚至更优。这些结果共同证明了DeepC...。研究方法：机器学习、随机森林、实验方法。
-
-## 6. Integrating proper orthogonal decomposition and transformers for flow predictions inside cerebral aneurysm in various body physiologies: A computational-based approach
-- 来源：openalex
-- 作者：Narinderjit Singh Sawaran Singh, Mohammed Derea Ali, Seif Al Bustanji, Nidhi Sharma, Adel Almarashi
-- 期刊/来源：International Journal of Modern Physics C
-- 发表日期：2026-11-19
-- 引用数：0
-- 主题：Computational fluid dynamics, Computer science, Shear stress, Hemodynamics, Shear (geology)
-- 链接：[DOI](https://doi.org/10.1142/s0129183127501737) [链接](https://openalex.org/W7223691500)
-
-**中文摘要（自动生成）**：【风险管理与衍生品】动脉瘤破裂仍然是医学诊断中的一个关键挑战，理解其背后的血流动力学因素对于评估破裂风险至关重要。本研究结合了计算流体动力学（CFD）模拟和机器学习模型，分析了真实患者特定模型中的动脉瘤血流动力学特征。研究重点关注了壁面剪切应力（WSS）、振荡剪切指数（OSI）和压力等关键血流动力学参数，这些参数在预测动脉瘤破裂中起着重要作用。研究人员对动脉瘤模型在静息状态和运动状态下的血流动力学进行了高保真CFD模拟，揭示了详细的流动模式以及剪切应力的局部变化。研究采用了一种结合适当正交分解（POD）和Transformer模型的机器学习方法，高效地预测了这些血流动力学参数，从而为实时应用提供了简化后的模型。结果表明，虽然机器学习预测结果准确反映了OSI、WSS和压力的整体趋势，但在高剪切应力区域仍存在一些局部差异。这些发现表明，将CFD与机器学习相结合有助于提升动脉瘤风险评估和管理的效率，但还需进一步优化以提高预测精度，尤其是在复杂区域。。研究方法：数值模拟、机器学习、Transformer 模型。
-
-## 7. Investor sentiment and equity returns in China: a quantile-on-quantile analysis
-- 来源：openalex
-- 作者：Ahmed Bouteska, Taimur Sharif, Shibly Sohail Abdullah, Mizgeen Omar, Mohammad Zoynul Abedin
-- 期刊/来源：Review of Behavioral Economics
-- 发表日期：2026-11-19
-- 引用数：0
-- 主题：Economics, Econometrics, Equity (law), Pessimism, Robustness (evolution)
-- 链接：[DOI](https://doi.org/10.1108/rbe-10-2026-0094) [链接](https://openalex.org/W7235845106)
-
-**中文摘要（自动生成）**：【资产定价】**研究目的**  
-本研究探讨了中国投资者情绪与股票回报之间的非线性及非对称关系，分析了在不同市场环境下情绪如何影响整体市场及各个行业的回报表现。研究旨在验证情绪-回报关系在牛市、熊市和中性市场环境中的变化情况，以及在不同特征的行业间的差异。通过关注中国独特的制度环境，本研究有助于将投资者情绪视为一种依赖于市场状态的股票回报预测因素，而不仅仅是一个被市场定价的系统风险因素。
+**中文摘要（自动生成）**：【风险管理与衍生品】**研究目的**  
+本研究旨在探讨零售投资者如何从交易所年度报告的询问函中识别风险信号，并揭示风险信号在中国以零售投资者为主导的资本市场中的传导机制——即内部控制缺陷如何影响投资者的风险认知，进而导致股价调整。  
 
 **研究设计/方法**  
-本研究使用2014年1月至2023年12月的月度数据，分析了沪深300指数和十个行业指数。投资者情绪指数是根据Baker和Wurgler（2006）的方法，通过主成分分析（PCA）构建的。分位数回归（QQ回归）用于捕捉情绪与股票回报联合分布中的非线性依赖关系，并纳入了宏观经济控制变量；普通最小二乘回归则作为基准对比方法。为了评估模型的稳健性，还使用偏最小二乘法（PLS）构建了另一种情绪指数。
+作者利用2018年至2024年的A股数据及文本分析方法，通过东财股票论坛（East Money Stock Forum）的数据来衡量零售投资者的风险认知，并采用事件研究及中介效应模型进行实证分析。  
 
 **研究结果**  
-投资者情绪与中国股票回报之间存在非线性、非对称且依赖于市场状态的关系：在正常和乐观的市场环境下，情绪与回报呈正相关；而在极端悲观情绪与严重市场下跌同时出现时，两者呈...。研究方法：回归分析、主成分分析。
+询问函中揭示的内部控制缺陷信息显著引发了投资者的风险认知，这一风险认知在询问函的文本特征与股价短期调整之间起到了完全的中介作用。在信息环境较差、事件发生前市场情绪悲观或公司出现盈利亏损的情况下，这种风险预警效应更为明显。监管信号与情境因素共同影响了零售投资者的风险认知。  
 
-## 8. Bond yield dynamics: a multi-country multi-horizon string model
+**研究局限性与启示**  
+虽然研究数据来源于网络帖子，但可能存在未观察到的其他因素对投资者情绪产生影响。  
+
+**实际意义**  
+监管部门应优化询问函的表述方式和结构，提高核心风险信号的清晰度和可识别性，帮助零售投资者准确理解监管警示...。研究方法：事件研究、文本分析。
+
+## 8. Carrion crows are sensitive to human head, but not eye, orientation
+- 来源：openalex
+- 作者：Katy Ablett, Edward R. Morrison
+- 期刊/来源：Behavioral Ecology and Sociobiology
+- 发表日期：2026-11-20
+- 引用数：0
+- 主题：Carrion, Gaze, Orientation (vector space), Foraging, Head (geology)
+- 链接：[DOI](https://doi.org/10.1007/s00265-026-03826-1) [链接](https://openalex.org/W7160546213)
+
+**中文摘要（自动生成）**：【金融经济学】摘要
+
+逃避是一种至关重要的生存机制，其形成受到多种与风险评估相关因素的影响。鸟类主要依靠飞行来逃避危险，而飞行启动距离（Flight Initiation Distance, FID）常被用来量化这种反应。在本研究中，我们探讨了乌鸦（Corvus corone）在面对人类注视（包括直接注视与头部朝向一致的情况）、仅头部朝向人类但眼睛避开人类的情况，以及头部和眼睛都避开人类的情况时是否会产生反应。同时，我们还研究了鸟类初始移动方向、起始距离、温度和天气等环境变量对飞行启动距离的影响。我们观察了172只自然觅食的乌鸦，将它们随机分配到三种不同的注视条件下。实验者逐渐接近这些乌鸦，并在整个过程中记录它们的位置信息。当乌鸦离开初始位置后，实验者记录了实验者起始位置与乌鸦位置之间的距离（即起始距离）、实验者停止的位置与乌鸦位置之间的距离（即飞行启动距离），以及相关的环境和情境因素。研究结果表明，不同注视条件下的飞行启动距离存在显著差异：当乌鸦的头部和眼睛都避开人类时，其飞行启动距离比头部朝向人类且眼睛朝向人类或仅头部朝向人类时短约3.5米。乌鸦的初始移动方向和起始距离也对飞行启动距离有显...。研究方法：实验方法。
+
+## 9. Bridging the Digital Divide: How ICT Expansion Shapes Secondary Enrollment and Gender Equity in Education
+- 来源：openalex
+- 作者：Syed Laulak Haider, Saif Ullah
+- 期刊/来源：Digital Culture and Education Review
+- 发表日期：2026-11-20
+- 引用数：0
+- 主题：Information and Communications Technology, Equity (law), Digital divide, Demographic economics, Equal opportunity
+- 链接：[DOI](https://doi.org/10.63718/dcer.v1i2.12) [链接](https://openalex.org/W7160754550)
+
+**中文摘要（自动生成）**：【金融科技】本研究探讨了2000年至2023年间信息与通信技术（ICT）在72个发展中国家中影响中学入学率及性别平等方面的作用。通过采用控制收入、城市化程度和生育率的固定效应面板模型，研究检验了两个假设：（H1）ICT的普及能够提高中学入学率；（H2）ICT的普及有助于提升中等教育中的性别平等。研究结果支持了H1假设，表明ICT的普及确实显著提高了入学率，但在考虑全球时间趋势后这种效应有所减弱。对于H2假设，证据则更为复杂：虽然在基线分析中ICT与性别平等之间的正相关关系依然显著，但按收入水平进行的细分分析显示，这种促进性别平等的效果仅在中低收入国家具有统计学意义，在中等收入国家则不再明显。稳健性检验还表明，数字化对入学率的影响在早期采用阶段（2010年之前）最为显著。研究结果凸显了ICT的双重效益：一是扩大了教育机会，二是缩小了性别差距；同时也指出了需要制定配套政策来解决生育率、教育可负担性以及农村地区数字基础设施不足等问题。该研究为关于ICT促进发展的讨论提供了长期、基于国内数据的证据，有助于深入理解数字化对教育领域的积极影响。。
+
+## 10. The System for Assessing the Effects of Investment Projects in the Knowledge Base of IEIE SB RAS
+- 来源：openalex
+- 作者：A. V. Kostin, A. D. Dyakovich, E. V. Markelov, А.А. Осокина, D. A. Rodionova
+- 期刊/来源：WORLD OF ECONOMICS AND MANAGEMENT
+- 发表日期：2026-11-20
+- 引用数：0
+- 主题：Structuring, Knowledge base, Investment (military), Computer science, Knowledge economy
+- 链接：[DOI](https://doi.org/10.25205/2542-0429-2025-25-4-78-90) [链接](https://openalex.org/W7162321573)
+
+**中文摘要（自动生成）**：【金融经济学】本文以俄罗斯科学院西伯利亚分院经济与工业工程研究所（IEIE SB RAS）知识库的建立为例，探讨了数据分析与数据结构化方法的发展历程。构建该知识库的主要目的是对有关资源、设施、技术以及亚洲俄罗斯宏观区域发展状况的原始数据进行整合，从而基于自然资源、金融资源、劳动力、信息资源、产品及技术等要素的流动所形成的网络结构，实现对经济中复杂协同效应的崭新理解。  
+
+文章特别关注了评估投资项目实施效果的任务。为完成这一目标，知识库收集了关于投资项目、企业、社会经济指标及相关技术的数据。  
+
+文中阐述了构建一套完整模型体系的概念与方法，该体系包括用于宏观、中观和微观层面效果评估的各类模型与分析工具。所描述的模型体系涵盖了跨行业模型、网络模型与认知模型、社会经济统计预测模型、商业效应与间接效应评估系统，以及基于地理信息系统（GIS）数据的微观经济模型。通过对投资项目进行综合考虑空间因素的全面分析，能够更准确、更全面地评估其对经济产生的社会经济影响，并弥补单一方法的局限性及测量误差。。
+
+## 11. Bayesian optimisation and graph-based rheology enable sequence-dependent modelling of DNA materials
+- 来源：openalex
+- 作者：Aaron Gadzekpo, Lennart Hilbert
+- 期刊/来源：npj Computational Materials
+- 发表日期：2026-11-20
+- 引用数：1
+- 主题：Computer science, Workflow, Context (archaeology), Bridging (networking), Artificial intelligence
+- 链接：[DOI](https://doi.org/10.1038/s41524-026-02378-2) [链接](https://openalex.org/W7162866725)
+
+**中文摘要（自动生成）**：【金融经济学】摘要  
+在软物质设计中，将分子层面的特性与宏观层面的特性联系起来至关重要。合成DNA材料展现出多种多样的材料特性，但其多尺度复杂性和庞大的序列设计空间限制了精准的设计。我们通过一种计算工作流程来应对这一挑战，该流程将序列层面的设计与材料的流变特性相结合。具体而言，我们利用机器学习技术对可扩展的、基于DNA序列的模拟模型进行参数化，并通过基于图论的流变学方法对这些模型进行评估。我们以由单链DNA组装而成的自相互作用、多价DNA纳米星材料为例来验证这一工作流程的有效性。通过核苷酸级别的oxDNA模拟，我们量化了纳米星的结构和柔韧性，进而利用贝叶斯优化方法对更粗粒化的珠-弹簧模型进行了优化。该珠-弹簧模型能够高效模拟纳米星之间的网络形成过程，其形成过程受到oxDNA和NUPACK计算出的杂交自由能的调控。我们将纳米星的多价性及网络连通性转化为流变特性，并通过基于图论的方法进一步考虑了流体动力学相互作用，最终得到的模拟结果与实验参考数据高度吻合。通过分析DNA材料的理论图表示形式，我们对研究结果进行了推广。作为概念验证，我们展示了机器学习如何优化序列结构以产生所需的流变响应。我们的工作...。研究方法：贝叶斯方法、数值模拟、机器学习、实验方法。
+
+## 12. A Three-Factor Hull-White Scenario Generator for Macro-Financial Stress Forecasting
 - 来源：arxiv
-- 作者：Paul Ruelloux
+- 作者：Ahmad Qadi, Thomas Schröder, Francesca Medda
 - 期刊/来源：arXiv
 - 发表日期：2026-11-19
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.26466v1)
+- 链接：[链接](http://arxiv.org/abs/2611.26200v1)
 
-**中文摘要（自动生成）**：【金融经济学】本文将Baaquie和Bouchaud（2004年）以及Le Coz和Bouchaud（2024年）提出的远期利率曲线模型扩展到了政府债券市场的多国环境。研究发现，各国实际收益率变化的相关矩阵在跨国家组中表现出显著的期限不对称性。在所提出的模型框架下，这意味着每个国家都拥有其独特的时间尺度；每个时间尺度描述了人们对未来日期之间间隔的感知如何随这些日期本身而变化。这些时间尺度之间的差异构成了不同利率曲线之间的相互作用机制，并再现了跨国相关矩阵所特有的不对称性。该模型能够同时捕捉到日度和日内频率下的所有利率曲线之间的相关性。当使用欧元区九个国家发行的政府债券数据进行校准时，模型的典型重建误差为1.7%。。研究方法：模型校准。
-
-## 9. Entry Deterrence with Public Signals: Revisiting the Chain-Store Paradox
-- 来源：arxiv
-- 作者：Francesc Dilmé, Aaron Kolb
-- 期刊/来源：arXiv
-- 发表日期：2026-11-19
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.26452v1)
-
-**中文摘要（自动生成）**：【金融经济学】我们重新审视了经典的连锁店悖论，引入了关于现有企业私人类型的外生公共信号，这些信号在有限的时间内每隔一段时间就会出现。我们通过描述随时间递增的声誉阈值序列，完整地刻画了完美贝叶斯均衡的机制：新进入者会在低于其声誉阈值的条件下进入市场，而原有的企业则会在低于其阈值的情况下开展竞争，在高于其阈值的情况下采取其他策略。这种均衡结果通常是唯一的。信息的传递会削弱企业建立声誉的动机，因此即使现有企业具有很强的耐心，当时间范围无限延长时，也不一定会出现完全的威慑效应。我们精确地确定了在何种极限情况下会出现完全的威慑效应，以及在没有威慑效应时的均衡状态。。研究方法：贝叶斯方法、均衡模型。
-
-## 10. Statistical Inference with Ill-Conditioned Random Weight Neural Network Sieves
-- 来源：arxiv
-- 作者：Giovanni Ballarin, Lyudmila Grigoryeva, Lukas Gonon
-- 期刊/来源：arXiv
-- 发表日期：2026-11-19
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.26410v1)
-
-**中文摘要（自动生成）**：【金融经济学】随机权重神经网络（Random Weight Neural Networks，RWNNs）是一种浅层网络，其隐藏层参数是随机生成的并保持不变，仅估计输出系数。在给定采样参数的条件下，RWNN回归问题可视为具有随机逼近空间的线性筛选问题（linear sieve problem）。我们证明了随着网络维度的增加，这类随机筛选方法难以保持良好的数值稳定性（uniformly well-conditioned）。对于满足多项式覆盖（polynomial covering）和Lipschitz条件的参数化特征族，群体协方差矩阵的特征值具有由参数空间覆盖结构决定的多项式上界，从而导致最小特征值趋于零。我们提出了相应的逼近、估计和推断理论，明确考虑了这种数值不稳定性的影响。在满足β-Hölder源条件（β-Hölder source condition）的情况下，我们基于分层采样（stratified sampling）获得了比蒙特卡洛方法更快的L^2逼近速率以及新的L^∞逼近界限。此外，我们还基于岭回归的有效维度（ridge effective dimension）、谱性质（spectral...。研究方法：回归分析、神经网络、实验方法。
-
-## 11. Interpreting the Morbidity Gap
-- 来源：arxiv
-- 作者：Alec Morton
-- 期刊/来源：arXiv
-- 发表日期：2026-11-19
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.26365v1)
-
-**中文摘要（自动生成）**：【金融经济学】《全球疾病负担》（Global Burden of Disease, GBD）研究现已将“发病率差距”（Morbidity Gap, MG）——即预期寿命与健康预期寿命之间的差值——作为一项独立的指标进行评估。我们将发病率差距定义为在死亡年龄对应的生命表中，预期残疾年数（Years of Lost Disability, YLDs）的累积率。通过运用随机优势理论（stochastic dominance analysis），我们阐明了发病率差距的实质、它对死亡率变化的响应机制，以及其与当前人群残疾年数（YLDs）之间的关联。研究得出以下结论：  
-(a) 只有当某生命表的累计残疾年数率在任何年龄点都不高于另一生命表时，其对应的发病率差距才不会大于后者。  
-(b) 在残疾年数率固定的情况下，各年龄段的死亡率降低会扩大发病率差距；因此，消除某一导致死亡率上升的风险因素所减少的发病率差距，其程度小于该风险因素对全球疾病负担评估中发病率差距的总体贡献。  
-(c) 有一组易于理解的条件，可用于判断人口的年龄结构如何影响粗残疾年率（crude YLD rate）是高于还是低于生命表中的残...。研究方法：随机过程。
-
-## 12. Structural economic change under the digital transformation
-- 来源：arxiv
-- 作者：Marco Dueñas, Antoine Mandel
-- 期刊/来源：arXiv
-- 发表日期：2026-11-19
-- 引用数：0
-- 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.26338v1)
-
-**中文摘要（自动生成）**：【金融科技】数字产业生产率的提升可能会极大地重塑生产网络的结构，并推动各行业之间的劳动力重新分配。我们利用一个经过校准的基于代理的全球经济模型来研究这些变化。我们考虑了两种情景：这两种情景下数字供应商的生产率都有相同的累积提升，但数字投入在相关行业中的整合方式有所不同。关键的区别在于，数字投入是作为标准中间投入被纳入生产过程（低嵌入性），还是直接与初级生产要素结合使用（高嵌入性）。在所有经济体中，这两种情景都能带来总产出、家庭福利和GDP的增长，不过附加值提升较为有限，且在各行业之间的分布并不均衡。高嵌入性通常会放大生产效应，尤其是在那些高度依赖数字投入的行业。从结构上看，随着数字产业在生产网络中占据核心地位并吸引其他行业的劳动力，其他行业会向产业链的上下游方向进一步延伸。持续的劳动力重新分配压力也意味着存在潜在的失业风险，尤其是在工人无法转移到增长较快行业的情况下。这些发现表明，除了数字技术进步所带来的生产力提升外，经济和社会后果还取决于数字投入如何融入生产过程，以及工人适应结构变化的能力。。研究方法：模型校准。
+**中文摘要（自动生成）**：【资产定价】本文构建了一个情景引擎，该引擎能够将收益率曲线路径映射到宏观经济结果的分布上。采用三因子Hull-White模型生成无套利收益率曲线，这些模型的因子在物理测度下进行模拟，并据此估算和报告市场风险价格。随后，通过Minnesota-prior VARX模型将这些模拟曲线与每周股票回报、联邦基金利率、每周经济指数、通货膨胀率以及银行边际预期亏损（Marginal Expected Shortfall）等变量进行关联；同时，模型还考虑了针对周数据的符号限制政策冲击因素。在2017年至2024年的样本外评估中，该模型在20个到期期限和预测期限组合中的13个组合中均表现出最低的预测误差，且对那些持续变化的变量（如股票回报、联邦基金利率等）的密度预测具有较高的准确性。需要注意的是，当控制了这些变量自身的滞后效应后，收益率曲线本身已无法为这些变量提供额外的预测信息；因此，该引擎的价值在于能够基于特定的收益率曲线路径进行条件预测，而这正是现有任何基准模型所无法实现的。。研究方法：模型校准。
