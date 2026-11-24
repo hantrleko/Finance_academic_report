@@ -1,74 +1,113 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "count": 12,
-  "source_used": "openalex(15)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "source_used": "openalex(15)+ssrn(4)+arxiv(15)+semantic_scholar(15)+nber(5)",
   "latest_updated": true,
-  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、风险管理与衍生品（2 篇）、金融科技（1 篇）。方法上以数值模拟、调查数据为主。来源分布：OpenAlex（6 篇）、arXiv（2 篇）、Semantic Scholar（2 篇）。其中 2 篇命中顶级期刊白名单。",
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（9 篇）、绿色金融与可持续发展（1 篇）、银行与信贷（1 篇）。方法上以模型校准、调查数据为主。来源分布：OpenAlex（5 篇）、SSRN（2 篇）、arXiv（2 篇）。其中 2 篇命中顶级期刊白名单。",
   "insights": {},
   "papers": [
     {
-      "title": "Sustaining democracy under the shadow of force",
+      "title": "Multimodal signal restoration with signed twofold graph learning",
       "authors": [
-        "Zhaotian Luo",
-        "Adam Przeworski",
-        "Hongding Zhu"
+        "Haruki Yokota",
+        "Hiroshi Higashi",
+        "Yuichi Tanaka"
       ],
-      "venue": "Quarterly Journal of Political Science",
-      "published_date": "2026-11-23",
-      "doi_url": "https://doi.org/10.1108/qjps-10-2025-5166",
-      "openalex_url": "https://openalex.org/W4404575590",
-      "cited_by_count": 3,
-      "abstract": "Democracy faces two threats: incumbents may peacefully monopolize office, or political factions may seek power through violent conflict. Using a dynamic model, the authors examine some conditions under which democracy is sustainable against both threats. Two parties vie for office under the shadow of force. To resolve conflict, the incumbent can share revenue as well as hold competitive elections: each time, it chooses the probability of losing the next election and redistributes revenue. Elections enable the incumbent to concede control over revenue over time but come with regular risks of defeat. Democracy is sustainable if the economic stakes in elections are neither too low nor too high, while the military strength is sufficiently balanced between the two parties. When the stakes are high, democracy may be sustained only with civilian control of the military or programmatic transfers.",
-      "summary_zh": "【金融经济学】民主制度面临两大威胁：一方面，执政者可能通过和平手段垄断权力；另一方面，政治派系可能通过暴力冲突来争夺权力。作者利用动态模型研究了在何种条件下民主制度能够抵御这两种威胁并保持稳定。在暴力阴影的笼罩下，两个政党相互竞争执政权。为了解决冲突，执政者可以选择分享财政收入并同时举行选举：每次选举中，执政者都会评估自己输掉下一次选举的概率，并据此重新分配财政收入。虽然选举使执政者逐渐放弃对财政收入的控制权，但同时也伴随着定期可能遭遇失败的风险。只有当选举中的经济利益既不太低也不太高，且两党之间的军事力量保持平衡时，民主制度才能得以维持。当选举中的经济利益过高时，民主制度唯有通过文职人员控制军队或实施有针对性的经济转移措施才能得以延续。。",
-      "topics": [
-        "Shadow (psychology)",
-        "Democracy",
-        "Political science",
-        "Political economy",
-        "Economics"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Cross-cultural validation of the AAQ-II in five countries: A SEM and psychometric network analysis approaches",
-      "authors": [
-        "Angel García O’Diana",
-        "Álvaro Joseandree Zumarán Baldeón",
-        "Dennis Calle",
-        "Valery Yanira Marin Jaimes",
-        "Gleni Quispe-Callo"
-      ],
-      "venue": "Europe’s Journal of Psychology",
-      "published_date": "2026-11-23",
-      "doi_url": "https://doi.org/10.5964/ejop.16831",
-      "openalex_url": "https://openalex.org/W7225500641",
+      "venue": "APSIPA Transactions on Signal and Information Processing",
+      "published_date": "2026-11-24",
+      "doi_url": "https://doi.org/10.1108/atsip-05-2026-0040",
+      "openalex_url": "https://openalex.org/W7162600363",
       "cited_by_count": 0,
-      "abstract": "Background\n                    Experiential avoidance (EA) describes the tendency to evade negative internal experiences (e.g., distressing thoughts, emotions). EA is implicated across mental health conditions, positioning it as a central target for interventions like Acceptance and Commitment Therapy (ACT). The Acceptance and Action Questionnaire-II (AAQ-II) is widely employed to measure EA; however, its cross-cultural reliability and factorial stability have not been comprehensively validated across diverse contexts.\n                  \n                  \n                    Aim\n                    This study aimed to assess the cross-cultural validity and psychometric stability of the AAQ-II across five countries (Peru, Mexico, USA, Belgium, and Hungary) using Structural Equation Modeling (SEM) and network analysis.\n                  \n                  \n                    Method\n                    A sample of 3,719 adults, primarily female (63.65%), was collected from five countries. Data analysis included SEM to evaluate factorial structure and network analysis to examine item interrelationships, assessing Expected Influence (EI) as a centrality measure. Multiverse analysis using 5,000 bootstrap samples further evaluated network stability across samples.\n                  \n                  \n                    Results\n                    SEM confirmed a unidimensional AAQ-II structure across all regions, indicating consistent factorial validity. Network analysis identified \"Painful Memories\" (AAQ4) and \"Painful Experiences\" (AAQ1) as central nodes across cultures, with regional variations in item relationships reflecting unique sociocultural influences. For instance, individualistic societies (e.g., USA) emphasized EA linked to achievement and competitive concerns, while collectivist countries (e.g., Peru, Mexico) associated EA with familial and social obligations. Multiverse analysis revealed stable EA constructs across samples.\n                  \n                  \n                    Discussion\n                    Results validate the cross-cultural applicability of the AAQ-II, with findings underscoring cultural impacts on EA manifestations. Network analysis provided nuanced insights into item interactions, showing that cultural factors, such as individualism, historical trauma, and social norms, shape EA expression differently across regions. This supports the use of culturally informed approaches in EA interventions.\n                  \n                  \n                    Conclusion\n                    The AAQ-II exhibits reliable cross-cultural validity, affirming its utility for assessing EA across diverse settings. These findings enhance the application of the tool in psychological therapies worldwide, suggesting that culturally tailored EA interventions may benefit from considering specific sociocultural factors influencing EA processes. Future research should investigate additional variables that may affect EA in different cultural contexts.",
-      "summary_zh": "【金融经济学】**背景**  \n经验回避（Experience Avoidance, EA）是指个体倾向于逃避负面内在体验（如痛苦的想法和情绪）的行为。这种倾向在多种心理健康问题中都存在，因此成为接纳与承诺疗法（Acceptance and Commitment Therapy, ACT）等干预措施的核心目标。接纳与行动问卷第二版（Acceptance and Action Questionnaire-II, AAQ-II）被广泛用于测量经验回避现象；然而，其跨文化信度和因子稳定性尚未在多种情境下得到全面验证。  \n\n**目的**  \n本研究旨在通过结构方程建模（Structural Equation Modeling, SEM）和网络分析，评估AAQ-II在五个国家（秘鲁、墨西哥、美国、比利时和匈牙利）的跨文化有效性和心理测量稳定性。  \n\n**方法**  \n研究从这五个国家招募了3,719名成年人作为样本，其中女性占多数（63.65%）。数据分析包括使用SEM来评估量表的因子结构，并通过网络分析来考察各项目之间的相互关系，同时以“预期影响”（Expected Influence, EI）作...。",
+      "abstract": "The authors propose a method for jointly learning signed twofold graphs and performing signal restoration on multimodal graph signals. Multimodal signals on sensor networks are commonly modeled under the twofold graph assumption (TGA), which represents spatial structure and inter-modality relations as two separate graphs. Existing TGA-based signal restoration methods, however, either assume the graphs are known or restrict edge weights to be non-negative, preventing them from capturing negative inter-modal correlations. The authors address both limitations as follows. To learn twofold graphs from noisy and incomplete data, the authors formulate joint signal restoration and twofold graph learning as MAP estimation under a matrix normal prior, where the spatial and modality graph Laplacians appear directly as precision matrices. The resulting non-convex objective is solved by alternating minimization: the signal is updated via conjugate gradient applied to the arising Sylvester-type linear system; the graphs are updated via primal-dual hybrid gradient (PDHG). To capture negative inter-modal correlations, we estimate the signed structure of the modality graph from the dominant eigenspace of a complementary kernel matrix, which is then used in PDHG to update edge magnitudes. These iterative solvers are then unrolled into a feedforward network, with regularization weights and step sizes as layer-wise trainable parameters. Experiments on synthetic multimodal graph signals and two real-world data sets (Japan meteorological and Beijing air-quality data) confirm that the proposed method outperforms existing baselines across a range of noise levels and missing-data patterns; the learned graphs are also directly validated against the ground-truth graphs on the synthetic data sets.",
+      "summary_zh": "【金融经济学】作者提出了一种联合学习带符号的双重图结构并对多模态图信号进行信号恢复的方法。传感器网络中的多模态信号通常采用双重图假设（TGA）进行建模，该假设将空间结构和模态间关系表示为两个独立的图。然而，现有的基于TGA的信号恢复方法要么假设图结构是已知的，要么限制边权重为非负值，这导致它们无法捕捉到负的模态间相关性。作者针对这两个限制提出了以下解决方案：为了从噪声较大且数据不完整的情况下学习双重图结构，作者将信号恢复和双重图学习问题表述为在矩阵正态先验下的最大后验（MAP）估计问题，其中空间图和模态图的拉普拉斯矩阵直接以精度矩阵的形式出现。该非凸目标函数通过交替最小化算法进行求解：信号通过共轭梯度法更新对应的Sylvester型线性系统；图结构则通过原始-对偶混合梯度（PDHG）算法进行更新。为了捕捉负的模态间相关性，作者从互补核矩阵的主特征空间中估计出模态图的符号结构，并将该结构用于PDHG算法中以更新边权重。这些迭代求解过程被集成到一个前馈网络中，其中正则化权重和步长作为可逐层训练的参数。在合成多模态图信号以及两个真实世界数据集（日本气象数据和北京空气质量数据）上的实验表明，所提出的方...。研究方法：实验方法。",
       "topics": [
         "Computer science",
-        "Measure (data warehouse)",
+        "Graph",
         "Artificial intelligence",
-        "Data mining",
-        "Reliability (semiconductor)"
+        "Algorithm",
+        "Regularization (linguistics)"
       ],
       "source": "openalex"
     },
     {
-      "title": "Eliminating Make-Whole Uplifts with a Minimum-Cost Uniform Price Adder",
+      "title": "Quality of Life Differences across Rural Counties",
       "authors": [
-        "Valentina Norambuena-Guzman",
-        "Cong Chen",
-        "Lang Tong",
-        "Timothy D. Mount"
+        "Michael J. Hicks",
+        "Heather Stephens",
+        "Amanda Weinstein"
+      ],
+      "venue": "Review of Regional Studies",
+      "published_date": "2026-11-24",
+      "doi_url": "https://doi.org/10.52324/001c.175406",
+      "openalex_url": "https://openalex.org/W7234616345",
+      "cited_by_count": 1,
+      "abstract": "This study examines the role of quality of life (QOL) in predicting long-run population change across rural (nonmetropolitan) U.S. counties from 1970 to 2019. Employing a derivative of the Rosen-Roback spatial equilibrium framework, we treat local variations in nominal wages and housing costs as compensating differentials that reveal household valuation of place-specific attributes. Because the individual-level microdata the traditional approach requires are unavailable for most nonmetropolitan areas, we instead combine aggregate county-level residuals from housing and labor market regressions, following a specification developed by Hicks, Weinstein, and Faulk (2026), to isolate an index of localized amenity demand and extend the framework to rural counties. Decadal population growth modeling across Rural-Urban Continuum Codes (RUCC 4 through 9) confirms that higher QOL strongly predicts subsequent population growth across all rural categories, with coefficients peaking at 0.21–0.22 in the largest rural counties and falling to 0.09 in the most isolated. To address high-dimensional covariate correlation, we embed a Least Absolute Shrinkage and Selection Operator (LASSO) framework with a post-LASSO Ordinary Least Squares (OLS) estimation to isolate specific predictors of quality of life. The findings highlight spatial heterogeneity across amenity bundles: natural amenities (such as surface water) and local public goods (such as education funding) strongly predict quality of life across rural counties, while private amenities shift from specialized services (fitness, golf) concentrated near metro areas to basic restaurants and grocery stores everywhere else. These results suggest that rural economic development policy should prioritize targeted, place-based amenity development to retain population and sustain regional welfare.",
+      "summary_zh": "【金融经济学】本研究探讨了生活质量（Quality of Life, QOL）在预测1970年至2019年间美国农村（非大都市地区）各县长期人口变化中的作用。我们采用了Rosen-Roback空间均衡框架的衍生方法，将名义工资和住房成本的地区差异视为反映家庭对特定地区属性估值的补偿性差异。由于传统方法所需的个体层面微观数据在大多数非大都市地区无法获得，因此我们借鉴Hicks、Weinstein和Faulk（2026）提出的方法，结合住房市场和劳动力市场回归的县级汇总残差，构建了一个衡量地方性便利设施需求的指标，并将该框架应用于农村地区。通过对农村-城市连续体代码（RUCC 4至9）范围内的十年人口增长数据进行建模，我们发现较高的生活质量显著促进了所有农村地区的人口增长，其中人口增长系数在人口最多的农村县达到0.21–0.22，在最偏远的农村县降至0.09。为了解决高维协变量之间的相关性问题，我们采用了最小绝对值收缩与选择算法（Least Absolute Shrinkage and Selection Operator, LASSO）结合LASSO后的普通最小二乘法（Ordinary Leas...。研究方法：回归分析、LASSO 正则化、均衡模型。",
+      "topics": [
+        "Amenity",
+        "Population",
+        "Economics",
+        "Geography",
+        "Microdata (statistics)"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "500+ Job Applications Later: Reflections on the Economics PhD Job Market",
+      "authors": [
+        "Kin Wai Cheung"
+      ],
+      "venue": "SSRN Electronic Journal",
+      "published_date": "2026-11-19",
+      "doi_url": "https://doi.org/10.2139/ssrn.7716158",
+      "openalex_url": "https://openalex.org/W7236790394",
+      "cited_by_count": 0,
+      "abstract": "The economics PhD job market is a highly structured and centralized matching process that aims to reduce search frictions, yet remains intensely competitive, uncertain, and emotionally demanding for candidates. While much of what is known about candidates' experiences comes from personal anecdotes and informal conversations, this paper offers a first-person account of the 2025-2026 economics PhD job market, supported by descriptive empirical evidence from more than 500 applications across sectors, geographic regions, and institution types. Drawing on my experience as a candidate from a mid-ranked doctoral program, I document application patterns, first-round interview outcomes, and the practical and emotional challenges of navigating the recruitment process. Particular attention is given to less visible aspects of the market, including prolonged uncertainty and silence, limited communication from prospective employers, and the administrative burden of navigating different application systems. Rather than attempting to draw generalizable conclusions from a single candidate's experience, I offer a candid account of the measurable outcomes and personal difficulties of an extended job search. I hope this account provides future candidates with a more realistic understanding of what to expect and reassurance that rejection, uncertainty, and setbacks are common and do not necessarily reflect their abilities or research potential.",
+      "summary_zh": "【金融经济学】经济学博士的就业市场是一个高度结构化且集中化的匹配机制，旨在降低求职者的搜寻成本。然而，这一市场依然竞争激烈、充满不确定性，并对求职者造成较大的心理压力。尽管目前关于求职者经历的许多信息都来自个人轶事和非正式交流，本文基于来自不同行业、地区和类型机构的500多份申请数据，提供了对2025-2026年经济学博士就业市场的第一手描述。作为来自一个中等排名博士项目的求职者，我记录了申请流程、首轮面试的结果，以及在整个招聘过程中所面临的实际挑战和心理压力。文章特别关注了市场中一些不太为人所知的方面，如长期的不确定性、招聘方的沟通不足，以及处理各种申请系统所带来的行政负担。我并未试图从单个求职者的经历中得出普遍性的结论，而是如实反映了漫长求职过程中的具体成果和个人困境。我希望这样的描述能够帮助未来的求职者更现实地了解就业市场的实际情况，并让他们明白：被拒、面临不确定性以及遇到挫折是常态，这些情况并不一定反映他们的能力或研究潜力。。",
+      "topics": [
+        "Matching (statistics)",
+        "Institution",
+        "Process (computing)",
+        "Job shadow",
+        "Public relations"
+      ],
+      "source": "ssrn"
+    },
+    {
+      "title": "From Climate Diplomacy to Climate Finance: Assessing Bangladesh's Diplomatic Effectiveness and International Financing Outcomes, 2015-2025",
+      "authors": [
+        "Mir Ashraful Hossain Ashik"
+      ],
+      "venue": "SSRN Electronic Journal",
+      "published_date": "2026-11-17",
+      "doi_url": "https://doi.org/10.2139/ssrn.7714361",
+      "openalex_url": "https://openalex.org/W7235028433",
+      "cited_by_count": 0,
+      "abstract": "This paper studies whether Bangladesh's climate diplomacy translated into discernible international climate-financing outcomes between 2015 and 2025. It develops a documentary traceability framework distinguishing diplomatic activity, agenda articulation, collective negotiating outcomes, institutional financing outcomes and Bangladesh-specific financial outcomes supported by process tracing. The analysis covers Bangladesh's 2020-2022 Climate Vulnerable Forum (CVF)/Vulnerable Twenty (V20) leadership and the Dhaka-Glasgow Declaration, the COP27 Loss and Damage Fund decision, and the COP29 New Collective Quantified Goal. Evidence most strongly supports Bangladesh-linked coalition leadership and agenda articulation during its CVF/V20 presidency. COP27 and COP29 produced consequential shared outcomes, but Bangladesh's individual causal contribution is not isolated. Financial records identify selected approvals: USD 26.83 million in grants across seven selected GEF-related projects and USD 14.995 million across two identified Adaptation Fund projects. Bangladesh's interim BTR1 reports USD 9,908.6 million in climate finance received during 2015-2024. Yet a cross-check of eight financing rows across seven standalone GCF projects finds USD 418.300 million in BTR1 amounts matching approximately USD 418.301 million in approved financing, while provider-recorded dated disbursements through 2024 total USD 70.208 million. Nine AIMS profiles were screened but cannot support national aggregation. The analysis shows that agenda-setting is evidenced more clearly than Bangladesh-specific financial causation.",
+      "summary_zh": "【绿色金融与可持续发展】本文探讨了2015年至2025年间孟加拉国的气候外交活动是否带来了可观察到的国际气候融资成果。研究构建了一个文献追踪框架，用于区分外交活动、议程制定、集体谈判成果、机构融资成果以及与孟加拉国具体情况相关的具体融资成果，并通过流程追踪来验证这些成果。分析内容涵盖了孟加拉国在2020-2022年期间担任气候脆弱国家论坛（CVF）/脆弱二十国集团（V20）主席国的领导作用及《达卡-格拉斯哥宣言》的签署过程、COP27关于损失与损害基金的决议，以及COP29提出的新集体量化目标。证据表明，在孟加拉国担任CVF/V20主席国期间，该国在推动联盟合作和议程制定方面发挥了重要作用。COP27和COP29确实产生了一些具有实际意义的共同成果，但孟加拉国的具体贡献难以被单独量化。财务记录显示：该国获得了7个全球环境基金（GEF）相关项目的2683万美元拨款，以及2个适应基金项目的1499.5万美元资助。根据孟加拉国的中期报告（BTR1），该国在2015-2024年间共获得了99.086亿美元的气候融资。然而，对7个独立全球气候基金（GCF）项目的相关财务数据进行交叉核对后发现，BTR1报告中记录的...。",
+      "topics": [
+        "Finance",
+        "Negotiation",
+        "Diplomacy",
+        "Political science",
+        "Interim"
+      ],
+      "source": "ssrn"
+    },
+    {
+      "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL",
+      "authors": [
+        "Avinash Kumar Singh",
+        "Bhaskarjit Sarmah",
+        "Stefano Pasquali"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-20",
+      "published_date": "2026-11-23",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.27757v1",
+      "openalex_url": "http://arxiv.org/abs/2611.31190v1",
       "cited_by_count": 0,
-      "abstract": "Co-optimizing energy and flexible ramping reserves may dispatch generators at locational marginal prices (LMPs) below their submitted energy offer prices, necessitating out-of-market make-whole payments. Such payments create discriminatory settlements among generators and may incentivize strategic bidding for higher profits. This paper proposes LMP+U, an in-market uniform price adder to LMP for transmission-constrained networks, which minimizes demand payments subject to zero out-of-market make-whole uplift, preserves LMP-based congestion charges, and provides locally truthful bidding incentives for price-taking generators. We also identify conditions under which a price-taking generator can increase its profit by inflating its energy offer under conventional LMP with make-whole uplift. Numerical simulations illustrate the properties of LMP+U and its advantages over conventional LMP in congested networks.",
-      "summary_zh": "【金融经济学】协同优化能源供应与灵活的调峰储备机制可能导致发电机以低于其提交能源报价的价格（即节点边际价格LMP）进行发电，从而需要支付市场外的补偿费用。这种补偿机制在发电机之间造成了不公平的结算结果，并可能促使某些发电机采取策略性投标行为以获取更高利润。本文提出了一种名为LMP+U的新定价机制：在LMP基础上增加一个统一的价格加成，适用于存在输电限制的网络。该机制能够在不增加市场外补偿费用的前提下最小化用户支付成本，同时保留基于LMP的拥堵收费机制，并为那些接受市场价格波动的发电机提供合理的投标激励。我们还分析了在何种条件下，通过提高能源报价（同时承担市场外补偿费用），接受市场价格的发电机能够增加自身利润。数值模拟结果进一步验证了LMP+U机制的优越性，表明其在拥堵网络中的表现优于传统的LMP定价方式。。研究方法：数值模拟。",
+      "abstract": "Text-to-SQL systems often return queries that execute successfully but answer the wrong question. Detecting these errors at deployment is hard because execution correctness is defined against a gold query, which exists only in labeled data. We formulate confidence estimation for Text-to-SQL as probabilistic query validation under a latent correctness variable that is observable at calibration time through gold-SQL execution and latent at deployment. Our estimator separates generation from validation. A generator LLM writes and executes the query, and a different critic LLM judges the query and its execution result. The critic's validation and execution-grounded alignment scores are fused with the generator's verbalized confidence, token-level uncertainty, and SQL-structural features in a Random Forest, using two sequential LLM calls. Two calibration steps give finite-sample guarantees. A Learn-then-Test threshold ensures, with probability $1-δ$, that the error rate among accepted queries stays below a user-chosen budget. A conformal p-value bounds the false abstention rate. On Spider we use GPT-OSS-120B as generator and Gemma-4-31B as critic. The estimator obtains an AUARC of 0.899. Without abstention, 22.6% of queries are wrong. With a 15% risk budget ($δ=0.1$), a threshold is certified on all 10 resampled splits, and the system accepts 52.4% of queries on average with 9.1% observed error. Five different critic models give similar results. In a controlled comparison on Spider with Olmo-3-32B as generator, the estimator obtains an AUARC of 89.5, compared with 81.2 for the strongest logit-based baseline. Applied to BIRD without retraining, the confidence scores remain informative (AUROC 0.72, against 0.79 on Spider), but the risk guarantee does not transfer, as expected without exchangeability.",
+      "summary_zh": "【金融经济学】文本到SQL（Text-to-SQL）系统生成的查询虽然能够成功执行，但往往回答错误的问题。在系统部署后检测这些错误非常困难，因为查询的正确性是基于“黄金查询”（gold query）来定义的，而这种查询仅存在于带有标签的数据中。我们将文本到SQL的错误检测问题转化为概率查询验证问题，其中正确性是一个潜在变量，在校准阶段可以通过执行“黄金SQL”来观察，但在部署阶段则无法直接观察到。我们的模型将查询生成与验证过程分开：生成器（generator LLM）负责编写并执行查询，而评估器（critic LLM）则负责评判查询及其执行结果。评估器的验证结果以及基于执行情况的评分，会与生成器的置信度、词级不确定性以及SQL结构特征结合在一起，通过随机森林（Random Forest）进行综合分析，整个过程需要两次LLM模型的交互。通过两次校准步骤，我们可以获得有限的样本保证。通过“学习后测试”（Learn-then-Test）机制，我们可以以$1-δ$的概率确保被接受的查询中错误率保持在用户设定的阈值以下。此外，我们还使用p值来限制错误拒绝率。在实验中，我们使用GPT-OSS-120B作为...。研究方法：模型校准、随机森林。",
       "topics": [
         "Economics",
         "Finance"
@@ -76,19 +115,21 @@
       "source": "arxiv"
     },
     {
-      "title": "Reconstructing risk preferences from data",
+      "title": "Place-Based Policy from Space: Evidence from Italy's Inner Areas",
       "authors": [
-        "Anastasis Kratsios",
-        "Silvana M. Pesenti",
-        "Philipp Zimmermann"
+        "Nicola Caravaggio",
+        "Giuseppe Di Renzo",
+        "Giuliano Resce",
+        "Agapito Emanuele Santangelo",
+        "Giulia Valeria Sonzogno"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-20",
+      "published_date": "2026-11-23",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.27692v1",
+      "openalex_url": "http://arxiv.org/abs/2611.31100v1",
       "cited_by_count": 0,
-      "abstract": "We consider the problem of reconstructing risk preferences from data. Specifically, for a finite dataset consisting of contingent claims and their evaluations, we aim at reconstructing a risk measure that is finite-valued, cash-additive, convex, and Lipschitz continuous. Our first result establishes necessary and sufficient conditions for a dataset to be compatible with a risk measure, that is the evaluations are stemming from a risk measure applied to the contingent claims. Our second result provides a reconstruction formula for compatible datasets, which we term \\emph{universal risk measure}. We further extend the reconstruction to monotone risk measures and establish sharp Lipschitz constants for both general and monotone reconstructions. We further show that we explicitly reconstruct linear preferences and evaluations by the Expected Shortfall. We conclude with a numerical application to European options.",
-      "summary_zh": "【风险管理与衍生品】我们研究了从数据中重构风险偏好问题。具体而言，对于一个包含或有索赔及其评估值的有限数据集，我们的目标是重构一个满足以下条件的风险度量：该度量具有有限值、可现金累加性、凸性以及利普希茨连续性。我们的第一个结果提出了数据集与风险度量相兼容的必要充分条件，即这些评估值应当源自对该或有索赔应用的风险度量所得。第二个结果为兼容的数据集提供了一个重构公式，我们将其称为“通用风险度量”。我们进一步将重构方法扩展到单调风险度量，并为一般情况及单调情况下的重构过程确定了精确的利普希茨常数。此外，我们还证明了可以通过预期亏损（Expected Shortfall）方法明确地重构线性偏好和评估值。最后，我们通过一个关于欧式期权的数值案例对研究成果进行了验证。。",
+      "abstract": "This paper evaluates a place-based policy, Italy's National Strategy for Inner Areas (SNAI), using satellite nighttime lights. Targeting structurally fragile and peripheral municipalities, SNAI invests in essential services and economic activities. Staggered difference-in-differences compares 941 funded municipalities with 3,112 eligible controls over 2011--2022. Funding is associated with an expansion of lit area and no detectable change in radiance per lit cell, suggesting that activity extends its footprint rather than intensifying in existing centres. The expansion holds across comparison groups and, descriptively, concentrates at intermediate funding per resident. Annual satellite data can complement slower and coarser statistics.",
+      "summary_zh": "【金融经济学】本文利用夜间卫星光照数据，评估了一项以地区发展为目标的政策——意大利的“内陆地区国家战略”（SNAI）。该战略针对结构脆弱且地处偏远的市镇，对这些地区进行基础设施投资，并推动相关经济活动的发展。研究通过分阶段差异分析法，对比了2011至2022年间941个获得资助的市镇与3,112个符合条件的对照市镇。结果表明，资金投入促进了照明区域的扩大，但每个照明单元的亮度并未发生变化，这表明相关活动更多地扩展到了新的区域，而非在原有中心区域变得更加密集。这种扩张趋势在所有对比组中均存在，并且从描述性角度来看，主要集中在人均资金投入处于中等水平的地区。年度卫星数据能够补充那些更新频率较低、精度较低的常规统计数据。。研究方法：双重差分。",
       "topics": [
         "Economics",
         "Finance"
@@ -96,61 +137,36 @@
       "source": "arxiv"
     },
     {
-      "title": "Youth policy as economic investment: Human capital, digital youth work and local development in the European Union",
+      "title": "ESG Performance, Cost of Funds, and the Moderating Roles of Gender Diversity and Islamic Banking in Asia-Pacific Banks",
       "authors": [
-        "Paulina Bojanowska"
-      ],
-      "venue": "Central European Review of Economics & Finance",
-      "published_date": "2026-11-16",
-      "doi_url": "https://doi.org/10.24136/ceref.2026.010",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:295962464",
-      "cited_by_count": 0,
-      "abstract": "European youth policy is conventionally analysed through the lenses of participation, inclusion, citizenship, mobility and personal development. However, many of its instruments also generate effects that are economically significant, although they are not always captured by conventional measures of public expenditure efficiency. Investment in youth work, non-formal education, digital learning environments and the institutional capacity of youth organisations may contribute to human capital formation, employability, social capital, organisational productivity and local development. This article examines the economic dimension of European Union youth policy, with particular attention to the growing role of digital youth work and reusable educational resources.The study is conceptual and analytical in character. It combines an analysis of the EU Youth Strategy 2019–2027, the European Youth Work Agenda and the European digital education framework with selected socioeconomic indicators and literature on human capital, non-formal learning, employability and social capital. Five principal mechanisms through which youth-policy interventions may generate economic value are identified: human-capital accumulation, enhancement of labour-market preparedness, formation of social capital, strengthening of organisational capacity and economies of scale associated with digital educational resources.The analysis indicates that youth policy should not be interpreted exclusively as redistributive or social expenditure. Under appropriate institutional conditions, it can constitute a form of developmental public investment whose benefits accumulate at individual, organisational and territorial levels. Digitalisation further strengthens this investment dimension by enabling learning resources to be reused across institutions, locations and successive groups of beneficiaries. Nevertheless, the article argues against reducing the economic value of youth work to short-term employment effects or attempting to monetise complex social outcomes without sufficient causal evidence.The paper proposes a multidimensional framework for assessing the economic effects of youth policy based on human capital, organisational productivity, resource utilisation, network effects and long-term socioeconomic outcomes.",
-      "summary_zh": "【金融科技】欧洲的青年政策传统上是通过参与度、包容性、公民权、流动性和个人发展等视角来分析的。然而，这些政策的许多措施也会产生具有经济意义的影响，尽管这些影响并不总能被传统的公共支出效率衡量指标所捕捉到。对青年工作、非正规教育、数字学习环境以及青年组织的机构能力的投资，可能有助于促进人力资本积累、提高就业能力、增强社会资本、提升组织生产力以及促进地方发展。本文探讨了欧盟青年政策的经济维度，特别关注数字青年工作和可重复使用的教育资源所发挥的日益重要的作用。\n\n本研究具有概念性和分析性特征，结合了对《2019–2027年欧盟青年战略》《欧洲青年工作议程》及《欧洲数字教育框架》的分析，并参考了有关人力资本、非正规学习、就业能力和社会资本的相关文献。文章指出了青年政策干预措施产生经济价值的五种主要机制：人力资本积累、提升劳动力市场适应能力、社会资本的形成、组织能力的增强，以及与数字教育资源相关的规模经济效应。分析表明，青年政策不应仅仅被视为一种再分配措施或社会支出；在适当的制度条件下，它可以成为一种发展型公共投资，其效益能够在个人、组织和区域层面得到累积。数字化进一步强化了这一投资效应，因为它使得学...。",
-      "topics": [
-        "Economics",
-        "Education",
-        "Political Science"
-      ],
-      "source": "semantic_scholar"
-    },
-    {
-      "title": "The Role of Sustainability Perception and Trust in Islamic Banking Adoption: Evidence from Bangladesh",
-      "authors": [
-        "Md. Al Mamun",
-        "S. M. Shariful Haque",
-        "Md. Belal Hossain",
-        "Md. Chhali Uddin"
+        "M. Modjo"
       ],
       "venue": "Journal of Islamic Monetary Economics and Finance",
       "published_date": "2026-11-18",
-      "doi_url": "https://doi.org/10.21098/jimf.v12i4.2885",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:296066675",
+      "doi_url": "https://doi.org/10.21098/jimf.v12i4.3457",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:296059196",
       "cited_by_count": 0,
-      "abstract": "This paper examines how consumer acceptability and loyalty to Islamic banking in Bangladesh are influenced by perceptions of sustainability, trust, and religious beliefs. The Theory of Planned Behavior (TPB), which views sustainability perception and trust as the primary factors and behavioral intention and brand loyalty as the results, guides the investigation. Religious values are assessed as a cultural trait, and their applicability is reassessed in light of the evolving financial landscape. A structured questionnaire survey is used to gather information from 413 respondents having an experience with Islamic banking in five major Bangladeshi cities. Data are analyzed using SmartPLS 3.0's Structural Equation Modeling (SEM-PLS). The results demonstrate that consumer attitudes, which in turn influence behavioral intention, are significantly influenced by perceptions of sustainability and trust. Conversely, behavioral intention predicts brand loyalty, demonstrating its mediation function. However, religious beliefs have no discernible effect on attitudes or intentions for behavior. The findings suggest that consumers in the nation with a majority of Muslims place a higher value on institutional trust and ethical behavior than they do on religion. Transparency, sustainability reporting, and trust-building initiatives are the main practical implications, whereas longitudinal designs and a range of demographics should be explored in future research.",
-      "summary_zh": "【银行与信贷】本文探讨了在孟加拉国，消费者对伊斯兰银行的接受度和忠诚度如何受到可持续性认知、信任感以及宗教信仰的影响。研究采用了计划行为理论（Theory of Planned Behavior, TPB），该理论将可持续性认知和信任视为主要影响因素，而行为意图和品牌忠诚度则是其结果。宗教价值观被视为一种文化特征，并根据不断变化的金融环境对其适用性进行了重新评估。研究通过结构化问卷调查收集了来自孟加拉国五个主要城市的413位使用过伊斯兰银行服务的受访者的数据，数据分析采用了SmartPLS 3.0软件的结构方程模型（SEM-PLS）。研究结果表明，消费者的态度（进而影响其行为意图）显著受到可持续性和信任感的影响；相反，行为意图又能够预测品牌忠诚度，体现了其中介作用。然而，宗教信仰对消费者的态度或行为意图并无显著影响。研究结果表明，在这个穆斯林占多数的国家中，消费者更重视机构的信任度和道德行为，而非宗教本身。研究提出的实际建议包括提高透明度、加强可持续性信息披露以及推行信任建设措施；同时，未来的研究应探索纵向研究设计以及更多样化的人口统计特征。。研究方法：调查数据。",
+      "abstract": "This study examines how banks’ Environmental, Social, and Governance (ESG) performance affects their cost of funds (COF) in the Asia-Pacific region and the moderating roles of board gender diversity and Islamic bank status. Applying fixed-effects models with Driscoll–Kraay standard errors and System-GMM estimators to an unbalanced panel of over 1,200 bank-year observations from 140 banks (2014–2023), we find that higher ESG performance is associated with an increased COF—a finding consistent with a \"credibility gap\" where lenders price a premium for potentially symbolic or superficial ESG claims. Governance mechanisms moderate this relationship: increased board gender diversity mitigates the ESG-related decoupling-risk premium, while Islamic governance frameworks provide parallel assurance that partially offsets these costs. The findings suggest that while ESG performance is often intended to lower bank funding costs, its effectiveness ultimately depends on the credibility of governance and the surrounding institutional setting.",
+      "summary_zh": "【银行与信贷】本研究探讨了亚洲太平洋地区银行的环保、社会和治理（ESG）表现如何影响其资金成本（COF），以及董事会性别多样性和伊斯兰银行身份在其中的调节作用。我们采用固定效应模型（结合Driscoll–Kraay标准误差）和系统广义矩估计（System-GMM）方法，分析了来自140家银行的1,200多个银行年度观测数据（2014–2023年），发现较高的ESG表现与较高的资金成本相关——这一结果与“可信度缺口”理论一致，即贷款机构会对可能具有象征意义或表面化的ESG声明收取额外费用。治理机制对这一关系具有调节作用：增加董事会的性别多样性有助于降低与ESG相关的风险溢价，而伊斯兰银行治理框架则提供了额外的保障，部分抵消了这些成本。研究结果表明，尽管ESG表现通常旨在降低银行的资金成本，但其实际效果最终取决于治理机制的可信度以及所处的制度环境。。研究方法：广义矩估计。",
       "topics": [
         "Business",
-        "Environmental Science",
         "Economics"
       ],
       "source": "semantic_scholar"
     },
     {
-      "title": "Designing Low Emission Zones: Theory and Evidence",
+      "title": "Democratizing Venture Capital: Tax Incentives and the Geographic Expansion of Startup Investing",
       "authors": [
-        "Nano Barahona",
-        "Natalia Fabra",
-        "Imelda",
-        "Juan-Pablo Montero"
+        "Murillo Campello",
+        "Guilherme Junqueira"
       ],
       "venue": "NBER Working Papers",
       "published_date": "",
       "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w36037#fromrss",
+      "openalex_url": "https://www.nber.org/papers/w36039#fromrss",
       "cited_by_count": 0,
-      "abstract": "Low Emission Zones (LEZs), which exclude polluting vehicles from parts of a city, are spreading. Yet how their design affects welfare is poorly understood. Unlike price instruments, LEZs ration access inefficiently, imposing costs on inframarginal drivers of restricted vehicles. In our model, welfare is quasi-convex in LEZ size, yielding bang-bang principles: LEZs should be as large as possible or not implemented at all; cleaner vehicles (e.g., hybrids) could be exempt as transition technologies but later restricted, which may require planner commitment. Using new-car purchases, we find Madrid’s LEZ shifted buyers toward cleaner cars, but the surplus losses of switchers and inframarginal drivers exceeded emission savings.",
-      "summary_zh": "【金融经济学】低排放区（LEZs）通过限制污染车辆在城市特定区域的通行来改善空气质量，这类政策正在逐渐普及。然而，其设计对公众福利的具体影响仍缺乏深入研究。与价格调控手段不同，低排放区在资源分配上存在效率低下问题，尤其是会对那些勉强符合排放标准的驾驶员造成额外负担。在我们的模型中，公众福利与低排放区的规模呈准凸关系，这启示我们应遵循“要么扩大低排放区的范围，要么干脆不实施该政策”的原则；同时，可以暂时允许更清洁的交通工具（如混合动力汽车）作为过渡性技术使用，但随后再逐步对其实施限制——这一决策需要相关规划者的坚定决心。通过分析新车购买数据，我们发现马德里的低排放区确实促使消费者倾向于购买更环保的汽车，但那些被迫更换出行方式的消费者及勉强符合排放标准的驾驶员所承担的额外成本超过了由此带来的减排效益。。",
+      "abstract": "Can tax subsidies expand the geographic reach of startup investing? Despite decades of growth, venture capital (VC) remains concentrated in a handful of metropolitan areas, leaving most of the country with limited access to startup financing. We study the 2009–2010 enhancement of the Qualified Small Business Stock (QSBS) program, which eliminated federal capital gains taxes on investments in qualifying startups. By raising the payoff to success, the reform made riskier investments more attractive, including entry into unfamiliar markets. This incentive is especially strong for VC funds. Relative to similarly sized metros that already had VC, the reform raised the probability that a previously unserved metro received VC investment in qualifying sectors by 8 to 10 percentage points. There was no comparable increase in sectors excluded from QSBS or among angel investors, who receive the same tax benefit. Startups in newly served markets performed like those in other non-hub markets, created high-wage jobs, and attracted scientific and technical workers, some from established hubs. Our findings suggest that a sufficiently large subsidy can extend VC into markets it had long bypassed, even with no requirement on where startups are located.",
+      "summary_zh": "【金融经济学】税收补贴能否扩大风险投资的地理覆盖范围？尽管风险投资（VC）经历了数十年的发展，但其资金仍主要集中在少数几个大都市地区，导致该国大部分地区难以获得创业融资。我们研究了2009年至2010年间实施的“合格小型企业股票”（QSBS）计划——该计划取消了投资者对符合条件的初创企业的资本利得税。通过提高投资成功的回报，这一改革使得风险更高的投资更具吸引力，包括进入不熟悉的市场。对于风险投资基金而言，这种激励作用尤为显著。与那些已经拥有风险投资的大都市相比，该改革使得那些此前未获得风险投资服务的地区在符合条件的行业获得投资的可能性提高了8%至10%。而在被排除在QSBS计划之外的行业或天使投资者群体中，并未观察到类似的增长趋势（因为他们同样享有税收优惠）。新获得风险投资服务的地区的初创企业表现与其他非核心地区的初创企业相当，创造了高薪就业机会，并吸引了科学和技术人才，其中一些人来自原有的风险投资中心。我们的研究结果表明，只要补贴规模足够大，即使不对初创企业的所在地提出任何要求，也能促使风险投资进入那些长期被忽视的市场。。",
       "topics": [
         "Economics",
         "Finance"
@@ -158,20 +174,17 @@
       "source": "nber"
     },
     {
-      "title": "Five Facts About Stablecoins",
+      "title": "The Emergence of a National Capital Market,1870–1940",
       "authors": [
-        "Lin William Cong",
-        "Gordon Y. Liao",
-        "Eswar S. Prasad",
-        "Tony Zhang"
+        "Pawel Janas"
       ],
       "venue": "NBER Working Papers",
       "published_date": "",
       "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w36038#fromrss",
+      "openalex_url": "https://www.nber.org/papers/w36040#fromrss",
       "cited_by_count": 0,
-      "abstract": "We document five facts about payment stablecoins using wallet-level blockchain data from 2020 to 2025. First, stablecoins serve as a transaction currency: onchain volume exceeds Bitcoin’s despite a much smaller supply, velocity has risen sharply, and transactions have shifted toward low-value transfers. Second, using transaction timing to refine exchange-based attribution, we find activity spread across the Americas, Europe, and Asia and fewer cross-regional flows than the standard method implies. Third, we estimate a structural cash-management model on the holdings data and find that the costs of accessing stablecoin wallets have fallen since 2023. Fourth, stablecoins are becoming the settlement currency of a fast-growing onchain credit market, and their growth appears to reallocate rather than destroy credit. Fifth, smart contracts are involved in about a third of Ethereum stablecoin transactions and over two thirds of volume, and protocols such as x402 demonstrate sub-cent machine-to-machine payments. Stablecoins behave as tokenized money, with implications for financial markets and regulation.",
-      "summary_zh": "【金融经济学】我们利用2020年至2025年的钱包级区块链数据，记录了关于支付型稳定币的五个关键事实：  \n1. 稳定币充当交易货币：尽管其供应量远低于比特币，但其链上交易量仍超过了比特币；交易活跃度显著提升，且交易类型更多集中在小额转账上。  \n2. 通过分析交易时间信息，我们发现稳定币的交易活动遍布美洲、欧洲和亚洲，跨地区资金流动规模低于传统统计方法所显示的幅度。  \n3. 基于持有数据构建的模型显示，自2023年以来使用稳定币钱包的成本有所下降。  \n4. 稳定币正逐渐成为快速发展的链上信贷市场的结算工具，其发展趋势更倾向于重新配置信贷资源而非破坏现有信贷体系。  \n5. 在以太坊上的稳定币交易中，约有三分之一的交易涉及智能合约，且交易量超过总量的三分之二；某些协议（如x402）实现了低于一美分的机器对机器支付。  \n稳定币表现出“代币化货币”的特征，这对金融市场和监管政策具有重要启示意义。。",
+      "abstract": "This article documents the integration of the American capital market with the first long-run, geolocated, firm-level record of the asset holdings of large institutional investors: over 100,000 holdings of life insurers, 1870–1940. Between 1880 and 1890 the mean distance of insurers’ bonds from home more than doubled and their home-state share fell from over half to under a quarter. The shift occurred within firms, across bond classes and charters. Mortgage lending was national wherever state law permitted it. Integration was largely complete by 1890.",
+      "summary_zh": "【金融经济学】本文记录了美国资本市场与首个长期、基于地理位置的机构投资者资产持有记录的整合过程。该记录涵盖了1870至1940年间人寿保险公司的超过10万笔资产持有交易。在1880年至1890年间，保险公司债券的发行地与总部之间的距离平均增加了两倍以上，其资产在总部所在州的占比从超过一半下降到不足四分之一。这一变化发生在各保险公司内部，涉及不同类型的债券以及不同的公司类型。在州法律允许的情况下，抵押贷款业务实现了全国范围内的统一。到1890年，资本市场的整合基本完成。。",
       "topics": [
         "Economics",
         "Finance"
@@ -179,88 +192,71 @@
       "source": "nber"
     },
     {
-      "title": "Temporal dependence and variable persistence in daily fluctuations of the peso/dollar exchange rate: Mexico, 2004–2026",
+      "title": "S³: A Multicriteria Pre-Deployment Scoring Protocol for Enterprise Small Language Model Selection",
       "authors": [
-        "Samuel Joseph Lizarazu Cerón",
-        "Eddy Lizarazu Alanez"
+        "Smita Sengupta",
+        "Smitha Rajappa",
+        "Ashim Bose"
       ],
-      "venue": "Denarius Revista de economía y adminstración",
-      "published_date": "2026-11-23",
-      "doi_url": "https://doi.org/10.24275/uam/izt/dcsh/denarius/v12026n50/lizarazu",
-      "openalex_url": "https://openalex.org/W7236019428",
+      "venue": "Journal of Artificial Intelligence & Cloud Computing",
+      "published_date": "2026-11-24",
+      "doi_url": "https://doi.org/10.47363/jaicc/2026(5)544",
+      "openalex_url": "https://openalex.org/W7236995213",
       "cited_by_count": 0,
-      "abstract": "This study analyzes the temporal dependence of daily Mexican peso/U.S. dollar\n            exchange-rate fluctuations over 2004–2026 using the Hurst exponent, detrended\n            fluctuation analysis (dfa), and the semiparametric gph estimator. The sample is divided\n            into subperiods associated with different economic and financial episodes and is\n            complemented by a rolling-window analysis. The results reveal substantial temporal\n            heterogeneity: Hurst, dfa, and gph estimates vary across subperiods and, in some cases,\n            provide divergent signals. In the recursive analysis, the signal compatible with\n            persistence remains in a majority of windows when window lengths of 181, 252, and 365\n            observations are considered, although mean H declines as the window length increases.\n            The Ht – Ht (t + 1) representation also shows a concentration of estimates around\n            central H levels of approximately H = 0.53–0.55, depending on the window length. These\n            findings are consistent with time-varying dependence and changes in the intensity of the\n            estimated temporal structure. The evidence does not by itself establish long memory for\n            the entire sample, causal relationships between economic episodes and persistence, or a\n            formal rejection of the efficient market hypothesis. The phase-space analysis is\n            therefore interpreted as an exploratory representation of the recursive dynamics of the\n            estimator.",
-      "summary_zh": "【风险管理与衍生品】本研究利用赫斯特指数（Hurst exponent）、去趋势波动分析（detrended fluctuation analysis, dfa）和半参数广义自相关（semiparametric GPH）估计方法，分析了2004至2026年间墨西哥比索兑美元汇率波动的时间依赖性。样本数据被划分为与不同经济和金融时期相关的子时段，并通过滚动窗口分析进行了补充研究。研究结果表明存在显著的时间异质性：赫斯特指数、去趋势波动分析及广义自相关估计结果在不同子时段之间存在差异，某些情况下甚至呈现出相反的结论。在递归分析中，当窗口长度分别为181、252和365个观测值时，与汇率持续性相一致的结论在大多数窗口中依然成立；不过随着窗口长度的增加，平均赫斯特指数（H）值有所下降。Ht – Ht(t + 1)的统计分布显示，估计值主要集中在大约H = 0.53–0.55的中心范围内，这一范围会随窗口长度的不同而变化。这些发现表明汇率波动的依赖性具有时间变化性，且其时间结构强度也有所波动。然而，现有证据本身并不能证明整个样本数据具有长期记忆性（long memory），也无法证实不同经济时期之间存在因果关...。",
+      "abstract": "Technology  managers  lack  a  systematic  protocol  for  determining  which  enterprise  workloads  are  safe  for  local  small  language  model  deployment.  We  introduce S³ (Suitability Score for SLM Selection), a multicriteria framework that scores workloads across six dimensions, Task Complexity, Output Structure, Stakeholder Risk, Data Sensitivity, Latency Tolerance, and Volume Load, and assigns them to Pure SLM, Hybrid, or LLM-Only tiers before inference. Non-compensatory gate rules enforce safety constraints for high-stakes scenarios, ensuring that life-critical or expert-level generative tasks are never assigned to a local model regardless of their aggregate score. Thresholds calibrated on an independent use-case set correctly predicted all eight held-out tier assignments across six industries, with Pure SLM tiers achieving at least 95% LLM parity.",
+      "summary_zh": "【金融经济学】技术管理者缺乏一套系统的评估方案，用于判断哪些企业工作负载适合部署在本地的小型语言模型（small language models, SLMs）上。我们提出了S³（SLM选择适用性评分，Suitability Score for SLM Selection）这一多标准评估框架，该框架从六个维度对工作负载进行评分：任务复杂性、输出结构、利益相关者风险、数据敏感性、延迟容忍度和负载量，并在推理之前将工作负载划分为“纯SLM”（Pure SLM）、“混合型”（Hybrid）或“仅LLM”（LLM-Only）三个层级。非补偿性规则（non-compensatory gate rules）在高风险场景中强制执行安全约束，确保任何涉及生命安全或需要专家级生成能力的任务都不会被分配给本地模型，无论其综合评分如何。通过对独立用例集进行校准，该评分模型准确预测了六个行业中所有八个工作负载的层级分配结果，其中“纯SLM”层级的性能至少达到了与LLM相当的水平（95%）。。研究方法：模型校准。",
       "topics": [
-        "Econometrics",
-        "Persistence (discontinuity)",
-        "Detrended fluctuation analysis",
-        "Long memory",
-        "Economics"
+        "Computer science",
+        "Aggregate (composite)",
+        "Task (project management)",
+        "Protocol (science)",
+        "Set (abstract data type)"
       ],
       "source": "openalex"
     },
     {
-      "title": "Capital formation, large companies, and the economy in the food and beverage industry in Mexico, 2020–2025",
+      "title": "From language to world states: a survey of world models in multimodal reasoning",
       "authors": [
-        "Fernando Gaona Montiel"
+        "Honghao Fu",
+        "Jiacheng Chen",
+        "Lingrui Mei",
+        "Manxi Lin",
+        "Teng Shi"
       ],
-      "venue": "Denarius Revista de economía y adminstración",
-      "published_date": "2026-11-23",
-      "doi_url": "https://doi.org/10.24275/uam/izt/dcsh/denarius/v12026n50/gaona",
-      "openalex_url": "https://openalex.org/W7236151941",
+      "venue": "Foundations and Trends® in Computer Graphics and Vision",
+      "published_date": "2026-11-24",
+      "doi_url": "https://doi.org/10.1108/ftcgv-10-2025-0121",
+      "openalex_url": "https://openalex.org/W7237028637",
       "cited_by_count": 0,
-      "abstract": "This work focuses on showing how capital formation occurs in large companies,\n            based on trust and other variables in the food and beverage subsector during the period\n            2020-2025. It confirms that capital formation decisions by business groups are\n            associated with the level of trust, the social context, and how this drives the\n            industry, particularly the food and beverage sector. This represents a sensitive\n            reflection of how large capital operates a key asset and factor in the economy. It\n            clearly shows that, within the processes of capital formation by individuals, investment\n            decisions are linked to trust and other factors during the period of 2020-2025. By using\n            a descriptive methodology, statistical series, company indicators, and some quantitative\n            variables, it was possible to obtain an economic evaluation of large corporations that\n            reveal the state of the industry and how obstacles and challenges are overcome in an\n            increasingly competitive environment.",
-      "summary_zh": "【金融经济学】本研究重点探讨了2020至2025年间，食品饮料子行业中大型企业的资本形成过程，以及这一过程如何受到信任等因素的影响。研究证实，企业集团的资本形成决策与信任水平、社会环境密切相关，并且这些因素对整个行业（尤其是食品饮料行业）的发展具有显著推动作用。这反映了大型企业在经济中如何运作其关键资产和要素。研究还明确指出，在2020至2025年期间，个人层面的资本形成过程中，投资决策与信任及其他因素存在紧密关联。通过采用描述性研究方法、统计数据分析、企业指标及量化变量，本研究对大型企业进行了经济评估，揭示了该行业的现状，以及企业在日益竞争激烈的环境中是如何克服各种障碍和挑战的。。",
+      "abstract": "Multimodal reasoning is expanding from interpreting a single observation to understanding dynamic environments and how they evolve. This shift poses new challenges for multimodal systems: they must continuously update their understanding of the environment and anticipate how actions may change it. World models provide a state-centered framework to address this challenge. They organize multimodal observations into task-relevant states. These states can be continuously maintained and updated as the environment evolves, and can support the simulation of future states and action consequences, thereby providing a foundation for downstream reasoning, planning and action. From a functional perspective, this survey reviews the emerging intersection of world models and multimodal reasoning. This survey examines the intersection between world models and multimodal reasoning at two complementary levels: the mechanistic level focuses on how world states support reasoning, while the system level considers how these mechanisms are instantiated as functional roles in multimodal reasoning systems. First, at the mechanistic level, the authors examine the differences and complementarities between language-centered intermediate reasoning traces and state-centered world-model reasoning. The authors further analyze how task-relevant states support multimodal reasoning by enabling persistent state maintenance, evidence-driven updates and simulations conditioned on actions or interventions. Second, at the system level, the authors group existing studies into three overlapping functional roles: temporal and imaginative state reasoning, structured-state reasoning and action-coupled state reasoning. Based on this functional taxonomy, the authors further review advances in world models across various environments and summarize the corresponding evaluation resources. Overall, this survey examines an emerging, more stateful paradigm in multimodal reasoning enabled by world models. This paradigm does not replace language-based or other multimodal forms of reasoning. Instead, it complements them with world-model states that support the persistent maintenance and continual updating of task-relevant information, as well as the simulation of possible futures. By systematically reviewing these developments, this survey seeks to deepen the understanding of the evolving foundations of multimodal reasoning and to provide a useful reference for future research and innovation in this rapidly advancing field.",
+      "summary_zh": "【金融经济学】多模态推理正在从对单一观察结果的解读，扩展到对动态环境及其演变过程的理解。这一转变给多模态系统带来了新的挑战：它们必须不断更新对环境的认知，并预测人类行为可能如何改变环境。世界模型为应对这些挑战提供了一个以状态为中心的框架。该框架将多模态观测数据组织成与任务相关的状态，这些状态可以随着环境的变化而持续维护和更新，从而支持对未来状态及行为后果的模拟，为后续的推理、规划和行动提供基础。从功能角度来看，本文综述了世界模型与多模态推理之间的新兴交叉领域。研究从两个互补的层面探讨了这两者的结合：在机制层面，探讨了世界状态如何支持推理过程；在系统层面，则分析了这些机制如何在多模态推理系统中具体体现为功能性角色。\n\n首先，在机制层面，作者分析了以语言为中心的中间推理路径与以状态为中心的世界模型推理之间的差异与互补性。进一步地，作者阐述了与任务相关的状态如何通过实现状态的持续维护、基于证据的更新以及基于行为或干预的模拟来支持多模态推理。其次，在系统层面，作者将现有研究归纳为三种相互关联的功能性角色：时间与想象状态推理、结构化状态推理以及行为耦合状态推理。基于这一功能分类，作者总结了不同环境下世界...。研究方法：数值模拟、调查数据。",
       "topics": [
-        "Beverage industry",
+        "Computer science",
+        "Intersection (aeronautics)",
+        "Action (physics)",
+        "Reasoning system",
+        "Artificial intelligence"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Balancing tradition and innovation in Japanese long-lived family businesses: evidence from Tokyo metropolitan manufacturing firms",
+      "authors": [
+        "Junichi Sakata"
+      ],
+      "venue": "Journal of Family Business Management",
+      "published_date": "2026-11-24",
+      "doi_url": "https://doi.org/10.1108/jfbm-05-2026-0154",
+      "openalex_url": "https://openalex.org/W7237036109",
+      "cited_by_count": 0,
+      "abstract": "Purpose\n                    This study investigates how Japanese long-lived manufacturing firms (shinise) navigate the tradition–innovation paradox (the tension between preserving accumulated tradition capital and pursuing adaptive innovation), and how family ownership and organizational longevity relate to financial performance.\n                  \n                  \n                    Design/methodology/approach\n                    A mixed-method descriptive design combines population-level firmographic analysis of 745 long-lived manufacturing firms (founded in or before 1949, i.e. at least 75 years ago) in the Greater Tokyo metropolitan region, drawn from the Teikoku Databank COSMOS database, with survey data from 74 responding firms collected in November 2024. Four hypotheses are tested using Mann–Whitney U tests, chi-square tests and frequency analysis, drawing on dynamic capabilities, organizational ambidexterity, socioemotional wealth (SEW) and the stewardship theory.\n                  \n                  \n                    Findings\n                    Long-lived firms exhibit exploitation-dominant innovation behavior, prioritizing process improvement (cited by 79.3% of the 58 innovating firms) and incremental technology adoption over radical exploration. Operational digital technologies are much more widely adopted than customer-facing tools. Family-named firms show significantly lower median revenues than non-family counterparts (¥2.24bn vs ¥2.95bn; p = 0.014), consistent with socioemotional-wealth predictions of growth moderation, while century-old firms (≥100 years) exhibit a revenue premium over 75–99-year firms (p = 0.035), consistent with, though not proof of, a compounding longevity-capital effect.\n                  \n                  \n                    Originality/value\n                    The study proposes incremental ambidexterity as a label for an exploitation-dominant, culturally calibrated pattern, complements the existing qualitative English-language research on shinise with the first population-scale quantitative evidence on Japanese shinise manufacturing firms, and finds a revenue gap consistent with SEW predictions that remains detectable among firms at least 75 years old.",
+      "summary_zh": "【公司金融】**研究目的**  \n本研究旨在探讨日本长寿制造业企业（shinise）如何应对“传统与创新之间的悖论”（即在维护积累的传统资本与追求适应性创新之间的矛盾），以及家族所有权与企业长期存续性如何影响其财务绩效。  \n\n**研究设计/方法**  \n本研究采用混合方法进行描述性分析，结合了对东京大都市地区745家长寿制造业企业（成立于1949年或更早，即至少已有75年历史）的企业特征数据（来自Teikoku Databank COSMOS数据库）与2024年11月收集的74家受访企业的调查数据。通过Mann–Whitney U检验、卡方检验和频率分析来验证四个研究假设，这些分析借鉴了动态能力理论、组织灵活性理论、社会情感财富（SEW）理论以及企业治理理论的相关观点。  \n\n**研究结果**  \n长寿企业主要表现出以利用现有资源为核心的创新行为，其中79.3%的创新企业将流程改进作为优先事项，而非倾向于进行根本性的技术创新；同时，这些企业更倾向于采用渐进式的技术改进而非颠覆性创新。运营层面的数字化技术应用范围远广于面向客户的应用工具。家族控股的企业收入中位数显著低于非家族控股企业（分别为...。研究方法：模型校准、调查数据。",
+      "topics": [
+        "Revenue",
         "Business",
-        "Capital (architecture)",
-        "Asset (computer security)",
-        "Investment (military)"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Teaching and economic research within a social structure of domination: ideology and hegemony of the neoclassical paradigm La docencia y la investigción económica en una estructura social de dominio: ideología y hegemonía del paradigma neoclásico",
-      "authors": [
-        "Ernesto Xavier Vera Gómez",
-        "David Castro Lugo"
-      ],
-      "venue": "Denarius Revista de economía y adminstración",
-      "published_date": "2026-11-23",
-      "doi_url": "https://doi.org/10.24275/uam/izt/dcsh/denarius/v12026n50/vera",
-      "openalex_url": "https://openalex.org/W7236229853",
-      "cited_by_count": 0,
-      "abstract": "Mainstream approaches to studying the financial system have relied heavily on\n            forecasting, underpinned by rational expectations and the efficient market hypothesis.\n            While these assumptions facilitate analytical modeling, they offer limited explanatory\n            power in periods of systemic crisis and financial contagion. This paper argues that\n            framing the financial system as a complex adaptive system (CAS) provides more suitable\n            analytical tools for these contexts, particularly given its capacity to incorporate\n            agent heterogeneity, recursive causality, and emergent behavior. It further contends\n            that agent-based modeling, calibrated with behavioral economics assumptions, can produce\n            artificial markets capable of reproducing empirical regularities of real markets.",
-      "summary_zh": "【金融经济学】主流的金融系统研究方法主要依赖于预测分析，这些方法建立在理性预期理论及有效市场假说之上。尽管这些假设有助于构建分析模型，但在系统性危机或金融传染事件发生时，它们的解释能力较为有限。本文认为，将金融系统视为一个复杂适应系统（Complex Adaptive System, CAS）能够为这类研究提供更为合适的分析工具，尤其是该框架能够充分考虑代理行为的异质性、递归因果关系以及新兴行为模式。此外，本文还指出，基于行为经济学的代理模型构建方法，能够生成能够再现真实市场规律的人造市场。。研究方法：模型校准。",
-      "topics": [
-        "Framing (construction)",
-        "Mainstream",
-        "Hegemony",
-        "Ideology",
-        "Sociology"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Artificial intelligence, the labor market, and energy consumption: What do major agencies in Latin America say?",
-      "authors": [
-        "Moissés Ildefonso Cetre Castillo"
-      ],
-      "venue": "Denarius Revista de economía y adminstración",
-      "published_date": "2026-11-23",
-      "doi_url": "https://doi.org/10.24275/uam/izt/dcsh/denarius/v12026n50/cetre",
-      "openalex_url": "https://openalex.org/W7236501278",
-      "cited_by_count": 0,
-      "abstract": "The emergence of generative artificial intelligence (AI) has attracted significant\n            attention in recent years; however, there are still few studies that rigorously examine\n            its impacts on the labor market and, consequently, on the economy (Roose, 2023; Babina\n            et al., 2022; The Adecco Group Institute, 2024). In this context, it is recognized that\n            AI is transforming both employment dynamics and energy consumption on a global scale.\n            This work aims to preliminarily understand the current state of AI in Latin America and\n            review the state of the art on the matter, with special interest in identifying some\n            relevant conclusions from three multilateral agencies. Recent studies, like the one by\n            Jung and Katz (2026), claim that a 1% increase in AI spending is associated with a\n            0.036% growth in GDP, an effect that mainly materializes through improvements in the\n            productivity of skilled labor.",
-      "summary_zh": "【劳动经济学】近年来，生成式人工智能（AI）的出现引起了广泛关注；然而，目前仍很少有研究系统地探讨其对劳动力市场乃至经济的影响（Roose, 2023; Babina et al., 2022; The Adecco Group Institute, 2024）。在这一背景下，人们认识到AI正在全球范围内改变就业格局和能源消耗模式。本研究旨在初步了解AI在拉丁美洲的发展现状，并综述相关领域的最新研究成果，特别关注三个多边机构得出的重要结论。例如Jung和Katz（2026）的研究指出，AI支出的每增加1%，GDP就会增长0.036%，这一效应主要体现在熟练劳动生产力的提升上。。",
-      "topics": [
-        "Latin Americans",
-        "State (computer science)",
-        "Productivity",
-        "Economics",
-        "Energy (signal processing)"
+        "Metropolitan area",
+        "Ambidexterity",
+        "Marketing"
       ],
       "source": "openalex"
     }

@@ -1,0 +1,148 @@
+# 金融经济学每日文献速递（2026-11-24）
+
+共筛选到 **12** 篇文献。
+
+> 📢 **今日综述**
+>
+> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（9 篇）、绿色金融与可持续发展（1 篇）、银行与信贷（1 篇）。方法上以模型校准、调查数据为主。来源分布：OpenAlex（5 篇）、SSRN（2 篇）、arXiv（2 篇）。其中 2 篇命中顶级期刊白名单。
+
+## 1. Multimodal signal restoration with signed twofold graph learning
+- 来源：openalex
+- 作者：Haruki Yokota, Hiroshi Higashi, Yuichi Tanaka
+- 期刊/来源：APSIPA Transactions on Signal and Information Processing
+- 发表日期：2026-11-24
+- 引用数：0
+- 主题：Computer science, Graph, Artificial intelligence, Algorithm, Regularization (linguistics)
+- 链接：[DOI](https://doi.org/10.1108/atsip-05-2026-0040) [链接](https://openalex.org/W7162600363)
+
+**中文摘要（自动生成）**：【金融经济学】作者提出了一种联合学习带符号的双重图结构并对多模态图信号进行信号恢复的方法。传感器网络中的多模态信号通常采用双重图假设（TGA）进行建模，该假设将空间结构和模态间关系表示为两个独立的图。然而，现有的基于TGA的信号恢复方法要么假设图结构是已知的，要么限制边权重为非负值，这导致它们无法捕捉到负的模态间相关性。作者针对这两个限制提出了以下解决方案：为了从噪声较大且数据不完整的情况下学习双重图结构，作者将信号恢复和双重图学习问题表述为在矩阵正态先验下的最大后验（MAP）估计问题，其中空间图和模态图的拉普拉斯矩阵直接以精度矩阵的形式出现。该非凸目标函数通过交替最小化算法进行求解：信号通过共轭梯度法更新对应的Sylvester型线性系统；图结构则通过原始-对偶混合梯度（PDHG）算法进行更新。为了捕捉负的模态间相关性，作者从互补核矩阵的主特征空间中估计出模态图的符号结构，并将该结构用于PDHG算法中以更新边权重。这些迭代求解过程被集成到一个前馈网络中，其中正则化权重和步长作为可逐层训练的参数。在合成多模态图信号以及两个真实世界数据集（日本气象数据和北京空气质量数据）上的实验表明，所提出的方...。研究方法：实验方法。
+
+## 2. Quality of Life Differences across Rural Counties
+- 来源：openalex
+- 作者：Michael J. Hicks, Heather Stephens, Amanda Weinstein
+- 期刊/来源：Review of Regional Studies
+- 发表日期：2026-11-24
+- 引用数：1
+- 主题：Amenity, Population, Economics, Geography, Microdata (statistics)
+- 链接：[DOI](https://doi.org/10.52324/001c.175406) [链接](https://openalex.org/W7234616345)
+
+**中文摘要（自动生成）**：【金融经济学】本研究探讨了生活质量（Quality of Life, QOL）在预测1970年至2019年间美国农村（非大都市地区）各县长期人口变化中的作用。我们采用了Rosen-Roback空间均衡框架的衍生方法，将名义工资和住房成本的地区差异视为反映家庭对特定地区属性估值的补偿性差异。由于传统方法所需的个体层面微观数据在大多数非大都市地区无法获得，因此我们借鉴Hicks、Weinstein和Faulk（2026）提出的方法，结合住房市场和劳动力市场回归的县级汇总残差，构建了一个衡量地方性便利设施需求的指标，并将该框架应用于农村地区。通过对农村-城市连续体代码（RUCC 4至9）范围内的十年人口增长数据进行建模，我们发现较高的生活质量显著促进了所有农村地区的人口增长，其中人口增长系数在人口最多的农村县达到0.21–0.22，在最偏远的农村县降至0.09。为了解决高维协变量之间的相关性问题，我们采用了最小绝对值收缩与选择算法（Least Absolute Shrinkage and Selection Operator, LASSO）结合LASSO后的普通最小二乘法（Ordinary Leas...。研究方法：回归分析、LASSO 正则化、均衡模型。
+
+## 3. 500+ Job Applications Later: Reflections on the Economics PhD Job Market
+- 来源：ssrn
+- 作者：Kin Wai Cheung
+- 期刊/来源：SSRN Electronic Journal
+- 发表日期：2026-11-19
+- 引用数：0
+- 主题：Matching (statistics), Institution, Process (computing), Job shadow, Public relations
+- 链接：[DOI](https://doi.org/10.2139/ssrn.7716158) [链接](https://openalex.org/W7236790394)
+
+**中文摘要（自动生成）**：【金融经济学】经济学博士的就业市场是一个高度结构化且集中化的匹配机制，旨在降低求职者的搜寻成本。然而，这一市场依然竞争激烈、充满不确定性，并对求职者造成较大的心理压力。尽管目前关于求职者经历的许多信息都来自个人轶事和非正式交流，本文基于来自不同行业、地区和类型机构的500多份申请数据，提供了对2025-2026年经济学博士就业市场的第一手描述。作为来自一个中等排名博士项目的求职者，我记录了申请流程、首轮面试的结果，以及在整个招聘过程中所面临的实际挑战和心理压力。文章特别关注了市场中一些不太为人所知的方面，如长期的不确定性、招聘方的沟通不足，以及处理各种申请系统所带来的行政负担。我并未试图从单个求职者的经历中得出普遍性的结论，而是如实反映了漫长求职过程中的具体成果和个人困境。我希望这样的描述能够帮助未来的求职者更现实地了解就业市场的实际情况，并让他们明白：被拒、面临不确定性以及遇到挫折是常态，这些情况并不一定反映他们的能力或研究潜力。。
+
+## 4. From Climate Diplomacy to Climate Finance: Assessing Bangladesh's Diplomatic Effectiveness and International Financing Outcomes, 2015-2025
+- 来源：ssrn
+- 作者：Mir Ashraful Hossain Ashik
+- 期刊/来源：SSRN Electronic Journal
+- 发表日期：2026-11-17
+- 引用数：0
+- 主题：Finance, Negotiation, Diplomacy, Political science, Interim
+- 链接：[DOI](https://doi.org/10.2139/ssrn.7714361) [链接](https://openalex.org/W7235028433)
+
+**中文摘要（自动生成）**：【绿色金融与可持续发展】本文探讨了2015年至2025年间孟加拉国的气候外交活动是否带来了可观察到的国际气候融资成果。研究构建了一个文献追踪框架，用于区分外交活动、议程制定、集体谈判成果、机构融资成果以及与孟加拉国具体情况相关的具体融资成果，并通过流程追踪来验证这些成果。分析内容涵盖了孟加拉国在2020-2022年期间担任气候脆弱国家论坛（CVF）/脆弱二十国集团（V20）主席国的领导作用及《达卡-格拉斯哥宣言》的签署过程、COP27关于损失与损害基金的决议，以及COP29提出的新集体量化目标。证据表明，在孟加拉国担任CVF/V20主席国期间，该国在推动联盟合作和议程制定方面发挥了重要作用。COP27和COP29确实产生了一些具有实际意义的共同成果，但孟加拉国的具体贡献难以被单独量化。财务记录显示：该国获得了7个全球环境基金（GEF）相关项目的2683万美元拨款，以及2个适应基金项目的1499.5万美元资助。根据孟加拉国的中期报告（BTR1），该国在2015-2024年间共获得了99.086亿美元的气候融资。然而，对7个独立全球气候基金（GCF）项目的相关财务数据进行交叉核对后发现，BTR1报告中记录的...。
+
+## 5. Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL
+- 来源：arxiv
+- 作者：Avinash Kumar Singh, Bhaskarjit Sarmah, Stefano Pasquali
+- 期刊/来源：arXiv
+- 发表日期：2026-11-23
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.31190v1)
+
+**中文摘要（自动生成）**：【金融经济学】文本到SQL（Text-to-SQL）系统生成的查询虽然能够成功执行，但往往回答错误的问题。在系统部署后检测这些错误非常困难，因为查询的正确性是基于“黄金查询”（gold query）来定义的，而这种查询仅存在于带有标签的数据中。我们将文本到SQL的错误检测问题转化为概率查询验证问题，其中正确性是一个潜在变量，在校准阶段可以通过执行“黄金SQL”来观察，但在部署阶段则无法直接观察到。我们的模型将查询生成与验证过程分开：生成器（generator LLM）负责编写并执行查询，而评估器（critic LLM）则负责评判查询及其执行结果。评估器的验证结果以及基于执行情况的评分，会与生成器的置信度、词级不确定性以及SQL结构特征结合在一起，通过随机森林（Random Forest）进行综合分析，整个过程需要两次LLM模型的交互。通过两次校准步骤，我们可以获得有限的样本保证。通过“学习后测试”（Learn-then-Test）机制，我们可以以$1-δ$的概率确保被接受的查询中错误率保持在用户设定的阈值以下。此外，我们还使用p值来限制错误拒绝率。在实验中，我们使用GPT-OSS-120B作为...。研究方法：模型校准、随机森林。
+
+## 6. Place-Based Policy from Space: Evidence from Italy's Inner Areas
+- 来源：arxiv
+- 作者：Nicola Caravaggio, Giuseppe Di Renzo, Giuliano Resce, Agapito Emanuele Santangelo, Giulia Valeria Sonzogno
+- 期刊/来源：arXiv
+- 发表日期：2026-11-23
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.31100v1)
+
+**中文摘要（自动生成）**：【金融经济学】本文利用夜间卫星光照数据，评估了一项以地区发展为目标的政策——意大利的“内陆地区国家战略”（SNAI）。该战略针对结构脆弱且地处偏远的市镇，对这些地区进行基础设施投资，并推动相关经济活动的发展。研究通过分阶段差异分析法，对比了2011至2022年间941个获得资助的市镇与3,112个符合条件的对照市镇。结果表明，资金投入促进了照明区域的扩大，但每个照明单元的亮度并未发生变化，这表明相关活动更多地扩展到了新的区域，而非在原有中心区域变得更加密集。这种扩张趋势在所有对比组中均存在，并且从描述性角度来看，主要集中在人均资金投入处于中等水平的地区。年度卫星数据能够补充那些更新频率较低、精度较低的常规统计数据。。研究方法：双重差分。
+
+## 7. ESG Performance, Cost of Funds, and the Moderating Roles of Gender Diversity and Islamic Banking in Asia-Pacific Banks
+- 来源：semantic_scholar
+- 作者：M. Modjo
+- 期刊/来源：Journal of Islamic Monetary Economics and Finance
+- 发表日期：2026-11-18
+- 引用数：0
+- 主题：Business, Economics
+- 链接：[DOI](https://doi.org/10.21098/jimf.v12i4.3457) [链接](https://api.semanticscholar.org/CorpusID:296059196)
+
+**中文摘要（自动生成）**：【银行与信贷】本研究探讨了亚洲太平洋地区银行的环保、社会和治理（ESG）表现如何影响其资金成本（COF），以及董事会性别多样性和伊斯兰银行身份在其中的调节作用。我们采用固定效应模型（结合Driscoll–Kraay标准误差）和系统广义矩估计（System-GMM）方法，分析了来自140家银行的1,200多个银行年度观测数据（2014–2023年），发现较高的ESG表现与较高的资金成本相关——这一结果与“可信度缺口”理论一致，即贷款机构会对可能具有象征意义或表面化的ESG声明收取额外费用。治理机制对这一关系具有调节作用：增加董事会的性别多样性有助于降低与ESG相关的风险溢价，而伊斯兰银行治理框架则提供了额外的保障，部分抵消了这些成本。研究结果表明，尽管ESG表现通常旨在降低银行的资金成本，但其实际效果最终取决于治理机制的可信度以及所处的制度环境。。研究方法：广义矩估计。
+
+## 8. Democratizing Venture Capital: Tax Incentives and the Geographic Expansion of Startup Investing
+- 来源：nber
+- 作者：Murillo Campello, Guilherme Junqueira
+- 期刊/来源：NBER Working Papers
+- 发表日期：
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](https://www.nber.org/papers/w36039#fromrss)
+
+**中文摘要（自动生成）**：【金融经济学】税收补贴能否扩大风险投资的地理覆盖范围？尽管风险投资（VC）经历了数十年的发展，但其资金仍主要集中在少数几个大都市地区，导致该国大部分地区难以获得创业融资。我们研究了2009年至2010年间实施的“合格小型企业股票”（QSBS）计划——该计划取消了投资者对符合条件的初创企业的资本利得税。通过提高投资成功的回报，这一改革使得风险更高的投资更具吸引力，包括进入不熟悉的市场。对于风险投资基金而言，这种激励作用尤为显著。与那些已经拥有风险投资的大都市相比，该改革使得那些此前未获得风险投资服务的地区在符合条件的行业获得投资的可能性提高了8%至10%。而在被排除在QSBS计划之外的行业或天使投资者群体中，并未观察到类似的增长趋势（因为他们同样享有税收优惠）。新获得风险投资服务的地区的初创企业表现与其他非核心地区的初创企业相当，创造了高薪就业机会，并吸引了科学和技术人才，其中一些人来自原有的风险投资中心。我们的研究结果表明，只要补贴规模足够大，即使不对初创企业的所在地提出任何要求，也能促使风险投资进入那些长期被忽视的市场。。
+
+## 9. The Emergence of a National Capital Market,1870–1940
+- 来源：nber
+- 作者：Pawel Janas
+- 期刊/来源：NBER Working Papers
+- 发表日期：
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](https://www.nber.org/papers/w36040#fromrss)
+
+**中文摘要（自动生成）**：【金融经济学】本文记录了美国资本市场与首个长期、基于地理位置的机构投资者资产持有记录的整合过程。该记录涵盖了1870至1940年间人寿保险公司的超过10万笔资产持有交易。在1880年至1890年间，保险公司债券的发行地与总部之间的距离平均增加了两倍以上，其资产在总部所在州的占比从超过一半下降到不足四分之一。这一变化发生在各保险公司内部，涉及不同类型的债券以及不同的公司类型。在州法律允许的情况下，抵押贷款业务实现了全国范围内的统一。到1890年，资本市场的整合基本完成。。
+
+## 10. S³: A Multicriteria Pre-Deployment Scoring Protocol for Enterprise Small Language Model Selection
+- 来源：openalex
+- 作者：Smita Sengupta, Smitha Rajappa, Ashim Bose
+- 期刊/来源：Journal of Artificial Intelligence & Cloud Computing
+- 发表日期：2026-11-24
+- 引用数：0
+- 主题：Computer science, Aggregate (composite), Task (project management), Protocol (science), Set (abstract data type)
+- 链接：[DOI](https://doi.org/10.47363/jaicc/2026(5)544) [链接](https://openalex.org/W7236995213)
+
+**中文摘要（自动生成）**：【金融经济学】技术管理者缺乏一套系统的评估方案，用于判断哪些企业工作负载适合部署在本地的小型语言模型（small language models, SLMs）上。我们提出了S³（SLM选择适用性评分，Suitability Score for SLM Selection）这一多标准评估框架，该框架从六个维度对工作负载进行评分：任务复杂性、输出结构、利益相关者风险、数据敏感性、延迟容忍度和负载量，并在推理之前将工作负载划分为“纯SLM”（Pure SLM）、“混合型”（Hybrid）或“仅LLM”（LLM-Only）三个层级。非补偿性规则（non-compensatory gate rules）在高风险场景中强制执行安全约束，确保任何涉及生命安全或需要专家级生成能力的任务都不会被分配给本地模型，无论其综合评分如何。通过对独立用例集进行校准，该评分模型准确预测了六个行业中所有八个工作负载的层级分配结果，其中“纯SLM”层级的性能至少达到了与LLM相当的水平（95%）。。研究方法：模型校准。
+
+## 11. From language to world states: a survey of world models in multimodal reasoning
+- 来源：openalex
+- 作者：Honghao Fu, Jiacheng Chen, Lingrui Mei, Manxi Lin, Teng Shi
+- 期刊/来源：Foundations and Trends® in Computer Graphics and Vision
+- 发表日期：2026-11-24
+- 引用数：0
+- 主题：Computer science, Intersection (aeronautics), Action (physics), Reasoning system, Artificial intelligence
+- 链接：[DOI](https://doi.org/10.1108/ftcgv-10-2025-0121) [链接](https://openalex.org/W7237028637)
+
+**中文摘要（自动生成）**：【金融经济学】多模态推理正在从对单一观察结果的解读，扩展到对动态环境及其演变过程的理解。这一转变给多模态系统带来了新的挑战：它们必须不断更新对环境的认知，并预测人类行为可能如何改变环境。世界模型为应对这些挑战提供了一个以状态为中心的框架。该框架将多模态观测数据组织成与任务相关的状态，这些状态可以随着环境的变化而持续维护和更新，从而支持对未来状态及行为后果的模拟，为后续的推理、规划和行动提供基础。从功能角度来看，本文综述了世界模型与多模态推理之间的新兴交叉领域。研究从两个互补的层面探讨了这两者的结合：在机制层面，探讨了世界状态如何支持推理过程；在系统层面，则分析了这些机制如何在多模态推理系统中具体体现为功能性角色。
+
+首先，在机制层面，作者分析了以语言为中心的中间推理路径与以状态为中心的世界模型推理之间的差异与互补性。进一步地，作者阐述了与任务相关的状态如何通过实现状态的持续维护、基于证据的更新以及基于行为或干预的模拟来支持多模态推理。其次，在系统层面，作者将现有研究归纳为三种相互关联的功能性角色：时间与想象状态推理、结构化状态推理以及行为耦合状态推理。基于这一功能分类，作者总结了不同环境下世界...。研究方法：数值模拟、调查数据。
+
+## 12. Balancing tradition and innovation in Japanese long-lived family businesses: evidence from Tokyo metropolitan manufacturing firms
+- 来源：openalex
+- 作者：Junichi Sakata
+- 期刊/来源：Journal of Family Business Management
+- 发表日期：2026-11-24
+- 引用数：0
+- 主题：Revenue, Business, Metropolitan area, Ambidexterity, Marketing
+- 链接：[DOI](https://doi.org/10.1108/jfbm-05-2026-0154) [链接](https://openalex.org/W7237036109)
+
+**中文摘要（自动生成）**：【公司金融】**研究目的**  
+本研究旨在探讨日本长寿制造业企业（shinise）如何应对“传统与创新之间的悖论”（即在维护积累的传统资本与追求适应性创新之间的矛盾），以及家族所有权与企业长期存续性如何影响其财务绩效。  
+
+**研究设计/方法**  
+本研究采用混合方法进行描述性分析，结合了对东京大都市地区745家长寿制造业企业（成立于1949年或更早，即至少已有75年历史）的企业特征数据（来自Teikoku Databank COSMOS数据库）与2024年11月收集的74家受访企业的调查数据。通过Mann–Whitney U检验、卡方检验和频率分析来验证四个研究假设，这些分析借鉴了动态能力理论、组织灵活性理论、社会情感财富（SEW）理论以及企业治理理论的相关观点。  
+
+**研究结果**  
+长寿企业主要表现出以利用现有资源为核心的创新行为，其中79.3%的创新企业将流程改进作为优先事项，而非倾向于进行根本性的技术创新；同时，这些企业更倾向于采用渐进式的技术改进而非颠覆性创新。运营层面的数字化技术应用范围远广于面向客户的应用工具。家族控股的企业收入中位数显著低于非家族控股企业（分别为...。研究方法：模型校准、调查数据。
