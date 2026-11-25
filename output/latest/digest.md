@@ -1,148 +1,153 @@
-# 金融经济学每日文献速递（2026-11-24）
+# 金融经济学每日文献速递（2026-11-25）
 
 共筛选到 **12** 篇文献。
 
 > 📢 **今日综述**
 >
-> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（9 篇）、绿色金融与可持续发展（1 篇）、银行与信贷（1 篇）。方法上以模型校准、调查数据为主。来源分布：OpenAlex（5 篇）、SSRN（2 篇）、arXiv（2 篇）。其中 2 篇命中顶级期刊白名单。
+> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（6 篇）、风险管理与衍生品（3 篇）、金融科技（1 篇）。方法上以数值模拟、回归分析为主。来源分布：arXiv（7 篇）、OpenAlex（3 篇）、SSRN（1 篇）。其中 1 篇命中顶级期刊白名单。
 
-## 1. Multimodal signal restoration with signed twofold graph learning
+## 1. Tantangan Pemungutan PPN atas Transaksi E-Commerce dalam Sistem Perpajakan Digital Indonesia Terkini
 - 来源：openalex
-- 作者：Haruki Yokota, Hiroshi Higashi, Yuichi Tanaka
-- 期刊/来源：APSIPA Transactions on Signal and Information Processing
-- 发表日期：2026-11-24
+- 作者：Iffah Qonitah, Ratna Nugraheni, Lydia Setyawardani, Agung Kristiawan, Emi Kusmaeni
+- 期刊/来源：Jurnal Manajemen dan Teknologi
+- 发表日期：2026-11-25
 - 引用数：0
-- 主题：Computer science, Graph, Artificial intelligence, Algorithm, Regularization (linguistics)
-- 链接：[DOI](https://doi.org/10.1108/atsip-05-2026-0040) [链接](https://openalex.org/W7162600363)
+- 主题：Taxable income, Business, Accounting, Database transaction, Government (linguistics)
+- 链接：[DOI](https://doi.org/10.63447/jmt.v3i2.2112) [链接](https://openalex.org/W7225291300)
 
-**中文摘要（自动生成）**：【金融经济学】作者提出了一种联合学习带符号的双重图结构并对多模态图信号进行信号恢复的方法。传感器网络中的多模态信号通常采用双重图假设（TGA）进行建模，该假设将空间结构和模态间关系表示为两个独立的图。然而，现有的基于TGA的信号恢复方法要么假设图结构是已知的，要么限制边权重为非负值，这导致它们无法捕捉到负的模态间相关性。作者针对这两个限制提出了以下解决方案：为了从噪声较大且数据不完整的情况下学习双重图结构，作者将信号恢复和双重图学习问题表述为在矩阵正态先验下的最大后验（MAP）估计问题，其中空间图和模态图的拉普拉斯矩阵直接以精度矩阵的形式出现。该非凸目标函数通过交替最小化算法进行求解：信号通过共轭梯度法更新对应的Sylvester型线性系统；图结构则通过原始-对偶混合梯度（PDHG）算法进行更新。为了捕捉负的模态间相关性，作者从互补核矩阵的主特征空间中估计出模态图的符号结构，并将该结构用于PDHG算法中以更新边权重。这些迭代求解过程被集成到一个前馈网络中，其中正则化权重和步长作为可逐层训练的参数。在合成多模态图信号以及两个真实世界数据集（日本气象数据和北京空气质量数据）上的实验表明，所提出的方...。研究方法：实验方法。
+**中文摘要（自动生成）**：【金融科技】电子商务交易促进了商品和服务的数字化消费，但同时也使得增值税（VAT）的征收变得更加复杂。本研究通过规范法律分析，探讨了电子商务交易中增值税征收所面临的挑战。分析依据包括2021年第7号法律《税收法规协调法》、2022年第44号政府条例、2022年第60/PMK.03号财政部长条例以及2020年第PER-12/PJ号税务总局条例的修订内容，并参考了相关学术文献。研究发现存在三类主要问题：  
 
-## 2. Quality of Life Differences across Rural Counties
+首先，监管方面的问题主要体现在确定增值税征收主体，以及如何处理来自海关区域外的无形应税商品和/或应税服务的征税问题上。  
+
+其次，行政方面的问题体现在跨平台交易数据的识别、匹配和整合能力不足。  
+
+最后，技术和合规性问题涉及非正式平台上的交易、相关商业主体的理解以及数据治理机制的缺失。  
+
+2022年第60/PMK.03号财政部长条例为通过电子系统（PMSE）进行增值税征收提供了相关机制，但其有效性仍取决于相关指导方针的明确性、数据互操作性的保障以及便捷的合规服务。  
+
+本研究建议加强适应性强的监管措施，推动基于风险的行政整合，并发挥平台在促进合规方面的作用，同时确保个人数据得到妥...。
+
+## 2. Pengaruh CAR, BOPO, dan Inflasi terhadap ROA pada PT Bank Syariah Indonesia Tbk. Periode 2021–2025
 - 来源：openalex
-- 作者：Michael J. Hicks, Heather Stephens, Amanda Weinstein
-- 期刊/来源：Review of Regional Studies
-- 发表日期：2026-11-24
+- 作者：Naina Zulfa Firdaus, Nurwita Nurwita
+- 期刊/来源：Jurnal Manajemen dan Teknologi
+- 发表日期：2026-11-25
 - 引用数：1
-- 主题：Amenity, Population, Economics, Geography, Microdata (statistics)
-- 链接：[DOI](https://doi.org/10.52324/001c.175406) [链接](https://openalex.org/W7234616345)
+- 主题：Return on assets, Profitability index, Inflation (cosmology), Capital adequacy ratio, Economics
+- 链接：[DOI](https://doi.org/10.63447/jmt.v3i2.2120) [链接](https://openalex.org/W7225401733)
 
-**中文摘要（自动生成）**：【金融经济学】本研究探讨了生活质量（Quality of Life, QOL）在预测1970年至2019年间美国农村（非大都市地区）各县长期人口变化中的作用。我们采用了Rosen-Roback空间均衡框架的衍生方法，将名义工资和住房成本的地区差异视为反映家庭对特定地区属性估值的补偿性差异。由于传统方法所需的个体层面微观数据在大多数非大都市地区无法获得，因此我们借鉴Hicks、Weinstein和Faulk（2026）提出的方法，结合住房市场和劳动力市场回归的县级汇总残差，构建了一个衡量地方性便利设施需求的指标，并将该框架应用于农村地区。通过对农村-城市连续体代码（RUCC 4至9）范围内的十年人口增长数据进行建模，我们发现较高的生活质量显著促进了所有农村地区的人口增长，其中人口增长系数在人口最多的农村县达到0.21–0.22，在最偏远的农村县降至0.09。为了解决高维协变量之间的相关性问题，我们采用了最小绝对值收缩与选择算法（Least Absolute Shrinkage and Selection Operator, LASSO）结合LASSO后的普通最小二乘法（Ordinary Leas...。研究方法：回归分析、LASSO 正则化、均衡模型。
+**中文摘要（自动生成）**：【资产定价】印度尼西亚伊斯兰银行（PT Bank Syariah Indonesia Tbk.）的盈利能力，以资产回报率（Return on Assets）为指标，在2021年至2025年的合并后时期呈现出波动趋势，因此有必要分析影响其盈利能力的内部和外部因素。本研究旨在探讨资本充足率（Capital Adequacy Ratio）、营业费用与营业收入之比（Operating Expenses to Operating Income）以及通货膨胀（Inflation）对印度尼西亚伊斯兰银行2021年至2025年期间资产回报率的影响。研究采用定量分析方法，并运用关联分析（associative approach）进行数据解读。所使用的二手数据包括印度尼西亚伊斯兰银行的季度财务报表以及印度尼西亚中央统计局（Badan Pusat Statistik）发布的通货膨胀数据，样本覆盖2021年第一季度至2025年第四季度的20个观测值，数据采集采用目的性抽样（purposive sampling）技术。本研究仅针对印度尼西亚伊斯兰银行这一家公司展开。数据分析工具包括描述性统计方法、经典假设检验、多元线...。研究方法：回归分析。
 
-## 3. 500+ Job Applications Later: Reflections on the Economics PhD Job Market
+## 3. The CEO Overhang Effect
 - 来源：ssrn
-- 作者：Kin Wai Cheung
+- 作者：Maria Cecilia Bustamante, Jakub Hajda, Boris Nikolov
 - 期刊/来源：SSRN Electronic Journal
 - 发表日期：2026-11-19
 - 引用数：0
-- 主题：Matching (statistics), Institution, Process (computing), Job shadow, Public relations
-- 链接：[DOI](https://doi.org/10.2139/ssrn.7716158) [链接](https://openalex.org/W7236790394)
+- 主题：Salary, Agency cost, Debt, Business, Shareholder
+- 链接：[DOI](https://doi.org/10.2139/ssrn.7723458) [链接](https://openalex.org/W7236862801)
 
-**中文摘要（自动生成）**：【金融经济学】经济学博士的就业市场是一个高度结构化且集中化的匹配机制，旨在降低求职者的搜寻成本。然而，这一市场依然竞争激烈、充满不确定性，并对求职者造成较大的心理压力。尽管目前关于求职者经历的许多信息都来自个人轶事和非正式交流，本文基于来自不同行业、地区和类型机构的500多份申请数据，提供了对2025-2026年经济学博士就业市场的第一手描述。作为来自一个中等排名博士项目的求职者，我记录了申请流程、首轮面试的结果，以及在整个招聘过程中所面临的实际挑战和心理压力。文章特别关注了市场中一些不太为人所知的方面，如长期的不确定性、招聘方的沟通不足，以及处理各种申请系统所带来的行政负担。我并未试图从单个求职者的经历中得出普遍性的结论，而是如实反映了漫长求职过程中的具体成果和个人困境。我希望这样的描述能够帮助未来的求职者更现实地了解就业市场的实际情况，并让他们明白：被拒、面临不确定性以及遇到挫折是常态，这些情况并不一定反映他们的能力或研究潜力。。
+**中文摘要（自动生成）**：【金融经济学】我们发现，在任期间，首席执行官（CEO）往往会减少投资、增加净杠杆比率，并扩大股票回购规模。为了解释这些现象，我们构建了一个动态模型，该模型描述了由多位CEO轮流管理的公司运营情况。每位CEO的任期都是有限的，他们需要在合同约束下（合同包含基本工资和基于股权的薪酬）做出投资、融资和利润分配决策，以最大化自身财富效用。模型揭示了一种新的机制——即“CEO任期重叠效应”：由于CEO的任期是有限的，且未来的CEO也会获得股权，因此公司资本收益和债务成本中越来越多的部分会从现任股东（包括CEO本身）转移到未来的CEO手中。因此，现任CEO会减少投资、提高杠杆比率，并增加股票回购力度；随着任期临近尾声，她持有的股份价值上升，回购行为会更加频繁。通过模型校准，我们估算出由此产生的代理成本占股东价值的6%。。研究方法：模型校准。
 
-## 4. From Climate Diplomacy to Climate Finance: Assessing Bangladesh's Diplomatic Effectiveness and International Financing Outcomes, 2015-2025
-- 来源：ssrn
-- 作者：Mir Ashraful Hossain Ashik
-- 期刊/来源：SSRN Electronic Journal
-- 发表日期：2026-11-17
-- 引用数：0
-- 主题：Finance, Negotiation, Diplomacy, Political science, Interim
-- 链接：[DOI](https://doi.org/10.2139/ssrn.7714361) [链接](https://openalex.org/W7235028433)
-
-**中文摘要（自动生成）**：【绿色金融与可持续发展】本文探讨了2015年至2025年间孟加拉国的气候外交活动是否带来了可观察到的国际气候融资成果。研究构建了一个文献追踪框架，用于区分外交活动、议程制定、集体谈判成果、机构融资成果以及与孟加拉国具体情况相关的具体融资成果，并通过流程追踪来验证这些成果。分析内容涵盖了孟加拉国在2020-2022年期间担任气候脆弱国家论坛（CVF）/脆弱二十国集团（V20）主席国的领导作用及《达卡-格拉斯哥宣言》的签署过程、COP27关于损失与损害基金的决议，以及COP29提出的新集体量化目标。证据表明，在孟加拉国担任CVF/V20主席国期间，该国在推动联盟合作和议程制定方面发挥了重要作用。COP27和COP29确实产生了一些具有实际意义的共同成果，但孟加拉国的具体贡献难以被单独量化。财务记录显示：该国获得了7个全球环境基金（GEF）相关项目的2683万美元拨款，以及2个适应基金项目的1499.5万美元资助。根据孟加拉国的中期报告（BTR1），该国在2015-2024年间共获得了99.086亿美元的气候融资。然而，对7个独立全球气候基金（GCF）项目的相关财务数据进行交叉核对后发现，BTR1报告中记录的...。
-
-## 5. Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL
+## 4. Pragmatic Deeply Debiased ML
 - 来源：arxiv
-- 作者：Avinash Kumar Singh, Bhaskarjit Sarmah, Stefano Pasquali
+- 作者：Victor Chernozhukov, Chengchun Shi
 - 期刊/来源：arXiv
-- 发表日期：2026-11-23
+- 发表日期：2026-11-24
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.31190v1)
+- 链接：[链接](http://arxiv.org/abs/2611.33069v1)
 
-**中文摘要（自动生成）**：【金融经济学】文本到SQL（Text-to-SQL）系统生成的查询虽然能够成功执行，但往往回答错误的问题。在系统部署后检测这些错误非常困难，因为查询的正确性是基于“黄金查询”（gold query）来定义的，而这种查询仅存在于带有标签的数据中。我们将文本到SQL的错误检测问题转化为概率查询验证问题，其中正确性是一个潜在变量，在校准阶段可以通过执行“黄金SQL”来观察，但在部署阶段则无法直接观察到。我们的模型将查询生成与验证过程分开：生成器（generator LLM）负责编写并执行查询，而评估器（critic LLM）则负责评判查询及其执行结果。评估器的验证结果以及基于执行情况的评分，会与生成器的置信度、词级不确定性以及SQL结构特征结合在一起，通过随机森林（Random Forest）进行综合分析，整个过程需要两次LLM模型的交互。通过两次校准步骤，我们可以获得有限的样本保证。通过“学习后测试”（Learn-then-Test）机制，我们可以以$1-δ$的概率确保被接受的查询中错误率保持在用户设定的阈值以下。此外，我们还使用p值来限制错误拒绝率。在实验中，我们使用GPT-OSS-120B作为...。研究方法：模型校准、随机森林。
+**中文摘要（自动生成）**：【行为金融】无偏机器学习（Debiased Machine Learning, DML）通过将拟合后的结果回归与加权残差相结合，来消除在估计参数（如平均处理效应）时产生的一阶正则化偏差；然而，当回归误差与加权误差同时存在时，仍会残留二阶偏差。对于线性回归函数，我们通过训练一个强大的学习模型来预测由多个协变量产生的第一阶段残差，从而得到一个一维（或低维）的工作模型，并在该模型上独立样本的基础上估计其偏差贡献。为了进一步完善这一方法，我们还分析了基于核函数的一般校正方法，包括协变量划分和平滑处理技术。我们证明了深度无偏机器学习在数学上与传统的DML是等价的——后者通过事后回归更新来实现偏差校正，即利用剩余评估样本的核加权残差来调整每个观测值。在我们的实证研究和模拟实验中，强大的初始DML模型通常能够将二阶偏差控制在采样不确定性的范围内；在这种情况下，这种校正不仅有助于诊断模型中的问题，还能为任何潜在的错误设定偏差提供敏感性评估依据。。研究方法：回归分析、数值模拟、机器学习。
 
-## 6. Place-Based Policy from Space: Evidence from Italy's Inner Areas
+## 5. Worth the Wait? How Response Time and Streaming Shape Judgments of Generative AI Answers and Chatbot Engagement
 - 来源：arxiv
-- 作者：Nicola Caravaggio, Giuseppe Di Renzo, Giuliano Resce, Agapito Emanuele Santangelo, Giulia Valeria Sonzogno
+- 作者：Zihan Chen, Di Zhu, Lei Nico Zheng
 - 期刊/来源：arXiv
-- 发表日期：2026-11-23
+- 发表日期：2026-11-24
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](http://arxiv.org/abs/2611.31100v1)
+- 链接：[链接](http://arxiv.org/abs/2611.33050v1)
 
-**中文摘要（自动生成）**：【金融经济学】本文利用夜间卫星光照数据，评估了一项以地区发展为目标的政策——意大利的“内陆地区国家战略”（SNAI）。该战略针对结构脆弱且地处偏远的市镇，对这些地区进行基础设施投资，并推动相关经济活动的发展。研究通过分阶段差异分析法，对比了2011至2022年间941个获得资助的市镇与3,112个符合条件的对照市镇。结果表明，资金投入促进了照明区域的扩大，但每个照明单元的亮度并未发生变化，这表明相关活动更多地扩展到了新的区域，而非在原有中心区域变得更加密集。这种扩张趋势在所有对比组中均存在，并且从描述性角度来看，主要集中在人均资金投入处于中等水平的地区。年度卫星数据能够补充那些更新频率较低、精度较低的常规统计数据。。研究方法：双重差分。
+**中文摘要（自动生成）**：【金融经济学】基于大规模语言模型（LLMs）的生成式AI聊天机器人的响应速度存在显著差异：推理型模型在回复前会进行深思熟虑，而响应缓存则能立即返回存储好的答案。通过盲选投票对这些模型进行排名时，人们实际上是在评估它们的文本质量；如果响应速度至关重要，那么更快的答案更有可能胜出。关于“劳动幻觉”（即人们误以为AI需要耗费大量时间进行处理）以及文本在屏幕上呈现方式的研究表明，用户更倾向于认可那些边生成边显示的答案，而非一次性完整呈现的答案。我们通过三种自然使用场景来验证这些观点。
 
-## 7. ESG Performance, Cost of Funds, and the Moderating Roles of Gender Diversity and Islamic Banking in Asia-Pacific Banks
-- 来源：semantic_scholar
-- 作者：M. Modjo
-- 期刊/来源：Journal of Islamic Monetary Economics and Finance
-- 发表日期：2026-11-18
-- 引用数：0
-- 主题：Business, Economics
-- 链接：[DOI](https://doi.org/10.21098/jimf.v12i4.3457) [链接](https://api.semanticscholar.org/CorpusID:296059196)
+首先，在法国政府的聊天机器人平台ComparIA中，系统会随机选择两种方式来回答重复的请求：一种是实时生成新答案并立即显示；另一种则是从同一模型中调用之前存储的答案并立即展示。在同一问题下，重复展示答案会使该答案在盲选投票中获胜的概率降低25.8%。同样的存储文本在实时生成时获得了57%的投票支持，而在重复展示时仅获得29%的支持率；此外，用户认为重复展示的答案不够完整、较为肤浅且错误率更高。
 
-**中文摘要（自动生成）**：【银行与信贷】本研究探讨了亚洲太平洋地区银行的环保、社会和治理（ESG）表现如何影响其资金成本（COF），以及董事会性别多样性和伊斯兰银行身份在其中的调节作用。我们采用固定效应模型（结合Driscoll–Kraay标准误差）和系统广义矩估计（System-GMM）方法，分析了来自140家银行的1,200多个银行年度观测数据（2014–2023年），发现较高的ESG表现与较高的资金成本相关——这一结果与“可信度缺口”理论一致，即贷款机构会对可能具有象征意义或表面化的ESG声明收取额外费用。治理机制对这一关系具有调节作用：增加董事会的性别多样性有助于降低与ESG相关的风险溢价，而伊斯兰银行治理框架则提供了额外的保障，部分抵消了这些成本。研究结果表明，尽管ESG表现通常旨在降低银行的资金成本，但其实际效果最终取决于治理机制的可信度以及所处的制度环境。。研究方法：广义矩估计。
+其次，服务提供商的响应延迟会影响到实时生成的答案的评分。在324,029次对话中，延迟生成的答案并未在投票中带来任何明显的优...。研究方法：大语言模型。
 
-## 8. Democratizing Venture Capital: Tax Incentives and the Geographic Expansion of Startup Investing
+## 6. Does Treating Addiction Rebuild Lives? Evidence from Buprenorphine
 - 来源：nber
-- 作者：Murillo Campello, Guilherme Junqueira
+- 作者：Sarah Eichmeyer, Aljoscha Janssen, Jonathan Zhang
 - 期刊/来源：NBER Working Papers
 - 发表日期：
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](https://www.nber.org/papers/w36039#fromrss)
+- 链接：[链接](https://www.nber.org/papers/w36041#fromrss)
 
-**中文摘要（自动生成）**：【金融经济学】税收补贴能否扩大风险投资的地理覆盖范围？尽管风险投资（VC）经历了数十年的发展，但其资金仍主要集中在少数几个大都市地区，导致该国大部分地区难以获得创业融资。我们研究了2009年至2010年间实施的“合格小型企业股票”（QSBS）计划——该计划取消了投资者对符合条件的初创企业的资本利得税。通过提高投资成功的回报，这一改革使得风险更高的投资更具吸引力，包括进入不熟悉的市场。对于风险投资基金而言，这种激励作用尤为显著。与那些已经拥有风险投资的大都市相比，该改革使得那些此前未获得风险投资服务的地区在符合条件的行业获得投资的可能性提高了8%至10%。而在被排除在QSBS计划之外的行业或天使投资者群体中，并未观察到类似的增长趋势（因为他们同样享有税收优惠）。新获得风险投资服务的地区的初创企业表现与其他非核心地区的初创企业相当，创造了高薪就业机会，并吸引了科学和技术人才，其中一些人来自原有的风险投资中心。我们的研究结果表明，只要补贴规模足够大，即使不对初创企业的所在地提出任何要求，也能促使风险投资进入那些长期被忽视的市场。。
+**中文摘要（自动生成）**：【金融经济学】治疗成瘾是否既能改善健康状况，又能提升经济状况？我们利用了退伍军人健康管理局二十年来关于14万多名阿片类药物使用障碍患者的记录以及消费者信用数据，分析了不同医疗机构逐步采用丁丙诺啡的情况，并结合了急诊医生的随机分配机制。当具有丁丙诺啡处方经验的临床医生比例增加5个百分点时，过量用药者的长期用药率翻了一番，两年内的死亡率降低了约3.7个百分点。此外，接受丁丙诺啡治疗的患者信用评分平均提升了22%。按每统计生命年30万美元的成本计算，仅生存收益在三年内就超过了额外的医疗支出。。
 
-## 9. The Emergence of a National Capital Market,1870–1940
-- 来源：nber
-- 作者：Pawel Janas
-- 期刊/来源：NBER Working Papers
-- 发表日期：
+## 7. Klasterisasi Karakteristik Pengguna E-Commerce Berdasarkan Profil Pengguna Menggunakan Algoritma K-Prototypes
+- 来源：openalex
+- 作者：Gala Di Akbar, Mira Afrina, Purwita Sari, Ken Dhita Tania, Rizka Dhini Kurnia
+- 期刊/来源：Jurnal Manajemen dan Teknologi
+- 发表日期：2026-11-25
+- 引用数：0
+- 主题：Database transaction, Computer science, Transaction data, Cluster analysis, Silhouette
+- 链接：[DOI](https://doi.org/10.63447/jmt.v3i2.2128) [链接](https://openalex.org/W7225564852)
+
+**中文摘要（自动生成）**：【金融经济学】准确的客户细分有助于实现更加个性化的电子商务营销。然而，基于交易频率、最近交易时间和交易金额（RFM）的模型主要关注交易历史，可能无法全面反映消费者的购物动机或他们在电子商务中的消费占比（即“钱包份额”/Share of Wallet, SoW）。本研究旨在利用K-Prototypes算法，根据交易数据和消费者行为对电子商务用户进行分类。数据来源于印度尼西亚巨港市的198名电子商务用户。分类变量包括RFM、SoW、购物动机以及产品类别偏好；年龄类别则用于后续分析。通过Elbow方法和Silhouette Score评估，最终确定了四个用户群体：高价值促销追逐者（High-Value Promo Hunters）、常规实用型购物者（Routine Pragmatic Shoppers）、被动小额消费者（Passive Micro-Spenders）以及紧急大额消费者（Urgent Big-Ticket Buyers）。卡方检验（Chi-square test）显示年龄类别与用户群体之间存在显著关联（Cramér’s V值为0.274），这表明年龄因素会影响消费者的购物行为，但并不能...。
+
+## 8. Rough log-normal stochastic volatility with quadratic drift: second-moment stability and the martingale property under positive correlation
+- 来源：arxiv
+- 作者：Artur Sepp, Parviz Rakhmonov
+- 期刊/来源：arXiv
+- 发表日期：2026-11-24
 - 引用数：0
 - 主题：Economics, Finance
-- 链接：[链接](https://www.nber.org/papers/w36040#fromrss)
+- 链接：[链接](http://arxiv.org/abs/2611.32791v1)
 
-**中文摘要（自动生成）**：【金融经济学】本文记录了美国资本市场与首个长期、基于地理位置的机构投资者资产持有记录的整合过程。该记录涵盖了1870至1940年间人寿保险公司的超过10万笔资产持有交易。在1880年至1890年间，保险公司债券的发行地与总部之间的距离平均增加了两倍以上，其资产在总部所在州的占比从超过一半下降到不足四分之一。这一变化发生在各保险公司内部，涉及不同类型的债券以及不同的公司类型。在州法律允许的情况下，抵押贷款业务实现了全国范围内的统一。到1890年，资本市场的整合基本完成。。
+**中文摘要（自动生成）**：【风险管理与衍生品】我们将具有二次漂移的对数正态随机波动率模型扩展为分数阶Volterra方程。该模型下的波动率具有唯一的全局非负解，并且在每个有限时间范围内都满足有限的矩性质。在考虑线性漂移的情况下，我们推导出了条件一阶和二阶矩、预期积分方差以及条件平方VIX（Volatility Index）的值。我们确定了条件二阶矩为均匀有界的精确阈值，以及该阈值以上的指数增长率。当存在正的二次阻尼时，对于所有可行的Hurst指数和波动率水平，条件二阶矩均保持均匀有界。长期预期积分方差（单位时间内的方差）的上限仅与漂移参数有关。在股票测度下，当阻尼效应能够抵消波动率的β效应时，价格过程构成一个真正的鞅；对于具有正的有限指数混合分布的情况，这一条件也是必需的。而对于具有奇异分数核函数的情况，其逆命题目前尚未得到证明。我们通过观察比特币和以太坊期权价格微笑曲线（option smiles）在正相关条件下的拟合结果来验证模型的有效性，并将模拟结果与理论矩值进行对比。我们提出了一种基于订单流的构造方法，将乘性波动率噪声与以方差为比例的成交影响联系起来；同时，一个小的状态依赖性偏差被用来生成二次漂移效应。最后，我们为具...。研究方法：数值模拟、模型校准、随机过程。
 
-## 10. S³: A Multicriteria Pre-Deployment Scoring Protocol for Enterprise Small Language Model Selection
-- 来源：openalex
-- 作者：Smita Sengupta, Smitha Rajappa, Ashim Bose
-- 期刊/来源：Journal of Artificial Intelligence & Cloud Computing
+## 9. Delta-Vega Hedging with Deep Reinforcement Learning: From Simulation to Reality
+- 来源：arxiv
+- 作者：Michele Colombi, Marco Di Francesco, Pietro Rossi
+- 期刊/来源：arXiv
 - 发表日期：2026-11-24
 - 引用数：0
-- 主题：Computer science, Aggregate (composite), Task (project management), Protocol (science), Set (abstract data type)
-- 链接：[DOI](https://doi.org/10.47363/jaicc/2026(5)544) [链接](https://openalex.org/W7236995213)
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.32790v1)
 
-**中文摘要（自动生成）**：【金融经济学】技术管理者缺乏一套系统的评估方案，用于判断哪些企业工作负载适合部署在本地的小型语言模型（small language models, SLMs）上。我们提出了S³（SLM选择适用性评分，Suitability Score for SLM Selection）这一多标准评估框架，该框架从六个维度对工作负载进行评分：任务复杂性、输出结构、利益相关者风险、数据敏感性、延迟容忍度和负载量，并在推理之前将工作负载划分为“纯SLM”（Pure SLM）、“混合型”（Hybrid）或“仅LLM”（LLM-Only）三个层级。非补偿性规则（non-compensatory gate rules）在高风险场景中强制执行安全约束，确保任何涉及生命安全或需要专家级生成能力的任务都不会被分配给本地模型，无论其综合评分如何。通过对独立用例集进行校准，该评分模型准确预测了六个行业中所有八个工作负载的层级分配结果，其中“纯SLM”层级的性能至少达到了与LLM相当的水平（95%）。。研究方法：模型校准。
+**中文摘要（自动生成）**：【风险管理与衍生品】仅使用标的资产来对冲期权组合会使得投资组合暴露于波动率变化的风险中，这种风险可以通过交易另一种衍生品来管理，但这样做会带来更高的交易成本。我们提出了一种基于深度强化学习的方法，在离散时间交易和存在交易成本的情况下，同时对冲价格风险和波动率风险。该方法通过交易标的资产以及一个到期时间更长的期权来实现。我们使用近端策略优化（Proximal Policy Optimization, PPO）算法，在基于随机波动率模型的合成数据上对智能体进行训练，并将其状态限制为市场中可观测的量，以确保在模拟中学习到的策略可以直接应用于实际市场数据。在模拟中，我们通过半解析的Delta对冲和Delta-Vega对冲基准来验证该策略的有效性。在基准交易成本下，PPO策略能够达到与Delta-Vega策略相同的目标；随着交易成本的增加，PPO策略的表现逐渐优于Delta-Vega策略，且这两种多工具策略始终优于单一工具的Delta对冲策略。在历史上的标准普尔500指数期权数据上，我们将我们的方法与实际应用的Black-Scholes Delta对冲和Delta-Vega对冲策略进行了对比。多工具策略将De...。研究方法：数值模拟、随机过程、优化方法。
 
-## 11. From language to world states: a survey of world models in multimodal reasoning
-- 来源：openalex
-- 作者：Honghao Fu, Jiacheng Chen, Lingrui Mei, Manxi Lin, Teng Shi
-- 期刊/来源：Foundations and Trends® in Computer Graphics and Vision
+## 10. Large-Scale Streaming Portfolio Optimization with Pauli Correlation Encoding
+- 来源：arxiv
+- 作者：Vicente P. Soloviev, Josh Kirsopp
+- 期刊/来源：arXiv
 - 发表日期：2026-11-24
 - 引用数：0
-- 主题：Computer science, Intersection (aeronautics), Action (physics), Reasoning system, Artificial intelligence
-- 链接：[DOI](https://doi.org/10.1108/ftcgv-10-2025-0121) [链接](https://openalex.org/W7237028637)
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.32769v1)
 
-**中文摘要（自动生成）**：【金融经济学】多模态推理正在从对单一观察结果的解读，扩展到对动态环境及其演变过程的理解。这一转变给多模态系统带来了新的挑战：它们必须不断更新对环境的认知，并预测人类行为可能如何改变环境。世界模型为应对这些挑战提供了一个以状态为中心的框架。该框架将多模态观测数据组织成与任务相关的状态，这些状态可以随着环境的变化而持续维护和更新，从而支持对未来状态及行为后果的模拟，为后续的推理、规划和行动提供基础。从功能角度来看，本文综述了世界模型与多模态推理之间的新兴交叉领域。研究从两个互补的层面探讨了这两者的结合：在机制层面，探讨了世界状态如何支持推理过程；在系统层面，则分析了这些机制如何在多模态推理系统中具体体现为功能性角色。
+**中文摘要（自动生成）**：【金融经济学】在大型资产组合中构建经典投资组合是一个组合选择问题，现有的启发式方法在处理大规模数据时表现不佳。Pauli相关性编码（PCE）通过使用远少于每个资产一个量子比特的方式来表示潜在的聚类问题，先前的研究已经证明其在单一历史数据点上的表现与经典方法相当。本文将研究范围扩展到动态环境，即相关结构和投资组合都根据实时数据不断重新估计，这符合实际投资组合再平衡系统的运作方式。我们提出了两种动态实现方式：PCE本身以及一种联合多切割变体dPCE，并在多种条件下对它们进行了评估，包括不同的持有策略、投资组合规模（最多可达数千个资产）、风险厌恶程度、交易成本以及数据采集预算。结果表明，PCE和dPCE在各种情况下均显著优于被动持有策略，即使在市场下跌期间也是如此——尽管两者都会亏损，但PCE的亏损幅度更小，这表明该方法的价值不仅限于市场上涨时期。此外，从实际应用的角度来看，PCE更具可行性，因为dPCE的资源需求和对再平衡频率的敏感性会随着投资组合规模的扩大而迅速增加。我们还分析了哪些操作决策（如再平衡频率、数据采集预算和交易成本考量）对实际投资组合管理至关重要，哪些则不如人们普遍认为的那么重要。。
 
-首先，在机制层面，作者分析了以语言为中心的中间推理路径与以状态为中心的世界模型推理之间的差异与互补性。进一步地，作者阐述了与任务相关的状态如何通过实现状态的持续维护、基于证据的更新以及基于行为或干预的模拟来支持多模态推理。其次，在系统层面，作者将现有研究归纳为三种相互关联的功能性角色：时间与想象状态推理、结构化状态推理以及行为耦合状态推理。基于这一功能分类，作者总结了不同环境下世界...。研究方法：数值模拟、调查数据。
-
-## 12. Balancing tradition and innovation in Japanese long-lived family businesses: evidence from Tokyo metropolitan manufacturing firms
-- 来源：openalex
-- 作者：Junichi Sakata
-- 期刊/来源：Journal of Family Business Management
+## 11. What it is to Obey
+- 来源：arxiv
+- 作者：Mark Whitmeyer
+- 期刊/来源：arXiv
 - 发表日期：2026-11-24
 - 引用数：0
-- 主题：Revenue, Business, Metropolitan area, Ambidexterity, Marketing
-- 链接：[DOI](https://doi.org/10.1108/jfbm-05-2026-0154) [链接](https://openalex.org/W7237036109)
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.32741v1)
 
-**中文摘要（自动生成）**：【公司金融】**研究目的**  
-本研究旨在探讨日本长寿制造业企业（shinise）如何应对“传统与创新之间的悖论”（即在维护积累的传统资本与追求适应性创新之间的矛盾），以及家族所有权与企业长期存续性如何影响其财务绩效。  
+**中文摘要（自动生成）**：【金融经济学】在代理人参与同时行动的博弈之前，设计者会设置一种机制，该机制向每个代理人发送信号，并根据一个（豪斯多夫）连续函数来评估由此产生的均衡集合。在不完全信息博弈中，我证明了：只有当设计者认为自己偏好的均衡会被实现时，她才可以在不损失最优性的前提下，仅关注那些能够“直接服从”其指令的机制。在完全信息博弈中，我描述了这些评估函数的性质，这些函数既包括最乐观的评估结果，也包括最悲观的评估结果。。研究方法：均衡模型。
 
-**研究设计/方法**  
-本研究采用混合方法进行描述性分析，结合了对东京大都市地区745家长寿制造业企业（成立于1949年或更早，即至少已有75年历史）的企业特征数据（来自Teikoku Databank COSMOS数据库）与2024年11月收集的74家受访企业的调查数据。通过Mann–Whitney U检验、卡方检验和频率分析来验证四个研究假设，这些分析借鉴了动态能力理论、组织灵活性理论、社会情感财富（SEW）理论以及企业治理理论的相关观点。  
+## 12. Semivariance and Semivolatility in Portfolio Selection: A Unified Framework for Downside-Risk Portfolio Models
+- 来源：arxiv
+- 作者：Francesco Cesarone, Massimiliano Corradini, Nicolò Giunta
+- 期刊/来源：arXiv
+- 发表日期：2026-11-24
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.32638v1)
 
-**研究结果**  
-长寿企业主要表现出以利用现有资源为核心的创新行为，其中79.3%的创新企业将流程改进作为优先事项，而非倾向于进行根本性的技术创新；同时，这些企业更倾向于采用渐进式的技术改进而非颠覆性创新。运营层面的数字化技术应用范围远广于面向客户的应用工具。家族控股的企业收入中位数显著低于非家族控股企业（分别为...。研究方法：模型校准、调查数据。
+**中文摘要（自动生成）**：【风险管理与衍生品】本文研究了在超越最小风险模型的投资组合选择中的下行风险问题。在这些模型中，半方差及其平方根（即半波动率）能够产生相同的投资组合效果。下行风险模型通常被视为基于方差的风险模型的直接扩展，然而不同类型的投资组合问题需要风险度量具有不同的属性。我们根据风险度量在权重中的正齐次性程度对这些模型进行分类：当齐次性为一时，风险贡献会累加到投资组合总风险中，并且分散化效果以及收益与风险比率保持不变。针对三个阈值（即投资组合均值、零以及市场指数收益率），我们提出了一个非退化条件，以确保在仅持有长期资产的情况下下行风险模型的合理性；在该条件下，风险平价、最大分散化以及Sortino比率问题能够得到有效解决。此时，这两个比率问题可转化为凸优化问题，而半波动率的可微性保证了风险预算模型的设定能够准确实现预定的预算目标。我们还探讨了在何种情况下低于均值的半波动率具有可加性。最后，我们利用道琼斯指数和纳斯达克100指数实际总收益的两个真实世界数据集进行了样本外分析，通过滚动窗口回测比较了十七种仅持有长期资产的策略（涵盖最小风险、收益与风险比率、风险平价以及最大分散化三类策略），并利用块自助法（block-...。
