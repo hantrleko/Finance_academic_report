@@ -1,260 +1,261 @@
 {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "count": 12,
-  "source_used": "openalex(15)+ssrn(2)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "source_used": "openalex(15)+ssrn(5)+arxiv(15)+semantic_scholar(15)+nber(5)",
   "latest_updated": true,
-  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（6 篇）、风险管理与衍生品（3 篇）、金融科技（1 篇）。方法上以数值模拟、回归分析为主。来源分布：arXiv（7 篇）、OpenAlex（3 篇）、SSRN（1 篇）。其中 1 篇命中顶级期刊白名单。",
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、银行与信贷（2 篇）、货币政策与宏观经济（2 篇）。方法上以回归分析、调查数据为主。来源分布：OpenAlex（7 篇）、arXiv（2 篇）、Semantic Scholar（2 篇）。",
   "insights": {},
   "papers": [
     {
-      "title": "Tantangan Pemungutan PPN atas Transaksi E-Commerce dalam Sistem Perpajakan Digital Indonesia Terkini",
+      "title": "The Geography of Nobel Prize Nomination, 1901–1975",
       "authors": [
-        "Iffah Qonitah",
-        "Ratna Nugraheni",
-        "Lydia Setyawardani",
-        "Agung Kristiawan",
-        "Emi Kusmaeni"
+        "Chad M. Topaz",
+        "Anvi Kurongonayini",
+        "Bennett Ptak",
+        "Arden Fluehr",
+        "Ariana Mendible"
       ],
-      "venue": "Jurnal Manajemen dan Teknologi",
-      "published_date": "2026-11-25",
-      "doi_url": "https://doi.org/10.63447/jmt.v3i2.2112",
-      "openalex_url": "https://openalex.org/W7225291300",
+      "venue": "Quantitative Science Studies",
+      "published_date": "2026-11-26",
+      "doi_url": "https://doi.org/10.1162/qss.a.526",
+      "openalex_url": "https://openalex.org/W7141865545",
       "cited_by_count": 0,
-      "abstract": "E-commerce transactions expand the digital consumption of goods and services, but they also complicate the collection of Value Added Tax (VAT). This study analyzes the challenges of VAT collection on e-commerce transactions through a normative juridical review of the VAT Law as amended by Law No. 7 of 2021 on the Harmonization of Tax Regulations, Government Regulation No. 44 of 2022, Minister of Finance Regulation No. 60/PMK.03/2022, and Director General of Taxes Regulation No. PER-12/PJ/2020, together with relevant scholarly literature. The analysis reveals three groups of problems. First, regulatory problems arise in determining the collecting party and in the treatment of the utilization of intangible taxable goods and/or taxable services from outside the customs area. Second, administrative problems appear in the limited identification, matching, and integration of cross-platform transaction data. Third, technical and compliance problems concern transactions outside formal platforms, the understanding of business actors, and data governance. Minister of Finance Regulation No. 60/PMK.03/2022 has provided a mechanism for appointing VAT collectors for trade through electronic systems (PMSE), yet its effectiveness still depends on certainty of guidelines, lawful data interoperability, and easily accessible compliance services. This study recommends strengthening responsive regulation, risk-based administrative integration, and the role of platforms as compliance facilitators while protecting personal data.",
-      "summary_zh": "【金融科技】电子商务交易促进了商品和服务的数字化消费，但同时也使得增值税（VAT）的征收变得更加复杂。本研究通过规范法律分析，探讨了电子商务交易中增值税征收所面临的挑战。分析依据包括2021年第7号法律《税收法规协调法》、2022年第44号政府条例、2022年第60/PMK.03号财政部长条例以及2020年第PER-12/PJ号税务总局条例的修订内容，并参考了相关学术文献。研究发现存在三类主要问题：  \n\n首先，监管方面的问题主要体现在确定增值税征收主体，以及如何处理来自海关区域外的无形应税商品和/或应税服务的征税问题上。  \n\n其次，行政方面的问题体现在跨平台交易数据的识别、匹配和整合能力不足。  \n\n最后，技术和合规性问题涉及非正式平台上的交易、相关商业主体的理解以及数据治理机制的缺失。  \n\n2022年第60/PMK.03号财政部长条例为通过电子系统（PMSE）进行增值税征收提供了相关机制，但其有效性仍取决于相关指导方针的明确性、数据互操作性的保障以及便捷的合规服务。  \n\n本研究建议加强适应性强的监管措施，推动基于风险的行政整合，并发挥平台在促进合规方面的作用，同时确保个人数据得到妥...。",
+      "abstract": "Abstract\n                  Nobel laureates are concentrated in a few countries, yet where geographic sorting enters the prize’s selection pipeline remains unknown. From archival, parliamentary, and web sources we construct a five-layer network built around the nomination records of five prizes, 1901–1975, with 512,793 edges and 8,133 identified participants. Although Swedish and Norwegian bodies administer the prizes, the nominators who actually took part were geographically diverse. Within that pool, however, nominators chose same-country nominees 4.85 times as often as random matching would predict. This homophily ratio ranges by discipline from 8.58 in Literature to 3.01 in Physics. With matching restricted to the same prize and year, the ratio is still 3.3. The continent-level ratio rose through the 1940s and stayed elevated as the nominee pool kept diversifying. A model that adjusts for how many nominations each country sent and received yields a roughly fifteenfold same-country premium, still sevenfold after adjusting for shared language. Nominations that crossed geographic regions flowed asymmetrically, with Northern America the dominant net importer. A nominee’s same-country nomination share was negatively associated with eventually winning the prize. In sum, across the stages we can observe, geographic sorting concentrates at the discretionary nomination decision, beyond what the nominator pool’s composition predicts.",
+      "summary_zh": "【金融经济学】摘要  \n诺贝尔奖得主主要集中在少数几个国家，但地理因素在奖项评选过程中的具体作用机制尚不明确。通过查阅档案资料、议会记录和网络信息，我们构建了一个基于1901年至1975年间五项诺贝尔奖提名记录的多层网络模型，该模型包含512,793条提名关系和8,133名参与者。尽管这些奖项由瑞典和挪威的相关机构负责管理，但实际上参与提名的个人来自全球各地。然而，在这些提名者中，他们选择本国候选人的频率是随机匹配结果所预测的4.85倍；这一同质性比例在不同学科领域存在显著差异——文学领域的这一比例为8.58，而物理学领域仅为3.01。即使将匹配范围限制在同一奖项和同一年份内，这一比例仍为3.3。20世纪40年代以来，这一比例持续上升，且随着提名者群体的日益多样化而保持高位。通过调整各国提名和被提名的数量，我们发现本国候选人在获奖方面的优势约为15倍；即便考虑到语言因素的共性，这一优势仍为7倍。跨地区提名的情况存在明显不对称性，北美地区成为主要的“净输入”地区（即提名者较多但获奖者较少的地区）。候选人的本国提名比例与其最终获奖的概率呈负相关。总体而言，在我们所观察的各个阶段中，地理因素在提名决...。",
       "topics": [
-        "Taxable income",
+        "Selection (genetic algorithm)",
+        "Nomination",
+        "Sorting",
+        "Norwegian",
+        "Point (geometry)"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Does working from home reduce daily travel? Evidence from a COVID-19 survey in South Africa",
+      "authors": [
+        "C. Venter",
+        "N. Cheure",
+        "C. Balbontin"
+      ],
+      "venue": "South African Journal of Science",
+      "published_date": "2026-11-26",
+      "doi_url": "https://doi.org/10.17159/sajs.2026/26089",
+      "openalex_url": "https://openalex.org/W7222379073",
+      "cited_by_count": 0,
+      "abstract": "Travel Demand Management policies that allow workers to work from home offer potential remedies for rising traffic congestion and vehicle emissions. Yet working from home remained rare until the COVID-19 pandemic forced millions of workers in South Africa to start to work remotely. This offered a unique opportunity to observe the impacts of working from home (WFH) on people’s travel patterns. We asked whether WFH practices really impact the number and types of trips people make and examined the travel patterns of a sample of Gauteng workers, obtained from a self-reported online survey from 2021, by estimating Poisson regression models that control for socio-demographic and travel variables. We found that WFH is associated with a marginal reduction in overall trip activity, but that the reduction in work travel is somewhat offset by an increase in shopping and recreational travel. The impacts of WFH on traffic volumes and congestion are likely to be modest. Gender is a significant mediating factor, suggesting that WFH policies affect the travel patterns of men and women differently. We also estimate elasticities that may be used to adjust trip generation rates for traffic planning purposes.",
+      "summary_zh": "【金融经济学】允许员工在家工作的出行需求管理政策为缓解日益严重的交通拥堵和车辆排放问题提供了潜在的解决方案。然而，在新冠疫情之前，居家办公在南非仍较为罕见，直到疫情迫使数百万员工开始远程办公。这为我们提供了一个独特的机会，来观察居家办公对人们出行模式的影响。我们研究了居家办公是否真的会改变人们的出行次数和类型，并通过2021年的一项在线调查数据，对豪登省部分员工的出行模式进行了分析，同时控制了社会人口统计特征和出行相关变量，运用泊松回归模型进行了分析。研究发现，居家办公总体上会导致出行活动略有减少，但工作相关的出行减少被购物和休闲出行的增加所部分抵消。居家办公对交通流量和拥堵的影响可能较为有限。性别是一个重要的中介因素，表明居家办公政策对男性和女性的出行模式存在差异。此外，我们还估算了可用于交通规划目的的出行生成率弹性系数。。研究方法：回归分析、调查数据。",
+      "topics": [
         "Business",
-        "Accounting",
-        "Database transaction",
-        "Government (linguistics)"
+        "Work (physics)",
+        "Government (linguistics)",
+        "Finance",
+        "Economic growth"
       ],
       "source": "openalex"
     },
     {
-      "title": "Pengaruh CAR, BOPO, dan Inflasi terhadap ROA pada PT Bank Syariah Indonesia Tbk. Periode 2021–2025",
+      "title": "The Governance Frontier COBIT-Aligned AI Decision Support and Risk-Adaptive Optimization for Enterprise Technology Modernization",
       "authors": [
-        "Naina Zulfa Firdaus",
-        "Nurwita Nurwita"
-      ],
-      "venue": "Jurnal Manajemen dan Teknologi",
-      "published_date": "2026-11-25",
-      "doi_url": "https://doi.org/10.63447/jmt.v3i2.2120",
-      "openalex_url": "https://openalex.org/W7225401733",
-      "cited_by_count": 1,
-      "abstract": "The profitability of PT Bank Syariah Indonesia Tbk., as proxied by Return on Assets, fluctuated during the post-merger period of 2021–2025, making it necessary to analyze the internal and external factors affecting it. This study aims to analyze the effect of the Capital Adequacy Ratio, Operating Expenses to Operating Income, and Inflation on Return on Assets at PT Bank Syariah Indonesia Tbk. for the 2021–2025 period. The study employs a quantitative method with an associative approach. The secondary data consist of the quarterly financial statements of PT Bank Syariah Indonesia Tbk. and inflation data published by Statistics Indonesia (Badan Pusat Statistik), comprising 20 observations from the first quarter of 2021 to the fourth quarter of 2025, selected using a purposive sampling technique. This study is limited to a single company, namely PT Bank Syariah Indonesia Tbk. The data were analyzed using descriptive statistics, classical assumption tests, multiple linear regression, the coefficient of determination, the t-test, and the F-test with the aid of IBM SPSS 25. The results show that the Capital Adequacy Ratio has a positive and significant effect on Return on Assets, whereas Operating Expenses to Operating Income has a negative and significant effect on Return on Assets. Inflation has a positive but insignificant effect on Return on Assets. Simultaneously, the three variables have a significant effect on Return on Assets. The study concludes that the profitability of PT Bank Syariah Indonesia Tbk. during the study period was influenced by capital adequacy and operational efficiency, while inflation did not show a significant effect.",
-      "summary_zh": "【资产定价】印度尼西亚伊斯兰银行（PT Bank Syariah Indonesia Tbk.）的盈利能力，以资产回报率（Return on Assets）为指标，在2021年至2025年的合并后时期呈现出波动趋势，因此有必要分析影响其盈利能力的内部和外部因素。本研究旨在探讨资本充足率（Capital Adequacy Ratio）、营业费用与营业收入之比（Operating Expenses to Operating Income）以及通货膨胀（Inflation）对印度尼西亚伊斯兰银行2021年至2025年期间资产回报率的影响。研究采用定量分析方法，并运用关联分析（associative approach）进行数据解读。所使用的二手数据包括印度尼西亚伊斯兰银行的季度财务报表以及印度尼西亚中央统计局（Badan Pusat Statistik）发布的通货膨胀数据，样本覆盖2021年第一季度至2025年第四季度的20个观测值，数据采集采用目的性抽样（purposive sampling）技术。本研究仅针对印度尼西亚伊斯兰银行这一家公司展开。数据分析工具包括描述性统计方法、经典假设检验、多元线...。研究方法：回归分析。",
-      "topics": [
-        "Return on assets",
-        "Profitability index",
-        "Inflation (cosmology)",
-        "Capital adequacy ratio",
-        "Economics"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "The CEO Overhang Effect",
-      "authors": [
-        "Maria Cecilia Bustamante",
-        "Jakub Hajda",
-        "Boris Nikolov"
+        "Audrey Rah",
+        "David.w Johnson"
       ],
       "venue": "SSRN Electronic Journal",
       "published_date": "2026-11-19",
-      "doi_url": "https://doi.org/10.2139/ssrn.7723458",
-      "openalex_url": "https://openalex.org/W7236862801",
+      "doi_url": "https://doi.org/10.2139/ssrn.7725800",
+      "openalex_url": "https://openalex.org/W7236666611",
       "cited_by_count": 0,
-      "abstract": "&lt;p&gt;We document that CEOs reduce investment, increase net leverage, and expand net share repurchases over their tenure. To explain these patterns, we develop a dynamic model of a firm run by a sequence of CEOs. Each CEO has a finite tenure and chooses investment, financing, and payout to maximize her utility over wealth under a contract that combines a base salary with equity-based pay. The model identifies a new mechanism, the CEO overhang effect, which arises because the CEO's horizon is truncated and future CEOs are also granted equity. As a result, over her tenure a growing share of the returns to the firm's capital and of its costs of debt shifts from current shareholders, including the CEO, to future CEOs. The incumbent CEO therefore underinvests and levers up. She also increasingly repurchases shares, because a larger stake becomes more valuable to her as turnover approaches. Calibrating the model, we infer that the resulting agency cost amounts to 6% of shareholder value.&lt;/p&gt;",
-      "summary_zh": "【金融经济学】我们发现，在任期间，首席执行官（CEO）往往会减少投资、增加净杠杆比率，并扩大股票回购规模。为了解释这些现象，我们构建了一个动态模型，该模型描述了由多位CEO轮流管理的公司运营情况。每位CEO的任期都是有限的，他们需要在合同约束下（合同包含基本工资和基于股权的薪酬）做出投资、融资和利润分配决策，以最大化自身财富效用。模型揭示了一种新的机制——即“CEO任期重叠效应”：由于CEO的任期是有限的，且未来的CEO也会获得股权，因此公司资本收益和债务成本中越来越多的部分会从现任股东（包括CEO本身）转移到未来的CEO手中。因此，现任CEO会减少投资、提高杠杆比率，并增加股票回购力度；随着任期临近尾声，她持有的股份价值上升，回购行为会更加频繁。通过模型校准，我们估算出由此产生的代理成本占股东价值的6%。。研究方法：模型校准。",
+      "abstract": "Executives deciding enterprise modernization, legacysystem transformation, AI adoption, organizational restructuring, digital-infrastructure change, and cross-functional governance must weigh legal, financial, cybersecurity, procurement, operational, and AI-governance questions that sit in separate functions. The central methods of this paper are GAIM-DF (Governance-Aware Institutional Modernization Decision Framework), a human-gated advisory process for these decisions, and Risk-Adaptive AI Governance Optimization (RA-GO v2), a riskadaptive optimizer with mandatory governance gates, halt-safe feasibility, distributionally robust evaluation, and preferenceinformation triage for scarce human review; an accountable human decides. As an optional architectural extension, we computationally evaluate a multi-expert coordination layer that convenes specialist capabilities by context and consolidates constraints conservatively. Evidence is staged across four complementary pre-deployment approaches: analytical verification; retrospective historical-data analysis; comparative computational benchmarking against strong baselines; and scenario-based stress testing under distributional shift. Together they provide complementary&amp;nbsp;pre-deployment evidence for high-stakes governance analysis. A systematic review of university and public-sector governance, with observational process-log analyses and RA-GO scenario stress tests, yields six principal findings: role coordination is associated with shorter approval and process times under supporting falsification checks; robust evaluation preserves tailrisk protection under distribution shift; preference-information triage concentrates human review where it most reduces modeled regret; and mandatory gates, an intensity floor, and a halt state are jointly consistent. The multi-expert benchmarks report accuracy, false-positive, latency, and token-cost trade-offs and routing failure modes relative to a strong Single-Agent baseline and to RA-GO alone. Shadow-mode piloting and a risk-adaptive Hybrid remain future work.",
+      "summary_zh": "【风险管理与衍生品】在决定企业现代化、遗产系统转型、人工智能（AI）应用、组织结构调整、数字基础设施变革以及跨职能治理时，高管们必须权衡来自不同职能部门的法律、财务、网络安全、采购、运营以及AI治理方面的问题。本文的核心方法包括GAIM-DF（治理意识型制度现代化决策框架），这是一种用于辅助此类决策的人工干预式咨询流程；以及Risk-Adaptive AI Governance Optimization（RA-GO v2），这是一种具备强制治理机制的风险适应性优化工具，具备停摆安全功能、分布式鲁棒性评估能力，并能对稀缺的人力资源进行优先级排序，最终由负责任的人类决策者作出最终决策。作为可选的架构扩展，我们还通过计算方式评估了一个多专家协调层，该层能够根据具体情境整合专家资源并谨慎处理各种约束条件。研究证据通过四种互补的预部署方法进行收集：分析性验证、回顾性历史数据分析、与强基线的比较性计算基准测试，以及在分布变化条件下的情景压力测试。这些方法共同为高风险治理决策提供了全面的预部署依据。\n\n通过对大学和公共部门治理实践的系统性研究（包括过程日志分析及RA-GO情景压力测试），我们得出了六个主要发现：角...。研究方法：优化方法。",
       "topics": [
-        "Salary",
-        "Agency cost",
-        "Debt",
-        "Business",
-        "Shareholder"
+        "Corporate governance",
+        "Context (archaeology)",
+        "Triage",
+        "Process (computing)",
+        "Process management"
       ],
       "source": "ssrn"
     },
     {
-      "title": "Pragmatic Deeply Debiased ML",
+      "title": "Modelling and Calibration of Climate-Related Credit Risk Under the Emissions Trading System",
       "authors": [
-        "Victor Chernozhukov",
-        "Chengchun Shi"
+        "Ying Liao",
+        "Ankush Agarwal"
       ],
       "venue": "arXiv",
-      "published_date": "2026-11-24",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.33069v1",
-      "cited_by_count": 0,
-      "abstract": "Debiased machine learning (DML) combines a fitted outcome regression with weighted residuals to remove first-order regularization bias when estimating parameters such as average treatment effects, yet a second-order bias remains whenever regression and weighting errors align. For linear regression functionals, we target this second-order bias by training a strong learner to predict first-stage residuals from many covariates, yielding a one-dimensional (or low-dimensional) working model whose bias contribution is estimated on an independent sample. To complement this targeted search, we also analyze general kernel-based corrections, including covariate partitions and smoothers. We prove that deeply debiased ML is algebraically identical to ordinary DML evaluated with a post-hoc regression update that adjusts each scored observation using kernel-weighted residuals from the remaining evaluation observations. In our empirical and simulation studies, strong initial DML learners often leave the second-order correction small relative to sampling uncertainty, in which case the correction serves as a diagnostic check alongside sensitivity bounds for any remaining misspecification bias.",
-      "summary_zh": "【行为金融】无偏机器学习（Debiased Machine Learning, DML）通过将拟合后的结果回归与加权残差相结合，来消除在估计参数（如平均处理效应）时产生的一阶正则化偏差；然而，当回归误差与加权误差同时存在时，仍会残留二阶偏差。对于线性回归函数，我们通过训练一个强大的学习模型来预测由多个协变量产生的第一阶段残差，从而得到一个一维（或低维）的工作模型，并在该模型上独立样本的基础上估计其偏差贡献。为了进一步完善这一方法，我们还分析了基于核函数的一般校正方法，包括协变量划分和平滑处理技术。我们证明了深度无偏机器学习在数学上与传统的DML是等价的——后者通过事后回归更新来实现偏差校正，即利用剩余评估样本的核加权残差来调整每个观测值。在我们的实证研究和模拟实验中，强大的初始DML模型通常能够将二阶偏差控制在采样不确定性的范围内；在这种情况下，这种校正不仅有助于诊断模型中的问题，还能为任何潜在的错误设定偏差提供敏感性评估依据。。研究方法：回归分析、数值模拟、机器学习。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Worth the Wait? How Response Time and Streaming Shape Judgments of Generative AI Answers and Chatbot Engagement",
-      "authors": [
-        "Zihan Chen",
-        "Di Zhu",
-        "Lei Nico Zheng"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-11-24",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.33050v1",
-      "cited_by_count": 0,
-      "abstract": "Answers from generative AI chatbots built on large language models (LLMs) now arrive at very different speeds: reasoning models deliberate before replying, while response caches can return a stored answer at once. Blind preference votes, which rank these models, are read as judgments of their text, and if delivery matters, faster answers are expected to gain. Research on the labor illusion and on how text appears on screen suggests instead that an answer which unfolds as it is written is credited over the same answer shown at once. We test these accounts with three sources of variation in natural use. First, compar:IA, a French government chatbot arena, answered repeated prompts, by a random draw, either with a fresh answer streamed as it was written or with a stored earlier answer from the same model, shown at once. Within the same prompt, a replay lowered an answer's chance of winning a decisive blind vote by 25.8 percentage points. The same stored text won 57% of its decisive votes when streamed and 29% when replayed, and voters called it less complete, more superficial and more often incorrect when replayed. Second, provider congestion slowed streamed answers. In 324,029 conversations, slower answers earned no detectable net credit in the vote, but a slower first exchange made visitors less likely to ask a follow-up question. Third, in 4,378,514 WildChat replies from everyday ChatGPT use, replies slowed by congestion made users less likely to continue. Delivery moved blind votes, in the direction opposite to the one the arena's designers expected, while waiting cost follow-up questions that a comparison between two answers cannot register when both are slow. The results bear on how AI services cache and stream answers, how they budget latency, and how preference leaderboards evaluate models.",
-      "summary_zh": "【金融经济学】基于大规模语言模型（LLMs）的生成式AI聊天机器人的响应速度存在显著差异：推理型模型在回复前会进行深思熟虑，而响应缓存则能立即返回存储好的答案。通过盲选投票对这些模型进行排名时，人们实际上是在评估它们的文本质量；如果响应速度至关重要，那么更快的答案更有可能胜出。关于“劳动幻觉”（即人们误以为AI需要耗费大量时间进行处理）以及文本在屏幕上呈现方式的研究表明，用户更倾向于认可那些边生成边显示的答案，而非一次性完整呈现的答案。我们通过三种自然使用场景来验证这些观点。\n\n首先，在法国政府的聊天机器人平台ComparIA中，系统会随机选择两种方式来回答重复的请求：一种是实时生成新答案并立即显示；另一种则是从同一模型中调用之前存储的答案并立即展示。在同一问题下，重复展示答案会使该答案在盲选投票中获胜的概率降低25.8%。同样的存储文本在实时生成时获得了57%的投票支持，而在重复展示时仅获得29%的支持率；此外，用户认为重复展示的答案不够完整、较为肤浅且错误率更高。\n\n其次，服务提供商的响应延迟会影响到实时生成的答案的评分。在324,029次对话中，延迟生成的答案并未在投票中带来任何明显的优...。研究方法：大语言模型。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Does Treating Addiction Rebuild Lives? Evidence from Buprenorphine",
-      "authors": [
-        "Sarah Eichmeyer",
-        "Aljoscha Janssen",
-        "Jonathan Zhang"
-      ],
-      "venue": "NBER Working Papers",
-      "published_date": "",
-      "doi_url": "",
-      "openalex_url": "https://www.nber.org/papers/w36041#fromrss",
-      "cited_by_count": 0,
-      "abstract": "Does treating addiction improve economic circumstances as well as health? Using two decades of Veterans Health Administration records on over 140,000 patients with opioid use disorder and consumer credit data, we exploit staggered facility-level buprenorphine adoption and quasi-random emergency physician assignment. A five-percentage-point increase in the share of clinicians with buprenorphine prescribing experience doubles overdose survivors’ long-term medication use and reduces two-year mortality by an estimated 3.7 percentage points. Instrumenting receipt yields a 22 percent credit score gain. At $300,000 per statistical life-year, estimated survival benefits alone exceed added medical costs within three years",
-      "summary_zh": "【金融经济学】治疗成瘾是否既能改善健康状况，又能提升经济状况？我们利用了退伍军人健康管理局二十年来关于14万多名阿片类药物使用障碍患者的记录以及消费者信用数据，分析了不同医疗机构逐步采用丁丙诺啡的情况，并结合了急诊医生的随机分配机制。当具有丁丙诺啡处方经验的临床医生比例增加5个百分点时，过量用药者的长期用药率翻了一番，两年内的死亡率降低了约3.7个百分点。此外，接受丁丙诺啡治疗的患者信用评分平均提升了22%。按每统计生命年30万美元的成本计算，仅生存收益在三年内就超过了额外的医疗支出。。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "nber"
-    },
-    {
-      "title": "Klasterisasi Karakteristik Pengguna E-Commerce Berdasarkan Profil Pengguna Menggunakan Algoritma K-Prototypes",
-      "authors": [
-        "Gala Di Akbar",
-        "Mira Afrina",
-        "Purwita Sari",
-        "Ken Dhita Tania",
-        "Rizka Dhini Kurnia"
-      ],
-      "venue": "Jurnal Manajemen dan Teknologi",
       "published_date": "2026-11-25",
-      "doi_url": "https://doi.org/10.63447/jmt.v3i2.2128",
-      "openalex_url": "https://openalex.org/W7225564852",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.34771v1",
       "cited_by_count": 0,
-      "abstract": "Accurate customer segmentation supports more personalized e-commerce marketing. However, the Recency, Frequency, Monetary (RFM) model focuses on transaction history and may not fully capture shopping motivation or the share of a consumer’s spending allocated to e-commerce (Share of Wallet/SoW). This study aims to cluster e-commerce users based on transaction profiles and consumer behavior using the K-Prototypes algorithm. Data were collected from 198 e-commerce users in Palembang, Indonesia. The clustering variables included RFM, SoW, shopping motivation, and product-category preferences, while age category was used for follow-up analysis. The Elbow Method and Silhouette Score supported a four-cluster solution. The resulting personas were High-Value Promo Hunters, Routine Pragmatic Shoppers, Passive Micro-Spenders, and Urgent Big-Ticket Buyers. The Chi-square test indicated a significant association between age category and persona, with Cramér’s V of 0.274. This suggests that age is associated with shopping patterns but does not fully determine consumer profiles. The findings can inform more targeted promotions and user-experience design. The study is limited to 198 respondents from Palembang, so the findings may not represent e-commerce users in other regions.",
-      "summary_zh": "【金融经济学】准确的客户细分有助于实现更加个性化的电子商务营销。然而，基于交易频率、最近交易时间和交易金额（RFM）的模型主要关注交易历史，可能无法全面反映消费者的购物动机或他们在电子商务中的消费占比（即“钱包份额”/Share of Wallet, SoW）。本研究旨在利用K-Prototypes算法，根据交易数据和消费者行为对电子商务用户进行分类。数据来源于印度尼西亚巨港市的198名电子商务用户。分类变量包括RFM、SoW、购物动机以及产品类别偏好；年龄类别则用于后续分析。通过Elbow方法和Silhouette Score评估，最终确定了四个用户群体：高价值促销追逐者（High-Value Promo Hunters）、常规实用型购物者（Routine Pragmatic Shoppers）、被动小额消费者（Passive Micro-Spenders）以及紧急大额消费者（Urgent Big-Ticket Buyers）。卡方检验（Chi-square test）显示年龄类别与用户群体之间存在显著关联（Cramér’s V值为0.274），这表明年龄因素会影响消费者的购物行为，但并不能...。",
+      "abstract": "Emission trading systems (ETSs) price a growing share of global emissions, and some of their caps are set to reach zero within the maturity of corporate debt. We develop a structural model in which firms choose their emissions from several energy sources under an anticipated carbon price, while the realized carbon price clears the carbon market of each sector-region cell, with a scenario-dependent demand shock and physical losses mitigated by adaptation. We show that the equilibrium carbon price exists, characterize when the cap binds, and derive the optimal emission of each firm in feedback form. In a linearized case of the model, the carbon price is deterministic, and the default probability is explicit. Unlike a reward-penalty scheme, the ETS imposes no cost while the cap is slack and makes firms meet it exactly once it binds. Calibrated to 35 European power producers under the EU ETS, the model reproduces the average level of the European Union Allowance price over 2018 to 2024.",
+      "summary_zh": "【银行与信贷】排放交易系统（ETS）对全球排放量的定价占比日益增加，其中部分排放配额的设定将在企业债务到期时降至零。我们构建了一个结构模型，在该模型中，企业在预期的碳价格下选择来自不同能源的排放量；实际实现的碳价格会清除各个行业-地区单元中的碳市场过剩量，同时需求冲击和物理损失通过适应性措施得到缓解。我们证明了均衡碳价格的存在性，阐明了配额约束生效的条件，并以反馈形式推导出每家企业的最优排放量。在模型的线性化版本中，碳价格是确定的，且违约概率也是明确的。与奖惩机制不同，排放交易系统在配额宽松时不会产生额外成本，而一旦配额开始生效，企业就必须严格遵守。将该模型应用于欧盟排放交易系统下的35家电力生产企业，其结果与2018年至2024年间欧盟排放许可价格的平均水平相符。。研究方法：结构模型、模型校准、均衡模型。",
       "topics": [
-        "Database transaction",
-        "Computer science",
-        "Transaction data",
-        "Cluster analysis",
-        "Silhouette"
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "How Large are Monetary Policy Effects? dentifying the Shocks in a VAR also Identifies the Constants",
+      "authors": [
+        "Andrew Mountford"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-25",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.34722v1",
+      "cited_by_count": 0,
+      "abstract": "Restrictions on the contemporaneous effects matrix used to identify fundamental shocks in a structural VAR, also determine the mapping from the structural constant terms to the reduced form constant terms. In some models one will have priors about these structural constant terms and these should therefore be included in a Bayesian estimation procedure. We illustrate the potential significance of this using the analysis of monetary policy by Baumeister and Hamilton (2018) as a motivating example. We show that imposing priors over the structural constant terms can lead to a more intuitive estimated monetary policy rule and a much larger estimated role for monetary policy in describing the evolution of the data. The analysis also allows for a clear visual presentation of the structural model, highlighting its multiple contending elements. For example the observed inflation series is estimated to be the result of positive demand and commodity price effects offset by negative monetary policy and risk spread effects.",
+      "summary_zh": "【货币政策与宏观经济】在用于识别结构向量自回归（structural VAR）中基本冲击的同时效应矩阵（contemporaneous effects matrix）所施加的限制，同时也决定了结构常数项（structural constant terms）与简化形式常数项（reduced form constant terms）之间的映射关系。在某些模型中，研究者会对这些结构常数项具有先验知识，因此应当将这些先验信息纳入贝叶斯估计（Bayesian estimation）过程。我们以Baumeister和Hamilton（2018）关于货币政策的分析为例，来说明这种做法的潜在重要性。研究表明，对结构常数项施加先验约束可以使得估计出的货币政策规则更加直观，并显著提升货币政策在解释数据演变过程中的作用。此外，这种分析方法还能清晰地呈现结构模型的各个组成部分，突出其相互竞争的因素。例如，观察到的通货膨胀序列被估计为正的需求效应和商品价格效应与负的货币政策效应及风险扩散效应共同作用的结果。。研究方法：结构模型、贝叶斯方法。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "CHALLENGES IN IMPLEMENTING KEY PERFORMANCE INDICATORS FOR INTERNAL AUDIT IN THE BANKING SYSTEM",
+      "authors": [
+        "Julieta Kalashyan"
+      ],
+      "venue": "Economics, Finance and Accounting",
+      "published_date": "2026-11-21",
+      "doi_url": "https://doi.org/10.59503/29538009-2026.3.19-203",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:296182554",
+      "cited_by_count": 0,
+      "abstract": "Traditionally, the primary function of internal audit within the banking system has been carried out within the framework of corporate governance, risk prevention, and the effective implementation of control processes. However, following the introduction of a new generation of international internal audit standards in 2024, the value-adding (outcome-generating) activity of internal audit has gained prominence. This, in turn, has raised a number of theoretical and practical questions, regarding how to measure such value-adding activity specifically, which indicators and dimensions should be used. This research proposes a framework of key indicators for the value-adding activity of internal audit within the banking system, thereby enabling the measurement of the effectiveness of audit operations.",
+      "summary_zh": "【银行与信贷】传统上，内部审计在银行系统中的主要职能是在公司治理、风险防范以及控制流程的有效实施框架内进行的。然而，随着2024年新一代国际内部审计标准的引入，内部审计的增值（成果生成）作用日益受到重视。这引发了一系列理论和实践问题，即如何具体衡量这种增值作用，应使用哪些指标和维度。本研究提出了一个用于评估银行系统内部审计增值作用的关键指标框架，从而有助于衡量审计工作的有效性。。",
+      "topics": [
+        "Business",
+        "Economics"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Generation Z as investors: Behavioural and preference analysis in Poland",
+      "authors": [
+        "Patryk Durand"
+      ],
+      "venue": "Research Papers in Economics and Finance",
+      "published_date": "2026-11-20",
+      "doi_url": "https://doi.org/10.18559/ref.2026.2.4161",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:296177943",
+      "cited_by_count": 0,
+      "abstract": "This study analyses the investment preferences and behaviours of Generation Z (born 1997–2010) in Poland, focusing on how socio-demographic, psychological, and market factors shape financial decision-making. It addresses gaps in understanding whether traditional risk models adequately explain the behaviour of a digital-native generation entering financial markets during technological disruption and economic uncertainty.\nThe study is based on a survey of 384 Generation Z respondents conducted through convenience sampling via social media. The questionnaire included 27 questions across seven thematic areas. Data were analysed using non-parametric tests, factor analysis, logistic regression, and investor profile classification.\nThe findings show that lower income significantly limits investment participation, with lack of capital identified as the main barrier. Risk tolerance and risk capacity operate independently, leading to four distinct investor profiles. Gender differences remain significant for risk tolerance (r=.31), but not for risk capacity. Higher financial capacity increases interest in sustainable investments by 25 percentage points. The results also reveal a confidence–competence gap in financial literacy, with 48.6% of respondents reporting fear of loss despite declared willingness to take risk. In addition, a vulnerable subgroup displayed unrealistic risk–return expectations. The study demonstrates that psychological and financial barriers influence investment behaviour through different mechanisms.",
+      "summary_zh": "【金融经济学】本研究分析了波兰Z世代（出生于1997至2010年）的投资偏好和行为，重点探讨了社会人口统计因素、心理因素和市场因素如何影响他们的财务决策。研究旨在探讨传统风险模型是否能够充分解释这一在技术变革和经济不确定性背景下进入金融市场的数字原住民世代的行为特征。\n\n研究基于通过社交媒体进行的便捷抽样调查，共收集了384名Z世代受访者的数据。问卷涵盖了七个主题领域的27个问题。数据分析采用了非参数检验、因子分析、逻辑回归和投资者画像分类等方法。\n\n研究结果表明，较低的收入水平显著限制了人们的投资参与度，资金匮乏被认为是主要障碍。风险承受能力和风险承受极限之间存在独立性，从而形成了四种不同的投资者类型。性别差异在风险承受能力方面具有显著性（相关系数r=0.31），但在风险承受极限方面则不明显。较高的财务能力使人们对可持续投资的兴趣增加了25个百分点。研究还发现，尽管受访者表示愿意承担风险，但仍有48.6%的人对自身金融素养缺乏信心。此外，部分脆弱群体的风险回报预期不切实际。研究表明，心理因素和财务障碍通过不同的机制影响投资行为。。研究方法：回归分析、调查数据。",
+      "topics": [
+        "Economics",
+        "Business",
+        "Sociology"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Artificial Intelligence in Science and Physics Education, 2015-2026: An AI-Assisted Bibliometric and Title-and-Abstract Analysis across Fourteen Journals",
+      "authors": [
+        "Konstantinos T. Kotsis"
+      ],
+      "venue": "EIKI Journal of Effective Teaching Methods",
+      "published_date": "2026-11-26",
+      "doi_url": "https://doi.org/10.59652/fcvx2129",
+      "openalex_url": "https://openalex.org/W7234292984",
+      "cited_by_count": 0,
+      "abstract": "Artificial intelligence (AI) research in science and physics education has expanded rapidly, particularly since the emergence of generative AI. This study maps publication patterns, research characteristics, and citation connections across 14 selected science and physics education journals. OpenAlex searches using fifteen AI-related terms identified 966 unique records published between January 2015 and September 2026. AI-assisted screening retained 333 publications, which were coded using available titles and abstracts. Bibliometric analyses examined publication growth, thematic patterns, and citations within and between the two journal groups. Of the included publications, 87.1% appeared from 2023 onwards. Generative large language models and chatbots accounted for 58.9% of the corpus, while instruction and assessment together represented 48.3% of publications. Among 182 records classified as involving human participants, comparison groups were identifiable in 14.3%, effect sizes in 8.2%, and instrument validity evidence in 5.5%. These frequencies reflect information identifiable in bibliographic records, rather than the absence of these features in the full studies. Laboratory and experimental support was the principal educational function in 27 publications. Citation connections between the journal groups were limited: their reference sets had a Jaccard index of 0.047, and 15.6% of publications cited an included study from the other group. The findings document rapid growth and uneven research emphases within the selected venues. Independent human validation and full-text assessment are needed before drawing firm conclusions about methodological quality or educational effectiveness.",
+      "summary_zh": "【金融经济学】人工智能（AI）在科学和物理教育领域的研究发展迅速，尤其是在生成式AI出现之后。本研究分析了14种选定的科学和物理教育期刊中的出版模式、研究特点以及引用关系。OpenAlex利用15个与AI相关的关键词进行了检索，共发现了966篇发表于2015年1月至2026年9月期间的论文。通过AI辅助筛选，最终保留了333篇论文，并根据其标题和摘要进行了编码。文献计量分析研究了这两个期刊组内的出版数量增长、主题分布以及引用情况。在所有被纳入分析的论文中，87.1%发表于2023年及以后。生成式大语言模型和聊天机器人在这些论文中占比达到58.9%，而教学与评估相关的内容占48.3%。在182篇涉及人类参与者的论文中，仅有14.3%的论文明确了对照组信息，8.2%的论文提供了效应量数据，5.5%的论文包含了工具有效性的证据。这些数据反映了文献记录中可获取的信息，并不代表相关研究中完全缺乏这些要素。在27篇论文中，实验室和实验方法是主要的教学手段。两个期刊组之间的引用联系较为有限：它们的参考文献集合的Jaccard指数仅为0.047，且仅有15.6%的论文引用了另一组期刊中的论文。研究结果表明，这...。研究方法：大语言模型、实验方法。",
+      "topics": [
+        "Jaccard index",
+        "Citation",
+        "Citation analysis",
+        "Quality (philosophy)",
+        "Citation index"
       ],
       "source": "openalex"
     },
     {
-      "title": "Rough log-normal stochastic volatility with quadratic drift: second-moment stability and the martingale property under positive correlation",
+      "title": "Restrictions on the Creation of Affiliated Groups by Shareholders under the Laws of Leading Foreign Countries",
       "authors": [
-        "Artur Sepp",
-        "Parviz Rakhmonov"
+        "Федчук Валерий Дмитриевич"
       ],
-      "venue": "arXiv",
-      "published_date": "2026-11-24",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.32791v1",
+      "venue": "JURIST",
+      "published_date": "2026-11-26",
+      "doi_url": "https://doi.org/10.18572/1812-3929-2026-11-12-17",
+      "openalex_url": "https://openalex.org/W7239345710",
       "cited_by_count": 0,
-      "abstract": "We extend the log-normal stochastic volatility model with quadratic drift to a fractional Volterra equation. The volatility has a unique global non-negative solution with finite moments on every finite horizon. With linear drift we derive the conditional first and second moments, expected integrated variance and conditional squared VIX. We give the exact threshold for a uniformly bounded second moment and the exponential growth rate above it. With positive quadratic damping the second moment is uniformly bounded for every admissible Hurst exponent and volatility of volatility. A separate bound on long-run expected integrated variance per unit time depends only on the drift parameters. Under the share measure the volatility beta offsets the quadratic damping. The price is a true martingale when damping covers beta. For a positive finite exponential mixture this condition is also necessary. The converse for a singular fractional kernel remains open. We illustrate calibration under positive correlation on observed Bitcoin and Ether option smiles and benchmark the simulation against exact moments. A marked order-flow construction relates multiplicative volatility noise to signed trade impacts arriving at a rate proportional to variance. A small state-dependent bias generates the quadratic drift. We establish a stopped diffusion limit for the constant kernel.",
-      "summary_zh": "【风险管理与衍生品】我们将具有二次漂移的对数正态随机波动率模型扩展为分数阶Volterra方程。该模型下的波动率具有唯一的全局非负解，并且在每个有限时间范围内都满足有限的矩性质。在考虑线性漂移的情况下，我们推导出了条件一阶和二阶矩、预期积分方差以及条件平方VIX（Volatility Index）的值。我们确定了条件二阶矩为均匀有界的精确阈值，以及该阈值以上的指数增长率。当存在正的二次阻尼时，对于所有可行的Hurst指数和波动率水平，条件二阶矩均保持均匀有界。长期预期积分方差（单位时间内的方差）的上限仅与漂移参数有关。在股票测度下，当阻尼效应能够抵消波动率的β效应时，价格过程构成一个真正的鞅；对于具有正的有限指数混合分布的情况，这一条件也是必需的。而对于具有奇异分数核函数的情况，其逆命题目前尚未得到证明。我们通过观察比特币和以太坊期权价格微笑曲线（option smiles）在正相关条件下的拟合结果来验证模型的有效性，并将模拟结果与理论矩值进行对比。我们提出了一种基于订单流的构造方法，将乘性波动率噪声与以方差为比例的成交影响联系起来；同时，一个小的状态依赖性偏差被用来生成二次漂移效应。最后，我们为具...。研究方法：数值模拟、模型校准、随机过程。",
+      "abstract": "As it is generally accepted in legal doctrine the very first significant attempt aimed at the legislative recognition\nand regulation of affiliated companies was the adoption in Germany, as part of the reform of legislation on the joint\nstock companies, of the Stock Company Act of 1965 (the Aktiengesetz — AktG). After the adoption of the Act of 1965,\nrelevant acts and provisions began to appear in the national law of other foreign countries and the first proposals\nfor the adoption of relevant supranational norms emerged.",
+      "summary_zh": "【金融经济学】根据法律学界的普遍观点，首次旨在对关联公司进行立法认可和规范的重大尝试是德国在1965年对公司法进行改革时通过的《股份公司法》（Aktiengesetz，简称AktG）。1965年该法案颁布后，其他国家的相关法律和规定也开始相继出台，同时首次出现了关于制定相关跨国规范的提案。。",
       "topics": [
-        "Economics",
-        "Finance"
+        "Legislation",
+        "Shareholder",
+        "Legislature",
+        "Business",
+        "Joint-stock company"
       ],
-      "source": "arxiv"
+      "source": "openalex"
     },
     {
-      "title": "Delta-Vega Hedging with Deep Reinforcement Learning: From Simulation to Reality",
+      "title": "On the issue of stabilization policy: Rules or discretion?",
       "authors": [
-        "Michele Colombi",
-        "Marco Di Francesco",
-        "Pietro Rossi"
+        "Maksim Shcheglov"
       ],
-      "venue": "arXiv",
-      "published_date": "2026-11-24",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.32790v1",
+      "venue": "Finance and Credit",
+      "published_date": "2026-11-26",
+      "doi_url": "https://doi.org/10.24891/xwsxol",
+      "openalex_url": "https://openalex.org/W7239346452",
       "cited_by_count": 0,
-      "abstract": "Hedging an option portfolio with the underlying asset alone leaves the position exposed to changes in volatility, which can be managed by trading another derivative, at higher transaction costs. We propose a deep reinforcement learning approach to hedge both price and volatility risk under discrete-time trading and transaction costs, by trading the underlying asset and a second, longer-dated option. We train the agent with Proximal Policy Optimization (PPO) on synthetic data from a stochastic volatility model, and restrict its state to quantities observable in the market, so that the policy learned in simulation applies directly to market data. In simulation, we validate the policy against semi-analytical Delta and Delta-Vega hedging benchmarks. PPO matches Delta-Vega's objective at baseline transaction costs and increasingly outperforms it as costs rise, with both two-instrument strategies consistently outperforming the single-instrument Delta hedge. On historical S&P 500 index option data, we benchmark our approach against practitioner Black-Scholes Delta and Delta-Vega hedging strategies. The two-instrument strategies roughly halve the profit-and-loss dispersion of the Delta hedge, and PPO attains a lower profit-and-loss volatility than Delta-Vega at comparable transaction costs. PPO holds more of the hedging option than Delta-Vega, in line with the stochastic-volatility model hedge, and its advantage is concentrated in high-volatility episodes.",
-      "summary_zh": "【风险管理与衍生品】仅使用标的资产来对冲期权组合会使得投资组合暴露于波动率变化的风险中，这种风险可以通过交易另一种衍生品来管理，但这样做会带来更高的交易成本。我们提出了一种基于深度强化学习的方法，在离散时间交易和存在交易成本的情况下，同时对冲价格风险和波动率风险。该方法通过交易标的资产以及一个到期时间更长的期权来实现。我们使用近端策略优化（Proximal Policy Optimization, PPO）算法，在基于随机波动率模型的合成数据上对智能体进行训练，并将其状态限制为市场中可观测的量，以确保在模拟中学习到的策略可以直接应用于实际市场数据。在模拟中，我们通过半解析的Delta对冲和Delta-Vega对冲基准来验证该策略的有效性。在基准交易成本下，PPO策略能够达到与Delta-Vega策略相同的目标；随着交易成本的增加，PPO策略的表现逐渐优于Delta-Vega策略，且这两种多工具策略始终优于单一工具的Delta对冲策略。在历史上的标准普尔500指数期权数据上，我们将我们的方法与实际应用的Black-Scholes Delta对冲和Delta-Vega对冲策略进行了对比。多工具策略将De...。研究方法：数值模拟、随机过程、优化方法。",
+      "abstract": "Subject. Discretionary economic policy versus rule-based policy.\nObjectives. To systematize key research findings that shape the discourse on the advantages and disadvantages of discretionary policy and policy by rules; to identify the conceptual contradictions underlying the choice of macroeconomic regulation instruments; and to develop a matrix of stabilization policy response components that structures the factors of policy regime choice.\nMethods. Comparative static analysis is applied, along with modeling of the Taylor rule and the determination of the rule's key components using multiple regression with breaks and vector autoregression methods. A comparison of counterarguments from critics of each approach is also employed.\nResults. A matrix of stabilization policy response components is presented in accordance with the objectives and instruments of fiscal and monetary policy. It is empirically substantiated that the policy of the Bank of Russia corresponds to a greater extent to a rule-based regime approximating a modified Taylor rule. The specific features of the Russian regulator's response to demand-side inflation shocks and supply-side inflation shocks are identified and meaningfully interpreted.\nConclusions. The choice between rules and discretion cannot be made in isolation and requires consideration of the complex interaction between the objectives and instruments of fiscal and monetary policy. The results contribute to the understanding of monetary policy transmission mechanisms in the Russian economy and can be used to improve macroeconomic forecasting and to develop stabilization programs.",
+      "summary_zh": "【货币政策与宏观经济】主题：相机抉择的经济政策与基于规则的政策  \n目的：系统梳理关于相机抉择政策与基于规则的政策优劣的主要研究成果；揭示宏观经济调控工具选择背后的概念性矛盾；构建一个稳定政策响应要素矩阵，以明确政策体系选择的相关因素。  \n方法：采用比较静态分析方法，并对泰勒规则进行建模，同时运用带有断点的多元回归和向量自回归技术来确定该规则的关键组成部分。同时，也对这两种方法批评者的观点进行了对比分析。  \n结果：根据财政政策和货币政策的目标与工具，构建了一个稳定政策响应要素矩阵。实证研究表明，俄罗斯央行的政策在很大程度上遵循一种基于规则的框架，这种规则可视为经过调整的泰勒规则。本文还识别并深入解读了俄罗斯央行在应对需求侧通胀冲击和供给侧通胀冲击时的具体应对措施及其内在逻辑。  \n结论：在规则与相机抉择之间做出选择时，不能孤立地考虑某一因素，而必须综合考虑财政政策和货币政策的目标与工具之间的复杂相互作用。这些研究结果有助于理解俄罗斯经济中的货币政策传导机制，可用于改进宏观经济预测并制定更有效的稳定化政策方案。。研究方法：向量自回归、回归分析。",
       "topics": [
+        "Monetary policy",
         "Economics",
-        "Finance"
+        "Vector autoregression",
+        "Discretion",
+        "Inflation (cosmology)"
       ],
-      "source": "arxiv"
+      "source": "openalex"
     },
     {
-      "title": "Large-Scale Streaming Portfolio Optimization with Pauli Correlation Encoding",
+      "title": "The economy of disproportions: A new area in economic science and its toolkit – Considering the investment and construction complex as a case study",
       "authors": [
-        "Vicente P. Soloviev",
-        "Josh Kirsopp"
+        "Irina Yu. Evstafieva",
+        "Dmitrii A. FIRSOV"
       ],
-      "venue": "arXiv",
-      "published_date": "2026-11-24",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.32769v1",
+      "venue": "Finance and Credit",
+      "published_date": "2026-11-26",
+      "doi_url": "https://doi.org/10.24891/flemea",
+      "openalex_url": "https://openalex.org/W7239347588",
       "cited_by_count": 0,
-      "abstract": "Classical portfolio construction over large asset universes is a combinatorial selection problem that existing heuristics do not solve well at scale. Pauli Correlation Encoding (PCE) addresses this by representing the underlying clustering problem with far fewer qubits than one per asset, and a prior study showed it is competitive with classical methods on a single historical snapshot. This paper moves beyond that static test to a streaming deployment, in which the correlation structure and the portfolio are both re-estimated on a rolling basis, as a live rebalancing system would actually operate. We introduce two streaming variants -- PCE itself and a joint multi-cut variant, dPCE -- and evaluate both against a Buy & Hold baseline across window lengths, portfolio sizes up to several thousand assets, risk-aversion and transaction-cost settings, and measurement-shot budgets. Streaming PCE and dPCE consistently outperform the passive baseline, including during a market downturn where both lose money but PCE loses markedly less -- evidence that the method's value is not confined to rising markets. PCE also proves the more practical choice at scale, since dPCE's resource requirements and its sensitivity to rebalancing frequency both grow faster with portfolio size. We further report which operational choices -- rebalancing cadence, shot budget, and transaction-cost awareness -- matter most for a real deployment, and which matter less than commonly assumed.",
-      "summary_zh": "【金融经济学】在大型资产组合中构建经典投资组合是一个组合选择问题，现有的启发式方法在处理大规模数据时表现不佳。Pauli相关性编码（PCE）通过使用远少于每个资产一个量子比特的方式来表示潜在的聚类问题，先前的研究已经证明其在单一历史数据点上的表现与经典方法相当。本文将研究范围扩展到动态环境，即相关结构和投资组合都根据实时数据不断重新估计，这符合实际投资组合再平衡系统的运作方式。我们提出了两种动态实现方式：PCE本身以及一种联合多切割变体dPCE，并在多种条件下对它们进行了评估，包括不同的持有策略、投资组合规模（最多可达数千个资产）、风险厌恶程度、交易成本以及数据采集预算。结果表明，PCE和dPCE在各种情况下均显著优于被动持有策略，即使在市场下跌期间也是如此——尽管两者都会亏损，但PCE的亏损幅度更小，这表明该方法的价值不仅限于市场上涨时期。此外，从实际应用的角度来看，PCE更具可行性，因为dPCE的资源需求和对再平衡频率的敏感性会随着投资组合规模的扩大而迅速增加。我们还分析了哪些操作决策（如再平衡频率、数据采集预算和交易成本考量）对实际投资组合管理至关重要，哪些则不如人们普遍认为的那么重要。。",
+      "abstract": "Subject. The economics of imbalances as an independent branch of economic science.\nObjectives. To substantiate theoretically the economics of imbalances as an established independent scientific field and to define its conceptual framework.\nMethods. The study employs methods of comparative, structural, logical-theoretical, and index analysis. It draws on the theory of general economic equilibrium, Keynesian analysis of macroeconomic imbalance, the Pareto and Kaldor–Hicks optimality criteria, Tinbergen's rule, Leontief's input-output analysis, as well as the concepts of cumulative causation and financial instability.\nResults. The authors formulate an original definition of the economics of imbalances and propose an end-to-end research cycle covering the identification, classification, measurement, and optimization of deviations. A multidimensional classification of imbalances within the economics of imbalances is developed, and tools for their quantitative assessment are proposed. It is demonstrated that derivative investment projects should be interpreted not as isolated deviations but as a systemic indicator of a critical institutional imbalance reproduced by the normative pricing system.\nConclusions. The economics of imbalances makes it possible to move from the descriptive use of the category of deviation to a unified operational system of analysis suitable for theoretical research, empirical diagnostics, and the development of practical economic policy measures.",
+      "summary_zh": "【金融经济学】**主题：失衡经济学作为经济科学的一个独立分支**  \n**目标：** 从理论上论证失衡经济学作为一个成熟的独立科学领域的合理性，并明确其概念框架。  \n**方法：** 本研究采用了比较分析、结构分析、逻辑理论分析及指数分析等方法，借鉴了一般经济均衡理论、凯恩斯主义对宏观经济失衡的分析框架、帕累托与卡尔多-希克斯最优性标准、丁伯根法则、列昂惕夫投入产出分析，以及累积因果关系和金融不稳定性的相关概念。  \n**结果：** 作者提出了失衡经济学的原创定义，并构建了一个涵盖偏差识别、分类、测量与优化的完整研究流程。同时，开发了用于失衡经济学的多维度分类体系及定量评估工具。研究指出，衍生投资项目不应被视为孤立现象，而应被视为由规范定价体系所加剧的系统性制度失衡的体现。  \n**结论：** 失衡经济学有助于将传统的偏差描述性研究提升为统一的分析体系，适用于理论研究、实证诊断及实际经济政策措施的制定。。研究方法：优化方法、均衡模型。",
       "topics": [
         "Economics",
-        "Finance"
+        "Investment (military)",
+        "Normative",
+        "Pareto principle",
+        "Economic methodology"
       ],
-      "source": "arxiv"
+      "source": "openalex"
     },
     {
-      "title": "What it is to Obey",
+      "title": "Artificial Intelligence in Legal Proceedings: Constitutional Limits",
       "authors": [
-        "Mark Whitmeyer"
+        "Tatyana Yu. Arkhireyskaya",
+        "Marina A. Ivanova"
       ],
-      "venue": "arXiv",
-      "published_date": "2026-11-24",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.32741v1",
+      "venue": "JURIST",
+      "published_date": "2026-11-26",
+      "doi_url": "https://doi.org/10.18572/1812-3929-2026-11-41-47",
+      "openalex_url": "https://openalex.org/W7239352556",
       "cited_by_count": 0,
-      "abstract": "Prior to agents taking part in a simultaneous-move game, a designer commits a device that sends signals to each of the agents, evaluating the resulting set of equilibria according to a (Hausdorff-)continuous function. In games of incomplete information I show that it must be without loss of optimality for the designer to restrict attention to direct obedient devices if and only if she assumes her preferred equilibrium will be played. In games of complete information, I characterize the monotone evaluations, which include both the maximally optimistic one and the maximally pessimistic one.",
-      "summary_zh": "【金融经济学】在代理人参与同时行动的博弈之前，设计者会设置一种机制，该机制向每个代理人发送信号，并根据一个（豪斯多夫）连续函数来评估由此产生的均衡集合。在不完全信息博弈中，我证明了：只有当设计者认为自己偏好的均衡会被实现时，她才可以在不损失最优性的前提下，仅关注那些能够“直接服从”其指令的机制。在完全信息博弈中，我描述了这些评估函数的性质，这些函数既包括最乐观的评估结果，也包括最悲观的评估结果。。研究方法：均衡模型。",
+      "abstract": "Based on the Concept for the Introduction of AI Technologies in Judicial Proceedings of the Russian Federation\n(2026), the authors examine the transition from electronic justice to the digital intellectualization of judicial activity.\nThe central issue is the permissible degree of algorithmic influence and the constitutional-legal limits of using artificial\nintelligence in judicial proceedings. A risk-oriented model of legal regulation is proposed, based on the differentiation\nof AI functions by the degree of their impact on constitutional rights and principles of judicial proceedings,\nwhile preserving the exclusive role of the judge. Drawing on an analysis of the practice of the Constitutional Court\nof the Russian Federation and doctrinal sources, the necessity of special guarantees for high-risk functions is substantiated.\nA constitutional standard for the admissibility of judicial AI is formulated. Directions for improving procedural\nlegislation are proposed.",
+      "summary_zh": "【金融经济学】基于俄罗斯联邦《关于在司法程序中引入人工智能技术的概念》（2026年），作者探讨了从电子司法向司法活动数字化智能化转型的过程。核心问题在于算法影响的合理限度，以及人工智能在司法程序中使用的宪法与法律约束。本文提出了一种以风险为导向的法律监管模式，该模式根据人工智能功能对宪法权利和司法程序原则的影响程度对其进行分类，并同时维护法官的专属裁决权。通过分析俄罗斯联邦宪法法院的判例及相关理论文献，作者论证了对高风险人工智能应用实施特殊保障措施的必要性，并制定了人工智能在司法领域应用的宪法标准。此外，还提出了改进相关程序立法的建议。。",
       "topics": [
-        "Economics",
-        "Finance"
+        "Intellectualization",
+        "Legislation",
+        "Law",
+        "Political science",
+        "Judicial review"
       ],
-      "source": "arxiv"
-    },
-    {
-      "title": "Semivariance and Semivolatility in Portfolio Selection: A Unified Framework for Downside-Risk Portfolio Models",
-      "authors": [
-        "Francesco Cesarone",
-        "Massimiliano Corradini",
-        "Nicolò Giunta"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-11-24",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.32638v1",
-      "cited_by_count": 0,
-      "abstract": "In this paper, we study downside risk in portfolio selection beyond minimum-risk models, where semivariance and its square root, semivolatility, yield the same portfolio. Downside-risk models are often presented as direct extensions of their variance-based counterparts, although different classes of portfolio problems require different properties of the risk measure. We classify these models by the degree of positive homogeneity of the risk measure in the weights: degree one makes risk contributions add up to the portfolio risk and keeps diversification and reward-to-risk ratios scale invariant. For three thresholds, the portfolio mean, zero and a market-index return, we state a non-degeneracy condition on long-only downside risk under which the risk-parity, most-diversified and Sortino-ratio problems are well posed. Under this condition, the two ratio problems reduce to convex programs, and the differentiability of semivolatility ensures that the risk-budgeting formulation attains the prescribed budgets. We also characterize when below-mean semivolatility is additive. Finally, we provide an out-of-sample analysis on two real-world datasets of total returns, the current constituents of the Dow Jones and Nasdaq-100 indexes. We compare seventeen long-only strategies, covering the minimum-risk, reward-to-risk, risk-parity and most-diversified families, in a rolling-window backtest, and test the differences within each family by block-bootstrap inference.",
-      "summary_zh": "【风险管理与衍生品】本文研究了在超越最小风险模型的投资组合选择中的下行风险问题。在这些模型中，半方差及其平方根（即半波动率）能够产生相同的投资组合效果。下行风险模型通常被视为基于方差的风险模型的直接扩展，然而不同类型的投资组合问题需要风险度量具有不同的属性。我们根据风险度量在权重中的正齐次性程度对这些模型进行分类：当齐次性为一时，风险贡献会累加到投资组合总风险中，并且分散化效果以及收益与风险比率保持不变。针对三个阈值（即投资组合均值、零以及市场指数收益率），我们提出了一个非退化条件，以确保在仅持有长期资产的情况下下行风险模型的合理性；在该条件下，风险平价、最大分散化以及Sortino比率问题能够得到有效解决。此时，这两个比率问题可转化为凸优化问题，而半波动率的可微性保证了风险预算模型的设定能够准确实现预定的预算目标。我们还探讨了在何种情况下低于均值的半波动率具有可加性。最后，我们利用道琼斯指数和纳斯达克100指数实际总收益的两个真实世界数据集进行了样本外分析，通过滚动窗口回测比较了十七种仅持有长期资产的策略（涵盖最小风险、收益与风险比率、风险平价以及最大分散化三类策略），并利用块自助法（block-...。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
+      "source": "openalex"
     }
   ]
 }
