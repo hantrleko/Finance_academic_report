@@ -1,0 +1,180 @@
+# 金融经济学每日文献速递（2026-11-27）
+
+共筛选到 **12** 篇文献。
+
+> 📢 **今日综述**
+>
+> 本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、风险管理与衍生品（2 篇）、绿色金融与可持续发展（2 篇）。方法上以机器学习、神经网络为主。来源分布：OpenAlex（7 篇）、arXiv（3 篇）、Semantic Scholar（2 篇）。
+
+## 1. ASSESSMENT OF SELECTED MACHINE LEARNING SYSTEMS IN PREDICTING THE RESILIENT MODULUS OF COHESIVE SOILS
+- 来源：openalex
+- 作者： O. M. Adebajo, Oluyemi-Ayibiowu B.D.,  K. E. Falola
+- 期刊/来源：FUTA JOURNAL OF ENGINEERING AND ENGINEERING TECHNOLOGY
+- 发表日期：2026-11-27
+- 引用数：0
+- 主题：Support vector machine, Machine learning, Artificial neural network, Artificial intelligence, Subgrade
+- 链接：[DOI](https://doi.org/10.51459/futajeet.2025.19.2.432) [链接](https://openalex.org/W7135037647)
+
+**中文摘要（自动生成）**：【金融经济学】根据回弹模量（MR）对路基土壤进行表征对于路面设计至关重要。然而，这一过程往往成本高昂且耗时较长，因此需要寻找更高效的替代方法。本研究探讨了利用机器学习系统预测粘性路基土壤回弹模量的有效性。研究收集了400个通过原位圆锥贯入试验获得的回弹模量测量数据，以及来自以往研究的200个预测数据点。将这些数据合并后分为训练集和测试集，用于开发两种机器学习预测模型：支持向量机（SVM）和反向传播神经网络（BPNN）。通过残差之和（R）和均方误差（MSE）性能指标来评估这两种模型的性能。在测试的SVM模型中，使用中等高斯核函数训练的模型表现出最佳的预测能力。对于BPNN模型，最有效的配置包括四个输入变量、十五个隐藏神经元和三十三个训练周期。BPNN模型的预测性能优于SVM模型，其训练和测试阶段的R值分别为0.98和0.92，MSE值分别为19.84和90.16；而SVM模型的训练和测试阶段R值分别为0.92和0.72，MSE值分别为47.75和223.73。研究表明，机器学习系统能够准确预测土壤的回弹模量，为路面设计和施工提供可接受的误差范围。。研究方法：机器学习、神经网络。
+
+## 2. Translational artificial intelligence in therapeutic-era metabolic dysfunction-associated steatohepatitis: The ACTION framework
+- 来源：openalex
+- 作者：Yuhang Liu, Si-Yan Li, Shi-Tian Zhang, Zi-Xuan Zhu
+- 期刊/来源：World Journal of Hepatology
+- 发表日期：2026-11-27
+- 引用数：0
+- 主题：Medicine, Action (physics), Artificial intelligence, Cognitive science, Neuroscience
+- 链接：[DOI](https://doi.org/10.4254/wjh.125990) [链接](https://openalex.org/W7212053050)
+
+**中文摘要（自动生成）**：【金融经济学】代谢功能障碍相关性脂肪性肝炎（MASH）已进入一个治疗新时代，其治疗重点已从单纯检测脂肪变性发展为识别可治疗的纤维化病变、合理指导患者转诊和进行活检、规范试验终点设置以及监测治疗反应。人工智能（AI）技术涵盖了电子健康记录、无创检测方法、影像学检查以及数字病理分析等领域，但相关研究报告中往往忽略了AI技术的实际应用场景、适用阈值以及其对患者的影响。我们开展了一项结构化的文献综述，并提出了名为ACTION的评估框架。该框架包括以下五个关键要素：具体可执行的操作措施、根据具体情境进行技术校准、针对不同阈值的疗效评估、系统整合能力、监督机制以及确保治疗过程的公平性和监测机制。目前关于AI在MASH诊疗中的应用证据仍存在明显不足。虽然病例发现和风险分层模型能够帮助识别未明确诊断或高风险患者，但这些模型对检测流程、转诊决策及治疗结果的实际影响尚未得到充分验证。影像学分析中的AI技术有助于实现结果的定量评估，但其提供的信息通常仅是对临床数据的补充。在所评估的应用案例中，基于AI的MASH评估工具（主要用于监管记录）属于技术最为成熟的应用之一，但其适用范围仅限于特定设计的临床试验环境。这类工具...。研究方法：模型校准。
+
+## 3. Distance from the Truth: Why Fragmented Merchant Underwriting Misses Risk, and What Source-Attributable Evidence Changes
+- 来源：arxiv
+- 作者：Russell Lessard, Jeremy Blackburn, Tim Hines, Matthew Koepp, Jason Patrick
+- 期刊/来源：arXiv
+- 发表日期：2026-11-25
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.34696v1)
+
+**中文摘要（自动生成）**：【风险管理与衍生品】当评估证据时，如果无法充分了解其来源、时效性、与申请人的关联程度以及对所申请活动的实际意义，商户承销过程就会变得脆弱。单凭表面上看似合理的检查结果，并不能必然证明该商户账户确实由同一家企业运营，也不能确保其代表具有相应的授权来处理相关事务或确认其结算指令的合法性。我们总结了承销过程中可能出现的三种失败模式：  
+1. **信息来源的缺失**：在决策过程中缺乏足够的相关证据；  
+2. **信息关联性的缺失**：在单独分析各个信息点时，未能充分理解个人、法律实体、所有者/控制人、代表、业务活动及结算目的地之间的内在联系；  
+3. **基于历史数据的控制机制的局限性**：将历史验证结果简单地视为当前有效的资格证明。  
+
+我们将这些失败模式与身份验证、客户尽职调查、制裁措施、第三方风险控制、银行卡网络规范以及Nacha（美国支付行业组织）的相关要求联系起来，并提出了一种基于“ChainIT交易真实性架构”的商户承销解决方案。该方案通过追踪信息的来源、关联性和持久性来确保承销过程的准确性。该系统能够维护一个逻辑统一的证据记录，记录所有被核查的内容、涉及的主体及其关系、相关时间点、适用...。
+
+## 4. Large deviations for integrated exponentials of Gaussian Volterra processes - application to variance options
+- 来源：arxiv
+- 作者：Antoine Jacquier, Mugad Oumgari, Dan Pirjol, Lingjiong Zhu
+- 期刊/来源：arXiv
+- 发表日期：2026-11-25
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.34567v1)
+
+**中文摘要（自动生成）**：【风险管理与衍生品】我们证明了高斯Volterra过程指数函数标准化时间积分的小时间大偏差性质，并通过中心极限定理和适度偏差理论对其结果进行了补充。作为应用实例，我们在具有波动性噪声的模型中得到了虚值和平值期权价格在短期内的渐近行为，并推导出了隐含波动率的表达式，这些结果均通过数值方法得到了验证。。
+
+## 5. From Prediction to Implementation: The Role of Machine Learning in Modern Portfolio Optimization
+- 来源：semantic_scholar
+- 作者：Ying Zhang
+- 期刊/来源：Applied Economics and Finance
+- 发表日期：2026-11-23
+- 引用数：0
+- 主题：Computer Science, Economics, Business
+- 链接：[DOI](https://doi.org/10.11114/aef.v13i2.9548) [链接](https://api.semanticscholar.org/CorpusID:296336071)
+
+**中文摘要（自动生成）**：📌 研究问题：机器学习改善的预测收益能否在投资组合构建和实施过程中持续存在并转化为实际收益？
+
+🔬 研究方法：该研究采用叙事性综述方法，对60篇选定的参考文献进行了分析。
+
+📊 核心发现：1. 改善的预测和回测证据强于规模化的持续净收益证据；2. 投资组合表现反映了完整的设计，很少能隔离出机器学习本身的贡献；3. 成本、容量限制和混合结果削弱了机器学习普遍优越性的主张。
+
+💡 应用价值：虽然机器学习在某些应用中具有价值，但证据并不支持其本身能产生普遍、持续且可扩展的卓越表现。
+
+## 6. The Hidden Price Effect: Partitioned Pricing and Host Accommodation Strategies on Airbnb
+- 来源：semantic_scholar
+- 作者：Shao-Hui Gao, Yi-Ming He
+- 期刊/来源：Applied Economics and Finance
+- 发表日期：2026-11-23
+- 引用数：0
+- 主题：Economics, Business
+- 链接：[DOI](https://doi.org/10.11114/aef.v13i2.9072) [链接](https://api.semanticscholar.org/CorpusID:296316609)
+
+**中文摘要（自动生成）**：📌 研究问题：本文基于在线短租平台上的市场均衡理论框架，研究了不同房间类型与分区定价策略之间的关系。
+
+🔬 研究方法：研究利用2018年4月至2020年10月北京Airbnb房源数据，采用对数清洁费与价格比衡量分区定价强度，并使用预测的工具变量法解决内生性问题。
+
+📊 核心发现：实证结果表明，分区定价强度的增加会降低房间类型的隐私，意味着房东更倾向于提供共享房间。
+
+💡 应用价值：研究结果为将分区定价与房东的战略供应决策联系起来提供了实证证据。
+
+## 7. Beyond Double Charging: Reconciling CORSIA and the EU Emissions Trading System through Climate Policy Coherence, Environmental Integrity and Equitable Aviation Governance
+- 来源：openalex
+- 作者：Loso Judijanto
+- 期刊/来源：Journal of Environmental Sustainability and Renewable Systems
+- 发表日期：2026-11-27
+- 引用数：0
+- 主题：Emissions trading, Civil aviation, European union, Incentive, Corporate governance
+- 链接：[DOI](https://doi.org/10.67927/jenvironsustainrenewsyst/2026(1)116) [链接](https://openalex.org/W7239405888)
+
+**中文摘要（自动生成）**：【绿色金融与可持续发展】国际民用航空组织（ICAO）的《国际航空碳抵消与减排计划》（CORSIA）与欧盟排放交易系统（EU ETS）之间不断演变的关系，对气候治理提出了复杂的挑战。本文通过对2020年至2026年间发表的同行评审研究进行批判性定性文献回顾，并结合ICAO和欧盟的权威资料进行分析，区分了其中的财务义务重叠、行政重复、碳信用双重申报以及合法的并行监管现象。研究指出，一个全球性的统一框架虽然有助于提高政策的可预测性，但无法单独确保减排效果的“额外性”（即减排量确实超出基准水平）；而区域性的总量控制与交易机制虽然能够强化碳价格激励机制，但可能加剧不同航线和航空枢纽之间的竞争。欧盟委员会2026年7月提出的航空政策提案（如获通过，将从2029年起扩大该机制的适用范围）进一步加剧了这些矛盾。本文构建了一个涵盖运营商、航线及年份维度的分析框架，评估了碳市场的完整性和分配效应，并提出了一套五部分的兼容性方案，包括法律范围界定、可审计的成本减免机制、注册系统保障措施、竞争与公平性审查以及ICAO与欧盟之间的定期对话机制。对于印度尼西亚等国际航空业国家而言，最佳策略是结合对CORSIA的多边协调机制的支持，...。
+
+## 8. Public Support for Environmental Aid: Evidence from a Conjoint Experiment in India
+- 来源：openalex
+- 作者：Elena V. McLean, Taehee Whang, Joonseok Yang
+- 期刊/来源：Global Environmental Politics
+- 发表日期：2026-11-27
+- 引用数：0
+- 主题：Public support, Conjoint analysis, Test (biology), Government (linguistics), Public economics
+- 链接：[DOI](https://doi.org/10.1162/glep.a.807) [链接](https://openalex.org/W7239416873)
+
+**中文摘要（自动生成）**：📌 研究问题：公众对环境援助项目的支持程度，如何反映项目全生命周期中的国内参与程度？
+
+🔬 研究方法：研究者在印度利用联合分析实验，基于现实的环境项目场景来验证研究假设。
+
+📊 核心发现：当项目在启动和设计阶段回应本地需求（特别是结合本地与全球环境收益）或由受援国政府共同资助时，公众支持度显著增加；而在实施阶段，公众无法区分负责实施的国内行为者。
+
+💡 应用价值：该研究为援助机构提供了重要启示，表明在设计环境援助项目时，应重视本地需求并结合全球收益，并鼓励受援国政府参与共同资助，以提升公众支持度。
+
+## 9. Digital access and citizen transparency demand in digital governance: evidence from West Africa
+- 来源：openalex
+- 作者：Jonathan Nii Barnor Barnor, Vera Ami Ayitey, Judy Bernadine Ackon
+- 期刊/来源：Transforming Government People Process and Policy
+- 发表日期：2026-11-27
+- 引用数：0
+- 主题：Transparency (behavior), Empowerment, Business, Government (linguistics), Digital divide
+- 链接：[DOI](https://doi.org/10.1108/tg-07-2026-0431) [链接](https://openalex.org/W7239759471)
+
+**中文摘要（自动生成）**：【金融科技】**研究目的**  
+本研究旨在探讨个人数字接入能力是否与西非公民对政府透明度的需求存在关联，这种关联是否受到使用频率的调节，以及其与公民感知的获取政府信息效能之间的关联是否受到国家电子政务发展水平的制约。  
+
+**研究设计/方法**  
+本研究利用了“非洲晴雨表”（Afrobarometer）第九轮调查的数据（涵盖14个西非国家的18,351名受访者），并结合了联合国电子政务发展指数（UN E-Government Development Index）的评分，通过多层逻辑回归（multilevel logistic regression）和有序逻辑回归（ordered logistic regression）模型、中介效应模型（mediation model）、跨层交互作用模型（cross-level interaction model）以及稳健性检验（robustness checks）来分析这些变量之间的关系。  
+
+**研究结果**  
+研究发现，个人数字接入能力与公民支持政府公开合同信息的需求之间存在正相关（比值比=1.17，即预测概率增加约2个百分点），但与公民对政...。研究方法：回归分析。
+
+## 10. When executable AI advice backfires: feasibility, managerial reliance, and strategic performance
+- 来源：openalex
+- 作者：Xufeng Zhang
+- 期刊/来源：Journal of strategy and management
+- 发表日期：2026-11-27
+- 引用数：0
+- 主题：Advice (programming), Stochastic game, Corporate governance, Executable, Computer science
+- 链接：[DOI](https://doi.org/10.1108/jsma-03-2026-0215) [链接](https://openalex.org/W7239777693)
+
+**中文摘要（自动生成）**：【金融经济学】**目的**  
+本文探讨了人工智能（AI）生成的建议的可行性如何影响管理层的依赖程度、企业绩效以及对战略决策的信任。研究将建议的质量与执行的可靠性区分开来，后者指的是基于AI的建议所采取的行动避免实施失败所带来的损失的概率。
+
+**设计/方法/途径**  
+本研究构建了一个简约的预期效用模型，该模型考虑了在需求不确定性和竞争环境下管理者在人类判断与AI建议之间的选择。模型区分了预期运营价值、实施可行性以及责任成本。随后通过重复的双寡头模拟来分析AI可行性的变化如何影响管理层的依赖程度、企业绩效和信任水平。
+
+**研究结果**  
+AI可行性的提高会增加管理层的依赖程度，但其对绩效和信任的影响具有条件性。在基于基线状态的推荐规则和收益空间选择规则下，高可行性使管理层的依赖程度增加了20.08个百分点，但平均收益相对低可行性而言减少了0.242。仅依赖AI进行信任更新时，所有情况下信任水平都会上升；然而在高可行性条件下，平均信任水平仍降低了0.064。当AI执行的可靠性远高于人类常规操作时，企业绩效会转为正向。提高状态阈值能够显著减弱这些影响。
+
+**创新性/价值**  
+本研究将...。研究方法：数值模拟、随机过程。
+
+## 11. A Break with “Business as Usual”? IMF Contradictions on Tackling Climate Change and What Are Seen (and Not Seen) as Viable Decarbonization Options
+- 来源：openalex
+- 作者：Ben Clift
+- 期刊/来源：Global Environmental Politics
+- 发表日期：2026-11-27
+- 引用数：0
+- 主题：Economics, Mandate, Mainstream, Climate change, Climate Finance
+- 链接：[DOI](https://doi.org/10.1162/glep.a.809) [链接](https://openalex.org/W7239809548)
+
+**中文摘要（自动生成）**：【绿色金融与可持续发展】摘要  
+本文探讨了国际货币基金组织（IMF）在应对气候变化方面的经济理念。文章梳理了IMF在气候政策方面的多种观点，将这些观点融合为新古典主义关于碳定价的“市场完善”理论，以及凯恩斯主义或熊彼特主义所倡导的广泛公共政策干预措施。这种融合体现了认知失调现象——IMF一方面强调生态系统的“临界点”并呼吁对传统经济模式进行根本性的脱碳改造，另一方面却依然坚持对经济增长和财政纪律的坚定承诺。在2025年之前，IMF的气候政策主要致力于帮助各国履行《巴黎协定》中的减排目标。然而，由于与各国政府的合作进展有限、IMF自身的知识储备不足，以及主流气候经济学领域内的持续争议，其政策效果大打折扣。当一位否认气候变化存在的美国总统公开反对布雷顿森林体系相关机构时，IMF的气候政策工作突然陷入停滞，全球经济治理中的气候议题也因此转入“隐蔽”状态。。
+
+## 12. Lone Wolves and Lattices in Bayesian Matching with Transfers
+- 来源：arxiv
+- 作者：Xiyu Li
+- 期刊/来源：arXiv
+- 发表日期：2026-11-25
+- 引用数：0
+- 主题：Economics, Finance
+- 链接：[链接](http://arxiv.org/abs/2611.34524v1)
+
+**中文摘要（自动生成）**：【金融经济学】我研究了在具有可转移效用和单边不完全信息的一对一匹配中，稳定结果的“独狼”（Lone Wolf）性质及格子结构（lattice properties）。研究基于刘（Liu, 2020）以及陈和胡（Chen & Hu, 2024）提出的贝叶斯稳定市场模型（Bayesian stable market states）。在存在转移支付的情况下，企业的招聘报价会筛选出劳动者的类型，从而决定了企业能够吸引哪些劳动者以及企业能够获取哪些信息。通过具体例子，我证明了即使在相同的信息结构下比较结果，企业端和匹配集层面的“独狼”性质以及格子结构也可能不成立。随后，我假设每个劳动者的匹配价值与其类型和企业特征之间存在加性可分性（additively separable）。在这种条件下，如果企业在某个稳定结果中未能匹配到劳动者，那么在所有具有相同类型特征和信息结构的稳定结果中，该企业都将获得零收益。由于劳动者能够保留信息带来的收益，因此劳动者端的性质也可能不成立。然而，在企业价值空间中有限的仿射超平面（affine hyperplanes）之外，所有这些稳定结果都会导致相同类型的劳动者无法被匹配。每当...。研究方法：贝叶斯方法。

@@ -1,261 +1,265 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "count": 12,
-  "source_used": "openalex(15)+ssrn(5)+arxiv(15)+semantic_scholar(15)+nber(5)",
+  "source_used": "openalex(15)+ssrn(2)+arxiv(15)+semantic_scholar(15)+nber(5)",
   "latest_updated": true,
-  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、银行与信贷（2 篇）、货币政策与宏观经济（2 篇）。方法上以回归分析、调查数据为主。来源分布：OpenAlex（7 篇）、arXiv（2 篇）、Semantic Scholar（2 篇）。",
+  "overview": "本期共收录 12 篇论文。研究方向主要集中在金融经济学（7 篇）、风险管理与衍生品（2 篇）、绿色金融与可持续发展（2 篇）。方法上以机器学习、神经网络为主。来源分布：OpenAlex（7 篇）、arXiv（3 篇）、Semantic Scholar（2 篇）。",
   "insights": {},
   "papers": [
     {
-      "title": "The Geography of Nobel Prize Nomination, 1901–1975",
+      "title": "ASSESSMENT OF SELECTED MACHINE LEARNING SYSTEMS IN PREDICTING THE RESILIENT MODULUS OF COHESIVE SOILS",
       "authors": [
-        "Chad M. Topaz",
-        "Anvi Kurongonayini",
-        "Bennett Ptak",
-        "Arden Fluehr",
-        "Ariana Mendible"
+        " O. M. Adebajo",
+        "Oluyemi-Ayibiowu B.D.",
+        " K. E. Falola"
       ],
-      "venue": "Quantitative Science Studies",
-      "published_date": "2026-11-26",
-      "doi_url": "https://doi.org/10.1162/qss.a.526",
-      "openalex_url": "https://openalex.org/W7141865545",
+      "venue": "FUTA JOURNAL OF ENGINEERING AND ENGINEERING TECHNOLOGY",
+      "published_date": "2026-11-27",
+      "doi_url": "https://doi.org/10.51459/futajeet.2025.19.2.432",
+      "openalex_url": "https://openalex.org/W7135037647",
       "cited_by_count": 0,
-      "abstract": "Abstract\n                  Nobel laureates are concentrated in a few countries, yet where geographic sorting enters the prize’s selection pipeline remains unknown. From archival, parliamentary, and web sources we construct a five-layer network built around the nomination records of five prizes, 1901–1975, with 512,793 edges and 8,133 identified participants. Although Swedish and Norwegian bodies administer the prizes, the nominators who actually took part were geographically diverse. Within that pool, however, nominators chose same-country nominees 4.85 times as often as random matching would predict. This homophily ratio ranges by discipline from 8.58 in Literature to 3.01 in Physics. With matching restricted to the same prize and year, the ratio is still 3.3. The continent-level ratio rose through the 1940s and stayed elevated as the nominee pool kept diversifying. A model that adjusts for how many nominations each country sent and received yields a roughly fifteenfold same-country premium, still sevenfold after adjusting for shared language. Nominations that crossed geographic regions flowed asymmetrically, with Northern America the dominant net importer. A nominee’s same-country nomination share was negatively associated with eventually winning the prize. In sum, across the stages we can observe, geographic sorting concentrates at the discretionary nomination decision, beyond what the nominator pool’s composition predicts.",
-      "summary_zh": "【金融经济学】摘要  \n诺贝尔奖得主主要集中在少数几个国家，但地理因素在奖项评选过程中的具体作用机制尚不明确。通过查阅档案资料、议会记录和网络信息，我们构建了一个基于1901年至1975年间五项诺贝尔奖提名记录的多层网络模型，该模型包含512,793条提名关系和8,133名参与者。尽管这些奖项由瑞典和挪威的相关机构负责管理，但实际上参与提名的个人来自全球各地。然而，在这些提名者中，他们选择本国候选人的频率是随机匹配结果所预测的4.85倍；这一同质性比例在不同学科领域存在显著差异——文学领域的这一比例为8.58，而物理学领域仅为3.01。即使将匹配范围限制在同一奖项和同一年份内，这一比例仍为3.3。20世纪40年代以来，这一比例持续上升，且随着提名者群体的日益多样化而保持高位。通过调整各国提名和被提名的数量，我们发现本国候选人在获奖方面的优势约为15倍；即便考虑到语言因素的共性，这一优势仍为7倍。跨地区提名的情况存在明显不对称性，北美地区成为主要的“净输入”地区（即提名者较多但获奖者较少的地区）。候选人的本国提名比例与其最终获奖的概率呈负相关。总体而言，在我们所观察的各个阶段中，地理因素在提名决...。",
+      "abstract": "Characterizing subgrade soils in terms of resilient modulus (MR) is crucial for pavement design. However, the process can be expensive and time-consuming, leading to the need for more efficient alternatives. This research investigates the effectiveness of using machine learning systems to predict the resilient modulus of cohesive subgrade soils. A dataset of 400 resilient modulus measurements obtained from in-situ cone penetration tests waere collected, along with an additional 200 prediction data points from past research. The combined dataset were then divided into training and testing subsets and used to develop two machine learning predicting systems: Support Vector Machine (SVM) and Back Propagation Neural Network (BPNN). The performance of these systems was evaluated using the sum of residuals (R) and the Mean Square Error (MSE) performance index. Among the SVM models tested, the one trained with a medium Gaussian kernel demonstrated the best predictive capability. For the BPNN, the most effective configuration included four input variables, fifteen hidden neurons, and thirty-three epochs. The BPNN system outperformed the SVM system, yielding higher predictability with training and testing R values of 0.98 and 0.92, and MSE training and test values of 19.84 and 90.16, respectively. In contrast, the SVM system produced training and testing R values of 0.92 and 0.72, with MSE training and test values of 47.75 and 223.73. This research demonstrates that machine learning systems can accurately predict the resilient modulus of soils, providing acceptable error levels for pavement design and construction.",
+      "summary_zh": "【金融经济学】根据回弹模量（MR）对路基土壤进行表征对于路面设计至关重要。然而，这一过程往往成本高昂且耗时较长，因此需要寻找更高效的替代方法。本研究探讨了利用机器学习系统预测粘性路基土壤回弹模量的有效性。研究收集了400个通过原位圆锥贯入试验获得的回弹模量测量数据，以及来自以往研究的200个预测数据点。将这些数据合并后分为训练集和测试集，用于开发两种机器学习预测模型：支持向量机（SVM）和反向传播神经网络（BPNN）。通过残差之和（R）和均方误差（MSE）性能指标来评估这两种模型的性能。在测试的SVM模型中，使用中等高斯核函数训练的模型表现出最佳的预测能力。对于BPNN模型，最有效的配置包括四个输入变量、十五个隐藏神经元和三十三个训练周期。BPNN模型的预测性能优于SVM模型，其训练和测试阶段的R值分别为0.98和0.92，MSE值分别为19.84和90.16；而SVM模型的训练和测试阶段R值分别为0.92和0.72，MSE值分别为47.75和223.73。研究表明，机器学习系统能够准确预测土壤的回弹模量，为路面设计和施工提供可接受的误差范围。。研究方法：机器学习、神经网络。",
       "topics": [
-        "Selection (genetic algorithm)",
-        "Nomination",
-        "Sorting",
-        "Norwegian",
-        "Point (geometry)"
+        "Support vector machine",
+        "Machine learning",
+        "Artificial neural network",
+        "Artificial intelligence",
+        "Subgrade"
       ],
       "source": "openalex"
     },
     {
-      "title": "Does working from home reduce daily travel? Evidence from a COVID-19 survey in South Africa",
+      "title": "Translational artificial intelligence in therapeutic-era metabolic dysfunction-associated steatohepatitis: The ACTION framework",
       "authors": [
-        "C. Venter",
-        "N. Cheure",
-        "C. Balbontin"
+        "Yuhang Liu",
+        "Si-Yan Li",
+        "Shi-Tian Zhang",
+        "Zi-Xuan Zhu"
       ],
-      "venue": "South African Journal of Science",
-      "published_date": "2026-11-26",
-      "doi_url": "https://doi.org/10.17159/sajs.2026/26089",
-      "openalex_url": "https://openalex.org/W7222379073",
+      "venue": "World Journal of Hepatology",
+      "published_date": "2026-11-27",
+      "doi_url": "https://doi.org/10.4254/wjh.125990",
+      "openalex_url": "https://openalex.org/W7212053050",
       "cited_by_count": 0,
-      "abstract": "Travel Demand Management policies that allow workers to work from home offer potential remedies for rising traffic congestion and vehicle emissions. Yet working from home remained rare until the COVID-19 pandemic forced millions of workers in South Africa to start to work remotely. This offered a unique opportunity to observe the impacts of working from home (WFH) on people’s travel patterns. We asked whether WFH practices really impact the number and types of trips people make and examined the travel patterns of a sample of Gauteng workers, obtained from a self-reported online survey from 2021, by estimating Poisson regression models that control for socio-demographic and travel variables. We found that WFH is associated with a marginal reduction in overall trip activity, but that the reduction in work travel is somewhat offset by an increase in shopping and recreational travel. The impacts of WFH on traffic volumes and congestion are likely to be modest. Gender is a significant mediating factor, suggesting that WFH policies affect the travel patterns of men and women differently. We also estimate elasticities that may be used to adjust trip generation rates for traffic planning purposes.",
-      "summary_zh": "【金融经济学】允许员工在家工作的出行需求管理政策为缓解日益严重的交通拥堵和车辆排放问题提供了潜在的解决方案。然而，在新冠疫情之前，居家办公在南非仍较为罕见，直到疫情迫使数百万员工开始远程办公。这为我们提供了一个独特的机会，来观察居家办公对人们出行模式的影响。我们研究了居家办公是否真的会改变人们的出行次数和类型，并通过2021年的一项在线调查数据，对豪登省部分员工的出行模式进行了分析，同时控制了社会人口统计特征和出行相关变量，运用泊松回归模型进行了分析。研究发现，居家办公总体上会导致出行活动略有减少，但工作相关的出行减少被购物和休闲出行的增加所部分抵消。居家办公对交通流量和拥堵的影响可能较为有限。性别是一个重要的中介因素，表明居家办公政策对男性和女性的出行模式存在差异。此外，我们还估算了可用于交通规划目的的出行生成率弹性系数。。研究方法：回归分析、调查数据。",
+      "abstract": "Metabolic dysfunction-associated steatohepatitis (MASH) has entered a therapeutic era in which priorities extend beyond detecting steatosis to identifying treatment-actionable fibrosis, rationalising referral and biopsy, standardising trial endpoints and monitoring response. Artificial intelligence (AI) spans electronic health records, non-invasive tests, imaging and digital pathology, but reports often omit the user, threshold and consequence. We conducted a structured narrative review and developed the author-proposed ACTION framework. ACTION comprises attached action, calibration in context, threshold-specific benefit, integration, oversight, and non-discrimination and monitoring. Evidence is uneven. Case-finding and enrichment models can identify uncoded or higher-risk patients, but their prospective effects on testing, referral and outcomes remain unproven. Imaging AI supports reproducible quantification, although signals may add little beyond clinical variables. The human-reviewed AI-based measurement tool for MASH (in regulatory records) is among the most mature applications reviewed, within a narrowly specified clinical-trial context. It is qualified for specified MASH clinical-trial workflows, not for autonomous diagnosis or unrestricted treatment selection. AI becomes clinically meaningful only when a calibrated output is linked to a predefined action, an accountable human user and a measurable patient or trial outcome.",
+      "summary_zh": "【金融经济学】代谢功能障碍相关性脂肪性肝炎（MASH）已进入一个治疗新时代，其治疗重点已从单纯检测脂肪变性发展为识别可治疗的纤维化病变、合理指导患者转诊和进行活检、规范试验终点设置以及监测治疗反应。人工智能（AI）技术涵盖了电子健康记录、无创检测方法、影像学检查以及数字病理分析等领域，但相关研究报告中往往忽略了AI技术的实际应用场景、适用阈值以及其对患者的影响。我们开展了一项结构化的文献综述，并提出了名为ACTION的评估框架。该框架包括以下五个关键要素：具体可执行的操作措施、根据具体情境进行技术校准、针对不同阈值的疗效评估、系统整合能力、监督机制以及确保治疗过程的公平性和监测机制。目前关于AI在MASH诊疗中的应用证据仍存在明显不足。虽然病例发现和风险分层模型能够帮助识别未明确诊断或高风险患者，但这些模型对检测流程、转诊决策及治疗结果的实际影响尚未得到充分验证。影像学分析中的AI技术有助于实现结果的定量评估，但其提供的信息通常仅是对临床数据的补充。在所评估的应用案例中，基于AI的MASH评估工具（主要用于监管记录）属于技术最为成熟的应用之一，但其适用范围仅限于特定设计的临床试验环境。这类工具...。研究方法：模型校准。",
       "topics": [
-        "Business",
-        "Work (physics)",
+        "Medicine",
+        "Action (physics)",
+        "Artificial intelligence",
+        "Cognitive science",
+        "Neuroscience"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Distance from the Truth: Why Fragmented Merchant Underwriting Misses Risk, and What Source-Attributable Evidence Changes",
+      "authors": [
+        "Russell Lessard",
+        "Jeremy Blackburn",
+        "Tim Hines",
+        "Matthew Koepp",
+        "Jason Patrick"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-25",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.34696v1",
+      "cited_by_count": 0,
+      "abstract": "Merchant underwriting becomes vulnerable when evidence is evaluated without enough visibility into its source, freshness, relationship to the applicant, or meaning for the proposed activity. Individually favorable checks do not necessarily establish that the same business is operating the merchant account, that its representative may bind it, or that its settlement instructions are authorized. We describe three failure modes of fragmented underwriting: distance from the source, the gap between a decision and the evidence needed to justify it; the correlation gap, in which material relationships among the person, legal entity, owners or controllers, representative, business activity, and settlement destination are not evaluated when each signal is considered alone; and point-in-time controls, in which a historical verification is treated as present eligibility. We map these failure modes to identity-proofing, customer-due-diligence, sanctions, third-party-risk, card-network, and Nacha requirements, and propose a merchant-underwriting application of the ChainIT Transaction Truth Architecture built on provenance, correlation, and persistence. The application keeps a logically unified evidence record that identifies what was checked, the subject and relationship involved, the relevant times, the applicable policy, the decision, and any exceptions, and it keeps evidence validation, applicant verification, organizational authority, and the institution's risk judgment separate. We also set out a proposed evidence and decision receipt, a defined 90-day shadow enrollment pilot with adjudicated outcome measures and deliberate control-failure tests, and a ten-question self-assessment. Proposed controls, illustrative scenarios, and pilot measures are identified as such and are not represented as observed production results.",
+      "summary_zh": "【风险管理与衍生品】当评估证据时，如果无法充分了解其来源、时效性、与申请人的关联程度以及对所申请活动的实际意义，商户承销过程就会变得脆弱。单凭表面上看似合理的检查结果，并不能必然证明该商户账户确实由同一家企业运营，也不能确保其代表具有相应的授权来处理相关事务或确认其结算指令的合法性。我们总结了承销过程中可能出现的三种失败模式：  \n1. **信息来源的缺失**：在决策过程中缺乏足够的相关证据；  \n2. **信息关联性的缺失**：在单独分析各个信息点时，未能充分理解个人、法律实体、所有者/控制人、代表、业务活动及结算目的地之间的内在联系；  \n3. **基于历史数据的控制机制的局限性**：将历史验证结果简单地视为当前有效的资格证明。  \n\n我们将这些失败模式与身份验证、客户尽职调查、制裁措施、第三方风险控制、银行卡网络规范以及Nacha（美国支付行业组织）的相关要求联系起来，并提出了一种基于“ChainIT交易真实性架构”的商户承销解决方案。该方案通过追踪信息的来源、关联性和持久性来确保承销过程的准确性。该系统能够维护一个逻辑统一的证据记录，记录所有被核查的内容、涉及的主体及其关系、相关时间点、适用...。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "Large deviations for integrated exponentials of Gaussian Volterra processes - application to variance options",
+      "authors": [
+        "Antoine Jacquier",
+        "Mugad Oumgari",
+        "Dan Pirjol",
+        "Lingjiong Zhu"
+      ],
+      "venue": "arXiv",
+      "published_date": "2026-11-25",
+      "doi_url": "",
+      "openalex_url": "http://arxiv.org/abs/2611.34567v1",
+      "cited_by_count": 0,
+      "abstract": "We prove small-time large deviations for the normalised time integral of the exponential of a Gaussian Volterra process, and complement it with a central limit theorem and moderate deviations. As an application, we obtain short-maturity asymptotics for out-of-the-money and at-the-money variance options in rough volatility models, as well as implied volatility expansions which we validate numerically.",
+      "summary_zh": "【风险管理与衍生品】我们证明了高斯Volterra过程指数函数标准化时间积分的小时间大偏差性质，并通过中心极限定理和适度偏差理论对其结果进行了补充。作为应用实例，我们在具有波动性噪声的模型中得到了虚值和平值期权价格在短期内的渐近行为，并推导出了隐含波动率的表达式，这些结果均通过数值方法得到了验证。。",
+      "topics": [
+        "Economics",
+        "Finance"
+      ],
+      "source": "arxiv"
+    },
+    {
+      "title": "From Prediction to Implementation: The Role of Machine Learning in Modern Portfolio Optimization",
+      "authors": [
+        "Ying Zhang"
+      ],
+      "venue": "Applied Economics and Finance",
+      "published_date": "2026-11-23",
+      "doi_url": "https://doi.org/10.11114/aef.v13i2.9548",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:296336071",
+      "cited_by_count": 0,
+      "abstract": "Machine learning can improve return forecasts without improving the portfolios built from them. This narrative review examines 60 selected references to ask when predictive gains survive portfolio construction and implementation. The studies differ in objectives, allocation rules, costs, and realized fund results. Three findings emerge. First, evidence for improved forecasts and backtests is stronger than evidence for persistent net gains at scale. Second, performance reflects the full investment design, so studies rarely isolate the contribution of machine learning itself. Third, costs, capacity limits, and mixed fund results weaken broad claims of superiority. The review maps what forecast, pricing, portfolio-backtest, fund-selection, and realized-fund studies can establish, then identifies tests to clarify attribution. The evidence supports value in some applications, but does not show that machine learning itself produces general, persistent, scalable outperformance.",
+      "summary_zh": "📌 研究问题：机器学习改善的预测收益能否在投资组合构建和实施过程中持续存在并转化为实际收益？\n\n🔬 研究方法：该研究采用叙事性综述方法，对60篇选定的参考文献进行了分析。\n\n📊 核心发现：1. 改善的预测和回测证据强于规模化的持续净收益证据；2. 投资组合表现反映了完整的设计，很少能隔离出机器学习本身的贡献；3. 成本、容量限制和混合结果削弱了机器学习普遍优越性的主张。\n\n💡 应用价值：虽然机器学习在某些应用中具有价值，但证据并不支持其本身能产生普遍、持续且可扩展的卓越表现。",
+      "topics": [
+        "Computer Science",
+        "Economics",
+        "Business"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "The Hidden Price Effect: Partitioned Pricing and Host Accommodation Strategies on Airbnb",
+      "authors": [
+        "Shao-Hui Gao",
+        "Yi-Ming He"
+      ],
+      "venue": "Applied Economics and Finance",
+      "published_date": "2026-11-23",
+      "doi_url": "https://doi.org/10.11114/aef.v13i2.9072",
+      "openalex_url": "https://api.semanticscholar.org/CorpusID:296316609",
+      "cited_by_count": 0,
+      "abstract": "This paper investigates the relationship between various room types and partitioned pricing strategies under the theoretical framework of market equilibrium between guests and hosts on an online short-term rental platform. Using Beijing Airbnb listing data from April 2018 to October 2020, we use the (log) cleaning-fee-to-price ratio to measure partitioned pricing. A predicted instrumental variable method is used to address endogeneity issues. Empirical results show that an increase in partitioned pricing intensity reduces room-type privacy, implying hosts are more likely to offer shared rooms. This negative relationship is robust to alternative fixed-effects specifications. The findings provide empirical evidence linking partitioned pricing to hosts' strategic supply decisions.",
+      "summary_zh": "📌 研究问题：本文基于在线短租平台上的市场均衡理论框架，研究了不同房间类型与分区定价策略之间的关系。\n\n🔬 研究方法：研究利用2018年4月至2020年10月北京Airbnb房源数据，采用对数清洁费与价格比衡量分区定价强度，并使用预测的工具变量法解决内生性问题。\n\n📊 核心发现：实证结果表明，分区定价强度的增加会降低房间类型的隐私，意味着房东更倾向于提供共享房间。\n\n💡 应用价值：研究结果为将分区定价与房东的战略供应决策联系起来提供了实证证据。",
+      "topics": [
+        "Economics",
+        "Business"
+      ],
+      "source": "semantic_scholar"
+    },
+    {
+      "title": "Beyond Double Charging: Reconciling CORSIA and the EU Emissions Trading System through Climate Policy Coherence, Environmental Integrity and Equitable Aviation Governance",
+      "authors": [
+        "Loso Judijanto"
+      ],
+      "venue": "Journal of Environmental Sustainability and Renewable Systems",
+      "published_date": "2026-11-27",
+      "doi_url": "https://doi.org/10.67927/jenvironsustainrenewsyst/2026(1)116",
+      "openalex_url": "https://openalex.org/W7239405888",
+      "cited_by_count": 0,
+      "abstract": "The evolving relationship between the International Civil Aviation Organization’s Carbon Offsetting and Reduction Scheme for  International Aviation (CORSIA) and the European Union Emissions Trading System (EU ETS) poses a complex challenge for climate governance. This article uses a critical qualitative literature review of peer-reviewed research published from 2020 through 2026, interpreted alongside authoritative ICAO and European Union materials. It distinguishes overlapping financial obligations from administrative duplication, carbon-credit double claiming, and legitimate concurrent regulation. The thematic synthesis finds that a common global framework improves predictability but does not independently guarantee emissions additionality, while regional cap-and-trade can strengthen carbon-price incentives yet potentially alter competition among air routes and transit hubs. The European Commission’s July 2026 aviation proposal, envisaging expanded geographical application from 2029 if adopted, sharpens these tensions. The article develops an operator–route–year diagnostic framework, assesses carbon-market integrity and distributional effects, and proposes a five-part compatibility architecture covering legal-scope mapping, auditable cost deductions, registry safeguards, competition and equity review, and recurrent ICAO–EU dialogue. For Indonesia and other international aviation economies, the preferred approach combines support for CORSIA-centered multilateral coordination with evidence based engagement on environmental ambition, transparent economic burdens, and direct emissions-reduction investment. The conclusions are interpretive and policy-oriented, not estimates of the future proposal’s realized impacts.",
+      "summary_zh": "【绿色金融与可持续发展】国际民用航空组织（ICAO）的《国际航空碳抵消与减排计划》（CORSIA）与欧盟排放交易系统（EU ETS）之间不断演变的关系，对气候治理提出了复杂的挑战。本文通过对2020年至2026年间发表的同行评审研究进行批判性定性文献回顾，并结合ICAO和欧盟的权威资料进行分析，区分了其中的财务义务重叠、行政重复、碳信用双重申报以及合法的并行监管现象。研究指出，一个全球性的统一框架虽然有助于提高政策的可预测性，但无法单独确保减排效果的“额外性”（即减排量确实超出基准水平）；而区域性的总量控制与交易机制虽然能够强化碳价格激励机制，但可能加剧不同航线和航空枢纽之间的竞争。欧盟委员会2026年7月提出的航空政策提案（如获通过，将从2029年起扩大该机制的适用范围）进一步加剧了这些矛盾。本文构建了一个涵盖运营商、航线及年份维度的分析框架，评估了碳市场的完整性和分配效应，并提出了一套五部分的兼容性方案，包括法律范围界定、可审计的成本减免机制、注册系统保障措施、竞争与公平性审查以及ICAO与欧盟之间的定期对话机制。对于印度尼西亚等国际航空业国家而言，最佳策略是结合对CORSIA的多边协调机制的支持，...。",
+      "topics": [
+        "Emissions trading",
+        "Civil aviation",
+        "European union",
+        "Incentive",
+        "Corporate governance"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Public Support for Environmental Aid: Evidence from a Conjoint Experiment in India",
+      "authors": [
+        "Elena V. McLean",
+        "Taehee Whang",
+        "Joonseok Yang"
+      ],
+      "venue": "Global Environmental Politics",
+      "published_date": "2026-11-27",
+      "doi_url": "https://doi.org/10.1162/glep.a.807",
+      "openalex_url": "https://openalex.org/W7239416873",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  Recent scholarship on foreign aid increasingly recognizes the importance of recipient countries’ citizens and their preferences. This is particularly relevant for environmental aid, which has grown substantially and produces both local and global benefits. We argue that public support for environmental aid projects reflects the extent of domestic involvement across the project life cycle. Identifying the most visible stages of aid projects—initiation, design, and implementation—we link local participation at each stage to public support. We test our expectations with a conjoint experiment in India using a realistic environmental project scenario. Support increases when projects respond to local needs at the initiation and design stages—particularly when they combine local and global environmental benefits—and when the recipient government cofinances project costs. In contrast, citizens do not distinguish among the domestic actors responsible for implementation: a null result that reflects indifference among domestic options rather than the irrelevance of local involvement.",
+      "summary_zh": "📌 研究问题：公众对环境援助项目的支持程度，如何反映项目全生命周期中的国内参与程度？\n\n🔬 研究方法：研究者在印度利用联合分析实验，基于现实的环境项目场景来验证研究假设。\n\n📊 核心发现：当项目在启动和设计阶段回应本地需求（特别是结合本地与全球环境收益）或由受援国政府共同资助时，公众支持度显著增加；而在实施阶段，公众无法区分负责实施的国内行为者。\n\n💡 应用价值：该研究为援助机构提供了重要启示，表明在设计环境援助项目时，应重视本地需求并结合全球收益，并鼓励受援国政府参与共同资助，以提升公众支持度。",
+      "topics": [
+        "Public support",
+        "Conjoint analysis",
+        "Test (biology)",
         "Government (linguistics)",
-        "Finance",
-        "Economic growth"
+        "Public economics"
       ],
       "source": "openalex"
     },
     {
-      "title": "The Governance Frontier COBIT-Aligned AI Decision Support and Risk-Adaptive Optimization for Enterprise Technology Modernization",
+      "title": "Digital access and citizen transparency demand in digital governance: evidence from West Africa",
       "authors": [
-        "Audrey Rah",
-        "David.w Johnson"
+        "Jonathan Nii Barnor Barnor",
+        "Vera Ami Ayitey",
+        "Judy Bernadine Ackon"
       ],
-      "venue": "SSRN Electronic Journal",
-      "published_date": "2026-11-19",
-      "doi_url": "https://doi.org/10.2139/ssrn.7725800",
-      "openalex_url": "https://openalex.org/W7236666611",
+      "venue": "Transforming Government People Process and Policy",
+      "published_date": "2026-11-27",
+      "doi_url": "https://doi.org/10.1108/tg-07-2026-0431",
+      "openalex_url": "https://openalex.org/W7239759471",
       "cited_by_count": 0,
-      "abstract": "Executives deciding enterprise modernization, legacysystem transformation, AI adoption, organizational restructuring, digital-infrastructure change, and cross-functional governance must weigh legal, financial, cybersecurity, procurement, operational, and AI-governance questions that sit in separate functions. The central methods of this paper are GAIM-DF (Governance-Aware Institutional Modernization Decision Framework), a human-gated advisory process for these decisions, and Risk-Adaptive AI Governance Optimization (RA-GO v2), a riskadaptive optimizer with mandatory governance gates, halt-safe feasibility, distributionally robust evaluation, and preferenceinformation triage for scarce human review; an accountable human decides. As an optional architectural extension, we computationally evaluate a multi-expert coordination layer that convenes specialist capabilities by context and consolidates constraints conservatively. Evidence is staged across four complementary pre-deployment approaches: analytical verification; retrospective historical-data analysis; comparative computational benchmarking against strong baselines; and scenario-based stress testing under distributional shift. Together they provide complementary&amp;nbsp;pre-deployment evidence for high-stakes governance analysis. A systematic review of university and public-sector governance, with observational process-log analyses and RA-GO scenario stress tests, yields six principal findings: role coordination is associated with shorter approval and process times under supporting falsification checks; robust evaluation preserves tailrisk protection under distribution shift; preference-information triage concentrates human review where it most reduces modeled regret; and mandatory gates, an intensity floor, and a halt state are jointly consistent. The multi-expert benchmarks report accuracy, false-positive, latency, and token-cost trade-offs and routing failure modes relative to a strong Single-Agent baseline and to RA-GO alone. Shadow-mode piloting and a risk-adaptive Hybrid remain future work.",
-      "summary_zh": "【风险管理与衍生品】在决定企业现代化、遗产系统转型、人工智能（AI）应用、组织结构调整、数字基础设施变革以及跨职能治理时，高管们必须权衡来自不同职能部门的法律、财务、网络安全、采购、运营以及AI治理方面的问题。本文的核心方法包括GAIM-DF（治理意识型制度现代化决策框架），这是一种用于辅助此类决策的人工干预式咨询流程；以及Risk-Adaptive AI Governance Optimization（RA-GO v2），这是一种具备强制治理机制的风险适应性优化工具，具备停摆安全功能、分布式鲁棒性评估能力，并能对稀缺的人力资源进行优先级排序，最终由负责任的人类决策者作出最终决策。作为可选的架构扩展，我们还通过计算方式评估了一个多专家协调层，该层能够根据具体情境整合专家资源并谨慎处理各种约束条件。研究证据通过四种互补的预部署方法进行收集：分析性验证、回顾性历史数据分析、与强基线的比较性计算基准测试，以及在分布变化条件下的情景压力测试。这些方法共同为高风险治理决策提供了全面的预部署依据。\n\n通过对大学和公共部门治理实践的系统性研究（包括过程日志分析及RA-GO情景压力测试），我们得出了六个主要发现：角...。研究方法：优化方法。",
+      "abstract": "Purpose\n                    This study aims to examine whether individual digital access is associated with citizens’ demand for government transparency in West Africa, whether this association is mediated by usage intensity, and whether its association with perceived efficacy in obtaining government information is moderated by national e-government development.\n                  \n                  \n                    Design/methodology/approach\n                    Using Afrobarometer Round 9 data for 18,351 respondents across 14 West African countries, merged with UN E-Government Development Index scores, this study estimates multilevel logistic and ordered logistic regressions, a mediation model, a cross-level interaction model and robustness checks.\n                  \n                  \n                    Findings\n                    Digital access was associated with support for disclosure of government contracts (odds ratio = 1.17; approximately two percentage points in predicted probability), but not budgets or salaries. The authors found no evidence that this association was mediated by general usage intensity. The interaction between access and e-government development in predicting perceived efficacy was not significant; a random-slope model indicated the contracts–demand association varied across countries, though e-government development did not explain this variation.\n                  \n                  \n                    Originality/value\n                    This study extends the digital-empowerment and second-level digital-divide literatures beyond single-country or high-income settings by disaggregating transparency demand into distinct fiscal domains across 14 West African countries. It qualifies the empowerment logic common in this literature by showing that access is associated with transparency demand selectively, operates independently of usage intensity and is not straightforwardly explained by cross-national e-government indices.",
+      "summary_zh": "【金融科技】**研究目的**  \n本研究旨在探讨个人数字接入能力是否与西非公民对政府透明度的需求存在关联，这种关联是否受到使用频率的调节，以及其与公民感知的获取政府信息效能之间的关联是否受到国家电子政务发展水平的制约。  \n\n**研究设计/方法**  \n本研究利用了“非洲晴雨表”（Afrobarometer）第九轮调查的数据（涵盖14个西非国家的18,351名受访者），并结合了联合国电子政务发展指数（UN E-Government Development Index）的评分，通过多层逻辑回归（multilevel logistic regression）和有序逻辑回归（ordered logistic regression）模型、中介效应模型（mediation model）、跨层交互作用模型（cross-level interaction model）以及稳健性检验（robustness checks）来分析这些变量之间的关系。  \n\n**研究结果**  \n研究发现，个人数字接入能力与公民支持政府公开合同信息的需求之间存在正相关（比值比=1.17，即预测概率增加约2个百分点），但与公民对政...。研究方法：回归分析。",
       "topics": [
+        "Transparency (behavior)",
+        "Empowerment",
+        "Business",
+        "Government (linguistics)",
+        "Digital divide"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "When executable AI advice backfires: feasibility, managerial reliance, and strategic performance",
+      "authors": [
+        "Xufeng Zhang"
+      ],
+      "venue": "Journal of strategy and management",
+      "published_date": "2026-11-27",
+      "doi_url": "https://doi.org/10.1108/jsma-03-2026-0215",
+      "openalex_url": "https://openalex.org/W7239777693",
+      "cited_by_count": 0,
+      "abstract": "Purpose\n                    This paper examines how the feasibility of artificial intelligence (AI)-generated advice shapes managerial reliance, firm performance, and trust in strategic decision making. It distinguishes advice quality from execution reliability, defined as the probability that an attempted AI-backed action avoids an implementation-failure loss.\n                  \n                  \n                    Design/methodology/approach\n                    The study develops a parsimonious expected utility model with stochastic source choice in which managers choose between human judgment and AI advice under demand uncertainty and competitive interaction. The model separates expected operating value, implementation feasibility, and accountability cost. A repeated duopoly simulation is then used to examine how changes in AI feasibility affect reliance, performance, and trust.\n                  \n                  \n                    Findings\n                    Higher AI feasibility increases managerial reliance, but its effects on performance and trust are conditional. Under the baseline state-based recommendation and payoff-space source-choice rules, high feasibility increases reliance by 20.08 percentage points and reduces average payoff by 0.242 relative to low feasibility. AI-only trust updating produces rising trust paths in every regime, but average trust is 0.064 lower under high feasibility. Performance turns positive when AI execution reliability is very strong relative to a weak human routine. Raising the state threshold substantially attenuates the effects.\n                  \n                  \n                    Originality/value\n                    The study positions feasibility as a first-order governance variable. Source substitution when human and AI recommendations agree accounts for most of the baseline performance loss.",
+      "summary_zh": "【金融经济学】**目的**  \n本文探讨了人工智能（AI）生成的建议的可行性如何影响管理层的依赖程度、企业绩效以及对战略决策的信任。研究将建议的质量与执行的可靠性区分开来，后者指的是基于AI的建议所采取的行动避免实施失败所带来的损失的概率。\n\n**设计/方法/途径**  \n本研究构建了一个简约的预期效用模型，该模型考虑了在需求不确定性和竞争环境下管理者在人类判断与AI建议之间的选择。模型区分了预期运营价值、实施可行性以及责任成本。随后通过重复的双寡头模拟来分析AI可行性的变化如何影响管理层的依赖程度、企业绩效和信任水平。\n\n**研究结果**  \nAI可行性的提高会增加管理层的依赖程度，但其对绩效和信任的影响具有条件性。在基于基线状态的推荐规则和收益空间选择规则下，高可行性使管理层的依赖程度增加了20.08个百分点，但平均收益相对低可行性而言减少了0.242。仅依赖AI进行信任更新时，所有情况下信任水平都会上升；然而在高可行性条件下，平均信任水平仍降低了0.064。当AI执行的可靠性远高于人类常规操作时，企业绩效会转为正向。提高状态阈值能够显著减弱这些影响。\n\n**创新性/价值**  \n本研究将...。研究方法：数值模拟、随机过程。",
+      "topics": [
+        "Advice (programming)",
+        "Stochastic game",
         "Corporate governance",
-        "Context (archaeology)",
-        "Triage",
-        "Process (computing)",
-        "Process management"
+        "Executable",
+        "Computer science"
       ],
-      "source": "ssrn"
+      "source": "openalex"
     },
     {
-      "title": "Modelling and Calibration of Climate-Related Credit Risk Under the Emissions Trading System",
+      "title": "A Break with “Business as Usual”? IMF Contradictions on Tackling Climate Change and What Are Seen (and Not Seen) as Viable Decarbonization Options",
       "authors": [
-        "Ying Liao",
-        "Ankush Agarwal"
+        "Ben Clift"
+      ],
+      "venue": "Global Environmental Politics",
+      "published_date": "2026-11-27",
+      "doi_url": "https://doi.org/10.1162/glep.a.809",
+      "openalex_url": "https://openalex.org/W7239809548",
+      "cited_by_count": 0,
+      "abstract": "Abstract\n                  This article explores the International Monetary Fund (IMF)’s economic ideas regarding tackling climate change. It unearths a broad repertoire of Fund climate policy thinking, fusing neoclassical “completing the market” ideas about carbon pricing with Keynesian or Schumpeterian calls for wide-ranging public policy interventionism. The resultant amalgam betrays cognitive dissonance, captured in the IMF’s climate policy trilemma, as the IMF highlights ecological “tipping points” and calls for dramatic decarbonizing transformations to “business as usual,” yet retains unwavering commitments to economic growth and fiscal discipline. Before 2025, navigating mandate restrictions, IMF climate policy mobilized around helping countries achieve Paris Agreement emissions reduction undertakings. Yet limited traction with governments, Fund knowledge limits, and ongoing contestation within mainstream climate economics hindered IMF efficacy. Fund climate policy efforts abruptly halted when a climate change–denying US president openly hostile to Bretton Woods institutions unleashed a period of “greenhushing,” sending climate policy within global economic governance into stealth mode.",
+      "summary_zh": "【绿色金融与可持续发展】摘要  \n本文探讨了国际货币基金组织（IMF）在应对气候变化方面的经济理念。文章梳理了IMF在气候政策方面的多种观点，将这些观点融合为新古典主义关于碳定价的“市场完善”理论，以及凯恩斯主义或熊彼特主义所倡导的广泛公共政策干预措施。这种融合体现了认知失调现象——IMF一方面强调生态系统的“临界点”并呼吁对传统经济模式进行根本性的脱碳改造，另一方面却依然坚持对经济增长和财政纪律的坚定承诺。在2025年之前，IMF的气候政策主要致力于帮助各国履行《巴黎协定》中的减排目标。然而，由于与各国政府的合作进展有限、IMF自身的知识储备不足，以及主流气候经济学领域内的持续争议，其政策效果大打折扣。当一位否认气候变化存在的美国总统公开反对布雷顿森林体系相关机构时，IMF的气候政策工作突然陷入停滞，全球经济治理中的气候议题也因此转入“隐蔽”状态。。",
+      "topics": [
+        "Economics",
+        "Mandate",
+        "Mainstream",
+        "Climate change",
+        "Climate Finance"
+      ],
+      "source": "openalex"
+    },
+    {
+      "title": "Lone Wolves and Lattices in Bayesian Matching with Transfers",
+      "authors": [
+        "Xiyu Li"
       ],
       "venue": "arXiv",
       "published_date": "2026-11-25",
       "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.34771v1",
+      "openalex_url": "http://arxiv.org/abs/2611.34524v1",
       "cited_by_count": 0,
-      "abstract": "Emission trading systems (ETSs) price a growing share of global emissions, and some of their caps are set to reach zero within the maturity of corporate debt. We develop a structural model in which firms choose their emissions from several energy sources under an anticipated carbon price, while the realized carbon price clears the carbon market of each sector-region cell, with a scenario-dependent demand shock and physical losses mitigated by adaptation. We show that the equilibrium carbon price exists, characterize when the cap binds, and derive the optimal emission of each firm in feedback form. In a linearized case of the model, the carbon price is deterministic, and the default probability is explicit. Unlike a reward-penalty scheme, the ETS imposes no cost while the cap is slack and makes firms meet it exactly once it binds. Calibrated to 35 European power producers under the EU ETS, the model reproduces the average level of the European Union Allowance price over 2018 to 2024.",
-      "summary_zh": "【银行与信贷】排放交易系统（ETS）对全球排放量的定价占比日益增加，其中部分排放配额的设定将在企业债务到期时降至零。我们构建了一个结构模型，在该模型中，企业在预期的碳价格下选择来自不同能源的排放量；实际实现的碳价格会清除各个行业-地区单元中的碳市场过剩量，同时需求冲击和物理损失通过适应性措施得到缓解。我们证明了均衡碳价格的存在性，阐明了配额约束生效的条件，并以反馈形式推导出每家企业的最优排放量。在模型的线性化版本中，碳价格是确定的，且违约概率也是明确的。与奖惩机制不同，排放交易系统在配额宽松时不会产生额外成本，而一旦配额开始生效，企业就必须严格遵守。将该模型应用于欧盟排放交易系统下的35家电力生产企业，其结果与2018年至2024年间欧盟排放许可价格的平均水平相符。。研究方法：结构模型、模型校准、均衡模型。",
+      "abstract": "I study the Lone Wolf and lattice properties of stable outcomes in one-to-one matching with transferable utility and one-sided incomplete information, using the Bayesian stable market states of Liu (2020) and Chen and Hu (2024). With transfers, the wage in a blocking offer screens the worker's types, so it determines both whom the firm attracts and what the firm learns. I show by example that the firm-side and matched-set versions of the Lone Wolf property, as well as the lattice property, can fail even when outcomes are compared under the same information structure. I then assume that each worker's matching value is additively separable in his type and the firm's identity. Under this condition, a firm that is unmatched in some stable outcome earns zero in every stable outcome with the same type profile and information structure. Workers can retain information rents, so the worker-side property can fail. Nevertheless, outside a finite union of affine hyperplanes in the space of firm values, all such stable outcomes leave the same agents unmatched. Whenever they do, the stable payoff vectors form a lattice, and worker-optimal and firm-optimal outcomes exist. The results extend to comonotonicity of relative preferences when posterior beliefs are independent across workers.",
+      "summary_zh": "【金融经济学】我研究了在具有可转移效用和单边不完全信息的一对一匹配中，稳定结果的“独狼”（Lone Wolf）性质及格子结构（lattice properties）。研究基于刘（Liu, 2020）以及陈和胡（Chen & Hu, 2024）提出的贝叶斯稳定市场模型（Bayesian stable market states）。在存在转移支付的情况下，企业的招聘报价会筛选出劳动者的类型，从而决定了企业能够吸引哪些劳动者以及企业能够获取哪些信息。通过具体例子，我证明了即使在相同的信息结构下比较结果，企业端和匹配集层面的“独狼”性质以及格子结构也可能不成立。随后，我假设每个劳动者的匹配价值与其类型和企业特征之间存在加性可分性（additively separable）。在这种条件下，如果企业在某个稳定结果中未能匹配到劳动者，那么在所有具有相同类型特征和信息结构的稳定结果中，该企业都将获得零收益。由于劳动者能够保留信息带来的收益，因此劳动者端的性质也可能不成立。然而，在企业价值空间中有限的仿射超平面（affine hyperplanes）之外，所有这些稳定结果都会导致相同类型的劳动者无法被匹配。每当...。研究方法：贝叶斯方法。",
       "topics": [
         "Economics",
         "Finance"
       ],
       "source": "arxiv"
-    },
-    {
-      "title": "How Large are Monetary Policy Effects? dentifying the Shocks in a VAR also Identifies the Constants",
-      "authors": [
-        "Andrew Mountford"
-      ],
-      "venue": "arXiv",
-      "published_date": "2026-11-25",
-      "doi_url": "",
-      "openalex_url": "http://arxiv.org/abs/2611.34722v1",
-      "cited_by_count": 0,
-      "abstract": "Restrictions on the contemporaneous effects matrix used to identify fundamental shocks in a structural VAR, also determine the mapping from the structural constant terms to the reduced form constant terms. In some models one will have priors about these structural constant terms and these should therefore be included in a Bayesian estimation procedure. We illustrate the potential significance of this using the analysis of monetary policy by Baumeister and Hamilton (2018) as a motivating example. We show that imposing priors over the structural constant terms can lead to a more intuitive estimated monetary policy rule and a much larger estimated role for monetary policy in describing the evolution of the data. The analysis also allows for a clear visual presentation of the structural model, highlighting its multiple contending elements. For example the observed inflation series is estimated to be the result of positive demand and commodity price effects offset by negative monetary policy and risk spread effects.",
-      "summary_zh": "【货币政策与宏观经济】在用于识别结构向量自回归（structural VAR）中基本冲击的同时效应矩阵（contemporaneous effects matrix）所施加的限制，同时也决定了结构常数项（structural constant terms）与简化形式常数项（reduced form constant terms）之间的映射关系。在某些模型中，研究者会对这些结构常数项具有先验知识，因此应当将这些先验信息纳入贝叶斯估计（Bayesian estimation）过程。我们以Baumeister和Hamilton（2018）关于货币政策的分析为例，来说明这种做法的潜在重要性。研究表明，对结构常数项施加先验约束可以使得估计出的货币政策规则更加直观，并显著提升货币政策在解释数据演变过程中的作用。此外，这种分析方法还能清晰地呈现结构模型的各个组成部分，突出其相互竞争的因素。例如，观察到的通货膨胀序列被估计为正的需求效应和商品价格效应与负的货币政策效应及风险扩散效应共同作用的结果。。研究方法：结构模型、贝叶斯方法。",
-      "topics": [
-        "Economics",
-        "Finance"
-      ],
-      "source": "arxiv"
-    },
-    {
-      "title": "CHALLENGES IN IMPLEMENTING KEY PERFORMANCE INDICATORS FOR INTERNAL AUDIT IN THE BANKING SYSTEM",
-      "authors": [
-        "Julieta Kalashyan"
-      ],
-      "venue": "Economics, Finance and Accounting",
-      "published_date": "2026-11-21",
-      "doi_url": "https://doi.org/10.59503/29538009-2026.3.19-203",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:296182554",
-      "cited_by_count": 0,
-      "abstract": "Traditionally, the primary function of internal audit within the banking system has been carried out within the framework of corporate governance, risk prevention, and the effective implementation of control processes. However, following the introduction of a new generation of international internal audit standards in 2024, the value-adding (outcome-generating) activity of internal audit has gained prominence. This, in turn, has raised a number of theoretical and practical questions, regarding how to measure such value-adding activity specifically, which indicators and dimensions should be used. This research proposes a framework of key indicators for the value-adding activity of internal audit within the banking system, thereby enabling the measurement of the effectiveness of audit operations.",
-      "summary_zh": "【银行与信贷】传统上，内部审计在银行系统中的主要职能是在公司治理、风险防范以及控制流程的有效实施框架内进行的。然而，随着2024年新一代国际内部审计标准的引入，内部审计的增值（成果生成）作用日益受到重视。这引发了一系列理论和实践问题，即如何具体衡量这种增值作用，应使用哪些指标和维度。本研究提出了一个用于评估银行系统内部审计增值作用的关键指标框架，从而有助于衡量审计工作的有效性。。",
-      "topics": [
-        "Business",
-        "Economics"
-      ],
-      "source": "semantic_scholar"
-    },
-    {
-      "title": "Generation Z as investors: Behavioural and preference analysis in Poland",
-      "authors": [
-        "Patryk Durand"
-      ],
-      "venue": "Research Papers in Economics and Finance",
-      "published_date": "2026-11-20",
-      "doi_url": "https://doi.org/10.18559/ref.2026.2.4161",
-      "openalex_url": "https://api.semanticscholar.org/CorpusID:296177943",
-      "cited_by_count": 0,
-      "abstract": "This study analyses the investment preferences and behaviours of Generation Z (born 1997–2010) in Poland, focusing on how socio-demographic, psychological, and market factors shape financial decision-making. It addresses gaps in understanding whether traditional risk models adequately explain the behaviour of a digital-native generation entering financial markets during technological disruption and economic uncertainty.\nThe study is based on a survey of 384 Generation Z respondents conducted through convenience sampling via social media. The questionnaire included 27 questions across seven thematic areas. Data were analysed using non-parametric tests, factor analysis, logistic regression, and investor profile classification.\nThe findings show that lower income significantly limits investment participation, with lack of capital identified as the main barrier. Risk tolerance and risk capacity operate independently, leading to four distinct investor profiles. Gender differences remain significant for risk tolerance (r=.31), but not for risk capacity. Higher financial capacity increases interest in sustainable investments by 25 percentage points. The results also reveal a confidence–competence gap in financial literacy, with 48.6% of respondents reporting fear of loss despite declared willingness to take risk. In addition, a vulnerable subgroup displayed unrealistic risk–return expectations. The study demonstrates that psychological and financial barriers influence investment behaviour through different mechanisms.",
-      "summary_zh": "【金融经济学】本研究分析了波兰Z世代（出生于1997至2010年）的投资偏好和行为，重点探讨了社会人口统计因素、心理因素和市场因素如何影响他们的财务决策。研究旨在探讨传统风险模型是否能够充分解释这一在技术变革和经济不确定性背景下进入金融市场的数字原住民世代的行为特征。\n\n研究基于通过社交媒体进行的便捷抽样调查，共收集了384名Z世代受访者的数据。问卷涵盖了七个主题领域的27个问题。数据分析采用了非参数检验、因子分析、逻辑回归和投资者画像分类等方法。\n\n研究结果表明，较低的收入水平显著限制了人们的投资参与度，资金匮乏被认为是主要障碍。风险承受能力和风险承受极限之间存在独立性，从而形成了四种不同的投资者类型。性别差异在风险承受能力方面具有显著性（相关系数r=0.31），但在风险承受极限方面则不明显。较高的财务能力使人们对可持续投资的兴趣增加了25个百分点。研究还发现，尽管受访者表示愿意承担风险，但仍有48.6%的人对自身金融素养缺乏信心。此外，部分脆弱群体的风险回报预期不切实际。研究表明，心理因素和财务障碍通过不同的机制影响投资行为。。研究方法：回归分析、调查数据。",
-      "topics": [
-        "Economics",
-        "Business",
-        "Sociology"
-      ],
-      "source": "semantic_scholar"
-    },
-    {
-      "title": "Artificial Intelligence in Science and Physics Education, 2015-2026: An AI-Assisted Bibliometric and Title-and-Abstract Analysis across Fourteen Journals",
-      "authors": [
-        "Konstantinos T. Kotsis"
-      ],
-      "venue": "EIKI Journal of Effective Teaching Methods",
-      "published_date": "2026-11-26",
-      "doi_url": "https://doi.org/10.59652/fcvx2129",
-      "openalex_url": "https://openalex.org/W7234292984",
-      "cited_by_count": 0,
-      "abstract": "Artificial intelligence (AI) research in science and physics education has expanded rapidly, particularly since the emergence of generative AI. This study maps publication patterns, research characteristics, and citation connections across 14 selected science and physics education journals. OpenAlex searches using fifteen AI-related terms identified 966 unique records published between January 2015 and September 2026. AI-assisted screening retained 333 publications, which were coded using available titles and abstracts. Bibliometric analyses examined publication growth, thematic patterns, and citations within and between the two journal groups. Of the included publications, 87.1% appeared from 2023 onwards. Generative large language models and chatbots accounted for 58.9% of the corpus, while instruction and assessment together represented 48.3% of publications. Among 182 records classified as involving human participants, comparison groups were identifiable in 14.3%, effect sizes in 8.2%, and instrument validity evidence in 5.5%. These frequencies reflect information identifiable in bibliographic records, rather than the absence of these features in the full studies. Laboratory and experimental support was the principal educational function in 27 publications. Citation connections between the journal groups were limited: their reference sets had a Jaccard index of 0.047, and 15.6% of publications cited an included study from the other group. The findings document rapid growth and uneven research emphases within the selected venues. Independent human validation and full-text assessment are needed before drawing firm conclusions about methodological quality or educational effectiveness.",
-      "summary_zh": "【金融经济学】人工智能（AI）在科学和物理教育领域的研究发展迅速，尤其是在生成式AI出现之后。本研究分析了14种选定的科学和物理教育期刊中的出版模式、研究特点以及引用关系。OpenAlex利用15个与AI相关的关键词进行了检索，共发现了966篇发表于2015年1月至2026年9月期间的论文。通过AI辅助筛选，最终保留了333篇论文，并根据其标题和摘要进行了编码。文献计量分析研究了这两个期刊组内的出版数量增长、主题分布以及引用情况。在所有被纳入分析的论文中，87.1%发表于2023年及以后。生成式大语言模型和聊天机器人在这些论文中占比达到58.9%，而教学与评估相关的内容占48.3%。在182篇涉及人类参与者的论文中，仅有14.3%的论文明确了对照组信息，8.2%的论文提供了效应量数据，5.5%的论文包含了工具有效性的证据。这些数据反映了文献记录中可获取的信息，并不代表相关研究中完全缺乏这些要素。在27篇论文中，实验室和实验方法是主要的教学手段。两个期刊组之间的引用联系较为有限：它们的参考文献集合的Jaccard指数仅为0.047，且仅有15.6%的论文引用了另一组期刊中的论文。研究结果表明，这...。研究方法：大语言模型、实验方法。",
-      "topics": [
-        "Jaccard index",
-        "Citation",
-        "Citation analysis",
-        "Quality (philosophy)",
-        "Citation index"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Restrictions on the Creation of Affiliated Groups by Shareholders under the Laws of Leading Foreign Countries",
-      "authors": [
-        "Федчук Валерий Дмитриевич"
-      ],
-      "venue": "JURIST",
-      "published_date": "2026-11-26",
-      "doi_url": "https://doi.org/10.18572/1812-3929-2026-11-12-17",
-      "openalex_url": "https://openalex.org/W7239345710",
-      "cited_by_count": 0,
-      "abstract": "As it is generally accepted in legal doctrine the very first significant attempt aimed at the legislative recognition\nand regulation of affiliated companies was the adoption in Germany, as part of the reform of legislation on the joint\nstock companies, of the Stock Company Act of 1965 (the Aktiengesetz — AktG). After the adoption of the Act of 1965,\nrelevant acts and provisions began to appear in the national law of other foreign countries and the first proposals\nfor the adoption of relevant supranational norms emerged.",
-      "summary_zh": "【金融经济学】根据法律学界的普遍观点，首次旨在对关联公司进行立法认可和规范的重大尝试是德国在1965年对公司法进行改革时通过的《股份公司法》（Aktiengesetz，简称AktG）。1965年该法案颁布后，其他国家的相关法律和规定也开始相继出台，同时首次出现了关于制定相关跨国规范的提案。。",
-      "topics": [
-        "Legislation",
-        "Shareholder",
-        "Legislature",
-        "Business",
-        "Joint-stock company"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "On the issue of stabilization policy: Rules or discretion?",
-      "authors": [
-        "Maksim Shcheglov"
-      ],
-      "venue": "Finance and Credit",
-      "published_date": "2026-11-26",
-      "doi_url": "https://doi.org/10.24891/xwsxol",
-      "openalex_url": "https://openalex.org/W7239346452",
-      "cited_by_count": 0,
-      "abstract": "Subject. Discretionary economic policy versus rule-based policy.\nObjectives. To systematize key research findings that shape the discourse on the advantages and disadvantages of discretionary policy and policy by rules; to identify the conceptual contradictions underlying the choice of macroeconomic regulation instruments; and to develop a matrix of stabilization policy response components that structures the factors of policy regime choice.\nMethods. Comparative static analysis is applied, along with modeling of the Taylor rule and the determination of the rule's key components using multiple regression with breaks and vector autoregression methods. A comparison of counterarguments from critics of each approach is also employed.\nResults. A matrix of stabilization policy response components is presented in accordance with the objectives and instruments of fiscal and monetary policy. It is empirically substantiated that the policy of the Bank of Russia corresponds to a greater extent to a rule-based regime approximating a modified Taylor rule. The specific features of the Russian regulator's response to demand-side inflation shocks and supply-side inflation shocks are identified and meaningfully interpreted.\nConclusions. The choice between rules and discretion cannot be made in isolation and requires consideration of the complex interaction between the objectives and instruments of fiscal and monetary policy. The results contribute to the understanding of monetary policy transmission mechanisms in the Russian economy and can be used to improve macroeconomic forecasting and to develop stabilization programs.",
-      "summary_zh": "【货币政策与宏观经济】主题：相机抉择的经济政策与基于规则的政策  \n目的：系统梳理关于相机抉择政策与基于规则的政策优劣的主要研究成果；揭示宏观经济调控工具选择背后的概念性矛盾；构建一个稳定政策响应要素矩阵，以明确政策体系选择的相关因素。  \n方法：采用比较静态分析方法，并对泰勒规则进行建模，同时运用带有断点的多元回归和向量自回归技术来确定该规则的关键组成部分。同时，也对这两种方法批评者的观点进行了对比分析。  \n结果：根据财政政策和货币政策的目标与工具，构建了一个稳定政策响应要素矩阵。实证研究表明，俄罗斯央行的政策在很大程度上遵循一种基于规则的框架，这种规则可视为经过调整的泰勒规则。本文还识别并深入解读了俄罗斯央行在应对需求侧通胀冲击和供给侧通胀冲击时的具体应对措施及其内在逻辑。  \n结论：在规则与相机抉择之间做出选择时，不能孤立地考虑某一因素，而必须综合考虑财政政策和货币政策的目标与工具之间的复杂相互作用。这些研究结果有助于理解俄罗斯经济中的货币政策传导机制，可用于改进宏观经济预测并制定更有效的稳定化政策方案。。研究方法：向量自回归、回归分析。",
-      "topics": [
-        "Monetary policy",
-        "Economics",
-        "Vector autoregression",
-        "Discretion",
-        "Inflation (cosmology)"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "The economy of disproportions: A new area in economic science and its toolkit – Considering the investment and construction complex as a case study",
-      "authors": [
-        "Irina Yu. Evstafieva",
-        "Dmitrii A. FIRSOV"
-      ],
-      "venue": "Finance and Credit",
-      "published_date": "2026-11-26",
-      "doi_url": "https://doi.org/10.24891/flemea",
-      "openalex_url": "https://openalex.org/W7239347588",
-      "cited_by_count": 0,
-      "abstract": "Subject. The economics of imbalances as an independent branch of economic science.\nObjectives. To substantiate theoretically the economics of imbalances as an established independent scientific field and to define its conceptual framework.\nMethods. The study employs methods of comparative, structural, logical-theoretical, and index analysis. It draws on the theory of general economic equilibrium, Keynesian analysis of macroeconomic imbalance, the Pareto and Kaldor–Hicks optimality criteria, Tinbergen's rule, Leontief's input-output analysis, as well as the concepts of cumulative causation and financial instability.\nResults. The authors formulate an original definition of the economics of imbalances and propose an end-to-end research cycle covering the identification, classification, measurement, and optimization of deviations. A multidimensional classification of imbalances within the economics of imbalances is developed, and tools for their quantitative assessment are proposed. It is demonstrated that derivative investment projects should be interpreted not as isolated deviations but as a systemic indicator of a critical institutional imbalance reproduced by the normative pricing system.\nConclusions. The economics of imbalances makes it possible to move from the descriptive use of the category of deviation to a unified operational system of analysis suitable for theoretical research, empirical diagnostics, and the development of practical economic policy measures.",
-      "summary_zh": "【金融经济学】**主题：失衡经济学作为经济科学的一个独立分支**  \n**目标：** 从理论上论证失衡经济学作为一个成熟的独立科学领域的合理性，并明确其概念框架。  \n**方法：** 本研究采用了比较分析、结构分析、逻辑理论分析及指数分析等方法，借鉴了一般经济均衡理论、凯恩斯主义对宏观经济失衡的分析框架、帕累托与卡尔多-希克斯最优性标准、丁伯根法则、列昂惕夫投入产出分析，以及累积因果关系和金融不稳定性的相关概念。  \n**结果：** 作者提出了失衡经济学的原创定义，并构建了一个涵盖偏差识别、分类、测量与优化的完整研究流程。同时，开发了用于失衡经济学的多维度分类体系及定量评估工具。研究指出，衍生投资项目不应被视为孤立现象，而应被视为由规范定价体系所加剧的系统性制度失衡的体现。  \n**结论：** 失衡经济学有助于将传统的偏差描述性研究提升为统一的分析体系，适用于理论研究、实证诊断及实际经济政策措施的制定。。研究方法：优化方法、均衡模型。",
-      "topics": [
-        "Economics",
-        "Investment (military)",
-        "Normative",
-        "Pareto principle",
-        "Economic methodology"
-      ],
-      "source": "openalex"
-    },
-    {
-      "title": "Artificial Intelligence in Legal Proceedings: Constitutional Limits",
-      "authors": [
-        "Tatyana Yu. Arkhireyskaya",
-        "Marina A. Ivanova"
-      ],
-      "venue": "JURIST",
-      "published_date": "2026-11-26",
-      "doi_url": "https://doi.org/10.18572/1812-3929-2026-11-41-47",
-      "openalex_url": "https://openalex.org/W7239352556",
-      "cited_by_count": 0,
-      "abstract": "Based on the Concept for the Introduction of AI Technologies in Judicial Proceedings of the Russian Federation\n(2026), the authors examine the transition from electronic justice to the digital intellectualization of judicial activity.\nThe central issue is the permissible degree of algorithmic influence and the constitutional-legal limits of using artificial\nintelligence in judicial proceedings. A risk-oriented model of legal regulation is proposed, based on the differentiation\nof AI functions by the degree of their impact on constitutional rights and principles of judicial proceedings,\nwhile preserving the exclusive role of the judge. Drawing on an analysis of the practice of the Constitutional Court\nof the Russian Federation and doctrinal sources, the necessity of special guarantees for high-risk functions is substantiated.\nA constitutional standard for the admissibility of judicial AI is formulated. Directions for improving procedural\nlegislation are proposed.",
-      "summary_zh": "【金融经济学】基于俄罗斯联邦《关于在司法程序中引入人工智能技术的概念》（2026年），作者探讨了从电子司法向司法活动数字化智能化转型的过程。核心问题在于算法影响的合理限度，以及人工智能在司法程序中使用的宪法与法律约束。本文提出了一种以风险为导向的法律监管模式，该模式根据人工智能功能对宪法权利和司法程序原则的影响程度对其进行分类，并同时维护法官的专属裁决权。通过分析俄罗斯联邦宪法法院的判例及相关理论文献，作者论证了对高风险人工智能应用实施特殊保障措施的必要性，并制定了人工智能在司法领域应用的宪法标准。此外，还提出了改进相关程序立法的建议。。",
-      "topics": [
-        "Intellectualization",
-        "Legislation",
-        "Law",
-        "Political science",
-        "Judicial review"
-      ],
-      "source": "openalex"
     }
   ]
 }
